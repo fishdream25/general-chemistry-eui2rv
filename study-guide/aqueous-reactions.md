@@ -149,7 +149,7 @@ Predict whether each is soluble in water: $\ce{K2CO3}$, $\ce{BaSO4}$, $\ce{AgNO3
 - **$\ce{K2CO3}$** — carbonates are usually insoluble, *but* potassium is a Group 1A metal, and that rule wins. **Soluble.**
 - **$\ce{BaSO4}$** — sulfates are usually soluble, but $\ce{Ba^2+}$ is one of the three memorized exceptions. **Insoluble.**
 - **$\ce{AgNO3}$** — silver halides are insoluble, but this is a nitrate, and all nitrates are soluble. **Soluble.**
-- **$\ce{Mg(OH)2}$** — hydroxides are usually insoluble, and Mg2+ is not among the exceptions (Group 1A, NH4+, and the heavier Group 2A ions Ca2+, Sr2+, Ba2+). **Insoluble.**
+- **$\ce{Mg(OH)2}$** — hydroxides are usually insoluble, and $\ce{Mg2+}$ is not among the exceptions (Group 1A, $\ce{NH4+}$, and the heavier Group 2A ions $\ce{Ca2+}$, $\ce{Sr2+}$, $\ce{Ba2+}$). **Insoluble.**
 
 Notice the pattern in the first and third: when an "always soluble" rule meets a "usually insoluble" rule, the always-soluble rule wins. Check the cation and the anion against the always-soluble rows first.
 :::

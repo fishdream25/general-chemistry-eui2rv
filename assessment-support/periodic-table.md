@@ -30,7 +30,7 @@ A student can classify a given element as representative, noble gas, transition 
 - Constraint: include at least one Group 2B element (Zn, Cd, or Hg) as a specific trap.
 - Contexts: any element.
 - Formats: multiple-choice.
-- Worked instantiation: "Classify zinc (Z=30)." → Group 2B — its $3d$ subshell is completely filled, so it's neither a classic transition metal nor a representative element.
+- Worked instantiation: "Classify zinc ($Z = 30$)." → Group 2B — its $3d$ subshell is completely filled, so it's neither a classic transition metal nor a representative element.
 
 **2. Inverse — name an element given a category and constraint**
 - Variables & ranges: a category and an additional constraint (e.g., "period 4").
@@ -168,7 +168,7 @@ A student can rank ionic radii within an isoelectronic series (by nuclear charge
 - Constraint: correct direction (more $Z$ → smaller radius).
 - Contexts: any isoelectronic series.
 - Formats: workout.
-- Worked instantiation: see the study guide's worked example (N³⁻ through Al³⁺).
+- Worked instantiation: see the study guide's worked example ($\ce{N3-}$ through $\ce{Al3+}$).
 
 **2. Inverse — rank same-element different-charge species**
 - Variables & ranges: an element and 2–3 of its ions/neutral form.
@@ -221,7 +221,7 @@ A student can describe how ionization energy changes across a period and down a 
 - Constraint: must reference the specific orbital/subshell reasoning (not just "it's an exception").
 - Contexts: Period 2.
 - Formats: short-answer.
-- Worked instantiation: see the study guide's Figure 8.3 caption (Be→B: 2p vs. paired 2s; N→O: breaking a stable half-filled 2p³).
+- Worked instantiation: see the study guide's Figure 8.3 caption (Be→B: 2p vs. paired 2s; N→O: breaking a stable half-filled $2p^3$).
 
 **3. Conceptual — why successive ionization energies always increase**
 - Variables & ranges: qualitative.
@@ -306,7 +306,7 @@ A student can describe the general chemical behavior of each main group and can 
 - Constraint: must include at least one specific reaction or compound example, not just an abstract description.
 - Contexts: any group.
 - Formats: short-answer.
-- Worked instantiation: "Describe the general reactivity of Group 7A (the halogens)." → Reactive nonmetals with the formula X₂; never found free in nature; high IE and large positive EA; form halide anions isoelectronic with the adjacent noble gas; react with hydrogen to form hydrogen halides.
+- Worked instantiation: "Describe the general reactivity of Group 7A (the halogens)." → Reactive nonmetals with the formula $X_2$; never found free in nature; high IE and large positive EA; form halide anions isoelectronic with the adjacent noble gas; react with hydrogen to form hydrogen halides.
 
 **2. Inverse — identify a diagonal relationship pair**
 - Variables & ranges: one of Li, Be, B.

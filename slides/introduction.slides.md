@@ -100,9 +100,9 @@ A mechanical balance **compares** the sample against known masses; an electronic
 
 <!-- slide step -->
 ## Worked example — density
-Gold: mass 45.3 g, volume 2.35 cm³
-- $d=45.3/2.35$ g/cm³{{attrs[.fragment]}}
-- **= 19.3 g/cm³** (matches gold's known density){{attrs[.fragment]}}
+Gold: mass 45.3 g, volume 2.35 $\text{cm}^{3}$
+- $d=45.3/2.35\ \text{g}/\text{cm}^{3}${{attrs[.fragment]}}
+- **= 19.3 $\text{g}/\text{cm}^{3}$** (matches gold's known density){{attrs[.fragment]}}
 
 <!-- slide -->
 ## Three temperature scales
@@ -171,7 +171,7 @@ If the units don't cancel to what you wanted, the setup is wrong — before any 
 ## Worked example — antifreeze density
 9.26 lb / 4.00 qt; 1 lb = 453.59 g, 1 L = 1.0567 qt
 - Convert mass to g and volume to mL separately{{attrs[.fragment]}}
-- 4.20×10³ g / 3785 mL{{attrs[.fragment]}}
+- $4.20\times10^{3}$ g / 3785 mL{{attrs[.fragment]}}
 - **= 1.11 g/mL**{{attrs[.fragment]}}
 
 <!-- slide template=closing -->

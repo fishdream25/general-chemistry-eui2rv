@@ -68,7 +68,7 @@ Both transfers now take energy *out* of the system, so both are negative: $q = -
 
 $$\Delta U = -425 + (-175) = -600\ \text{J}$$
 
-Contrast with Q4: the equation ΔU = q + w is the same, and what changes is the sign given to each term. Deciding the direction of each transfer before substituting is the whole method.
+Contrast with Q4: the equation $\Delta U$ = q + w is the same, and what changes is the sign given to each term. Deciding the direction of each transfer before substituting is the whole method.
 :::
 ::::
 
@@ -128,7 +128,7 @@ The coefficient of $\ce{CH4}$ is 1, so the tabulated value is already per mole o
 
 $$25.0\,\text{g}\times\frac{1\,\text{mol}}{16.04\,\text{g}}\times\frac{-890.5\,\text{kJ}}{1\,\text{mol}} = -1388\ \text{kJ}$$
 
-**About 1.39 × 10³ kJ is released.**
+**About $1.39\times10^{3}$ kJ is released.**
 :::
 ::::
 
@@ -164,7 +164,7 @@ Case (a) is the instructive one — gases appear on both sides but their total i
 
 :::: tabs
 ::: tab Q 12
-{{sp[info] Objective 6.3a}} · *workout* How much heat is needed to raise 500.0 g of water from 20.0 °C to 100.0 °C? ($s_\text{water} = 4.184$ J g⁻¹ °C⁻¹)
+{{sp[info] Objective 6.3a}} · *workout* How much heat is needed to raise 500.0 g of water from 20.0 °C to 100.0 °C? ($s_\text{water} = 4.184\ \text{J}\,\text{g}^{-1}\,\text{°C}^{-1}$)
 :::
 ::: tab Answer
 $$q = ms\Delta T = (500.0)(4.184)(80.0) = 1.67\times10^5\ \text{J} = 167\ \text{kJ}$$
@@ -173,7 +173,7 @@ $$q = ms\Delta T = (500.0)(4.184)(80.0) = 1.67\times10^5\ \text{J} = 167\ \text{
 
 :::: tabs
 ::: tab Q 13
-{{sp[info] Objective 6.3a}} · *workout* A 45.0 g piece of copper ($s = 0.385$ J g⁻¹ °C⁻¹) absorbs 875 J of heat. If it started at 25.0 °C, what is its final temperature?
+{{sp[info] Objective 6.3a}} · *workout* A 45.0 g piece of copper ($s = 0.385\ \text{J}\,\text{g}^{-1}\,\text{°C}^{-1}$) absorbs 875 J of heat. If it started at 25.0 °C, what is its final temperature?
 :::
 ::: tab Answer
 Rearrange $q = ms\Delta T$ for $\Delta T$:
@@ -187,7 +187,7 @@ The same 875 J added to 45.0 g of *water* would raise it only 4.6 °C — copper
 
 :::: tabs
 ::: tab Q 14
-{{sp[info] Objective 6.3a}} · *workout* A 125 g block of aluminum ($s = 0.897$ J g⁻¹ °C⁻¹) at 185 °C is dropped into 300.0 g of water at 22.0 °C. What is the final temperature of both?
+{{sp[info] Objective 6.3a}} · *workout* A 125 g block of aluminum ($s = 0.897\ \text{J}\,\text{g}^{-1}\,\text{°C}^{-1}$) at 185 °C is dropped into 300.0 g of water at 22.0 °C. What is the final temperature of both?
 :::
 ::: tab Answer
 Everything the aluminum loses, the water gains, and both end at the same final temperature $T$.

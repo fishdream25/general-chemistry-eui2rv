@@ -56,7 +56,7 @@ $$\text{rate} = -\frac{1}{a}\frac{\Delta[\ce{A}]}{\Delta t} = \frac{1}{c}\frac{\
 
 <!-- slide step -->
 ## Worked example — rate expression
-4PH₃ → P₄ + 6H₂. H₂ forms at 0.078 M/s. Rate of P₄ formation? Rate of PH₃ loss?
+$\ce{4PH3 -> P4 + 6H2}$. $\ce{H2}$ forms at 0.078 M/s. Rate of $\ce{P4}$ formation? Rate of $\ce{PH3}$ loss?
 - $\frac{\Delta[\text{P}_4]}{\Delta t} = \frac{1}{6}(0.078) = 0.013$ M/s{{attrs[.fragment]}}
 - $\frac{\Delta[\text{PH}_3]}{\Delta t} = -\frac{4}{6}(0.078) = -0.052$ M/s{{attrs[.fragment]}}
 
@@ -69,13 +69,13 @@ $$\text{rate} = k[\ce{A}]^x[\ce{B}]^y$$
 
 <!-- slide step -->
 ## Worked example — method of initial rates
-| Trial | [NO] | [Cl₂] | Rate |
+| Trial | [NO] | $[\ce{Cl2}]$ | Rate |
 |---|---|---|---|
 | 1 | 0.10 | 0.10 | 0.00300 |
 | 2 | 0.10 | 0.15 | 0.00450 |
 | 3 | 0.15 | 0.10 | 0.00675 |
 
-- Trials 1→2: only [Cl₂] changes → $y=1${{attrs[.fragment]}}
+- Trials 1→2: only $[\ce{Cl2}]$ changes → $y=1${{attrs[.fragment]}}
 - Trials 1→3: only [NO] changes → $x=2${{attrs[.fragment]}}
 - **rate $=k[\text{NO}]^2[\text{Cl}_2]$**{{attrs[.fragment]}}
 
@@ -105,16 +105,16 @@ Halving · constant · doubling — that pattern names the order on its own.
 
 <!-- slide step -->
 ## Worked example — first-order half-life
-Cyclobutane decomposition, k = 9.2×10⁻³ s⁻¹. Half-life? Amount left after 180 s from 1 mol?
+Cyclobutane decomposition, $k = 9.2\times10^{-3}\ \text{s}^{-1}$. Half-life? Amount left after 180 s from 1 mol?
 - $t_{1/2} = \ln2/k = 75$ s{{attrs[.fragment]}}
 - $\ln([A]_0/[A]_t) = kt = 1.66 \Rightarrow [A]_0/[A]_t = 5.2${{attrs[.fragment]}}
-- **[A]$_t$ = 0.19 mol**{{attrs[.fragment]}}
+- **$[\text{A}]_t = 0.19$ mol**{{attrs[.fragment]}}
 
 <!-- slide step -->
 ## Why isn't half-life always constant?
-2NOBr → 2NO + Br₂, second order, k = 0.80 M⁻¹s⁻¹, [A]₀ = 0.10 M
+$\ce{2NOBr -> 2NO + Br2}$, second order, $k = 0.80\ \text{M}^{-1}\,\text{s}^{-1}$, $[\text{A}]_0 = 0.10$ M
 - First half-life: $t_{1/2}=1/(k[A]_0)=12.5$ s{{attrs[.fragment]}}
-- Second half-life (now [A]₀ = 0.050 M): $t_{1/2}=1/(0.80\times0.050)=25$ s{{attrs[.fragment]}}
+- Second half-life (now $[\text{A}]_0 = 0.050$ M): $t_{1/2}=1/(0.80\times0.050)=25$ s{{attrs[.fragment]}}
 - **Only first order's $t_{1/2}=\ln2/k$ never references $[A]_0$ — that's why it alone is constant**{{attrs[.fragment]}}
 
 <!-- slide template=section -->
@@ -144,7 +144,7 @@ $$\ln\frac{k_1}{k_2} = \frac{E_a}{R}\left(\frac{1}{T_2}-\frac{1}{T_1}\right)$$
 
 <!-- slide step -->
 ## Worked example — finding Ea
-k₁ = 1.1×10⁻² L/mol·s at 703 K; k₂ = 4.95 L/mol·s at 865 K.
+$k_1 = 1.1\times10^{-2}$ L/mol·s at 703 K; $k_2 = 4.95$ L/mol·s at 865 K.
 - Substitute into the two-point Arrhenius equation{{attrs[.fragment]}}
 - Solve for $E_a$: {{attrs[.fragment]}}
 - **$E_a$ = 190 kJ/mol**{{attrs[.fragment]}}
@@ -178,9 +178,9 @@ A reaction can have large $E_a$ and still be strongly exothermic.
 
 <!-- slide step -->
 ## Worked example — mechanism analysis
-Step 1 (slow): 2NO₂ → NO₃ + NO. Step 2 (fast): NO₃ + CO → NO₂ + CO₂.
-- Overall: NO₂ + CO → NO + CO₂{{attrs[.fragment]}}
-- Intermediate: NO₃{{attrs[.fragment]}}
+Step 1 (slow): $\ce{2NO2 -> NO3 + NO}$. Step 2 (fast): $\ce{NO3 + CO -> NO2 + CO2}$.
+- Overall: $\ce{NO2 + CO -> NO + CO2}${{attrs[.fragment]}}
+- Intermediate: $\ce{NO3}${{attrs[.fragment]}}
 - **Rate law = rate of step 1 = $k[\text{NO}_2]^2$**{{attrs[.fragment]}}
 
 <!-- slide -->
@@ -189,7 +189,7 @@ Step 1 (slow): 2NO₂ → NO₃ + NO. Step 2 (fast): NO₃ + CO → NO₂ + CO�
 
 <!-- slide step -->
 ## Worked example — RDS is the SECOND step
-Ozone destruction, 2O₃ → 3O₂. Step 1 (fast equilibrium): O₃ ⇌ O₂ + O. Step 2 (slow): O + O₃ → 2O₂.
+Ozone destruction, $\ce{2O3 -> 3O2}$. Step 1 (fast equilibrium): $\ce{O3 <=> O2 + O}$. Step 2 (slow): $\ce{O + O3 -> 2O2}$.
 - Intermediate: O (atomic oxygen){{attrs[.fragment]}}
 - Rate-determining = step 2 → rate $=k_2[\text{O}][\text{O}_3]${{attrs[.fragment]}}
 - **Not done — O is an intermediate.** Step 1 equilibrium: $[\text{O}]=\frac{k_1}{k_{-1}}\frac{[\text{O}_3]}{[\text{O}_2]}${{attrs[.fragment]}}

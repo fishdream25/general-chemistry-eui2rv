@@ -64,9 +64,9 @@ Lone pairs occupy space but aren't named in the molecular shape
 
 <!-- slide step -->
 ## Worked example — predict geometry
-SO₂ (3 domains, 1 lone pair) and CBr₄ (4 domains, 0 lone pairs)
-- SO₂: **bent**{{attrs[.fragment]}}
-- CBr₄: **tetrahedral**{{attrs[.fragment]}}
+$\ce{SO2}$ (3 domains, 1 lone pair) and $\ce{CBr4}$ (4 domains, 0 lone pairs)
+- $\ce{SO2}$: **bent**{{attrs[.fragment]}}
+- $\ce{CBr4}$: **tetrahedral**{{attrs[.fragment]}}
 
 <!-- slide template=section -->
 # 2. Dipole Moments
@@ -82,14 +82,14 @@ SO₂ (3 domains, 1 lone pair) and CBr₄ (4 domains, 0 lone pairs)
 $\mathrm{CO_2}$ and $\mathrm{H_2O}$ have comparably polar bonds and opposite verdicts
 
 <!-- slide step -->
-## Worked example — CO₂ vs H₂O
+## Worked example — $\ce{CO2}$ vs $\ce{H2O}$
 Both have 2 polar bonds
-- CO₂: linear → dipoles cancel → **nonpolar**{{attrs[.fragment]}}
-- H₂O: bent → dipoles don't cancel → **polar**{{attrs[.fragment]}}
+- $\ce{CO2}$: linear → dipoles cancel → **nonpolar**{{attrs[.fragment]}}
+- $\ce{H2O}$: bent → dipoles don't cancel → **polar**{{attrs[.fragment]}}
 
 <!-- slide step -->
-## Worked example — BeCl₂ vs ClNO
-- BeCl₂: linear, dipoles cancel → **nonpolar**{{attrs[.fragment]}}
+## Worked example — $\ce{BeCl2}$ vs $\ce{ClNO}$
+- $\ce{BeCl2}$: linear, dipoles cancel → **nonpolar**{{attrs[.fragment]}}
 - ClNO: bent, dipoles don't cancel → **polar**{{attrs[.fragment]}}
 
 <!-- slide template=section -->
@@ -111,9 +111,9 @@ Promote one $2s$ electron, then mix — two extra bonds more than repay the cost
 
 <!-- slide -->
 ## Hybridization
-- $sp^3$: 4 orbitals, tetrahedral (CH₄)
-- $sp^2$: 3 orbitals, trigonal planar (BF₃)
-- $sp$: 2 orbitals, linear (BeCl₂)
+- $sp^3$: 4 orbitals, tetrahedral ($\ce{CH4}$)
+- $sp^2$: 3 orbitals, trigonal planar ($\ce{BF3}$)
+- $sp$: 2 orbitals, linear ($\ce{BeCl2}$)
 
 <!-- slide -->
 ## Sigma and pi bonds
@@ -131,9 +131,9 @@ $sp$-hybridized C≡C: 1 σ bond + 2 π bonds, linear 180° geometry
 
 <!-- slide step -->
 ## Worked example — hybridization
-PCl₃ (3 bonds + 1 lone pair) and CH₂=CH₂ (one double bond per C)
-- PCl₃: **$sp^3$**{{attrs[.fragment]}}
-- Each C in CH₂=CH₂: **$sp^2$**{{attrs[.fragment]}}
+$\ce{PCl3}$ (3 bonds + 1 lone pair) and $\ce{CH2} = \ce{CH2}$ (one double bond + two C–H bonds per C)
+- $\ce{PCl3}$: **$sp^3$**{{attrs[.fragment]}}
+- Each C in $\ce{CH2} = \ce{CH2}$: **$sp^2$**{{attrs[.fragment]}}
 
 <!-- slide template=closing -->
 # The complete bonding picture

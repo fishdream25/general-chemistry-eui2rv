@@ -152,7 +152,7 @@ The gas gained 1250 J as heat and spent 355 J of it pushing the atmosphere back,
 
 :::success
 **Learning Objectives**
-- {{sp[info] Objective 6.2a}} Define enthalpy and relate the sign of the enthalpy change (ΔH) to exothermic and endothermic processes.
+- {{sp[info] Objective 6.2a}} Define enthalpy and relate the sign of the enthalpy change ($\Delta H$) to exothermic and endothermic processes.
 - {{sp[info] Objective 6.2a}} Apply the rules for scaling and reversing thermochemical equations.
 - {{sp[info] Objective 6.2a}} Calculate the heat released or absorbed for a given mass of reactant.
 - {{sp[info] Objective 6.2b}} Convert between $\Delta H$ and $\Delta U$.
@@ -286,7 +286,7 @@ Writing $\Delta T$ as final minus initial makes the sign take care of itself: a 
 ![Specific heat capacities of common substances compared](../assets/specific_heat_comparison.svg =760x)
 *Figure 6.4 — Water's specific heat is extraordinarily high — about 32 times gold's. That single fact explains why water is the working fluid in the coffee-cup and bomb calorimeters shown here (it absorbs a lot of heat for a small, measurable temperature rise), why coastal climates are milder than inland ones, and why a pot of water takes so much longer to heat on the stove than the empty metal pot does.*
 
-| Substance | Specific heat, J g⁻¹ °C⁻¹ |
+| Substance | Specific heat, $\text{J}\,\text{g}^{-1}\,\text{°C}^{-1}$ |
 |---|---|
 | water (liquid) | 4.184 |
 | ethanol | 2.44 |
@@ -309,7 +309,7 @@ Positive, because the water absorbed the heat.
 
 :::: tabs
 ::: tab Problem
-A 360.0 g piece of rebar (steel, $s = 0.449$ J g⁻¹ °C⁻¹) is dropped into 425 mL of water at 24.0 °C. The water's final temperature is 42.7 °C. What was the rebar's initial temperature?
+A 360.0 g piece of rebar (steel, $s = 0.449\ \text{J}\,\text{g}^{-1}\,\text{°C}^{-1}$) is dropped into 425 mL of water at 24.0 °C. The water's final temperature is 42.7 °C. Assuming all heat transfer occurs between the rebar and the water (none to the surroundings), what was the rebar's initial temperature?
 :::
 ::: tab Solution
 The rebar and the water form an isolated pair: all the heat the rebar loses, the water gains. That is one equation with one unknown.
@@ -346,7 +346,7 @@ $$q_\text{rxn} = -(q_\text{water} + q_\text{cal}) = \Delta H_\text{rxn}$$
 In both, the minus sign says the same thing as in the rebar problem: heat that leaves the reaction is heat that arrives in the surroundings. Figure 6.6 shows the bomb in cutaway and Figure 6.7 the real instrument.
 
 ![Schematic cutaway diagram of a bomb calorimeter](../assets/bomb_calorimeter.svg =420x)
-*Figure 6.6 — A sealed steel bomb holds the sample and O₂ at constant volume; heat released raises the temperature of the surrounding water bath, which (along with the bomb's own known heat capacity) is used to calculate $q_{rxn}$.*
+*Figure 6.6 — A sealed steel bomb holds the sample and $\ce{O2}$ at constant volume; heat released raises the temperature of the surrounding water bath, which (along with the bomb's own known heat capacity) is used to calculate $q_\text{rxn}$.*
 
 ![A real bomb calorimeter with its steel sample bomb](../assets/bomb_calorimeter_photo.jpg =420x)
 *Figure 6.7 — A modern bomb calorimeter: the steel bomb (center) is loaded with sample, sealed, and lowered into the instrument's water jacket for a precisely measured temperature rise.*

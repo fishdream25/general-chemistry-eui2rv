@@ -74,8 +74,8 @@ graph TD
 <!-- @side -->
 Two steps **cost** energy, one **pays it back**.
 
-- pays back **more** → exothermic (CaCl₂: heat pack)
-- pays back **less** → endothermic (NH₄NO₃: cold pack)
+- pays back **more** → exothermic ($\ce{CaCl2}$: heat pack)
+- pays back **less** → endothermic ($\ce{NH4NO3}$: cold pack)
 
 An endothermic dissolving still happens if the gain in disorder outweighs the cost.
 
@@ -95,7 +95,7 @@ An endothermic dissolving still happens if the gain in disorder outweighs the co
 - Pressure: negligible effect on solids/liquids; gases follow **Henry's law**
 
 :::warning
-Henry's law assumes no chemical reaction with solvent — fails for CO₂, NH₃ in water.
+Henry's law assumes no chemical reaction with solvent — fails for $\ce{CO2}$, $\ce{NH3}$ in water.
 :::
 
 <!-- slide -->
@@ -130,8 +130,8 @@ Every concentration-unit conversion problem routes through one or both of these.
 
 <!-- slide step -->
 ## Worked example — mole fraction & molality
-0.850 g NH₃ in 125 g water. Find $X$ and $m$.
-- mol NH₃ = 0.0500, mol H₂O = 6.94{{attrs[.fragment]}}
+0.850 g $\ce{NH3}$ in 125 g water. Find $X$ and $m$.
+- mol $\ce{NH3} = 0.0500$, mol $\ce{H2O} = 6.94${{attrs[.fragment]}}
 - $X_{\text{NH}_3} = 0.0500/(0.0500+6.94) = 7.15\times10^{-3}$ {{attrs[.fragment]}}
 - $m = 0.0500/0.125\text{ kg} = 0.400$ mol/kg{{attrs[.fragment]}}
 
@@ -190,7 +190,7 @@ Reversed, π = MRT gives the **molar mass** of a large solute from a measurable 
 ## Electrolytes: the van't Hoff factor
 $$\Delta T_b = iK_bm \qquad \Delta T_f = iK_fm \qquad \pi = iMRT$$
 - $i$ = actual particles ÷ formula units dissolved
-- NaCl → $i \approx 2$ · CaCl₂ → $i \approx 3$ · sucrose → $i = 1$
+- NaCl → $i \approx 2$ · $\ce{CaCl2}$ → $i \approx 3$ · sucrose → $i = 1$
 
 :::warning
 For an ionic solute, always write the dissociation equation and count ions — never assume $i = 1$.

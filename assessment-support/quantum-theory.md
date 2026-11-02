@@ -388,6 +388,6 @@ A student can abbreviate an electron configuration using noble-gas-core notation
 ## Rubric Themes for Chapter 7
 
 - **Unit consistency is checked explicitly.** Any calculation mixing nm and m (or g and kg) without an explicit conversion step is treated as incomplete, even if the final numeric answer happens to be close.
-- **Sign of ΔE must be interpreted correctly** in every Bohr-transition problem — a correct magnitude with the wrong emission/absorption interpretation is not full credit.
+- **Sign of $\Delta E$ must be interpreted correctly** in every Bohr-transition problem — a correct magnitude with the wrong emission/absorption interpretation is not full credit.
 - **Electron configurations use noble-gas-core notation once available**, and correctly flag the Cr/Cu-type exceptions rather than defaulting to the "expected" pattern.
 - **Quantum-number validity checks must name the specific violated rule**, not just say "this one is wrong."

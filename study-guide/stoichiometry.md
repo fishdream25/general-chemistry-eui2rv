@@ -48,7 +48,7 @@ graph TD
 
 Atoms are far too light to weigh individually in grams, so chemists use a scale built for them. One **atomic mass unit (amu)** is defined as exactly $1/12$ the mass of one $\ce{^{12}C}$ atom. This one *is* still tied to carbon-12 — the 2019 SI revision redefined the mole, not the atomic mass unit.
 
-On this scale the atomic mass of $\ce{^{1}H}$ is 1.008 amu, not exactly 1 amu. The reason is worth knowing: a nucleus weighs slightly less than its separated protons and neutrons would, and by different amounts in different elements; the amu is set by carbon-12, whose nucleons have lost mass this way, while ¹H's lone proton has not, so ¹H comes out slightly above 1 amu (Chapter 19 explains why — the missing mass is the nuclear binding energy).
+On this scale the atomic mass of $\ce{^{1}H}$ is 1.008 amu, not exactly 1 amu. The reason is worth knowing: a nucleus weighs slightly less than its separated protons and neutrons would, and by different amounts in different elements; the amu is set by carbon-12, whose nucleons have lost mass this way, while $^1H$'s lone proton has not, so $^1H$ comes out slightly above 1 amu (Chapter 19 explains why — the missing mass is the nuclear binding energy).
 
 The number printed under each element symbol on the periodic table is not any single atom's mass. It is the **average atomic mass**: the weighted average over all the isotopes of that element as they occur in nature. Chapter 2 established that an element's atoms can differ in neutron count; this is the number that accounts for that mixture.
 
@@ -93,7 +93,7 @@ The **mole (mol)** is the amount of substance containing exactly $6.02214076\tim
 $$1\,\text{mol} = N_A = 6.022\times10^{23}\ \text{entities}$$
 
 :::info
-**Two definitions, and why you will meet both.** Until 20 May 2019, the mole was defined as *the amount of substance containing as many entities as there are atoms in exactly 12 g of* $\ce{^{12}C}$ — an experimental quantity, so $N_A$ had a measured value with an uncertainty, and older tables give it to eight or nine digits (6.0221415, 6.02214129, and so on) that shift slightly between editions. Since 2019 the SI has run the definition the other way: $N_A$ is **fixed by definition** at exactly $6.02214076\times10^{23}$ mol$^{-1}$, and the mole is defined from it. Carbon-12 is no longer part of the definition.
+**Two definitions, and why you will meet both.** Until 20 May 2019, the mole was defined as *the amount of substance containing as many entities as there are atoms in exactly 12 g of* $\ce{^{12}C}$ — an experimental quantity, so $N_A$ had a measured value with an uncertainty, and older tables give it to eight or nine digits (6.0221415, 6.02214129, and so on) that shift slightly between editions. Since 2019 the SI has run the definition the other way: $N_A$ is **fixed by definition** at exactly $6.02214076\times10^{23}\ \text{mol}^{-1}$, and the mole is defined from it. Carbon-12 is no longer part of the definition.
 
 Nothing you calculate changes. The two definitions agree to well beyond the four significant figures this course uses, and $6.022\times10^{23}$ remains correct under both. What changed is the direction of the definition — from "measure this, then report $N_A$" to "$N_A$ is this number, exactly." Textbooks printed before 2019, including many still in use, give the carbon-12 wording.
 :::

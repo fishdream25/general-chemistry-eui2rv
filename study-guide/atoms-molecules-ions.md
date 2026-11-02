@@ -169,7 +169,7 @@ Note that you were *given* the neutron count and had to add, whereas the uranium
 
 :::: tabs
 ::: tab Problem
-An atom of chlorine (Z = 17) gains one electron to become $\ce{Cl^-}$. How many protons and electrons does the ion have? Is it still chlorine?
+An atom of chlorine ($Z = 17$) gains one electron to become $\ce{Cl^-}$. How many protons and electrons does the ion have? Is it still chlorine?
 :::
 ::: tab Solution
 Gaining or losing electrons never touches the nucleus, so the proton count is unchanged: **17 protons**. It has one more electron than the neutral atom's 17, so it has **18 electrons**.
@@ -196,7 +196,7 @@ Why does the columns-behave-alike pattern exist? Chapter 7 gives the real answer
 
 :::: tabs
 ::: tab Problem
-Locate calcium (Z = 20) on the periodic table. What period and group is it in, what family does it belong to, and is it a metal or a nonmetal? Name one element that should behave similarly.
+Locate calcium ($Z = 20$) on the periodic table. What period and group is it in, what family does it belong to, and is it a metal or a nonmetal? Name one element that should behave similarly.
 :::
 ::: tab Solution
 Counting up to element 20 on Figure 2.6 puts calcium in the **fourth period**, **Group 2A**.

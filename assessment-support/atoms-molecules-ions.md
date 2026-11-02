@@ -313,14 +313,14 @@ A student can name a binary or polyatomic-ion-containing ionic compound, correct
 - Constraint: student must use the Roman numeral to determine the correct subscripts.
 - Contexts: any transition-metal compound.
 - Formats: workout.
-- Worked instantiation: "Write the formula for copper(II) chloride." → $\ce{CuCl2}$ (Cu²⁺ balances two Cl⁻).
+- Worked instantiation: "Write the formula for copper(II) chloride." → $\ce{CuCl2}$ ($\ce{Cu2+}$ balances two $\ce{Cl-}$).
 
 **3. Conceptual — why some metals need Roman numerals**
 - Variables & ranges: qualitative, contrasting Group 1A/2A metals with transition metals.
 - Constraint: must reference fixed vs. variable charge.
 - Contexts: sodium vs. iron.
 - Formats: short-answer.
-- Worked instantiation: "Why doesn't sodium chloride need a Roman numeral, but iron chloride does?" → Sodium (Group 1A) always forms Na⁺, a single fixed charge; iron can form Fe²⁺ or Fe³⁺, so the Roman numeral is needed to specify which.
+- Worked instantiation: "Why doesn't sodium chloride need a Roman numeral, but iron chloride does?" → Sodium (Group 1A) always forms $\ce{Na+}$, a single fixed charge; iron can form $\ce{Fe2+}$ or $\ce{Fe3+}$, so the Roman numeral is needed to specify which.
 
 **4. Error analysis**
 - Variables & ranges: a student adds a Roman numeral to a fixed-charge metal (e.g., "sodium(I) chloride").
@@ -334,7 +334,7 @@ A student can name a binary or polyatomic-ion-containing ionic compound, correct
 | Purpose | Cognitive level | How to design the task |
 |---|---|---|
 | Homework | Apply | 4–6 naming/formula-writing problems, mixed fixed- and variable-charge metals. |
-| Group discussion | Understand | Discuss which transition metals are commonly fixed-charge exceptions (e.g., Zn²⁺, Ag⁺). |
+| Group discussion | Understand | Discuss which transition metals are commonly fixed-charge exceptions (e.g., $\ce{Zn2+}$, $\ce{Ag+}$). |
 | Quiz | Apply | One naming or formula-writing item. |
 | Exam | Analyze | Combine with Objective 2.2b (determine the formula, then name it). |
 | Project/activity | Apply | Students name 5 ionic compounds found on household product labels. |

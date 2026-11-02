@@ -9,7 +9,7 @@ theme: paper
 
 <!-- slide template=title -->
 # Acids and Bases
-## The chemistry of H⁺
+## The chemistry of $\ce{H+}$
 **General Chemistry, Chapter 15**
 
 <!-- slide 2col -->
@@ -43,7 +43,7 @@ graph TD
   B --> E["pH calculations:<br/>strong, weak, polyprotic, salts"]
   C --> E
 }}
-**Visual description:** conjugate pairs and Kw establish vocabulary; strong/weak classification and structure-property trends build toward pH calculations, while Lewis theory branches off as a generalization of Brønsted theory.
+**Visual description:** conjugate pairs and $K_w$ establish vocabulary; strong/weak classification and structure-property trends build toward pH calculations, while Lewis theory branches off as a generalization of Brønsted theory.
 
 <!-- slide template=section -->
 # 1. General Concepts
@@ -51,18 +51,18 @@ graph TD
 <!-- slide -->
 ## Conjugate acid-base pairs
 - Brønsted acid = proton donor; base = proton acceptor
-- Acid loses H⁺ → conjugate base. Base gains H⁺ → conjugate acid
+- Acid loses $\ce{H+}$ → conjugate base. Base gains $\ce{H+}$ → conjugate acid
 - Every Brønsted acid–base reaction has exactly TWO conjugate pairs
 
 <!-- slide step -->
 ## Worked example — identify the pairs
-CH₃COOH + H₂O ⇌ CH₃COO⁻ + H₃O⁺
-- CH₃COOH (acid) / CH₃COO⁻ (its conjugate base){{attrs[.fragment]}}
-- H₂O (base) / H₃O⁺ (its conjugate acid){{attrs[.fragment]}}
+$\ce{CH3COOH + H2O <=> CH3COO- + H3O+}$
+- $\ce{CH3COOH}$ (acid) / $\ce{CH3COO-}$ (its conjugate base){{attrs[.fragment]}}
+- $\ce{H2O}$ (base) / $\ce{H3O+}$ (its conjugate acid){{attrs[.fragment]}}
 
 <!-- slide -->
 ## Diprotic acids: stepwise ionization
-H₂CO₃ + H₂O ⇌ H₃O⁺ + HCO₃⁻ (K_a1), then HCO₃⁻ + H₂O ⇌ H₃O⁺ + CO₃²⁻ (K_a2)
+$\ce{H2CO3 + H2O <=> H3O+ + HCO3-}$ ($K_{a1}$), then $\ce{HCO3- + H2O <=> H3O+ + CO3^2-}$ ($K_{a2}$)
 - Each step has its OWN equilibrium constant
 
 <!-- slide -->
@@ -75,15 +75,15 @@ $$K_w=[H^+][OH^-]=1.0\times10^{-14}\ (25°C)$$
 $$pH=-\log[H^+] \quad pOH=-\log[OH^-] \quad pH+pOH=14\ (25°C)$$
 
 <!-- slide step -->
-## Worked example — pH from [OH⁻]
-[OH⁻] = 2.5×10⁻³ M
+## Worked example — pH from $[\ce{OH-}]$
+$[\ce{OH-}] = 2.5\times10^{-3}$ M
 - $[H^+]=K_w/[OH^-]=4.0\times10^{-12}$ M{{attrs[.fragment]}}
 - **pH = 11.40, pOH = 2.60**{{attrs[.fragment]}}
 
 <!-- slide -->
 ## Strong vs. weak — memorize the short list
 :::warning
-Strong acids: HClO₄, HI, HBr, HCl, H₂SO₄, HNO₃. Everything else common (HF, HNO₂, CH₃COOH, HCN...) is weak. Weak bases are mainly amines (NH₃ and relatives).
+Strong acids: $\ce{HClO4}$, $\ce{HI}$, $\ce{HBr}$, $\ce{HCl}$, $\ce{H2SO4}$, $\ce{HNO3}$. Everything else common ($\ce{HF}$, $\ce{HNO2}$, $\ce{CH3COOH}$, $\ce{HCN}$...) is weak. Weak bases are mainly amines ($\ce{NH3}$ and relatives).
 :::
 
 <!-- slide main-side -->
@@ -104,9 +104,9 @@ They are independent — 0.001 M HCl is a dilute strong acid; 15 M acetic acid i
 <!-- @side -->
 Read a row across: **stronger acid → weaker conjugate base**.
 
-The two purple rows are water's own two conjugate pairs (H₃O⁺/H₂O and H₂O/OH⁻).
+The two purple rows are water's own two conjugate pairs ($\ce{H3O+}/\ce{H2O}$ and $\ce{H2O}/\ce{OH-}$).
 
-No acid stronger than H₃O⁺ and no base stronger than OH⁻ survives in water — the **leveling effect**.
+No acid stronger than $\ce{H3O+}$ and no base stronger than $\ce{OH-}$ survives in water — the **leveling effect**.
 
 <!-- slide template=section -->
 # 2. Structure and Property Correlation
@@ -118,8 +118,8 @@ HF ≪ HCl < HBr < HI
 
 <!-- slide -->
 ## Oxoacids: two distinct trends
-- Same oxidation number, different central atom → more electronegative atom = stronger acid (HClO₃ > HBrO₃)
-- Same central atom, more oxygens → stronger acid (HClO₄ > HClO₃ > HClO₂ > HClO)
+- Same oxidation number, different central atom → more electronegative atom = stronger acid ($\ce{HClO3} > \ce{HBrO3}$)
+- Same central atom, more oxygens → stronger acid ($\ce{HClO4} > \ce{HClO3} > \ce{HClO2} > \ce{HClO}$)
 
 <!-- slide -->
 ## Oxoacid strength vs. oxygen count
@@ -132,20 +132,20 @@ HF ≪ HCl < HBr < HI
 | Strong | Strong | Neutral |
 | Weak | Strong | Basic |
 | Strong | Weak | Acidic |
-| Weak | Weak | Compare Ka, Kb |
+| Weak | Weak | Compare $K_a$, $K_b$ |
 
 <!-- slide step -->
 ## Worked example — classify three salts
-NaBr, NaF, NH₄Cl
-- NaBr: strong + strong → **neutral**{{attrs[.fragment]}}
+$\ce{NaBr}$, $\ce{NaF}$, $\ce{NH4Cl}$
+- $\ce{NaBr}$: strong + strong → **neutral**{{attrs[.fragment]}}
 - NaF: weak acid (HF) + strong base → **basic**{{attrs[.fragment]}}
-- NH₄Cl: strong acid + weak base (NH₃) → **acidic**{{attrs[.fragment]}}
+- $\ce{NH4Cl}$: strong acid + weak base ($\ce{NH3}$) → **acidic**{{attrs[.fragment]}}
 
 <!-- slide -->
 ## Acidic, basic, and amphoteric oxides
-- Basic oxide + water → hydroxide: Na₂O + H₂O → 2NaOH
-- Acidic oxide + water → acid: SO₃ + H₂O → H₂SO₄
-- Amphoteric (e.g. Al₂O₃): reacts as acid OR base depending on partner
+- Basic oxide + water → hydroxide: $\ce{Na2O + H2O -> 2NaOH}$
+- Acidic oxide + water → acid: $\ce{SO3 + H2O -> H2SO4}$
+- Amphoteric (e.g. $\ce{Al2O3}$): reacts as acid OR base depending on partner
 
 <!-- slide template=section -->
 # 3. Lewis Acids and Bases
@@ -154,7 +154,7 @@ NaBr, NaF, NH₄Cl
 ## Beyond proton transfer
 - **Lewis base** = electron-pair donor
 - **Lewis acid** = electron-pair acceptor
-- Generalizes Brønsted theory — no H⁺ transfer required
+- Generalizes Brønsted theory — no $\ce{H+}$ transfer required
 
 <!-- slide main-side -->
 ## One electron pair, moving
@@ -169,17 +169,17 @@ None of these three reactions moves a proton, so Brønsted has nothing to say ab
 
 <!-- slide -->
 ## How the two definitions nest
-- Every Brønsted base **is** a Lewis base — accepting H⁺ *is* donating a lone pair
-- Not every Lewis acid is a Brønsted acid — BF₃ has no proton to give
-- **Brønsted acidity is the special case where the acceptor is H⁺**
+- Every Brønsted base **is** a Lewis base — accepting $\ce{H+}$ *is* donating a lone pair
+- Not every Lewis acid is a Brønsted acid — $\ce{BF3}$ has no proton to give
+- **Brønsted acidity is the special case where the electron-pair acceptor is $\ce{H+}$**
 
-Spotting a Lewis acid: incomplete octet (BF₃, AlCl₃) · metal cation (Al³⁺, Fe³⁺) · polar multiple bond (CO₂, SO₃)
+Spotting a Lewis acid: incomplete octet ($\ce{BF3}$, $\ce{AlCl3}$) · metal cation ($\ce{Al3+}$, $\ce{Fe3+}$) · polar multiple bond ($\ce{CO2}$, $\ce{SO3}$)
 
 <!-- slide step -->
 ## Worked example — Lewis acid/base
-(a) CO₂ + OH⁻ → HCO₃⁻. (b) AlCl₃ + Cl⁻ → AlCl₄⁻
-- (a) OH⁻ = Lewis base; CO₂ = **Lewis acid**{{attrs[.fragment]}}
-- (b) Cl⁻ = Lewis base; AlCl₃ = **Lewis acid**{{attrs[.fragment]}}
+(a) $\ce{CO2 + OH- -> HCO3-}$. (b) $\ce{AlCl3 + Cl- -> AlCl4-}$
+- (a) $\ce{OH-}$ = Lewis base; $\ce{CO2}$ = **Lewis acid**{{attrs[.fragment]}}
+- (b) $\ce{Cl-}$ = Lewis base; $\ce{AlCl3}$ = **Lewis acid**{{attrs[.fragment]}}
 - Neither reaction transfers a proton{{attrs[.fragment]}}
 
 <!-- slide template=section -->
@@ -191,29 +191,29 @@ Spotting a Lewis acid: incomplete octet (BF₃, AlCl₃) · metal cation (Al³�
 
 <!-- slide -->
 ## Strong acids/bases: no ICE table needed
-- [H⁺] or [OH⁻] = initial concentration directly (complete ionization; for monoprotic acids and bases with one OH⁻)
+- $[\ce{H+}]$ or $[\ce{OH-}]$ = initial concentration directly (complete ionization; for monoprotic acids and bases with one $\ce{OH-}$)
 :::warning
-For a base like B(OH)₂, [OH⁻] is DOUBLE the initial concentration.
+For a base like $\ce{B(OH)2}$, $[\ce{OH-}]$ is DOUBLE the initial concentration.
 :::
 
 <!-- slide step -->
 ## Worked example — weak acid (HF)
-0.50 M HF, K_a = 7.1×10⁻⁴
+0.50 M HF, $K_a = 7.1\times10^{-4}$
 - $x^2/(0.50-x)=7.1\times10^{-4} \Rightarrow x=0.0185$ M{{attrs[.fragment]}}
 - **pH = 1.73, percent ionization = 3.7%**{{attrs[.fragment]}}
 
 <!-- slide step -->
-## Worked example — weak base (NH₃)
-0.40 M NH₃, K_b = 1.8×10⁻⁵
+## Worked example — weak base ($\ce{NH3}$)
+0.40 M $\ce{NH3}$, $K_b = 1.8\times10^{-5}$
 - $x^2/(0.40-x)=1.8\times10^{-5} \Rightarrow [OH^-]=0.00268$ M{{attrs[.fragment]}}
 - **pOH = 2.57 → pH = 11.43**{{attrs[.fragment]}}
 
 <!-- slide step -->
 ## Worked example — diprotic acid
-0.10 M H₂C₂O₄, K_a1=6.5×10⁻², K_a2=6.1×10⁻⁵
-- Step 1: [H⁺]=[HC₂O₄⁻]=0.054 M{{attrs[.fragment]}}
-- Step 2 barely changes this: y ≈ 6.1×10⁻⁵ M{{attrs[.fragment]}}
-- **[H⁺] set almost entirely by step 1**{{attrs[.fragment]}}
+0.10 M $\ce{H2C2O4}$, $K_{a1} = 6.5\times10^{-2}$, $K_{a2} = 6.1\times10^{-5}$
+- Step 1: $[\ce{H+}] = [\ce{HC2O4-}] = 0.054$ M{{attrs[.fragment]}}
+- Step 2 barely changes this: y ≈ $6.1\times10^{-5}$ M{{attrs[.fragment]}}
+- **$[\ce{H+}]$ set almost entirely by step 1**{{attrs[.fragment]}}
 
 <!-- slide -->
 ## A natural pH indicator
@@ -221,7 +221,7 @@ For a base like B(OH)₂, [OH⁻] is DOUBLE the initial concentration.
 
 <!-- slide step -->
 ## Worked example — salt hydrolysis
-0.24 M CH₃COONa, K_b(CH₃COO⁻) = 5.6×10⁻¹⁰
+0.24 M $\ce{CH3COONa}$, $K_b(\ce{CH3COO-}) = 5.6\times10^{-10}$
 - $x^2/(0.24-x)=5.6\times10^{-10} \Rightarrow [OH^-]=1.16\times10^{-5}$ M{{attrs[.fragment]}}
 - **pOH = 4.94 → pH = 9.1**{{attrs[.fragment]}}
 

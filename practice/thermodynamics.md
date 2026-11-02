@@ -10,7 +10,7 @@ title: Chapter 17 Practice: Entropy, Free Energy, and Equilibrium
 
 :::: tabs
 ::: tab Q 1
-{{sp[info] Objective 17.1a}} · *short answer* Predict the sign of ΔS for $\ce{Br2(l) -> Br2(g)}$, and explain why.
+{{sp[info] Objective 17.1a}} · *short answer* Predict the sign of $\Delta S$ for $\ce{Br2(l) -> Br2(g)}$, and explain why.
 :::
 ::: tab Answer
 **Positive.** Going from liquid to gas dramatically increases the number of accessible microstates (gas molecules can occupy far more positions and momenta than a liquid's), so entropy increases.
@@ -37,16 +37,16 @@ B. $\ce{C3H8(g) + 5O2(g) -> 3CO2(g) + 4H2O(g)}$\
 C. $\ce{2C2H2(g) + 5O2(g) -> 4CO2(g) + 2H2O(g)}$
 :::
 ::: tab Answer
-**A.** Reactant and product gas moles are equal (3 mol gas on each side, Δn = 0), so $\Delta S^\circ$ should be small in magnitude. (B has Δn = +1: 6 mol gas → 7 mol gas, a modest positive ΔS°. C has Δn = −1: 7 mol gas → 6 mol gas, a modest negative ΔS°. Both B and C involve a net change in gas moles, so their $|\Delta S^\circ|$ should exceed A's.)
+**A.** Reactant and product gas moles are equal (3 mol gas on each side, $\Delta n = 0$), so $\Delta S^\circ$ should be small in magnitude. (B has $\Delta n$ = +1: 6 mol gas → 7 mol gas, a modest positive $\Delta S^\circ$. C has $\Delta n = -1$: 7 mol gas → 6 mol gas, a modest negative $\Delta S^\circ$. Both B and C involve a net change in gas moles, so their $|\Delta S^\circ|$ should exceed A's.)
 :::
 ::::
 
 :::: tabs
 ::: tab Q 4
-{{sp[info] Objective 17.1b}} · *workout* Calculate $\Delta S^\circ_{rxn}$ for $\ce{S(s) + O2(g) -> SO2(g)}$. ($S^\circ$: $\ce{S(s)}=31.88$, $\ce{O2(g)}=205.0$, $\ce{SO2(g)}=248.5$ J/K·mol)
+{{sp[info] Objective 17.1b}} · *workout* Calculate $\Delta S^\circ_\text{rxn}$ for $\ce{S(s) + O2(g) -> SO2(g)}$. ($S^\circ$: $\ce{S(s)}=31.88$, $\ce{O2(g)}=205.0$, $\ce{SO2(g)}=248.5$ J/K·mol)
 :::
 ::: tab Answer
-$$\Delta S^\circ_{rxn}=248.5-(31.88+205.0)=248.5-236.88=11.6\ \text{J/K·mol}$$
+$$\Delta S^\circ_\text{rxn}=248.5-(31.88+205.0)=248.5-236.88=11.6\ \text{J/K·mol}$$
 
 Small in magnitude, as expected — there is no net change in gas moles (1 mol gas in, 1 mol gas out).
 :::
@@ -54,10 +54,10 @@ Small in magnitude, as expected — there is no net change in gas moles (1 mol g
 
 :::: tabs
 ::: tab Q 5
-{{sp[info] Objective 17.1b}} · *workout* Calculate $\Delta S^\circ_{rxn}$ for $\ce{N2(g) + 3H2(g) -> 2NH3(g)}$. ($S^\circ$: $\ce{N2}=191.6$, $\ce{H2}=130.7$, $\ce{NH3}=192.8$ J/K·mol)
+{{sp[info] Objective 17.1b}} · *workout* Calculate $\Delta S^\circ_\text{rxn}$ for $\ce{N2(g) + 3H2(g) -> 2NH3(g)}$. ($S^\circ$: $\ce{N2}=191.6$, $\ce{H2}=130.7$, $\ce{NH3}=192.8$ J/K·mol)
 :::
 ::: tab Answer
-$$\Delta S^\circ_{rxn}=2(192.8)-[191.6+3(130.7)]=385.6-(191.6+392.1)=-198.1\ \text{J/K·mol}$$
+$$\Delta S^\circ_\text{rxn}=2(192.8)-[191.6+3(130.7)]=385.6-(191.6+392.1)=-198.1\ \text{J/K·mol}$$
 
 Strongly negative, as expected: 4 mol of gas become 2 mol of gas.
 :::
@@ -65,14 +65,14 @@ Strongly negative, as expected: 4 mol of gas become 2 mol of gas.
 
 :::: tabs
 ::: tab Q 6
-{{sp[info] Objective 17.1b}} · *workout* Calculate $\Delta S^\circ_{rxn}$ for $\ce{N2(g) + 3H2(g) -> 2NH3(g)}$. ($S^\circ$: $\ce{N2} = 191.6$, $\ce{H2} = 130.7$, $\ce{NH3} = 192.8$ J K⁻¹ mol⁻¹.) Predict the sign first.
+{{sp[info] Objective 17.1b}} · *workout* Calculate $\Delta S^\circ_\text{rxn}$ for $\ce{N2(g) + 3H2(g) -> 2NH3(g)}$. ($S^\circ$: $\ce{N2} = 191.6$, $\ce{H2} = 130.7$, $\ce{NH3} = 192.8\ \text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$.) Predict the sign first.
 :::
 ::: tab Answer
 **Predict first.** Four moles of gas become two, so gas particles are lost and $\Delta S^\circ$ should be **negative and substantial**.
 
 **Now compute**, remembering that the coefficients multiply each $S^\circ$:
 
-$$\Delta S^\circ_{rxn} = 2S^\circ(\ce{NH3}) - [S^\circ(\ce{N2}) + 3S^\circ(\ce{H2})]$$
+$$\Delta S^\circ_\text{rxn} = 2S^\circ(\ce{NH3}) - [S^\circ(\ce{N2}) + 3S^\circ(\ce{H2})]$$
 $$= 2(192.8) - [191.6 + 3(130.7)] = 385.6 - [191.6 + 392.1] = 385.6 - 583.7 = -198.1\ \text{J K}^{-1}\text{mol}^{-1}$$
 
 **Negative and substantial, as predicted** ✓
@@ -154,7 +154,7 @@ Diamond's carbon atoms are locked into a rigid, highly ordered crystal lattice w
 
 **Enthalpy: measured from an arbitrary baseline.** No experiment returns an absolute enthalpy; only *changes* are measurable. Chemistry therefore adopts a convention — elements in their standard states are assigned $\Delta H^\circ_f = 0$ — and every tabulated value is a difference relative to that choice. A compound more stable than its elements gets a negative value, a less stable one a positive value, and the elements themselves get zero **by definition, not by measurement**.
 
-**The consequence for calculations:** in $\Delta H^\circ_{rxn}$ the element terms drop out; in $\Delta S^\circ_{rxn}$ they must be included. Forgetting this is one of the two commonest errors in the chapter — the other being the J/kJ mismatch between $S^\circ$ and $\Delta H^\circ$.
+**The consequence for calculations:** in $\Delta H^\circ_\text{rxn}$ the element terms drop out; in $\Delta S^\circ_\text{rxn}$ they must be included. Forgetting this is one of the two commonest errors in the chapter — the other being the J/kJ mismatch between $S^\circ$ and $\Delta H^\circ$.
 :::
 ::::
 
@@ -176,7 +176,7 @@ The third law states that a **perfect crystalline** substance has $S = 0$ at 0 K
 
 **Why (A), (B) and (D) all give zero:** each is specified as a perfect crystal, so each has a single arrangement at 0 K regardless of what it is made of. The third law makes no distinction between elements and compounds, or between metals and ionic solids — only between ordered and disordered.
 
-**A near-miss worth knowing.** Carbon monoxide *does* crystallize, yet retains about 4.6 J K⁻¹ mol⁻¹ at 0 K, because its two ends are nearly indistinguishable and molecules freeze in pointing either way. It is a *crystal* but not a *perfect* one — which is why the third law's wording is so careful.
+**A near-miss worth knowing.** Carbon monoxide *does* crystallize, yet retains about 4.6 $\text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$ at 0 K, because its two ends are nearly indistinguishable and molecules freeze in pointing either way. It is a *crystal* but not a *perfect* one — which is why the third law's wording is so careful.
 :::
 ::::
 
@@ -187,7 +187,7 @@ The third law states that a **perfect crystalline** substance has $S = 0$ at 0 K
 A. The reaction is only spontaneous at low temperature.\
 B. The reaction is spontaneous only at high temperature.\
 C. The reaction is spontaneous at all temperatures.\
-D. ΔG° becomes larger (more positive) as temperature increases.
+D. $\Delta G^\circ$ becomes larger (more positive) as temperature increases.
 :::
 ::: tab Answer
 **C.** $\Delta G^\circ=\Delta H^\circ-T\Delta S^\circ=(-20.2\ \text{kJ/mol})-T(0.0043\ \text{kJ/K·mol})$. Since $\Delta H^\circ<0$ and $\Delta S^\circ>0$, every term is negative for any positive $T$ — $\Delta G^\circ<0$ at all temperatures. (D is also false: increasing $T$ makes $\Delta G^\circ$ *more* negative here, not larger.)
@@ -205,10 +205,10 @@ D. ΔG° becomes larger (more positive) as temperature increases.
 
 :::: tabs
 ::: tab Q 15
-{{sp[info] Objective 17.3a}} · *workout* For the vaporization of ethanol, $\Delta H^\circ_\text{vap} = 38.6$ kJ/mol and $\Delta S^\circ_\text{vap} = 110.0$ J K⁻¹ mol⁻¹. (a) Calculate $\Delta G$ at 298 K and at 373 K. (b) Interpret each. \(c) What is ethanol's normal boiling point according to these numbers?
+{{sp[info] Objective 17.3a}} · *workout* For the vaporization of ethanol, $\Delta H^\circ_\text{vap} = 38.6$ kJ/mol and $\Delta S^\circ_\text{vap} = 110.0\ \text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$. (a) Calculate $\Delta G$ at 298 K and at 373 K. (b) Interpret each. \(c) What is ethanol's normal boiling point according to these numbers?
 :::
 ::: tab Answer
-**(a)** Convert $\Delta S^\circ$ to kJ K⁻¹ mol⁻¹ (0.1100):
+**(a)** Convert $\Delta S^\circ$ to $\text{kJ}\,\text{K}^{-1}\,\text{mol}^{-1}$ (0.1100):
 
 $$T = 298: \quad \Delta G = 38.6 - (298)(0.1100) = 38.6 - 32.8 = +5.8\ \text{kJ/mol}$$
 $$T = 373: \quad \Delta G = 38.6 - (373)(0.1100) = 38.6 - 41.0 = -2.4\ \text{kJ/mol}$$
@@ -238,12 +238,12 @@ $$\Delta G^\circ_3=201.3+(-33.4)=167.9\ \text{kJ/mol}$$
 
 :::: tabs
 ::: tab Q 17
-{{sp[info] Objective 17.3b}} · *workout* Calculate $\Delta G^\circ_{rxn}$ at 298 K for $\ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(l)}$. ($\Delta G^\circ_f$ in kJ/mol: $\ce{CH4} = -50.5$, $\ce{O2} = 0$, $\ce{CO2} = -394.4$, $\ce{H2O(l)} = -237.1$.)
+{{sp[info] Objective 17.3b}} · *workout* Calculate $\Delta G^\circ_\text{rxn}$ at 298 K for $\ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(l)}$. ($\Delta G^\circ_f$ in kJ/mol: $\ce{CH4} = -50.5$, $\ce{O2} = 0$, $\ce{CO2} = -394.4$, $\ce{H2O(l)} = -237.1$.)
 :::
 ::: tab Answer
 Products minus reactants, each multiplied by its coefficient:
 
-$$\Delta G^\circ_{rxn} = [\Delta G^\circ_f(\ce{CO2}) + 2\Delta G^\circ_f(\ce{H2O})] - [\Delta G^\circ_f(\ce{CH4}) + 2\Delta G^\circ_f(\ce{O2})]$$
+$$\Delta G^\circ_\text{rxn} = [\Delta G^\circ_f(\ce{CO2}) + 2\Delta G^\circ_f(\ce{H2O})] - [\Delta G^\circ_f(\ce{CH4}) + 2\Delta G^\circ_f(\ce{O2})]$$
 
 $$= [-394.4 + 2(-237.1)] - [-50.5 + 2(0)]$$
 $$= [-394.4 - 474.2] - [-50.5] = -868.6 + 50.5 = -818.1\ \text{kJ/mol}$$
@@ -258,14 +258,14 @@ $$= [-394.4 - 474.2] - [-50.5] = -868.6 + 50.5 = -818.1\ \text{kJ/mol}$$
 
 :::: tabs
 ::: tab Q 18
-{{sp[info] Objective 17.3b}} · *workout* Calculate $\Delta G^\circ_{rxn}$ at 298 K for $\ce{2NO(g) + O2(g) -> 2NO2(g)}$ two different ways: (a) from $\Delta G^\circ_f$ values ($\ce{NO} = 86.6$, $\ce{O2} = 0$, $\ce{NO2} = 51.3$ kJ/mol); (b) from $\Delta H^\circ = -114.1$ kJ/mol and $\Delta S^\circ = -146.5$ J K⁻¹ mol⁻¹. Do they agree?
+{{sp[info] Objective 17.3b}} · *workout* Calculate $\Delta G^\circ_\text{rxn}$ at 298 K for $\ce{2NO(g) + O2(g) -> 2NO2(g)}$ two different ways: (a) from $\Delta G^\circ_f$ values ($\ce{NO} = 86.6$, $\ce{O2} = 0$, $\ce{NO2} = 51.3$ kJ/mol); (b) from $\Delta H^\circ = -114.1$ kJ/mol and $\Delta S^\circ = -146.5\ \text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$. Do they agree?
 :::
 ::: tab Answer
 **(a) From free energies of formation:**
 
-$$\Delta G^\circ_{rxn} = 2(51.3) - [2(86.6) + 0] = 102.6 - 173.2 = -70.6\ \text{kJ/mol}$$
+$$\Delta G^\circ_\text{rxn} = 2(51.3) - [2(86.6) + 0] = 102.6 - 173.2 = -70.6\ \text{kJ/mol}$$
 
-**(b) From enthalpy and entropy**, converting $\Delta S^\circ$ to kJ K⁻¹ mol⁻¹:
+**(b) From enthalpy and entropy**, converting $\Delta S^\circ$ to $\text{kJ}\,\text{K}^{-1}\,\text{mol}^{-1}$:
 
 $$\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ = -114.1 - (298)(-0.1465) = -114.1 + 43.7 = -70.4\ \text{kJ/mol}$$
 
@@ -281,31 +281,31 @@ $$\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ = -114.1 - (298)(-0.1465) = 
 
 :::: tabs
 ::: tab Q 19
-{{sp[info] Objective 17.3c}} · *workout* Benzene melts at 5.5 °C with $\Delta H^\circ_{fus}=10.9$ kJ/mol. Calculate its molar entropy of fusion.
+{{sp[info] Objective 17.3c}} · *workout* Benzene melts at 5.5 °C with $\Delta H^\circ_\text{fus}=10.9$ kJ/mol. Calculate its molar entropy of fusion.
 :::
 ::: tab Answer
 At the melting point, solid and liquid are in equilibrium ($\Delta G=0$), so $\Delta S=\Delta H/T$:
 
 $$T=5.5+273.15=278.65\ \text{K}$$
 
-$$\Delta S^\circ_{fus}=\frac{10{,}900\ \text{J/mol}}{278.65\ \text{K}}=39.1\ \text{J/K·mol}$$
+$$\Delta S^\circ_\text{fus}=\frac{10{,}900\ \text{J/mol}}{278.65\ \text{K}}=39.1\ \text{J/K·mol}$$
 :::
 ::::
 
 :::: tabs
 ::: tab Q 20
-{{sp[info] Objective 17.3c}} · *workout* Using $\Delta H^\circ_{vap}=28.8$ kJ/mol and $\Delta S^\circ_{vap}=92.4$ J/K·mol for $\ce{CH2Cl2}$, calculate its normal boiling point.
+{{sp[info] Objective 17.3c}} · *workout* Using $\Delta H^\circ_\text{vap}=28.8$ kJ/mol and $\Delta S^\circ_\text{vap}=92.4$ J/K·mol for $\ce{CH2Cl2}$, calculate its normal boiling point.
 :::
 ::: tab Answer
-At the boiling point, liquid and gas are in equilibrium: $\Delta G^\circ_{vap}=\Delta H^\circ_{vap}-T\Delta S^\circ_{vap}=0$
+At the boiling point, liquid and gas are in equilibrium: $\Delta G^\circ_\text{vap}=\Delta H^\circ_\text{vap}-T\Delta S^\circ_\text{vap}=0$
 
-$$T=\frac{\Delta H^\circ_{vap}}{\Delta S^\circ_{vap}}=\frac{28{,}800\ \text{J/mol}}{92.4\ \text{J/K·mol}}=312\ \text{K}=39\ °\text{C}$$
+$$T=\frac{\Delta H^\circ_\text{vap}}{\Delta S^\circ_\text{vap}}=\frac{28{,}800\ \text{J/mol}}{92.4\ \text{J/K·mol}}=312\ \text{K}=39\ °\text{C}$$
 :::
 ::::
 
 :::: tabs
 ::: tab Q 21
-{{sp[info] Objective 17.3c}} · *workout* Mercury(II) oxide decomposes: $\ce{2HgO(s) -> 2Hg(l) + O2(g)}$, with $\Delta H^\circ = +181.6$ kJ/mol and $\Delta S^\circ = +216.6$ J K⁻¹ mol⁻¹. (a) Is it spontaneous at 298 K? (b) Above what temperature does it become spontaneous? \(c) Which quadrant of Figure 17.1 is this?
+{{sp[info] Objective 17.3c}} · *workout* Mercury(II) oxide decomposes: $\ce{2HgO(s) -> 2Hg(l) + O2(g)}$, with $\Delta H^\circ = +181.6$ kJ/mol and $\Delta S^\circ = +216.6\ \text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$. (a) Is it spontaneous at 298 K? (b) Above what temperature does it become spontaneous? \(c) Which quadrant of Figure 17.1 is this?
 :::
 ::: tab Answer
 **(a)** Compute $\Delta G^\circ$ at 298 K, converting $\Delta S^\circ$ to kJ:
@@ -322,7 +322,7 @@ Above about 565 °C the decomposition becomes spontaneous.
 
 **\(c) Top-right: $\Delta H > 0$, $\Delta S > 0$** — the two terms disagree, and heating settles the argument in favor of entropy.
 
-**Why the entropy term is large here:** a solid produces a liquid *and* a gas. Generating a mole of gas from a condensed phase is worth roughly 150–200 J K⁻¹ mol⁻¹ on its own, which is most of the 216.6.
+**Why the entropy term is large here:** a solid produces a liquid *and* a gas. Generating a mole of gas from a condensed phase is worth roughly 150–200 $\text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$ on its own, which is most of the 216.6.
 
 **A historical footnote.** This is the reaction Priestley and Lavoisier used to isolate oxygen in the 1770s, by heating mercury(II) oxide in a sealed vessel. The calculation above says why heat was required — and roughly how much.
 :::
@@ -330,10 +330,10 @@ Above about 565 °C the decomposition becomes spontaneous.
 
 :::: tabs
 ::: tab Q 22
-{{sp[info] Objective 17.3d}} · *workout* For $\ce{PCl5(g) <=> PCl3(g) + Cl2(g)}$ at 25 °C, $\Delta G^\circ_f$: $\ce{Cl2}=0$, $\ce{PCl3}=-286$, $\ce{PCl5}=-325$ kJ/mol. Calculate $\Delta G^\circ_{rxn}$ and $K_p$.
+{{sp[info] Objective 17.3d}} · *workout* For $\ce{PCl5(g) <=> PCl3(g) + Cl2(g)}$ at 25 °C, $\Delta G^\circ_f$: $\ce{Cl2}=0$, $\ce{PCl3}=-286$, $\ce{PCl5}=-325$ kJ/mol. Calculate $\Delta G^\circ_\text{rxn}$ and $K_p$.
 :::
 ::: tab Answer
-$$\Delta G^\circ_{rxn}=(-286+0)-(-325)=39\ \text{kJ/mol}$$
+$$\Delta G^\circ_\text{rxn}=(-286+0)-(-325)=39\ \text{kJ/mol}$$
 
 Since $\Delta G^\circ>0$, predict $K_p<1$ before calculating:
 
@@ -400,7 +400,7 @@ Since $\Delta G>0$, the reaction proceeds in **reverse** (toward $\ce{PCl5}$) �
 
 :::: tabs
 ::: tab Q 26
-{{sp[info] Objective 17.3e}} · *short answer* A calculated ΔG for a reaction under specific conditions is +18 kJ/mol. Which direction does the reaction proceed, and is this the same as saying $Q<K$ or $Q>K$?
+{{sp[info] Objective 17.3e}} · *short answer* A calculated $\Delta G$ for a reaction under specific conditions is +18 kJ/mol. Which direction does the reaction proceed, and is this the same as saying $Q<K$ or $Q>K$?
 :::
 ::: tab Answer
 **Reverse** (right to left) — a positive $\Delta G$ under the given conditions means the forward reaction is nonspontaneous and the reverse direction is spontaneous. This corresponds to $Q>K$ (too much product relative to equilibrium), exactly mirroring Chapter 14's Q-vs-K rule.

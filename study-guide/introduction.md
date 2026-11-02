@@ -83,7 +83,7 @@ Classify each as a pure substance or a mixture, and if a mixture, homogeneous or
 ::: tab Solution
 (a) Diamond is a pure substance (element: carbon).
 (b) Milk is a homogeneous mixture — it looks uniform to the eye, though it is technically a colloid.
-\(c) Air is a homogeneous mixture of gases (mostly N₂ and O₂).
+\(c) Air is a homogeneous mixture of gases (mostly $\ce{N2}$ and $\ce{O2}$).
 (d) Unshaken salad dressing is a heterogeneous mixture — the oil and vinegar layers are visibly distinct.
 :::
 ::::
@@ -123,12 +123,12 @@ How do you tell a chemical change actually happened? Look for **evidence that a 
 
 :::: tabs
 ::: tab Problem
-For each item, state whether the change described is physical or chemical, or whether the property described is extensive or intensive: (a) a 50 g and a 5 g sample of copper have different masses; (b) a silver spoon left in air slowly tarnishes; \(c) both samples of copper have the same density, 8.96 g/cm³.
+For each item, state whether the change described is physical or chemical, or whether the property described is extensive or intensive: (a) a 50 g and a 5 g sample of copper have different masses; (b) a silver spoon left in air slowly tarnishes; \(c) both samples of copper have the same density, 8.96 $\text{g}/\text{cm}^{3}$.
 :::
 ::: tab Solution
 (a) Mass is an **extensive** property — it scales with the amount of copper present; this is not a change, just a comparison of two samples.
 (b) Tarnishing is a **chemical change** — silver reacts with sulfur compounds in air to form a new substance, silver sulfide, on the surface.
-\(c) Density is an **intensive** property — it stays the same (8.96 g/cm³) regardless of how much copper you have, which is exactly why it can help identify a substance.
+\(c) Density is an **intensive** property — it stays the same (8.96 $\text{g}/\text{cm}^{3}$) regardless of how much copper you have, which is exactly why it can help identify a substance.
 :::
 ::::
 
@@ -153,7 +153,7 @@ The lesson: "a gas appeared" is weak evidence on its own. "A substance with new 
 **Learning Objectives**
 - {{sp[info] Objective 1.2a}} Identify the SI base units and common prefixes.
 - {{sp[info] Objective 1.2a}} Distinguish mass from weight.
-- {{sp[info] Objective 1.2b}} Convert between volume units (mL, cm³, L, dm³, m³).
+- {{sp[info] Objective 1.2b}} Convert between volume units (mL, $\text{cm}^{3}$, L, $\text{dm}^{3}$, $\text{m}^{3}$).
 - {{sp[info] Objective 1.2b}} Calculate density from mass and volume.
 - {{sp[info] Objective 1.2c}} Convert temperature between Celsius, Fahrenheit, and Kelvin.
 :::
@@ -215,10 +215,10 @@ Sanity check both: millimeters are *much* smaller than kilometers, so the number
 **Mass is not weight.** *Mass* is the quantity of matter in an object and does not change with location. *Weight* is the force gravity exerts on that mass, so it does change — the same sample weighs about one sixth as much on the Moon while its mass is identical. Chemistry deals in mass, and a balance measures mass, which is why a measured mass means the same thing anywhere. The two words are used interchangeably in everyday speech; in this course they are not interchangeable.
 :::
 
-**Volume** has a derived SI unit (m³), but chemists most often use liters and milliliters:
+**Volume** has a derived SI unit ($\text{m}^{3}$), but chemists most often use liters and milliliters:
 $$1\,\text{mL} = 1\,\text{cm}^3 = 1\times10^{-6}\,\text{m}^3 \qquad 1\,\text{L} = 1\,\text{dm}^3 = 1000\,\text{mL} = 1\times10^{-3}\,\text{m}^3$$
 
-==The one worth committing to memory is 1 mL = 1 cm³, because it lets you move between a volume read off a graduated cylinder and a volume calculated from dimensions without any conversion at all.==
+==The one worth committing to memory is 1 mL = 1 $\text{cm}^{3}$, because it lets you move between a volume read off a graduated cylinder and a volume calculated from dimensions without any conversion at all.==
 
 Mass is measured on a balance: Figure 1.4 shows the electronic kind you will actually use, and Figure 1.5 the older mechanical kind that makes the underlying idea visible. **Density** links mass and volume into a single intensive property:
 $$d=\frac{m}{V} \qquad 1\,\text{g/cm}^3 = 1\,\text{g/mL} = 1000\,\text{kg/m}^3$$
@@ -233,17 +233,17 @@ Because $d=m/V$ has three quantities, any one can be found from the other two. A
 
 :::: tabs
 ::: tab Problem
-The mass of a piece of gold is 45.3 g and its volume is 2.35 cm³. What is its density?
+The mass of a piece of gold is 45.3 g and its volume is 2.35 $\text{cm}^{3}$. What is its density?
 :::
 ::: tab Solution
 $$d=\frac{m}{V}=\frac{45.3\,\text{g}}{2.35\,\text{cm}^3}=19.3\ \text{g/cm}^3$$
-This matches the accepted density of gold (19.3 g/cm³) — a useful check that the calculation is reasonable.
+This matches the accepted density of gold (19.3 $\text{g}/\text{cm}^{3}$) — a useful check that the calculation is reasonable.
 :::
 ::::
 
 :::: tabs
 ::: tab Problem
-The same relationship, solved the other two ways. (a) Ethanol has a density of 0.789 g/mL. What is the mass of 25.0 mL of ethanol? (b) A piece of aluminum (density 2.70 g/cm³) has a mass of 54.0 g. What is its volume?
+The same relationship, solved the other two ways. (a) Ethanol has a density of 0.789 g/mL. What is the mass of 25.0 mL of ethanol? (b) A piece of aluminum (density 2.70 $\text{g}/\text{cm}^{3}$) has a mass of 54.0 g. What is its volume?
 :::
 ::: tab Solution
 **(a) Solve for mass.** Rearranging $d=m/V$ gives $m=d\times V$:
@@ -253,7 +253,7 @@ The mL cancel, leaving grams — a check that the rearrangement was right.
 **(b) Solve for volume.** Rearranging gives $V=m/d$:
 $$V=\frac{54.0\,\text{g}}{2.70\,\text{g/cm}^3}=20.0\ \text{cm}^3$$
 
-Note how the units confirm each answer independently of the arithmetic: dividing g by g/cm³ leaves cm³. If your rearrangement had been upside-down, the units would have come out as 1/cm³ and told you so immediately.
+Note how the units confirm each answer independently of the arithmetic: dividing g by $\text{g}/\text{cm}^{3}$ leaves $\text{cm}^{3}$. If your rearrangement had been upside-down, the units would have come out as 1/$\text{cm}^{3}$ and told you so immediately.
 :::
 ::::
 
@@ -345,7 +345,7 @@ Note the last step: $12\times10^3$ is a correct value but not proper scientific 
 How many significant figures are in each: (a) 358 m; (b) 35.1 g; \(c) 0.932 kg; (d) 0.0068 m; (e) $9.320\times10^{23}$ molecules; (f) 3400 mL?
 :::
 ::: tab Solution
-(a) 3 (all nonzero digits). (b) 3. \(c) 3 (the leading zero doesn't count). (d) 2 (leading zeros don't count; 6 and 8 do). (e) 4 (all digits before ×10ⁿ count, including the trailing zero after a decimal). (f) Ambiguous — 2, 3, or 4, depending on which trailing zeros were measured; write $3.400\times10^3$ mL to state 4 sig figs unambiguously, or $3.4\times10^3$ mL for 2.
+(a) 3 (all nonzero digits). (b) 3. \(c) 3 (the leading zero doesn't count). (d) 2 (leading zeros don't count; 6 and 8 do). (e) 4 (all digits before ×$10^{n}$ count, including the trailing zero after a decimal). (f) Ambiguous — 2, 3, or 4, depending on which trailing zeros were measured; write $3.400\times10^3$ mL to state 4 sig figs unambiguously, or $3.4\times10^3$ mL for 2.
 :::
 ::::
 
@@ -382,7 +382,7 @@ Both terms now carry 2 decimal places in their $N$ values, so the answer keeps 2
 A two-step calculation, where the rule changes partway through. A student measures a rectangular metal sheet as 12.5 cm by 3.2 cm, then cuts off a strip 0.75 cm wide along the long side, narrowing the 3.2 cm width. Report (a) the original area and (b) the remaining width after the cut, each to the correct precision.
 :::
 ::: tab Solution
-**(a) Area — multiplication, so significant figures.** $12.5\times3.2=40.0$ cm². The value 3.2 has only 2 significant figures, so the answer must too: **40. cm²**, better written $4.0\times10^1$ cm² to make the 2 sig figs unambiguous.
+**(a) Area — multiplication, so significant figures.** $12.5\times3.2=40.0\ \text{cm}^{2}$. The value 3.2 has only 2 significant figures, so the answer must too: **40. $\text{cm}^{2}$**, better written $4.0\times10^1\ \text{cm}^{2}$ to make the 2 sig figs unambiguous.
 
 **(b) Remaining width — subtraction, so decimal places.** $3.2-0.75=2.45$ cm. The value 3.2 has only 1 decimal place, so round to **2.5 cm**.
 

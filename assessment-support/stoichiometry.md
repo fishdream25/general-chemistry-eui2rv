@@ -159,12 +159,12 @@ A student can calculate molecular or formula mass (choosing the correct term for
 
 ### Target understanding
 
-A student can convert combustion-analysis mass data (CO₂ and H₂O trapped) into moles of each element, find any remaining element by mass difference, and reduce to the empirical formula.
+A student can convert combustion-analysis mass data ($\ce{CO2}$ and $\ce{H2O}$ trapped) into moles of each element, find any remaining element by mass difference, and reduce to the empirical formula.
 
 ### Question guides
 
 **1. Forward — full combustion-analysis problem**
-- Variables & ranges: a sample mass and its CO₂/H₂O combustion products.
+- Variables & ranges: a sample mass and its $\ce{CO2}/\ce{H2O}$ combustion products.
 - Constraint: student must find O (or any third element) by mass difference, not by assuming a formula.
 - Contexts: hydrocarbons and oxygen-containing organic compounds.
 - Formats: workout.
@@ -260,7 +260,7 @@ A student can use a balanced equation's mole ratio to convert a given mass (or m
 - Constraint: full four-step chain (mass→moles→mole ratio→mass) shown explicitly.
 - Contexts: combustion or synthesis reactions.
 - Formats: workout.
-- Worked instantiation: see the study guide's worked example (glucose combustion → CO₂).
+- Worked instantiation: see the study guide's worked example (glucose combustion → $\ce{CO2}$).
 
 **2. Inverse — mass of product to mass of reactant**
 - Variables & ranges: a given product mass, reactant mass requested.
@@ -274,7 +274,7 @@ A student can use a balanced equation's mole ratio to convert a given mass (or m
 - Constraint: must reference that a balanced equation's coefficients are mole (particle) ratios, not mass ratios.
 - Contexts: any balanced equation with unequal reactant/product molar masses.
 - Formats: short-answer.
-- Worked instantiation: see the study guide's Mg/O₂/MgO caution (2 g Mg + 1 g O₂ does NOT give 2 g MgO).
+- Worked instantiation: see the study guide's Mg/$\ce{O2}/\ce{MgO}$ caution (2 g Mg + 1 g $\ce{O2}$ does NOT give 2 g $\ce{MgO}$).
 
 **4. Error analysis**
 - Variables & ranges: a student tries to convert directly from grams of reactant to grams of product without passing through moles.
@@ -306,28 +306,28 @@ A student can determine which reactant limits a reaction using either the "least
 - Constraint: student picks and correctly applies one of the two methods.
 - Contexts: any two-reactant reaction.
 - Formats: workout.
-- Worked instantiation: see the study guide's worked example (NH₃ + CO₂ → urea).
+- Worked instantiation: see the study guide's worked example ($\ce{NH3 + CO2}$ → urea).
 
 **2. Inverse — calculate excess reagent remaining**
 - Variables & ranges: the same reaction, after the limiting reagent is identified.
 - Constraint: student must subtract the amount of excess reagent *consumed* from the amount *available*.
 - Contexts: any two-reactant reaction.
 - Formats: workout.
-- Worked instantiation: see the study guide's worked example (CO₂ remaining, 319 g).
+- Worked instantiation: see the study guide's worked example ($\ce{CO2}$ remaining, 319 g).
 
 **3. Conceptual — why "more reactant mass" doesn't mean "not limiting"**
 - Variables & ranges: qualitative, contrasting mass with moles÷coefficient.
 - Constraint: must reference that the *required ratio*, not raw mass, determines which reactant runs out.
 - Contexts: any reaction where the reactant with greater mass is nonetheless limiting.
 - Formats: short-answer.
-- Worked instantiation: "In the urea reaction, 637.2 g NH₃ is used vs. 1142 g CO₂ — yet NH₃ is limiting even though its mass is less. Could a reactant with the *larger* mass ever be limiting instead? Explain." → Yes — mass alone doesn't determine limiting status; it depends on moles available relative to the stoichiometric ratio required, which can go either way regardless of which reactant has more raw mass.
+- Worked instantiation: "In the urea reaction, 637.2 g $\ce{NH3}$ is used vs. 1142 g $\ce{CO2}$ — yet $\ce{NH3}$ is limiting even though its mass is less. Could a reactant with the *larger* mass ever be limiting instead? Explain." → Yes — mass alone doesn't determine limiting status; it depends on moles available relative to the stoichiometric ratio required, which can go either way regardless of which reactant has more raw mass.
 
 **4. Error analysis**
 - Variables & ranges: a student picks the limiting reagent by comparing raw reactant masses instead of mol÷coefficient values.
 - Constraint: correction must show the proper method.
 - Contexts: any two-reactant reaction.
 - Formats: short-answer.
-- Worked instantiation: "A student says CO₂ must be limiting since less of it (1142 g) was... " (continued: actually NH₃ has less mass but isn't necessarily limiting on mass alone) → Limiting reagent is never determined by comparing raw masses directly; it requires converting to moles and dividing by each reactant's coefficient.
+- Worked instantiation: "A student says $\ce{CO2}$ must be limiting since less of it (1142 g) was... " (continued: actually $\ce{NH3}$ has less mass but isn't necessarily limiting on mass alone) → Limiting reagent is never determined by comparing raw masses directly; it requires converting to moles and dividing by each reactant's coefficient.
 
 ### Design guidance by purpose
 
@@ -373,7 +373,7 @@ A student can calculate theoretical yield from the limiting reagent and can calc
 - Constraint: correction must identify the limiting reagent first.
 - Contexts: any two-reactant reaction.
 - Formats: short-answer.
-- Worked instantiation: "A student calculates theoretical yield starting from the CO₂ mass, in a reaction where NH₃ is limiting. What's wrong?" → Theoretical yield must be calculated from the *limiting* reagent (NH₃ here); starting from the excess reagent (CO₂) overstates the theoretical yield, since not all of the CO₂ can actually react.
+- Worked instantiation: "A student calculates theoretical yield starting from the $\ce{CO2}$ mass, in a reaction where $\ce{NH3}$ is limiting. What's wrong?" → Theoretical yield must be calculated from the *limiting* reagent ($\ce{NH3}$ here); starting from the excess reagent ($\ce{CO2}$) overstates the theoretical yield, since not all of the $\ce{CO2}$ can actually react.
 
 ### Design guidance by purpose
 

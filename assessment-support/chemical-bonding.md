@@ -35,9 +35,9 @@ A student can draw a correct Lewis dot symbol for a representative element or mo
 **2. Inverse — rank lattice energies**
 - Variables & ranges: 2–3 ionic compounds with different ion charges and/or sizes.
 - Constraint: must justify using both charge and size reasoning.
-- Contexts: compounds like NaCl, MgO, MgCl₂.
+- Contexts: compounds like $\ce{NaCl}$, $\ce{MgO}$, $\ce{MgCl2}$.
 - Formats: short-answer.
-- Worked instantiation: "Rank NaCl, MgO, and MgCl₂ by expected lattice energy." → MgO (two doubly-charged ions) > MgCl₂ (one doubly-charged ion) > NaCl (two singly-charged ions).
+- Worked instantiation: "Rank $\ce{NaCl}$, $\ce{MgO}$, and $\ce{MgCl2}$ by expected lattice energy." → $\ce{MgO}$ (two doubly-charged ions) > $\ce{MgCl2}$ (one doubly-charged ion) > $\ce{NaCl}$ (two singly-charged ions).
 
 **3. Conceptual — why lattice energy correlates with melting point**
 - Variables & ranges: qualitative.
@@ -122,7 +122,7 @@ A student can draw a correct Lewis structure for a molecule or polyatomic ion, f
 - Constraint: correct total valence-electron count as step 1.
 - Contexts: any molecule.
 - Formats: workout.
-- Worked instantiation: see the practice sheet (NH₃, F₂, N₂, CH₄).
+- Worked instantiation: see the practice sheet ($\ce{NH3}$, $\ce{F2}$, $\ce{N2}$, $\ce{CH4}$).
 
 **2. Inverse — draw a polyatomic ion's Lewis structure**
 - Variables & ranges: a common polyatomic cation or anion.
@@ -168,7 +168,7 @@ A student can calculate the formal charge on any atom in a Lewis structure, and 
 - Constraint: correct application of the formal-charge formula.
 - Contexts: any Lewis structure.
 - Formats: workout.
-- Worked instantiation: see the practice sheet (formal charge on carbon for zero formal charge, and formal charge on O in N₂O).
+- Worked instantiation: see the practice sheet (formal charge on carbon for zero formal charge, and formal charge on O in $\ce{N2O}$).
 
 **2. Inverse — determine bonding pattern from a target formal charge**
 - Variables & ranges: a target formal charge and an atom's valence-electron count.
@@ -301,15 +301,15 @@ A student can calculate a gas-phase reaction's enthalpy from tabulated average b
 
 ### Question guides
 
-**1. Forward — calculate ΔH from bond enthalpies**
+**1. Forward — calculate $\Delta H$ from bond enthalpies**
 - Variables & ranges: a simple gas-phase reaction with known bond enthalpies for all bonds broken and formed.
 - Constraint: correct sign convention (broken minus formed).
 - Contexts: any gas-phase reaction with a clear bond-breaking/forming inventory.
 - Formats: workout.
-- Worked instantiation: "Estimate ΔH for $\ce{H2(g) + Cl2(g) -> 2HCl(g)}$, given bond enthalpies H-H = 436 kJ/mol, Cl-Cl = 242 kJ/mol, H-Cl = 431 kJ/mol." → $\Delta H=(436+242)-(2\times431)=678-862=-184$ kJ/mol.
+- Worked instantiation: "Estimate $\Delta H$ for $\ce{H2(g) + Cl2(g) -> 2HCl(g)}$, given bond enthalpies H-H = 436 kJ/mol, Cl-Cl = 242 kJ/mol, H-Cl = 431 kJ/mol." → $\Delta H=(436+242)-(2\times431)=678-862=-184$ kJ/mol.
 
 **2. Inverse — infer an unknown bond enthalpy**
-- Variables & ranges: a reaction's overall ΔH and all bond enthalpies except one.
+- Variables & ranges: a reaction's overall $\Delta H$ and all bond enthalpies except one.
 - Constraint: correct algebraic isolation of the unknown.
 - Contexts: any reaction with one unknown bond enthalpy.
 - Formats: workout.
@@ -333,11 +333,11 @@ A student can calculate a gas-phase reaction's enthalpy from tabulated average b
 
 | Purpose | Cognitive level | How to design the task |
 |---|---|---|
-| Homework | Apply | 3–4 bond-enthalpy reaction-ΔH problems. |
-| Group discussion | Understand | Discuss why bond-enthalpy-estimated ΔH values are usually less accurate than standard-formation-enthalpy-based ones (Ch. 6). |
-| Quiz | Apply | One bond-enthalpy ΔH calculation. |
+| Homework | Apply | 3–4 bond-enthalpy reaction-$\Delta H$ problems. |
+| Group discussion | Understand | Discuss why bond-enthalpy-estimated $\Delta H$ values are usually less accurate than standard-formation-enthalpy-based ones (Ch. 6). |
+| Quiz | Apply | One bond-enthalpy $\Delta H$ calculation. |
 | Exam | Analyze | Combine with Chapter 6's Hess's Law/formation-enthalpy method as a cross-check on the same reaction. |
-| Project/activity | Apply | Students estimate ΔH for a real combustion reaction using tabulated bond enthalpies and compare to a formation-enthalpy-based value. |
+| Project/activity | Apply | Students estimate $\Delta H$ for a real combustion reaction using tabulated bond enthalpies and compare to a formation-enthalpy-based value. |
 
 ## Rubric Themes for Chapter 9
 

@@ -60,7 +60,7 @@ An atom is written $\ce{^{A}_{Z}X}$, where $Z$ (atomic number) counts protons an
 | Elements | conserved | **transmuted** |
 | Conserved quantities | atoms of each element | **mass number $A$ and charge $Z$** |
 | Isotopes | behave nearly identically | behave **completely** differently |
-| Energy scale | ~10² kJ/mol | ~10⁸ kJ/mol |
+| Energy scale | ~$10^{2}$ kJ/mol | ~$10^{8}$ kJ/mol |
 | Affected by T, P, catalysts | yes | **no** |
 
 The last row is worth pausing on: nothing you learned in Chapters 13–18 about speeding a reaction up applies here. A radioactive nucleus decays at its own rate regardless of temperature, pressure, chemical state, or what it is bonded to.
@@ -236,7 +236,7 @@ A nucleus does not choose its decay mode at random. ==It decays in whichever way
 - **Below the band** (too many protons) → **positron emission** or **electron capture**. Both convert a proton into a neutron, moving $Z$ down and $N$ up. Electron capture tends to dominate for heavier nuclides, positron emission for lighter ones.
 - **Beyond the band entirely** ($Z > 83$) → **$\alpha$ decay**, which is the only mode that reduces $A$ appreciably. Shedding two protons and two neutrons at a time is how a nucleus that is simply too large gets smaller.
 
-{{sp[warning] β⁻ and β⁺ are opposites, not the same thing}} $\beta^-$ emits an **electron** and *increases* $Z$; $\beta^+$ emits a **positron** and *decreases* $Z$. They move a nuclide in opposite directions on Figure 19.2(a), and they are used by nuclides on opposite sides of the band. Reading "beta decay" without the sign is ambiguous.
+{{sp[warning] $\beta^-$ and $\beta^+$ are opposites, not the same thing}} $\beta^-$ emits an **electron** and *increases* $Z$; $\beta^+$ emits a **positron** and *decreases* $Z$. They move a nuclide in opposite directions on Figure 19.2(a), and they are used by nuclides on opposite sides of the band. Reading "beta decay" without the sign is ambiguous.
 
 :::: tabs
 ::: tab Problem
@@ -480,7 +480,7 @@ Fission releases more energy *per event*, but fusion releases about **four times
 
 A neutron is uncharged, so it can drift into a $\ce{^{235}U}$ nucleus with no barrier at all — fission needs no activation energy in any meaningful sense.
 
-Fusion requires two **positively charged** nuclei to touch, which means overcoming Coulomb repulsion that rises steeply as they approach. The kinetic energy needed corresponds to temperatures above $10^{8}$ K, at which no material container can exist. The Sun solves this with gravity; laboratories must use magnetic confinement or inertial compression, and holding the plasma stable long enough to break even is the unsolved engineering problem.
+Fusion requires two **positively charged** nuclei to touch, which means overcoming Coulomb repulsion that rises steeply as they approach. In a laboratory, the kinetic energy needed corresponds to temperatures of around $10^{8}$ K, at which no material container can exist. The Sun, at about $1.5\times10^{7}$ K, makes up for the lower temperature with gravity; laboratories must use magnetic confinement or inertial compression, and holding the plasma stable long enough to break even is the unsolved engineering problem.
 
 **The irony worth stating.** Fusion is cleaner (helium rather than long-lived fission products), the fuel is essentially unlimited (deuterium from seawater), and the yield per kilogram is higher. **It is harder only because the reactants repel each other** — a Chapter 8 fact about charge, standing between us and the better technology.
 :::
@@ -515,14 +515,14 @@ The Sun fuses hydrogen to helium; a supernova is needed to make elements heavier
 ::: tab Solution
 **\(c) first, since it answers the others.** Figure 19.7 plots binding energy per nucleon against mass number, and it **peaks at iron-56**. Any process that moves nuclei *toward* that peak releases energy:
 
-- **Light nuclei climb by fusing.** Hydrogen at ~1 MeV/nucleon combining toward helium at ~7 MeV/nucleon releases the difference.
+- **Light nuclei climb by fusing.** Hydrogen (as deuterium, H-2) at ~1 MeV/nucleon combining toward helium at ~7 MeV/nucleon releases the difference.
 - **Heavy nuclei climb by splitting.** Uranium at ~7.6 MeV/nucleon splitting into fragments near ~8.5 MeV/nucleon releases the difference.
 
 **They are not opposite processes in the relevant sense — they are the same process, approaching the same maximum from opposite sides.**
 
 **(a) Fusion stops at iron because iron *is* the peak.** Fusing iron into anything heavier moves *down* the curve, which **absorbs** energy rather than releasing it. A star fusing iron would be cooling itself, so it can no longer support against gravity — which is precisely what triggers the collapse of a supernova.
 
-**(b) The iron in your hemoglobin was made in a supernova.** Elements up to iron were forged in ordinary stellar fusion; everything heavier — and much of the iron itself — required the extreme conditions of a dying massive star, and was scattered into space by the explosion.
+**(b) The iron in your hemoglobin was made in a supernova.** Elements up to iron were forged in ordinary stellar fusion; everything heavier was built by neutron capture, in aging stars and in explosive events such as supernovae, and much of the iron itself came from dying massive stars and was scattered into space by the explosion.
 
 **A fitting place to end the course.** The curve in Figure 19.7 explains a nuclear reactor, a hydrogen bomb, why the Sun shines, why it will eventually stop, and the origin of every atom heavier than helium in your body. **One graph, and a single principle: systems move toward greater stability** — which is the same statement, in a different currency, as $\Delta G < 0$ from Chapter 17.
 :::
@@ -547,7 +547,7 @@ The right order of magnitude for a fission event, and the basis of every reactor
 
 **The one-line rule this establishes.** **Energy is released whenever a process moves nuclei toward iron-56 — fusion from below, fission from above — and absorbed whenever it moves away.** "Fission releases energy" and "fusion releases energy" are both incomplete statements; the complete one is about direction along a single curve.
 
-**Reading the curve as a map.** Everything to the left of iron is fuel for fusion; everything to the right is fuel for fission; iron itself is ash for both. There is no process that extracts energy from iron-56 — which is why it accumulates at the center of dying stars, and why it is the most abundant heavy element in the Earth's core.
+**Reading the curve as a map.** Everything to the left of iron is fuel for fusion; the heavy nuclei far to the right are fuel for fission; iron itself is ash for both. There is no process that extracts energy from iron-56 — which is why it accumulates at the center of dying stars, and why it is the most abundant heavy element in the Earth's core.
 :::
 ::::
 
@@ -557,7 +557,7 @@ The right order of magnitude for a fission event, and the basis of every reactor
 
 ## Synthesis
 
-==This closing chapter shows that nuclear stability — quantified by binding energy per nucleon — is the single idea explaining nuclear equation balancing, radioactive decay, and both fission and fusion.== Decay happens because unstable nuclei move toward more stable configurations; fission and fusion both release energy for the identical reason (climbing toward the Fe-56 peak from opposite directions). And the chapter's kinetics — half-life, radiocarbon dating — needed no new mathematics at all: Chapter 13's first-order rate law, unchanged, closes out the course exactly as it began nine chapters ago.
+==This closing chapter shows that nuclear stability — quantified by binding energy per nucleon — is the single idea explaining radioactive decay and both fission and fusion (while nuclear equations are balanced by conserving mass number and atomic number).== Decay happens because unstable nuclei move toward more stable configurations; fission and fusion both release energy for the identical reason (climbing toward the Fe-56 peak from opposite directions). And the chapter's kinetics — half-life, radiocarbon dating — needed no new mathematics at all: Chapter 13's first-order rate law, unchanged, closes out the course exactly as it began six chapters ago.
 
 ## Asset and License Record for This Chapter
 

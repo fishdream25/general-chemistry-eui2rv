@@ -136,7 +136,7 @@ The salt bridge holds an inert electrolyte — $\ce{KNO3}$ or $\ce{KCl}$, chosen
 {{sp[info] Objective 18.3a}} · *short answer* Given these standard reduction potentials, identify the strongest oxidizing agent and the strongest reducing agent: $\ce{Al^3+ +3e- -> Al}$ (−1.66 V), $\ce{Fe^3+ +e- -> Fe^2+}$ (0.77 V), $\ce{Sn^4+ +2e- -> Sn^2+}$ (0.14 V), $\ce{AgBr+e- -> Ag+Br-}$ (0.07 V).
 :::
 ::: tab Answer
-**$\ce{Fe^3+}$ is the strongest oxidizing agent** (highest E°, most easily reduced). **Al is the strongest reducing agent** (Al³⁺/Al has the lowest E°, so metallic Al gives up electrons most readily).
+**$\ce{Fe^3+}$ is the strongest oxidizing agent** (highest $E^\circ$, most easily reduced). **Al is the strongest reducing agent** ($\ce{Al3+}$/Al has the lowest $E^\circ$, so metallic Al gives up electrons most readily).
 :::
 ::::
 
@@ -153,17 +153,17 @@ The salt bridge holds an inert electrolyte — $\ce{KNO3}$ or $\ce{KCl}$, chosen
 **(B).** No half-cell potential can be measured on its own — a voltmeter has two leads and always reports a *difference*. Assigning one half-cell a value of zero fixes an origin, and every other potential is then quoted relative to it.
 
 **Why the others fail:**
-- **(A)** Hydrogen absolutely does have a tendency to gain or lose electrons; H⁺ oxidizes zinc (gaining electrons), and H₂ is oxidized by fluorine (losing electrons). The 0 V says nothing about its reactivity.
+- **(A)** Hydrogen absolutely does have a tendency to gain or lose electrons; $\ce{H+}$ oxidizes zinc (gaining electrons), and $\ce{H2}$ is oxidized by fluorine (losing electrons). The 0 V says nothing about its reactivity.
 - **\(C)** It was not measured. It was *defined*, exactly as sea level is defined as zero altitude.
 - **(D)** Irrelevant. Hydrogen was chosen for practical reasons — it is easy to prepare reproducibly and involves a simple, fast half-reaction.
 
-**The test that settles it.** Add 2.00 V to every entry in the table. All the tabulated numbers change; **no cell voltage changes at all**, because the shift cancels in $E^\circ_{cathode} - E^\circ_{anode}$. A quantity whose absolute value can be shifted freely without physical consequence is a convention, not a measurement.
+**The test that settles it.** Add 2.00 V to every entry in the table. All the tabulated numbers change; **no cell voltage changes at all**, because the shift cancels in $E^\circ_\text{cathode} - E^\circ_\text{anode}$. A quantity whose absolute value can be shifted freely without physical consequence is a convention, not a measurement.
 :::
 ::::
 
 :::: tabs
 ::: tab Q 12
-{{sp[info] Objective 18.3a}} · *short answer* Using $E^\circ$ values $\ce{Ag+/Ag} = +0.80$ V, $\ce{Cu^2+/Cu} = +0.34$ V, $\ce{Fe^2+/Fe} = -0.44$ V and $\ce{Mg^2+/Mg} = -2.37$ V, rank the four metals as reducing agents and the four cations as oxidizing agents. Then predict which metals dissolve in a nonoxidizing acid such as 1 M HCl (i.e., reduce H+ to H2).
+{{sp[info] Objective 18.3a}} · *short answer* Using $E^\circ$ values $\ce{Ag+/Ag} = +0.80$ V, $\ce{Cu^2+/Cu} = +0.34$ V, $\ce{Fe^2+/Fe} = -0.44$ V and $\ce{Mg^2+/Mg} = -2.37$ V, rank the four metals as reducing agents and the four cations as oxidizing agents. Then predict which metals dissolve in a nonoxidizing acid such as 1 M $\ce{HCl}$ (i.e., reduce $\ce{H+}$ to $\ce{H2}$).
 :::
 ::: tab Answer
 The table is written as **reductions**, so it must be read in two directions.
@@ -189,35 +189,35 @@ $$\ce{Mg} > \ce{Fe} > \ce{Cu} > \ce{Ag}$$
 
 :::: tabs
 ::: tab Q 13
-{{sp[info] Objective 18.3b}} · *workout* Given $\ce{Al^3+ +3e- -> Al}$ ($E^\circ=-1.66$ V) and $\ce{Ag+ +e- -> Ag}$ ($E^\circ=0.80$ V), find the overall reaction, cell diagram, and $E^\circ_{cell}$.
+{{sp[info] Objective 18.3b}} · *workout* Given $\ce{Al^3+ +3e- -> Al}$ ($E^\circ=-1.66$ V) and $\ce{Ag+ +e- -> Ag}$ ($E^\circ=0.80$ V), find the overall reaction, cell diagram, and $E^\circ_\text{cell}$.
 :::
 ::: tab Answer
-Ag has the higher E° → cathode. Al → anode (reversed). Equalizing electrons (×3 for Ag):
+Ag has the higher $E^\circ$ → cathode. Al → anode (reversed). Equalizing electrons (×3 for Ag):
 
 $$\ce{Al(s) + 3Ag+(aq) -> Al^3+(aq) + 3Ag(s)}$$
 
 $$\ce{Al(s)|Al^3+}(1\text{ M})||\ce{Ag+}(1\text{ M})|\ce{Ag(s)}$$
 
-$$E^\circ_{cell}=0.80-(-1.66)=2.46\ \text{V}$$
+$$E^\circ_\text{cell}=0.80-(-1.66)=2.46\ \text{V}$$
 :::
 ::::
 
 :::: tabs
 ::: tab Q 14
-{{sp[info] Objective 18.3b}} · *workout* Given $\ce{Fe^3+ +e- -> Fe^2+}$ ($E^\circ=0.77$ V) and $\ce{Sn^4+ +2e- -> Sn^2+}$ ($E^\circ=0.14$ V), find the overall reaction and $E^\circ_{cell}$.
+{{sp[info] Objective 18.3b}} · *workout* Given $\ce{Fe^3+ +e- -> Fe^2+}$ ($E^\circ=0.77$ V) and $\ce{Sn^4+ +2e- -> Sn^2+}$ ($E^\circ=0.14$ V), find the overall reaction and $E^\circ_\text{cell}$.
 :::
 ::: tab Answer
-Fe³⁺/Fe²⁺ has the higher E° → cathode. Sn⁴⁺/Sn²⁺ → anode (reversed: $\ce{Sn^2+ -> Sn^4+ +2e-}$). Equalizing electrons (×2 for Fe):
+$\ce{Fe3+}/\ce{Fe2+}$ has the higher $E^\circ$ → cathode. $\ce{Sn4+}/\ce{Sn2+}$ → anode (reversed: $\ce{Sn^2+ -> Sn^4+ +2e-}$). Equalizing electrons (×2 for Fe):
 
 $$\ce{2Fe^3+(aq) + Sn^2+(aq) -> 2Fe^2+(aq) + Sn^4+(aq)}$$
 
-$$E^\circ_{cell}=0.77-0.14=0.63\ \text{V}$$
+$$E^\circ_\text{cell}=0.77-0.14=0.63\ \text{V}$$
 :::
 ::::
 
 :::: tabs
 ::: tab Q 15
-{{sp[info] Objective 18.3b}} · *workout* Given $\ce{Ni^2+ + 2e- -> Ni}$ ($E^\circ = -0.25$ V) and $\ce{Ag+ + e- -> Ag}$ ($E^\circ = +0.80$ V): identify the anode and cathode, write the balanced overall reaction and the cell diagram, and calculate $E^\circ_{cell}$.
+{{sp[info] Objective 18.3b}} · *workout* Given $\ce{Ni^2+ + 2e- -> Ni}$ ($E^\circ = -0.25$ V) and $\ce{Ag+ + e- -> Ag}$ ($E^\circ = +0.80$ V): identify the anode and cathode, write the balanced overall reaction and the cell diagram, and calculate $E^\circ_\text{cell}$.
 :::
 ::: tab Answer
 **Assign the electrodes.** Silver has the higher $E^\circ$, so silver is the **cathode** (reduced as written) and nickel is the **anode** (its half-reaction reverses to an oxidation).
@@ -234,30 +234,30 @@ $$\ce{Ni(s)|Ni^2+}(1\text{ M})||\ce{Ag+}(1\text{ M})|\ce{Ag(s)}$$
 
 **Cell potential:**
 
-$$E^\circ_{cell} = E^\circ_{cathode} - E^\circ_{anode} = 0.80 - (-0.25) = +1.05\ \text{V}$$
+$$E^\circ_\text{cell} = E^\circ_\text{cathode} - E^\circ_\text{anode} = 0.80 - (-0.25) = +1.05\ \text{V}$$
 
-{{sp[warning] Do not double the silver potential}} The silver half-reaction was multiplied by 2 to balance electrons, but its $E^\circ$ stays +0.80 V. Potential is intensive — energy per unit charge (joules per coulomb), so it does not depend on how many electrons are transferred. Using $2 \times 0.80 = 1.60$ would give $E^\circ_{cell} = 1.85$ V, which is wrong.
+{{sp[warning] Do not double the silver potential}} The silver half-reaction was multiplied by 2 to balance electrons, but its $E^\circ$ stays +0.80 V. Potential is intensive — energy per unit charge (joules per coulomb), so it does not depend on how many electrons are transferred. Using $2 \times 0.80 = 1.60$ would give $E^\circ_\text{cell} = 1.85$ V, which is wrong.
 
-**Sanity check:** $E^\circ_{cell}$ came out positive, as it must whenever the higher-$E^\circ$ half-reaction is correctly assigned as the cathode. A negative result means the electrodes were swapped.
+**Sanity check:** $E^\circ_\text{cell}$ came out positive, as it must whenever the higher-$E^\circ$ half-reaction is correctly assigned as the cathode. A negative result means the electrodes were swapped.
 :::
 ::::
 
 :::: tabs
 ::: tab Q 16
-{{sp[info] Objective 18.4a}} · *workout* For the reaction 2Fe3+ + Sn2+ → 2Fe2+ + Sn4+, built from the half-reactions in Q10 ($E^\circ_{cell}=0.63$ V, $n=2$), calculate $\Delta G^\circ$ and $K$ at 25 °C.
+{{sp[info] Objective 18.4a}} · *workout* For the reaction $\ce{2Fe3+ + Sn2+ -> 2Fe2+ + Sn4+}$, built from the half-reactions in Q10 ($E^\circ_\text{cell}=0.63$ V, $n=2$), calculate $\Delta G^\circ$ and $K$ at 25 °C.
 :::
 ::: tab Answer
 $$\Delta G^\circ=-nFE^\circ=-2(96{,}485)(0.63)=-1.22\times10^5\ \text{J/mol}=-122\ \text{kJ/mol}$$
 
 $$K=e^{-\Delta G^\circ/RT}=e^{121{,}571/(8.314\times298)}=e^{49.1}\approx2.0\times10^{21}$$
 
-A large negative $\Delta G^\circ$ and enormous $K$ — strongly product-favored, consistent with the substantial positive $E^\circ_{cell}$.
+A large negative $\Delta G^\circ$ and enormous $K$ — strongly product-favored, consistent with the substantial positive $E^\circ_\text{cell}$.
 :::
 ::::
 
 :::: tabs
 ::: tab Q 17
-{{sp[info] Objective 18.4a}} · *workout* A cell has $E^\circ_{cell} = +0.46$ V with $n = 2$ at 298 K. Calculate $\Delta G^\circ$ and $K$.
+{{sp[info] Objective 18.4a}} · *workout* A cell has $E^\circ_\text{cell} = +0.46$ V with $n = 2$ at 298 K. Calculate $\Delta G^\circ$ and $K$.
 :::
 ::: tab Answer
 **$\Delta G^\circ$ from $E^\circ$:**
@@ -272,7 +272,7 @@ $$K = e^{-\Delta G^\circ/RT} = e^{88{,}800/2478} = e^{35.8} = 3.6\times10^{15}$$
 
 **All three signs agree**, as they must: $E^\circ > 0$, $\Delta G^\circ < 0$, $K \gg 1$ — a strongly product-favored reaction.
 
-**The leverage worth internalizing.** A cell potential of less than half a volt corresponds to $K \approx 10^{15}$. At 298 K, **each 0.0592 V of $E^\circ_{cell}$ multiplies $K$ by $10^n$ (one factor of ten per electron transferred)**, so with $n = 2$ this 0.46 V is worth about 15.5 factors of ten. A voltage you could measure with a hardware-store multimeter pins down an equilibrium constant no titration could ever reach.
+**The leverage worth internalizing.** A cell potential of less than half a volt corresponds to $K \approx 10^{15}$. At 298 K, **each 0.0592 V of $E^\circ_\text{cell}$ multiplies $K$ by $10^n$ (one factor of ten per electron transferred)**, so with $n = 2$ this 0.46 V is worth about 15.5 factors of ten. A voltage you could measure with a hardware-store multimeter pins down an equilibrium constant no titration could ever reach.
 
 {{sp[warning] n is not optional}} Both formulas contain $n$. Using $n = 1$ here would halve $\Delta G^\circ$ and take the square root of $K$ — an error of eight orders of magnitude from a single dropped integer.
 :::
@@ -280,7 +280,7 @@ $$K = e^{-\Delta G^\circ/RT} = e^{88{,}800/2478} = e^{35.8} = 3.6\times10^{15}$$
 
 :::: tabs
 ::: tab Q 18
-{{sp[info] Objective 18.4a}} · *short answer* A galvanic cell has $E^\circ_{cell} = 0$. State what this implies for $\Delta G^\circ$ and $K$, and explain what such a cell would do if assembled.
+{{sp[info] Objective 18.4a}} · *short answer* A galvanic cell has $E^\circ_\text{cell} = 0$. State what this implies for $\Delta G^\circ$ and $K$, and explain what such a cell would do if assembled.
 :::
 ::: tab Answer
 **From the two relationships**, both terms vanish together:
@@ -303,9 +303,9 @@ $$\Delta G^\circ = -RT\ln K = 0 \quad\Rightarrow\quad \ln K = 0 \quad\Rightarrow
 {{sp[info] Objective 18.4b}} · *workout* For $\ce{Mg(s)|Mg^2+}(0.0514\text{ M})||\ce{Pb^2+}(0.0437\text{ M})|\ce{Pb(s)}$, find $n$, $Q$, and $E$. ($E^\circ$: Mg = −2.37 V, Pb = −0.13 V)
 :::
 ::: tab Answer
-Pb has the higher E° → cathode; Mg → anode. Overall: $\ce{Mg(s) + Pb^2+(aq) -> Mg^2+(aq) + Pb(s)}$, $n=2$.
+Pb has the higher $E^\circ$ → cathode; Mg → anode. Overall: $\ce{Mg(s) + Pb^2+(aq) -> Mg^2+(aq) + Pb(s)}$, $n=2$.
 
-$$E^\circ_{cell}=-0.13-(-2.37)=2.24\ \text{V} \qquad Q=\frac{[\ce{Mg^2+}]}{[\ce{Pb^2+}]}=\frac{0.0514}{0.0437}=1.18$$
+$$E^\circ_\text{cell}=-0.13-(-2.37)=2.24\ \text{V} \qquad Q=\frac{[\ce{Mg^2+}]}{[\ce{Pb^2+}]}=\frac{0.0514}{0.0437}=1.18$$
 
 $$E=2.24-\frac{(8.314)(298)}{2(96{,}485)}\ln(1.18)=2.24-0.002=2.238\ \text{V}$$
 :::
@@ -409,13 +409,13 @@ During normal use, the battery operates as a **galvanic cell**, discharging via 
 
 :::: tabs
 ::: tab Q 26
-{{sp[info] Objective 18.5a}} · *short answer* Compare a galvanic cell and an electrolytic cell on four points: spontaneity, sign of $E^\circ_{cell}$, energy conversion direction, and where oxidation occurs.
+{{sp[info] Objective 18.5a}} · *short answer* Compare a galvanic cell and an electrolytic cell on four points: spontaneity, sign of $E^\circ_\text{cell}$, energy conversion direction, and where oxidation occurs.
 :::
 ::: tab Answer
 | | Galvanic (voltaic) | Electrolytic |
 |---|---|---|
 | **Spontaneity** | spontaneous | nonspontaneous |
-| **$E^\circ_{cell}$** | positive | negative |
+| **$E^\circ_\text{cell}$** | positive | negative |
 | **$\Delta G^\circ$** | negative | positive |
 | **Energy** | chemical → electrical | electrical → chemical |
 | **Oxidation occurs at** | the **anode** | the **anode** |
@@ -425,7 +425,7 @@ During normal use, the battery operates as a **galvanic cell**, discharging via 
 
 (What does flip is the *sign* marked on the electrode. In a galvanic cell the anode is labeled negative; in an electrolytic cell the external supply makes it positive. The chemistry is unchanged; only the electrode's polarity differs, which is why keying your memory to "anode = oxidation" is safer than keying it to a sign.)
 
-**The relationship between the two.** They are the same reaction in opposite directions. Discharging a rechargeable battery is galvanic; charging it is electrolytic, with a power supply forcing the reaction backwards. Electrolyzing water costs at least the energy that burning the hydrogen returns — **electrolysis stores energy, it does not create it.**
+**The relationship between the two.** When the same cell is run both ways, they are the same reaction in opposite directions. Discharging a rechargeable battery is galvanic; charging it is electrolytic, with a power supply forcing the reaction backwards. Electrolyzing water costs at least the energy that burning the hydrogen returns — **electrolysis stores energy, it does not create it.**
 :::
 ::::
 
@@ -441,7 +441,7 @@ $$\text{Cathode (elsewhere): } \ce{O2(g) + 4H+(aq) + 4e- -> 2H2O(l)}$$
 
 Electrons travel **through the metal itself** from anode to cathode; ions travel through the surface water film, which acts as the electrolyte. That is a complete cell — it simply has no wire, because the metal is the wire.
 
-$$E^\circ_{cell} = 1.23 - (-0.44) = +1.67\ \text{V}$$
+$$E^\circ_\text{cell} = 1.23 - (-0.44) = +1.67\ \text{V}$$
 
 **Why the waterline is worst.** The process needs **three** things at once: iron, water (electrolyte), and oxygen.
 

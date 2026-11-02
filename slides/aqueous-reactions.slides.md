@@ -70,9 +70,9 @@ A solution conducts only if it contains **free ions** — neutral molecules cann
 ## Key solubility rules
 - Alkali metal, $\ce{NH4+}$: always soluble
 - $\ce{NO3-}$, $\ce{ClO3-}$, $\ce{HCO3-}$: always soluble
-- $\ce{Cl-/Br-/I-}$: soluble except Ag+, Pb2+, Hg2^2+ salts
-- $\ce{SO4^2-}$: soluble except Ba2+, Sr2+, Pb2+, Hg2^2+ (Ca2+, Ag+ slightly) salts
-- $\ce{CO3^2-}$: insoluble except alkali/$\ce{NH4+}$; $\ce{OH-}$: insoluble except alkali, $\ce{NH4+}$, Ba2+ (Ca2+, Sr2+ moderately)
+- $\ce{Cl-/Br-/I-}$: soluble except $\ce{Ag+}$, $\ce{Pb2+}$, $\ce{Hg2^2+}$ salts
+- $\ce{SO4^2-}$: soluble except $\ce{Ba2+}$, $\ce{Sr2+}$, $\ce{Pb2+}$, $\ce{Hg2^2+}$ ($\ce{Ca2+}$, $\ce{Ag+}$ slightly) salts
+- $\ce{CO3^2-}$: insoluble except alkali/$\ce{NH4+}$; $\ce{OH-}$: insoluble except alkali, $\ce{NH4+}$, $\ce{Ba2+}$ ($\ce{Ca2+}$, $\ce{Sr2+}$ moderately)
 
 <!-- slide -->
 ## Precipitation reaction

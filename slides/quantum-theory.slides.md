@@ -51,7 +51,7 @@ $$u=\lambda\nu \qquad c=\lambda\nu\ (\text{light})$$
 
 <!-- slide step -->
 ## Worked example — frequency and wavelength
-(a) 400 nm light; (b) 5.75×10¹⁴ Hz
+(a) 400 nm light; (b) $5.75\times10^{14}$ Hz
 - $\nu=c/\lambda=7.50\times10^{14}$ Hz{{attrs[.fragment]}}
 - $\lambda=c/\nu=522$ nm{{attrs[.fragment]}}
 
@@ -63,7 +63,7 @@ $$E=h\nu=\frac{hc}{\lambda} \qquad h=6.63\times10^{-34}\,\text{J·s}$$
 ## Worked example — photon energy
 500 nm photon
 - $E=hc/\lambda$ {{attrs[.fragment]}}
-- **= 3.98×10⁻¹⁹ J**{{attrs[.fragment]}}
+- **= $3.98\times10^{-19}$ J**{{attrs[.fragment]}}
 
 <!-- slide -->
 ## The photoelectric effect: what breaks the wave picture
@@ -105,9 +105,9 @@ $$\lambda=\frac{h}{mu} \qquad 2\pi r=n\lambda\ (\text{standing wave condition})$
 
 <!-- slide step -->
 ## Worked example — electron wavelength
-68 m/s, mass 9.11×10⁻³¹ kg
+68 m/s, mass $9.11\times10^{-31}$ kg
 - $\lambda=h/(mu)$ {{attrs[.fragment]}}
-- **= 1.1×10⁻⁵ m**{{attrs[.fragment]}}
+- **= $1.1\times10^{-5}$ m**{{attrs[.fragment]}}
 
 <!-- slide -->
 ## Quantum mechanics
@@ -156,10 +156,10 @@ Pauli forces opposite spins in a shared box · Hund keeps them apart until it ca
 - Hund's rule: fill degenerate orbitals singly before pairing
 
 <!-- slide step -->
-## Worked example — max electrons at n=3
+## Worked example — max electrons at $n = 3$
 $l=0,1,2$ → 1+3+5 = 9 orbitals
 - ×2 electrons each{{attrs[.fragment]}}
-- **= 18 = 2n²**{{attrs[.fragment]}}
+- **= 18 = $2n^2$**{{attrs[.fragment]}}
 
 <!-- slide -->
 ## Exceptions: Cr and Cu

@@ -104,7 +104,7 @@ $$\text{rate} = k[\ce{A}]^x[\ce{B}]^y$$
 ::: tab Problem
 For $\ce{2NO + Cl2 -> 2NOCl}$, three trials give:
 
-| Trial | [NO] (M) | [Cl₂] (M) | Rate (M/s) |
+| Trial | [NO] (M) | $[\ce{Cl2}]$ (M) | Rate (M/s) |
 |---|---|---|---|
 | 1 | 0.10 | 0.10 | 0.00300 |
 | 2 | 0.10 | 0.15 | 0.00450 |
@@ -121,7 +121,7 @@ Compare trials 1 and 3, where only $[\ce{NO}]$ changes:
 
 $$\frac{\text{rate}_3}{\text{rate}_1} = \left(\frac{0.15}{0.10}\right)^x = \frac{0.00675}{0.00300} = 2.25 \Rightarrow x = 2$$
 
-So $\text{rate} = k[\ce{NO}]^2[\ce{Cl2}]$ — second order in NO, first order in Cl₂, **third order overall**.
+So $\text{rate} = k[\ce{NO}]^2[\ce{Cl2}]$ — second order in NO, first order in $\ce{Cl2}$, **third order overall**.
 
 **Now finish the job and get $k$.** Substitute any one trial into the rate law and solve. Using trial 1:
 
@@ -129,7 +129,7 @@ $$k = \frac{\text{rate}}{[\ce{NO}]^2[\ce{Cl2}]} = \frac{0.00300\ \text{M/s}}{(0.
 
 **Check it against a trial you did not use.** Trial 3 predicts $(3.0)(0.15)^2(0.10) = 0.00675$ M/s, matching the measurement exactly. A rate law that reproduces every trial, not just the one you fitted, is a rate law you can trust.
 
-{{sp[warning] Units}} $k$'s units are whatever makes both sides balance, and they change with the overall order. Here rate is M/s and $[\ce{NO}]^2[\ce{Cl2}]$ is M³, so $k$ must carry M⁻²s⁻¹. **A rate constant's units are therefore a fingerprint of the reaction order** — see the units row of the table in §13.2.
+{{sp[warning] Units}} $k$'s units are whatever makes both sides balance, and they change with the overall order. Here rate is M/s and $[\ce{NO}]^2[\ce{Cl2}]$ is $\text{M}^{3}$, so $k$ must carry $\text{M}^{-2}\,\text{s}^{-1}$. **A rate constant's units are therefore a fingerprint of the overall reaction order** — see the units row of the table in §13.2.
 :::
 ::::
 
@@ -162,7 +162,7 @@ $$k = \frac{2.0\times10^{-3}\ \text{M/s}}{(0.10\ \text{M})^2} = 0.20\ \text{M}^{
 
 **What a zero order means, and what it does not.** B is definitely involved — it is in the balanced equation and it gets consumed. It simply does not appear in the *rate-determining* step or any step before it, so adding more of it cannot make the bottleneck any wider. §13.4 explains how a mechanism produces this.
 
-**And notice the units check out:** second order overall, so $k$ should carry M⁻¹s⁻¹, and it does. If your $k$'s units disagree with the order you derived, one of the two is wrong.
+**And notice the units check out:** second order overall, so $k$ should carry $\text{M}^{-1}\,\text{s}^{-1}$, and it does. If your $k$'s units disagree with the order you derived, one of the two is wrong.
 :::
 ::::
 
@@ -173,11 +173,11 @@ The rate constant $k$ is where all the chemistry that is *not* concentration end
 Two consequences follow, and both matter later in the chapter:
 
 - **A rate constant is meaningless without its temperature.** Quote a $k$ and you must quote the $T$ at which it was measured. §13.3 is entirely about that dependence.
-- **$k$'s units are set by the overall order**, since the two sides of the rate law must balance. For an overall order $n$, $k$ carries units of $\text{M}^{1-n}\text{s}^{-1}$: zero order gives M s⁻¹, first order s⁻¹, second order M⁻¹s⁻¹, third order M⁻²s⁻¹. Given nothing but "$k = 3.0\ \text{M}^{-2}\text{s}^{-1}$" you can already say the reaction is third order overall.
+- **$k$'s units are set by the overall order**, since the two sides of the rate law must balance. For an overall order $n$, $k$ carries units of $\text{M}^{1-n}\text{s}^{-1}$: zero order gives $\text{M}\,\text{s}^{-1}$, first order $\text{s}^{-1}$, second order $\text{M}^{-1}\,\text{s}^{-1}$, third order $\text{M}^{-2}\,\text{s}^{-1}$. Given nothing but "$k = 3.0\ \text{M}^{-2}\text{s}^{-1}$" you can already say the reaction is third order overall.
 
 **Self-check:**
 - If a reaction's rate law is rate $= k[\ce{A}]$, but the balanced equation is $2\ce{A} \rightarrow$ products, is that a contradiction? Why or why not?
-- In the NO/Cl₂ example, why does comparing trials 1 and 3 (rather than 2 and 3) isolate the exponent on [NO]?
+- In the NO/$\ce{Cl2}$ example, why does comparing trials 1 and 3 (rather than 2 and 3) isolate the exponent on [NO]?
 
 > **Where this goes next.** §13.1 gives you the rate law at a single instant — a snapshot. But the concentration that appears in it is itself changing as the reaction runs, so "rate $= k[\ce{A}]$" cannot answer the question you usually care about: how much is left after ten minutes? §13.2 integrates each rate law to answer exactly that.
 
@@ -211,7 +211,7 @@ Figure 13.1 is the picture to hold onto for the rest of the section. The three c
 
 ### First-order reactions
 
-A **first-order reaction** has a rate proportional to the first power of one reactant's concentration: rate $=k[\ce{A}]$. Because rate has units M/s and $[\ce{A}]$ has units M, $k$ carries units of s⁻¹ — a pure reciprocal time, with no concentration in it at all.
+A **first-order reaction** has a rate proportional to the first power of one reactant's concentration: rate $=k[\ce{A}]$. Because rate has units M/s and $[\ce{A}]$ has units M, $k$ carries units of $\text{s}^{-1}$ — a pure reciprocal time, with no concentration in it at all.
 
 Integrating gives the two equivalent forms you will actually use:
 
@@ -246,7 +246,7 @@ $$\frac{[\ce{A}]_0}{[\ce{A}]_t} = e^{1.66} = 5.2 \qquad [\ce{A}]_t = \frac{1\ \t
 
 ### Second-order reactions
 
-A **second-order reaction** depends on the concentration of one reactant squared, rate $=k[\ce{A}]^2$ — or on two different reactants each to the first power. Balancing units this time, $k$ must carry M⁻¹s⁻¹.
+A **second-order reaction** depends on the concentration of one reactant squared, rate $=k[\ce{A}]^2$ — or on two different reactants each to the first power. Balancing units this time, $k$ must carry $\text{M}^{-1}\,\text{s}^{-1}$.
 
 $$\frac{1}{[\ce{A}]_t} = \frac{1}{[\ce{A}]_0} + kt \qquad t_{1/2} = \frac{1}{k[\ce{A}]_0}$$
 
@@ -273,7 +273,7 @@ $$[\ce{C4H6}]_t = \frac{1}{5.58} = 0.179\ \text{mol L}^{-1}$$
 
 ### Zero-order reactions — and why half-life behaves differently for each order
 
-A **zero-order reaction** has a rate that does not depend on concentration at all: rate $= k[\ce{A}]^0 = k$. The reaction proceeds at a fixed pace until the reactant is simply gone. Here $k$ carries the units of a rate itself, M s⁻¹.
+A **zero-order reaction** has a rate that does not depend on concentration at all: rate $= k[\ce{A}]^0 = k$. The reaction proceeds at a fixed pace until the reactant is simply gone. Here $k$ carries the units of a rate itself, $\text{M}\,\text{s}^{-1}$.
 
 $$[\ce{A}]_t = [\ce{A}]_0 - kt \qquad t_{1/2} = \frac{[\ce{A}]_0}{2k}$$
 
@@ -360,7 +360,7 @@ When the data are evenly spaced in time, you can run the graphical test arithmet
 
 $$k = \frac{\ln 2}{t_{1/2}} = \frac{0.693}{200\ \text{s}} = 3.5\times10^{-3}\ \text{s}^{-1}$$
 
-Cross-check against the slope: the $\ln[\ce{A}]$ steps averaged $-0.347$ per 100 s, so $k = 0.347/100 = 3.5\times10^{-3}\ \text{s}^{-1}$. The units, s⁻¹, are the ones expected for a first-order rate constant.
+Cross-check against the slope: the $\ln[\ce{A}]$ steps averaged $-0.347$ per 100 s, so $k = 0.347/100 = 3.5\times10^{-3}\ \text{s}^{-1}$. The units, $\text{s}^{-1}$, are the ones expected for a first-order rate constant.
 :::
 ::::
 
@@ -450,7 +450,7 @@ $$E_a = 1.9\times10^5\ \text{J/mol} = 1.9\times10^2\ \text{kJ/mol}$$
 
 Notice the pattern: this is the same two-point rearrangement strategy as the Clausius–Clapeyron equation in Chapter 11 — both relate the logarithm of a temperature-dependent quantity (a rate constant or a vapor pressure) to $1/T$.
 
-**Two habits worth building here.** $R$ is 8.314 J mol⁻¹K⁻¹, so the answer arrives in **joules** per mole and usually wants converting to kJ/mol. And the temperatures must be in **kelvin**, because $1/T$ appears in the equation — a Celsius value would not merely shift the answer, it would make the reciprocal meaningless.
+**Two habits worth building here.** $R$ is $8.314\ \text{J}\,\text{mol}^{-1}\,\text{K}^{-1}$, so the answer arrives in **joules** per mole and usually wants converting to kJ/mol. And the temperatures must be in **kelvin**, because $1/T$ appears in the equation — a Celsius value would not merely shift the answer, it would make the reciprocal meaningless.
 :::
 ::::
 
@@ -710,7 +710,7 @@ $$= \exp\!\left(\frac{30{,}000\ \text{J/mol}}{(8.314)(298)}\right) = e^{12.11} =
 Figure 13.7 shows the commonest heterogeneous catalyst most people own.
 
 ![Interior of a catalytic converter, showing its ceramic honeycomb structure coated with catalytic metal](../assets/catalytic_converter.jpg =700x)
-*Figure 13.7 — A catalytic converter is heterogeneous catalysis in action: exhaust gases (a different phase from the solid catalyst coating the honeycomb) react on its surface at a far lower activation energy than they would uncatalyzed, converting pollutants like CO and NOₓ into CO₂ and N₂ before they leave the tailpipe. Source: Cyrogigabyte, via Wikimedia Commons, CC0.*
+*Figure 13.7 — A catalytic converter is heterogeneous catalysis in action: exhaust gases (a different phase from the solid catalyst coating the honeycomb) react on its surface at a far lower activation energy than they would uncatalyzed, converting pollutants like CO and NOₓ into $\ce{CO2}$ and $\ce{N2}$ before they leave the tailpipe. Source: Cyrogigabyte, via Wikimedia Commons, $\ce{CC0}$.*
 
 - **Heterogeneous catalysis** — catalyst in a different phase from the reactants (e.g., a solid metal surface catalyzing gas-phase reactants, as in the catalytic converter above).
 - **Homogeneous catalysis** — catalyst in the same phase as the reactants (e.g., a dissolved catalyst in a liquid-phase reaction).
@@ -723,7 +723,7 @@ Figure 13.8 shows why enzymes are so specific: the active site's shape is the se
 
 :::: tabs
 ::: tab Problem
-Classify each as heterogeneous, homogeneous, or enzyme catalysis, and say what identifies it: (a) solid platinum in a catalytic converter turning exhaust CO into CO₂; (b) chlorine atoms from CFCs, in the gas phase, destroying gas-phase ozone; \(c) catalase in your cells breaking hydrogen peroxide into water and oxygen; (d) a dissolved acid speeding the hydrolysis of an ester in solution.
+Classify each as heterogeneous, homogeneous, or enzyme catalysis, and say what identifies it: (a) solid platinum in a catalytic converter turning exhaust CO into $\ce{CO2}$; (b) chlorine atoms from CFCs, in the gas phase, destroying gas-phase ozone; \(c) catalase in your cells breaking hydrogen peroxide into water and oxygen; (d) a dissolved acid speeding the hydrolysis of an ester in solution.
 :::
 ::: tab Solution
 Apart from enzymes (protein catalysts acting at an active site), the test is a single question: **is the catalyst in the same phase as the reactants?**

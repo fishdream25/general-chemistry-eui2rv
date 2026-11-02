@@ -56,7 +56,7 @@ Ionic: the electron is handed over · Covalent: **2 electrons** shared, one from
 <!-- slide -->
 ## Lattice energy
 Energy to separate 1 mol solid ionic compound into gaseous ions
-- Higher charge → higher lattice energy (MgCl₂, MgO, CaO)
+- Higher charge → higher lattice energy ($\ce{MgCl2}$, $\ce{MgO}$, $\ce{CaO}$)
 - Smaller ions → higher lattice energy
 
 <!-- slide -->
@@ -115,9 +115,9 @@ Only period 3 and beyond can expand — a second-period atom never exceeds eight
 
 <!-- slide -->
 ## Three exception categories
-- Incomplete octet: BF₃ (6 e⁻ around B)
-- Odd-electron radicals: NO, NO₂
-- Expanded octet: SF₆ (12 e⁻ around S; possible for period 3 and heavier elements)
+- Incomplete octet: $\ce{BF3}$ ($\ce{6e-}$ around B)
+- Odd-electron radicals: NO, $\ce{NO2}$
+- Expanded octet: $\ce{SF6}$ ($\ce{12e-}$ around S; possible for period 3 and heavier elements)
 
 <!-- slide -->
 ## Covalent network solids

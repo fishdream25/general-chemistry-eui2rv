@@ -15,14 +15,14 @@ title: Chapter 17: Entropy, Free Energy, and Equilibrium
 
 :::success
 **Chapter Learning Objectives**
-- Define entropy in terms of microstates, predict the sign of ΔS, and calculate ΔS°rxn from tabulated values.
+- Define entropy in terms of microstates, predict the sign of $\Delta S$, and calculate $\Delta S^\circ_\text{rxn}$ from tabulated values.
 - State the four laws of thermodynamics, especially the second law as the criterion for spontaneity.
-- Define Gibbs free energy, calculate ΔG°rxn, find phase-transition/reaction-onset temperatures, and relate ΔG° to K.
+- Define Gibbs free energy, calculate $\Delta G^\circ_\text{rxn}$, find phase-transition/reaction-onset temperatures, and relate $\Delta G^\circ$ to K.
 :::
 
 ## Chapter Logic
 
-Chapter 6 tracked energy as heat (ΔH). This chapter asks a deeper question: not how much heat a reaction releases, but *why* it happens at all — and the answer reconnects directly to Chapter 14's equilibrium constant. ==Every reaction in this course has had a $K$; this chapter finally explains where that number comes from.==
+Chapter 6 tracked energy as heat ($\Delta H$). This chapter asks a deeper question: not how much heat a reaction releases, but *why* it happens at all — and the answer reconnects directly to Chapter 14's equilibrium constant. ==Every reaction in this course has had a $K$; this chapter finally explains where that number comes from.==
 
 {{mermaid
 graph TD
@@ -39,7 +39,7 @@ graph TD
 :::success
 **Learning Objectives**
 - {{sp[info] Objective 17.1a}} Define entropy in terms of microstates (S = k ln W).
-- {{sp[info] Objective 17.1a}} Predict the sign of ΔS for a physical or chemical process.
+- {{sp[info] Objective 17.1a}} Predict the sign of $\Delta S$ for a physical or chemical process.
 - {{sp[info] Objective 17.1b}} Calculate the standard entropy of a reaction from tabulated values.
 :::
 
@@ -104,36 +104,36 @@ against $S = k\ln 1 = 0$ for the all-on-one-side case. The even split is **3 tim
 :::
 ::::
 
-### Predicting the sign of ΔS
+### Predicting the sign of $\Delta S$
 
 **General trends:** for a given substance, gas ≫ liquid > solid (more accessible microstates as freedom of motion increases); at the same state, more complex molecules have higher entropy (more ways to distribute energy among more atoms/bonds).
 
 ![Bar chart of standard molar entropies for four solids, three liquids and six gases](../assets/entropy_trends.svg)
-*Figure 17.3 — Both trends in one chart. Phase dominates: even the most complex liquid here sits below the simplest gas. Within a phase, complexity raises entropy; across the whole chart, values run from diamond (solid) at 2.4 to butane (gas) at 310 J K⁻¹ mol⁻¹, a factor of 130. Self-generated with matplotlib from commonly cited standard thermodynamic data.*
+*Figure 17.3 — Both trends in one chart. Phase dominates: even the most complex liquid here sits below the simplest gas. Within a phase, complexity raises entropy; across the whole chart, values run from diamond (solid) at 2.4 to butane (gas) at 310 $\text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$, a factor of 130. Self-generated with matplotlib from commonly cited standard thermodynamic data.*
 
-Two details in Figure 17.3 repay a second look. **Diamond has the lowest entropy on the chart** (2.4 J K⁻¹ mol⁻¹) because every carbon is locked rigidly in place — graphite, whose sheets can slide, is already more than twice as high. And **water appears twice**: 69.9 as a liquid and 188.8 as a gas. Same substance, same temperature (298 K), nearly a threefold jump — the phase change is by far the largest single entropy effect in the chapter.
+Two details in Figure 17.3 repay a second look. **Diamond has the lowest entropy on the chart** (2.4 $\text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$) because every carbon is locked rigidly in place — graphite, whose sheets can slide, is already more than twice as high. And **water appears twice**: 69.9 as a liquid and 188.8 as a gas. Same substance, same temperature (298 K), nearly a threefold jump — the phase change is by far the largest single entropy effect in the chapter.
 
 To predict the sign of an entropy change, you will usually not need a table at all. **Count the moles of gas on each side**; if that changes, it dominates everything else.
 
 ### Standard entropy of reaction
 
 
-For a reaction, standard entropy of reaction is calculated the same way as Chapter 6's $\Delta H^\circ_{rxn}$, but using absolute standard entropies $S^\circ$, which are not zero for elements:
+For a reaction, standard entropy of reaction is calculated the same way as Chapter 6's $\Delta H^\circ_\text{rxn}$, but using absolute standard entropies $S^\circ$, which are not zero for elements:
 
-$$\Delta S^\circ_{rxn}=\sum n S^\circ(\text{products})-\sum m S^\circ(\text{reactants})$$
+$$\Delta S^\circ_\text{rxn}=\sum n S^\circ(\text{products})-\sum m S^\circ(\text{reactants})$$
 
-{{sp[warning] Reminder}} more gas moles produced → $\Delta S^\circ_{rxn}$ is generally positive; fewer gas moles → generally negative; no net change in gas moles → small in magnitude, either sign.
+{{sp[warning] Reminder}} more gas moles produced → $\Delta S^\circ_\text{rxn}$ is generally positive; fewer gas moles → generally negative; no net change in gas moles → small in magnitude, either sign.
 
 :::: tabs
 ::: tab Problem
-Calculate $\Delta S^\circ_{rxn}$ for $\ce{4Fe(s) + 3O2(g) -> 2Fe2O3(s)}$ at 25 °C. ($S^\circ$: $\ce{Fe(s)}=27.3$, $\ce{O2(g)}=205.2$, $\ce{Fe2O3(s)}=87.4$ J/K·mol)
+Calculate $\Delta S^\circ_\text{rxn}$ for $\ce{4Fe(s) + 3O2(g) -> 2Fe2O3(s)}$ at 25 °C. ($S^\circ$: $\ce{Fe(s)}=27.3$, $\ce{O2(g)}=205.2$, $\ce{Fe2O3(s)}=87.4$ J/K·mol)
 :::
 ::: tab Solution
-$$\Delta S^\circ_{rxn}=2(87.4)-[4(27.3)+3(205.2)]=174.8-(109.2+615.6)=-550\ \text{J/K·mol}$$
+$$\Delta S^\circ_\text{rxn}=2(87.4)-[4(27.3)+3(205.2)]=174.8-(109.2+615.6)=-550\ \text{J/K·mol}$$
 
-This makes sense: 3 mol of gas are consumed and 0 mol of gas are produced, so $\Delta S^\circ_{rxn}$ should be — and is — strongly negative.
+This makes sense: 3 mol of gas are consumed and 0 mol of gas are produced, so $\Delta S^\circ_\text{rxn}$ should be — and is — strongly negative.
 
-{{sp[warning] Two things that differ from ΔH°}} **Elements do not have $S^\circ = 0$.** $\ce{Fe(s)}$ contributes 27.3 and $\ce{O2(g)}$ contributes 205.2 — unlike $\Delta H^\circ_f$, where elements in their standard states are defined as zero. And **$S^\circ$ values are in J**, not kJ; mixing them with kJ enthalpies is the single commonest error in §17.3.
+{{sp[warning] Two things that differ from $\Delta H^\circ$}} **Elements do not have $S^\circ = 0$.** $\ce{Fe(s)}$ contributes 27.3 and $\ce{O2(g)}$ contributes 205.2 — unlike $\Delta H^\circ_f$, where elements in their standard states are defined as zero. And **$S^\circ$ values are in J**, not kJ; mixing them with kJ enthalpies is the single commonest error in §17.3.
 :::
 ::::
 
@@ -144,13 +144,13 @@ Predict the sign of $\Delta S$ for each, without any table: (a) $\ce{H2O(l) -> H
 ::: tab Solution
 Work down a fixed priority list: **phase change first, then moles of gas, then dissolving, then complexity.**
 
-**(a) Positive, and large.** A liquid becoming a gas is one of the biggest entropy increases available — Figure 17.3 shows the jump for water is 69.9 → 188.8 J K⁻¹ mol⁻¹.
+**(a) Positive, and large.** A liquid becoming a gas is one of the biggest entropy increases available — Figure 17.3 shows the jump for water is 69.9 → 188.8 $\text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$.
 
 **(b) Negative.** Count gas moles: 3 on the left, 2 on the right. Fewer gas particles means fewer accessible microstates.
 
 **\(c) Positive.** An ordered crystal becomes free ions dispersed through a solvent. (This is the instant cold pack from Chapter 12 — endothermic, and spontaneous only because $\Delta S$ is positive enough to overcome it.)
 
-**(d) Small, sign not obvious.** Two moles of gas become two moles of gas, so the dominant effect is absent. What remains is a minor difference in molecular complexity, and the value happens to be $+24.8$ J K⁻¹ mol⁻¹ — small, as predicted.
+**(d) Small, sign not obvious.** Two moles of gas become two moles of gas, so the dominant effect is absent. What remains is a minor difference in molecular complexity, and the value happens to be $+24.8\ \text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$ — small, as predicted.
 
 **(e) Positive.** More volume means more positions available to each particle, so $W$ rises. No chemistry occurs at all; this is entropy in its purest form.
 
@@ -160,10 +160,10 @@ Work down a fixed priority list: **phase change first, then moles of gas, then d
 
 :::: tabs
 ::: tab Problem
-Calculate $\Delta S^\circ_{rxn}$ for $\ce{CaCO3(s) -> CaO(s) + CO2(g)}$. ($S^\circ$: $\ce{CaCO3}=92.9$, $\ce{CaO}=39.8$, $\ce{CO2}=213.8$ J K⁻¹ mol⁻¹.) Check the sign against the gas-mole rule.
+Calculate $\Delta S^\circ_\text{rxn}$ for $\ce{CaCO3(s) -> CaO(s) + CO2(g)}$. ($S^\circ$: $\ce{CaCO3}=92.9$, $\ce{CaO}=39.8$, $\ce{CO2}=213.8\ \text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$.) Check the sign against the gas-mole rule.
 :::
 ::: tab Solution
-$$\Delta S^\circ_{rxn} = [S^\circ(\ce{CaO}) + S^\circ(\ce{CO2})] - S^\circ(\ce{CaCO3})$$
+$$\Delta S^\circ_\text{rxn} = [S^\circ(\ce{CaO}) + S^\circ(\ce{CO2})] - S^\circ(\ce{CaCO3})$$
 $$= (39.8 + 213.8) - 92.9 = 253.6 - 92.9 = +160.7\ \text{J K}^{-1}\text{mol}^{-1}$$
 
 **Check against the rule:** zero moles of gas on the left, one on the right. Gas moles increase, so $\Delta S^\circ$ should be positive and substantial — and $+160.7$ is both.
@@ -238,7 +238,7 @@ Figure 17.4 shows the substance that sits at the bottom of Figure 17.3's scale, 
 
 :::: tabs
 ::: tab Problem
-Water freezing at −10 °C is spontaneous, yet the water's own entropy decreases. (a) Show how this is consistent with the second law. (b) At 0 °C, $\Delta H_\text{fus} = 6.01$ kJ/mol and $\Delta S_\text{fus} = 22.0$ J K⁻¹ mol⁻¹ for melting. Compute $\Delta S_\text{sys}$, $\Delta S_\text{surr}$ and $\Delta S_\text{univ}$ for **freezing** one mole at 263 K (assume $\Delta H$ and $\Delta S$ are approximately independent of temperature), using $\Delta S_\text{surr} = -\Delta H_\text{sys}/T$.
+Water freezing at −10 °C is spontaneous, yet the water's own entropy decreases. (a) Show how this is consistent with the second law. (b) At 0 °C, $\Delta H_\text{fus} = 6.01$ kJ/mol and $\Delta S_\text{fus} = 22.0\ \text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$ for melting. Compute $\Delta S_\text{sys}$, $\Delta S_\text{surr}$ and $\Delta S_\text{univ}$ for **freezing** one mole at 263 K (assume $\Delta H$ and $\Delta S$ are approximately independent of temperature), using $\Delta S_\text{surr} = -\Delta H_\text{sys}/T$.
 :::
 ::: tab Solution
 **(a)** The second law constrains the **universe**, not the beaker. Freezing releases heat into the surroundings, and that heat raises the surroundings' entropy. If the gain outside exceeds the loss inside, the total rises and the process is spontaneous.
@@ -267,7 +267,7 @@ $$\Delta S_\text{surr} = \frac{6010}{283} = +21.24 \quad\Rightarrow\quad \Delta 
 
 :::: tabs
 ::: tab Problem
-(a) Why can $\Delta H^\circ_f$ for an element in its standard state be *defined* as zero, while $S^\circ$ for that same element is a measured non-zero number? (b) Diamond has $S^\circ = 2.4$ J K⁻¹ mol⁻¹ at 298 K. What is its entropy at 0 K, and how do you know? \(c) What would a *non*-crystalline solid such as glass have at 0 K?
+(a) Why can $\Delta H^\circ_f$ for an element in its standard state be *defined* as zero, while $S^\circ$ for that same element is a measured non-zero number? (b) Diamond has $S^\circ = 2.4\ \text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$ at 298 K. What is its entropy at 0 K, and how do you know? \(c) What would a *non*-crystalline solid such as glass have at 0 K?
 :::
 ::: tab Solution
 **(a) The difference is that entropy has a natural zero and enthalpy does not.**
@@ -276,17 +276,17 @@ Enthalpy is only ever measurable as a *change*; there is no experiment that retu
 
 Entropy needs no convention, because the **third law** supplies a real zero: a perfect crystal at 0 K has exactly one microstate ($W = 1$), and $S = k\ln 1 = 0$. Every $S^\circ$ is measured up from that genuine baseline, which is why they are called **absolute** entropies — and why they are never zero for anything at 298 K.
 
-**(b) Zero.** Diamond is a near-perfect crystal, so at 0 K there is one arrangement and $S = 0$. The 2.4 J K⁻¹ mol⁻¹ is the entropy it has *acquired* on being warmed to 298 K — the smallest such value in Figure 17.3, because even at room temperature a diamond lattice barely moves.
+**(b) Zero.** Diamond is a near-perfect crystal, so at 0 K there is one arrangement and $S = 0$. The 2.4 $\text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$ is the entropy it has *acquired* on being warmed to 298 K — the smallest such value in Figure 17.3, because even at room temperature a diamond lattice barely moves.
 
 **\(c) Slightly greater than zero.** Glass is frozen in a disordered arrangement, and cooling to 0 K does not let it find the single lowest-energy configuration — it is stuck in one of many, so $W > 1$ and $S > 0$. This leftover is called **residual entropy**, and it is exactly why the third law is stated for *perfect crystalline* substances.
 
-**The chain worth holding onto:** third law → absolute entropies exist → $S^\circ$ can be tabulated → $\Delta S^\circ_{rxn}$ can be computed by simple subtraction, as in §17.1. Without the third law, §17.1's calculation would be impossible.
+**The chain worth holding onto:** third law → absolute entropies exist → $S^\circ$ can be tabulated → $\Delta S^\circ_\text{rxn}$ can be computed by simple subtraction, as in §17.1. Without the third law, §17.1's calculation would be impossible.
 :::
 ::::
 
 :::: tabs
 ::: tab Problem
-Carbon monoxide has a measured residual entropy of about 4.6 J K⁻¹ mol⁻¹ at 0 K, while $\ce{N2}$ has essentially none. (a) Why does the third law permit this? (b) Show that $4.6$ J K⁻¹ mol⁻¹ is consistent with roughly two orientations per molecule, using $S = k\ln W$. \(c) What does this imply for tabulated $S^\circ$ values of CO?
+Carbon monoxide has a measured residual entropy of about 4.6 $\text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$ at 0 K, while $\ce{N2}$ has essentially none. (a) Why does the third law permit this? (b) Show that $4.6\ \text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$ is consistent with roughly two orientations per molecule, using $S = k\ln W$. \(c) What does this imply for tabulated $S^\circ$ values of CO?
 :::
 ::: tab Solution
 **(a) The third law applies to a *perfect* crystal.** CO is very nearly symmetric — the two ends are almost indistinguishable in size and polarity — so as the crystal forms, molecules freeze in whichever way round they happened to be pointing. The result is a crystal with a frozen-in random pattern of CO and OC, which is not perfect. $\ce{N2}$ has genuinely identical ends, so no such disorder is possible.
@@ -301,7 +301,7 @@ The measured 4.6 is somewhat lower, which says the orientations are not *quite* 
 
 **\(c) $S^\circ$ values for CO obtained purely calorimetrically are slightly too low.** They are measured by integrating heat capacity upward from 0 K, which assumes $S = 0$ there. For CO that baseline is really 4.6, so every derived value inherits the same small offset.
 
-**Why this rarely matters in practice:** the offset is constant, so it cancels in $\Delta S^\circ_{rxn}$ whenever CO appears on both sides with the same coefficient — and when it does not, 4.6 J K⁻¹ mol⁻¹ is small beside typical reaction entropies of tens to hundreds. It is a real limitation, and a minor one.
+**Why this rarely matters in practice:** the offset is constant, so it cancels in $\Delta S^\circ_\text{rxn}$ whenever CO appears on both sides with the same coefficient — and when it does not, 4.6 $\text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$ is small beside typical reaction entropies of tens to hundreds. It is a real limitation, and a minor one.
 :::
 ::::
 
@@ -315,21 +315,21 @@ The measured 4.6 is somewhat lower, which says the orientations are not *quite* 
 
 :::success
 **Learning Objectives**
-- {{sp[info] Objective 17.3a}} Define Gibbs free energy and derive the spontaneity criterion ΔG < 0.
+- {{sp[info] Objective 17.3a}} Define Gibbs free energy and derive the spontaneity criterion $\Delta G < 0$ at constant temperature and pressure.
 - {{sp[info] Objective 17.3b}} Calculate standard free energy of reaction from standard free energies of formation.
 - {{sp[info] Objective 17.3c}} Determine the temperature at which a reaction or phase transition becomes spontaneous.
-- {{sp[info] Objective 17.3d}} {{sp[info] Objective 17.3e}} Relate ΔG° to K, and calculate ΔG under non-standard conditions.
+- {{sp[info] Objective 17.3d}} {{sp[info] Objective 17.3e}} Relate $\Delta G^\circ$ to K, and calculate $\Delta G$ under non-standard conditions.
 :::
 
 ### From the second law to Gibbs free energy
 
-At constant temperature and pressure, the second law ($\Delta S_{univ}>0$) can be rewritten using only the **system's** properties. Since $\Delta S_{surr}=-\Delta H_{sys}/T$:
+At constant temperature and pressure, the second law ($\Delta S_\text{univ}>0$) can be rewritten using only the **system's** properties. Since $\Delta S_\text{surr}=-\Delta H_\text{sys}/T$:
 
-$$\Delta S_{sys}-\frac{\Delta H_{sys}}{T}>0 \quad\Rightarrow\quad \Delta H_{sys}-T\Delta S_{sys}<0$$
+$$\Delta S_\text{sys}-\frac{\Delta H_\text{sys}}{T}>0 \quad\Rightarrow\quad \Delta H_\text{sys}-T\Delta S_\text{sys}<0$$
 
 Defining **Gibbs free energy** $G=H-TS$, this becomes the spontaneity criterion ==$\Delta G=\Delta H-T\Delta S<0$== — no need to ever calculate the surroundings' entropy directly:
 
-| Sign of ΔG | Meaning |
+| Sign of $\Delta G$ | Meaning |
 |---|---|
 | $\Delta G<0$ | Spontaneous in the forward direction |
 | $\Delta G>0$ | Nonspontaneous forward; reverse is spontaneous |
@@ -341,7 +341,7 @@ The minus sign is worth noting too: $\Delta S_\text{univ} > 0$ became $\Delta G 
 
 :::: tabs
 ::: tab Problem
-For each, decide from the signs alone whether the reaction is spontaneous always, never, only at high $T$, or only at low $T$ — then name the quadrant of Figure 17.1: (a) $\Delta H = -120$ kJ/mol, $\Delta S = +150$ J K⁻¹ mol⁻¹; (b) $\Delta H = +85$ kJ/mol, $\Delta S = -60$ J K⁻¹ mol⁻¹; \(c) $\Delta H = +178$ kJ/mol, $\Delta S = +161$ J K⁻¹ mol⁻¹; (d) $\Delta H = -92$ kJ/mol, $\Delta S = -199$ J K⁻¹ mol⁻¹.
+For each, decide from the signs alone whether the reaction is spontaneous always, never, only at high $T$, or only at low $T$ — then name the quadrant of Figure 17.1: (a) $\Delta H = -120$ kJ/mol, $\Delta S = +150\ \text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$; (b) $\Delta H = +85$ kJ/mol, $\Delta S = -60\ \text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$; \(c) $\Delta H = +178$ kJ/mol, $\Delta S = +161\ \text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$; (d) $\Delta H = -92$ kJ/mol, $\Delta S = -199\ \text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$.
 :::
 ::: tab Solution
 Apply $\Delta G = \Delta H - T\Delta S$ and ask what each term contributes.
@@ -366,10 +366,10 @@ $$T < \frac{\Delta H}{\Delta S} = \frac{-92{,}000}{-199} = 462\ \text{K}$$
 
 :::: tabs
 ::: tab Problem
-A reaction has $\Delta H^\circ = +30.0$ kJ/mol and $\Delta S^\circ = +100.0$ J K⁻¹ mol⁻¹. (a) Find $\Delta G^\circ$ at 250 K and at 350 K. (b) Find the crossover temperature. \(c) Sketch in words how $\Delta G^\circ$ behaves as a function of $T$, and say what the slope and intercept mean.
+A reaction has $\Delta H^\circ = +30.0$ kJ/mol and $\Delta S^\circ = +100.0\ \text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$. (a) Find $\Delta G^\circ$ at 250 K and at 350 K. (b) Find the crossover temperature. \(c) Sketch in words how $\Delta G^\circ$ behaves as a function of $T$, and say what the slope and intercept mean.
 :::
 ::: tab Solution
-**(a)** Convert $\Delta S^\circ$ to kJ (0.1000 kJ K⁻¹ mol⁻¹) and substitute:
+**(a)** Convert $\Delta S^\circ$ to kJ (0.1000 $\text{kJ}\,\text{K}^{-1}\,\text{mol}^{-1}$) and substitute:
 
 $$T = 250\ \text{K}: \quad \Delta G^\circ = 30.0 - (250)(0.1000) = 30.0 - 25.0 = +5.0\ \text{kJ/mol} \quad (\text{nonspontaneous})$$
 $$T = 350\ \text{K}: \quad \Delta G^\circ = 30.0 - (350)(0.1000) = 30.0 - 35.0 = -5.0\ \text{kJ/mol} \quad (\text{spontaneous})$$
@@ -383,7 +383,7 @@ Consistent with (a): positive below 300 K, negative above.
 **\(c) $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$ is a straight line in $T$** — compare $y = b + mx$:
 
 - **Intercept** ($T = 0$): $\Delta G^\circ = \Delta H^\circ = +30.0$ kJ/mol. At absolute zero the entropy term vanishes and enthalpy alone decides.
-- **Slope**: $-\Delta S^\circ = -0.1000$ kJ K⁻¹ mol⁻¹. **The slope of the line *is* the negative of the entropy change**, so a steeply falling line means a large positive $\Delta S^\circ$.
+- **Slope**: $-\Delta S^\circ = -0.1000\ \text{kJ}\,\text{K}^{-1}\,\text{mol}^{-1}$. **The slope of the line *is* the negative of the entropy change**, so a steeply falling line means a large positive $\Delta S^\circ$.
 - **Root**: $T = \Delta H^\circ/\Delta S^\circ = 300$ K, where the line crosses zero.
 
 Figure 17.5 is exactly this line drawn for the $\ce{CaCO3}$ decomposition, and reading a slope and an intercept off such a plot is the standard way to extract $\Delta H^\circ$ and $\Delta S^\circ$ from measurements at several temperatures.
@@ -394,24 +394,24 @@ Figure 17.5 is exactly this line drawn for the $\ce{CaCO3}$ decomposition, and r
 
 ### Standard free energy of reaction
 
-Like $\Delta H^\circ_{rxn}$ and $\Delta S^\circ_{rxn}$, standard free energy of reaction is additive:
+Like $\Delta H^\circ_\text{rxn}$ and $\Delta S^\circ_\text{rxn}$, standard free energy of reaction is additive:
 
-$$\Delta G^\circ_{rxn}=\sum n\Delta G^\circ_f(\text{products})-\sum m\Delta G^\circ_f(\text{reactants})$$
+$$\Delta G^\circ_\text{rxn}=\sum n\Delta G^\circ_f(\text{products})-\sum m\Delta G^\circ_f(\text{reactants})$$
 
 :::: tabs
 ::: tab Problem
-Calculate $\Delta G^\circ_{rxn}$ for $\ce{4Fe(s) + 3O2(g) -> 2Fe2O3(s)}$. ($\Delta G^\circ_f$: $\ce{Fe(s)}=0$, $\ce{O2(g)}=0$, $\ce{Fe2O3(s)}=-742.2$ kJ/mol)
+Calculate $\Delta G^\circ_\text{rxn}$ for $\ce{4Fe(s) + 3O2(g) -> 2Fe2O3(s)}$. ($\Delta G^\circ_f$: $\ce{Fe(s)}=0$, $\ce{O2(g)}=0$, $\ce{Fe2O3(s)}=-742.2$ kJ/mol)
 :::
 ::: tab Solution
-$$\Delta G^\circ_{rxn}=2(-742.2)-[4(0)+3(0)]=-1484.4\ \text{kJ/mol}$$
+$$\Delta G^\circ_\text{rxn}=2(-742.2)-[4(0)+3(0)]=-1484.4\ \text{kJ/mol}$$
 
-**As with $\Delta H^\circ_f$ — and unlike $S^\circ$ — elements in their standard states are zero**, which is why iron and oxygen contribute nothing here. Comparing this with §17.1's $\Delta S^\circ_{rxn} = -550$ J K⁻¹ mol⁻¹ for the same reaction shows the pattern of Figure 17.1's bottom-left cell: strongly exothermic, entropy-decreasing, spontaneous at ordinary temperatures. Iron rusts, and it does so despite the entropy penalty.
+**As with $\Delta H^\circ_f$ — and unlike $S^\circ$ — elements in their standard states are zero**, which is why iron and oxygen contribute nothing here. Comparing this with §17.1's $\Delta S^\circ_\text{rxn} = -550\ \text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$ for the same reaction shows the pattern of Figure 17.1's bottom-left cell: strongly exothermic, entropy-decreasing, spontaneous at ordinary temperatures. Iron rusts, and it does so despite the entropy penalty.
 :::
 ::::
 
 :::: tabs
 ::: tab Problem
-For $\ce{2SO2(g) + O2(g) -> 2SO3(g)}$: $\Delta H^\circ = -197.8$ kJ/mol and $\Delta S^\circ = -188.0$ J K⁻¹ mol⁻¹. (a) Calculate $\Delta G^\circ$ at 298 K. (b) Is the reaction spontaneous at 298 K? \(c) Above what temperature does it stop being so?
+For $\ce{2SO2(g) + O2(g) -> 2SO3(g)}$: $\Delta H^\circ = -197.8$ kJ/mol and $\Delta S^\circ = -188.0\ \text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$. (a) Calculate $\Delta G^\circ$ at 298 K. (b) Is the reaction spontaneous at 298 K? \(c) Above what temperature does it stop being so?
 :::
 ::: tab Solution
 **(a)** Convert $\Delta S^\circ$ to kJ before combining:
@@ -460,7 +460,7 @@ The same $\Delta G=0$ logic applies to **phase transitions**: at the melting or 
 
 :::: tabs
 ::: tab Problem
-Calculate the normal boiling point of dichloromethane, $\ce{CH2Cl2}$, from formation data alone. ($\Delta H^\circ_f$: liquid $-124.2$, gas $-95.4$ kJ/mol. $S^\circ$: liquid 177.8, gas 270.2 J K⁻¹ mol⁻¹.) Assume ΔH°vap and ΔS°vap are temperature-independent.
+Calculate the normal boiling point of dichloromethane, $\ce{CH2Cl2}$, from formation data alone. ($\Delta H^\circ_f$: liquid $-124.2$, gas $-95.4$ kJ/mol. $S^\circ$: liquid 177.8, gas 270.2 $\text{J}\,\text{K}^{-1}\,\text{mol}^{-1}$.) Assume $\Delta H^\circ_\text{vap}$ and $\Delta S^\circ_\text{vap}$ are temperature-independent.
 :::
 ::: tab Solution
 **Step 1 — treat the phase change as a reaction**, $\ce{CH2Cl2(l) -> CH2Cl2(g)}$, and take products minus reactants:
@@ -486,7 +486,7 @@ $$0 = \Delta H^\circ_\text{vap} - T\Delta S^\circ_\text{vap} \quad\Rightarrow\qu
 Figure 17.6 is the most familiar $\Delta G = 0$ in chemistry.
 
 ![Ice partially melted, liquid water pooling around it](../assets/ice_melting.jpg =450x)
-*Figure 17.6 — At exactly 0 °C and 1 atm, ice and liquid water coexist at equilibrium ($\Delta G=0$): for this transition, $\Delta H=6.01$ kJ/mol and $\Delta S=22.0$ J/K·mol, and indeed $6010/22.0=273$ K = 0 °C. Source: Rebecca Partington, via Wikimedia Commons, CC BY-SA 2.0.*
+*Figure 17.6 — At exactly 0 °C and 1 atm, ice and liquid water coexist at equilibrium ($\Delta G=0$): for this transition, $\Delta H=6.01$ kJ/mol and $\Delta S=22.0$ J/K·mol, and indeed $6010/22.0 = 273\ \text{K}$ = 0 °C. Source: Rebecca Partington, via Wikimedia Commons, CC BY-SA 2.0.*
 
 ### Free energy and the equilibrium constant
 
@@ -506,7 +506,7 @@ $$\Delta G=\Delta G^\circ+RT\ln Q \qquad \text{at equilibrium: } \Delta G=0,\ Q=
 Calculate $K_p$ for $\ce{N2O4(g) <=> 2NO2(g)}$ at 25 °C. ($\Delta G^\circ_f$: $\ce{N2O4}=97.9$, $\ce{NO2}=51.3$ kJ/mol)
 :::
 ::: tab Solution
-$$\Delta G^\circ_{rxn}=2(51.3)-97.9=4.7\ \text{kJ/mol}$$
+$$\Delta G^\circ_\text{rxn}=2(51.3)-97.9=4.7\ \text{kJ/mol}$$
 
 $$K_p=e^{-\Delta G^\circ/RT}=e^{-4700/(8.314\times298)}=0.150$$
 
@@ -597,14 +597,14 @@ This is exactly the case flagged after the ammonia example: $\Delta G^\circ$ is 
 
 ## Synthesis
 
-==This chapter answers "why do reactions happen" by combining two ideas: enthalpy (Chapter 6) and entropy, weighted by temperature, into a single number — the Gibbs free energy change, ΔG — whose sign alone determines spontaneity at constant temperature and pressure.== Its biggest payoff is $\Delta G^\circ=-RT\ln K$, which explains, in energetic terms, why equilibrium constants (Chapter 14) have the values they do — a strongly negative $\Delta G^\circ$ is exactly why some reactions have enormous $K$ values. This same $\Delta G^\circ$ reappears in Chapter 18 as $\Delta G^\circ=-nFE^\circ$, connecting thermodynamics directly to electrochemistry.
+==This chapter answers "why do reactions happen" by combining two ideas: enthalpy (Chapter 6) and entropy, weighted by temperature, into a single number — the Gibbs free energy change, $\Delta G$ — whose sign alone determines spontaneity at constant temperature and pressure.== Its biggest payoff is $\Delta G^\circ=-RT\ln K$, which explains, in energetic terms, why equilibrium constants (Chapter 14) have the values they do — a strongly negative $\Delta G^\circ$ is exactly why some reactions have enormous $K$ values. This same $\Delta G^\circ$ reappears in Chapter 18 as $\Delta G^\circ=-nFE^\circ$, connecting thermodynamics directly to electrochemistry.
 
 ## Asset and License Record for This Chapter
 
 | Asset | Source URL | License | Attribution |
 |---|---|---|---|
 | `assets/spontaneity_quadrants.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; entropy values are commonly cited standard thermodynamic data; released under this package's CC BY 4.0 license. |
-| `assets/microstates_distribution.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; illustrates the study guide's own worked description (2^4=16 microstates); released under this package's CC BY 4.0 license. |
+| `assets/microstates_distribution.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; illustrates the study guide's own worked description ($2^{4} = 16$ microstates); released under this package's CC BY 4.0 license. |
 | `assets/entropy_trends.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; entropy values are commonly cited standard thermodynamic data; released under this package's CC BY 4.0 license. |
 | `assets/diamond.jpg` | https://commons.wikimedia.org/wiki/File:Apollo_synthetic_diamond.jpg | CC BY 2.0 | Steve Jurvetson, via Wikimedia Commons, CC BY 2.0. |
 | `assets/gibbs_temperature_crossover.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib using the study guide's own real worked-example data (deltaH=177.8 kJ/mol, deltaS=160.5 J/K mol); released under this package's CC BY 4.0 license. |

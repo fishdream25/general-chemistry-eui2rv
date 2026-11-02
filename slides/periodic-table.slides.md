@@ -62,10 +62,10 @@ $\ce{Fe}$: $[Ar]4s^23d^6$
 <!-- slide -->
 ## Shielding, and what an outer electron actually feels
 ![Zeff for Li, C and F](../assets/effective_nuclear_charge.svg =800x)
-Same core doing the shielding all across a period, so, if we treat the 1s² core as screening fully and the valence electrons as not screening each other, $Z_\mathrm{eff}$ climbs from about +1 to +7
+Same core doing the shielding all across a period, so, if we treat the $1s^2$ core as screening fully and the valence electrons as not screening each other, $Z_\mathrm{eff}$ climbs from about +1 to +7
 
 <!-- slide -->
-## Effective nuclear charge (Z_eff)
+## Effective nuclear charge ($Z_\text{eff}$)
 - Increases left→right across a period (smaller atoms)
 - Outweighed by added shells going down a group (larger atoms)
 
@@ -80,8 +80,8 @@ Across: radius **down**, IE **up**, EA **up** · Down: radius **up**, IE **down*
 
 <!-- slide step -->
 ## Worked example — isoelectronic ranking
-N³⁻, O²⁻, F⁻, Ne, Na⁺, Mg²⁺, Al³⁺ (all 10 e⁻)
-- Nuclear charge increases Z=7→13{{attrs[.fragment]}}
+$\ce{N3-}$, $\ce{O2-}$, $\ce{F-}$, Ne, $\ce{Na+}$, $\ce{Mg2+}$, $\ce{Al3+}$ (all $\ce{10e-}$)
+- Nuclear charge increases $Z = 7$→13{{attrs[.fragment]}}
 - **Radius decreases in the same order**{{attrs[.fragment]}}
 
 <!-- slide template=section -->
@@ -119,8 +119,8 @@ Low ionization energy → violent reaction with water
 <!-- slide -->
 ## Quick group survey
 - 1A: low IE, reacts with water
-- 2A: forms M²⁺, reactivity increases down group
-- 7A (halogens): high IE, large positive EA, forms X⁻
+- 2A: forms $\text{M}^{2+}$, reactivity increases down group
+- 7A (halogens): high IE, large positive EA, forms $X^-$
 - 8A: highest IE, essentially unreactive
 
 <!-- slide -->
@@ -130,9 +130,9 @@ Metal oxide → basic · nonmetal oxide → acidic · $\mathrm{Al_2O_3}$ on the 
 
 <!-- slide -->
 ## Oxide acidity and basicity
-- Metal oxides: generally **basic** (Na₂O, MgO)
-- Nonmetal oxides: generally **acidic** (SO₃, Cl₂O₇)
-- Al₂O₃: **amphoteric** — reacts with both acids and bases
+- Metal oxides: generally **basic** ($\ce{Na2O}$, $\ce{MgO}$)
+- Nonmetal oxides: generally **acidic** ($\ce{SO3}$, $\ce{Cl2O7}$)
+- $\ce{Al2O3}$: **amphoteric** — reacts with both acids and bases
 
 <!-- slide template=closing -->
 # The periodic table as a predictive map

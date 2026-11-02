@@ -97,7 +97,7 @@ $$1.3\times10^{-3}\ \text{M} \times \frac{0.21\ \text{atm}}{1.00\ \text{atm}} = 
 {{sp[info] Objective 12.1c}} · *short answer* A can of soda goes flat noticeably faster once opened and left at room temperature versus kept sealed in the refrigerator. Explain this using two separate solubility principles from this chapter.
 :::
 ::: tab Answer
-Opening the can drops the partial pressure of $\ce{CO2}$ above the liquid, and by Henry's law, lower $\ce{CO2}$ partial pressure means lower $\ce{CO2}$ solubility — CO₂ escapes as bubbles. Separately, warming the soda (leaving it at room temperature) further lowers gas solubility, since the solubility of gases in water decreases as temperature increases. Both effects push dissolved $\ce{CO2}$ out of solution.
+Opening the can drops the partial pressure of $\ce{CO2}$ above the liquid, and by Henry's law, lower $\ce{CO2}$ partial pressure means lower $\ce{CO2}$ solubility — $\ce{CO2}$ escapes as bubbles. Separately, warming the soda (leaving it at room temperature) further lowers gas solubility, since the solubility of gases in water decreases as temperature increases. Both effects push dissolved $\ce{CO2}$ out of solution.
 :::
 ::::
 

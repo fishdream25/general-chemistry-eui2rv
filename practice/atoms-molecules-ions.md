@@ -159,7 +159,7 @@ E. nonmetals
 
 :::: tabs
 ::: tab Q 14
-{{sp[info] Objective 2.1d}} · *short answer* Identify the period, group, and family of bromine (Z = 35), and classify it as a metal, nonmetal, or metalloid.
+{{sp[info] Objective 2.1d}} · *short answer* Identify the period, group, and family of bromine ($Z = 35$), and classify it as a metal, nonmetal, or metalloid.
 :::
 ::: tab Answer
 Bromine is in **period 4**, **Group 7A**, and belongs to the **halogens**. It is a **nonmetal**.

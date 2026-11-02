@@ -12,10 +12,10 @@ title: Chapter 18 Assessment Guide: Redox Reactions and Electrochemistry
 
 ## General Assessment Priorities
 
-- Anchor the **cathode/anode selection rule** to one fixed criterion — the half-reaction with the *higher* E° is always the cathode — computed by comparison every time, never by intuition about "which metal is more reactive."
-- Require students to **explicitly rewrite the anode half-reaction as an oxidation** (reversed from its tabulated reduction form, with the sign of E° left unchanged) as a separate, visible step before combining half-reactions.
-- Require **equalizing electron counts (n)** between half-reactions as an explicit, checkable step, and confirm the same n is reused consistently in ΔG°, K, and Nernst-equation calculations.
-- Test the **E° vs. Nernst-equation** distinction directly: ask whether given conditions are standard (1 M, 1 atm) before choosing which formula applies.
+- Anchor the **cathode/anode selection rule** to one fixed criterion — the half-reaction with the *higher* $E^\circ$ is always the cathode — computed by comparison every time, never by intuition about "which metal is more reactive."
+- Require students to **explicitly rewrite the anode half-reaction as an oxidation** (reversed from its tabulated reduction form, with the sign of $E^\circ$ left unchanged) as a separate, visible step before combining half-reactions.
+- Require **equalizing electron counts (n)** between half-reactions as an explicit, checkable step, and confirm the same n is reused consistently in $\Delta G^\circ$, K, and Nernst-equation calculations.
+- Test the **$E^\circ$ vs. Nernst-equation** distinction directly: ask whether given conditions are standard (1 M, 1 atm) before choosing which formula applies.
 
 ## Objective 18.1a: Assign oxidation numbers
 
@@ -67,7 +67,7 @@ A student can assign oxidation numbers to atoms in a compound or ion using the s
 
 ### Target understanding
 
-A student can balance a redox equation in acidic solution using the systematic half-reaction method, and adapt the result for basic solution by neutralizing H⁺ with OH⁻.
+A student can balance a redox equation in acidic solution using the systematic half-reaction method, and adapt the result for basic solution by neutralizing $\ce{H+}$ with $\ce{OH-}$.
 
 ### Question guides
 
@@ -80,7 +80,7 @@ A student can balance a redox equation in acidic solution using the systematic h
 
 **2. Forward — adapt to basic solution**
 - Variables & ranges: the same reaction, now in basic solution.
-- Constraint: correct addition of OH⁻ to both sides and combination into water.
+- Constraint: correct addition of $\ce{OH-}$ to both sides and combination into water.
 - Contexts: the same or a different redox pair.
 - Formats: workout.
 - Worked instantiation: see the study guide's worked example (same reaction, basic solution version).
@@ -122,7 +122,7 @@ A student can define galvanic cell, electrode, anode, and cathode, and can write
 - Constraint: correct anode-first ordering, correct phase-boundary (`|`) and salt-bridge (`||`) notation.
 - Contexts: any pair of half-reactions, including one requiring an inert electrode.
 - Formats: workout.
-- Worked instantiation: see the study guide's worked example (Mg/Fe³⁺/Fe²⁺ cell with Pt cathode).
+- Worked instantiation: see the study guide's worked example (Mg/$\ce{Fe3+}/\ce{Fe2+}$ cell with Pt cathode).
 
 **2. Inverse — extract half-reactions from a cell diagram**
 - Variables & ranges: a given cell diagram, extract the anode/cathode half-reactions.
@@ -159,7 +159,7 @@ A student can define galvanic cell, electrode, anode, and cathode, and can write
 
 ### Target understanding
 
-A student can define standard reduction potential (E°), explain the standard hydrogen electrode's role as the zero reference, and state that E° does not change with stoichiometric scaling.
+A student can define standard reduction potential ($E^\circ$), explain the standard hydrogen electrode's role as the zero reference, and state that $E^\circ$ does not change with stoichiometric scaling.
 
 ### Question guides
 
@@ -172,70 +172,70 @@ A student can define standard reduction potential (E°), explain the standard hy
 
 **2. Forward — scaling invariance**
 - Variables & ranges: a half-reaction with its coefficients doubled or tripled.
-- Constraint: correctly state that E° is unchanged.
+- Constraint: correctly state that $E^\circ$ is unchanged.
 - Contexts: any half-reaction.
 - Formats: short-answer.
 - Worked instantiation: "If $\ce{Cu^2++2e- -> Cu}$ has $E^\circ=0.34$ V, what is $E^\circ$ for $\ce{2Cu^2++4e- -> 2Cu}$?" → Still $E^\circ=0.34$ V — standard reduction potential is an intensive property (like temperature or density) and does not change when a half-reaction's coefficients are scaled.
 
-**3. Predict-the-effect — comparing two E° values**
-- Variables & ranges: two half-reactions with different E° values.
+**3. Predict-the-effect — comparing two $E^\circ$ values**
+- Variables & ranges: two half-reactions with different $E^\circ$ values.
 - Constraint: prediction must correctly rank which is the stronger oxidizing agent.
 - Contexts: any two tabulated half-reactions.
 - Formats: short-answer.
-- Worked instantiation: "Between $\ce{F2+2e- -> 2F-}$ ($E^\circ=+2.87$ V) and $\ce{Ag+ +e- -> Ag}$ ($E^\circ=+0.80$ V), which is the stronger oxidizing agent?" → $\ce{F2}$ — the higher E° means it is more easily reduced (a better electron acceptor), making it the stronger oxidizing agent.
+- Worked instantiation: "Between $\ce{F2+2e- -> 2F-}$ ($E^\circ=+2.87$ V) and $\ce{Ag+ +e- -> Ag}$ ($E^\circ=+0.80$ V), which is the stronger oxidizing agent?" → $\ce{F2}$ — the higher $E^\circ$ means it is more easily reduced (a better electron acceptor), making it the stronger oxidizing agent.
 
 **4. Error analysis**
-- Variables & ranges: a student who assumes E° scales with the reaction's stoichiometric coefficients (like ΔH° or ΔG° would).
-- Constraint: correction must contrast E° (intensive) with ΔH°/ΔG° (extensive).
+- Variables & ranges: a student who assumes $E^\circ$ scales with the reaction's stoichiometric coefficients (like $\Delta H^\circ$ or $\Delta G^\circ$ would).
+- Constraint: correction must contrast $E^\circ$ (intensive) with $\Delta H^\circ/\Delta G^\circ$ (extensive).
 - Contexts: any half-reaction scaling scenario.
 - Formats: short-answer.
-- Worked instantiation: "A student assumes doubling a half-reaction's coefficients doubles its E°, by analogy with ΔH°. What's the error?" → Unlike ΔH° or ΔG° (extensive properties that scale with the amount of reaction), E° is an intensive property — a per-electron voltage that does not change regardless of how the half-reaction's coefficients are scaled.
+- Worked instantiation: "A student assumes doubling a half-reaction's coefficients doubles its $E^\circ$, by analogy with $\Delta H^\circ$. What's the error?" → Unlike $\Delta H^\circ$ or $\Delta G^\circ$ (extensive properties that scale with the amount of reaction), $E^\circ$ is an intensive property — a per-electron voltage that does not change regardless of how the half-reaction's coefficients are scaled.
 
 ### Design guidance by purpose
 
 | Purpose | Cognitive level | How to design the task |
 |---|---|---|
 | Homework | Understand | Explain the SHE's role; classify 2–3 scaling scenarios. |
-| Group discussion | Analyze | Debate why E° is intensive while ΔG° (computed from it via ΔG°=−nFE°) is extensive. |
+| Group discussion | Analyze | Debate why $E^\circ$ is intensive while $\Delta G^\circ$ (computed from it via $\Delta G^\circ$=−nFE°) is extensive. |
 | Quiz | Understand | One SHE-role explanation item. |
-| Exam | Analyze | Require ranking 3+ half-reactions by oxidizing/reducing strength from their E° values. |
+| Exam | Analyze | Require ranking 3+ half-reactions by oxidizing/reducing strength from their $E^\circ$ values. |
 | Project/activity | Evaluate | Research how the SHE is constructed and why it's impractical for routine lab use (leading to reference electrodes like Ag/AgCl). |
 
 ## Objective 18.3b: Identify cathode/anode and calculate standard cell potential
 
 ### Target understanding
 
-A student can identify the cathode (higher E°) and anode (lower E°, reversed) from two half-reactions, and calculate the overall reaction, cell diagram, and standard cell potential.
+A student can identify the cathode (higher $E^\circ$) and anode (lower $E^\circ$, reversed) from two half-reactions, and calculate the overall reaction, cell diagram, and standard cell potential.
 
 ### Question guides
 
 **1. Forward — full cell analysis**
-- Variables & ranges: two half-reactions with given E° values.
-- Constraint: correct cathode/anode identification, correct electron equalization, correct E°cell calculation.
+- Variables & ranges: two half-reactions with given $E^\circ$ values.
+- Constraint: correct cathode/anode identification, correct electron equalization, correct $E^\circ_\text{cell}$ calculation.
 - Contexts: any two half-reactions.
 - Formats: workout.
-- Worked instantiation: see the study guide's worked example (Ag/Cu cell, $E^\circ_{cell}=0.46$ V).
+- Worked instantiation: see the study guide's worked example (Ag/Cu cell, $E^\circ_\text{cell}=0.46$ V).
 
 **2. Forward — a three-metal comparison**
-- Variables & ranges: three or more half-reactions with given E° values, identify strongest oxidizing/reducing agents.
-- Constraint: correct ranking by E° value.
+- Variables & ranges: three or more half-reactions with given $E^\circ$ values, identify strongest oxidizing/reducing agents.
+- Constraint: correct ranking by $E^\circ$ value.
 - Contexts: any set of half-reactions.
 - Formats: short-answer.
 - Worked instantiation: given $\ce{Al^3++3e- -> Al}$ (−1.66 V), $\ce{Fe^3++e- -> Fe^2+}$ (0.77 V), $\ce{Sn^4++2e- -> Sn^2+}$ (0.14 V), $\ce{AgBr+e- -> Ag+Br-}$ (0.07 V), identify the strongest oxidizing and reducing agents.
 
-**3. Conceptual — why E°cell must be positive**
+**3. Conceptual — why $E^\circ_\text{cell}$ must be positive**
 - Variables & ranges: any spontaneous galvanic cell.
 - Constraint: explanation must connect the cathode/anode selection rule to a guaranteed positive result.
 - Contexts: any half-reaction pair.
 - Formats: short-answer.
-- Worked instantiation: "Why is $E^\circ_{cell}$ always positive when the higher-E° half-reaction is correctly assigned as the cathode?" → Since $E^\circ_{cell}=E^\circ_{cathode}-E^\circ_{anode}$ and the cathode is defined as whichever half-reaction has the *higher* E°, the subtraction is guaranteed to be positive — this is precisely how the cathode/anode assignment rule is derived.
+- Worked instantiation: "Why is $E^\circ_\text{cell}$ always positive when the higher-$E^\circ$ half-reaction is correctly assigned as the cathode?" → Since $E^\circ_\text{cell}=E^\circ_\text{cathode}-E^\circ_\text{anode}$ and the cathode is defined as whichever half-reaction has the *higher* $E^\circ$, the subtraction is guaranteed to be positive — this is precisely how the cathode/anode assignment rule is derived.
 
 **4. Error analysis**
-- Variables & ranges: a student who forgets to reverse the sign convention correctly (e.g., subtracts E°cell backwards).
+- Variables & ranges: a student who forgets to reverse the sign convention correctly (e.g., subtracts $E^\circ_\text{cell}$ backwards).
 - Constraint: correction must restate the correct subtraction order.
-- Contexts: any E°cell calculation.
+- Contexts: any $E^\circ_\text{cell}$ calculation.
 - Formats: short-answer.
-- Worked instantiation: "A student computes $E^\circ_{cell}=E^\circ_{anode}-E^\circ_{cathode}$, getting a negative number for a cell they know is spontaneous. What's wrong?" → The formula is backwards — it should be $E^\circ_{cell}=E^\circ_{cathode}-E^\circ_{anode}$ (cathode minus anode); the student's reversed formula will always give the negative of the correct answer.
+- Worked instantiation: "A student computes $E^\circ_\text{cell}=E^\circ_\text{anode}-E^\circ_\text{cathode}$, getting a negative number for a cell they know is spontaneous. What's wrong?" → The formula is backwards — it should be $E^\circ_\text{cell}=E^\circ_\text{cathode}-E^\circ_\text{anode}$ (cathode minus anode); the student's reversed formula will always give the negative of the correct answer.
 
 ### Design guidance by purpose
 
@@ -245,9 +245,9 @@ A student can identify the cathode (higher E°) and anode (lower E°, reversed) 
 | Group discussion | Analyze | Rank a set of half-reactions from strongest to weakest oxidizing agent. |
 | Quiz | Apply | One full cell-potential calculation from two half-reactions. |
 | Exam | Analyze | Require identifying strongest oxidizing/reducing agents from a list of 4+ half-reactions. |
-| Project/activity | Evaluate | Research real E° values for a galvanic cell used industrially (e.g., in metal refining) and verify its cell potential. |
+| Project/activity | Evaluate | Research real $E^\circ$ values for a galvanic cell used industrially (e.g., in metal refining) and verify its cell potential. |
 
-## Objective 18.4a: Relate ΔG°, K, and E° for a redox reaction
+## Objective 18.4a: Relate $\Delta G^\circ$, K, and $E^\circ$ for a redox reaction
 
 ### Target understanding
 
@@ -255,31 +255,31 @@ A student can convert between $\Delta G^\circ$, $K$, and $E^\circ$ for a redox r
 
 ### Question guides
 
-**1. Forward — E° to ΔG° to K**
-- Variables & ranges: two half-reactions with given E°, find ΔG° and K.
+**1. Forward — $E^\circ$ to $\Delta G^\circ$ to K**
+- Variables & ranges: two half-reactions with given $E^\circ$, find $\Delta G^\circ$ and K.
 - Constraint: correct value of $n$ from equalizing electrons; correct use of $F=96{,}485$ C/mol.
-- Contexts: any redox reaction with tabulated half-reaction E° values.
+- Contexts: any redox reaction with tabulated half-reaction $E^\circ$ values.
 - Formats: workout.
-- Worked instantiation: see the study guide's worked example (Sn/Cu⁺ reaction, $\Delta G^\circ=-5.606\times10^4$ J/mol, $K=6.7\times10^9$).
+- Worked instantiation: see the study guide's worked example (Sn/$\ce{Cu+}$ reaction, $\Delta G^\circ=-5.606\times10^4$ J/mol, $K=6.7\times10^9$).
 
 **2. Forward — a second worked case**
 - Variables & ranges: $\ce{H2(g)+2Ag+(aq)->2H+(aq)+2Ag(s)}$.
-- Constraint: correct identification that $\ce{H2}$ is the SHE reference (E°=0), simplifying the E°cell calculation.
+- Constraint: correct identification that $\ce{H2}$ is the SHE reference ($E^\circ = 0$), simplifying the $E^\circ_\text{cell}$ calculation.
 - Contexts: any reaction involving the SHE.
 - Formats: workout.
-- Worked instantiation: given $E^\circ(\ce{Ag+/Ag})=0.80$ V, find $E^\circ_{cell}$, $\Delta G^\circ$, and $K$ for this reaction ($E^\circ_{cell}=0.80$ V, $\Delta G^\circ=-77.2$ kJ/mol, $K=3.4\times10^{13}$).
+- Worked instantiation: given $E^\circ(\ce{Ag+/Ag})=0.80$ V, find $E^\circ_\text{cell}$, $\Delta G^\circ$, and $K$ for this reaction ($E^\circ_\text{cell}=0.80$ V, $\Delta G^\circ=-77.2$ kJ/mol, $K=3.4\times10^{13}$).
 
 **3. Conceptual — qualitative prediction before calculating**
-- Variables & ranges: a given E°cell (positive or negative).
+- Variables & ranges: a given $E^\circ_\text{cell}$ (positive or negative).
 - Constraint: prediction must state whether K should be greater or less than 1 before calculating.
-- Contexts: any redox reaction with known E°cell.
+- Contexts: any redox reaction with known $E^\circ_\text{cell}$.
 - Formats: short-answer.
-- Worked instantiation: "Without calculating, would you expect $K>1$ or $K<1$ for a reaction with $E^\circ_{cell}=-0.30$ V?" → $K<1$ — a negative $E^\circ_{cell}$ corresponds to positive $\Delta G^\circ$ (via $\Delta G^\circ=-nFE^\circ$), which in turn corresponds to $K<1$.
+- Worked instantiation: "Without calculating, would you expect $K>1$ or $K<1$ for a reaction with $E^\circ_\text{cell}=-0.30$ V?" → $K<1$ — a negative $E^\circ_\text{cell}$ corresponds to positive $\Delta G^\circ$ (via $\Delta G^\circ=-nFE^\circ$), which in turn corresponds to $K<1$.
 
 **4. Error analysis**
 - Variables & ranges: a student who uses the wrong value of $n$ (forgetting to equalize electrons from the original half-reactions).
 - Constraint: correction must trace back to the electron-equalization step.
-- Contexts: any $\Delta G^\circ$/$K$ calculation from E°.
+- Contexts: any $\Delta G^\circ/K$ calculation from $E^\circ$.
 - Formats: short-answer.
 - Worked instantiation: "A student combines two half-reactions (one with 2 electrons, one with 3) without equalizing, then uses $n=2$ in $\Delta G^\circ=-nFE^\circ$. What's wrong?" → Before combining, both half-reactions must be scaled so their electron counts match (in this case, to the least common multiple, 6); the value of $n$ used in every subsequent calculation must be this equalized electron count, not either original half-reaction's count.
 
@@ -287,11 +287,11 @@ A student can convert between $\Delta G^\circ$, $K$, and $E^\circ$ for a redox r
 
 | Purpose | Cognitive level | How to design the task |
 |---|---|---|
-| Homework | Apply | 2 full ΔG°/K/E° conversion problems. |
-| Group discussion | Analyze | Debate why all three quantities (ΔG°, K, E°) must agree on the same qualitative conclusion (spontaneous or not). |
-| Quiz | Apply | One E°-to-ΔG°-to-K conversion. |
+| Homework | Apply | 2 full $\Delta G^\circ$/K/$E^\circ$ conversion problems. |
+| Group discussion | Analyze | Debate why all three quantities ($\Delta G^\circ$, K, $E^\circ$) must agree on the same qualitative conclusion (spontaneous or not). |
+| Quiz | Apply | One $E^\circ$-to-$\Delta G^\circ$-to-K conversion. |
 | Exam | Analyze | Require the qualitative K-vs-1 prediction explicitly before the numeric answer. |
-| Project/activity | Evaluate | Research a real battery half-reaction's E° and calculate its theoretical K. |
+| Project/activity | Evaluate | Research a real battery half-reaction's $E^\circ$ and calculate its theoretical K. |
 
 ## Objective 18.4b: Apply the Nernst equation
 
@@ -302,7 +302,7 @@ A student can apply $E=E^\circ-\frac{RT}{nF}\ln Q$ to find cell potential under 
 ### Question guides
 
 **1. Forward — Nernst equation from given concentrations**
-- Variables & ranges: a cell diagram with non-1-M concentrations, given half-reaction E° values.
+- Variables & ranges: a cell diagram with non-1-M concentrations, given half-reaction $E^\circ$ values.
 - Constraint: correct construction of $Q$ matching the overall reaction's stoichiometry.
 - Contexts: any non-standard-condition galvanic cell.
 - Formats: workout.
@@ -310,17 +310,17 @@ A student can apply $E=E^\circ-\frac{RT}{nF}\ln Q$ to find cell potential under 
 
 **2. Conceptual — when Nernst is required**
 - Variables & ranges: a cell described as at "1 M, 1 atm" vs. other concentrations.
-- Constraint: explanation must state that E° alone applies only under standard conditions.
+- Constraint: explanation must state that $E^\circ$ alone applies only under standard conditions.
 - Contexts: any galvanic cell with specified (or unspecified) conditions.
 - Formats: short-answer.
-- Worked instantiation: "A problem gives concentrations of 0.5 M and 2.0 M for a cell's two half-reactions. Can you just use E°cell directly?" → No — E°cell only applies when all solutes are at 1 M and gases at 1 atm; since the given concentrations are not standard, the Nernst equation must be used to find the actual E.
+- Worked instantiation: "A problem gives concentrations of 0.5 M and 2.0 M for a cell's two half-reactions. Can you just use $E^\circ_\text{cell}$ directly?" → No — $E^\circ_\text{cell}$ only applies when all solutes are at 1 M and gases at 1 atm; since the given concentrations are not standard, the Nernst equation must be used to find the actual E.
 
 **3. Predict-the-effect — direction of the correction**
 - Variables & ranges: a reaction where product concentrations are below standard (1 M).
-- Constraint: prediction must state that E should increase above E° in this case (since Q<1, ln Q<0, making the correction term add to E°).
+- Constraint: prediction must state that E should increase above $E^\circ$ in this case (since Q<1, ln Q<0, making the correction term add to $E^\circ$).
 - Contexts: any non-standard-condition cell with low product concentrations.
 - Formats: short-answer.
-- Worked instantiation: "If the products of a cell reaction are at lower-than-standard concentrations (reactants closer to standard), would you expect E to be greater than or less than E°?" → Greater than E° — with lower product concentrations, $Q<1$, so $\ln Q<0$, making $-\frac{RT}{nF}\ln Q$ positive and increasing E above E°.
+- Worked instantiation: "If the products of a cell reaction are at lower-than-standard concentrations (reactants closer to standard), would you expect E to be greater than or less than $E^\circ$?" → Greater than $E^\circ$ — with lower product concentrations, $Q<1$, so $\ln Q<0$, making $-\frac{RT}{nF}\ln Q$ positive and increasing E above $E^\circ$.
 
 **4. Error analysis**
 - Variables & ranges: a student who builds Q using the reduction half-reactions' coefficients instead of the overall balanced reaction's coefficients.
@@ -334,9 +334,9 @@ A student can apply $E=E^\circ-\frac{RT}{nF}\ln Q$ to find cell potential under 
 | Purpose | Cognitive level | How to design the task |
 |---|---|---|
 | Homework | Apply | 2 Nernst-equation calculations from given non-standard concentrations. |
-| Group discussion | Analyze | Debate when a "non-standard" condition is close enough to standard to approximate with E° alone. |
+| Group discussion | Analyze | Debate when a "non-standard" condition is close enough to standard to approximate with $E^\circ$ alone. |
 | Quiz | Apply | One Nernst-equation calculation. |
-| Exam | Analyze | Require justifying why the Nernst equation (not E° alone) applies to the given conditions. |
+| Exam | Analyze | Require justifying why the Nernst equation (not $E^\circ$ alone) applies to the given conditions. |
 | Project/activity | Evaluate | Model how a real battery's voltage changes as it discharges (concentrations shift away from standard). |
 
 ## Objective 18.4c: Calculate the potential of a concentration cell
@@ -354,12 +354,12 @@ A student can identify the anode and cathode in a concentration cell (dilute = a
 - Formats: workout.
 - Worked instantiation: see the study guide's worked example (Zn concentration cell, 0.10 M/0.50 M, $E=0.0207$ V).
 
-**2. Conceptual — why E° = 0**
+**2. Conceptual — why $E^\circ = 0$**
 - Variables & ranges: any concentration cell.
-- Constraint: explanation must state that both half-reactions are identical (same electrode, same species), so their E° values are equal and cancel.
+- Constraint: explanation must state that both half-reactions are identical (same electrode, same species), so their $E^\circ$ values are equal and cancel.
 - Contexts: any concentration cell.
 - Formats: short-answer.
-- Worked instantiation: "Why is $E^\circ=0$ for every concentration cell, regardless of which electrode material is used?" → Both half-cells use the exact same half-reaction (same electrode material and ion), so $E^\circ_{cathode}=E^\circ_{anode}$ and $E^\circ_{cell}=E^\circ_{cathode}-E^\circ_{anode}=0$ — the entire driving force comes from the concentration difference, captured by Q alone.
+- Worked instantiation: "Why is $E^\circ=0$ for every concentration cell, regardless of which electrode material is used?" → Both half-cells use the exact same half-reaction (same electrode material and ion), so $E^\circ_\text{cathode}=E^\circ_\text{anode}$ and $E^\circ_\text{cell}=E^\circ_\text{cathode}-E^\circ_\text{anode}=0$ — the entire driving force comes from the concentration difference, captured by Q alone.
 
 **3. Predict-the-effect — as concentrations equalize**
 - Variables & ranges: a concentration cell as it discharges over time.
@@ -380,7 +380,7 @@ A student can identify the anode and cathode in a concentration cell (dilute = a
 | Purpose | Cognitive level | How to design the task |
 |---|---|---|
 | Homework | Apply | 1–2 concentration-cell potential calculations. |
-| Group discussion | Analyze | Discuss why concentration cells eventually "run down" to E=0. |
+| Group discussion | Analyze | Discuss why concentration cells eventually "run down" to $E = 0$. |
 | Quiz | Apply | One concentration-cell calculation. |
 | Exam | Analyze | Require justifying the anode/cathode assignment before calculating. |
 | Project/activity | Evaluate | Research how concentration cells relate to biological membrane potentials (e.g., nerve cells). |
@@ -395,7 +395,7 @@ A student can explain corrosion as a spontaneous electrochemical process, define
 
 **1. Conceptual — corrosion as electrochemistry**
 - Variables & ranges: rust formation on iron.
-- Constraint: explanation must identify the oxidizing agent (O₂) and note the spontaneous (galvanic-like) nature.
+- Constraint: explanation must identify the oxidizing agent ($\ce{O2}$) and note the spontaneous (galvanic-like) nature.
 - Contexts: iron corrosion, or another metal's corrosion.
 - Formats: short-answer.
 - Worked instantiation: "Explain why rust formation is considered an electrochemical process." → Iron is oxidized (loses electrons, forming $\ce{Fe^2+}$/$\ce{Fe^3+}$) while atmospheric $\ce{O2}$ is reduced, exactly the oxidation/reduction pairing of any redox reaction — it's spontaneous, like a galvanic cell, just occurring directly on the metal surface rather than in physically separated half-cells.
@@ -415,11 +415,11 @@ A student can explain corrosion as a spontaneous electrochemical process, define
 - Worked instantiation: "How does a fuel cell differ from a typical sealed battery like a AA alkaline cell, even though both are galvanic cells?" → A sealed battery contains a fixed, finite supply of reactants and eventually depletes them; a fuel cell requires a *continuous* external supply of reactants (e.g., $\ce{H2}$ and $\ce{O2}$) to keep functioning indefinitely, as long as fuel keeps flowing in.
 
 **4. Error analysis**
-- Variables & ranges: a student who claims a negative-E°cell reaction "cannot occur under any circumstances."
+- Variables & ranges: a student who claims a negative-$E^\circ_\text{cell}$ reaction "cannot occur under any circumstances."
 - Constraint: correction must introduce electrolysis as the resolution.
 - Contexts: any nonspontaneous redox reaction.
 - Formats: short-answer.
-- Worked instantiation: "A student says water can never decompose into $\ce{H2}$ and $\ce{O2}$ because that reaction has a negative E°cell (nonspontaneous). What resolves this apparent contradiction?" → A negative $E^\circ_{cell}$ means the reaction won't happen *spontaneously*, but it can still be driven forward by supplying external electrical energy — this is precisely how electrolysis of water works, producing $\ce{H2}$ and $\ce{O2}$ despite the reaction being thermodynamically nonspontaneous on its own.
+- Worked instantiation: "A student says water can never decompose into $\ce{H2}$ and $\ce{O2}$ because that reaction has a negative $E^\circ_\text{cell}$ (nonspontaneous). What resolves this apparent contradiction?" → A negative $E^\circ_\text{cell}$ means the reaction won't happen *spontaneously*, but it can still be driven forward by supplying external electrical energy — this is precisely how electrolysis of water works, producing $\ce{H2}$ and $\ce{O2}$ despite the reaction being thermodynamically nonspontaneous on its own.
 
 ### Design guidance by purpose
 
@@ -428,16 +428,16 @@ A student can explain corrosion as a spontaneous electrochemical process, define
 | Homework | Understand | Explain corrosion and electrolysis conceptually; classify 3–4 battery types. |
 | Group discussion | Analyze | Debate real-world corrosion-prevention strategies (galvanization, sacrificial anodes) in electrochemical terms. |
 | Quiz | Understand | One corrosion or electrolysis explanation item. |
-| Exam | Analyze | Require connecting a nonspontaneous E°cell to the necessity of electrolysis. |
+| Exam | Analyze | Require connecting a nonspontaneous $E^\circ_\text{cell}$ to the necessity of electrolysis. |
 | Project/activity | Evaluate | Research a real sacrificial-anode corrosion-protection system (e.g., on a ship hull) and explain its electrochemistry. |
 
 ## Rubric Themes for Chapter 18
 
 | Evidence of mastery | What to look for |
 |---|---|
-| Cathode/anode selected by E° comparison, not intuition | Student explicitly compares E° values and never guesses based on "which metal seems more reactive." |
+| Cathode/anode selected by $E^\circ$ comparison, not intuition | Student explicitly compares $E^\circ$ values and never guesses based on "which metal seems more reactive." |
 | Anode half-reaction explicitly reversed | Student visibly rewrites the anode's tabulated reduction as an oxidation before combining half-reactions. |
-| Electron count (n) equalized and reused consistently | The same, correctly equalized n appears in the combined equation, ΔG°, K, and any Nernst-equation calculation. |
-| E° vs. Nernst equation correctly distinguished | Student checks whether conditions are standard (1 M, 1 atm) before deciding which formula to use. |
-| Nonspontaneous ≠ impossible | Student explains a negative E°cell using electrolysis as the resolution, not as evidence the reaction "can't happen." |
-| ΔG°, K, and E° treated as one connected story | Student moves fluidly between the three quantities using ΔG° = −nFE° = −RT ln K, without treating them as unrelated topics. |
+| Electron count (n) equalized and reused consistently | The same, correctly equalized n appears in the combined equation, $\Delta G^\circ$, K, and any Nernst-equation calculation. |
+| $E^\circ$ vs. Nernst equation correctly distinguished | Student checks whether conditions are standard (1 M, 1 atm) before deciding which formula to use. |
+| Nonspontaneous ≠ impossible | Student explains a negative $E^\circ_\text{cell}$ using electrolysis as the resolution, not as evidence the reaction "can't happen." |
+| $\Delta G^\circ$, K, and $E^\circ$ treated as one connected story | Student moves fluidly between the three quantities using $\Delta G^\circ$ = −nFE° = −RT ln K, without treating them as unrelated topics. |

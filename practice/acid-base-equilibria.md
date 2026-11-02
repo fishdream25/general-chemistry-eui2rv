@@ -468,7 +468,7 @@ That is about seventeen million times ($1.7\times10^{7}$) better than $K_{sp}$ a
 
 (A) A large $K_f$ means the complex dissociates readily\
 (B) A large $K_f$ means the free metal-ion concentration is very small\
-\(C) $K_f$ has units of M$^{-1}$\
+\(C) $K_f$ has units of $\text{M}^{-1}$\
 (D) $K_f$ changes when more ligand is added
 :::
 ::: tab Answer

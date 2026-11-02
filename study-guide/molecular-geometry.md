@@ -380,7 +380,7 @@ For ethylene, $\ce{CH2=CH2}$: what is each carbon's hybridization, and how many 
 - 1 C–C $\sigma$ bond
 - 1 C–C $\pi$ bond
 
-**Total: 5 $\sigma$ and 1 $\pi$.** The C=C double bond is 1 $\sigma$ + 1 $\pi$.
+**Total: 5 $\sigma$ and 1 $\pi$.** The C=C double bond is $1\sigma + 1\pi$.
 
 The $\pi$ bond is why ethylene is flat and cannot rotate about its C=C: twisting would pull the two $2p_z$ orbitals out of alignment and break the sideways overlap.
 :::
@@ -399,7 +399,7 @@ For acetylene, $\ce{CH#CH}$: what is each carbon's hybridization, and how many $
 - 1 C–C $\sigma$ bond
 - 2 C–C $\pi$ bonds
 
-**Total: 3 $\sigma$ and 2 $\pi$.** The C≡C triple bond is 1 $\sigma$ + 2 $\pi$.
+**Total: 3 $\sigma$ and 2 $\pi$.** The C≡C triple bond is $1\sigma + 2\pi$.
 
 Two $sp$ orbitals point in exactly opposite directions, which is why acetylene is linear — 180° across the whole $\ce{H-C#C-H}$ chain, as Figure 10.8 shows.
 :::

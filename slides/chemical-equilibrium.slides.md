@@ -15,9 +15,9 @@ theme: paper
 <!-- slide 2col -->
 ## Chapter Learning Objectives
 <!-- @left -->
-- **Objective 14.1a** — Derive and apply K = k_f/k_r, including the effect of reversing a reaction
+- **Objective 14.1a** — Derive and apply $K = k_f/k_r$, including the effect of reversing a reaction
 - **Objective 14.1b** — Interpret the magnitude of K
-- **Objective 14.2a** — Write and convert K_c/K_p for homogeneous gas-phase equilibria
+- **Objective 14.2a** — Write and convert $K_c/K_p$ for homogeneous gas-phase equilibria
 - **Objective 14.2b** — Write equilibrium expressions for liquid-phase and heterogeneous equilibria
 - **Objective 14.2c** — Combine equilibrium constants for multi-step reactions
 <!-- @right -->
@@ -61,7 +61,7 @@ graph TD
 
 <!-- slide step -->
 ## Worked example — K from rate constants
-A ⇌ B, k_f = 0.20 s⁻¹, k_r = 0.05 s⁻¹
+A ⇌ B, $k_f = 0.20\ \text{s}^{-1}$, $k_r = 0.05\ \text{s}^{-1}$
 - (a) $K=k_f/k_r=4.0$ → favors B{{attrs[.fragment]}}
 - (b) Reverse reaction: $K=1/4.0=0.25${{attrs[.fragment]}}
 
@@ -75,32 +75,32 @@ A ⇌ B, k_f = 0.20 s⁻¹, k_r = 0.05 s⁻¹
 <!-- slide -->
 ## Homogeneous equilibria (gas phase)
 $$K_p=K_c(RT)^{\Delta n}, \quad \Delta n=(c+d)-(a+b)$$
-- Same phase throughout; K_c (concentrations) or K_p (partial pressures)
+- Same phase throughout; $K_c$ (concentrations) or $K_p$ (partial pressures)
 - Convert between them via the ideal gas law (Ch. 5)
 
 <!-- slide step -->
-## Worked example — K_p ↔ K_c
-2NH₃ ⇌ N₂ + 3H₂, K_p = 15.6 at 217°C (490 K)
+## Worked example — $K_p$ ↔ $K_c$
+$\ce{2NH3 <=> N2 + 3H2}$, $K_p = 15.6$ at 217°C (490 K)
 - $\Delta n = (1+3)-2=2${{attrs[.fragment]}}
 - $K_c=K_p(RT)^{-\Delta n}=15.6\times(0.0821\times490)^{-2}${{attrs[.fragment]}}
 - **$K_c = 0.00964$**{{attrs[.fragment]}}
 
 <!-- slide -->
 ## Liquid-phase & heterogeneous equilibria
-- Liquid phase: only K_c; excess solvent absorbed into the constant
+- Liquid phase: only $K_c$; excess solvent absorbed into the constant
 - **Heterogeneous:** pure solids/liquids OMITTED — their "concentration" never changes
 
 <!-- slide step -->
 ## Worked example — pure solid omitted
-CaCO₃(s) ⇌ CaO(s) + CO₂(g), equilibrium P(CO₂) = 0.220 atm
-- $K_p = P_{\text{CO}_2} = 0.220$ (CaCO₃, CaO don't appear){{attrs[.fragment]}}
-- **Adding more CaCO₃(s) does NOT change this pressure**{{attrs[.fragment]}}
+$\ce{CaCO3(s) <=> CaO(s) + CO2(g)}$, equilibrium $\ce{P(CO2)} = 0.220$ atm
+- $K_p = P_{\text{CO}_2} = 0.220$ ($\ce{CaCO3}$, $\ce{CaO}$ don't appear){{attrs[.fragment]}}
+- **Adding more $\ce{CaCO3(s)}$ does NOT change this pressure**{{attrs[.fragment]}}
 
 <!-- slide step -->
 ## Worked example — multi-step reactions
-K₃ for reaction 3, where reaction 3 = reaction 1 + reaction 2
-- K_c1 = 490, K_c2 = 0.0149{{attrs[.fragment]}}
-- **K_c3 = K_c1 × K_c2 = 7.30** (equilibrium's Hess's law){{attrs[.fragment]}}
+$K_3$ for reaction 3, where reaction 3 = reaction 1 + reaction 2
+- $K_{c1} = 490$, $K_{c2} = 0.0149${{attrs[.fragment]}}
+- **$K_{c3} = K_{c1} \times K_{c2} = 7.30$** (equilibrium's Hess's law){{attrs[.fragment]}}
 
 <!-- slide template=section -->
 # 3. Reaction Quotient
@@ -123,14 +123,14 @@ The system always moves so that $Q$ travels toward $K$. That single sentence rep
 
 <!-- slide step -->
 ## Worked example — Q vs K
-2SO₂ + O₂ ⇌ 2SO₃, K_c = 4.3 (from equilibrium data)
-- New mixture: [SO₂]=1.9, [O₂]=0.17, [SO₃]=0.61{{attrs[.fragment]}}
+$\ce{2SO2 + O2 <=> 2SO3}$, $K_c = 4.3$ (from equilibrium data)
+- New mixture: $[\ce{SO2}] = 1.9$, $[\ce{O2}] = 0.17$, $[\ce{SO3}] = 0.61${{attrs[.fragment]}}
 - $Q_c = 0.61^2/(1.9^2\times0.17) = 0.61${{attrs[.fragment]}}
 - **$Q_c < K_c$ → proceeds forward**{{attrs[.fragment]}}
 
 <!-- slide step -->
 ## Worked example — the OTHER direction
-Same reaction, K_c = 4.3. Mixture: [SO₂]=0.40, [O₂]=0.20, [SO₃]=2.5
+Same reaction, $K_c = 4.3$. Mixture: $[\ce{SO2}] = 0.40$, $[\ce{O2}] = 0.20$, $[\ce{SO3}] = 2.5$
 - $Q_c = 2.5^2/(0.40^2\times0.20) = 195${{attrs[.fragment]}}
 - **$Q_c \gg K_c$ → proceeds in REVERSE**{{attrs[.fragment]}}
 
@@ -141,23 +141,23 @@ Same reaction, K_c = 4.3. Mixture: [SO₂]=0.40, [O₂]=0.20, [SO₃]=2.5
 ## The ICE table
 | | A | B | C | D |
 |---|---|---|---|---|
-| Initial | [A]₀ | [B]₀ | 0 | 0 |
+| Initial | $[\text{A}]_0$ | $[\text{B}]_0$ | 0 | 0 |
 | Change | −ax | −bx | +cx | +dx |
-| Equilibrium | [A]₀−ax | [B]₀−bx | cx | dx |
+| Equilibrium | $[\text{A}]_0 - ax$ | $[\text{B}]_0 - bx$ | $cx$ | $dx$ |
 - Substitute Equilibrium row into K, solve for x
 
 <!-- slide step -->
 ## Worked example — perfect-square case
-CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O, K_c=4.0, both start at 0.15 M
+$\ce{CH3COOH + C2H5OH <=> CH3COOC2H5 + H2O}$, $K_c = 4.0$, both start at 0.15 M
 - $(x/(0.15-x))^2=4.0 \Rightarrow x/(0.15-x)=2.0${{attrs[.fragment]}}
-- **x = 0.10 M** → products 0.10 M, reactants 0.05 M each{{attrs[.fragment]}}
+- **$x = 0.10$ M** → products 0.10 M, reactants 0.05 M each{{attrs[.fragment]}}
 
 <!-- slide step -->
 ## Worked example — small-x approximation
-N₂O₄ ⇌ 2NO₂, K_c=1.20×10⁻⁴, [N₂O₄]₀=0.500 M
+$\ce{N2O4 <=> 2NO2}$, $K_c = 1.20\times10^{-4}$, $[\ce{N2O4}]$$_0 = 0.500$ M
 - Approximate $0.500-x\approx0.500$: $4x^2/0.500=1.20\times10^{-4}${{attrs[.fragment]}}
 - $x=3.87\times10^{-3}$ → check: $x/0.500=0.77\%$ ✓ valid{{attrs[.fragment]}}
-- **[N₂O₄]=0.496 M, [NO₂]=0.00775 M**{{attrs[.fragment]}}
+- **$[\ce{N2O4}] = 0.496$ M, $[\ce{NO2}] = 0.00775$ M**{{attrs[.fragment]}}
 
 <!-- slide main-side -->
 ## The 5% rule, with the reason attached
@@ -173,7 +173,7 @@ At 28% reacted it is off by **18%**.
 <!-- slide -->
 ## When the approximation fails
 :::warning
-If x turns out to be more than ~5% of [A]₀, the approximation has failed — solve the exact quadratic (or cubic) instead.
+If x turns out to be more than ~5% of $[\text{A}]_0$, the approximation has failed — solve the exact quadratic (or cubic) instead.
 :::
 
 <!-- slide template=section -->
@@ -203,9 +203,9 @@ The stress is **partially** offset, never erased — the new equilibrium is stil
 
 <!-- slide step -->
 ## Worked example — the Haber process
-N₂ + 3H₂ ⇌ 2NH₃, run at very high pressure industrially
+$\ce{N2 + 3H2 <=> 2NH3}$, run at very high pressure industrially
 - Reactant side: 4 mol gas. Product side: 2 mol gas{{attrs[.fragment]}}
-- **High pressure shifts toward fewer moles → more NH₃**{{attrs[.fragment]}}
+- **High pressure shifts toward fewer moles → more $\ce{NH3}$**{{attrs[.fragment]}}
 
 <!-- slide main-side -->
 ## Temperature shifts K itself
@@ -214,14 +214,14 @@ N₂ + 3H₂ ⇌ 2NH₃, run at very high pressure industrially
 <!-- @side -->
 Three tubes, same mixture, three bath temperatures — coldest on the left (note the ice), warmest on the right.
 
-NO₂ is the colored species, so the tint deepens left to right: almost colorless → pale yellow → amber.
+$\ce{NO2}$ is the colored species, so the tint deepens left to right: almost colorless → pale yellow → amber.
 
 <!-- slide step -->
 ## Worked example — temperature and color
-2NO₂ ⇌ N₂O₄ + heat (forward direction exothermic)
+$\ce{2NO2 <=> N2O4}$ + heat (forward direction exothermic)
 - Write heat as a **product** — then temperature is just the concentration rule{{attrs[.fragment]}}
-- Heating = adding a product → shifts **left**, toward NO₂{{attrs[.fragment]}}
-- NO₂ is colored, N₂O₄ is not → **color deepens as temperature rises**{{attrs[.fragment]}}
+- Heating = adding a product → shifts **left**, toward $\ce{NO2}${{attrs[.fragment]}}
+- $\ce{NO2}$ is colored, $\ce{N2O4}$ is not → **color deepens as temperature rises**{{attrs[.fragment]}}
 - And $K$ itself falls, because $k_f$ and $k_r$ change by different factors{{attrs[.fragment]}}
 
 <!-- slide -->
@@ -229,10 +229,10 @@ NO₂ is the colored species, so the tint deepens left to right: almost colorles
 | Factor | Shifts equilibrium? | Changes K? |
 |---|---|---|
 | Concentration | Yes | No |
-| Pressure/Volume | Yes (if Δn≠0) | No |
+| Pressure/Volume | Yes (if $\Delta n$≠0) | No |
 | Temperature | Yes | Yes |
 | Catalyst | No | No |
 
 <!-- slide template=closing -->
 # One idea, four tools
-Chemical equilibrium is a single idea — forward rate equals reverse rate — expressed through K's expression, Q's comparison to K, the ICE table, and Le Chatelier's principle. Every one of these tools reappears unchanged for acids/bases (Ch. 15), solubility (Ch. 16), and connects directly to ΔG° = −RT ln K (Ch. 17).
+Chemical equilibrium is a single idea — forward rate equals reverse rate — expressed through K's expression, Q's comparison to K, the ICE table, and Le Chatelier's principle. Every one of these tools reappears unchanged for acids/bases (Ch. 15), solubility (Ch. 16), and connects directly to $\Delta G^\circ$ = −RT ln K (Ch. 17).

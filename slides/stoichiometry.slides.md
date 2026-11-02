@@ -89,7 +89,7 @@ Each absorber's mass gain gives the mass of CO2 or H2O formed; convert to moles 
 
 <!-- slide step -->
 ## Worked example — ethanol's empirical formula
-11.5 g ethanol → 22.0 g CO₂ + 13.5 g H₂O
+11.5 g ethanol → 22.0 g $\ce{CO2}$ + 13.5 g $\ce{H2O}$
 - C: 0.500 mol; H: 1.50 mol{{attrs[.fragment]}}
 - O by difference: 0.25 mol{{attrs[.fragment]}}
 - Ratio 2:6:1 → **$\ce{C2H6O}$**{{attrs[.fragment]}}
@@ -140,10 +140,10 @@ The limiting reactant is not necessarily the one you have least of — it is the
 
 <!-- slide step -->
 ## Worked example — urea synthesis
-$\ce{2NH3 + CO2 -> (NH2)2CO + H2O}$; 637.2 g NH₃, 1142 g CO₂
-- 37.42 mol NH₃ ÷ 2 = 18.71{{attrs[.fragment]}}
-- 25.95 mol CO₂ ÷ 1 = 25.95{{attrs[.fragment]}}
-- **NH₃ is limiting** (smaller value){{attrs[.fragment]}}
+$\ce{2NH3 + CO2 -> (NH2)2CO + H2O}$; 637.2 g $\ce{NH3}$, 1142 g $\ce{CO2}$
+- 37.42 mol $\ce{NH3}$ ÷ 2 = 18.71{{attrs[.fragment]}}
+- 25.95 mol $\ce{CO2}$ ÷ 1 = 25.95{{attrs[.fragment]}}
+- **$\ce{NH3}$ is limiting** (smaller value){{attrs[.fragment]}}
 
 <!-- slide -->
 ## Theoretical vs. actual yield
@@ -159,7 +159,7 @@ Theoretical yield of urea here: 1124 g
 ## Worked example — % yield and excess reagent
 - Actual yield 1006 g / theoretical 1124 g{{attrs[.fragment]}}
 - **89.5% yield**{{attrs[.fragment]}}
-- CO₂ remaining: $25.95-18.71=7.24$ mol → **319 g** excess{{attrs[.fragment]}}
+- $\ce{CO2}$ remaining: $25.95-18.71=7.24$ mol → **319 g** excess{{attrs[.fragment]}}
 
 <!-- slide template=closing -->
 # The mole is the unit of chemistry

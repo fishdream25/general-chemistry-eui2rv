@@ -110,11 +110,11 @@ A **nanometer** is larger: $1\,\text{nm}=10^{-9}$ m while $1\,\text{pm}=10^{-12}
 
 :::: tabs
 ::: tab Q 10
-{{sp[info] Objective 1.2b}} · *workout* The density of iron is 7.87 g/cm³. What is the volume of 25.7 g of iron?
+{{sp[info] Objective 1.2b}} · *workout* The density of iron is 7.87 $\text{g}/\text{cm}^{3}$. What is the volume of 25.7 g of iron?
 :::
 ::: tab Answer
 $$V=\frac{m}{d}=\frac{25.7\,\text{g}}{7.87\,\text{g/cm}^3}=3.27\ \text{cm}^3$$
-(3 significant figures, matching 25.7 g and 7.87 g/cm³.)
+(3 significant figures, matching 25.7 g and 7.87 $\text{g}/\text{cm}^{3}$.)
 :::
 ::::
 
@@ -131,13 +131,13 @@ The mL cancel and leave grams, confirming the rearrangement was the right way up
 
 :::: tabs
 ::: tab Q 12
-{{sp[info] Objective 1.2b}} · *workout* A sample occupies 250 cm³. Express this volume in (a) mL and (b) L.
+{{sp[info] Objective 1.2b}} · *workout* A sample occupies 250 $\text{cm}^{3}$. Express this volume in (a) mL and (b) L.
 :::
 ::: tab Answer
 **(a)** $1\,\text{cm}^3=1\,\text{mL}$ exactly, so the volume is **250 mL** — no arithmetic needed.
 **(b)** $250\,\text{mL}\times\dfrac{1\,\text{L}}{1000\,\text{mL}}=$ **0.250 L**.
 
-The cm³ = mL identity is worth memorising: it lets you move between a volume calculated from dimensions and one read off a graduated cylinder with no conversion at all.
+The $\text{cm}^{3}$ = mL identity is worth memorising: it lets you move between a volume calculated from dimensions and one read off a graduated cylinder with no conversion at all.
 :::
 ::::
 

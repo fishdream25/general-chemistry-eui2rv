@@ -64,19 +64,19 @@ $\ce{^{125}_{53}I}$ captures an electron
 <!-- slide -->
 ## Nuclear stability patterns
 :::warning
-Magic numbers (2,8,20,50,82,126) are extra-stable. Even-even nuclei > odd-odd. EVERY isotope with Z>83 is radioactive.
+Magic numbers (2,8,20,28,50,82,126) are extra-stable. Even-even nuclei > odd-odd. EVERY isotope with Z>83 is radioactive.
 :::
 
 <!-- slide -->
-## Binding energy: E = mc²
+## Binding energy: $E = mc^2$
 $$\Delta m = (\text{mass of parts}) - (\text{atomic mass}) \qquad \Delta E = (\Delta m)c^2$$
-More negative binding energy per nucleon → more stable nucleus
+Larger (more positive) binding energy per nucleon → more stable nucleus
 
 <!-- slide step -->
 ## Worked example — Fe-56 binding energy
 Atomic mass 55.9349 amu
-- Δm = 55.9349 − 56.4651 = −0.5302 amu{{attrs[.fragment]}}
-- ΔE = −7.913×10⁻¹¹ J/nucleus = −494 MeV/nucleus{{attrs[.fragment]}}
+- $\Delta m = 55.9349 - 56.4651 = -0.5302$ amu{{attrs[.fragment]}}
+- $\Delta E = -7.913\times10^{-11}$ J/nucleus = −494 MeV/nucleus{{attrs[.fragment]}}
 - **−8.82 MeV/nucleon**{{attrs[.fragment]}}
 
 <!-- slide template=section -->
@@ -86,10 +86,10 @@ Atomic mass 55.9349 amu
 ## Types of decay
 | Type | Emission |
 |---|---|
-| Alpha | ⁴₂He nucleus |
+| Alpha | $^4_2He$ nucleus |
 | Beta | electron |
 | Positron | positron |
-| Electron capture | captures e⁻ |
+| Electron capture | captures $\ce{e-}$ |
 | Spontaneous fission | splits + neutrons |
 
 <!-- slide main-side -->
@@ -99,11 +99,11 @@ Atomic mass 55.9349 amu
 <!-- @side -->
 A nucleus decays in whichever way moves it **toward the band**.
 
-- above the band (neutron-rich) → **β⁻**
-- below the band (proton-rich) → **β⁺ or EC**
+- above the band (neutron-rich) → **$\beta^-$**
+- below the band (proton-rich) → **$\beta^+$ or EC**
 - $Z > 83$ (too big) → **α**
 
-Count $N$ against $Z$ first; the mode follows.
+Locate $N$ vs. $Z$ relative to the band of stability first; the mode follows.
 
 <!-- slide -->
 ## Always first-order — reuse Ch. 13 exactly
@@ -117,7 +117,7 @@ Nothing new mathematically — N replaces concentration
 <!-- slide step -->
 ## Worked example — Dead Sea Scrolls
 Activity 10.8 (now) vs. 13.6 (fresh) disintegrations/min/g, t½=5730 y
-- k = ln2/5730 = 1.210×10⁻⁴ y⁻¹{{attrs[.fragment]}}
+- k = ln2/5730 = $1.210\times10^{-4}\ \text{y}^{-1}${{attrs[.fragment]}}
 - t = ln(13.6/10.8)/k{{attrs[.fragment]}}
 - **t ≈ 1900 years**{{attrs[.fragment]}}
 
@@ -134,11 +134,11 @@ $$\ce{^235_92U + ^1_0n -> ^90_38Sr + ^143_54Xe + 3\,^1_0n}$$
 <!-- @main -->
 ![The branching structure of a fission chain reaction, and subcritical versus critical samples](../assets/fission_chain_reaction.svg =760x)
 <!-- @side -->
-One neutron in, three out — so fissions go **1, 3, 9, 27**, growing as $3^n$.
+One neutron in, three out (in this example; typically 2–3), and if every neutron triggers another fission — so fissions go **1, 3, 9, 27**, growing as $3^n$.
 
 Whether that happens depends on **capture versus escape**.
 
-**Critical mass** is the size at which capture wins. It is a *condition*, not a constant — shape, density and purity all change it.
+**Critical mass** is the minimum mass at which enough neutrons are captured, rather than escaping, to keep the chain going. It is a *condition*, not a constant — shape, density and purity all change it.
 
 <!-- slide -->
 ## Why both fission AND fusion release energy
@@ -148,18 +148,18 @@ Both move nuclei TOWARD the Fe-56 peak — from opposite directions
 <!-- slide -->
 ## Fission in practice
 ![Nuclear power plant](../assets/nuclear_power_plant.jpg =520x)
-Atomic bomb: 2 subcritical pieces merge, explosive chain reaction. Reactor: subcritical pieces + control rods, mild controlled fission.
+Atomic bomb: 2 subcritical pieces merge, explosive chain reaction. Reactor: subcritical fuel rods assembled into a critical core + control rods, mild controlled fission.
 
 <!-- slide -->
 ## Fusion: light nuclei combine
 $$\ce{^1_1H + ^2_1H -> ^3_2He} \qquad \ce{^1_1H + ^1_1H -> ^2_1H + ^0_{+1}\beta}$$
-Requires extremely high temperature to overcome nuclear repulsion
+Requires extremely high temperature to overcome electrostatic repulsion between the positively charged nuclei
 
 <!-- slide -->
 ## Fusion in the Sun
 ![The Sun](../assets/the_sun.jpg =460x)
-H fuses into He at ~15 million K — the Sun's energy source, and the reaction basis of a hydrogen bomb.
+In the Sun's core, H fuses into He at ~15 million K — the Sun's energy source; fusion of hydrogen isotopes (deuterium and tritium) into He is the basis of a hydrogen bomb.
 
 <!-- slide template=closing -->
 # The course's last idea, and its first
-Nuclear stability (binding energy per nucleon) explains equation balancing, decay, fission, and fusion — while decay's kinetics reuse Chapter 13's first-order rate law completely unchanged. A fitting close: this course's very last calculation is its earliest kinetics tool, applied one final time.
+Nuclear stability (binding energy per nucleon) explains decay, fission, and fusion (equation balancing rests on conservation of mass number and atomic number) — while decay's kinetics reuse Chapter 13's first-order rate law completely unchanged. A fitting close: this course's very last calculation is its earliest kinetics tool, applied one final time.

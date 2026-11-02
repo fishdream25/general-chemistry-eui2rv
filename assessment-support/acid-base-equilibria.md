@@ -196,7 +196,7 @@ A student can calculate pH before, at, and after the equivalence point for any a
 | Purpose | Cognitive level | How to design the task |
 |---|---|---|
 | Homework | Apply | Full three-region titration calculations for both a strong-strong and a weak-strong case. |
-| Group discussion | Analyze | Discuss why the half-equivalence point is a "free" pKa measurement. |
+| Group discussion | Analyze | Discuss why the half-equivalence point is a "free" $\ce{p}K_a$ measurement. |
 | Quiz | Apply | One titration-point pH calculation, region specified. |
 | Exam | Analyze | Require classifying the region first, then calculating — for at least one point in each region. |
 | Project/activity | Evaluate | Plot a full titration curve from calculated points and identify the half-equivalence and equivalence points. |
@@ -247,7 +247,7 @@ A student can select an indicator whose color-change range (≈ $\ce{p}K_a\pm1$)
 | Exam | Analyze | Require identifying equivalence-point pH first, then selecting a matching indicator. |
 | Project/activity | Evaluate | Research the color-change ranges of 3 real indicators not covered in class and propose titrations they'd suit. |
 
-## Objective 16.3a: Write Ksp expressions and convert between Ksp and molar solubility
+## Objective 16.3a: Write $K_{sp}$ expressions and convert between $K_{sp}$ and molar solubility
 
 ### Target understanding
 
@@ -255,23 +255,23 @@ A student can write a correctly exponentiated $K_{sp}$ expression from a dissolu
 
 ### Question guides
 
-**1. Forward — Ksp from solubility**
+**1. Forward — $K_{sp}$ from solubility**
 - Variables & ranges: a compound's solubility in g/L or mol/L, with a stoichiometry beyond 1:1.
 - Constraint: correctly scale the counted ion's concentration before exponentiating (e.g., double $[\ce{OH-}]$ for a 1:2 salt).
 - Contexts: $\ce{Ca(OH)2}$-type and similar compounds.
 - Formats: workout.
 - Worked instantiation: see the study guide's worked example ($\ce{Ca(OH)2}$, $K_{sp}=1.31\times10^{-6}$).
 
-**2. Inverse — solubility from Ksp**
+**2. Inverse — solubility from $K_{sp}$**
 - Variables & ranges: a given $K_{sp}$, solve for molar solubility and then mass solubility.
 - Constraint: correct stoichiometric relationship (e.g., 1:1 vs. 1:2) before taking a root.
 - Contexts: $\ce{CaCO3}$-type (1:1) and $\ce{Ca(OH)2}$-type (1:2) compounds.
 - Formats: workout.
 - Worked instantiation: see the study guide's worked example ($\ce{CaCO3}$, solubility = $9.3\times10^{-3}$ g/L).
 
-**3. Conceptual — Ksp comparison pitfall**
+**3. Conceptual — $K_{sp}$ comparison pitfall**
 - Variables & ranges: two compounds with similar $K_{sp}$ but different stoichiometries (1:1 vs. 1:2).
-- Constraint: explanation must state that Ksp values are only directly comparable as a solubility ranking for the *same* stoichiometry.
+- Constraint: explanation must state that $K_{sp}$ values are only directly comparable as a solubility ranking for the *same* stoichiometry.
 - Contexts: any 1:1 vs. 1:2 (or 1:3) comparison.
 - Formats: short-answer.
 - Worked instantiation: "Compound A (1:1 stoichiometry) and Compound B (1:2 stoichiometry) both have $K_{sp}=4\times10^{-9}$. Does this mean they have the same molar solubility?" → No — for compound A, solubility $=\sqrt{K_{sp}}$; for compound B (with $K_{sp}=4s^3$ style relationship), the solubility formula is different, so equal $K_{sp}$ values do not imply equal solubilities when the stoichiometries differ.
@@ -287,13 +287,13 @@ A student can write a correctly exponentiated $K_{sp}$ expression from a dissolu
 
 | Purpose | Cognitive level | How to design the task |
 |---|---|---|
-| Homework | Apply | 2–3 Ksp↔solubility conversions, mixing 1:1 and non-1:1 stoichiometries. |
-| Group discussion | Analyze | Debate why Ksp ranking only works within the same stoichiometry class. |
-| Quiz | Apply | One Ksp-from-solubility item, one solubility-from-Ksp item. |
+| Homework | Apply | 2–3 $K_{sp}$↔solubility conversions, mixing 1:1 and non-1:1 stoichiometries. |
+| Group discussion | Analyze | Debate why $K_{sp}$ ranking only works within the same stoichiometry class. |
+| Quiz | Apply | One $K_{sp}$-from-solubility item, one solubility-from-$K_{sp}$ item. |
 | Exam | Analyze | Require writing the dissolution equation explicitly before any calculation. |
-| Project/activity | Evaluate | Look up real Ksp values for a table of compounds and rank solubilities correctly, accounting for differing stoichiometries. |
+| Project/activity | Evaluate | Look up real $K_{sp}$ values for a table of compounds and rank solubilities correctly, accounting for differing stoichiometries. |
 
-## Objective 16.3b: Predict precipitation by comparing Q to Ksp
+## Objective 16.3b: Predict precipitation by comparing Q to $K_{sp}$
 
 ### Target understanding
 
@@ -335,9 +335,9 @@ A student can calculate the ion product $Q$ from given (possibly post-mixing) co
 |---|---|---|
 | Homework | Apply | 2–3 precipitation-prediction problems, including at least one requiring a dilution calculation. |
 | Group discussion | Analyze | Discuss why "insoluble" compounds still have a nonzero, calculable solubility. |
-| Quiz | Apply | One Q-vs-Ksp precipitation-prediction item. |
+| Quiz | Apply | One Q-vs-$K_{sp}$ precipitation-prediction item. |
 | Exam | Analyze | Require finding a minimum concentration to just avoid (or just cause) precipitation. |
-| Project/activity | Evaluate | Research a real water-treatment or geological precipitation process and analyze it via Q vs. Ksp. |
+| Project/activity | Evaluate | Research a real water-treatment or geological precipitation process and analyze it via Q vs. $K_{sp}$. |
 
 ## Objective 16.3c: Calculate solubility with a common ion present
 
@@ -385,7 +385,7 @@ A student can calculate the solubility of a slightly soluble compound in a solut
 | Exam | Analyze | Require comparing solubility in pure water vs. with a common ion side by side. |
 | Project/activity | Evaluate | Research how the common ion effect is used industrially (e.g., salting out soap, water softening). |
 
-## Objective 16.4a: Define complex ion/formation constant and solve Kf problems
+## Objective 16.4a: Define complex ion/formation constant and solve $K_f$ problems
 
 ### Target understanding
 
@@ -400,14 +400,14 @@ A student can define a complex ion and formation constant, connect complex-ion f
 - Formats: short-answer.
 - Worked instantiation: "In $\ce{Ag+ + 2NH3 <=> Ag(NH3)2+}$, identify the Lewis acid and Lewis base, connecting to Chapter 15's definitions." → $\ce{Ag+}$ is the Lewis acid (accepts electron pairs); $\ce{NH3}$ is the Lewis base (donates an electron pair from its lone pair on nitrogen), twice.
 
-**2. Forward — write the Kf expression**
+**2. Forward — write the $K_f$ expression**
 - Variables & ranges: any complex-ion formation reaction with given stoichiometry.
 - Constraint: correct exponents matching the ligand stoichiometry.
 - Contexts: $\ce{Ag(NH3)2+}$, $\ce{Al(OH)4-}$, or similar.
 - Formats: workout.
 - Worked instantiation: write the $K_f$ expression for $\ce{Al(OH)3(s) + OH-(aq) <=> Al(OH)4-(aq)}$.
 
-**3. Conceptual — larger Kf means more stable**
+**3. Conceptual — larger $K_f$ means more stable**
 - Variables & ranges: two complex ions with different $K_f$ values.
 - Constraint: explanation must connect larger $K_f$ to the same "product-favored" reasoning as Chapter 14's $K$.
 - Contexts: any two complex ions.
@@ -425,11 +425,11 @@ A student can define a complex ion and formation constant, connect complex-ion f
 
 | Purpose | Cognitive level | How to design the task |
 |---|---|---|
-| Homework | Understand | 2–3 Kf-expression-writing problems; 1 Lewis acid/base identification in a complex-ion context. |
+| Homework | Understand | 2–3 $K_f$-expression-writing problems; 1 Lewis acid/base identification in a complex-ion context. |
 | Group discussion | Analyze | Debate why complex-ion formation is described as an equilibrium (reversible) rather than a one-way reaction. |
-| Quiz | Understand | One Kf-expression item. |
-| Exam | Analyze | Require both the Lewis acid/base identification and the correct Kf expression for a novel complex ion. |
-| Project/activity | Evaluate | Research a real application of complex-ion chemistry (e.g., photographic fixing with thiosulfate, or EDTA in water treatment) and its relevant Kf. |
+| Quiz | Understand | One $K_f$-expression item. |
+| Exam | Analyze | Require both the Lewis acid/base identification and the correct $K_f$ expression for a novel complex ion. |
+| Project/activity | Evaluate | Research a real application of complex-ion chemistry (e.g., photographic fixing with thiosulfate, or EDTA in water treatment) and its relevant $K_f$. |
 
 ## Rubric Themes for Chapter 16
 
@@ -438,6 +438,6 @@ A student can define a complex ion and formation constant, connect complex-ion f
 | Henderson-Hasselbalch used as a shortcut, not blindly | Student can also set up the full ICE table and shows the two methods agree, rather than treating HH as an unrelated formula. |
 | Titration region identified before method is chosen | Student explicitly states "before/at/after equivalence" before selecting a calculation approach. |
 | Equivalence-point pH tied to salt hydrolysis | Student never assumes pH 7 at equivalence without checking whether the product salt hydrolyzes. |
-| Ksp stoichiometry applied correctly | Student writes the dissolution equation and its coefficients before exponentiating any concentration in a Ksp expression. |
+| $K_{sp}$ stoichiometry applied correctly | Student writes the dissolution equation and its coefficients before exponentiating any concentration in a $K_{sp}$ expression. |
 | Common ion effect explained via Le Chatelier | Student connects reduced solubility with a common ion back to Chapter 14's equilibrium-shift reasoning, not as an isolated rule. |
-| Kf treated as an ordinary equilibrium constant | Student sets up Kf problems (including which species goes in the numerator) using the same logic as any other K from Ch. 14. |
+| $K_f$ treated as an ordinary equilibrium constant | Student sets up $K_f$ problems (including which species goes in the numerator) using the same logic as any other K from Ch. 14. |

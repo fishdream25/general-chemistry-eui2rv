@@ -136,7 +136,7 @@ Water has an unusually high specific heat (4.184 J/g·°C) due to its extensive 
 {{sp[info] Objective 11.2b}} · *short answer* Coastal cities have far milder temperature swings between day and night, and between summer and winter, than inland cities at the same latitude. Explain how one of water's hydrogen-bonding-derived anomalies accounts for this.
 :::
 ::: tab Answer
-The relevant anomaly is water's **unusually high specific heat** (4.184 J g⁻¹ °C⁻¹ — among the highest of any common liquid).
+The relevant anomaly is water's **unusually high specific heat** (4.184 $\text{J}\,\text{g}^{-1}\,\text{°C}^{-1}$ — among the highest of any common liquid).
 
 Heat added to water goes partly into breaking and rearranging hydrogen bonds rather than entirely into increasing molecular kinetic energy. Since temperature measures average molecular kinetic energy, a large amount of heat produces only a small temperature rise, and the reverse holds on cooling.
 
@@ -221,7 +221,7 @@ $$V = (4.09\times10^{-8})^3 = 6.842\times10^{-23}\ \text{cm}^3$$
 **Step 4 — density.**
 $$d = \frac{7.165\times10^{-22}\ \text{g}}{6.842\times10^{-23}\ \text{cm}^3} = 10.5\ \text{g/cm}^3$$
 
-The accepted density of silver is 10.49 g/cm³ — a good check that the atom count was right. Had you used 1 atom per cell (simple cubic) the answer would have come out four times too small, so the density calculation doubles as a test of the packing assumption.
+The accepted density of silver is 10.49 $\text{g}/\text{cm}^{3}$ — a good check that the atom count was right. Had you used 1 atom per cell (simple cubic) the answer would have come out four times too small, so the density calculation doubles as a test of the packing assumption.
 :::
 ::::
 
@@ -244,7 +244,7 @@ $$0.543\ \text{mol} \times 38.6\ \text{kJ/mol} = 20.9\ \text{kJ}$$
 
 :::: tabs
 ::: tab Q 20
-{{sp[info] Objective 11.4a}} · *workout* How much heat is released when 45.0 g of steam at 100 °C condenses and then cools to 25 °C? ($\Delta H_\text{vap} = 40.66$ kJ/mol, $s_\text{water} = 4.184$ J g⁻¹ °C⁻¹.)
+{{sp[info] Objective 11.4a}} · *workout* How much heat is released when 45.0 g of steam at 100 °C condenses and then cools to 25 °C? ($\Delta H_\text{vap} = 40.66$ kJ/mol, $s_\text{water} = 4.184\ \text{J}\,\text{g}^{-1}\,\text{°C}^{-1}$.)
 :::
 ::: tab Answer
 Two steps, both releasing heat, so both are negative from the water's point of view.
@@ -305,7 +305,7 @@ Use the two-point Clausius–Clapeyron equation with the known point as state 1:
 
 $$\ln\frac{P_1}{P_2} = \frac{\Delta H_\text{vap}}{R}\left(\frac{1}{T_2} - \frac{1}{T_1}\right)$$
 
-$P_1 = 760$ mmHg, $T_1 = 373.15$ K, $T_2 = 298.15$ K, $R = 8.314$ J mol⁻¹ K⁻¹.
+$P_1 = 760$ mmHg, $T_1 = 373.15$ K, $T_2 = 298.15$ K, $R = 8.314\ \text{J}\,\text{mol}^{-1}\,\text{K}^{-1}$.
 
 $$\frac{1}{298.15} - \frac{1}{373.15} = 0.0033540 - 0.0026799 = 6.741\times10^{-4}\ \text{K}^{-1}$$
 $$\ln\frac{760}{P_2} = \frac{40{,}660}{8.314}\left(6.741\times10^{-4}\right) = (4890.5)(6.741\times10^{-4}) = 3.297$$

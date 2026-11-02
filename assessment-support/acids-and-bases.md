@@ -37,7 +37,7 @@ A student can identify both conjugate acid-base pairs in a Brønsted reaction �
 - Constraint: student must apply the proton-donor/acceptor definition without relying on a memorized "water is always involved" pattern.
 - Contexts: any Brønsted reaction without water.
 - Formats: short-answer.
-- Worked instantiation: "Identify the conjugate acid-base pairs in $\ce{H2S + NH2- <=> HS- + NH3}$." → $\ce{H2S}$/$\ce{HS-}$ is one pair (H₂S is the acid); $\ce{NH2-}$/$\ce{NH3}$ is the other pair ($\ce{NH2-}$ is the base).
+- Worked instantiation: "Identify the conjugate acid-base pairs in $\ce{H2S + NH2- <=> HS- + NH3}$." → $\ce{H2S}/\ce{HS-}$ is one pair ($\ce{H2S}$ is the acid); $\ce{NH2-}/\ce{NH3}$ is the other pair ($\ce{NH2-}$ is the base).
 
 **3. Forward — diprotic ionization steps**
 - Variables & ranges: a named diprotic or triprotic acid.
@@ -71,14 +71,14 @@ A student can calculate any one of pH, pOH, $[\ce{H+}]$, or $[\ce{OH-}]$ from an
 
 ### Question guides
 
-**1. Forward — pH from [OH⁻]**
+**1. Forward — pH from $[\ce{OH-}]$**
 - Variables & ranges: a given $[\ce{OH-}]$ or $[\ce{H+}]$.
 - Constraint: correct use of $K_w$ before taking a logarithm.
 - Contexts: any aqueous solution.
 - Formats: workout.
 - Worked instantiation: see the study guide's worked example ($[\ce{OH-}]=2.5\times10^{-3}$ M → pH = 11.40).
 
-**2. Inverse — [H⁺] from pH**
+**2. Inverse — $[\ce{H+}]$ from pH**
 - Variables & ranges: a given pH, solve for $[\ce{H+}]$ (and optionally $[\ce{OH-}]$).
 - Constraint: correct inverse-log calculation ($[\ce{H+}]=10^{-\ce{pH}}$).
 - Contexts: any aqueous solution.
@@ -103,7 +103,7 @@ A student can calculate any one of pH, pOH, $[\ce{H+}]$, or $[\ce{OH-}]$ from an
 
 | Purpose | Cognitive level | How to design the task |
 |---|---|---|
-| Homework | Apply | 3–4 pH/pOH/[H⁺]/[OH⁻] interconversions. |
+| Homework | Apply | 3–4 pH/pOH/$[\ce{H+}]/[\ce{OH-}]$ interconversions. |
 | Group discussion | Understand | Quiz each other from memory on the strong acid/base list. |
 | Quiz | Apply | One interconversion item, one classification item. |
 | Exam | Analyze | Combine interconversion with a strong-vs-weak classification that determines the calculation method (ties to Objective 15.4a). |
@@ -262,7 +262,7 @@ A student can calculate pH or pOH directly from a strong acid or strong base's c
 - Formats: workout.
 - Worked instantiation: 0.0431 M $\ce{HCl}$ → pH = 1.36.
 
-**2. Forward — strong base with 2 OH⁻**
+**2. Forward — strong base with $\ce{2OH-}$**
 - Variables & ranges: a base of the form $\ce{B(OH)2}$.
 - Constraint: $[\ce{OH-}]$ = 2 × initial concentration.
 - Contexts: $\ce{Ca(OH)2}$, $\ce{Ba(OH)2}$.
@@ -274,7 +274,7 @@ A student can calculate pH or pOH directly from a strong acid or strong base's c
 - Constraint: explanation must invoke "complete ionization" as the reason no equilibrium calculation is needed.
 - Contexts: any strong/weak pair at equal concentration.
 - Formats: short-answer.
-- Worked instantiation: see the study guide's self-check (0.10 M HCl vs. 0.10 M CH₃COOH).
+- Worked instantiation: see the study guide's self-check (0.10 M $\ce{HCl}$ vs. 0.10 M $\ce{CH3COOH}$).
 
 **4. Error analysis**
 - Variables & ranges: a student who sets up an ICE table for a strong acid.
@@ -361,7 +361,7 @@ A student can solve a diprotic acid's ionization stepwise, recognizing that the 
 - Formats: short-answer.
 - Worked instantiation: "Why is $[\ce{H+}]$ set almost entirely by the first ionization step for most diprotic acids?" → Because $K_{a_2}$ is typically several orders of magnitude smaller than $K_{a_1}$, the second step ionizes to a much smaller extent, contributing a negligible additional amount of $\ce{H+}$ compared to what the first step already produced.
 
-**3. Predict-the-effect — finding [X²⁻]**
+**3. Predict-the-effect — finding [$X^{2-}$]**
 - Variables & ranges: given the first step's result, find the second ionization's product concentration.
 - Constraint: recognize that $[\ce{C2O4^2-}]\approx y \approx K_{a_2}$ when $[\ce{H+}]\approx[\ce{HC2O4-}]$ from step 1 (a useful shortcut).
 - Contexts: any diprotic acid second-step calculation.
@@ -400,7 +400,7 @@ A student can identify which ion in a salt hydrolyzes, find the relevant $K_a$ o
 - Formats: workout.
 - Worked instantiation: see the study guide's worked example (0.24 M $\ce{CH3COONa}$, pH = 9.1).
 
-**2. Inverse — find Ka/Kb using KaKb = Kw**
+**2. Inverse — find $K_a/K_b$ using KaKb = $K_w$**
 - Variables & ranges: given $K_a$ for a weak acid, find $K_b$ for its conjugate base (or vice versa).
 - Constraint: correct application of $K_aK_b=K_w$.
 - Contexts: any conjugate acid-base pair.

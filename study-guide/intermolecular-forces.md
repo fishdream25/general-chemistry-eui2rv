@@ -52,12 +52,12 @@ Intermolecular forces are attractions **between** separate molecules. Do not con
 - {{sp[info] Objective 11.1b}} Rank ion-dipole, hydrogen-bonding, dipole-dipole, and dispersion forces by relative strength.
 :::
 
-**Intermolecular forces** (also called **van der Waals forces**) are the attractive forces *between* molecules. **Intramolecular forces** — the covalent bonds that hold atoms together within one molecule — are a different and much stronger phenomenon. A typical covalent bond takes on the order of 150–1,100 kJ/mol to break; a hydrogen bond, typically the strongest common intermolecular force between neutral molecules, takes only about 10–40 kJ/mol. ==That roughly ten- to hundred-fold difference is *why* melting or boiling a molecular substance never breaks its covalent bonds==: ice melts and water boils while every H–O covalent bond in the H₂O molecule stays perfectly intact.
+**Intermolecular forces** (also called **van der Waals forces**) are the attractive forces *between* molecules. **Intramolecular forces** — the covalent bonds that hold atoms together within one molecule — are a different and much stronger phenomenon. A typical covalent bond takes on the order of 150–1,100 kJ/mol to break; a hydrogen bond, typically the strongest common intermolecular force between neutral molecules, takes only about 10–40 kJ/mol. ==That roughly ten- to hundred-fold difference is *why* melting or boiling a molecular substance never breaks its covalent bonds==: ice melts and water boils while every H–O covalent bond in the $\ce{H2O}$ molecule stays perfectly intact.
 
 Figure 11.1 collects six molecules you will meet repeatedly in this chapter; keep it in view while reading the next three subsections, because deciding which forces act in a substance always starts with deciding whether its molecules look like the top row or the bottom row.
 
 ![Six example molecules: three polar hydrogen-bond donors (water, hydrogen fluoride, ammonia) and three nonpolar molecules (methane, carbon tetrachloride, carbon dioxide)](../assets/polar_nonpolar_molecules.svg)
-*Figure 11.1 — Polar molecules (top row) each have a permanent dipole and can act as hydrogen-bond donors when H is attached to N, O, or F. Nonpolar molecules (bottom row) either have no polar bonds (CH₄) or have polar bonds arranged so symmetrically that their dipoles cancel (CO₂). Self-generated with RDKit.*
+*Figure 11.1 — Polar molecules (top row) each have a permanent dipole and can act as hydrogen-bond donors when H is attached to N, O, or F. Nonpolar molecules (bottom row) either have no polar bonds ($\ce{CH4}$) or have polar bonds arranged so symmetrically that their dipoles cancel ($\ce{CO2}$). Self-generated with RDKit.*
 
 ### Dipole-dipole forces
 
@@ -261,7 +261,7 @@ Each water molecule can form up to **four hydrogen bonds** (two through its own 
 - **maximum density at 4 °C**, not at its freezing point — ice's open hydrogen-bonded lattice is actually *less* dense than liquid water, which is why ice floats and lakes freeze from the top down, insulating aquatic life below.
 
 ![Line chart comparing normal boiling points of period 2-5 hydrides in groups 14, 15, 16, and 17](../assets/hydride_boiling_points.svg)
-*Figure 11.3 — Group 14 hydrides (no hydrogen bonding) follow a smooth, steadily increasing trend with size. NH₃, H₂O, and HF each sit far above where their own group's trend would otherwise put them — the extra lift is hydrogen bonding, and water's is the largest of the three. Self-generated with matplotlib from verified literature boiling points.*
+*Figure 11.3 — Group 14 hydrides (no hydrogen bonding) follow a smooth, steadily increasing trend with size. $\ce{NH3}$, $\ce{H2O}$, and $\ce{HF}$ each sit far above where their own group's trend would otherwise put them — the extra lift is hydrogen bonding, and water's is the largest of the three. Self-generated with matplotlib from verified literature boiling points.*
 
 :::info
 Water's expansion on freezing is the same hydrogen-bonding effect that gives ice its negative melting-point/pressure slope in the phase diagram — see Section 11.4.
@@ -292,7 +292,7 @@ The general point: this whole behavior traces back to a **geometric** fact — t
 
 :::: tabs
 ::: tab Problem
-Water's specific heat (4.184 J g⁻¹ °C⁻¹) and molar heat of vaporization (40.66 kJ/mol) are both unusually high for such a small molecule. Explain both with one argument, and connect them.
+Water's specific heat (4.184 $\text{J}\,\text{g}^{-1}\,\text{°C}^{-1}$) and molar heat of vaporization (40.66 kJ/mol) are both unusually high for such a small molecule. Explain both with one argument, and connect them.
 :::
 ::: tab Solution
 Both are consequences of the same thing: **an extensive hydrogen-bond network that must be disrupted before anything else can happen.**
@@ -316,14 +316,14 @@ Both are consequences of the same thing: **an extensive hydrogen-bond network th
 - {{sp[info] Objective 11.3b}} Count atoms per unit cell and calculate coordination number for simple cubic, body-centered cubic, and face-centered cubic lattices.
 :::
 
-A **crystalline solid** has long-range, repeating order — its atoms, ions, or molecules occupy specific, predictable positions. An **amorphous solid**, such as glass, lacks that long-range order even though it is rigid. ==A solid's properties depend less on *what particles it contains* than on *what kind of attraction holds those particles in place*== — which is why solid CO₂ sublimes at −78 °C while solid SiO₂, built from comparable atoms, survives past 1,600 °C.
+A **crystalline solid** has long-range, repeating order — its atoms, ions, or molecules occupy specific, predictable positions. An **amorphous solid**, such as glass, lacks that long-range order even though it is rigid. ==A solid's properties depend less on *what particles it contains* than on *what kind of attraction holds those particles in place*== — which is why solid $\ce{CO2}$ sublimes at −78 °C while solid $\ce{SiO2}$, built from comparable atoms, survives past 1,600 °C.
 
 ### Four types of crystalline solids
 
 | Type | Held together by | Hardness | Melting point | Conductivity | Examples |
 |---|---|---|---|---|---|
 | Molecular | Intermolecular forces | Soft | Low | Poor | $\ce{Ar}$, $\ce{H2O}$ (ice), $\ce{CO2}$ (dry ice) |
-| Covalent network | Covalent bonds throughout | Hard | High | Poor (graphite is the exception) | Diamond, graphite, quartz |
+| Covalent network | Covalent bonds throughout | Hard (graphite is soft) | High | Poor (graphite is the exception) | Diamond, graphite, quartz |
 | Ionic | Ionic bonds | Hard, brittle | High | Poor solid; good when molten/dissolved | $\ce{NaCl}$, $\ce{MgCl2}$ |
 | Metallic | Metallic bonds | Soft to hard | Low to high | Good | $\ce{Fe}$, $\ce{Cu}$, $\ce{Hg}$ |
 
@@ -333,7 +333,7 @@ Figure 11.4 and Figure 11.5 show the two extremes of that table. Both are hard a
 *Figure 11.4 — In an ionic solid such as NaCl, each ion is surrounded by six oppositely charged ions in a rigid, repeating lattice — the electrostatic attraction extends through the whole crystal, which is why ionic solids are hard, brittle, and high-melting. Source: Benjah-bmm27, via Wikimedia Commons (public domain).*
 
 ![A quartz crystal specimen (SiO2), an example of a covalent-network solid](../assets/quartz_crystal.jpg =520x)
-*Figure 11.5 — Quartz (SiO₂) is a covalent-network solid: every Si and O atom is linked into one continuous three-dimensional network of covalent bonds, giving it the hardness needed to scratch glass and a melting point above 1,600 °C. Source: Masha Milshina, via Wikimedia Commons, CC BY 4.0.*
+*Figure 11.5 — Quartz ($\ce{SiO2}$) is a covalent-network solid: every Si and O atom is linked into one continuous three-dimensional network of covalent bonds, giving it the hardness needed to scratch glass and a melting point above 1,600 °C. Source: Masha Milshina, via Wikimedia Commons, CC BY 4.0.*
 
 
 
@@ -485,7 +485,7 @@ Notice the units track exactly as in a Chapter 3 stoichiometry problem or a Chap
 
 :::: tabs
 ::: tab Problem
-How much heat is needed to convert 25.0 g of ice at 0 °C into steam at 100 °C? ($\Delta H_\text{fus} = 6.01$ kJ/mol, $\Delta H_\text{vap} = 40.66$ kJ/mol, $s_\text{water} = 4.184$ J g⁻¹ °C⁻¹.)
+How much heat is needed to convert 25.0 g of ice at 0 °C into steam at 100 °C? ($\Delta H_\text{fus} = 6.01$ kJ/mol, $\Delta H_\text{vap} = 40.66$ kJ/mol, $s_\text{water} = 4.184\ \text{J}\,\text{g}^{-1}\,\text{°C}^{-1}$.)
 :::
 ::: tab Solution
 Three separate steps, and the phase changes happen at **constant temperature** — so they use $\Delta H$ values, not $q = ms\Delta T$.
@@ -562,7 +562,7 @@ $$\frac{1}{333.75} - \frac{1}{299.25} = 0.0029963 - 0.0033417 = -3.454\times10^{
 $$-1.386 = \frac{\Delta H_\text{vap}}{8.314}\left(-3.454\times10^{-4}\right)$$
 $$\Delta H_\text{vap} = \frac{(-1.386)(8.314)}{-3.454\times10^{-4}} = 3.34\times10^{4}\ \text{J/mol} = 33.4\ \text{kJ/mol}$$
 
-This is close to benzene's ΔHvap near room temperature (about 33–34 kJ/mol). The commonly tabulated 30.8 kJ/mol is the value at the normal boiling point (80.1 °C); it is lower because ΔHvap declines as temperature rises. The two-point method assumes ΔHvap is constant, so it gives an average value over the 26–61 °C range.
+This is close to benzene's $\Delta H_\text{vap}$ near room temperature (about 33–34 kJ/mol). The commonly tabulated 30.8 kJ/mol is the value at the normal boiling point (80.1 °C); it is lower because $\Delta H_\text{vap}$ declines as temperature rises. The two-point method assumes $\Delta H_\text{vap}$ is constant, so it gives an average value over the 26–61 °C range.
 
 **Sanity check on the magnitude:** benzene is nonpolar and held together by dispersion only, so its value should be well below water's 40.66 kJ/mol. It is.
 :::

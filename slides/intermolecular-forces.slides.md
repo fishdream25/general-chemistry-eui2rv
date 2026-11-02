@@ -52,31 +52,31 @@ graph TD
 - **Intramolecular** = covalent bonds *within* a molecule (~150–1,100 kJ/mol)
 - **Intermolecular** = attractions *between* neutral molecules (~0.05–40 kJ/mol)
 - ==Melting/boiling a molecular substance breaks only the *intermolecular* attractions==
-- Every O–H covalent bond in H₂O survives boiling intact
+- Every O–H covalent bond in $\ce{H2O}$ survives boiling intact
 
 <!-- slide 2col -->
 ## Polar vs. nonpolar examples
 <!-- @left -->
 ![Polar and nonpolar example molecules](../assets/polar_nonpolar_molecules.svg =480x)
 <!-- @right -->
-- Polar molecules (H₂O, HF, NH₃): permanent dipole
+- Polar molecules ($\ce{H2O}$, $\ce{HF}$, $\ce{NH3}$): permanent dipole
 - Can hydrogen-bond if H is on N, O, or F
-- Nonpolar (CH₄, CCl₄, CO₂): no net dipole
-- CO₂'s bond dipoles exist but **cancel** by symmetry
+- Nonpolar ($\ce{CH4}$, $\ce{CCl4}$, $\ce{CO2}$): no net dipole
+- $\ce{CO2}$'s bond dipoles exist but **cancel** by symmetry
 
 <!-- slide -->
 ## Dispersion forces — even nonpolar molecules attract
 - Electron clouds fluctuate → momentary **instantaneous dipole**
 - Induces a matching **induced dipole** next door
 - **Polarizability** ↑ with more electrons / more diffuse cloud
-- Why I₂ is a solid but Cl₂ is a gas at room temperature
+- Why $\ce{I2}$ is a solid but $\ce{Cl2}$ is a gas at room temperature
 
 <!-- slide main-side -->
 ## Hydrogen bonding
 <!-- @main -->
 - H bonded directly to **N, O, or F** → attracted to a nearby lone pair on N, O, or F
 - Unusually strong: ~10–40 kJ/mol
-- Present in H₂O, NH₃, HF — **not** in CH₄
+- Present in $\ce{H2O}$, $\ce{NH3}$, $\ce{HF}$ — **not** in $\ce{CH4}$
 <!-- @side -->
 :::warning
 Not every H-containing molecule hydrogen-bonds — check the H is on N/O/F specifically.
@@ -87,21 +87,21 @@ Not every H-containing molecule hydrogen-bonds — check the H is on N/O/F speci
 <!-- @main -->
 | | M (g/mol) | Shape | Strongest force | 25 °C | bp |
 |---|---|---|---|---|---|
-| CH₄ | 16.04 | tetrahedral | dispersion | gas | −161 °C |
-| H₂S | 34.08 | bent | dipole-dipole | gas | −60 °C |
-| **H₂O** | 18.02 | bent | **H-bonding** | **liquid** | **100 °C** |
+| $\ce{CH4}$ | 16.04 | tetrahedral | dispersion | gas | −161 °C |
+| $\ce{H2S}$ | 34.08 | bent | dipole-dipole | gas | −60 °C |
+| **$\ce{H2O}$** | 18.02 | bent | **H-bonding** | **liquid** | **100 °C** |
 <!-- @side -->
 Water's bent shape (Ch. 10) does two jobs at once:
 
 - bond dipoles **don't cancel** → permanent dipole
 - **2 donors + 2 acceptors** → up to **4** H-bonds per molecule
 
-H₂S is bent and twice as heavy — but S is too big and not electronegative enough to H-bond.
+$\ce{H2S}$ is bent and twice as heavy — but S is too big and not electronegative enough to H-bond.
 
 <!-- slide -->
 ## The evidence: hydride boiling points
 ![Boiling points of main-group hydrides](../assets/hydride_boiling_points.svg =620x)
-NH₃, H₂O, and HF sit far above their own group's trend — hydrogen bonding is the extra lift.
+$\ce{NH3}$, $\ce{H2O}$, and $\ce{HF}$ sit far above their own group's trend — hydrogen bonding is the extra lift.
 
 <!-- slide 2col -->
 ## Ranking the forces
@@ -122,7 +122,7 @@ series: kJ/mol = 25, 5, 2
 
 <!-- slide step -->
 ## Worked example — which force, which boils higher?
-Compare CH₃OH (methanol) and CH₃SH (methanethiol). Which has hydrogen bonding? Which boils higher?
+Compare $\ce{CH3OH}$ (methanol) and $\ce{CH3SH}$ (methanethiol). Which has hydrogen bonding? Which boils higher?
 - Methanol: O–H bond → hydrogen bonding + dipole-dipole + dispersion{{attrs[.fragment]}}
 - Methanethiol: S–H bond → S is *not* N/O/F → dipole-dipole + dispersion only{{attrs[.fragment]}}
 - **Methanol boils higher** (64.7 °C vs. 6.2 °C) — the extra hydrogen bonding wins{{attrs[.fragment]}}
@@ -155,7 +155,7 @@ Compare CH₃OH (methanol) and CH₃SH (methanethiol). Which has hydrogen bondin
 
 <!-- slide -->
 ## Water's anomalies — all one cause
-- Each H₂O forms up to **4 hydrogen bonds**
+- Each $\ce{H2O}$ forms up to **4 hydrogen bonds**
 - Unusually high melting/boiling point for its size
 - Unusually high specific heat (4.184 J/g·°C) — moderates climate
 - **Maximum density at 4 °C**, not at freezing; ice is less dense than liquid water — ice floats
@@ -179,7 +179,7 @@ Compare CH₃OH (methanol) and CH₃SH (methanethiol). Which has hydrogen bondin
 *NaCl: each ion has 6 neighbors*
 <!-- @right -->
 ![Quartz crystal](../assets/quartz_crystal.jpg =420x)
-*Quartz (SiO₂): one continuous covalent network*
+*Quartz ($\ce{SiO2}$): one continuous covalent network*
 
 <!-- slide -->
 ## The three cubic unit cells

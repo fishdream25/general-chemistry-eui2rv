@@ -382,7 +382,7 @@ Skipping step 1 would give $6.26\times10^{-3}$ mol — about 3% too high. The co
 - Define energy, work, and kinetic energy.
 - {{sp[info] Objective 5.4a}} State the four assumptions of the kinetic molecular theory.
 - {{sp[info] Objective 5.4a}} Use the theory to explain each gas law.
-- {{sp[info] Objective 5.4a}} Describe the distribution of molecular speeds and calculate $u_{rms}$.
+- {{sp[info] Objective 5.4a}} Describe the distribution of molecular speeds and calculate $u_\text{rms}$.
 - {{sp[info] Objective 5.4b}} Distinguish diffusion from effusion and apply Graham's law.
 :::
 
@@ -446,24 +446,24 @@ Note the contrast with Charles's law, where the *pressure* is held fixed instead
 
 Molecules do not all move at the same speed; there is a distribution, and it has a characteristic shape. A convenient single number to summarize it is the **root-mean-square speed**:
 
-$$u_{rms}=\sqrt{\frac{3RT}{\mathcal{M}}}$$
+$$u_\text{rms}=\sqrt{\frac{3RT}{\mathcal{M}}}$$
 
 with $R = 8.314$ J/(K·mol) and $\mathcal{M}$ the molar mass **in kg/mol**.
 
 ![Maxwell-Boltzmann speed distributions by molar mass and by temperature](../assets/molecular_speed_distribution.svg =840x)
-*Figure 5.7 — The spread of molecular speeds. **Left:** three gases at the same temperature. All three have the same average kinetic energy, so the heaviest moves slowest — $\ce{CO2}$ peaks far below helium. **Right:** one gas at three temperatures. Heating shifts the whole distribution to higher speeds and spreads it out. Dashed lines mark $u_{rms}$ in each case.*
+*Figure 5.7 — The spread of molecular speeds. **Left:** three gases at the same temperature. All three have the same average kinetic energy, so the heaviest moves slowest — $\ce{CO2}$ peaks far below helium. **Right:** one gas at three temperatures. Heating shifts the whole distribution to higher speeds and spreads it out. Dashed lines mark $u_\text{rms}$ in each case.*
 
 Figure 5.7 shows what those distributions look like. The square root is worth dwelling on, because it makes mass matter much less than students expect. ==At the same temperature, a molecule 100 times heavier moves not 100 times slower, but $\sqrt{100} = 10$ times slower.==
 
 :::: tabs
 ::: tab Problem
-Calculate $u_{rms}$ for $\ce{N2}$ (28.02 g/mol) and for He (4.003 g/mol) at 25 °C.
+Calculate $u_\text{rms}$ for $\ce{N2}$ (28.02 g/mol) and for He (4.003 g/mol) at 25 °C.
 :::
 ::: tab Solution
 Convert molar masses to kg/mol — this is the step people miss — and the temperature to kelvin (298 K).
 
-$$u_{rms}(\ce{N2})=\sqrt{\frac{3\times8.314\times298}{0.02802}}=515\ \text{m/s}$$
-$$u_{rms}(\ce{He})=\sqrt{\frac{3\times8.314\times298}{0.004003}}=1363\ \text{m/s}$$
+$$u_\text{rms}(\ce{N2})=\sqrt{\frac{3\times8.314\times298}{0.02802}}=515\ \text{m/s}$$
+$$u_\text{rms}(\ce{He})=\sqrt{\frac{3\times8.314\times298}{0.004003}}=1363\ \text{m/s}$$
 
 Helium is about 2.6 times faster. Check that against the square-root rule: $\sqrt{28.02/4.003}=\sqrt{7.00}=2.65$. ✓
 
@@ -543,7 +543,7 @@ Both effects exist always. What matters is when they become large enough to noti
 ==Deviations are largest at high pressure and low temperature — precisely the conditions under which a gas is on the verge of condensing into a liquid.== A model that ignores intermolecular forces is bound to fail exactly where those forces are about to win.
 
 ![Schematic compressibility-factor chart](../assets/real_gas_deviation.svg =520x)
-*Figure 5.9 — The compressibility factor $Z=PV/nRT$ equals exactly 1 for an ideal gas at every pressure. Real gases with weak attractions (H₂, He) drift above 1 almost immediately; most real gases first dip below 1 (attraction dominates) before rising above 1 at very high pressure (molecular volume dominates).*
+*Figure 5.9 — The compressibility factor $Z=PV/nRT$ equals exactly 1 for an ideal gas at every pressure. Real gases with weak attractions ($\ce{H2}$, He) drift above 1 almost immediately; most real gases first dip below 1 (attraction dominates) before rising above 1 at very high pressure (molecular volume dominates).*
 
 The compressibility factor $Z = PV/nRT$ is a convenient way to measure the failure, because it is exactly 1 for an ideal gas at all conditions. Reading a real gas's curve tells you which effect is winning: $Z < 1$ means attractions dominate (the gas is more compressible than ideal), and $Z > 1$ means molecular volume dominates (less compressible than ideal).
 

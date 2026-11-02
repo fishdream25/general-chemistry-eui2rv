@@ -21,10 +21,10 @@ theme: small-press
 - **Objective 16.2b** — Calculate pH at any point during a titration
 - **Objective 16.2c** — Select an appropriate acid-base indicator
 <!-- @right -->
-- **Objective 16.3a** — Write Ksp expressions and convert between Ksp and molar solubility
-- **Objective 16.3b** — Predict precipitation by comparing Q to Ksp
+- **Objective 16.3a** — Write $K_{sp}$ expressions and convert between $K_{sp}$ and molar solubility
+- **Objective 16.3b** — Predict precipitation by comparing Q to $K_{sp}$
 - **Objective 16.3c** — Calculate solubility with a common ion present
-- **Objective 16.4a** — Define complex ion/formation constant and solve Kf problems
+- **Objective 16.4a** — Define complex ion/formation constant and solve $K_f$ problems
 
 <!-- slide template=outline -->
 ## Roadmap
@@ -43,7 +43,7 @@ graph TD
   C -.reuses ICE tables.-> D
   D --> F["Complex ions:<br/>Kf, same framework again"]
 }}
-**Visual description:** buffers lead to Henderson-Hasselbalch, extended across a titration curve. Ksp applies the same K/Q framework to dissolution, including the common-ion effect. Complex ions (Kf) close the chapter.
+**Visual description:** buffers lead to Henderson-Hasselbalch, extended across a titration curve. $K_{sp}$ applies the same K/Q framework to dissolution, including the common-ion effect. Complex ions ($K_f$) close the chapter.
 
 <!-- slide template=section -->
 # 1. Buffer Solutions
@@ -51,44 +51,44 @@ graph TD
 <!-- slide -->
 ## Why buffers resist pH change
 - Weak acid + its conjugate base, BOTH present at once
-- Acid component neutralizes added OH⁻
-- Base component neutralizes added H⁺
+- Acid component neutralizes added $\ce{OH-}$
+- Base component neutralizes added $\ce{H+}$
 
 <!-- slide main-side -->
 ## Two reservoirs — and a limit
 <!-- @main -->
 ![The buffer's two reservoirs and a computed pH curve showing the buffer holding and then failing](../assets/buffer_action.svg =740x)
 <!-- @side -->
-The acid reservoir eats added OH⁻; the base reservoir eats added H⁺.
+The acid reservoir eats added $\ce{OH-}$; the base reservoir eats added $\ce{H+}$.
 
-0.10 mol HCl into 1.0 L: buffer **4.74 → 4.65**, pure water **7.00 → 1.00**.
+0.10 mol $\ce{HCl}$ into 1.0 L: buffer **4.74 → 4.65**, pure water **7.00 → 1.00**.
 
-Past 1.0 mol of added HCl every acetate is gone — **capacity exceeded**, and the curve falls off a cliff.
+Past 1.0 mol of added $\ce{HCl}$ every acetate is gone — **capacity exceeded**, and the curve falls off a cliff.
 
 <!-- slide step -->
 ## Worked example — buffer pH (ICE table)
-1.0 M CH₃COOH + 1.0 M CH₃COONa, K_a = 1.8×10⁻⁵
+1.0 M $\ce{CH3COOH}$ + 1.0 M $\ce{CH3COONa}$, $K_a = 1.8\times10^{-5}$
 - $x(1.0+x)/(1.0-x)=1.8\times10^{-5} \Rightarrow x=1.8\times10^{-5}$ M{{attrs[.fragment]}}
 - **pH = 4.74**{{attrs[.fragment]}}
 
 <!-- slide -->
 ## The Henderson-Hasselbalch shortcut
 $$pH = pK_a + \log\frac{[\text{conjugate base}]}{[\text{acid}]}$$
-Same Ka expression, rearranged — skips the ICE table when "x is small" already holds.
+Same $K_a$ expression, rearranged — skips the ICE table when "x is small" already holds.
 
 <!-- slide step -->
-## Worked example — HH, then add HCl
-Same buffer. Add 0.10 mol HCl to 1.0 L.
-- Original: pH = pKa + log(1.0/1.0) = 4.74{{attrs[.fragment]}}
-- After HCl: [CH₃COO⁻]=0.90, [CH₃COOH]=1.1{{attrs[.fragment]}}
+## Worked example — HH, then add $\ce{HCl}$
+Same buffer. Add 0.10 mol $\ce{HCl}$ to 1.0 L.
+- Original: pH = $\ce{p}K_a$ + log(1.0/1.0) = 4.74{{attrs[.fragment]}}
+- After $\ce{HCl}$: $[\ce{CH3COO-}] = 0.90$, $[\ce{CH3COOH}] = 1.1${{attrs[.fragment]}}
 - **pH = 4.74 + log(0.90/1.1) = 4.65** (vs. pH 7→1 in pure water!){{attrs[.fragment]}}
 
 <!-- slide step -->
 ## Worked example — designing a buffer
-0.750 L of 0.100 M NH₃, target pH 9.30. K_b(NH₃)=1.8×10⁻⁵
-- pKa(NH₄⁺) = 9.25{{attrs[.fragment]}}
-- [NH₃]/[NH₄⁺] = 10^0.05 = 1.12 → [NH₄⁺]=0.0893 M{{attrs[.fragment]}}
-- **mass NH₄Cl = 0.0670 mol × 53.5 g/mol = 3.58 g**{{attrs[.fragment]}}
+0.750 L of 0.100 M $\ce{NH3}$, target pH 9.30. $K_b(\ce{NH3}) = 1.8\times10^{-5}$
+- $\ce{p}K_a(\ce{NH4+}) = 9.25${{attrs[.fragment]}}
+- $[\ce{NH3}]/[\ce{NH4+}] = 10^{0.05} = 1.12$ → $[\ce{NH4+}] = 0.0893$ M{{attrs[.fragment]}}
+- **mass $\ce{NH4Cl} = 0.0670$ mol × 53.5 g/mol = 3.58 g**{{attrs[.fragment]}}
 
 <!-- slide template=section -->
 # 2. Titrations
@@ -115,17 +115,17 @@ At **half**-equivalence, $[\mathrm{A^-}]=[\mathrm{HA}]$ and $\mathrm{pH}=\mathrm
 
 <!-- slide step -->
 ## Worked example — strong acid + strong base
-25.0 mL 0.100 M HCl + 0.100 M NaOH: 10.0, 25.0, 35.0 mL added
-- 10.0 mL: [H⁺]=0.0428 M → **pH=1.37**{{attrs[.fragment]}}
+25.0 mL 0.100 M $\ce{HCl}$ + 0.100 M $\ce{NaOH}$: 10.0, 25.0, 35.0 mL added
+- 10.0 mL: $[\ce{H+}] = 0.0428$ M → **pH=1.37**{{attrs[.fragment]}}
 - 25.0 mL: equal moles → **pH=7** (neutral salt){{attrs[.fragment]}}
-- 35.0 mL: [OH⁻]=0.0167 M → **pH=12.2**{{attrs[.fragment]}}
+- 35.0 mL: $[\ce{OH-}] = 0.0167$ M → **pH=12.2**{{attrs[.fragment]}}
 
 <!-- slide step -->
 ## Worked example — weak acid + strong base
-25.0 mL 0.100 M CH₃COOH (K_a=1.8×10⁻⁵) + same NaOH
-- 10.0 mL (buffer region): pH = pKa+log(0.0010/0.0015) = **4.57**{{attrs[.fragment]}}
+25.0 mL 0.100 M $\ce{CH3COOH}$ ($K_a = 1.8\times10^{-5}$) + same $\ce{NaOH}$
+- 10.0 mL (buffer region): pH = $\ce{p}K_a$+log(0.0010/0.0015) = **4.57**{{attrs[.fragment]}}
 - 25.0 mL (equivalence): acetate hydrolyzes → **pH=8.72**{{attrs[.fragment]}}
-- 35.0 mL (past equivalence): excess OH⁻ sets pH, same as strong acid titration → **pH=12.2**{{attrs[.fragment]}}
+- 35.0 mL (past equivalence): excess $\ce{OH-}$ sets pH, same as strong acid titration → **pH=12.2**{{attrs[.fragment]}}
 
 <!-- slide -->
 ## A titration endpoint
@@ -135,34 +135,34 @@ At **half**-equivalence, $[\mathrm{A^-}]=[\mathrm{HA}]$ and $\mathrm{pH}=\mathrm
 ## Choosing an indicator
 ![Indicator ranges](../assets/indicator_ranges.svg =680x)
 :::warning
-The indicator's color-change range (≈pKa±1) must fall within the curve's STEEP region near equivalence.
+The indicator's color-change range (≈$\ce{p}K_a$±1) must fall within the curve's STEEP region near equivalence.
 :::
 
 <!-- slide template=section -->
 # 3. Solubility Equilibria
 
 <!-- slide -->
-## Ksp: the same K_c framework, new context
+## $K_{sp}$: the same $K_c$ framework, new context
 $$\text{AgCl(s)} \rightleftharpoons \text{Ag}^+\text{(aq)} + \text{Cl}^-\text{(aq)} \qquad K_{sp}=[Ag^+][Cl^-]$$
 ![Silver chloride precipitate](../assets/silver_chloride_precipitate.jpg =380x)
 
 <!-- slide step -->
-## Worked example — solubility → Ksp
-Ca(OH)₂ solubility = 0.511 g/L (M = 74.1 g/mol)
-- Molar solubility = 6.90×10⁻³ M{{attrs[.fragment]}}
-- **K_sp = (6.90e-3)(2×6.90e-3)² = 1.31×10⁻⁶** (don't forget to double [OH⁻]!){{attrs[.fragment]}}
+## Worked example — solubility → $K_{sp}$
+$\ce{Ca(OH)2}$ solubility = 0.511 g/L (M = 74.1 g/mol)
+- Molar solubility = $6.90\times10^{-3}$ M{{attrs[.fragment]}}
+- **$K_{sp} = (6.90\times10^{-3})(2\times6.90\times10^{-3})^2 = 1.31\times10^{-6}$** (don't forget to double $[\ce{OH-}]$!){{attrs[.fragment]}}
 
 <!-- slide step -->
-## Worked example — Ksp → solubility
-CaCO₃, K_sp = 8.7×10⁻⁹ (1:1 salt)
+## Worked example — $K_{sp}$ → solubility
+$\ce{CaCO3}$, $K_{sp} = 8.7\times10^{-9}$ (1:1 salt)
 - $[Ca^{2+}]=[CO_3^{2-}]=\sqrt{K_{sp}}=9.3\times10^{-5}$ M{{attrs[.fragment]}}
-- **solubility = 9.3×10⁻³ g/L**{{attrs[.fragment]}}
+- **solubility = $9.3\times10^{-3}$ g/L**{{attrs[.fragment]}}
 
 <!-- slide step -->
 ## Worked example — will it precipitate?
-Mix equal volumes of 2.0×10⁻⁴ M AgNO₃ and 2.0×10⁻⁴ M NaCl. K_sp(AgCl)=1.6×10⁻¹⁰
-- After mixing: [Ag⁺]=[Cl⁻]=1.0×10⁻⁴ M{{attrs[.fragment]}}
-- Q = 1.0×10⁻⁸ > K_sp{{attrs[.fragment]}}
+Mix equal volumes of $2.0\times10^{-4}$ M $\ce{AgNO3}$ and $2.0\times10^{-4}$ M $\ce{NaCl}$. $K_{sp}(\ce{AgCl}) = 1.6\times10^{-10}$
+- After mixing: $[\ce{Ag+}] = [\ce{Cl-}] = 1.0\times10^{-4}$ M{{attrs[.fragment]}}
+- $Q = 1.0\times10^{-8} > K_{sp}${{attrs[.fragment]}}
 - **Yes, AgCl precipitates**{{attrs[.fragment]}}
 
 <!-- slide main-side -->
@@ -170,17 +170,17 @@ Mix equal volumes of 2.0×10⁻⁴ M AgNO₃ and 2.0×10⁻⁴ M NaCl. K_sp(AgCl
 <!-- @main -->
 ![Molar solubility of AgCl falling by four orders of magnitude as chloride is added](../assets/common_ion_effect.svg =700x)
 <!-- @side -->
-Adding Cl⁻ is adding a **product** — the dissolution shifts left.
+Adding $\ce{Cl-}$ is adding a **product** — the dissolution shifts left.
 
-In 0.001 M Cl⁻: **79× less soluble**.
+In 0.001 M $\ce{Cl-}$: **79× less soluble**.
 
-In 0.10 M Cl⁻: **7,900× less soluble**.
+In 0.10 M $\ce{Cl-}$: **7,900× less soluble**.
 
 At a given temperature, $K_\mathrm{sp}$ itself never moves. Only the split between the two ions does.
 
 <!-- slide step -->
 ## Worked example — common ion effect
-Mn(OH)₂, K_sp=2×10⁻¹³. What pH limits [Mn²⁺] to 1.8×10⁻⁶ M?
+$\ce{Mn(OH)2}$, $K_{sp} = 2\times10^{-13}$. What pH limits $[\ce{Mn2+}]$ to $1.8\times10^{-6}$ M?
 - $[OH^-]=\sqrt{K_{sp}/[Mn^{2+}]}=3.3\times10^{-4}$ M{{attrs[.fragment]}}
 - **pH = 10.5**{{attrs[.fragment]}}
 
@@ -188,15 +188,15 @@ Mn(OH)₂, K_sp=2×10⁻¹³. What pH limits [Mn²⁺] to 1.8×10⁻⁶ M?
 # 4. Complex Equilibria
 
 <!-- slide -->
-## Complex ions and Kf
+## Complex ions and $K_f$
 ![Complex ion formation](../assets/complex_ion_formation.svg =600x)
-Larger K_f → more stable complex
+Larger $K_f$ → more stable complex
 
 <!-- slide -->
 ## Amphoteric behavior, revisited
 $$\ce{Al(OH)3(s) + 3H+ -> Al^3+ + 3H2O} \qquad \ce{Al(OH)3(s) + OH- <=> Al(OH)4-}$$
-Same Al(OH)₃, acting as base (left) or acting as a (Lewis) acid by forming a complex (right)
+Same $\ce{Al(OH)3}$, acting as base (left) or acting as a (Lewis) acid by forming a complex (right)
 
 <!-- slide template=closing -->
 # One toolkit, four applications
-Every calculation in this chapter — buffers, titrations, Ksp, or Kf — reuses Chapter 14's K/Q/ICE-table framework and Chapter 15's Ka/Kb toolkit. No new method, only new contexts.
+Every calculation in this chapter — buffers, titrations, $K_{sp}$, or $K_f$ — reuses Chapter 14's K/Q/ICE-table framework and Chapter 15's $K_a/K_b$ toolkit. No new method, only new contexts.

@@ -44,7 +44,7 @@ A student can classify a given sample of matter as a pure substance or mixture (
 - Constraint: explanation must use the fixed-ratio idea, not just "it has more than one atom type."
 - Contexts: water, table salt, oxygen gas.
 - Formats: short-answer.
-- Worked instantiation: "Is oxygen gas (O₂) an element or a compound? Explain." → Element — it contains only one type of atom (oxygen), even though each molecule has two atoms.
+- Worked instantiation: "Is oxygen gas ($\ce{O2}$) an element or a compound? Explain." → Element — it contains only one type of atom (oxygen), even though each molecule has two atoms.
 
 **4. Error analysis**
 - Variables & ranges: a student incorrectly calls a homogeneous mixture (e.g., salt water) a "compound" because "it's mixed evenly."
@@ -159,7 +159,7 @@ A student can name the SI base unit for a given quantity, convert between SI pre
 
 ### Target understanding
 
-A student can convert among mL, cm³, L, and m³, and can calculate density from mass and volume (or solve for either, given the other two).
+A student can convert among mL, $\text{cm}^{3}$, L, and $\text{m}^{3}$, and can calculate density from mass and volume (or solve for either, given the other two).
 
 ### Question guides
 
@@ -168,14 +168,14 @@ A student can convert among mL, cm³, L, and m³, and can calculate density from
 - Constraint: correct significant figures in the final answer.
 - Contexts: metals, liquids.
 - Formats: workout.
-- Worked instantiation: see the study guide's worked example (gold, 45.3 g / 2.35 cm³).
+- Worked instantiation: see the study guide's worked example (gold, 45.3 g / 2.35 $\text{cm}^{3}$).
 
 **2. Inverse — solve for volume given density and mass**
 - Variables & ranges: given density and mass, find volume.
 - Constraint: correct algebraic rearrangement of $d=m/V$.
 - Contexts: any pure substance with a known density.
 - Formats: workout.
-- Worked instantiation: "The density of iron is 7.87 g/cm³. What is the volume of 25.7 g of iron?" → $V=m/d=25.7/7.87=3.27\ \text{cm}^3$ (3 sig figs).
+- Worked instantiation: "The density of iron is 7.87 $\text{g}/\text{cm}^{3}$. What is the volume of 25.7 g of iron?" → $V=m/d=25.7/7.87=3.27\ \text{cm}^3$ (3 sig figs).
 
 **3. Conceptual — why density identifies a substance**
 - Variables & ranges: two samples of different sizes but the same substance.
@@ -185,11 +185,11 @@ A student can convert among mL, cm³, L, and m³, and can calculate density from
 - Worked instantiation: "Why can density help identify an unknown metal, but mass alone cannot?" → Density is intensive (constant for a given substance regardless of sample size), while mass is extensive and depends on how much of the sample you have.
 
 **4. Error analysis**
-- Variables & ranges: a volume-unit conversion error (treating 1 mL as 1 dm³ instead of 1 cm³).
+- Variables & ranges: a volume-unit conversion error (treating 1 mL as 1 $\text{dm}^{3}$ instead of 1 $\text{cm}^{3}$).
 - Constraint: correction must state the correct volume-unit equivalence.
 - Contexts: any density calculation.
 - Formats: short-answer.
-- Worked instantiation: "A student calculates density using 1 mL = 1 dm³. What's wrong?" → 1 mL = 1 cm³, not 1 dm³ (which equals 1 L = 1000 mL) — using the wrong equivalence would make the calculated density 1000 times too small.
+- Worked instantiation: "A student calculates density using 1 mL = 1 $\text{dm}^{3}$. What's wrong?" → 1 mL = 1 $\text{cm}^{3}$, not 1 $\text{dm}^{3}$ (which equals 1 L = 1000 mL) — using the wrong equivalence would make the calculated density 1000 times too small.
 
 ### Design guidance by purpose
 
@@ -306,7 +306,7 @@ A student can count the significant figures in any measured value, correctly app
 - Constraint: must include a value like 3400 (ambiguous) alongside unambiguous ones.
 - Contexts: any measured quantities.
 - Formats: short-answer.
-- Worked instantiation: see the study guide's worked example (358 m; 0.932 kg; 0.0068 m; 9.320×10²³; 3400 mL).
+- Worked instantiation: see the study guide's worked example (358 m; 0.932 kg; 0.0068 m; $9.320\times10^{23}$; 3400 mL).
 
 **2. Inverse — write a number with a specified number of sig figs**
 - Variables & ranges: a value and a target sig-fig count.
@@ -419,7 +419,7 @@ A student can identify the needed conversion factor(s), set up a calculation so 
 - Constraint: correction must show the units explicitly failing to cancel in the flawed setup.
 - Contexts: any single-factor conversion.
 - Formats: short-answer.
-- Worked instantiation: "A student converts 125 g to oz using $125\,\text{g}\times\frac{28.349\,\text{g}}{1\,\text{oz}}$. What's wrong?" → The factor is inverted — grams don't cancel (g × g/oz gives g²/oz, not oz); the conversion factor must be flipped to (1 oz / 28.349 g) so the given "g" cancels.
+- Worked instantiation: "A student converts 125 g to oz using $125\,\text{g}\times\frac{28.349\,\text{g}}{1\,\text{oz}}$. What's wrong?" → The factor is inverted — grams don't cancel (g × g/oz gives $\text{g}^{2}$/oz, not oz); the conversion factor must be flipped to (1 oz / 28.349 g) so the given "g" cancels.
 
 ### Design guidance by purpose
 

@@ -18,7 +18,7 @@ title: Chapter 18: Redox Reactions and Electrochemistry
 - Assign oxidation numbers and balance redox equations using the half-reaction method.
 - Define galvanic cells, electrodes, and cell diagrams.
 - Use standard reduction potentials to identify the cathode/anode and calculate standard cell potential.
-- Relate ΔG°, K, and E° for a redox reaction, and apply the Nernst equation.
+- Relate $\Delta G^\circ$, K, and $E^\circ$ for a redox reaction, and apply the Nernst equation.
 - Explain corrosion, electrolysis, and batteries as applications of this framework.
 :::
 
@@ -206,7 +206,7 @@ A **galvanic (voltaic) cell** converts a spontaneous redox reaction's released e
 Figure 18.2 is the arrangement §18.1 was building toward: the same electron transfer, but with the two halves separated so the electron must take the long way round.
 
 ![Galvanic cell schematic: Zn anode and Cu cathode connected by a wire and salt bridge](../assets/galvanic_cell_diagram.svg)
-*Figure 18.2 — Zn is oxidized at the anode (electrons flow out through the wire); Cu²⁺ is reduced at the cathode. The salt bridge maintains electrical neutrality: anions migrate toward the anode's solution, cations toward the cathode's, as the reaction proceeds. Self-generated with matplotlib.*
+*Figure 18.2 — Zn is oxidized at the anode (electrons flow out through the wire); $\ce{Cu2+}$ is reduced at the cathode. The salt bridge maintains electrical neutrality: anions migrate toward the anode's solution, cations toward the cathode's, as the reaction proceeds. Self-generated with matplotlib.*
 
 **Why the salt bridge is not optional.** As zinc dissolves, the anode compartment accumulates positive charge; as copper plates out, the cathode compartment loses it. Within seconds that charge imbalance would halt electron flow entirely. The salt bridge lets inert ions migrate — anions toward the anode, cations toward the cathode — keeping both compartments neutral so the reaction can continue. **Remove the salt bridge and the cell stops, even though nothing has been consumed.**
 
@@ -270,18 +270,18 @@ $$\ce{Cr(s)|Cr^3+}(0.20\text{ M})||\ce{Ag+}(0.50\text{ M})|\ce{Ag(s)}$$
 
 :::success
 **Learning Objectives**
-- {{sp[info] Objective 18.3a}} Define standard reduction potential (E°) and the standard hydrogen electrode.
-- {{sp[info] Objective 18.3b}} Given two half-reactions, identify cathode/anode and calculate overall cell reaction, diagram, and E°cell.
+- {{sp[info] Objective 18.3a}} Define standard reduction potential ($E^\circ$) and the standard hydrogen electrode.
+- {{sp[info] Objective 18.3b}} Given two half-reactions, identify cathode/anode and calculate overall cell reaction, diagram, and $E^\circ_\text{cell}$.
 :::
 
-### The standard hydrogen electrode and the E° scale
+### The standard hydrogen electrode and the $E^\circ$ scale
 
 **Standard reduction potential** ($E^\circ$) is measured relative to the **standard hydrogen electrode** (SHE), defined as exactly 0 V. {{sp[warning] Reminder}} changing a half-reaction's stoichiometric coefficients does **not** change its $E^\circ$ — it's an intensive property, not extensive.
 
 Figure 18.3 is the table in visual form — and its vertical order is the whole content of this section.
 
 ![Standard reduction potentials for several half-reactions, from Li (most negative) to F2 (most positive)](../assets/reduction_potential_series.svg)
-*Figure 18.3 — The half-reaction with the highest E° has the strongest oxidizing agent (its oxidized form) (easiest to reduce); the half-reaction with the lowest E° corresponds to the strongest reducing agent (its reduced form gives up electrons most readily). Self-generated with matplotlib using real, commonly tabulated standard reduction potentials.*
+*Figure 18.3 — The half-reaction with the highest $E^\circ$ has the strongest oxidizing agent (its oxidized form) (easiest to reduce); the half-reaction with the lowest $E^\circ$ corresponds to the strongest reducing agent (its reduced form gives up electrons most readily). Self-generated with matplotlib using real, commonly tabulated standard reduction potentials.*
 
 :::warning
 **No single electrode potential can be measured on its own.** A voltmeter needs two terminals, so every measurement is a *difference* between two half-cells. The SHE is not special physically — it is a chosen reference point, assigned 0 V by convention, exactly as sea level is assigned zero altitude. Every tabulated $E^\circ$ is really "this half-cell, measured against hydrogen."
@@ -302,7 +302,7 @@ Its cell diagram is $\ce{Pt(s)|H2}(1\text{ atm})|\ce{H+}(1\text{ M})$. The 0 V i
 
 **(b)** Zinc is stated to be the anode, so hydrogen is the cathode:
 
-$$E^\circ_{cell} = E^\circ_{cathode} - E^\circ_{anode} \quad\Rightarrow\quad 0.76 = 0 - E^\circ_{\ce{Zn^2+/Zn}}$$
+$$E^\circ_\text{cell} = E^\circ_\text{cathode} - E^\circ_\text{anode} \quad\Rightarrow\quad 0.76 = 0 - E^\circ_{\ce{Zn^2+/Zn}}$$
 $$E^\circ_{\ce{Zn^2+/Zn}} = -0.76\ \text{V}$$
 
 **\(c) Negative means "harder to reduce than $\ce{H+}$."** Zinc metal gives up electrons more readily than hydrogen gas does, so in this pairing zinc is forced into the oxidation role and the tabulated reduction potential comes out below zero.
@@ -318,10 +318,10 @@ That second line is why zinc, iron and magnesium all fizz in acid and copper, si
 
 :::: tabs
 ::: tab Problem
-A student measures a Cu/Ag cell as $E^\circ_{cell} = +0.46$ V and reports "$E^\circ$ of the silver half-cell is +0.46 V." (a) What is wrong with this statement? (b) Suppose every value in the $E^\circ$ table were increased by exactly 2.00 V. Which of these would change: the tabulated potentials, individual cell voltages, $\Delta G^\circ$, or which electrode is the cathode?
+A student measures a Cu/Ag cell as $E^\circ_\text{cell} = +0.46$ V and reports "$E^\circ$ of the silver half-cell is +0.46 V." (a) What is wrong with this statement? (b) Suppose every value in the $E^\circ$ table were increased by exactly 2.00 V. Which of these would change: the tabulated potentials, individual cell voltages, $\Delta G^\circ$, or which electrode is the cathode?
 :::
 ::: tab Solution
-**(a) $E^\circ_{cell}$ is a *difference* between two half-cells, not a property of either one.** The 0.46 V measured for the Cu/Ag cell is $0.80 - 0.34$. Attributing it to silver alone discards the copper half of the measurement.
+**(a) $E^\circ_\text{cell}$ is a *difference* between two half-cells, not a property of either one.** The 0.46 V measured for the Cu/Ag cell is $0.80 - 0.34$. Attributing it to silver alone discards the copper half of the measurement.
 
 The deeper point: **no half-cell potential can be measured in isolation at all.** A voltmeter has two leads and always reports a difference. Every tabulated $E^\circ$ is that half-cell measured against the SHE, and the "absolute" value exists only because hydrogen was assigned zero.
 
@@ -330,8 +330,8 @@ The deeper point: **no half-cell potential can be measured in isolation at all.*
 | Quantity | Changes? | Why |
 |---|---|---|
 | tabulated $E^\circ$ values | **yes** | every entry shifts by +2.00 V |
-| $E^\circ_{cell}$ for any cell | **no** | the +2.00 cancels in $E^\circ_{cathode} - E^\circ_{anode}$ |
-| $\Delta G^\circ$ | **no** | it depends on $E^\circ_{cell}$, which did not move |
+| $E^\circ_\text{cell}$ for any cell | **no** | the +2.00 cancels in $E^\circ_\text{cathode} - E^\circ_\text{anode}$ |
+| $\Delta G^\circ$ | **no** | it depends on $E^\circ_\text{cell}$, which did not move |
 | which electrode is the cathode | **no** | the *ordering* is untouched by a constant shift |
 
 **This is the definition of an arbitrary reference point.** Sea level, the SHE, and $\Delta H^\circ_f = 0$ for elements in their standard states are all the same kind of convention: they fix an origin so that differences — the only things that were ever measurable — can be tabulated as if they were absolute values.
@@ -342,13 +342,13 @@ The deeper point: **no half-cell potential can be measured in isolation at all.*
 
 Given any two half-reactions combined into a galvanic (spontaneous) cell: the one with the **higher** $E^\circ$ becomes the **cathode** (reduction, exactly as written); the other becomes the **anode**, and its reaction is reversed to an oxidation.
 
-$$E^\circ_{cell}=E^\circ_{cathode}-E^\circ_{anode}$$
+$$E^\circ_\text{cell}=E^\circ_\text{cathode}-E^\circ_\text{anode}$$
 
-==Because the cathode is chosen as the larger of the two, $E^\circ_{cell}$ is always positive for a galvanic cell — and a positive $E^\circ_{cell}$ is what "spontaneous under standard conditions" means here.== If your answer comes out negative, you assigned the electrodes backwards.
+==Because the cathode is chosen as the larger of the two, $E^\circ_\text{cell}$ is always positive for a galvanic cell — and a positive $E^\circ_\text{cell}$ is what "spontaneous under standard conditions" means here.== If your answer comes out negative, you assigned the electrodes backwards.
 
 :::: tabs
 ::: tab Problem
-Given $\ce{Ag+ + e- -> Ag}$ ($E^\circ=+0.80$ V) and $\ce{Cu^2+ + 2e- -> Cu}$ ($E^\circ=+0.34$ V), find the cathode, anode, overall reaction, cell diagram, and $E^\circ_{cell}$.
+Given $\ce{Ag+ + e- -> Ag}$ ($E^\circ=+0.80$ V) and $\ce{Cu^2+ + 2e- -> Cu}$ ($E^\circ=+0.34$ V), find the cathode, anode, overall reaction, cell diagram, and $E^\circ_\text{cell}$.
 :::
 ::: tab Solution
 Ag has the higher $E^\circ$ → **cathode**. Cu → **anode** (reversed): $\ce{Cu -> Cu^2+ + 2e-}$.
@@ -357,15 +357,15 @@ Equalizing electrons (Ag needs ×2): overall reaction: $\ce{Cu(s) + 2Ag+(aq) -> 
 
 $$\ce{Cu(s)|Cu^2+}(1\text{ M})||\ce{Ag+}(1\text{ M})|\ce{Ag(s)}$$
 
-$$E^\circ_{cell}=0.80-0.34=0.46\ \text{V}$$
+$$E^\circ_\text{cell}=0.80-0.34=0.46\ \text{V}$$
 
-{{sp[warning] Do not double the silver E°}} Multiplying $\ce{Ag+ + e- -> Ag}$ by two to balance electrons does **not** make its $E^\circ$ +1.60 V. Potential is an **intensive** property — energy per unit charge (joules per coulomb), not total energy — so it is unchanged by scaling, exactly as the density of a sample does not change when you take twice as much. The extensive quantity is $\Delta G^\circ = -nFE^\circ$, and *that* does double, because $n$ doubles.
+{{sp[warning] Do not double the silver $E^\circ$}} Multiplying $\ce{Ag+ + e- -> Ag}$ by two to balance electrons does **not** make its $E^\circ$ +1.60 V. Potential is an **intensive** property — energy per unit charge (joules per coulomb), not total energy — so it is unchanged by scaling, exactly as the density of a sample does not change when you take twice as much. The extensive quantity is $\Delta G^\circ = -nFE^\circ$, and *that* does double, because $n$ doubles.
 :::
 ::::
 
 :::: tabs
 ::: tab Problem
-Using $E^\circ$ values $\ce{Zn^2+/Zn} = -0.76$ V, $\ce{Fe^2+/Fe} = -0.44$ V, and $\ce{Cu^2+/Cu} = +0.34$ V: (a) which is the strongest oxidizing agent and which the strongest reducing agent? (b) Will $\ce{Zn(s)}$ reduce $\ce{Fe^2+}$? \(c) Will $\ce{Cu(s)}$ reduce $\ce{Fe^2+}$? (d) Calculate $E^\circ_{cell}$ for the Zn/Cu cell.
+Using $E^\circ$ values $\ce{Zn^2+/Zn} = -0.76$ V, $\ce{Fe^2+/Fe} = -0.44$ V, and $\ce{Cu^2+/Cu} = +0.34$ V: (a) which is the strongest oxidizing agent and which the strongest reducing agent? (b) Will $\ce{Zn(s)}$ reduce $\ce{Fe^2+}$? \(c) Will $\ce{Cu(s)}$ reduce $\ce{Fe^2+}$? (d) Calculate $E^\circ_\text{cell}$ for the Zn/Cu cell.
 :::
 ::: tab Solution
 **(a)** The table is written as *reductions*, so a **high** $E^\circ$ means the species on the left is easily reduced — that is, it is a good **oxidizing agent**. A **low** $E^\circ$ means the species on the *right* gives up electrons easily — a good **reducing agent**.
@@ -374,20 +374,20 @@ Using $E^\circ$ values $\ce{Zn^2+/Zn} = -0.76$ V, $\ce{Fe^2+/Fe} = -0.44$ V, and
 - **Strongest reducing agent: $\ce{Zn(s)}$** (lowest $E^\circ$, −0.76 V).
 
 **(b) Yes.** For $\ce{Zn(s)} + \ce{Fe^2+} \to \ce{Zn^2+} + \ce{Fe(s)}$, iron is reduced (cathode, −0.44) and zinc oxidized (anode, −0.76):
-$$E^\circ_{cell} = -0.44 - (-0.76) = +0.32\ \text{V} > 0 \quad\text{— spontaneous}$$
+$$E^\circ_\text{cell} = -0.44 - (-0.76) = +0.32\ \text{V} > 0 \quad\text{— spontaneous}$$
 
 **\(c) No.** For $\ce{Cu(s)} + \ce{Fe^2+} \to \ce{Cu^2+} + \ce{Fe(s)}$:
-$$E^\circ_{cell} = -0.44 - (+0.34) = -0.78\ \text{V} < 0 \quad\text{— not spontaneous}$$
+$$E^\circ_\text{cell} = -0.44 - (+0.34) = -0.78\ \text{V} < 0 \quad\text{— not spontaneous}$$
 The *reverse* runs instead: iron metal dissolves in copper solutions, not the other way round.
 
-**(d)** $E^\circ_{cell} = 0.34 - (-0.76) = +1.10$ V — the classic Daniell cell.
+**(d)** $E^\circ_\text{cell} = 0.34 - (-0.76) = +1.10$ V — the classic Daniell cell.
 
 **The shortcut this establishes.** A metal will reduce the ion of any metal **above** it in $E^\circ$. Zinc is below iron, which is below copper, so zinc reduces both and copper reduces neither. This single ordering is why zinc is used to protect steel and copper is not.
 :::
 ::::
 
 **Self-check:**
-- If you doubled every coefficient in the Ag half-reaction, would $E^\circ_{cell}$ change? Would $\Delta G^\circ$?
+- If you doubled every coefficient in the Ag half-reaction, would $E^\circ_\text{cell}$ change? Would $\Delta G^\circ$?
 - Why can no single half-cell potential be measured in isolation?
 
 > **Where this goes next.** §18.3 gives a voltage under standard conditions only — 1 M, 1 atm. §18.4 does two things with that number: connects it to $\Delta G^\circ$ and $K$ from Chapters 14 and 17, and extends it to the non-standard concentrations any real cell actually has.
@@ -396,18 +396,18 @@ The *reverse* runs instead: iron metal dissolves in copper solutions, not the ot
 
 :::success
 **Learning Objectives**
-- {{sp[info] Objective 18.4a}} Relate ΔG°, K, and E° for a redox reaction.
+- {{sp[info] Objective 18.4a}} Relate $\Delta G^\circ$, K, and $E^\circ$ for a redox reaction.
 - {{sp[info] Objective 18.4b}} Apply the Nernst equation to find E under non-standard conditions.
 - {{sp[info] Objective 18.4c}} Calculate the potential of a concentration cell.
 :::
 
-### ΔG°, K, and E° — three views of one fact
+### $\Delta G^\circ$, K, and $E^\circ$ — three views of one fact
 
-==$\Delta G^\circ$, $K$ and $E^\circ_{cell}$ are one fact in three currencies — and the bridge between them is the only place in this course where a thermodynamic quantity can be read off a voltmeter.== Three quantities describe the same reaction's favorability from three angles, connected by:
+==$\Delta G^\circ$, $K$ and $E^\circ_\text{cell}$ are one fact in three currencies — and the bridge between them is the only place in this course where a thermodynamic quantity can be read off a voltmeter.== Three quantities describe the same reaction's favorability from three angles, connected by:
 
 $$\Delta G^\circ=-nFE^\circ=-RT\ln K \qquad F=96{,}485\ \text{C/mol (Faraday constant)},\ n=\text{mol }e^-\text{ transferred}$$
 
-| ΔG° | K | E°cell | Meaning |
+| $\Delta G^\circ$ | K | $E^\circ_\text{cell}$ | Meaning |
 |---|---|---|---|
 | Negative | > 1 | Positive | Favors products |
 | 0 | = 1 | 0 | Reactants/products equally favored |
@@ -420,7 +420,7 @@ Find $\Delta G^\circ$ and $K$ at 25 °C for $\ce{Sn(s) + 2Cu^2+(aq) -> Sn^2+(aq)
 ::: tab Solution
 Cu has the higher $E^\circ$ → cathode; Sn → anode (reversed). $n=2$ (equalizing electrons):
 
-$$E^\circ_{cell}=0.153-(-0.1375)=0.2905\ \text{V}$$
+$$E^\circ_\text{cell}=0.153-(-0.1375)=0.2905\ \text{V}$$
 
 $$\Delta G^\circ=-nFE^\circ=-2(96{,}485)(0.2905)=-5.606\times10^4\ \text{J/mol}$$
 
@@ -428,13 +428,13 @@ $$K=e^{-\Delta G^\circ/RT}=e^{5.606\times10^4/(8.314\times298)}=6.7\times10^9$$
 
 Negative $\Delta G^\circ$, $K\gg1$ → **spontaneous**, strongly product-favored.
 
-{{sp[warning] K is exquisitely sensitive to E°}} $K$ came out near $10^{10}$ from a cell potential of only 0.29 V. At 298 K, **every 0.0592 V of $E^\circ_{cell}$ multiplies $K$ by $10^n$, where $n$ is the number of electrons transferred** — so a cell voltage you could barely read on a cheap meter corresponds to an equilibrium constant spanning many orders of magnitude. Carrying an extra digit in $E^\circ$ matters here in a way it rarely does elsewhere — which is why this example kept $E^\circ=0.2905$ V rather than rounding to 0.290. Rounding first would have given $K=6.5\times10^9$, low by about 4%, from a change in the *fourth* digit of a voltage.
+{{sp[warning] K is exquisitely sensitive to $E^\circ$}} $K$ came out near $10^{10}$ from a cell potential of only 0.29 V. At 298 K, **every 0.0592 V of $E^\circ_\text{cell}$ multiplies $K$ by $10^n$, where $n$ is the number of electrons transferred** — so a cell voltage you could barely read on a cheap meter corresponds to an equilibrium constant spanning many orders of magnitude. Carrying an extra digit in $E^\circ$ matters here in a way it rarely does elsewhere — which is why this example kept $E^\circ=0.2905$ V rather than rounding to 0.290. Rounding first would have given $K=6.4\times10^9$, low by about 4%, from a change in the *fourth* digit of a voltage.
 :::
 ::::
 
 :::: tabs
 ::: tab Problem
-For the Daniell cell, $\ce{Zn(s) + Cu^2+(aq) -> Zn^2+(aq) + Cu(s)}$, $E^\circ_{cell} = +1.10$ V and $n = 2$. (a) Calculate $\Delta G^\circ$. (b) Calculate $K$. \(c) What does the size of $K$ say about how far the reaction goes?
+For the Daniell cell, $\ce{Zn(s) + Cu^2+(aq) -> Zn^2+(aq) + Cu(s)}$, $E^\circ_\text{cell} = +1.10$ V and $n = 2$. (a) Calculate $\Delta G^\circ$. (b) Calculate $K$. \(c) What does the size of $K$ say about how far the reaction goes?
 :::
 ::: tab Solution
 **(a)**
@@ -541,7 +541,7 @@ $$E = -0.0592\log Q = -0.0592\,(\log[\ce{H+}]_\text{dilute} - \log 1.0) = 0.0592
 ::::
 
 **Self-check:**
-- If $E^\circ_{cell}=0$ for a reaction, what does that tell you about $K$?
+- If $E^\circ_\text{cell}=0$ for a reaction, what does that tell you about $K$?
 - A battery reads 1.5 V when new and 1.4 V when nearly flat, then falls quickly to 0. Explain both the flatness and the final collapse using the Nernst equation.
 
 > **Where this goes next.** §18.4 completes the theory. §18.5 asks where it shows up — in metal that rusts, in reactions run backwards on purpose, and in the cell powering whatever you are reading this on.
@@ -571,37 +571,37 @@ Iron rusts; galvanized (zinc-coated) steel does not, even when the coating is sc
 ::: tab Solution
 **(a) Rusting is a galvanic cell on the metal's own surface.** Iron is oxidized at one spot (anode) and atmospheric oxygen is reduced at another (cathode):
 
-$$E^\circ_{cell} = 1.23 - (-0.44) = +1.67\ \text{V} > 0 \quad\text{— strongly spontaneous}$$
+$$E^\circ_\text{cell} = 1.23 - (-0.44) = +1.67\ \text{V} > 0 \quad\text{— strongly spontaneous}$$
 
 That is why iron rusts at all, and why it needs water present: the electrolyte completes the circuit.
 
 **With zinc present, zinc is the better reducing agent** ($-0.76$ is below $-0.44$), so zinc is oxidized in preference:
 
-$$E^\circ_{cell} = 1.23 - (-0.76) = +1.99\ \text{V}$$
+$$E^\circ_\text{cell} = 1.23 - (-0.76) = +1.99\ \text{V}$$
 
 **(b) A scratch is not fatal because the zinc protects the iron electrically, not physically.** Even with bare iron exposed, the zinc remains the anode of the couple and corrodes instead — the iron is forced to be the cathode, where nothing dissolves. This is **cathodic protection**, and the zinc is called a **sacrificial anode**. Ships' hulls and buried pipelines carry blocks of zinc or magnesium for exactly this reason.
 
 **\(c) Tin has $E^\circ = -0.14$ V, which is *above* iron's $-0.44$ V.** So in a tin/iron couple, **iron** is the more easily oxidized and becomes the anode. While the coating is intact it works as a physical barrier; once scratched, it creates a galvanic cell that actively drives iron's corrosion — worse than no coating at all.
 
-**The design rule:** a protective coating must be **more** easily oxidized than the metal it protects, or a scratch turns it into an accelerant.
+**The design rule:** a protective metal coating must be **more** easily oxidized than the metal it protects, or a scratch turns it into an accelerant.
 :::
 ::::
 
 ### Electrolysis
 
-**Electrolysis** uses external electrical energy to drive a **nonspontaneous** redox reaction — the reverse of what a galvanic cell does spontaneously. {{sp[warning] Reminder}} a negative $E^\circ_{cell}$ doesn't mean a reaction "can't happen" — it means external energy input (electrolysis) is required to force it forward under standard conditions. Electrolyzing water yields $\ce{H2}$ and $\ce{O2}$ (the reverse of $\ce{H2}$ combustion); electrolyzing molten $\ce{NaCl}$ yields $\ce{Na}$ metal and $\ce{Cl2}$ gas.
+**Electrolysis** uses external electrical energy to drive a **nonspontaneous** redox reaction — the reverse of what a galvanic cell does spontaneously. {{sp[warning] Reminder}} a negative $E^\circ_\text{cell}$ doesn't mean a reaction "can't happen" — it means external energy input (electrolysis) is required to force it forward under standard conditions. Electrolyzing water yields $\ce{H2}$ and $\ce{O2}$ (the reverse of $\ce{H2}$ combustion); electrolyzing molten $\ce{NaCl}$ yields $\ce{Na}$ metal and $\ce{Cl2}$ gas.
 
 ![Side-by-side comparison of a galvanic cell and an electrolytic cell, showing opposite energy conversion and the external power supply](../assets/galvanic_vs_electrolytic.svg)
 *Figure 18.6 — The two cell types run the same kind of chemistry in opposite directions. Oxidation is at the anode and reduction at the cathode in **both** — what differs is whether the cell drives the circuit or the circuit drives the cell. Self-generated with matplotlib.*
 
-==Figure 18.6 makes the one comparison worth memorizing: a galvanic cell converts chemical energy into electrical, an electrolytic cell does the reverse, and the anode/cathode definitions never change between them.== What does change is the sign of $E^\circ_{cell}$, and therefore whether you need a power supply.
+==Figure 18.6 makes the one comparison worth memorizing: a galvanic cell converts chemical energy into electrical, an electrolytic cell does the reverse, and the anode/cathode definitions never change between them.== What does change is the sign of $E^\circ_\text{cell}$, and therefore whether you need a power supply.
 
 :::: tabs
 ::: tab Problem
-For $\ce{2H2O(l) -> 2H2(g) + O2(g)}$, $E^\circ_{cell} = -1.23$ V. (a) Is this spontaneous? (b) What does the negative sign tell you about $\Delta G^\circ$? \(c) What minimum voltage must a power supply provide to electrolyze water? (d) Reconcile this with the fact that hydrogen burning in oxygen is violently spontaneous.
+For $\ce{2H2O(l) -> 2H2(g) + O2(g)}$, $E^\circ_\text{cell} = -1.23$ V. (a) Is this spontaneous? (b) What does the negative sign tell you about $\Delta G^\circ$? \(c) What minimum voltage must a power supply provide to electrolyze water? (d) Reconcile this with the fact that hydrogen burning in oxygen is violently spontaneous.
 :::
 ::: tab Solution
-**(a) No.** $E^\circ_{cell} < 0$, so the reaction does not proceed on its own — water does not spontaneously separate into its elements.
+**(a) No.** $E^\circ_\text{cell} < 0$, so the reaction does not proceed on its own — water does not spontaneously separate into its elements.
 
 **(b)** From $\Delta G^\circ = -nFE^\circ$ with $n = 4$:
 
@@ -611,9 +611,9 @@ Positive, as a negative $E^\circ$ requires. The two statements are the same stat
 
 **\(c) At least 1.23 V** must be applied to force the reaction. In practice more is needed — real cells require an **overpotential** on top of the thermodynamic minimum to overcome kinetic barriers at the electrodes, typically bringing the working voltage to 1.5–2.0 V.
 
-**(d) They are the same reaction read in opposite directions.** Hydrogen combustion, $\ce{2H2 + O2 -> 2H2O}$, has $E^\circ_{cell} = +1.23$ V and $\Delta G^\circ = -475$ kJ/mol — strongly spontaneous. Electrolysis is that reaction reversed, so every sign flips.
+**(d) They are the same reaction read in opposite directions.** Hydrogen combustion, $\ce{2H2 + O2 -> 2H2O}$, has $E^\circ_\text{cell} = +1.23$ V and $\Delta G^\circ = -475$ kJ/mol — strongly spontaneous. Electrolysis is that reaction reversed, so every sign flips.
 
-**The accounting is exact.** Electrolyzing water costs at least the 475 kJ/mol that burning the hydrogen returns. **Electrolysis is not a way of making energy; it is a way of storing it** — which is the entire principle behind hydrogen as a fuel, and behind every rechargeable battery.
+**The accounting is exact.** Electrolyzing water costs at least the 475 kJ/mol of work that burning the hydrogen (e.g., in a fuel cell) can at most return. **Electrolysis is not a way of making energy; it is a way of storing it** — which is the entire principle behind hydrogen as a fuel, and behind every rechargeable battery.
 :::
 ::::
 
@@ -629,7 +629,7 @@ Figure 18.7 shows the packaging; the chemistry inside is §18.2's.
 
 **Self-check:**
 - Is corrosion more like a galvanic cell or an electrolytic cell? Why?
-- A student says a reaction with negative $E^\circ_{cell}$ simply never happens. What's the more precise statement?
+- A student says a reaction with negative $E^\circ_\text{cell}$ simply never happens. What's the more precise statement?
 
 ## Synthesis
 
@@ -642,7 +642,7 @@ Figure 18.7 shows the packaging; the chemistry inside is §18.2's.
 | `assets/redox_electron_transfer.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
 | `assets/galvanic_cell_diagram.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; illustrates the study guide's own Zn/Cu worked example; released under this package's CC BY 4.0 license. |
 | `assets/reduction_potential_series.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib using real, commonly tabulated standard reduction potentials; released under this package's CC BY 4.0 license. |
-| `assets/nernst_concentration_cell.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib using the Nernst equation and the study guide's own real worked-example data point (0.10 M / 0.50 M -> E=0.0207 V); released under this package's CC BY 4.0 license. |
+| `assets/nernst_concentration_cell.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib using the Nernst equation and the study guide's own real worked-example data point (0.10 M / 0.50 M → $E = 0.0207$ V); released under this package's CC BY 4.0 license. |
 | `assets/rust_corrosion.jpg` | https://commons.wikimedia.org/wiki/File:Rust_on_metal.jpg | Public domain | Georges Grondin, via Wikimedia Commons (public domain). Resized from the original for web use. |
 | `assets/galvanic_vs_electrolytic.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
 | `assets/batteries.jpg` | https://commons.wikimedia.org/wiki/File:AA_Batteries_(51825378856).jpg | CC BY 2.0 | ajay_suresh, via Wikimedia Commons, CC BY 2.0. Resized from the original for web use. |

@@ -255,7 +255,7 @@ $$\ce{N^3-} > \ce{O^2-} > \ce{F-} > \ce{Ne} > \ce{Na+} > \ce{Mg^2+} > \ce{Al^3+}
 ::::
 
 ![Bar chart of radii for the classic 10-electron isoelectronic series](../assets/isoelectronic_radius_series.svg =560x)
-*Figure 8.4 — All seven species have exactly 10 electrons, but radius shrinks steadily as nuclear charge climbs from N (Z=7) to Al (Z=13) — the same 10 electrons are pulled progressively tighter.*
+*Figure 8.4 — All seven species have exactly 10 electrons, but radius shrinks steadily as nuclear charge climbs from N ($Z = 7$) to Al ($Z = 13$) — the same 10 electrons are pulled progressively tighter.*
 
 :::: tabs
 ::: tab Problem
@@ -399,7 +399,7 @@ Elements in a group share a valence configuration, so they share chemistry. But 
 
 It is strongest in **Groups 1A and 2A** (all metals, apart from hydrogen) and **Groups 7A and 8A** (all nonmetals), where every member (hydrogen aside) falls in the same class, metal or nonmetal. In **Groups 3A through 6A** the elements shift from nonmetal (or, in 3A, metalloid) to metalloid to metal going down, so chemical properties vary far more even though the valence configuration is constant.
 
-A second pattern cuts across the columns. **Diagonal relationships** link the first three second-period elements to the element diagonally below-right: Li resembles Mg, Be resembles Al, and B resembles Si. The cause is that these pairs have similar cation charge densities — comparable charge packed into comparable volume.
+A second pattern cuts across the columns. **Diagonal relationships** link the first three second-period elements to the element diagonally below-right: Li resembles Mg, Be resembles Al, and B resembles Si. The cause is that these pairs have similar cation charge densities — a similar ratio of charge to size, even though the charges themselves differ.
 
 ### Hydrogen, and the eight main groups
 
@@ -439,7 +439,7 @@ The two answers point in opposite directions down the table, and that is the who
 Lithium is the only alkali metal whose carbonate decomposes on heating, and the only one forming a nitride directly with $\ce{N2}$ — behavior otherwise typical of magnesium. Explain using the diagonal relationship, and name the other two classic diagonal pairs.
 :::
 ::: tab Solution
-**Lithium and magnesium form a diagonal pair.** Going right across a period increases charge and decreases size; going down a group decreases charge density. Moving diagonally down-right, the two effects roughly cancel, so Li⁺ and Mg²⁺ end up with similar **charge densities** — comparable charge packed into comparable volume.
+**Lithium and magnesium form a diagonal pair.** Going right across a period increases charge and decreases size; going down a group decreases charge density. Moving diagonally down-right, the two effects roughly cancel, so $\ce{Li+}$ and $\ce{Mg2+}$ end up with similar **charge densities** — a similar ratio of charge to size, even though the charges themselves differ.
 
 Since charge density is what controls how strongly a cation polarizes its neighbors, the two behave alike even though they are in different groups.
 

@@ -53,16 +53,16 @@ $$\frac{\Delta[\ce{NO2}]}{\Delta t} = 4(2.5\times10^{-3}) = +1.0\times10^{-2}\ \
 ::: tab Q 4
 {{sp[info] Objective 13.1b}} · *workout* Use the data below for $\ce{2NO + H2 -> N2O + H2O}$ to determine the rate law and calculate $k$.
 
-| Trial | [NO] | [H₂] | Rate (M/s) |
+| Trial | [NO] | $[\ce{H2}]$ | Rate (M/s) |
 |---|---|---|---|
 | 1 | 0.10 | 0.10 | 0.0060 |
 | 2 | 0.10 | 0.20 | 0.0120 |
 | 3 | 0.20 | 0.10 | 0.0240 |
 :::
 ::: tab Answer
-Trials 1→2: [NO] constant, [H₂] doubles, rate doubles → first order in $\ce{H2}$ ($y=1$).
+Trials 1→2: [NO] constant, $[\ce{H2}]$ doubles, rate doubles → first order in $\ce{H2}$ ($y=1$).
 
-Trials 1→3: [H₂] constant, [NO] doubles, rate quadruples → second order in $\ce{NO}$ ($x=2$).
+Trials 1→3: $[\ce{H2}]$ constant, [NO] doubles, rate quadruples → second order in $\ce{NO}$ ($x=2$).
 
 $$\text{rate} = k[\ce{NO}]^2[\ce{H2}]$$
 
@@ -91,16 +91,16 @@ Doubling $[\ce{A}]$ (first order) doubles the rate ($2^1=2$). Doubling $[\ce{B}]
 ::: tab Answer
 **\(C) Second.** A rate constant's units are fixed by the overall order, because both sides of the rate law must balance.
 
-For an overall order $n$, rate (M s⁻¹) $= k \times$ (M)$^n$, so $k$ carries M$^{1-n}$s$^{-1}$:
+For an overall order $n$, rate ($\text{M}\,\text{s}^{-1}$) $= k \times (\text{M})^n$, so $k$ carries $\text{M}^{1-n}\,\text{s}^{-1}$:
 
 | Overall order | Units of $k$ |
 |---|---|
-| 0 | M s⁻¹ |
-| 1 | s⁻¹ |
-| 2 | M⁻¹s⁻¹ |
-| 3 | M⁻²s⁻¹ |
+| 0 | $\text{M}\,\text{s}^{-1}$ |
+| 1 | $\text{s}^{-1}$ |
+| 2 | $\text{M}^{-1}\,\text{s}^{-1}$ |
+| 3 | $\text{M}^{-2}\,\text{s}^{-1}$ |
 
-M⁻¹s⁻¹ corresponds to $1-n = -1$, so $n = 2$.
+$\text{M}^{-1}\,\text{s}^{-1}$ corresponds to $1-n = -1$, so $n = 2$.
 
 **(D) is the tempting wrong answer.** The units cannot tell you *how* the order is distributed — second order overall might be $k[\ce{A}]^2$ or $k[\ce{A}][\ce{B}]$, and only data can settle that. But the overall order itself is determined.
 :::

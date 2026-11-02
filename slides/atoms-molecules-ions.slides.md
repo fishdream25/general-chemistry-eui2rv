@@ -113,7 +113,7 @@ Rows are **periods** · columns are **groups** — and elements in one group beh
 ## Molecules
 - Diatomic: $\ce{H2}$ · Polyatomic: 3+ atoms
 - Only the noble gases exist as lone atoms under normal conditions
-- Organic functional groups: hydroxyl (-OH), amino (-NH₂), carboxyl (-COOH)
+- Organic functional groups: hydroxyl (-OH), amino (-$\ce{NH2}$), carboxyl (-COOH)
 
 <!-- slide -->
 ## Cations and anions
@@ -127,8 +127,8 @@ Rows are **periods** · columns are **groups** — and elements in one group beh
 Metals on the left lose electrons · nonmetals on the right gain them · transition metals vary, hence Roman numerals
 
 <!-- slide step -->
-## Worked example — Cl⁻
-Chlorine (Z = 17) gains 1 electron
+## Worked example — $\ce{Cl-}$
+Chlorine ($Z = 17$) gains 1 electron
 - Protons: unchanged by electron transfer{{attrs[.fragment]}}
 - **17 protons, 18 electrons**{{attrs[.fragment]}}
 

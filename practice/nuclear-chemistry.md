@@ -48,9 +48,9 @@ $$\ce{^{239}_{94}Pu -> ^{235}_{92}U + ^{4}_{2}He}$$
 $$\ce{^{9}_{4}Be + ^{4}_{2}He -> ^{12}_{6}C + ^{1}_{0}n}$$
 This is Chadwick's 1932 experiment, which discovered the neutron.
 
-**The method is the same every time:** subtract superscripts, subtract subscripts, then identify the particle from $(A, Z)$. The four you will meet are $^1_1$H (proton), $^1_0$n (neutron), $^4_2$He (alpha) and $^0_{-1}$e (beta).
+**The method is the same every time:** subtract superscripts, subtract subscripts, then identify the particle from $(A, Z)$. The four most common are $^1_1$H (proton), $^1_0$n (neutron), $^4_2$He (alpha) and $^0_{-1}$e (beta).
 
-**Note what makes (b) different from (a) and \(c).** (b) is spontaneous **decay** — nothing was fired at the plutonium. (a) and \(c) are **transmutations**, requiring a bombarding particle.
+**Note what makes (b) different from (a) and \(c).** (b) is spontaneous **decay** — nothing was fired at the plutonium. (a) and \(c) are **artificial (induced) transmutations**, requiring a bombarding particle.
 :::
 ::::
 
@@ -65,7 +65,7 @@ This is Chadwick's 1932 experiment, which discovered the neutron.
 
 :::: tabs
 ::: tab Q 5
-{{sp[info] Objective 19.1b}} · *short answer* Could an isotope of einsteinium (Z=99) be stable (non-radioactive)?
+{{sp[info] Objective 19.1b}} · *short answer* Could an isotope of einsteinium ($Z = 99$) be stable (non-radioactive)?
 :::
 ::: tab Answer
 **No.** Every isotope of every element with atomic number greater than 83 is radioactive without exception; since $Z=99>83$, no isotope of einsteinium can be stable.
@@ -82,7 +82,7 @@ This is Chadwick's 1932 experiment, which discovered the neutron.
 (D) $\ce{^{40}_{19}K}$
 :::
 ::: tab Answer
-**(A) $\ce{^{50}_{22}Ti}$.** $Z = 22$ (even) and $N = 50$ — a **magic number** — and both counts are even. Even-even with a magic neutron count is a strong stability signature, and titanium-50 is indeed stable.
+**(A) $\ce{^{50}_{22}Ti}$.** $Z = 22$ (even) and $N = 28$ — a **magic number** — and both counts are even. Even-even with a magic neutron count is a strong stability signature, and titanium-50 is indeed stable.
 
 **Why the others fail:**
 
@@ -189,7 +189,7 @@ Positron emitters like this are what PET scanning detects — the emitted positr
 $$\ce{^{226}_{88}Ra -> ^{222}_{86}Rn + ^{4}_{2}He}$$
 The product is radon-222 — a gas, which is how radium in bedrock ends up as radon accumulating in basements.
 
-**The one rule behind all three:** a nucleus decays in whichever direction moves it toward the band. Compare $N$ with $Z$ first; the mode follows without any further information.
+**The one rule behind all three:** a nucleus decays in whichever direction moves it toward the band. Check $Z > 83$ first (alpha decay); otherwise compare the mass number with that of the stable isotope to see which side of the band the nuclide lies on, and the mode follows.
 :::
 ::::
 
@@ -302,7 +302,7 @@ Same 24 hours, to rounding ✓
 {{sp[info] Objective 19.3a}} · *short answer* A researcher has three separate pieces of U-235, each individually subcritical. Would pushing all three together necessarily cause an explosion? Explain using the concept of critical mass.
 :::
 ::: tab Answer
-It depends on whether the *combined* mass of all three pieces exceeds the critical mass for that geometry. If the combined amount is enough that most fission-produced neutrons are now captured (rather than escaping), the assembly becomes critical or supercritical and a chain reaction — potentially explosive if achieved rapidly — can occur. Critical mass is a property of the total configuration, not of any single piece alone.
+It depends on whether the *combined* mass of all three pieces exceeds the critical mass for that geometry. If the combined amount is enough that, on average, at least one neutron from each fission is captured and causes another fission (rather than escaping), the assembly becomes critical or supercritical and a chain reaction — potentially explosive if a supercritical mass is assembled rapidly — can occur. Critical mass is a property of the total configuration, not of any single piece alone.
 :::
 ::::
 
@@ -391,7 +391,7 @@ $$t = \frac{3.3\times10^{17}}{3.15\times10^{7}} = 1.0\times10^{10}\ \text{y} \ap
 
 **The Sun is about 4.6 billion years old**, so this estimate puts it a little under halfway through its hydrogen-burning life — which matches the accepted astronomical figure.
 
-**What makes the number so large is the $c^2$.** Converting 4.3 million tonnes of matter per second sounds catastrophic, but against a stellar mass it is nothing: over ten billion years the Sun loses well under 0.1% of itself. **A tiny mass defect, multiplied by $9\times10^{16}$, is enough to light a solar system for its entire history.**
+**What makes the number so large is the $c^2$.** Converting 4.3 million tonnes of matter per second sounds catastrophic, but against a stellar mass it is nothing: over ten billion years the Sun loses only about 0.07% of itself. **A tiny mass defect, multiplied by $9\times10^{16}$, is enough to light a solar system for its entire history.**
 :::
 ::::
 
@@ -416,8 +416,8 @@ Both processes move nuclei toward higher binding energy per nucleon, which peaks
 ::: tab Answer
 **(B).** The binding-energy-per-nucleon curve rises steeply from hydrogen, peaks at iron-56, and declines slowly to uranium. **Any process that moves nuclei toward that peak releases energy** — and the two sides of the peak are reached by opposite means:
 
-- **Light nuclei** (left of the peak) climb by **fusing**: hydrogen at ~1 MeV/nucleon combining toward helium at ~7.
-- **Heavy nuclei** (right of the peak) climb by **splitting**: uranium at ~7.6 combining toward fragments at ~8.5.
+- **Light nuclei** (left of the peak) climb by **fusing**: hydrogen isotopes such as deuterium at ~1 MeV/nucleon combining toward helium at ~7.
+- **Heavy nuclei** (right of the peak) climb by **splitting**: uranium at ~7.6 splitting into fragments at ~8.5.
 
 They are not opposite processes in the sense that matters. **They are the same process — approach to maximum stability — seen from opposite sides.**
 
@@ -426,20 +426,20 @@ They are not opposite processes in the sense that matters. **They are the same p
 - **\(C)** The premise is correct: both do release energy, which is why the Sun shines and reactors work.
 - **(D)** No chemical bonds are involved at any point. Nuclear energies exceed chemical ones by roughly a factor of a million, and nuclear reactions are indifferent to chemical state entirely.
 
-**The corollary worth carrying away:** iron-56 is the end of the line in both directions. Nothing releases energy by fusing iron, and nothing releases energy by splitting it — which is why iron accumulates in the cores of dying stars and why supernovae, not ordinary fusion, made every element heavier than it.
+**The corollary worth carrying away:** iron-56 is the end of the line in both directions. Nothing releases energy by fusing iron, and nothing releases energy by splitting it — which is why iron accumulates in the cores of dying stars and why neutron capture in aging stars and in explosive events such as supernovae, not ordinary fusion, made the elements heavier than it.
 :::
 ::::
 
 :::: tabs
 ::: tab Q 27
-{{sp[info] Objective 19.3c}} · *short answer* Iron-56 has the highest binding energy per nucleon of any nuclide. State three separate consequences of that single fact.
+{{sp[info] Objective 19.3c}} · *short answer* Iron-56 has one of the highest binding energies per nucleon of any nuclide, sitting essentially at the peak of the curve. State three separate consequences of that single fact.
 :::
 ::: tab Answer
-**1. Both fission and fusion release energy — but only toward iron.** Light nuclei release energy by fusing *up* the curve; heavy nuclei release energy by splitting *down* toward it. The reverse of either absorbs energy. **The direction that releases energy is always the one approaching iron**, which is why "fission releases energy" and "fusion releases energy" are both true without contradiction.
+**1. Both fission and fusion release energy — but only toward iron.** Light nuclei release energy by fusing *up* the curve; heavy nuclei release energy by splitting *down* in mass number toward it, which also moves them up the curve. The reverse of either absorbs energy. **The direction that releases energy is always the one approaching iron**, which is why "fission releases energy" and "fusion releases energy" are both true without contradiction.
 
-**2. Stellar fusion stops at iron, and that stopping causes supernovae.** A massive star fuses progressively heavier elements through its life, but fusing iron into anything heavier moves *down* the curve and **absorbs** energy. The core can no longer generate the outward pressure holding it up against gravity, and it collapses — triggering the supernova whose explosion forges and scatters the heavier elements.
+**2. Stellar fusion stops at iron, and that stopping causes supernovae.** A massive star fuses progressively heavier elements through its life, but fusing iron into anything heavier moves *down* the curve and **absorbs** energy. The core can no longer generate the outward pressure holding it up against gravity, and it collapses — triggering the supernova whose explosion forges some of the heavier elements and scatters them.
 
-**3. Iron and nickel are unusually abundant, and concentrate where matter is densest.** Because iron is the endpoint of energy-releasing nuclear processes, it accumulates rather than being consumed. It is the most abundant element in the Earth's core, and among the most abundant heavy elements in the universe.
+**3. Iron and nickel are unusually abundant, and concentrate where matter is densest.** Because iron is the endpoint of energy-releasing nuclear processes, it accumulates rather than being consumed. Being dense, it sank during Earth's formation, making it the most abundant element in the Earth's core, and among the most abundant heavy elements in the universe.
 
 **The unifying statement, and a good one to close on.** ==Every nuclear process in this chapter — decay, fission, fusion, stellar evolution, even the composition of the planet you are standing on — is a system moving toward greater stability.== That is the same principle as $\Delta G < 0$ in Chapter 17 and $Q \to K$ in Chapter 14, expressed in a different currency. **The whole course has been one idea in several units.**
 :::

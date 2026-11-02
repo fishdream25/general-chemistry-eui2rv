@@ -13,9 +13,9 @@ title: Chapter 6 Assessment Guide: Energy Relationships in Chemical Reactions
 ## General Assessment Priorities
 
 - Enforce sign conventions rigorously: heat absorbed/work done on the system is positive; heat released/work done by the system is negative. Require students to state which convention they're using before substituting numbers.
-- Require every calorimetry answer to identify explicitly which is the "reaction" and which is the "surroundings" (water/calorimeter) before writing the $q_{rxn}=-(q_{surroundings})$ relationship.
+- Require every calorimetry answer to identify explicitly which is the "reaction" and which is the "surroundings" (water/calorimeter) before writing the $q_\text{rxn}=-(q_\text{surroundings})$ relationship.
 - Pair Hess's Law problems with a standard-formation-enthalpy problem on the same or a related reaction, since both are two routes to the same kind of answer.
-- Never let a $\Delta H$ sign error pass unflagged — losing track of a negative sign (as in the chapter's own FeCl₃ example) is the most consequential and common error type in this chapter.
+- Never let a $\Delta H$ sign error pass unflagged — losing track of a negative sign (as in the chapter's own $\ce{FeCl3}$ example) is the most consequential and common error type in this chapter.
 
 ## Objective 6.1a: Distinguish types of energy, types of systems, and exothermic/endothermic processes
 
@@ -71,15 +71,15 @@ A student can apply $\Delta U=q+w$ with the correct sign convention for heat and
 
 ### Question guides
 
-**1. Forward — calculate ΔU from q and w**
+**1. Forward — calculate $\Delta U$ from q and w**
 - Variables & ranges: given heat and work values with stated directions (absorbed/released, done on/by).
 - Constraint: correct sign assignment before substitution.
 - Contexts: any closed-system process.
 - Formats: workout.
 - Worked instantiation: see the study guide's worked example (gas compression, 679 J work, 185 J heat released).
 
-**2. Inverse — find q or w given ΔU and the other**
-- Variables & ranges: given ΔU and either q or w.
+**2. Inverse — find q or w given $\Delta U$ and the other**
+- Variables & ranges: given $\Delta U$ and either q or w.
 - Constraint: correct algebraic rearrangement.
 - Contexts: any closed-system process.
 - Formats: workout.
@@ -106,7 +106,7 @@ A student can apply $\Delta U=q+w$ with the correct sign convention for heat and
 | Homework | Apply | 4–6 first-law problems with varied sign scenarios. |
 | Group discussion | Understand | Discuss why $\Delta U$, but not $q$ or $w$ individually, is a state function. |
 | Quiz | Apply | One first-law calculation. |
-| Exam | Apply | Combine with Objective 6.2b (first law feeds into the ΔH-ΔU relationship). |
+| Exam | Apply | Combine with Objective 6.2b (first law feeds into the $\Delta H$-$\Delta U$ relationship). |
 | Project/activity | Understand | Students diagram the sign convention for all four combinations of heat/work direction. |
 
 ## Objective 6.2a: Define enthalpy and apply thermochemical-equation rules
@@ -124,7 +124,7 @@ A student can state the relationship between $\Delta H$'s sign and exothermic/en
 - Formats: workout.
 - Worked instantiation: see the study guide's worked example ($\ce{SO2}$/$\ce{SO3}$, 87.9 g → −136 kJ).
 
-**2. Inverse — reverse or scale an equation's ΔH**
+**2. Inverse — reverse or scale an equation's $\Delta H$**
 - Variables & ranges: a given $\Delta H$ for a forward reaction; find $\Delta H$ for the reverse or a scaled version.
 - Constraint: correct sign flip (reverse) or scaling factor (multiply/divide).
 - Contexts: any thermochemical equation.
@@ -155,7 +155,7 @@ A student can state the relationship between $\Delta H$'s sign and exothermic/en
 | Exam | Analyze | Combine with Objective 6.4a/6.4b (thermochemical-equation manipulation is exactly what Hess's Law problems require). |
 | Project/activity | Apply | Students find the heat released/absorbed for a real reaction scaled to an industrially relevant quantity. |
 
-## Objective 6.2b: Convert between ΔH and ΔU for a reaction
+## Objective 6.2b: Convert between $\Delta H$ and $\Delta U$ for a reaction
 
 ### Target understanding
 
@@ -163,21 +163,21 @@ A student can convert between $\Delta H$ and $\Delta U$ for a gas-phase reaction
 
 ### Question guides
 
-**1. Forward — calculate ΔU from ΔH**
+**1. Forward — calculate $\Delta U$ from $\Delta H$**
 - Variables & ranges: a balanced equation with a mole-of-gas change, its $\Delta H$, and a temperature.
 - Constraint: correct $\Delta n$ (gas only — ignore solids/liquids/aqueous species).
-- Contexts: any reaction with $\Delta n_{gas}\ne0$.
+- Contexts: any reaction with $\Delta n_\text{gas}\ne0$.
 - Formats: workout.
 - Worked instantiation: see the study guide's worked example ($\ce{CO}$/$\ce{O2}$/$\ce{CO2}$, $\Delta n=-1$).
 
-**2. Inverse — calculate ΔH from ΔU**
+**2. Inverse — calculate $\Delta H$ from $\Delta U$**
 - Variables & ranges: given $\Delta U$, $\Delta n$, and temperature.
 - Constraint: correct algebraic rearrangement.
 - Contexts: any gas-phase reaction.
 - Formats: workout.
 - Worked instantiation: "A reaction has $\Delta U=-400.0$ kJ at 300 K with $\Delta n=+2$. Find $\Delta H$." → $\Delta H=\Delta U+\Delta nRT=-400.0+2(8.314\times10^{-3})(300)=-395.0$ kJ.
 
-**3. Conceptual — why ΔH and ΔU are nearly equal for reactions without gas-mole change**
+**3. Conceptual — why $\Delta H$ and $\Delta U$ are nearly equal for reactions without gas-mole change**
 - Variables & ranges: qualitative, contrasting a $\Delta n=0$ reaction with one where $\Delta n\ne0$.
 - Constraint: must reference the $\Delta nRT$ term vanishing when $\Delta n=0$.
 - Contexts: a reaction with equal moles of gas on both sides.
@@ -195,9 +195,9 @@ A student can convert between $\Delta H$ and $\Delta U$ for a gas-phase reaction
 
 | Purpose | Cognitive level | How to design the task |
 |---|---|---|
-| Homework | Apply | 3–4 ΔH-to-ΔU conversion problems. |
-| Group discussion | Understand | Discuss why this correction is usually small in magnitude compared to ΔH itself. |
-| Quiz | Apply | One ΔH-ΔU conversion. |
+| Homework | Apply | 3–4 $\Delta H$-to-$\Delta U$ conversion problems. |
+| Group discussion | Understand | Discuss why this correction is usually small in magnitude compared to $\Delta H$ itself. |
+| Quiz | Apply | One $\Delta H$-$\Delta U$ conversion. |
 | Exam | Analyze | Combine with Objective 6.1b (both use the same first-law framework). |
 | Project/activity | Apply | Students find 3 reactions with different $\Delta n$ signs and compare the size of the correction term. |
 
@@ -251,7 +251,7 @@ A student can apply $q=ms\Delta T$ to relate heat, mass, specific heat, and temp
 
 ### Target understanding
 
-A student can calculate $\Delta U_{rxn}$ from bomb-calorimetry data (accounting for both water and the bomb's own heat capacity) and $\Delta H_{rxn}$ from constant-pressure calorimetry data.
+A student can calculate $\Delta U_\text{rxn}$ from bomb-calorimetry data (accounting for both water and the bomb's own heat capacity) and $\Delta H_\text{rxn}$ from constant-pressure calorimetry data.
 
 ### Question guides
 
@@ -267,21 +267,21 @@ A student can calculate $\Delta U_{rxn}$ from bomb-calorimetry data (accounting 
 - Constraint: correct total mass (sum of both solutions) and specific heat assumption.
 - Contexts: any neutralization or dissolution reaction in a coffee-cup calorimeter.
 - Formats: workout.
-- Worked instantiation: see the study guide's worked example (HCl + NaOH neutralization, 2.89×10³ J).
+- Worked instantiation: see the study guide's worked example (HCl + NaOH neutralization, $2.89\times10^{3}$ J).
 
-**3. Conceptual — why bomb calorimetry gives ΔU, not ΔH**
+**3. Conceptual — why bomb calorimetry gives $\Delta U$, not $\Delta H$**
 - Variables & ranges: qualitative.
 - Constraint: must reference the constant-volume condition (no $P\Delta V$ work possible).
 - Contexts: the bomb calorimeter's sealed, rigid design.
 - Formats: short-answer.
-- Worked instantiation: "Why does a bomb calorimeter measure $\Delta U_{rxn}$ rather than $\Delta H_{rxn}$?" → The bomb is a sealed, rigid (constant-volume) container, so no $P\Delta V$ work is possible; by the first law, all the energy change shows up as heat at constant volume, which is exactly the definition of $\Delta U$.
+- Worked instantiation: "Why does a bomb calorimeter measure $\Delta U_\text{rxn}$ rather than $\Delta H_\text{rxn}$?" → The bomb is a sealed, rigid (constant-volume) container, so no $P\Delta V$ work is possible; by the first law, all the energy change shows up as heat at constant volume, which is exactly the definition of $\Delta U$.
 
 **4. Error analysis**
 - Variables & ranges: a student omits the bomb's own heat capacity term in a bomb-calorimetry calculation.
 - Constraint: correction must show the missing term.
 - Contexts: any bomb-calorimetry problem.
 - Formats: short-answer.
-- Worked instantiation: "A student computes $q_{rxn}=-q_{water}$ only, ignoring the bomb's heat capacity. What's missing?" → The bomb itself also absorbs heat and warms up; the full relationship is $q_{rxn}=-(q_{water}+q_{bomb})$, and omitting $q_{bomb}$ underestimates the magnitude of the heat released.
+- Worked instantiation: "A student computes $q_\text{rxn}=-q_\text{water}$ only, ignoring the bomb's heat capacity. What's missing?" → The bomb itself also absorbs heat and warms up; the full relationship is $q_\text{rxn}=-(q_\text{water}+q_\text{bomb})$, and omitting $q_\text{bomb}$ underestimates the magnitude of the heat released.
 
 ### Design guidance by purpose
 
@@ -290,7 +290,7 @@ A student can calculate $\Delta U_{rxn}$ from bomb-calorimetry data (accounting 
 | Homework | Apply | 2–3 bomb-calorimetry and 2–3 constant-pressure-calorimetry problems. |
 | Group discussion | Analyze | Discuss why constant-pressure (coffee-cup) calorimetry is common for classroom labs despite being less precise than a bomb calorimeter. |
 | Quiz | Apply | One calorimetry calculation of either type. |
-| Exam | Analyze | Combine with Objective 6.2b (the calorimetry result, $\Delta U$ or $\Delta H$, connects back to the ΔH-ΔU relationship). |
+| Exam | Analyze | Combine with Objective 6.2b (the calorimetry result, $\Delta U$ or $\Delta H$, connects back to the $\Delta H$-$\Delta U$ relationship). |
 | Project/activity | Evaluate | Students design a coffee-cup calorimetry experiment for a reaction of their choosing and predict expected heat output. |
 
 ## Objective 6.4a: Apply Hess's Law
@@ -306,7 +306,7 @@ A student can combine two or more thermochemical equations (scaling and/or rever
 - Constraint: student must show the scaling/reversing applied to each given reaction before summing.
 - Contexts: any multi-step synthesis pathway.
 - Formats: workout.
-- Worked instantiation: see the study guide's worked example (FeCl₃ formation from a 2-step path).
+- Worked instantiation: see the study guide's worked example ($\ce{FeCl3}$ formation from a 2-step path).
 
 **2. Inverse — determine what scaling/reversing was needed**
 - Variables & ranges: a target reaction and two given reactions; ask which manipulation converts each given reaction into a piece of the target.
@@ -347,12 +347,12 @@ A student can apply $\Delta H_\text{rxn}^\circ=\sum n\Delta H_\text{f}^\circ(\te
 
 ### Question guides
 
-**1. Forward — calculate ΔH°rxn from formation data**
+**1. Forward — calculate $\Delta H^\circ_\text{rxn}$ from formation data**
 - Variables & ranges: a balanced equation and formation enthalpies for each species.
 - Constraint: elements in standard state correctly assigned $\Delta H_\text{f}^\circ=0$.
 - Contexts: any reaction with tabulated formation enthalpies.
 - Formats: workout.
-- Worked instantiation: see the study guide's worked example (Al/Fe₂O₃ thermite reaction, part a).
+- Worked instantiation: see the study guide's worked example (Al/$\ce{Fe2O3}$ thermite reaction, part a).
 
 **2. Inverse — scale the result to a given mass**
 - Variables & ranges: a calculated $\Delta H_\text{rxn}^\circ$ and a given mass of one reactant.
@@ -390,4 +390,4 @@ A student can apply $\Delta H_\text{rxn}^\circ=\sum n\Delta H_\text{f}^\circ(\te
 - **Sign conventions are non-negotiable.** A numerically correct magnitude with an incorrect sign is treated as a wrong answer, not a rounding-level deduction — signs carry real physical meaning (direction of heat/energy flow) in this chapter.
 - **State explicitly what is system vs. surroundings before writing a calorimetry equation.** This is required scaffolding, not optional context.
 - **Hess's Law and standard-formation-enthalpy answers must show every scaling/reversing step**, not just a final combined number.
-- **Always double-check a final $\Delta H$'s sign against the reaction's expected exothermic/endothermic direction** — the chapter's own FeCl₃ worked example is a cautionary case where a dropped negative sign would otherwise slip through unnoticed.
+- **Always double-check a final $\Delta H$'s sign against the reaction's expected exothermic/endothermic direction** — the chapter's own $\ce{FeCl3}$ worked example is a cautionary case where a dropped negative sign would otherwise slip through unnoticed.

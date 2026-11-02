@@ -13,7 +13,7 @@ title: Chapter 19 Assessment Guide: Nuclear Chemistry
 ## General Assessment Priorities
 
 - Anchor nuclear-equation balancing to its **two conservation rules only** (mass number, charge) — explicitly contrast this with chemical-equation balancing (which conserves each element's atom count) so students don't try to "balance elements" in a nuclear equation.
-- Fix the **mass-defect sign convention** explicitly: mass defect = (mass of separate protons + neutrons + electrons) − (actual atomic mass), and a negative ΔE means energy is released on formation — never let the subtraction order drift.
+- Fix the **mass-defect sign convention** explicitly: mass defect = (mass of separate protons + neutrons + electrons) − (actual atomic mass), and a negative $\Delta E$ means energy is released on formation — never let the subtraction order drift.
 - Reinforce at every opportunity that radioactive decay kinetics is **not new material** — it is Chapter 13's first-order rate law and half-life formula, applied without modification.
 - Keep fission (heavy splits) and fusion (light combines) paired with their standard examples (reactors/bombs vs. the Sun/hydrogen bombs) so students build one fixed association rather than confusing the two.
 
@@ -74,7 +74,7 @@ A student can identify the patterns that make a nucleus more or less stable: mag
 **1. Forward — apply the magic-number rule**
 - Variables & ranges: a nuclide with a proton or neutron count at or near a magic number.
 - Constraint: correct identification of the magic numbers (2, 8, 20, 50, 82, 126).
-- Contexts: $\ce{^208_82Pb}$ (both Z=82 and N=126 are magic) or similar.
+- Contexts: $\ce{^208_82Pb}$ (both $Z = 82$ and $N = 126$ are magic) or similar.
 - Formats: short-answer.
 - Worked instantiation: "Why is $\ce{^208_82Pb}$ described as 'doubly magic'?" → It has 82 protons and 126 neutrons — both are magic numbers, giving it exceptional stability even among already-stable heavy nuclides.
 
@@ -90,7 +90,7 @@ A student can identify the patterns that make a nucleus more or less stable: mag
 - Constraint: prediction must state that ALL isotopes of such elements are radioactive, without exception.
 - Contexts: any heavy element (e.g., bismuth, polonium, uranium).
 - Formats: short-answer.
-- Worked instantiation: "Is it possible for any isotope of an element with Z=90 to be stable (non-radioactive)?" → No — every isotope of every element with atomic number greater than 83 is radioactive, without exception.
+- Worked instantiation: "Is it possible for any isotope of an element with $Z = 90$ to be stable (non-radioactive)?" → No — every isotope of every element with atomic number greater than 83 is radioactive, without exception.
 
 **4. Error analysis**
 - Variables & ranges: a student who assumes stability depends only on mass number, not proton/neutron counts specifically.
@@ -133,17 +133,17 @@ A student can calculate mass defect and the resulting binding energy in J/nucleu
 
 **3. Conceptual — sign convention**
 - Variables & ranges: any binding-energy calculation.
-- Constraint: explanation must state that negative ΔE indicates energy release upon nucleus formation.
+- Constraint: explanation must state that negative $\Delta E$ indicates energy release upon nucleus formation.
 - Contexts: any mass-defect calculation.
 - Formats: short-answer.
-- Worked instantiation: "Why is the calculated ΔE for nuclear binding energy negative?" → Mass defect (Δm) is negative because the assembled nucleus has *less* mass than its separate, unbound protons/neutrons/electrons; via $\Delta E=(\Delta m)c^2$, this translates to a negative ΔE, meaning energy is released when the nucleus forms — consistent with the nucleus being a lower-energy, more stable configuration than its separated parts.
+- Worked instantiation: "Why is the calculated $\Delta E$ for nuclear binding energy negative?" → Mass defect ($\Delta m$) is negative because the assembled nucleus has *less* mass than its separate, unbound protons/neutrons/electrons; via $\Delta E=(\Delta m)c^2$, this translates to a negative $\Delta E$, meaning energy is released when the nucleus forms — consistent with the nucleus being a lower-energy, more stable configuration than its separated parts.
 
 **4. Error analysis**
 - Variables & ranges: a student who subtracts atomic mass from separate-particle mass in the wrong order, or forgets to include electron mass.
 - Constraint: correction must restate the correct subtraction order and the need to include electrons (since atomic mass includes electrons).
 - Contexts: any binding-energy calculation.
 - Formats: short-answer.
-- Worked instantiation: "A student calculates mass defect as (atomic mass) − (mass of protons + neutrons only, no electrons). What's wrong?" → Two issues: the subtraction order is reversed (should be separate-particle mass minus atomic mass, to get a negative Δm), and electron mass must be included in the separate-particle total, since the given atomic mass already includes the atom's electrons.
+- Worked instantiation: "A student calculates mass defect as (atomic mass) − (mass of protons + neutrons only, no electrons). What's wrong?" → Two issues: the subtraction order is reversed (should be separate-particle mass minus atomic mass, to get a negative $\Delta m$), and electron mass must be included in the separate-particle total, since the given atomic mass already includes the atom's electrons.
 
 ### Design guidance by purpose
 
@@ -436,7 +436,7 @@ A student can explain, using the binding-energy-per-nucleon curve, why both nucl
 | Evidence of mastery | What to look for |
 |---|---|
 | Nuclear equations balanced by mass number and charge only | Student never tries to conserve element identity, correctly citing the two nuclear conservation rules. |
-| Mass-defect sign convention applied consistently | Student subtracts atomic mass from separate-particle mass (not the reverse) and correctly interprets a negative ΔE as energy release. |
+| Mass-defect sign convention applied consistently | Student subtracts atomic mass from separate-particle mass (not the reverse) and correctly interprets a negative $\Delta E$ as energy release. |
 | Radioactive decay treated as ordinary first-order kinetics | Student explicitly reuses Chapter 13's $\ln(c_0/c)=kt$ and $t_{1/2}=\ln2/k$ without treating this chapter as requiring new formulas. |
 | Fission and fusion correctly paired with examples | Student never confuses which process splits (fission, heavy) vs. combines (fusion, light), or their standard real-world examples. |
 | Critical mass explained as a condition, not a constant | Student explains critical mass in terms of neutron capture vs. escape for a specific material/geometry, not as one universal number. |

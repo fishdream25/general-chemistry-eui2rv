@@ -15,8 +15,8 @@ title: Chapter 14: Chemical Equilibrium
 
 :::success
 **Chapter Learning Objectives**
-- Define chemical equilibrium and the equilibrium constant, and derive K = k_f/k_r for an elementary-step reaction.
-- Write K_c and K_p expressions for homogeneous and heterogeneous equilibria, convert between K_p and K_c, and combine equilibrium constants for multi-step reactions.
+- Define chemical equilibrium and the equilibrium constant, and derive $K = k_f/k_r$ for an elementary-step reaction.
+- Write $K_c$ and $K_p$ expressions for homogeneous and heterogeneous equilibria, convert between $K_p$ and $K_c$, and combine equilibrium constants for multi-step reactions.
 - Calculate the reaction quotient Q and compare it to K to predict reaction direction.
 - Set up and solve an ICE table to find equilibrium concentrations.
 - Apply Le Chatelier's principle to predict how a system at equilibrium responds to a change in concentration, pressure/volume, or temperature.
@@ -41,7 +41,7 @@ graph TD
 :::success
 **Learning Objectives**
 - {{sp[info] Objective 14.1b}} Define chemical equilibrium and the equilibrium constant.
-- {{sp[info] Objective 14.1a}} Derive K = k_f/k_r for a reaction occurring as a single elementary step in both directions.
+- {{sp[info] Objective 14.1a}} Derive $K = k_f/k_r$ for a reaction occurring as a single elementary step in both directions.
 - {{sp[info] Objective 14.1b}} Interpret the magnitude of K, and predict how K changes when a reaction is written in reverse.
 :::
 
@@ -53,7 +53,7 @@ The word to hold onto is **dynamic**. A sealed flask at equilibrium looks comple
 
 This is worth belaboring because the wrong picture leads to specific wrong predictions later. If you think the reaction has stopped, you cannot explain why adding more reactant does anything at all, or why adding a catalyst makes the reaction reach equilibrium faster without changing where it lands.
 
-### Where K comes from: K = k_f/k_r
+### Where K comes from: $K = k_f/k_r$
 
 For a reaction occurring as a single elementary step in both directions, $a\ce{A}+b\ce{B} \ce{<=>} c\ce{C}+d\ce{D}$, the forward and reverse rates are $\text{rate}_f=k_f[\ce{A}]^a[\ce{B}]^b$ and $\text{rate}_r=k_r[\ce{C}]^c[\ce{D}]^d$ (Chapter 13's elementary-step rate laws). Setting them equal at equilibrium:
 
@@ -156,7 +156,7 @@ Three gas-phase reactions ((a) and (b) at 25 °C): (a) $\ce{2NO(g) <=> N2(g) + O
 
 Before the special cases, one general rule that §14.1 did not state. The derivation there assumed a single elementary step in each direction — but ==the equilibrium expression is written from the **balanced equation**, with the coefficients as exponents, no matter how many steps the mechanism actually has.== This is the exact opposite of Chapter 13's rule for rate laws, where coefficients are emphatically *not* exponents unless the step is elementary. Equilibrium is a destination, and it does not depend on the route taken to reach it; a rate does.
 
-### Homogeneous equilibria: K_c and K_p
+### Homogeneous equilibria: $K_c$ and $K_p$
 
 **Homogeneous equilibria** have every reactant and product in the same phase. For gas-phase reactions, $K$ can be written using concentrations ($K_c$) or partial pressures ($K_p$), related through the ideal gas law ($P=\frac{n}{V}RT=cRT$, Chapter 5):
 
@@ -595,7 +595,7 @@ For gas-phase reactions, **decreasing volume (increasing pressure)** shifts equi
 
 Figure 14.6 also shows what the rule does **not** say. The new equilibrium is still at higher pressure than the original — the shift relieves part of the increase, not all of it.
 
-{{sp[warning] Only Δn matters}} Compression shifts an equilibrium only when the two sides have **different** numbers of gas moles. For $\ce{H2(g) + I2(g) <=> 2HI(g)}$, with 2 moles of gas on each side, squeezing the container raises all three partial pressures by the same factor and $Q$ does not move at all. And adding an **inert gas at constant volume** changes nothing either: it raises the total pressure but leaves every partial pressure — and therefore $Q$ — untouched.
+{{sp[warning] Only $\Delta n$ matters}} Compression shifts an equilibrium only when the two sides have **different** numbers of gas moles. For $\ce{H2(g) + I2(g) <=> 2HI(g)}$, with 2 moles of gas on each side, squeezing the container raises all three partial pressures by the same factor and $Q$ does not move at all. And adding an **inert gas at constant volume** changes nothing either: it raises the total pressure but leaves every partial pressure — and therefore $Q$ — untouched.
 
 :::: tabs
 ::: tab Problem
@@ -656,7 +656,7 @@ Finally, ==a catalyst speeds up how quickly a system reaches equilibrium, but ne
 | Factor | Shifts equilibrium? | Changes K? |
 |---|---|---|
 | Concentration | Yes | No |
-| Pressure/Volume | Yes (if Δn ≠ 0) | No |
+| Pressure/Volume | Yes (if $\Delta n$ ≠ 0) | No |
 | Temperature | Yes | Yes |
 | Catalyst | No | No |
 

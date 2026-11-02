@@ -26,7 +26,7 @@ A student who has mastered this can look at a molecular formula or Lewis structu
 ### Question guides
 
 **1. Forward — identify forces present**
-- Variables & ranges: a molecule drawn from a pool spanning nonpolar (CH₄, CO₂, Br₂), polar without H-bonding (HCl, acetone), and H-bonding-capable (H₂O, NH₃, CH₃OH, HF) categories.
+- Variables & ranges: a molecule drawn from a pool spanning nonpolar ($\ce{CH4}$, $\ce{CO2}$, $\ce{Br2}$), polar without H-bonding ($\ce{HCl}$, acetone), and H-bonding-capable ($\ce{H2O}$, $\ce{NH3}$, $\ce{CH3OH}$, $\ce{HF}$) categories.
 - Constraint: the correct answer set must include dispersion in every case, plus dipole-dipole if polar, plus hydrogen bonding only if H–N/O/F is present.
 - Contexts: a household chemical, an atmospheric gas, a biomolecule fragment.
 - Formats: short-answer (list the forces) or multiple-choice (select all that apply).
@@ -44,10 +44,10 @@ A student who has mastered this can look at a molecular formula or Lewis structu
 - Constraint: student must justify the difference in terms of *where* the H atoms are bonded, not just molecular formula.
 - Contexts: comparing common isomer pairs.
 - Formats: short-answer or multiple-choice with justification.
-- Worked instantiation: "Ethanol and dimethyl ether share the formula C₂H₆O. Which has hydrogen bonding, and why?" → Ethanol (O–H bond present); dimethyl ether's H atoms are all bonded to carbon.
+- Worked instantiation: "Ethanol and dimethyl ether share the formula $\ce{C2H6O}$. Which has hydrogen bonding, and why?" → Ethanol (O–H bond present); dimethyl ether's H atoms are all bonded to carbon.
 
 **4. Error analysis**
-- Variables & ranges: a flawed student claim (e.g., "CH₄ has hydrogen bonds because it contains hydrogen").
+- Variables & ranges: a flawed student claim (e.g., "$\ce{CH4}$ has hydrogen bonds because it contains hydrogen").
 - Constraint: the correction must identify the specific rule violated (H must bond to N, O, or F).
 - Contexts: common student misconceptions collected from this exact bottleneck.
 - Formats: short-answer ("find and fix the error").
@@ -88,16 +88,16 @@ A student can order a set of molecules or force types by relative strength, corr
 **2. Comparison / ranking — mixed force types**
 - Variables & ranges: a small set combining a hydrogen-bonding molecule, a dipole-dipole-only molecule, and a large nonpolar molecule.
 - Constraint: at least one pair must require the "large nonpolar can beat small polar" exception.
-- Contexts: comparing water, HCl, and a large nonpolar hydrocarbon (e.g., decane).
+- Contexts: comparing water, $\ce{HCl}$, and a large nonpolar hydrocarbon (e.g., decane).
 - Formats: workout with justification.
-- Worked instantiation: compare $\ce{HCl}$ (dipole-dipole, small) to $\ce{C10H22}$ (nonpolar, large, dispersion-only) — decane's boiling point (174 °C) actually exceeds HCl's (−85 °C), illustrating that size/polarizability can dominate over polarity alone.
+- Worked instantiation: compare $\ce{HCl}$ (dipole-dipole, small) to $\ce{C10H22}$ (nonpolar, large, dispersion-only) — decane's boiling point (174 °C) actually exceeds $\ce{HCl}$'s (−85 °C), illustrating that size/polarizability can dominate over polarity alone.
 
 **3. Graphical**
 - Variables & ranges: a plotted or tabulated boiling-point trend across a period or group (e.g., the hydride boiling-point chart from the study guide).
 - Constraint: student must identify which points are anomalous and explain why.
 - Contexts: the Group 14–17 hydride boiling-point comparison.
 - Formats: short-answer referencing a chart.
-- Worked instantiation: "Using the hydride boiling-point chart, explain why H₂O, NH₃, and HF fall above the trend line set by their heavier group members." → Hydrogen bonding, absent in the heavier hydrides, adds substantial extra attraction only for these three.
+- Worked instantiation: "Using the hydride boiling-point chart, explain why $\ce{H2O}$, $\ce{NH3}$, and $\ce{HF}$ fall above the trend line set by their heavier group members." → Hydrogen bonding, absent in the heavier hydrides, adds substantial extra attraction only for these three.
 
 **4. Estimation / limiting case**
 - Variables & ranges: an extreme comparison (e.g., a monatomic noble gas vs. a large polymer chain).
@@ -178,7 +178,7 @@ A student can list water's unusual properties (high boiling point for its size, 
 - Worked instantiation: "Why does ice float on liquid water?" → Hydrogen bonds lock water molecules into an open, spacious lattice in ice, making solid water *less* dense than the liquid.
 
 **2. Comparison / ranking**
-- Variables & ranges: compare water's boiling point to a same-size or larger nonpolar/weakly-polar molecule (e.g., CH₄, or Ne).
+- Variables & ranges: compare water's boiling point to a same-size or larger nonpolar/weakly-polar molecule (e.g., $\ce{CH4}$, or Ne).
 - Constraint: must invoke the size/molar-mass mismatch as the surprising element.
 - Contexts: molar-mass comparisons.
 - Formats: short-answer.
@@ -217,18 +217,18 @@ Given a substance's composition and bonding, a student can classify it as molecu
 ### Question guides
 
 **1. Forward — classify and predict**
-- Variables & ranges: a substance drawn from all four solid categories (e.g., dry ice, diamond, KBr, aluminum).
+- Variables & ranges: a substance drawn from all four solid categories (e.g., dry ice, diamond, $\ce{KBr}$, aluminum).
 - Constraint: classification must be justified by bond type, and property predictions must follow from the table in the study guide.
 - Contexts: common lab and household substances.
 - Formats: short-answer or multiple-choice.
-- Worked instantiation: "Classify KBr as molecular, covalent-network, ionic, or metallic, and predict its melting point range." → Ionic (metal + nonmetal, electron transfer); high melting point, hard but brittle, conducts only when molten or dissolved.
+- Worked instantiation: "Classify $\ce{KBr}$ as molecular, covalent-network, ionic, or metallic, and predict its melting point range." → Ionic (metal + nonmetal, electron transfer); high melting point, hard but brittle, conducts only when molten or dissolved.
 
 **2. Comparison / ranking**
 - Variables & ranges: rank 3–4 solids by expected melting point.
 - Constraint: ranking must follow from bond-type classification, not memorized values.
 - Contexts: comparing a molecular solid, an ionic solid, and a covalent-network solid.
 - Formats: workout.
-- Worked instantiation: "Rank dry ice (CO₂), table salt (NaCl), and diamond \(C) by increasing melting point." → dry ice (molecular, weakest) < NaCl (ionic) < diamond (covalent-network, strongest).
+- Worked instantiation: "Rank dry ice ($\ce{CO2}$), table salt ($\ce{NaCl}$), and diamond \(C) by increasing melting point." → dry ice (molecular, weakest) < $\ce{NaCl}$ (ionic) < diamond (covalent-network, strongest).
 
 **3. Error analysis / exception case**
 - Variables & ranges: graphite's conductivity, an apparent exception to "covalent-network solids don't conduct."
@@ -354,19 +354,19 @@ A student can use the Clausius–Clapeyron equation to solve for an unknown vapo
 
 ### Question guides
 
-**1. Forward — solve for P₂ at a new temperature**
-- Variables & ranges: $\Delta H_\text{vap}$ (15–45 kJ/mol), one known (P₁, T₁) pair, a target T₂.
-- Constraint: T must be converted to kelvin; final answer's units must match P₁'s units.
+**1. Forward — solve for $P_2$ at a new temperature**
+- Variables & ranges: $\Delta H_\text{vap}$ (15–45 kJ/mol), one known ($P_1$, $T_1$) pair, a target $T_2$.
+- Constraint: T must be converted to kelvin; final answer's units must match $P_1$'s units.
 - Contexts: common solvents (diethyl ether, ethanol, benzene).
 - Formats: workout.
 - Worked instantiation: see the study guide's worked example (diethyl ether, 442 mmHg at 20.0 °C → 633 mmHg at 30.0 °C).
 
-**2. Inverse — solve for T₂ at a target pressure**
-- Variables & ranges: given $\Delta H_\text{vap}$, one known (P₁, T₁) pair, and a target P₂ (e.g., 760 mmHg, to find the normal boiling point).
-- Constraint: student must isolate T₂ algebraically from the log relationship.
+**2. Inverse — solve for $T_2$ at a target pressure**
+- Variables & ranges: given $\Delta H_\text{vap}$, one known ($P_1$, $T_1$) pair, and a target $P_2$ (e.g., 760 mmHg, to find the normal boiling point).
+- Constraint: student must isolate $T_2$ algebraically from the log relationship.
 - Contexts: finding a substance's normal boiling point from one other data point.
 - Formats: workout.
-- Worked instantiation: "Using diethyl ether's data, estimate the temperature at which its vapor pressure reaches 760 mmHg (1 atm) — its normal boiling point." → Solve the Clausius–Clapeyron equation for T₂ with P₂ = 760 mmHg (answer 35.4 °C from these data, close to the measured 34.6 °C and to the study guide's figure).
+- Worked instantiation: "Using diethyl ether's data, estimate the temperature at which its vapor pressure reaches 760 mmHg (1 atm) — its normal boiling point." → Solve the Clausius–Clapeyron equation for $T_2$ with $P_2 = 760$ mmHg (answer 35.4 °C from these data, close to the measured 34.6 °C and to the study guide's figure).
 
 **3. Inverse — solve for $\Delta H_\text{vap}$**
 - Variables & ranges: given two (P, T) pairs for the same substance, solve for $\Delta H_\text{vap}$.
@@ -388,8 +388,8 @@ A student can use the Clausius–Clapeyron equation to solve for an unknown vapo
 |---|---|---|
 | Homework | Apply | 2–3 forward/inverse Clausius–Clapeyron problems with different unknowns. |
 | Group discussion | Analyze | Discuss why T must be in kelvin (connects to Ch. 5 gas-law habits). |
-| Quiz | Apply | One straightforward P₂-solving item. |
-| Exam | Analyze | Require solving for the "wrong" variable (T₂ or $\Delta H_\text{vap}$), not just P₂. |
+| Quiz | Apply | One straightforward $P_2$-solving item. |
+| Exam | Analyze | Require solving for the "wrong" variable ($T_2$ or $\Delta H_\text{vap}$), not just $P_2$. |
 | Project/activity | Evaluate | Look up real vapor-pressure data for a substance and verify $\Delta H_\text{vap}$ from two points. |
 
 ## Objective 11.4c: Interpret a phase diagram
@@ -436,7 +436,7 @@ A student can read a phase diagram to identify the phase present at a given (T, 
 | Group discussion | Analyze | Debate why water's negative slope is unusual, using the density argument. |
 | Quiz | Understand | Define triple point and critical point in one's own words. |
 | Exam | Analyze/Evaluate | Trace a full heating/pressurizing path across multiple phase boundaries. |
-| Project/activity | Evaluate | Compare water's phase diagram to CO₂'s (no liquid phase at 1 atm) as an extension. |
+| Project/activity | Evaluate | Compare water's phase diagram to $\ce{CO2}$'s (no liquid phase at 1 atm) as an extension. |
 
 ## Rubric Themes for Chapter 11
 

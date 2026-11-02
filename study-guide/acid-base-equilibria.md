@@ -10,20 +10,20 @@ title: Chapter 16: Acid-Base Equilibria and Solubility Equilibria
 **Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 16 (CC BY 4.0)
 **Audience:** introductory undergraduate general chemistry, second semester
 **Package license:** CC BY 4.0
-**Note:** builds directly on Chapter 15's Ka/Kb/ICE-table toolkit and Chapter 14's K/Q/Le Chatelier framework; facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+**Note:** builds directly on Chapter 15's $K_a/K_b$/ICE-table toolkit and Chapter 14's K/Q/Le Chatelier framework; facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
 :::
 
 :::success
 **Chapter Learning Objectives**
 - Explain why a buffer resists pH change, and calculate buffer pH using an ICE table or the Henderson-Hasselbalch equation.
 - Calculate pH at any point during a titration, and select an appropriate indicator.
-- Write Ksp expressions, convert between Ksp and molar solubility, predict precipitation, and calculate solubility with a common ion present.
-- Define complex ion and formation constant (Kf).
+- Write $K_{sp}$ expressions, convert between $K_{sp}$ and molar solubility, predict precipitation, and calculate solubility with a common ion present.
+- Define complex ion and formation constant ($K_f$).
 :::
 
 ## Chapter Logic
 
-This chapter introduces no new calculation method — it applies Chapter 14's K/Q/ICE-table framework and Chapter 15's Ka/Kb toolkit to four increasingly practical situations. ==The four sections share one framework, not one mixture: buffers and titrations deal with a weak acid (or base) and its conjugate, while solubility (Ksp) and complex-ion (Kf) equilibria apply the same K/Q/ICE reasoning to dissolution and complex formation.==
+This chapter introduces no new calculation method — it applies Chapter 14's K/Q/ICE-table framework and Chapter 15's $K_a/K_b$ toolkit to four increasingly practical situations. ==The four sections share one framework, not one mixture: buffers and titrations deal with a weak acid (or base) and its conjugate, while solubility ($K_{sp}$) and complex-ion ($K_f$) equilibria apply the same K/Q/ICE reasoning to dissolution and complex formation.==
 
 {{mermaid
 graph TD
@@ -34,7 +34,7 @@ graph TD
   D --> F["Complex ions:<br/>Kf, same framework again"]
 }}
 
-**Visual description:** buffers lead to the Henderson-Hasselbalch shortcut, which applies in the buffer region of a titration curve. Solubility equilibria (Ksp) apply the same K/Q framework to a new context, including the common-ion effect. Complex-ion equilibria (Kf) close the chapter as one final application of the same idea.
+**Visual description:** buffers lead to the Henderson-Hasselbalch shortcut, which applies in the buffer region of a titration curve. Solubility equilibria ($K_{sp}$) apply the same K/Q framework to a new context, including the common-ion effect. Complex-ion equilibria ($K_f$) close the chapter as one final application of the same idea.
 
 ## 16.1 Buffer Solutions{{attrs[#blk-ch16sec01]}}
 
@@ -131,7 +131,7 @@ $$\ce{pH} = \ce{p}K_{a_1} + \log\frac{[\ce{H2PO4-}]}{[\ce{H3PO4}]} = 2.12 + \log
 
 **A shortcut hiding in plain sight.** Both species sit in the *same* 0.500 L, so the volumes cancel in the ratio — you could have used the mole numbers directly, $\log(0.250/0.155)$, and skipped the division entirely. This works for any buffer calculation and not for much else.
 
-{{sp[warning] Which K_a}} A polyprotic acid has one $K_a$ per step, and the buffer's pH is set by the step that interconverts *the two species actually present*. $\ce{H3PO4}$/$\ce{H2PO4-}$ uses $K_{a_1}$; a $\ce{H2PO4-}$/$\ce{HPO4^2-}$ buffer would use $K_{a_2}$ and land near pH 7.2 — which is why that particular pair is an important buffer in cell interiors (blood relies mainly on H2CO3/HCO3-).
+{{sp[warning] Which $K_a$}} A polyprotic acid has one $K_a$ per step, and the buffer's pH is set by the step that interconverts *the two species actually present*. $\ce{H3PO4}/\ce{H2PO4-}$ uses $K_{a_1}$; a $\ce{H2PO4-}/\ce{HPO4^2-}$ buffer would use $K_{a_2}$ and land near pH 7.2 — which is why that particular pair is an important buffer in cell interiors (blood relies mainly on $\ce{H2CO3}/\ce{HCO3-}$).
 :::
 ::::
 
@@ -177,7 +177,7 @@ $$[\ce{OH-}] = \frac{0.05\ \text{mol}}{1.0\ \text{L}} = 0.05\ \text{M} \quad\Rig
 ### Reading a titration curve
 
 ![Titration curves comparing strong acid/strong base to weak acid/strong base](../assets/titration_curves.svg)
-*Figure 16.2 — Both curves start at 25.0 mL of 0.1000 M acid titrated with 0.1000 M NaOH. The strong-strong curve is symmetric around pH 7 at equivalence; the weak-strong curve starts higher, has a buffer region (Henderson-Hasselbalch applies) before equivalence, and reaches equivalence above pH 7 because the acetate ion hydrolyzes. Self-generated with matplotlib using real equilibrium chemistry (Ka = 1.8×10⁻⁵).*
+*Figure 16.2 — Both curves start at 25.0 mL of 0.1000 M acid titrated with 0.1000 M NaOH. The strong-strong curve is symmetric around pH 7 at equivalence; the weak-strong curve starts higher, has a buffer region (Henderson-Hasselbalch applies) before equivalence, and reaches equivalence above pH 7 because the acetate ion hydrolyzes. Self-generated with matplotlib using real equilibrium chemistry ($K_a = 1.8\times10^{-5}$).*
 
 ==The equivalence point is where stoichiometrically equivalent amounts have been mixed — it is *not* necessarily pH 7, and it is not the same thing as the endpoint you observe.== Three combinations give three different equivalence pH values:
 
@@ -233,16 +233,16 @@ So the weak-acid jump spans roughly 7 to 11, where the strong-acid jump spans ro
 
 Three distinct calculation methods apply, depending on where you are on the curve:
 
-1. **Before equivalence (once some base has been added):** for a weak acid/strong base titration, use Henderson-Hasselbalch — moles of conjugate base equal the moles of OH⁻ added so far, and moles of acid equal the initial moles of acid minus that amount.
+1. **Before equivalence (once some base has been added):** for a weak acid/strong base titration, use Henderson-Hasselbalch — moles of conjugate base equal the moles of $\ce{OH-}$ added so far, and moles of acid equal the initial moles of acid minus that amount.
 2. **At equivalence:** for strong-strong, the salt doesn't hydrolyze → pH = 7. For weak-strong, the salt's conjugate base *does* hydrolyze → pH > 7 (use Chapter 15's salt-hydrolysis ICE table). Strong acid-weak base titrations mirror this, giving pH < 7 at equivalence.
 3. **After equivalence:** only the excess strong titrant matters — calculate directly from its concentration (excess moles ÷ total solution volume).
 
 :::: tabs
 ::: tab Problem
-25.0 mL of 0.100 M HCl is titrated with 0.100 M NaOH. Find the pH after adding (a) 10.0 mL, (b) 25.0 mL, \(c) 35.0 mL of NaOH.
+25.0 mL of 0.100 M $\ce{HCl}$ is titrated with 0.100 M $\ce{NaOH}$. Find the pH after adding (a) 10.0 mL, (b) 25.0 mL, \(c) 35.0 mL of $\ce{NaOH}$.
 :::
 ::: tab Solution
-**(a)** HCl remaining: $0.100(0.0250)-0.100(0.0100)=0.0015$ mol, in a total volume of 0.0350 L: $[\ce{H+}]=0.0428$ M → $\ce{pH}=1.37$.
+**(a)** $\ce{HCl}$ remaining: $0.100(0.0250)-0.100(0.0100)=0.0015$ mol, in a total volume of 0.0350 L: $[\ce{H+}]=0.0428$ M → $\ce{pH}=1.37$.
 
 **(b)** Equal moles of strong acid and strong base → neutral salt → $\ce{pH}=7$.
 
@@ -347,13 +347,13 @@ The rule is one line: **the indicator's color-change range must lie inside the s
 - {{sp[info] Objective 16.3c}} Calculate solubility in the presence of a common ion.
 :::
 
-### K_sp, molar solubility, and solubility
+### $K_{sp}$, molar solubility, and solubility
 
 The **solubility product**, $K_{sp}$, is the equilibrium constant for a slightly soluble ionic compound dissolving — the same $K_c$ framework from Chapter 14, applied to a dissolution equilibrium:
 
 $$\ce{AgCl(s) <=> Ag+(aq) + Cl-(aq)} \qquad K_{sp}=[\ce{Ag+}][\ce{Cl-}]$$
 
-Figure 16.5 shows the consequence of a very small $K_{sp}$: a precipitate forms even from fairly dilute solutions, because the ion product [Ag+][Cl-] easily exceeds the tiny K_sp.
+Figure 16.5 shows the consequence of a very small $K_{sp}$: a precipitate forms even from fairly dilute solutions, because the ion product $[\ce{Ag+}]$$[\ce{Cl-}]$ easily exceeds the tiny $K_{sp}$.
 
 ![A white precipitate of silver chloride forming in a test tube](../assets/silver_chloride_precipitate.jpg =450x)
 *Figure 16.5 — Silver chloride is one of the least soluble common salts ($K_{sp}=1.6\times10^{-10}$); mixing virtually any solution containing $\ce{Ag+}$ with one containing $\ce{Cl-}$, unless both are very dilute, produces this characteristic white precipitate almost instantly. Source: Luisbrudna, via Wikimedia Commons, CC BY-SA 4.0.*
@@ -415,7 +415,7 @@ $$s = \sqrt[3]{\frac{1.1\times10^{-12}}{4}} = \sqrt[3]{2.75\times10^{-13}} = 6.5
 :::
 ::::
 
-### Will it precipitate? Compare Q with K_sp
+### Will it precipitate? Compare Q with $K_{sp}$
 
 Compare the **ion product** $Q$ to $K_{sp}$ — the exact same logic as $Q$ vs. $K$ from Chapter 14, with one extra word for each case:
 
@@ -534,7 +534,7 @@ Adding $\ce{OH-}$ (the common ion with the dissolved $\ce{Mn(OH)2}$) suppresses 
 - {{sp[info] Objective 16.4a}} Set up and solve a complex-ion formation equilibrium.
 :::
 
-### Complex ions and K_f
+### Complex ions and $K_f$
 
 A **complex ion** forms when a metal cation (a Lewis acid) combines with ligands (Lewis bases, Chapter 15) that donate electron pairs. The **formation constant**, $K_f$, is this equilibrium's constant — the larger $K_f$, the more stable the complex:
 
@@ -543,7 +543,7 @@ $$\ce{Ag+(aq) + 2NH3(aq) <=> Ag(NH3)2+(aq)} \qquad K_f=\frac{[\ce{Ag(NH3)2+}]}{[
 Figure 16.7 shows the geometry the two examples above were computing with.
 
 ![Schematic diagram of Ag+ combining with two NH3 ligands to form the complex ion Ag(NH3)2+](../assets/complex_ion_formation.svg)
-*Figure 16.7 — A metal cation (Lewis acid) accepts electron pairs from ligands (Lewis bases, here NH₃) to form a complex ion. Self-generated with matplotlib; schematic, not a literal Lewis structure.*
+*Figure 16.7 — A metal cation (Lewis acid) accepts electron pairs from ligands (Lewis bases, here $\ce{NH3}$) to form a complex ion. Self-generated with matplotlib; schematic, not a literal Lewis structure.*
 
 ==Formation constants are often enormous — $K_f$ for $\ce{Ag(NH3)2+}$ is $1.7\times10^{7}$== — which means that in the presence of excess ligand, essentially all the metal exists as the complex and the free ion concentration is vanishingly small. That is the fact both worked examples below turn on.
 
@@ -604,14 +604,14 @@ $$\ce{Al(OH)3(s) + 3H+(aq) -> Al^3+(aq) + 3H2O(l)} \qquad \ce{Al(OH)3(s) + OH-(a
 
 ## Synthesis
 
-==This chapter's entire content is Chapter 14's K/Q/ICE-table framework and Chapter 15's Ka/Kb toolkit, applied to buffers, titrations, dissolution, and complexation (combined, for buffers and titrations, with a neutralization-stoichiometry step before the equilibrium step) — no new calculation method is introduced anywhere in this chapter.== The Henderson-Hasselbalch equation is simply an algebraic shortcut for the same $K_a$ expression; $K_{sp}$ and $K_f$ are simply $K_c$ under new names for new contexts. If you can set up an ICE table and compare $Q$ to $K$, you already have every tool this chapter uses — the only new work is recognizing *which* species and *which* constant apply in each new situation.
+==This chapter's entire content is Chapter 14's K/Q/ICE-table framework and Chapter 15's $K_a/K_b$ toolkit, applied to buffers, titrations, dissolution, and complexation (combined, for buffers and titrations, with a neutralization-stoichiometry step before the equilibrium step) — no new calculation method is introduced anywhere in this chapter.== The Henderson-Hasselbalch equation is simply an algebraic shortcut for the same $K_a$ expression; $K_{sp}$ and $K_f$ are simply $K_c$ under new names for new contexts. If you can set up an ICE table and compare $Q$ to $K$, you already have every tool this chapter uses — the only new work is recognizing *which* species and *which* constant apply in each new situation.
 
 ## Asset and License Record for This Chapter
 
 | Asset | Source URL | License | Attribution |
 |---|---|---|---|
 | `assets/buffer_action.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib from exact equilibrium calculations; released under this package's CC BY 4.0 license. |
-| `assets/titration_curves.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; pH computed from real equilibrium chemistry (Ka=1.8e-5 for acetic acid) matching the study guide's own worked-example volumes/concentrations; released under this package's CC BY 4.0 license. |
+| `assets/titration_curves.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; pH computed from real equilibrium chemistry ($K_a = 1.8\times10^{-5}$ for acetic acid) matching the study guide's own worked-example volumes/concentrations; released under this package's CC BY 4.0 license. |
 | `assets/titration_endpoint.jpg` | https://commons.wikimedia.org/wiki/File:Faint_pink_color_of_Phenolphthalein.jpg | CC BY-SA 4.0 | Kengksn, via Wikimedia Commons, CC BY-SA 4.0. |
 | `assets/indicator_ranges.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; approximate, commonly cited literature color-change ranges; released under this package's CC BY 4.0 license. |
 | `assets/silver_chloride_precipitate.jpg` | https://commons.wikimedia.org/wiki/File:Silver_chloride_(AgCl).jpg | CC BY SA-4.0 | Luisbrudna, via Wikimedia Commons, CC BY-SA 4.0. |

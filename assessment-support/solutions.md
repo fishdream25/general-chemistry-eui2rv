@@ -125,7 +125,7 @@ A student can state that gas solubility always decreases with increasing tempera
 - Worked instantiation: "If $\ce{O2}$ solubility in water is 0.020 M at 1.0 atm, estimate its solubility at 0.5 atm." → Solubility is directly proportional to pressure: $0.020\ \text{M}\times 0.5 = 0.010\ \text{M}$.
 
 **2. Conceptual — Henry's law exception**
-- Variables & ranges: a gas that reacts with water (CO₂, NH₃) vs. one that doesn't (O₂, N₂).
+- Variables & ranges: a gas that reacts with water ($\ce{CO2}$, $\ce{NH3}$) vs. one that doesn't ($\ce{O2}$, $\ce{N2}$).
 - Constraint: explanation must state the reacting case's actual complication, not just "it's different."
 - Contexts: soda carbonation, ammonia solutions.
 - Formats: short-answer.
@@ -394,7 +394,7 @@ A student can determine the van't Hoff factor from a solute's dissociation equat
 ### Question guides
 
 **1. Forward — determine $i$ and apply it**
-- Variables & ranges: a named electrolyte (NaCl, CaCl₂, $\ce{K2SO4}$, etc.) and a molality.
+- Variables & ranges: a named electrolyte ($\ce{NaCl}$, $\ce{CaCl2}$, $\ce{K2SO4}$, etc.) and a molality.
 - Constraint: student must write the dissociation equation to determine $i$ before calculating.
 - Contexts: common salts in aqueous solution.
 - Formats: workout.
@@ -440,4 +440,4 @@ A student can determine the van't Hoff factor from a solute's dissociation equat
 | Explicit conversion bridges shown | Mass↔mole (via molar mass) and mass↔volume (via density) steps are shown explicitly, not skipped. |
 | Van't Hoff factor never defaulted to 1 | For any ionic solute, the dissociation equation is written and $i$ is derived from it, every time. |
 | Correct direction/magnitude reasoning for colligative properties | Vapor pressure is lower, boiling point is higher, freezing point is lower, and osmotic pressure opposes concentrated-side dilution — each stated in the correct direction, not just calculated numerically. |
-| Henry's law exception recognized | Student flags CO₂/NH₃-type reactive gases as exceptions to Henry's law rather than applying it uncritically. |
+| Henry's law exception recognized | Student flags $\ce{CO2}/\ce{NH3}$-type reactive gases as exceptions to Henry's law rather than applying it uncritically. |

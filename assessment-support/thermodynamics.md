@@ -12,12 +12,12 @@ title: Chapter 17 Assessment Guide: Entropy, Free Energy, and Equilibrium
 
 ## General Assessment Priorities
 
-- Anchor every **ΔS sign prediction** to the two explicit rules (phase change, change in moles of gas) before any other consideration — never let students guess from intuition alone.
-- Keep **ΔG°** (one fixed number) and **ΔG** (varies with Q) visually and conceptually distinct in every question that uses both — mislabeling one for the other is the single most common error in this chapter.
+- Anchor every **$\Delta S$ sign prediction** to the two explicit rules (phase change, change in moles of gas) before any other consideration — never let students guess from intuition alone.
+- Keep **$\Delta G^\circ$** (one fixed number) and **$\Delta G$** (varies with Q) visually and conceptually distinct in every question that uses both — mislabeling one for the other is the single most common error in this chapter.
 - Require students to **isolate T algebraically first** ($T=\Delta H/\Delta S$) before substituting numbers in any transition-temperature problem, to prevent sign slips.
-- Pair every ΔG°-to-K question with a **qualitative prediction check** (should K be greater or less than 1, given the sign of ΔG°?) before the numeric answer is accepted.
+- Pair every $\Delta G^\circ$-to-K question with a **qualitative prediction check** (should K be greater or less than 1, given the sign of $\Delta G^\circ$?) before the numeric answer is accepted.
 
-## Objective 17.1a: Define entropy via microstates and predict the sign of ΔS
+## Objective 17.1a: Define entropy via microstates and predict the sign of $\Delta S$
 
 ### Target understanding
 
@@ -32,82 +32,82 @@ A student can explain entropy as a measure of accessible microstates ($S=k\ln W$
 - Formats: short-answer.
 - Worked instantiation: "Why does the 2-2 distribution of 4 particles in 2 boxes have higher entropy than the 4-0 distribution?" → The 2-2 distribution corresponds to 6 microstates, while 4-0 corresponds to only 1; since entropy is $k\ln W$, more microstates means higher entropy, and since probability is proportional to the number of microstates, the 2-2 distribution is also the most probable.
 
-**2. Forward — predict ΔS sign, phase change**
+**2. Forward — predict $\Delta S$ sign, phase change**
 - Variables & ranges: any process changing physical state (melting, vaporizing, freezing, condensing, dissolving a gas).
 - Constraint: prediction justified by the gas ≫ liquid > solid rule.
 - Contexts: any common phase change.
 - Formats: short-answer/multiple-choice.
-- Worked instantiation: "Predict the sign of ΔS for $\ce{Br2(l) -> Br2(g)}$." → Positive — going from liquid to gas dramatically increases the number of accessible microstates.
+- Worked instantiation: "Predict the sign of $\Delta S$ for $\ce{Br2(l) -> Br2(g)}$." → Positive — going from liquid to gas dramatically increases the number of accessible microstates.
 
-**3. Forward — predict ΔS sign, reaction with changing gas moles**
+**3. Forward — predict $\Delta S$ sign, reaction with changing gas moles**
 - Variables & ranges: a balanced reaction with unequal gas moles on each side.
 - Constraint: prediction justified by the change in total moles of gas.
 - Contexts: any gas-phase or gas-producing/consuming reaction.
 - Formats: short-answer/multiple-choice.
-- Worked instantiation: predict the sign of ΔS° for $\ce{N2(g)+3H2(g)->2NH3(g)}$ (4 mol gas → 2 mol gas, so ΔS° should be negative).
+- Worked instantiation: predict the sign of $\Delta S^\circ$ for $\ce{N2(g)+3H2(g)->2NH3(g)}$ (4 mol gas → 2 mol gas, so $\Delta S^\circ$ should be negative).
 
 **4. Error analysis**
-- Variables & ranges: a student who predicts ΔS sign based on whether a reaction is exothermic or endothermic instead of state/mole-count changes.
+- Variables & ranges: a student who predicts $\Delta S$ sign based on whether a reaction is exothermic or endothermic instead of state/mole-count changes.
 - Constraint: correction must redirect to the two correct rules.
 - Contexts: any reaction where enthalpy sign and entropy sign happen to differ.
 - Formats: short-answer.
-- Worked instantiation: "A student assumes an exothermic reaction always has negative ΔS. Why is this reasoning flawed?" → ΔH and ΔS are independent quantities — enthalpy sign depends on bond energies, while entropy sign depends on phase changes and changes in gas-phase particle count; a reaction can be exothermic while still having a positive ΔS if, for example, it produces more moles of gas than it consumes.
+- Worked instantiation: "A student assumes an exothermic reaction always has negative $\Delta S$. Why is this reasoning flawed?" → $\Delta H$ and $\Delta S$ are independent quantities — enthalpy sign depends on bond energies, while entropy sign depends on phase changes and changes in gas-phase particle count; a reaction can be exothermic while still having a positive $\Delta S$ if, for example, it produces more moles of gas than it consumes.
 
 ### Design guidance by purpose
 
 | Purpose | Cognitive level | How to design the task |
 |---|---|---|
-| Homework | Understand | 3–4 ΔS-sign predictions across phase changes and reactions. |
+| Homework | Understand | 3–4 $\Delta S$-sign predictions across phase changes and reactions. |
 | Group discussion | Analyze | Debate why the 4-particles-2-boxes example generalizes to real molecular systems. |
-| Quiz | Understand | One phase-change and one reaction ΔS-sign prediction. |
+| Quiz | Understand | One phase-change and one reaction $\Delta S$-sign prediction. |
 | Exam | Analyze | Require justification referencing both rules explicitly (phase and gas-mole count). |
-| Project/activity | Evaluate | Research a real reaction's measured ΔS° and check it against the qualitative prediction rules. |
+| Project/activity | Evaluate | Research a real reaction's measured $\Delta S^\circ$ and check it against the qualitative prediction rules. |
 
 ## Objective 17.1b: Calculate the standard entropy of a reaction
 
 ### Target understanding
 
-A student can calculate $\Delta S^\circ_{rxn}$ from tabulated standard molar entropies, using the same additive method as Chapter 6's $\Delta H^\circ_{rxn}$.
+A student can calculate $\Delta S^\circ_\text{rxn}$ from tabulated standard molar entropies, using the same additive method as Chapter 6's $\Delta H^\circ_\text{rxn}$.
 
 ### Question guides
 
-**1. Forward — calculate ΔS°rxn**
+**1. Forward — calculate $\Delta S^\circ_\text{rxn}$**
 - Variables & ranges: a balanced equation with given $S^\circ$ values for all species.
 - Constraint: correct stoichiometric weighting (coefficients as multipliers).
 - Contexts: any reaction with tabulated standard entropies.
 - Formats: workout.
-- Worked instantiation: see the study guide's worked example ($\ce{4Fe+3O2->2Fe2O3}$, $\Delta S^\circ_{rxn}=-550$ J/K·mol).
+- Worked instantiation: see the study guide's worked example ($\ce{4Fe+3O2->2Fe2O3}$, $\Delta S^\circ_\text{rxn}=-550$ J/K·mol).
 
 **2. Forward — a simple diatomic combustion**
 - Variables & ranges: $\ce{S(s)+O2(g)->SO2(g)}$ with given $S^\circ$ values.
 - Constraint: same additive method, smaller magnitude expected (no net change in gas moles).
 - Contexts: any reaction with equal gas moles on both sides.
 - Formats: workout.
-- Worked instantiation: given $S^\circ(\ce{S})=31.88$, $S^\circ(\ce{O2})=205.0$, $S^\circ(\ce{SO2})=248.5$ J/K·mol, calculate $\Delta S^\circ_{rxn}$.
+- Worked instantiation: given $S^\circ(\ce{S})=31.88$, $S^\circ(\ce{O2})=205.0$, $S^\circ(\ce{SO2})=248.5$ J/K·mol, calculate $\Delta S^\circ_\text{rxn}$.
 
 **3. Conceptual — magnitude vs. sign**
 - Variables & ranges: a reaction with no net change in gas moles.
-- Constraint: explanation must state that ΔS° should be small in magnitude (either sign) in this case.
+- Constraint: explanation must state that $\Delta S^\circ$ should be small in magnitude (either sign) in this case.
 - Contexts: any reaction with equal gas moles on both sides.
 - Formats: short-answer.
-- Worked instantiation: "Why is $\Delta S^\circ_{rxn}$ typically small in magnitude for a reaction with no net change in gas moles?" → With the same number of gas-phase particles on both sides, the dominant driver of large entropy changes (gas formation/consumption) is absent, so any remaining ΔS° comes from smaller effects (molecular complexity differences) and tends to be modest.
+- Worked instantiation: "Why is $\Delta S^\circ_\text{rxn}$ typically small in magnitude for a reaction with no net change in gas moles?" → With the same number of gas-phase particles on both sides, the dominant driver of large entropy changes (gas formation/consumption) is absent, so any remaining $\Delta S^\circ$ comes from smaller effects (molecular complexity differences) and tends to be modest.
 
 **4. Error analysis**
 - Variables & ranges: a student who reverses products and reactants in the summation.
 - Constraint: correction must restate "products minus reactants."
-- Contexts: any $\Delta S^\circ_{rxn}$ calculation.
+- Contexts: any $\Delta S^\circ_\text{rxn}$ calculation.
 - Formats: short-answer.
-- Worked instantiation: "A student computes $\Delta S^\circ_{rxn}$ as (reactants) − (products) instead of (products) − (reactants). What's the effect?" → The calculated value will have the opposite sign of the correct answer — the convention for both $\Delta H^\circ_{rxn}$ and $\Delta S^\circ_{rxn}$ is always products minus reactants, each weighted by its stoichiometric coefficient.
+- Worked instantiation: "A student computes $\Delta S^\circ_\text{rxn}$ as (reactants) − (products) instead of (products) − (reactants). What's the effect?" → The calculated value will have the opposite sign of the correct answer — the convention for both $\Delta H^\circ_\text{rxn}$ and $\Delta S^\circ_\text{rxn}$ is always products minus reactants, each weighted by its stoichiometric coefficient.
 
 ### Design guidance by purpose
 
 | Purpose | Cognitive level | How to design the task |
 |---|---|---|
-| Homework | Apply | 2–3 ΔS°rxn calculations from tabulated data. |
-| Group discussion | Understand | Compare the method directly to Chapter 6's ΔH°rxn calculation. |
-| Quiz | Apply | One ΔS°rxn calculation. |
+| Homework | Apply | 2–3 $\Delta S^\circ_\text{rxn}$ calculations from tabulated data. |
+| Group discussion | Understand | Compare the method directly to Chapter 6's $\Delta H^\circ_\text{rxn}$ calculation. |
+| Quiz | Apply | One $\Delta S^\circ_\text{rxn}$ calculation. |
 | Exam | Analyze | Combine with a qualitative sign prediction to check before calculating (Objective 17.1a). |
-| Project/activity | Evaluate | Look up real standard entropies for a chosen reaction and calculate ΔS°rxn. |
+| Project/activity | Evaluate | Look up real standard entropies for a chosen reaction and calculate $\Delta S^\circ_\text{rxn}$. |
 
 ## Objective 17.2a: State the laws of thermodynamics and explain the second law as the spontaneity criterion
 
@@ -170,7 +170,7 @@ A student can explain why the third law (a perfect crystal at 0 K has zero entro
 - Formats: short-answer.
 - Worked instantiation: see the study guide's self-check (why $\Delta H^\circ_f$ of an element is zero by definition, but $S^\circ$ isn't).
 
-**2. Forward — interpreting a real S° value**
+**2. Forward — interpreting a real $S^\circ$ value**
 - Variables & ranges: diamond's $S^\circ=2.4$ J/K·mol at 25 °C.
 - Constraint: interpretation must reference the small number of accessible microstates in a rigid crystal.
 - Contexts: diamond, or another highly ordered crystalline solid.
@@ -187,7 +187,7 @@ A student can explain why the third law (a perfect crystal at 0 K has zero entro
 **4. Error analysis**
 - Variables & ranges: a student who assumes all substances have zero entropy at 25 °C, confusing standard enthalpy of formation's zero-reference convention with entropy.
 - Constraint: correction must clarify the third law only applies to the *absolute zero* reference point, not to standard-state conditions generally.
-- Contexts: any confusion between ΔH°f's elemental-zero convention and S°'s third-law zero.
+- Contexts: any confusion between $\Delta H^\circ_f$'s elemental-zero convention and $S^\circ$'s third-law zero.
 - Formats: short-answer.
 - Worked instantiation: "A student assumes $S^\circ$ of an element in its standard state must be zero, by analogy with $\Delta H^\circ_f$. What's wrong?" → These are different conventions: $\Delta H^\circ_f$ of an element is *defined* as zero by convention (since formation enthalpies are always relative), but $S^\circ$ is an absolute quantity (via the third law's 0 K reference) and is essentially never zero at 25 °C for any real substance, element or not.
 
@@ -195,45 +195,45 @@ A student can explain why the third law (a perfect crystal at 0 K has zero entro
 
 | Purpose | Cognitive level | How to design the task |
 |---|---|---|
-| Homework | Understand | Explain the third law's significance; interpret 2–3 real S° values. |
-| Group discussion | Analyze | Compare the "absolute" nature of S° with the "relative" nature of ΔH°f. |
+| Homework | Understand | Explain the third law's significance; interpret 2–3 real $S^\circ$ values. |
+| Group discussion | Analyze | Compare the "absolute" nature of $S^\circ$ with the "relative" nature of $\Delta H^\circ_f$. |
 | Quiz | Understand | One third-law explanation item. |
-| Exam | Analyze | Require interpreting a given S° value in terms of microstates and crystal order. |
-| Project/activity | Evaluate | Research S° values for several related substances (e.g., diamond vs. graphite) and explain the difference. |
+| Exam | Analyze | Require interpreting a given $S^\circ$ value in terms of microstates and crystal order. |
+| Project/activity | Evaluate | Research $S^\circ$ values for several related substances (e.g., diamond vs. graphite) and explain the difference. |
 
 ## Objective 17.3a: Define Gibbs free energy and apply the spontaneity criterion
 
 ### Target understanding
 
-A student can define $G=H-TS$, derive $\Delta G=\Delta H-T\Delta S$ as the spontaneity criterion from the second law, and correctly interpret the sign of ΔG.
+A student can define $G=H-TS$, derive $\Delta G=\Delta H-T\Delta S$ as the spontaneity criterion from the second law, and correctly interpret the sign of $\Delta G$.
 
 ### Question guides
 
-**1. Conceptual — why ΔG combines ΔH and ΔS**
+**1. Conceptual — why $\Delta G$ combines $\Delta H$ and $\Delta S$**
 - Variables & ranges: any reaction, framed conceptually.
-- Constraint: explanation must state that ΔG lets spontaneity be judged from system properties alone.
+- Constraint: explanation must state that $\Delta G$ lets spontaneity be judged from system properties alone.
 - Contexts: general thermodynamics.
 - Formats: short-answer.
-- Worked instantiation: "Why is Gibbs free energy useful, given that the second law is fundamentally about the entropy of the universe, not just the system?" → $\Delta G=\Delta H-T\Delta S$ is derived directly from $\Delta S_{univ}>0$ by substituting $\Delta S_{surr}=-\Delta H_{sys}/T$ — so checking the sign of $\Delta G$ (a system-only quantity) automatically accounts for the surroundings' entropy change too, without ever calculating it directly.
+- Worked instantiation: "Why is Gibbs free energy useful, given that the second law is fundamentally about the entropy of the universe, not just the system?" → $\Delta G=\Delta H-T\Delta S$ is derived directly from $\Delta S_\text{univ}>0$ by substituting $\Delta S_\text{surr}=-\Delta H_\text{sys}/T$ — so checking the sign of $\Delta G$ (a system-only quantity) automatically accounts for the surroundings' entropy change too, without ever calculating it directly.
 
-**2. Forward — classify spontaneity from ΔH and ΔS signs**
-- Variables & ranges: all four sign combinations of ΔH and ΔS.
+**2. Forward — classify spontaneity from $\Delta H$ and $\Delta S$ signs**
+- Variables & ranges: all four sign combinations of $\Delta H$ and $\Delta S$.
 - Constraint: student must correctly identify which combinations are always spontaneous, always nonspontaneous, or temperature-dependent.
-- Contexts: any reaction with known signs (not necessarily magnitudes) of ΔH and ΔS.
+- Contexts: any reaction with known signs (not necessarily magnitudes) of $\Delta H$ and $\Delta S$.
 - Formats: short-answer/multiple-choice.
 - Worked instantiation: see the source's own practice item ($\Delta H^\circ<0$, $\Delta S^\circ>0$ → spontaneous at all temperatures, since $\Delta G=\Delta H-T\Delta S$ is negative regardless of $T$).
 
 **3. Predict-the-effect — temperature-dependent spontaneity**
-- Variables & ranges: ΔH and ΔS with the same sign (both positive or both negative).
+- Variables & ranges: $\Delta H$ and $\Delta S$ with the same sign (both positive or both negative).
 - Constraint: prediction must state that spontaneity depends on temperature in these cases.
-- Contexts: any reaction where ΔH and ΔS share a sign.
+- Contexts: any reaction where $\Delta H$ and $\Delta S$ share a sign.
 - Formats: short-answer.
 - Worked instantiation: "A reaction has $\Delta H^\circ>0$ and $\Delta S^\circ>0$. Is it always spontaneous, always nonspontaneous, or does it depend on temperature?" → It depends on temperature — at low $T$, the $\Delta H$ term dominates ($\Delta G>0$, nonspontaneous); at sufficiently high $T$, the $-T\Delta S$ term dominates and becomes negative enough to make $\Delta G<0$ (spontaneous).
 
 **4. Error analysis**
-- Variables & ranges: a student who assumes only ΔS matters for spontaneity, ignoring ΔH.
-- Constraint: correction must reference the combined ΔG criterion.
-- Contexts: any reaction with a strongly negative ΔH but negative ΔS (or vice versa).
+- Variables & ranges: a student who assumes only $\Delta S$ matters for spontaneity, ignoring $\Delta H$.
+- Constraint: correction must reference the combined $\Delta G$ criterion.
+- Contexts: any reaction with a strongly negative $\Delta H$ but negative $\Delta S$ (or vice versa).
 - Formats: short-answer.
 - Worked instantiation: "A student says a reaction with $\Delta S^\circ<0$ can never be spontaneous. What's the flaw?" → Spontaneity depends on the combined quantity $\Delta G=\Delta H-T\Delta S$, not $\Delta S$ alone — a sufficiently negative $\Delta H$ can still make $\Delta G<0$ even when $\Delta S<0$, especially at lower temperatures.
 
@@ -241,8 +241,8 @@ A student can define $G=H-TS$, derive $\Delta G=\Delta H-T\Delta S$ as the spont
 
 | Purpose | Cognitive level | How to design the task |
 |---|---|---|
-| Homework | Understand | Classify spontaneity for all four ΔH/ΔS sign combinations. |
-| Group discussion | Analyze | Debate why the ΔH/ΔS-same-sign cases are the "interesting" ones (temperature-dependent). |
+| Homework | Understand | Classify spontaneity for all four $\Delta H/\Delta S$ sign combinations. |
+| Group discussion | Analyze | Debate why the $\Delta H/\Delta S$-same-sign cases are the "interesting" ones (temperature-dependent). |
 | Quiz | Understand | One sign-combination classification item. |
 | Exam | Analyze | Require deriving the direction of temperature-dependence for a given sign combination. |
 | Project/activity | Evaluate | Research a real reaction from each of the four sign-combination categories. |
@@ -251,16 +251,16 @@ A student can define $G=H-TS$, derive $\Delta G=\Delta H-T\Delta S$ as the spont
 
 ### Target understanding
 
-A student can calculate $\Delta G^\circ_{rxn}$ from tabulated standard free energies of formation, using the same additive (Hess's-law-style) method as Chapter 6, including combining free energies of multiple summed reactions.
+A student can calculate $\Delta G^\circ_\text{rxn}$ from tabulated standard free energies of formation, using the same additive (Hess's-law-style) method as Chapter 6, including combining free energies of multiple summed reactions.
 
 ### Question guides
 
-**1. Forward — ΔG°rxn from ΔG°f values**
+**1. Forward — $\Delta G^\circ_\text{rxn}$ from $\Delta G^\circ_f$ values**
 - Variables & ranges: a balanced equation with given $\Delta G^\circ_f$ values.
 - Constraint: correct stoichiometric weighting; elements in standard states contribute zero.
 - Contexts: any reaction with tabulated formation free energies.
 - Formats: workout.
-- Worked instantiation: see the study guide's worked example ($\ce{4Fe+3O2->2Fe2O3}$, $\Delta G^\circ_{rxn}=-1648.4$ kJ/mol).
+- Worked instantiation: see the study guide's worked example ($\ce{4Fe+3O2->2Fe2O3}$, $\Delta G^\circ_\text{rxn}=-1648.4$ kJ/mol).
 
 **2. Forward — combining summed reactions**
 - Variables & ranges: two reactions with known $\Delta G^\circ$ summing to a third.
@@ -274,50 +274,50 @@ A student can calculate $\Delta G^\circ_{rxn}$ from tabulated standard free ener
 - Constraint: explanation must reference the formation-reaction definition.
 - Contexts: any reaction with an elemental reactant or product.
 - Formats: short-answer.
-- Worked instantiation: "Why does $\ce{O2(g)}$ contribute zero to a $\Delta G^\circ_{rxn}$ calculation?" → $\Delta G^\circ_f$ is defined as the free-energy change to form a substance from its elements in their standard states; for an element already in its standard state, that "formation" is a null process, so its $\Delta G^\circ_f$ is defined as zero.
+- Worked instantiation: "Why does $\ce{O2(g)}$ contribute zero to a $\Delta G^\circ_\text{rxn}$ calculation?" → $\Delta G^\circ_f$ is defined as the free-energy change to form a substance from its elements in their standard states; for an element already in its standard state, that "formation" is a null process, so its $\Delta G^\circ_f$ is defined as zero.
 
 **4. Error analysis**
-- Variables & ranges: a student who adds ΔG° values for reactions that don't actually sum to the target reaction (species don't cancel correctly).
+- Variables & ranges: a student who adds $\Delta G^\circ$ values for reactions that don't actually sum to the target reaction (species don't cancel correctly).
 - Constraint: correction must require verifying the reactions actually add up to the target before combining.
 - Contexts: any multi-step free-energy combination.
 - Formats: short-answer.
-- Worked instantiation: "A student adds two reactions' ΔG° values without checking that the intermediate species actually cancel out. What could go wrong?" → If the given reactions don't sum exactly to the target reaction (species left over, or a needed species missing), the resulting $\Delta G^\circ$ won't correspond to the intended reaction at all — always verify by writing out the sum and canceling species explicitly before adding the energies.
+- Worked instantiation: "A student adds two reactions' $\Delta G^\circ$ values without checking that the intermediate species actually cancel out. What could go wrong?" → If the given reactions don't sum exactly to the target reaction (species left over, or a needed species missing), the resulting $\Delta G^\circ$ won't correspond to the intended reaction at all — always verify by writing out the sum and canceling species explicitly before adding the energies.
 
 ### Design guidance by purpose
 
 | Purpose | Cognitive level | How to design the task |
 |---|---|---|
-| Homework | Apply | 2–3 ΔG°rxn calculations, including one multi-step combination. |
+| Homework | Apply | 2–3 $\Delta G^\circ_\text{rxn}$ calculations, including one multi-step combination. |
 | Group discussion | Understand | Compare this method directly to Chapter 6's Hess's law. |
-| Quiz | Apply | One ΔG°rxn calculation from formation values. |
+| Quiz | Apply | One $\Delta G^\circ_\text{rxn}$ calculation from formation values. |
 | Exam | Analyze | Require verifying that combined reactions actually sum to the target before calculating. |
-| Project/activity | Evaluate | Look up real ΔG°f values for a reaction of interest and calculate ΔG°rxn. |
+| Project/activity | Evaluate | Look up real $\Delta G^\circ_f$ values for a reaction of interest and calculate $\Delta G^\circ_\text{rxn}$. |
 
-## Objective 17.3c: Determine transition temperatures by setting ΔG = 0
+## Objective 17.3c: Determine transition temperatures by setting $\Delta G = 0$
 
 ### Target understanding
 
-A student can find the temperature at which a reaction or phase transition becomes spontaneous (or reaches equilibrium) by setting $\Delta G=\Delta H-T\Delta S=0$ and solving for $T$, assuming ΔH and ΔS are temperature-independent.
+A student can find the temperature at which a reaction or phase transition becomes spontaneous (or reaches equilibrium) by setting $\Delta G=\Delta H-T\Delta S=0$ and solving for $T$, assuming $\Delta H$ and $\Delta S$ are temperature-independent.
 
 ### Question guides
 
 **1. Forward — reaction onset temperature**
-- Variables & ranges: a reaction with known ΔH° and ΔS° (same sign), find the crossover temperature.
+- Variables & ranges: a reaction with known $\Delta H^\circ$ and $\Delta S^\circ$ (same sign), find the crossover temperature.
 - Constraint: isolate $T$ algebraically ($T=\Delta H/\Delta S$) before substituting numbers.
 - Contexts: any endothermic, entropy-increasing decomposition reaction.
 - Formats: workout.
 - Worked instantiation: see the study guide's worked example ($\ce{CaCO3<=>CaO+CO2}$, $T=1108$ K).
 
 **2. Forward — phase-transition temperature**
-- Variables & ranges: given ΔH and ΔS for a phase transition, find the transition temperature.
+- Variables & ranges: given $\Delta H$ and $\Delta S$ for a phase transition, find the transition temperature.
 - Constraint: same $T=\Delta H/\Delta S$ method, applied to melting/boiling instead of a reaction.
 - Contexts: melting point, boiling point, or sublimation point calculations.
 - Formats: workout.
-- Worked instantiation: benzene has $\Delta H^\circ_{fus}=10.9$ kJ/mol and a melting point of 5.5 °C; find $\Delta S^\circ_{fus}$ (rearranging the same relationship in the other direction).
+- Worked instantiation: benzene has $\Delta H^\circ_\text{fus}=10.9$ kJ/mol and a melting point of 5.5 °C; find $\Delta S^\circ_\text{fus}$ (rearranging the same relationship in the other direction).
 
 **3. Conceptual — assumptions behind the calculation**
 - Variables & ranges: any transition-temperature calculation.
-- Constraint: explanation must state the assumption that ΔH and ΔS don't change with temperature.
+- Constraint: explanation must state the assumption that $\Delta H$ and $\Delta S$ don't change with temperature.
 - Contexts: any $T=\Delta H/\Delta S$ calculation.
 - Formats: short-answer.
 - Worked instantiation: "What assumption is required to calculate a transition temperature as $T=\Delta H/\Delta S$ using values measured at 25 °C?" → The calculation assumes $\Delta H$ and $\Delta S$ don't change significantly between 25 °C and the transition temperature — a good approximation over a modest temperature range, but increasingly less accurate the further the transition temperature is from 25 °C.
@@ -337,9 +337,9 @@ A student can find the temperature at which a reaction or phase transition becom
 | Group discussion | Analyze | Discuss why this calculation's accuracy degrades far from 25 °C. |
 | Quiz | Apply | One transition-temperature calculation. |
 | Exam | Analyze | Require identifying whether the reaction is spontaneous at a *given* temperature before finding the crossover point. |
-| Project/activity | Evaluate | Look up ΔH and ΔS for a real phase transition and verify the calculated transition temperature against the known value. |
+| Project/activity | Evaluate | Look up $\Delta H$ and $\Delta S$ for a real phase transition and verify the calculated transition temperature against the known value. |
 
-## Objective 17.3d: Relate ΔG° to the equilibrium constant K
+## Objective 17.3d: Relate $\Delta G^\circ$ to the equilibrium constant K
 
 ### Target understanding
 
@@ -347,14 +347,14 @@ A student can calculate $\Delta G^\circ$ from $K$ (or $K$ from $\Delta G^\circ$)
 
 ### Question guides
 
-**1. Forward — ΔG° from ΔG°f values, then K**
-- Variables & ranges: a reaction with given $\Delta G^\circ_f$ values, find $\Delta G^\circ_{rxn}$ and then $K$.
+**1. Forward — $\Delta G^\circ$ from $\Delta G^\circ_f$ values, then K**
+- Variables & ranges: a reaction with given $\Delta G^\circ_f$ values, find $\Delta G^\circ_\text{rxn}$ and then $K$.
 - Constraint: qualitative sign check before calculating the numeric $K$.
 - Contexts: any gas-phase equilibrium with tabulated formation free energies.
 - Formats: workout.
 - Worked instantiation: see the study guide's worked example ($\ce{N2O4<=>2NO2}$, $\Delta G^\circ=2.8$ kJ/mol, $K_p=0.323$).
 
-**2. Inverse — ΔG° from K**
+**2. Inverse — $\Delta G^\circ$ from K**
 - Variables & ranges: a given equilibrium constant, find $\Delta G^\circ$.
 - Constraint: correct sign handling in $\Delta G^\circ=-RT\ln K$.
 - Contexts: any reaction with a known $K$.
@@ -362,7 +362,7 @@ A student can calculate $\Delta G^\circ$ from $K$ (or $K$ from $\Delta G^\circ$)
 - Worked instantiation: a reaction has $K=4.2\times10^{-3}$ at 298 K; find $\Delta G^\circ$ and state whether it is positive or negative before calculating.
 
 **3. Conceptual — sign correspondence**
-- Variables & ranges: a general prompt about the ΔG°-K relationship.
+- Variables & ranges: a general prompt about the $\Delta G^\circ$-K relationship.
 - Constraint: explanation must state that $K>1 \Leftrightarrow \Delta G^\circ<0$ and vice versa.
 - Contexts: any $\Delta G^\circ$-K pair.
 - Formats: short-answer.
@@ -371,7 +371,7 @@ A student can calculate $\Delta G^\circ$ from $K$ (or $K$ from $\Delta G^\circ$)
 **4. Error analysis**
 - Variables & ranges: a student who drops or mishandles the negative sign in $\Delta G^\circ=-RT\ln K$.
 - Constraint: correction must restate the correct sign relationship.
-- Contexts: any ΔG°-K calculation.
+- Contexts: any $\Delta G^\circ$-K calculation.
 - Formats: short-answer.
 - Worked instantiation: "A student calculates $\Delta G^\circ=+RT\ln K$ (forgetting the negative sign) for a reaction with $K=10$, getting a positive $\Delta G^\circ$. What's wrong, and what should the sign be?" → The correct relationship is $\Delta G^\circ=-RT\ln K$; since $K=10>1$, $\ln K>0$, so $\Delta G^\circ$ should be *negative* — the student's dropped sign gives the opposite (and qualitatively wrong) conclusion.
 
@@ -379,13 +379,13 @@ A student can calculate $\Delta G^\circ$ from $K$ (or $K$ from $\Delta G^\circ$)
 
 | Purpose | Cognitive level | How to design the task |
 |---|---|---|
-| Homework | Apply | 2 ΔG°-to-K (or K-to-ΔG°) calculations, each with a qualitative sign check first. |
-| Group discussion | Analyze | Debate why a very large K (like for a strong acid's ionization) implies a very negative ΔG°. |
-| Quiz | Apply | One ΔG°-K conversion, either direction. |
+| Homework | Apply | 2 $\Delta G^\circ$-to-K (or K-to-$\Delta G^\circ$) calculations, each with a qualitative sign check first. |
+| Group discussion | Analyze | Debate why a very large K (like for a strong acid's ionization) implies a very negative $\Delta G^\circ$. |
+| Quiz | Apply | One $\Delta G^\circ$-K conversion, either direction. |
 | Exam | Analyze | Require the qualitative prediction explicitly before the numeric answer for partial credit. |
-| Project/activity | Evaluate | Research a real reaction's measured K and calculate its ΔG°, connecting to Ch. 14. |
+| Project/activity | Evaluate | Research a real reaction's measured K and calculate its $\Delta G^\circ$, connecting to Ch. 14. |
 
-## Objective 17.3e: Calculate ΔG under non-standard conditions and predict reaction direction
+## Objective 17.3e: Calculate $\Delta G$ under non-standard conditions and predict reaction direction
 
 ### Target understanding
 
@@ -393,51 +393,51 @@ A student can calculate $\Delta G=\Delta G^\circ+RT\ln Q$ given non-standard con
 
 ### Question guides
 
-**1. Forward — ΔG from given pressures**
+**1. Forward — $\Delta G$ from given pressures**
 - Variables & ranges: a reaction with known $\Delta G^\circ$ and given non-standard partial pressures.
-- Constraint: correct construction of $Q$ from the given pressures before substituting into the ΔG equation.
+- Constraint: correct construction of $Q$ from the given pressures before substituting into the $\Delta G$ equation.
 - Contexts: any gas-phase reaction with non-equilibrium pressures given.
 - Formats: workout.
 - Worked instantiation: see the study guide's worked example ($\ce{2NH3->3H2+N2}$, $\Delta G=32.5$ kJ/mol).
 
-**2. Conceptual — ΔG° vs. ΔG**
+**2. Conceptual — $\Delta G^\circ$ vs. $\Delta G$**
 - Variables & ranges: a prompt distinguishing the two symbols.
-- Constraint: explanation must state ΔG° is fixed while ΔG depends on current Q.
+- Constraint: explanation must state $\Delta G^\circ$ is fixed while $\Delta G$ depends on current Q.
 - Contexts: any reaction over the course of its progress toward equilibrium.
 - Formats: short-answer.
-- Worked instantiation: "As a reaction proceeds toward equilibrium, does ΔG° change? Does ΔG change?" → $\Delta G^\circ$ is a fixed constant for a given reaction and temperature — it never changes during the reaction. $\Delta G$ does change, because it depends on $Q$, which changes continuously as reactant and product concentrations shift toward their equilibrium values; $\Delta G$ approaches zero as the reaction approaches equilibrium.
+- Worked instantiation: "As a reaction proceeds toward equilibrium, does $\Delta G^\circ$ change? Does $\Delta G$ change?" → $\Delta G^\circ$ is a fixed constant for a given reaction and temperature — it never changes during the reaction. $\Delta G$ does change, because it depends on $Q$, which changes continuously as reactant and product concentrations shift toward their equilibrium values; $\Delta G$ approaches zero as the reaction approaches equilibrium.
 
-**3. Predict-the-effect — direction from ΔG sign**
-- Variables & ranges: a calculated ΔG value (positive or negative).
-- Constraint: prediction must connect the sign of ΔG directly to reaction direction, mirroring Chapter 14's Q-vs-K rule.
-- Contexts: any non-standard-condition ΔG calculation.
+**3. Predict-the-effect — direction from $\Delta G$ sign**
+- Variables & ranges: a calculated $\Delta G$ value (positive or negative).
+- Constraint: prediction must connect the sign of $\Delta G$ directly to reaction direction, mirroring Chapter 14's Q-vs-K rule.
+- Contexts: any non-standard-condition $\Delta G$ calculation.
 - Formats: short-answer.
-- Worked instantiation: "A calculated ΔG for a reaction is −12 kJ/mol under the given conditions. Which direction does the reaction proceed?" → Forward (left to right) — a negative ΔG means the reaction is spontaneous in the forward direction under these specific conditions, equivalent to saying $Q<K$.
+- Worked instantiation: "A calculated $\Delta G$ for a reaction is −12 kJ/mol under the given conditions. Which direction does the reaction proceed?" → Forward (left to right) — a negative $\Delta G$ means the reaction is spontaneous in the forward direction under these specific conditions, equivalent to saying $Q<K$.
 
 **4. Error analysis**
-- Variables & ranges: a student who uses ΔG° in place of ΔG (or vice versa) when predicting direction under non-standard conditions.
-- Constraint: correction must state that direction under specific, given (non-standard) conditions requires ΔG, not ΔG°.
+- Variables & ranges: a student who uses $\Delta G^\circ$ in place of $\Delta G$ (or vice versa) when predicting direction under non-standard conditions.
+- Constraint: correction must state that direction under specific, given (non-standard) conditions requires $\Delta G$, not $\Delta G^\circ$.
 - Contexts: any problem giving specific non-standard concentrations/pressures.
 - Formats: short-answer.
-- Worked instantiation: "A student is given specific non-standard pressures and uses the sign of ΔG° (not ΔG) to predict reaction direction. Why is this incorrect?" → ΔG° only describes spontaneity under standard-state conditions (all species at 1 atm or 1 M); to predict direction under the actual, given non-standard conditions, the reaction quotient Q for those specific conditions must be incorporated via $\Delta G=\Delta G^\circ+RT\ln Q$, and the sign of that ΔG (not ΔG°) determines the true direction.
+- Worked instantiation: "A student is given specific non-standard pressures and uses the sign of $\Delta G^\circ$ (not $\Delta G$) to predict reaction direction. Why is this incorrect?" → $\Delta G^\circ$ only describes spontaneity under standard-state conditions (all species at 1 atm or 1 M); to predict direction under the actual, given non-standard conditions, the reaction quotient Q for those specific conditions must be incorporated via $\Delta G=\Delta G^\circ+RT\ln Q$, and the sign of that $\Delta G$ (not $\Delta G^\circ$) determines the true direction.
 
 ### Design guidance by purpose
 
 | Purpose | Cognitive level | How to design the task |
 |---|---|---|
-| Homework | Apply | 2 ΔG-under-non-standard-conditions calculations, each requiring a direction prediction. |
-| Group discussion | Analyze | Debate why ΔG approaches zero as a reaction nears equilibrium. |
-| Quiz | Apply | One ΔG calculation with given non-standard pressures/concentrations. |
-| Exam | Analyze | Require distinguishing when ΔG° alone suffices (standard conditions) vs. when ΔG is needed (non-standard). |
-| Project/activity | Evaluate | Model how ΔG changes over the course of a reaction as Q evolves from its initial value toward K. |
+| Homework | Apply | 2 $\Delta G$-under-non-standard-conditions calculations, each requiring a direction prediction. |
+| Group discussion | Analyze | Debate why $\Delta G$ approaches zero as a reaction nears equilibrium. |
+| Quiz | Apply | One $\Delta G$ calculation with given non-standard pressures/concentrations. |
+| Exam | Analyze | Require distinguishing when $\Delta G^\circ$ alone suffices (standard conditions) vs. when $\Delta G$ is needed (non-standard). |
+| Project/activity | Evaluate | Model how $\Delta G$ changes over the course of a reaction as Q evolves from its initial value toward K. |
 
 ## Rubric Themes for Chapter 17
 
 | Evidence of mastery | What to look for |
 |---|---|
-| ΔS sign predicted from the two explicit rules | Student references phase change and/or gas-mole-count change explicitly, not vague intuition. |
-| ΔG° and ΔG kept visually and conceptually distinct | Student never uses one symbol's value or meaning in place of the other. |
+| $\Delta S$ sign predicted from the two explicit rules | Student references phase change and/or gas-mole-count change explicitly, not vague intuition. |
+| $\Delta G^\circ$ and $\Delta G$ kept visually and conceptually distinct | Student never uses one symbol's value or meaning in place of the other. |
 | Transition temperature solved by isolating T first | Student rearranges $\Delta G=\Delta H-T\Delta S=0$ to $T=\Delta H/\Delta S$ before substituting numbers. |
-| Qualitative K-vs-1 prediction made before calculating | Student states whether K should be greater or less than 1 from the sign of ΔG°, then verifies the numeric answer matches. |
+| Qualitative K-vs-1 prediction made before calculating | Student states whether K should be greater or less than 1 from the sign of $\Delta G^\circ$, then verifies the numeric answer matches. |
 | Second law applied to the universe, not just the system | Student correctly explains system-entropy-decreasing spontaneous processes via the surroundings' larger entropy increase. |
-| ΔG-Q relationship connected to Chapter 14 | Student explicitly ties Δ G = ΔG° + RT ln Q back to the Q-vs-K reaction-direction rule from Chapter 14. |
+| $\Delta G$-Q relationship connected to Chapter 14 | Student explicitly ties Δ G = $\Delta G^\circ$ + RT ln Q back to the Q-vs-K reaction-direction rule from Chapter 14. |

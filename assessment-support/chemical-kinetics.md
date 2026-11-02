@@ -30,7 +30,7 @@ A student can write the shared rate expression for any balanced equation using s
 - Constraint: student must divide/multiply by the correct coefficient ratio, matching sign conventions (reactants negative, products positive).
 - Contexts: gas-phase and solution-phase reactions.
 - Formats: workout.
-- Worked instantiation: see the study guide's worked example (4PH₃ → P₄ + 6H₂, given rate of H₂ formation).
+- Worked instantiation: see the study guide's worked example ($\ce{4PH3 -> P4 + 6H2}$, given rate of $\ce{H2}$ formation).
 
 **2. Inverse — find an unknown coefficient's rate given two others**
 - Variables & ranges: a reaction where two species' rates are given and a third is requested.
@@ -76,7 +76,7 @@ A student can apply the method of initial rates to determine reaction order in e
 - Constraint: student must select trial pairs where only one concentration changes.
 - Contexts: gas-phase or solution kinetics.
 - Formats: workout.
-- Worked instantiation: see the study guide's worked example (NO/Cl₂ reaction, three trials).
+- Worked instantiation: see the study guide's worked example (NO/$\ce{Cl2}$ reaction, three trials).
 
 **2. Inverse — predict rate at a new concentration**
 - Variables & ranges: given a determined rate law and $k$, predict the rate at a new, unlisted concentration pair.
@@ -216,7 +216,7 @@ A student can state both requirements of collision theory (frequency and suffici
 - Formats: short-answer.
 - Worked instantiation: "Why doesn't every collision between reactant molecules result in a reaction?" → Two conditions must both be met: the molecules must collide (frequency), and the collision must carry at least the activation energy $E_a$ — many collisions are too gentle or poorly oriented to react.
 
-**2. Comparison — Ea vs. ΔH**
+**2. Comparison — Ea vs. $\Delta H$**
 - Variables & ranges: a reaction profile description (or sketch) with both $E_a$ and $\Delta H$ marked.
 - Constraint: answer must correctly identify each quantity's reference points (reactants→peak vs. reactants→products).
 - Contexts: any exothermic or endothermic reaction with a given energy profile.
@@ -243,7 +243,7 @@ A student can state both requirements of collision theory (frequency and suffici
 |---|---|---|
 | Homework | Understand | 2–3 conceptual explain-why items. |
 | Group discussion | Analyze | Sketch and compare energy profiles for reactions with different $E_a$/$\Delta H$ combinations. |
-| Quiz | Understand | One definition item, one Ea-vs-ΔH distinction item. |
+| Quiz | Understand | One definition item, one Ea-vs-$\Delta H$ distinction item. |
 | Exam | Analyze | Require sketching or describing a full energy profile from given $E_a$ and $\Delta H$ values. |
 | Project/activity | Evaluate | Research a real reaction's measured $E_a$ and explain what a catalyst would change about its profile. |
 
@@ -306,7 +306,7 @@ Given a proposed multi-step mechanism, a student can identify intermediates, wri
 - Constraint: student must find the overall reaction (canceling intermediates), name the intermediate, and state the overall rate law from the rate-determining step.
 - Contexts: any plausible 2-step gas-phase or solution mechanism.
 - Formats: workout.
-- Worked instantiation: see the study guide's worked example (NO₂/CO mechanism).
+- Worked instantiation: see the study guide's worked example ($\ce{NO2}$/CO mechanism).
 
 **2. Inverse — propose a mechanism consistent with a given rate law**
 - Variables & ranges: an overall reaction and its experimentally-determined rate law (matching neither reactant's coefficient).
@@ -337,7 +337,7 @@ Given a proposed multi-step mechanism, a student can identify intermediates, wri
 | Group discussion | Analyze | Debate whether a given proposed mechanism is consistent with an experimentally observed rate law. |
 | Quiz | Apply | One mechanism-analysis problem. |
 | Exam | Analyze | Require both directions: analyze a given mechanism, and propose one consistent with a given rate law. |
-| Project/activity | Evaluate | Research a real named reaction mechanism (e.g., SN1/SN2 preview, or an atmospheric ozone reaction) and identify its rate-determining step. |
+| Project/activity | Evaluate | Research a real named reaction mechanism (e.g., $\ce{SN1}/\ce{SN2}$ preview, or an atmospheric ozone reaction) and identify its rate-determining step. |
 
 ## Objective 13.4b: Interpret a potential-energy profile
 
@@ -398,7 +398,7 @@ A student can explain that a catalyst lowers activation energy for both directio
 - Constraint: classification must be justified by comparing catalyst phase to reactant phase (or noting biological specificity for enzymes).
 - Contexts: industrial, environmental, and biological catalysis examples.
 - Formats: short-answer or multiple-choice.
-- Worked instantiation: "A solid platinum surface catalyzes the reaction of gas-phase CO and O₂. What type of catalysis is this?" → Heterogeneous — the catalyst (solid) is in a different phase from the reactants (gas).
+- Worked instantiation: "A solid platinum surface catalyzes the reaction of gas-phase CO and $\ce{O2}$. What type of catalysis is this?" → Heterogeneous — the catalyst (solid) is in a different phase from the reactants (gas).
 
 **2. Conceptual — what a catalyst does and doesn't change**
 - Variables & ranges: a prompt asking which reaction quantities change with a catalyst and which don't.
@@ -427,7 +427,7 @@ A student can explain that a catalyst lowers activation energy for both directio
 |---|---|---|
 | Homework | Understand/Apply | Classify 3–4 catalytic examples by type. |
 | Group discussion | Analyze | Debate why enzymes are often described as the most "specific" catalysts. |
-| Quiz | Understand | One classification item, one conceptual Ea-vs-ΔH-under-catalysis item. |
+| Quiz | Understand | One classification item, one conceptual Ea-vs-$\Delta H$-under-catalysis item. |
 | Exam | Analyze | Combine catalyst classification with a mechanism-based catalyst/intermediate distinction. |
 | Project/activity | Evaluate | Research a real industrial catalytic process (e.g., the Haber process) and identify the catalyst type and its role. |
 

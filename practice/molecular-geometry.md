@@ -274,7 +274,7 @@ This is the same restriction Chapter 9 gave for expanded octets, seen from the o
 
 **A $\pi$ bond** forms by **sideways** overlap of two unhybridized $p$ orbitals, with the density above and below the internuclear axis and a nodal plane containing it. It is weaker, and it **prevents** rotation — twisting the bond would pull the two $p$ orbitals out of alignment and destroy the overlap.
 
-Every single bond is one $\sigma$. A double bond is 1 $\sigma$ + 1 $\pi$; a triple bond is 1 $\sigma$ + 2 $\pi$.
+Every single bond is one $\sigma$. A double bond is $1\sigma + 1\pi$; a triple bond is $1\sigma + 2\pi$.
 :::
 ::::
 
@@ -289,7 +289,7 @@ Each carbon has two C–H bonds and one C=C double bond — **3 domains** → **
 - One C–C $\sigma$ bond (from the remaining $sp^2$ orbital on each carbon)
 - One C–C $\pi$ bond (sideways overlap of the two unhybridized $2p$ orbitals)
 
-**Total: 5 $\sigma$, 1 $\pi$.** The double bond itself is 1 $\sigma$ + 1 $\pi$.
+**Total: 5 $\sigma$, 1 $\pi$.** The double bond itself is $1\sigma + 1\pi$.
 
 The $\pi$ bond is why ethylene is flat and cannot rotate about its C=C.
 :::
@@ -306,7 +306,7 @@ Each carbon has one C–H bond and one C≡C triple bond — **2 domains** → *
 - One C–C $\sigma$ bond
 - Two C–C $\pi$ bonds, at right angles to each other
 
-**Total: 3 $\sigma$, 2 $\pi$.** The triple bond is 1 $\sigma$ + 2 $\pi$.
+**Total: 3 $\sigma$, 2 $\pi$.** The triple bond is $1\sigma + 2\pi$.
 
 **Compared with ethylene:** one fewer domain per carbon, so $sp$ instead of $sp^2$, one more unhybridized $p$ orbital, and one more $\pi$ bond. The geometry changes accordingly — two $sp$ orbitals point in opposite directions, so acetylene is linear at 180° while ethylene is trigonal planar at 120°.
 :::

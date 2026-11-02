@@ -256,12 +256,12 @@ This is Boyle's law, $P\propto1/V$, expressed as a mechanism rather than a graph
 
 :::: tabs
 ::: tab Q 20
-{{sp[info] Objective 5.4a}} · *workout* Calculate $u_{rms}$ for $\ce{CO2}$ (44.01 g/mol) at 300 K.
+{{sp[info] Objective 5.4a}} · *workout* Calculate $u_\text{rms}$ for $\ce{CO2}$ (44.01 g/mol) at 300 K.
 :::
 ::: tab Answer
 Use $R=8.314$ J/(K·mol) and the molar mass **in kg/mol**:
 
-$$u_{rms}=\sqrt{\frac{3RT}{\mathcal{M}}}=\sqrt{\frac{3\times8.314\times300}{0.04401}}=412\ \text{m/s}$$
+$$u_\text{rms}=\sqrt{\frac{3RT}{\mathcal{M}}}=\sqrt{\frac{3\times8.314\times300}{0.04401}}=412\ \text{m/s}$$
 
 Forgetting to convert g/mol to kg/mol is the standard error here; it would shrink the answer by a factor of $\sqrt{1000}\approx32$.
 :::

@@ -53,7 +53,7 @@ graph TD
 A **wave** is a vibrating disturbance that transmits energy. Three quantities describe one:
 
 - **Wavelength** ($\lambda$) — the distance between identical points on successive waves.
-- **Frequency** ($\nu$) — the number of waves passing a point each second, in hertz (Hz, or s⁻¹).
+- **Frequency** ($\nu$) — the number of waves passing a point each second, in hertz (Hz, or $\text{s}^{-1}$).
 - **Amplitude** — the vertical distance from the midline to a peak or trough.
 
 Speed, wavelength, and frequency are locked together:
@@ -105,7 +105,7 @@ Both answers land inside the visible range, and both are consistent with the tra
 A radio station broadcasts at 98.7 MHz. What is the wavelength of its signal, and how does it compare with the 522 nm light from the previous problem?
 :::
 ::: tab Solution
-Megahertz means $10^6$ s⁻¹, so $\nu = 9.87\times10^7$ Hz.
+Megahertz means $10^6\ \text{s}^{-1}$, so $\nu = 9.87\times10^7$ Hz.
 
 $$\lambda=\frac{c}{\nu}=\frac{3.00\times10^8\,\text{m/s}}{9.87\times10^7\,\text{s}^{-1}}=3.04\ \text{m}$$
 

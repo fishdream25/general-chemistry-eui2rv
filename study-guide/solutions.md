@@ -197,7 +197,7 @@ $$k_\text{H} = \frac{c}{P} = \frac{0.081\ \text{M}}{2.4\ \text{atm}} = 0.034\ \t
 
 $$c = k_\text{H}P = (0.034\ \text{M/atm})(4.0\times10^{-4}\ \text{atm}) = 1.4\times10^{-5}\ \text{M}$$
 
-The concentration falls by a factor of 6,000 — which is exactly the ratio of the two pressures, since the relationship is linear. You do not have to compute k_H at all: **the ratio of concentrations equals the ratio of pressures.**
+The concentration falls by a factor of 6,000 — which is exactly the ratio of the two pressures, since the relationship is linear. You do not have to compute $k_H$ at all: **the ratio of concentrations equals the ratio of pressures.**
 
 **Why the soda fizzes when you open it:** at the instant of opening, the liquid still holds 0.081 M of $\ce{CO2}$ but the pressure above it has crashed. The liquid is now enormously supersaturated with gas, and the excess escapes as bubbles until the new, far lower equilibrium is reached.
 
@@ -216,7 +216,7 @@ A student writes: "Heating a solution always lets it dissolve more solute." Give
 
 **Wrong, for gases (over the ordinary temperature range).** Common gases become less soluble in water as temperature rises over the ordinary range (roughly 0–50 °C). Warm river water holds less dissolved oxygen than cold water, which is why thermal pollution from a power plant can suffocate fish without adding a single toxin.
 
-**Why the gas case is different in kind:** a dissolved gas molecule is already free of any lattice — it needs no energy to break out of a solid, so the only cost is making room in the solvent, and the attractions it forms usually more than repay that, so dissolving releases heat (ΔH_soln < 0). Adding heat therefore shifts the equilibrium back toward the gas phase, at least over the ordinary range. A dissolving solid, by contrast, has to be pulled out of its lattice first, so heating helps one step and hinders another, and which effect wins varies from salt to salt.
+**Why the gas case is different in kind:** a dissolved gas molecule is already free of any lattice — it needs no energy to break out of a solid, so the only cost is making room in the solvent, and the attractions it forms usually more than repay that, so dissolving releases heat ($\Delta H_\text{soln} < 0$). Adding heat therefore shifts the equilibrium back toward the gas phase, at least over the ordinary range. A dissolving solid, by contrast, has to be pulled out of its lattice first, so heating helps one step and hinders another, and which effect wins varies from salt to salt.
 :::
 ::::
 
@@ -483,10 +483,10 @@ $$\Delta T_b = K_b m \qquad \Delta T_f = K_f m$$
 
 The boiling point rises and the freezing point falls, both in direct proportion to molality — and both using the **solvent's own** $K_b$/$K_f$ constant (different for every solvent; you are always given the value, never expected to memorize it).
 
-Figure 12.6 previews the one complication in this section. All three solutes are dissolved in the same solvent, with the same $K_f$, yet ΔT_f = K_f m as written predicts only one slope, and the three lines have different slopes — the reason is the last subsection of this chapter.
+Figure 12.6 previews the one complication in this section. All three solutes are dissolved in the same solvent, with the same $K_f$, yet $\Delta T_f = K_f$ m as written predicts only one slope, and the three lines have different slopes — the reason is the last subsection of this chapter.
 
 ![Freezing-point depression vs. molality for three solutes with different van't Hoff factors: sucrose, NaCl, and CaCl2](../assets/freezing_point_depression.svg)
-*Figure 12.6 — At the same molality, NaCl depresses water's freezing point twice as much as sucrose, and CaCl₂ three times as much — because each formula unit releases 2 or 3 particles into solution. Self-generated with matplotlib using water's real $K_f$ = 1.86 °C/m.*
+*Figure 12.6 — At the same molality, $\ce{NaCl}$ ideally depresses water's freezing point twice as much as sucrose, and $\ce{CaCl2}$ three times as much — because each formula unit releases 2 or 3 particles into solution. Self-generated with matplotlib using water's real $K_f = 1.86$ °C/m.*
 
 Figure 12.7 is the same physics on a road: enough salt on ice, and the melting point of the resulting brine drops below the air temperature.
 
@@ -659,6 +659,6 @@ Note also that $\ce{SO4^2-}$ stays intact — it is a polyatomic ion, not five s
 | `assets/like_dissolves_like.svg` | — (self-generated, RDKit) | CC BY 4.0 | Self-generated with RDKit; released under this package's CC BY 4.0 license. |
 | `assets/solubility_temperature_pressure.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
 | `assets/raoults_law.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib using the study guide's own worked-example data (water, 25 degC, P0 = 23.7 torr); released under this package's CC BY 4.0 license. |
-| `assets/freezing_point_depression.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib using the real Kf of water (1.86 degC/m); released under this package's CC BY 4.0 license. |
+| `assets/freezing_point_depression.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib using the real $K_f$ of water (1.86 degC/m); released under this package's CC BY 4.0 license. |
 | `assets/rock_salt_deicing.jpg` | https://www.flickr.com/photos/47445767@N05/37382600501 | CC BY 2.0 | James St. John, via Flickr (Openverse), CC BY 2.0. Resized from the original for web use. |
 | `assets/osmosis_semipermeable.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |

@@ -104,7 +104,7 @@ A student can determine the number of bonding and lone-pair electron domains aro
 | Purpose | Cognitive level | How to design the task |
 |---|---|---|
 | Homework | Apply | 4–6 geometry-prediction items involving lone pairs. |
-| Group discussion | Analyze | Compare bond angles across CH₄/NH₃/H₂O and connect to lone-pair count. |
+| Group discussion | Analyze | Compare bond angles across $\ce{CH4}/\ce{NH3}/\ce{H2O}$ and connect to lone-pair count. |
 | Quiz | Apply | One lone-pair geometry-prediction item. |
 | Exam | Analyze | Combine with Objective 10.2b (geometry determines whether the molecule is polar). |
 | Project/activity | Apply | Students predict and sketch the geometry of 5 lone-pair-containing molecules. |
@@ -122,28 +122,28 @@ A student can determine whether a diatomic molecule is polar based on whether it
 - Constraint: include at least one of each type.
 - Contexts: common diatomic molecules.
 - Formats: multiple-choice.
-- Worked instantiation: see the practice sheet (identifying the polar molecule among BeCl₂, Br₂, BF₃, IBr, CO₂ — note IBr is the diatomic case here).
+- Worked instantiation: see the practice sheet (identifying the polar molecule among $\ce{BeCl2}$, $\ce{Br2}$, $\ce{BF3}$, $\ce{IBr}$, $\ce{CO2}$ — note $\ce{IBr}$ is the diatomic case here).
 
 **2. Inverse — name a polar and a nonpolar diatomic molecule**
 - Variables & ranges: open-ended.
 - Constraint: correct classification justification.
 - Contexts: any diatomic molecule.
 - Formats: short-answer.
-- Worked instantiation: "Name one polar and one nonpolar diatomic molecule." → Polar: e.g., HCl (different elements); nonpolar: e.g., N₂ (same element).
+- Worked instantiation: "Name one polar and one nonpolar diatomic molecule." → Polar: e.g., $\ce{HCl}$ (different elements); nonpolar: e.g., $\ce{N2}$ (same element).
 
 **3. Conceptual — why same-element diatomics are always nonpolar**
 - Variables & ranges: qualitative.
 - Constraint: must reference zero electronegativity difference.
 - Contexts: any homonuclear diatomic molecule.
 - Formats: short-answer.
-- Worked instantiation: "Why is O₂ necessarily nonpolar?" → Both atoms are identical, so their electronegativities are exactly equal — the electronegativity difference is zero, meaning neither atom pulls the shared electrons more than the other.
+- Worked instantiation: "Why is $\ce{O2}$ necessarily nonpolar?" → Both atoms are identical, so their electronegativities are exactly equal — the electronegativity difference is zero, meaning neither atom pulls the shared electrons more than the other.
 
 **4. Error analysis**
 - Variables & ranges: a student assumes any diatomic molecule with a "big" atom and a "small" atom must be polar.
 - Constraint: correction must clarify that only electronegativity difference (not size) determines diatomic polarity.
 - Contexts: a same-element diatomic with very different atomic sizes on the two "sides" being confused (not directly applicable, so reframe as any misconception about size vs. electronegativity).
 - Formats: short-answer.
-- Worked instantiation: "A student assumes Cl₂ might be slightly polar since chlorine atoms are 'large.' What's the actual determining factor?" → Diatomic polarity depends entirely on electronegativity *difference* between the two atoms, not atomic size; since both atoms in Cl₂ are identical, the electronegativity difference is exactly zero, making it strictly nonpolar regardless of atomic size.
+- Worked instantiation: "A student assumes $\ce{Cl2}$ might be slightly polar since chlorine atoms are 'large.' What's the actual determining factor?" → Diatomic polarity depends entirely on electronegativity *difference* between the two atoms, not atomic size; since both atoms in $\ce{Cl2}$ are identical, the electronegativity difference is exactly zero, making it strictly nonpolar regardless of atomic size.
 
 ### Design guidance by purpose
 
@@ -175,7 +175,7 @@ A student can determine whether a polyatomic molecule is polar by checking both 
 - Constraint: student must reason about relative electronegativity differences.
 - Contexts: the methyl halide series or similar.
 - Formats: multiple-choice.
-- Worked instantiation: see the practice sheet (largest dipole moment among CH₃F, CH₃Cl, CH₃Br, CH₃I).
+- Worked instantiation: see the practice sheet (largest dipole moment among $\ce{CH3F}$, $\ce{CH3Cl}$, $\ce{CH3Br}$, $\ce{CH3I}$).
 
 **3. Conceptual — why symmetric molecules with polar bonds can be nonpolar**
 - Variables & ranges: qualitative, using $\ce{CO2}$ or $\ce{BF3}$ as the anchor example.
@@ -205,19 +205,19 @@ A student can determine whether a polyatomic molecule is polar by checking both 
 
 ### Target understanding
 
-A student can determine the hybridization (sp, sp², sp³) of a central atom from its electron-domain count, and can explain valence bond theory's potential-energy argument for bond formation.
+A student can determine the hybridization (sp, $sp^2$, $sp^3$) of a central atom from its electron-domain count, and can explain valence bond theory's potential-energy argument for bond formation.
 
 ### Question guides
 
 **1. Forward — determine hybridization from domain count**
 - Variables & ranges: a central atom with 2, 3, or 4 electron domains (bonding + lone pair).
-- Constraint: correct domain-to-hybridization mapping (2→sp, 3→sp², 4→sp³).
+- Constraint: correct domain-to-hybridization mapping (2→sp, 3→$sp^2$, 4→$sp^3$).
 - Contexts: any molecule.
 - Formats: workout.
 - Worked instantiation: see the study guide's worked example ($\ce{PCl3}$: $sp^3$).
 
 **2. Inverse — name a molecule with a given hybridization**
-- Variables & ranges: sp, sp², or sp³.
+- Variables & ranges: sp, $sp^2$, or $sp^3$.
 - Constraint: example's central atom must actually match the stated hybridization.
 - Contexts: any hybridization type.
 - Formats: short-answer.

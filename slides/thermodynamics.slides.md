@@ -15,16 +15,16 @@ theme: paper
 <!-- slide 2col -->
 ## Chapter Learning Objectives
 <!-- @left -->
-- **Objective 17.1a** — Define entropy via microstates and predict the sign of ΔS
+- **Objective 17.1a** — Define entropy via microstates and predict the sign of $\Delta S$
 - **Objective 17.1b** — Calculate the standard entropy of a reaction
 - **Objective 17.2a** — State the laws of thermodynamics and explain the second law as the spontaneity criterion
 - **Objective 17.2b** — Explain the third law's role in absolute entropy
 - **Objective 17.3a** — Define Gibbs free energy and apply the spontaneity criterion
 <!-- @right -->
 - **Objective 17.3b** — Calculate standard free energy of reaction
-- **Objective 17.3c** — Determine transition temperatures by setting ΔG = 0
-- **Objective 17.3d** — Relate ΔG° to the equilibrium constant K
-- **Objective 17.3e** — Calculate ΔG under non-standard conditions and predict reaction direction
+- **Objective 17.3c** — Determine transition temperatures by setting $\Delta G = 0$
+- **Objective 17.3d** — Relate $\Delta G^\circ$ to the equilibrium constant K
+- **Objective 17.3e** — Calculate $\Delta G$ under non-standard conditions and predict reaction direction
 
 <!-- slide template=outline -->
 ## Roadmap
@@ -41,7 +41,7 @@ graph TD
   C --> D["Delta G = Delta H - T Delta S<br/>sign determines spontaneity"]
   D --> E["Delta G-naught = -RT ln K<br/>links back to Ch. 14's K"]
 }}
-**Visual description:** entropy's microstate definition leads to the second law, motivating Gibbs free energy. The sign of ΔG determines spontaneity, and ΔG° connects back to Chapter 14's K.
+**Visual description:** entropy's microstate definition leads to the second law, motivating Gibbs free energy. The sign of $\Delta G$ determines spontaneity, and $\Delta G^\circ$ connects back to Chapter 14's K.
 
 <!-- slide main-side -->
 ## Two tendencies, four outcomes
@@ -72,7 +72,7 @@ Distribution \(c), 2-2 split, has the MOST microstates → highest entropy, most
 ## Entropy trends
 - Gas ≫ Liquid > Solid
 - More complex molecules (same state) → higher entropy
-- Entropy is a state function: ΔS = Sf − Si
+- Entropy is a state function: $\Delta S$ = Sf − Si
 
 <!-- slide main-side -->
 ## Both entropy trends, in one chart
@@ -86,9 +86,9 @@ Distribution \(c), 2-2 split, has the MOST microstates → highest entropy, most
 Water appears twice: 69.9 as liquid, 188.8 as gas. The phase change is the largest single effect in the chapter.
 
 <!-- slide step -->
-## Worked example — ΔS°rxn
-4Fe(s) + 3O₂(g) → 2Fe₂O₃(s). S°: Fe=27.3, O₂=205.2, Fe₂O₃=87.4 J/K·mol
-- ΔS° = 2(87.4) − [4(27.3)+3(205.2)]{{attrs[.fragment]}}
+## Worked example — $\Delta S^\circ_\text{rxn}$
+$\ce{4Fe(s) + 3O2(g) -> 2Fe2O3(s)}$. $S^\circ$: Fe=27.3, $\ce{O2} = 205.2$, $\ce{Fe2O3} = 87.4$ J/K·mol
+- $\Delta S^\circ = 2(87.4)$ − [4(27.3)+3(205.2)]{{attrs[.fragment]}}
 - **= −550 J/K·mol** (3 mol gas consumed → strongly negative, as expected){{attrs[.fragment]}}
 
 <!-- slide template=section -->
@@ -104,7 +104,7 @@ Water appears twice: 69.9 as liquid, 188.8 as gas. The phase change is the large
 <!-- slide -->
 ## The third law in action
 ![Diamond](../assets/diamond.jpg =420x)
-Diamond's S° = 2.4 J/K·mol — small because of its highly ordered lattice; the third law lets us report this as an ABSOLUTE value.
+Diamond's $S^\circ = 2.4$ J/K·mol — small because of its highly ordered lattice; the third law lets us report this as an ABSOLUTE value.
 
 <!-- slide -->
 ## The second law, precisely
@@ -118,33 +118,33 @@ The system's OWN entropy can decrease in a spontaneous process — only the univ
 <!-- slide -->
 ## Gibbs free energy
 $$G = H - TS \qquad \Delta G = \Delta H - T\Delta S$$
-| ΔG | Meaning |
+| $\Delta G$ | Meaning |
 |---|---|
 | < 0 | Spontaneous forward |
 | > 0 | Spontaneous reverse |
 | = 0 | Equilibrium |
 
 <!-- slide step -->
-## Worked example — ΔG°rxn
-4Fe(s) + 3O₂(g) → 2Fe₂O₃(s). ΔG°f: Fe=0, O₂=0, Fe₂O₃=−742.2 kJ/mol
-- ΔG° = 2(−742.2) − 0{{attrs[.fragment]}}
+## Worked example — $\Delta G^\circ_\text{rxn}$
+$\ce{4Fe(s) + 3O2(g) -> 2Fe2O3(s)}$. $\Delta G^\circ_f$: Fe=0, $\ce{O2} = 0$, $\ce{Fe2O3} = -742.2$ kJ/mol
+- $\Delta G^\circ = 2(-742.2) - 0${{attrs[.fragment]}}
 - **= −1484.4 kJ/mol**{{attrs[.fragment]}}
 
 <!-- slide -->
-## Temperature can flip the sign of ΔG
+## Temperature can flip the sign of $\Delta G$
 ![Gibbs temperature crossover](../assets/gibbs_temperature_crossover.svg =620x)
 
 <!-- slide step -->
 ## Worked example — transition temperature
-CaCO₃(s) ⇌ CaO(s) + CO₂(g). ΔH°=177.8 kJ/mol, ΔS°=160.5 J/K·mol
-- At 298 K: ΔG°=130.0 kJ/mol > 0 (nonspontaneous){{attrs[.fragment]}}
-- Set ΔG°=0: T = ΔH°/ΔS°{{attrs[.fragment]}}
-- **T = 1108 K = 835°C**{{attrs[.fragment]}}
+$\ce{CaCO3(s) <=> CaO(s) + CO2(g)}$. $\Delta H^\circ = 177.8$ kJ/mol, $\Delta S^\circ = 160.5$ J/K·mol
+- At 298 K: $\Delta G^\circ = 130.0$ kJ/mol > 0 (nonspontaneous){{attrs[.fragment]}}
+- Set $\Delta G^\circ = 0$: $T = \Delta H^\circ/\Delta S^\circ${{attrs[.fragment]}}
+- **$T = 1108\ \text{K}$ = 835 °C**{{attrs[.fragment]}}
 
 <!-- slide -->
-## Phase transitions: the same ΔG=0 logic
+## Phase transitions: the same $\Delta G = 0$ logic
 ![Ice melting](../assets/ice_melting.jpg =420x)
-At 0°C, 1 atm: ice/water equilibrium. ΔH=6.01 kJ/mol, ΔS=22.0 J/K·mol → ΔH/ΔS = 273 K ✓
+At 0°C, 1 atm: ice/water equilibrium. $\Delta H = 6.01$ kJ/mol, $\Delta S = 22.0$ J/K·mol → $\Delta H/\Delta S = 273$ K ✓
 
 <!-- slide -->
 ## Free energy vs. reaction progress
@@ -154,23 +154,23 @@ At 0°C, 1 atm: ice/water equilibrium. ΔH=6.01 kJ/mol, ΔS=22.0 J/K·mol → Δ
 ## Free energy meets equilibrium
 $$\Delta G = \Delta G^\circ + RT\ln Q \qquad \Delta G^\circ = -RT\ln K$$
 :::warning
-ΔG° is ONE fixed number (for a given reaction at a given temperature). ΔG changes as Q changes during the reaction.
+$\Delta G^\circ$ is ONE fixed number (for a given reaction at a given temperature). $\Delta G$ changes as Q changes during the reaction.
 :::
 
 <!-- slide step -->
-## Worked example — ΔG° → K
-N₂O₄(g) ⇌ 2NO₂(g). ΔG°f: N₂O₄=97.9, NO₂=51.3 kJ/mol
-- ΔG°rxn = 2(51.3) − 97.9 = 4.7 kJ/mol{{attrs[.fragment]}}
-- Predict: ΔG°>0 (small) → K below 1, not by orders of magnitude{{attrs[.fragment]}}
-- **K_p = e^(−4700/(8.314×298)) = 0.150** ✓{{attrs[.fragment]}}
+## Worked example — $\Delta G^\circ$ → K
+$\ce{N2O4(g) <=> 2NO2(g)}$. $\Delta G^\circ_f$: $\ce{N2O4} = 97.9$, $\ce{NO2} = 51.3$ kJ/mol
+- $\Delta G^\circ_\text{rxn} = 2(51.3) - 97.9 = 4.7$ kJ/mol{{attrs[.fragment]}}
+- Predict: $\Delta G^\circ > 0$ (small) → K below 1, not by orders of magnitude{{attrs[.fragment]}}
+- **$K_p = e^{-4700/(8.314\times 298)} = 0.150$** ✓{{attrs[.fragment]}}
 
 <!-- slide step -->
-## Worked example — ΔG under real conditions
-2NH₃(g) → 3H₂(g) + N₂(g), ΔG°=33.0 kJ/mol. P: N₂=0.870, H₂=0.250, NH₃=0.129 atm
-- Q = (0.250³×0.870)/(0.129²) = 0.817{{attrs[.fragment]}}
-- ΔG = 33,000 + RT ln(0.817){{attrs[.fragment]}}
+## Worked example — $\Delta G$ under real conditions
+$\ce{2NH3(g) -> 3H2(g) + N2(g)}$, $\Delta G^\circ = 33.0$ kJ/mol. P: $\ce{N2} = 0.870$, $\ce{H2} = 0.250$, $\ce{NH3} = 0.129$ atm
+- $Q = (0.250^3 \times 0.870)/(0.129^2) = 0.817${{attrs[.fragment]}}
+- $\Delta G = 33{,}000\ \text{J/mol} + (8.314\ \text{J/(mol·K)})(298\ \text{K})\ln(0.817)${{attrs[.fragment]}}
 - **= 32.5 kJ/mol** (still nonspontaneous forward){{attrs[.fragment]}}
 
 <!-- slide template=closing -->
 # One number explains it all
-Gibbs free energy combines enthalpy and entropy into a single spontaneity criterion. ΔG° = −RT ln K explains, in energy terms, why equilibrium constants (Ch. 14) are what they are — and reappears in Chapter 18 as ΔG° = −nFE°.
+Gibbs free energy combines enthalpy and entropy into a single spontaneity criterion. $\Delta G^\circ$ = −RT ln K explains, in energy terms, why equilibrium constants (Ch. 14) are what they are — and reappears in Chapter 18 as $\Delta G^\circ$ = −nFE°.

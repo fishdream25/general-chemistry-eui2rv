@@ -18,7 +18,7 @@ theme: paper
 - **Objective 6.1a** — Distinguish types of energy, types of systems, and exothermic/endothermic processes
 - **Objective 6.1b** — Apply the first law of thermodynamics
 - **Objective 6.2a** — Define enthalpy and apply thermochemical-equation rules
-- **Objective 6.2b** — Convert between ΔH and ΔU for a reaction
+- **Objective 6.2b** — Convert between $\Delta H$ and $\Delta U$ for a reaction
 <!-- @right -->
 - **Objective 6.3a** — Apply specific heat and heat capacity
 - **Objective 6.3b** — Use constant-volume and constant-pressure calorimetry
@@ -79,15 +79,15 @@ $$\Delta U=q+w \qquad w=-P\Delta V\ \text{(gas expansion or compression against 
 
 <!-- slide step -->
 ## Worked example — heat from mass
-$\ce{2SO2+O2->2SO3}$, ΔH=−198.2 kJ, 87.9 g SO₂
+$\ce{2SO2+O2->2SO3}$, $\Delta H = -198.2$ kJ, 87.9 g $\ce{SO2}$
 - $87.9/64.07\times(-198.2/2)$ {{attrs[.fragment]}}
 - **= −136 kJ**{{attrs[.fragment]}}
 
 <!-- slide step -->
-## ΔH vs. ΔU for gas reactions
+## $\Delta H$ vs. $\Delta U$ for gas reactions
 $$\Delta U=\Delta H-\Delta nRT$$
-$\ce{2CO+O2->2CO2}$, ΔH=−566.0 kJ/mol{{attrs[.fragment]}}
-Δn = −1 → **ΔU = −563.5 kJ**{{attrs[.fragment]}}
+$\ce{2CO+O2->2CO2}$, $\Delta H = -566.0$ kJ/mol{{attrs[.fragment]}}
+$\Delta n = -1$ → **$\Delta U = -563.5$ kJ**{{attrs[.fragment]}}
 
 <!-- slide template=section -->
 # 3. Calorimetry
@@ -95,7 +95,7 @@ $\ce{2CO+O2->2CO2}$, ΔH=−566.0 kJ/mol{{attrs[.fragment]}}
 <!-- slide -->
 ## Water is the outlier
 ![Specific heats compared](../assets/specific_heat_comparison.svg =760x)
-4.184 J g⁻¹ °C⁻¹ against gold's 0.129 — about 32 times more heat for the same rise
+4.184 $\text{J}\,\text{g}^{-1}\,\text{°C}^{-1}$ against gold's 0.129 — about 32 times more heat for the same rise
 
 <!-- slide -->
 ## Two calorimeters, two quantities
@@ -108,7 +108,7 @@ $$q=ms\Delta T \qquad C=ms$$
 
 <!-- slide -->
 ## Bomb calorimetry (constant volume)
-$$q_{rxn}=-(q_{water}+q_{bomb})=\Delta U_{rxn}$$
+$$q_\text{rxn}=-(q_\text{water}+q_\text{bomb})=\Delta U_\text{rxn}$$
 ![Bomb calorimeter schematic](../assets/bomb_calorimeter.svg =360x)
 
 <!-- slide -->
@@ -117,14 +117,14 @@ $$q_{rxn}=-(q_{water}+q_{bomb})=\Delta U_{rxn}$$
 
 <!-- slide step -->
 ## Worked example — glucose combustion
-3.12 g glucose, 775 g water, bomb C=893 J/°C, ΔT=11.8°C
+3.12 g glucose, 775 g water, bomb C=893 J/°C, $\Delta T = 11.8$°C
 - $q=-[(4.184)(775)(11.8)+(893)(11.8)]$ {{attrs[.fragment]}}
 - **= −48.8 kJ**{{attrs[.fragment]}}
 
 <!-- slide -->
 ## Constant-pressure calorimetry
-$$q_{rxn}=-(q_{water}+q_{cal})=\Delta H_{rxn}$$
-Coffee-cup calorimeter: HCl + NaOH neutralization example gives **q_soln = 2.9×10³ J**, so **ΔH_rxn = −2.9×10³ J** (exothermic)
+$$q_\text{rxn}=-(q_\text{water}+q_\text{cal})=\Delta H_\text{rxn}$$
+Coffee-cup calorimeter: HCl + NaOH neutralization example gives **$q_\text{soln} = 2.9\times10^{3}$ J**, so **$\Delta H_\text{rxn} = -2.9\times10^{3}$ J** for the amounts reacted (exothermic)
 
 <!-- slide template=section -->
 # 4. Standard Enthalpy
@@ -144,7 +144,7 @@ A reaction enthalpy is a **difference** of heights, so, because a balanced equat
 ![Hess's law cycle](../assets/hess_law_cycle.svg =560x)
 
 <!-- slide step -->
-## Worked example — FeCl₃ formation
+## Worked example — $\ce{FeCl3}$ formation
 $\Delta H_1^\circ=-341.8$, $\Delta H_2^\circ=-115.4$ kJ
 - $\Delta H_f^\circ=\Delta H_1^\circ+\tfrac12\Delta H_2^\circ$ {{attrs[.fragment]}}
 - **= −399.5 kJ**{{attrs[.fragment]}}
@@ -157,4 +157,4 @@ $\Delta H_\text{rxn}^\circ=-826.7$ kJ; 35.0 g Al reacted
 
 <!-- slide template=closing -->
 # From general law to calculable numbers
-The first law of thermodynamics is a universal accounting rule; enthalpy specializes it to constant pressure; calorimetry measures heat flow directly (ΔH at constant pressure, ΔU at constant volume); Hess's Law and standard formation enthalpies let you calculate a reaction's enthalpy from tabulated data without measuring that reaction itself — because enthalpy is a state function.
+The first law of thermodynamics is a universal accounting rule; enthalpy specializes it to constant pressure; calorimetry measures heat flow directly ($\Delta H$ at constant pressure, $\Delta U$ at constant volume); Hess's Law and standard formation enthalpies let you calculate a reaction's enthalpy from tabulated data without measuring that reaction itself — because enthalpy is a state function.

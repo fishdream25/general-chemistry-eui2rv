@@ -16,7 +16,7 @@ title: Chapter 15: Acids and Bases
 :::success
 **Chapter Learning Objectives**
 - Identify conjugate acid-base pairs and write stepwise ionization equations for diprotic/polyprotic acids.
-- Calculate pH and pOH from [H⁺] or [OH⁻], and recognize common strong and weak acids/bases.
+- Calculate pH and pOH from $[\ce{H+}]$ or $[\ce{OH-}]$, and recognize common strong and weak acids/bases.
 - Explain acid-strength trends (hydrohalic acids, oxoacids) and predict whether a salt solution is acidic, basic, or neutral.
 - Identify Lewis acids and bases in a reaction.
 - Calculate pH for strong acids/bases, weak acids/bases, polyprotic acids, and salt solutions.
@@ -35,14 +35,14 @@ graph TD
   C --> E
 }}
 
-**Visual description:** conjugate acid-base pairs and water's autoionization (Kw) establish the vocabulary. From there, the strong/weak classification and the structure-property trends explaining acid strength build toward the chapter's quantitative core: pH calculations for strong, weak, and polyprotic acids and bases and for salts. Lewis acid-base theory branches off separately as a generalization of the Brønsted definition.
+**Visual description:** conjugate acid-base pairs and water's autoionization ($K_w$) establish the vocabulary. From there, the strong/weak classification and the structure-property trends explaining acid strength build toward the chapter's quantitative core: pH calculations for strong, weak, and polyprotic acids and bases and for salts. Lewis acid-base theory branches off separately as a generalization of the Brønsted definition.
 
 ## 15.1 General Concepts{{attrs[#blk-ch15sec01]}}
 
 :::success
 **Learning Objectives**
 - {{sp[info] Objective 15.1a}} Identify conjugate acid-base pairs in a reaction, including for diprotic/polyprotic acids.
-- {{sp[info] Objective 15.1b}} Write the water autoionization equilibrium and calculate pH/pOH from [H⁺] or [OH⁻].
+- {{sp[info] Objective 15.1b}} Write the water autoionization equilibrium and calculate pH/pOH from $[\ce{H+}]$ or $[\ce{OH-}]$.
 - {{sp[info] Objective 15.1b}} Identify common strong and weak acids/bases from memory.
 :::
 
@@ -57,7 +57,7 @@ Identify the conjugate acid-base pairs in $\ce{CH3COOH(aq) + H2O(l) <=> CH3COO-(
 ::: tab Solution
 $\ce{CH3COOH}$ (acid) and $\ce{CH3COO-}$ (its conjugate base) are one pair; $\ce{H2O}$ (base) and $\ce{H3O+}$ (its conjugate acid) are the other pair.
 
-**How to find them reliably:** look at each species on the left and find the species on the right that differs from it by exactly one $\ce{H+}$. $\ce{CH3COOH}$ minus one H⁺ is $\ce{CH3COO-}$; $\ce{H2O}$ plus one H⁺ is $\ce{H3O+}$. Charge bookkeeping is the check: removing H⁺ always makes the charge one unit *more negative*.
+**How to find them reliably:** look at each species on the left and find the species on the right that differs from it by exactly one $\ce{H+}$. $\ce{CH3COOH}$ minus one $\ce{H+}$ is $\ce{CH3COO-}$; $\ce{H2O}$ plus one $\ce{H+}$ is $\ce{H3O+}$. Charge bookkeeping is the check: removing $\ce{H+}$ always makes the charge one unit *more negative*.
 :::
 ::::
 
@@ -100,7 +100,7 @@ Figure 15.1 is the crudest version of the measurement this whole chapter refines
 ![Two strips of litmus paper showing the color change from blue (basic) to pink/red (acidic)](../assets/litmus_paper_test.jpg =700x)
 *Figure 15.1 — Litmus paper is a simple acid-base indicator: blue litmus turns red/pink in acid, and red litmus turns blue in base. Source: Chemicalinterest, via Wikimedia Commons, public domain.*
 
-### Water autoionizes: K_w, pH, and pOH
+### Water autoionizes: $K_w$, pH, and pOH
 
 **Water autoionizes** even in the absence of any added acid or base:
 
@@ -171,15 +171,15 @@ Two entries on the weak-acid list are worth pausing on: $\ce{HSO4-}$ is an **ani
 **Two rules follow, and both matter later:**
 
 - **A stronger acid has a weaker conjugate base.** If an acid gives up its proton eagerly, the resulting base has little appetite to take it back. $\ce{Cl-}$, the conjugate base of the very strong $\ce{HCl}$, is so weak that a solution of a chloride salt whose cation is also not acidic, such as NaCl, is neutral.
-- **$\ce{H3O+}$ is the strongest acid, and $\ce{OH-}$ the strongest base, that can exist in water.** Anything stronger simply reacts with the solvent. This is the **leveling effect**: HCl and HClO₄ have very different intrinsic strengths, but in water both transfer their protons 100% to water, forming $\ce{H3O+}$, so both behave identically. Water levels them to its own limit.
+- **$\ce{H3O+}$ is the strongest acid, and $\ce{OH-}$ the strongest base, that can exist in water.** Anything stronger simply reacts with the solvent. This is the **leveling effect**: $\ce{HCl}$ and $\ce{HClO4}$ have very different intrinsic strengths, but in water both transfer their protons 100% to water, forming $\ce{H3O+}$, so both behave identically. Water levels them to its own limit.
 
 ![A ladder of acids paired with their conjugate bases, with H3O+ and OH- marked as water's upper and lower limits](../assets/conjugate_strength_ladder.svg)
-*Figure 15.3 — Reading a row across shows the inverse relationship: strong acids at the top pair with negligible bases, and very weak acids at the bottom pair with appreciable ones. The two highlighted rows are water's two conjugate pairs (H3O+/H2O and H2O/OH-), which bracket the range of acid and base strengths that can persist in aqueous solution. Self-generated with matplotlib.*
+*Figure 15.3 — Reading a row across shows the inverse relationship: strong acids at the top pair with negligible bases, and very weak acids at the bottom pair with appreciable ones. The two highlighted rows are water's two conjugate pairs ($\ce{H3O+}/\ce{H2O}$ and $\ce{H2O}/\ce{OH-}$), which bracket the range of acid and base strengths that can persist in aqueous solution. Self-generated with matplotlib.*
 
 Figure 15.3 also explains a fact you will use constantly in §15.2: **the conjugate base of a *weak* acid is strong enough to matter**, which is why an acetate solution is basic — while the conjugate base of a *strong* acid is not, which is why a chloride solution is not.
 
 **Self-check:**
-- Which has the lower pH: 0.001 M HCl or 1.0 M $\ce{CH3COOH}$ ($K_a = 1.8\times10^{-5}$)? Reason it out before calculating.
+- Which has the lower pH: 0.001 M $\ce{HCl}$ or 1.0 M $\ce{CH3COOH}$ ($K_a = 1.8\times10^{-5}$)? Reason it out before calculating.
 - Why does a diprotic acid need two separate $K_a$ values rather than one?
 
 > **Where this goes next.** §15.1 tells you *which* acids are strong and weak by asking you to memorize a list. §15.2 asks the better question: what is it about a molecule's structure that makes it a strong or weak acid in the first place?
@@ -215,10 +215,10 @@ For **oxoacids**, two separate trends apply — keep them distinct:
 1. **Same oxidation number, different central atom:** acid strength increases with the central atom's *electronegativity* (e.g., $\ce{HClO3} > \ce{HBrO3}$, since Cl is more electronegative than Br).
 2. **Same central atom, different oxidation number:** acid strength increases as the central atom's oxidation number (and number of attached oxygens) increases.
 
-Figure 15.5 puts numbers on the second trend. Remember that a *lower* pKa means a *stronger* acid, so the descending bars are ascending strength.
+Figure 15.5 puts numbers on the second trend. Remember that a *lower* $\ce{p}K_a$ means a *stronger* acid, so the descending bars are ascending strength.
 
 ![Bar chart of approximate pKa1 values for HClO, HClO2, HClO3, HClO4, decreasing as oxygen count increases](../assets/oxoacid_strength_trend.svg)
-*Figure 15.5 — $\ce{HClO4} > \ce{HClO3} > \ce{HClO2} > \ce{HClO}$: with chlorine as the central atom throughout, each additional oxygen pulls more electron density away from the O–H bond, making the acid stronger (lower pKa). Self-generated with matplotlib; approximate, commonly cited literature pKa1 values.*
+*Figure 15.5 — $\ce{HClO4} > \ce{HClO3} > \ce{HClO2} > \ce{HClO}$: with chlorine as the central atom throughout, each additional oxygen pulls more electron density away from the O–H bond, making the acid stronger (lower $\ce{p}K_a$). Self-generated with matplotlib; approximate, commonly cited literature $\ce{p}K_{a1}$ values.*
 
 :::: tabs
 ::: tab Problem
@@ -231,7 +231,7 @@ Rank each set from weakest to strongest acid and name the trend you used: (a) $\
 
 **\(c) $\ce{HIO4} < \ce{HBrO4}$ — same oxidation number (+7), different central atom.** Bromine is more electronegative than iodine, so it withdraws more electron density and makes the stronger acid.
 
-**(d) $\ce{HClO} < \ce{HBrO2}$, but the two trends now point in opposite directions.** Chlorine is more electronegative than bromine (favoring HClO), yet bromine here carries a +3 oxidation state against chlorine's +1 (favoring HBrO₂). **Oxidation number is the stronger effect**, so HBrO₂ wins.
+**(d) $\ce{HClO} < \ce{HBrO2}$, but the two trends now point in opposite directions.** Chlorine is more electronegative than bromine (favoring $\ce{HClO}$), yet bromine here carries a +3 oxidation state against chlorine's +1 (favoring $\ce{HBrO2}$). **Oxidation number is the stronger effect**, so $\ce{HBrO2}$ wins.
 
 **Why (d) is the hard case:** the two rules are stated for situations where only *one* variable changes. When both change at once, neither rule applies cleanly, and the oxidation-number effect generally dominates — but this is a judgment call, not a derivation. Exam questions almost always hold one variable fixed for exactly this reason.
 :::
@@ -410,20 +410,20 @@ For each, find the lone pair (that species is the base) and the electron-poor ce
 Figure 15.7 is worth looking at before doing any calculation, simply to calibrate what answers are plausible — a pH of 15 or −2 for an ordinary solution should look wrong immediately.
 
 ![The pH scale with common household substances marked](../assets/ph_scale.svg =800x)
-*Figure 15.7 — pH spans a huge range of [H⁺] values (14 orders of magnitude) compressed into one logarithmic scale. Self-generated with matplotlib; approximate, commonly cited pH values.*
+*Figure 15.7 — pH spans a huge range of $[\ce{H+}]$ values (14 orders of magnitude) compressed into one logarithmic scale. Self-generated with matplotlib; approximate, commonly cited pH values.*
 
 ==Four situations, one method.== Every one of them is a Chapter 14 ICE table; what differs is only which constant you use, and whether the table is needed at all. Before calculating anything, ask which situation you are in:
 
 | Situation | Method | Constant needed |
 |---|---|---|
-| strong acid or base | read $[\ce{H+}]$ or $[\ce{OH-}]$ straight off the concentration (times the number of H⁺ or OH⁻ released per formula unit) | none |
+| strong acid or base | read $[\ce{H+}]$ or $[\ce{OH-}]$ straight off the concentration (times the number of $\ce{H+}$ or $\ce{OH-}$ released per formula unit) | none |
 | weak acid or base | ICE table | $K_a$ or $K_b$ |
 | polyprotic acid | ICE table on step 1, then step 2 | $K_{a_1}$, $K_{a_2}$ |
 | salt solution | ICE table on the hydrolyzing ion | $K_b = K_w/K_a$ (or vice versa) |
 
 ### Strong acids and bases: no ICE table needed
 
-**Strong acids/bases** ionize completely, so $[\ce{H+}]$ (or $[\ce{OH-}]$) equals the initial concentration directly (multiplied by the number of H+ or OH- released per formula unit).
+**Strong acids/bases** ionize completely, so $[\ce{H+}]$ (or $[\ce{OH-}]$) equals the initial concentration directly (multiplied by the number of $\ce{H+}$ or $\ce{OH-}$ released per formula unit).
 
 :::warning
 For a base like $\ce{Ba(OH)2}$, $[\ce{OH-}]$ is **double** the initial concentration — two hydroxides per formula unit. Forgetting this is worth 0.30 pH units, which is enough to make an answer wrong without looking obviously wrong. Count the ionizable groups in the formula every time.
@@ -590,7 +590,7 @@ $$[\ce{SO3^2-}] = K_{a_2}\cdot\frac{[\ce{HSO3-}]}{[\ce{H+}]} = K_{a_2} = 6.3\tim
 :::
 ::::
 
-### Salt solutions, and K_a·K_b = K_w
+### Salt solutions, and $K_a \cdot K_b = K_w$
 
 A **salt solution's** pH comes from hydrolysis of the conjugate ion. The constant you need is usually not the one you are given, and the bridge between them is:
 
@@ -659,7 +659,7 @@ $$\ce{pH} = -\log(1.05\times10^{-5}) = 4.98$$
 
 ## Synthesis
 
-==This chapter is Chapter 14's equilibrium toolkit applied to one recurring cast of species: $\ce{H+}$, $\ce{OH-}$, and conjugate acid-base pairs.== Every pH calculation for weak, polyprotic, or salt solutions is the same ICE-table method from Chapter 14 (strong acids and bases dissociate completely, so their pH follows directly from stoichiometry), just with a new $K$ each time ($K_a$, $K_b$, or a hydrolysis constant related by $K_aK_b=K_w$). The same equilibrium toolkit reappears in Chapter 16 for buffers, titrations, and solubility equilibria, extended to situations where several species are present at once (with additions such as a neutralization step before the equilibrium step, and the solubility product Ksp).
+==This chapter is Chapter 14's equilibrium toolkit applied to one recurring cast of species: $\ce{H+}$, $\ce{OH-}$, and conjugate acid-base pairs.== Every pH calculation for weak, polyprotic, or salt solutions is the same ICE-table method from Chapter 14 (strong acids and bases dissociate completely, so their pH follows directly from stoichiometry), just with a new $K$ each time ($K_a$, $K_b$, or a hydrolysis constant related by $K_aK_b=K_w$). The same equilibrium toolkit reappears in Chapter 16 for buffers, titrations, and solubility equilibria, extended to situations where several species are present at once (with additions such as a neutralization step before the equilibrium step, and the solubility product $K_{sp}$).
 
 ## Asset and License Record for This Chapter
 
@@ -669,7 +669,7 @@ $$\ce{pH} = -\log(1.05\times10^{-5}) = 4.98$$
 | `assets/strong_vs_weak_ionization.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
 | `assets/conjugate_strength_ladder.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
 | `assets/hydrohalic_acids_grid.svg` | — (self-generated, RDKit) | CC BY 4.0 | Self-generated with RDKit; released under this package's CC BY 4.0 license. |
-| `assets/oxoacid_strength_trend.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; approximate, commonly cited literature pKa1 values; released under this package's CC BY 4.0 license. |
+| `assets/oxoacid_strength_trend.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; approximate, commonly cited literature $\ce{p}K_{a1}$ values; released under this package's CC BY 4.0 license. |
 | `assets/lewis_acid_base.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
 | `assets/ph_scale.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; approximate, commonly cited pH values for real substances (actual values vary with concentration/brand); released under this package's CC BY 4.0 license. |
 | `assets/red_cabbage_indicator.jpg` | https://commons.wikimedia.org/wiki/File:Extracto_de_col_morada,_indicador_ácido_base.jpg | CC BY-SA 4.0 | KennyMex, via Wikimedia Commons, CC BY-SA 4.0. |

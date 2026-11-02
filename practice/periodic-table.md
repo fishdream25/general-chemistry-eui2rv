@@ -142,7 +142,7 @@ Going down a group, $Z$ increases, and $Z_\text{eff}$ increases with it — the 
 
 But each new period places the valence electrons in a **new shell**, substantially farther from the nucleus. That increase in distance more than compensates for the stronger pull, so the atom grows.
 
-Saying "$Z_\text{eff}$ decreases down a group" is a common and consequential error: it gets the ionization-energy trend right for the wrong reason, attributing to a falling Z_eff what is really caused by increasing distance.
+Saying "$Z_\text{eff}$ decreases down a group" is a common and consequential error: it gets the ionization-energy trend right for the wrong reason, attributing to a falling $Z_\text{eff}$ what is really caused by increasing distance.
 :::
 ::::
 

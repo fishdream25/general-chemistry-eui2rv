@@ -196,7 +196,7 @@ A student can calculate a component gas's partial pressure from its mole fractio
 | Purpose | Cognitive level | How to design the task |
 |---|---|---|
 | Homework | Apply | 3–4 partial-pressure/mole-fraction problems. |
-| Group discussion | Understand | Discuss how Dalton's law applies to Earth's atmosphere (N₂, O₂, Ar partial pressures). |
+| Group discussion | Understand | Discuss how Dalton's law applies to Earth's atmosphere ($\ce{N2}$, $\ce{O2}$, Ar partial pressures). |
 | Quiz | Apply | One partial-pressure calculation. |
 | Exam | Analyze | Combine with Objective 5.3b (subtract water vapor pressure, then apply Dalton's law reasoning). |
 | Project/activity | Apply | Students calculate the partial pressures of the major components of dry air at 1.00 atm. |
@@ -306,7 +306,7 @@ A student can use Graham's law to relate the effusion/diffusion rates (or times)
 - Constraint: correct square-root relationship, not a direct ratio.
 - Contexts: any two-gas comparison.
 - Formats: workout.
-- Worked instantiation: see the study guide's Figure 5.3 (H₂ vs. CO₂ effusion rate ratio).
+- Worked instantiation: see the study guide's Figure 5.3 ($\ce{H2}$ vs. $\ce{CO2}$ effusion rate ratio).
 
 **2. Inverse — find an unknown molar mass from a time ratio**
 - Variables & ranges: a known gas's molar mass and time, plus an unknown gas's time.
@@ -316,11 +316,11 @@ A student can use Graham's law to relate the effusion/diffusion rates (or times)
 - Worked instantiation: "Gas X takes 3.0 times as long to effuse as $\ce{H2}$ (2.02 g/mol) under the same conditions. What is X's molar mass?" → $t_X/t_{H_2}=\sqrt{\mathcal{M}_X/\mathcal{M}_{H_2}} \Rightarrow \mathcal{M}_X=\mathcal{M}_{H_2}\times(t_X/t_{H_2})^2=2.02\times9=18.2$ g/mol.
 
 **3. Conceptual — why the relationship is a square root, not linear**
-- Variables & ranges: qualitative, connecting to $u_{rms}=\sqrt{3RT/\mathcal{M}}$.
+- Variables & ranges: qualitative, connecting to $u_\text{rms}=\sqrt{3RT/\mathcal{M}}$.
 - Constraint: must reference that speed depends on the square root of $1/\mathcal{M}$, not $1/\mathcal{M}$ directly.
-- Contexts: the $u_{rms}$ formula.
+- Contexts: the $u_\text{rms}$ formula.
 - Formats: short-answer.
-- Worked instantiation: "Why does doubling a gas's molar mass not simply halve its effusion rate?" → Effusion rate is proportional to average speed, which scales as $\sqrt{1/\mathcal{M}}$ (from $u_{rms}=\sqrt{3RT/\mathcal{M}}$) — a square-root relationship, not a direct inverse proportionality, so doubling molar mass only reduces speed by a factor of $\sqrt{2}$, not 2.
+- Worked instantiation: "Why does doubling a gas's molar mass not simply halve its effusion rate?" → Effusion rate is proportional to average speed, which scales as $\sqrt{1/\mathcal{M}}$ (from $u_\text{rms}=\sqrt{3RT/\mathcal{M}}$) — a square-root relationship, not a direct inverse proportionality, so doubling molar mass only reduces speed by a factor of $\sqrt{2}$, not 2.
 
 **4. Error analysis**
 - Variables & ranges: a student uses molar mass ratios directly (without the square root) in Graham's law.
@@ -370,17 +370,17 @@ A student can explain that real gases deviate from ideal behavior most significa
 
 **4. Error analysis**
 - Variables & ranges: a student assumes all real gases deviate from ideal behavior in the same way (always $Z<1$).
-- Constraint: correction must note that weakly-attracting gases (H₂, He) can show $Z>1$ instead.
+- Constraint: correction must note that weakly-attracting gases ($\ce{H2}$, He) can show $Z>1$ instead.
 - Contexts: Figure 5.4 (compressibility factor chart).
 - Formats: short-answer.
-- Worked instantiation: "A student assumes the compressibility factor $Z$ is always less than 1 for real gases. What's the exception?" → Gases with very weak intermolecular attraction (like H₂ and He) can show $Z>1$ across most pressures, since their molecular-volume effect dominates over their (very weak) attractive effect.
+- Worked instantiation: "A student assumes the compressibility factor $Z$ is always less than 1 for real gases. What's the exception?" → Gases with very weak intermolecular attraction (like $\ce{H2}$ and He) can show $Z>1$ across most pressures, since their molecular-volume effect dominates over their (very weak) attractive effect.
 
 ### Design guidance by purpose
 
 | Purpose | Cognitive level | How to design the task |
 |---|---|---|
 | Homework | Understand | 3–4 real-gas-deviation prediction/explanation items. |
-| Group discussion | Analyze | Debate why H₂ and He behave differently from N₂ or CO₂ in Figure 5.4. |
+| Group discussion | Analyze | Debate why $\ce{H2}$ and He behave differently from $\ce{N2}$ or $\ce{CO2}$ in Figure 5.4. |
 | Quiz | Understand | One real-gas-deviation explanation item. |
 | Exam | Analyze | Combine with Objective 5.4a (connect back to which specific KMT assumptions fail). |
 | Project/activity | Understand | Students look up van der Waals $a$ and $b$ constants for 3 gases and relate the values to molecular size/polarity. |

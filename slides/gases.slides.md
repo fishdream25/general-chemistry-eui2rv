@@ -67,7 +67,7 @@ $$1\,\text{atm}=101325\,\text{Pa}=760\,\text{mmHg}=760\,\text{torr}$$
 ## Worked example — pressure conversion
 489 mmHg to Pa
 - $489\times\dfrac{101325}{760}$ {{attrs[.fragment]}}
-- **= 6.52×10⁴ Pa**{{attrs[.fragment]}}
+- **= $6.52\times10^{4}$ Pa**{{attrs[.fragment]}}
 
 <!-- slide template=section -->
 # 2. The Gas Laws
@@ -113,9 +113,9 @@ $P_{\mathrm{gas}} = P_{\mathrm{total}} - P_{\mathrm{water}}$ — forgetting this
 
 <!-- slide step -->
 ## Worked example — gas collected over water
-153 mL H₂, 758 mmHg total, water vapor 22.0 mmHg
+153 mL $\ce{H2}$, 758 mmHg total, water vapor 22.0 mmHg
 - $P_{H_2}=758-22.0=736$ mmHg{{attrs[.fragment]}}
-- **n = 6.08×10⁻³ mol**{{attrs[.fragment]}}
+- **$n = 6.08\times10^{-3}$ mol**{{attrs[.fragment]}}
 
 <!-- slide template=section -->
 # 4. The Kinetic Molecular Theory

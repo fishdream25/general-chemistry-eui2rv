@@ -17,7 +17,7 @@ title: Chapter 14 Assessment Guide: Chemical Equilibrium
 - Pair concentration-stress, pressure/volume-stress, and temperature-stress questions together so students build the habit of identifying *which kind* of stress is being applied before predicting a shift, rather than pattern-matching to a memorized answer.
 - Include at least one question per relevant objective that requires students to state whether $K$ itself changes, not just whether the equilibrium position shifts — these are frequently conflated.
 
-## Objective 14.1a: Derive and apply K = k_f/k_r, including the effect of reversing a reaction
+## Objective 14.1a: Derive and apply $K = k_f/k_r$, including the effect of reversing a reaction
 
 ### Target understanding
 
@@ -109,7 +109,7 @@ A student can state what $K\gg1$ and $K\ll1$ imply about which side is favored a
 | Exam | Analyze | Combine with a rate-constant-derivation problem (Objective 14.1a). |
 | Project/activity | Evaluate | Look up a real reaction's K and rate, and discuss whether they align with intuition. |
 
-## Objective 14.2a: Write and convert K_c/K_p for homogeneous gas-phase equilibria
+## Objective 14.2a: Write and convert $K_c/K_p$ for homogeneous gas-phase equilibria
 
 ### Target understanding
 
@@ -117,21 +117,21 @@ A student can write $K_c$ and $K_p$ expressions for a gas-phase reaction and con
 
 ### Question guides
 
-**1. Forward — convert K_p to K_c**
+**1. Forward — convert $K_p$ to $K_c$**
 - Variables & ranges: a balanced gas-phase equation, given $K_p$ and temperature.
 - Constraint: correct sign and value of $\Delta n$.
 - Contexts: any gas-phase equilibrium with unequal moles of gas.
 - Formats: workout.
 - Worked instantiation: see the study guide's worked example ($\ce{2NH3<=>N2+3H2}$, $K_p=15.6$ at 490 K, $K_c=0.00964$).
 
-**2. Inverse — convert K_c to K_p**
+**2. Inverse — convert $K_c$ to $K_p$**
 - Variables & ranges: given $K_c$ and temperature, find $K_p$.
 - Constraint: correct application of $K_p=K_c(RT)^{\Delta n}$ without inverting the exponent's sign.
 - Contexts: a different gas-phase reaction with a different $\Delta n$.
 - Formats: workout.
 - Worked instantiation: for a reaction with $\Delta n=-1$, given $K_c$ and $T$, find $K_p$.
 
-**3. Conceptual — when does K_p = K_c?**
+**3. Conceptual — when does $K_p = K_c$?**
 - Variables & ranges: reactions with $\Delta n=0$ vs. $\Delta n\neq0$.
 - Constraint: explanation must reference the exponent in $K_p=K_c(RT)^{\Delta n}$.
 - Contexts: e.g., $\ce{H2+I2<=>2HI}$ ($\Delta n=0$) vs. $\ce{2NH3<=>N2+3H2}$ ($\Delta n=2$).
@@ -149,11 +149,11 @@ A student can write $K_c$ and $K_p$ expressions for a gas-phase reaction and con
 
 | Purpose | Cognitive level | How to design the task |
 |---|---|---|
-| Homework | Apply | 2–3 K_p/K_c conversions across different Δn values. |
-| Group discussion | Understand | Discuss why K_p = K_c(RT)^Δn follows directly from P = cRT (Ch. 5). |
+| Homework | Apply | 2–3 $K_p/K_c$ conversions across different $\Delta n$ values. |
+| Group discussion | Understand | Discuss why $K_p = K_c$(RT)^$\Delta n$ follows directly from P = cRT (Ch. 5). |
 | Quiz | Apply | One conversion problem. |
-| Exam | Analyze | Combine with a K_c calculation from equilibrium concentrations (ties to Objective 14.3a). |
-| Project/activity | Evaluate | Look up a real industrial gas-phase equilibrium's reported K_p and K_c and verify the conversion. |
+| Exam | Analyze | Combine with a $K_c$ calculation from equilibrium concentrations (ties to Objective 14.3a). |
+| Project/activity | Evaluate | Look up a real industrial gas-phase equilibrium's reported $K_p$ and $K_c$ and verify the conversion. |
 
 ## Objective 14.2b: Write equilibrium expressions for liquid-phase and heterogeneous equilibria
 
@@ -196,7 +196,7 @@ A student can correctly omit bulk solvent (when appropriate) from a liquid-phase
 | Purpose | Cognitive level | How to design the task |
 |---|---|---|
 | Homework | Apply | 2–3 expression-writing problems mixing homogeneous, liquid-phase, and heterogeneous cases. |
-| Group discussion | Understand | Discuss why "pure" matters — a solution of CaCO₃ would behave differently than solid CaCO₃. |
+| Group discussion | Understand | Discuss why "pure" matters — a solution of $\ce{CaCO3}$ would behave differently than solid $\ce{CaCO3}$. |
 | Quiz | Apply | One heterogeneous-expression item. |
 | Exam | Analyze | Require identifying and justifying every omitted species in a mixed-phase system. |
 | Project/activity | Evaluate | Preview Ch. 16's $K_{sp}$ expressions as heterogeneous equilibria of this same type. |
@@ -233,7 +233,7 @@ A student can recognize when a target reaction is the sum of two (or more) given
 **4. Error analysis**
 - Variables & ranges: a student who adds the two $K$ values instead of multiplying.
 - Constraint: correction must connect back to the derivation (rates multiply through the shared intermediate, not add).
-- Contexts: the same CoO/CO/Co/H₂O system.
+- Contexts: the same $\ce{CoO}$/CO/Co/$\ce{H2O}$ system.
 - Formats: short-answer.
 - Worked instantiation: "A student computes $K_{c3}=490+0.0149=490.01$. What's the correct method, and why is addition wrong?" → Equilibrium constants for summed reactions *multiply* ($K_{c3}=K_{c1}\times K_{c2}=7.30$), not add — this mirrors Hess's law for enthalpies being additive, but the equilibrium-constant version is multiplicative because $K$ comes from an exponential/ratio relationship, not a directly additive one.
 
@@ -403,7 +403,7 @@ A student can predict the direction of an equilibrium shift for a concentration,
 **2. Forward — pressure/volume stress**
 - Variables & ranges: a gas-phase reaction with unequal moles of gas on each side, container volume changed.
 - Constraint: prediction must reference moles of gas on each side, not just "more pressure = more product."
-- Contexts: the Haber process or a similar Δn ≠ 0 reaction.
+- Contexts: the Haber process or a similar $\Delta n$ ≠ 0 reaction.
 - Formats: short-answer.
 - Worked instantiation: see the study guide's worked example (compressing $\ce{N2+3H2<=>2NH3}$ favors the product side).
 
@@ -412,7 +412,7 @@ A student can predict the direction of an equilibrium shift for a concentration,
 - Constraint: prediction must state that increasing T favors the endothermic direction (and that K itself changes), distinct from the other two stress types.
 - Contexts: the $\ce{2NO2<=>N2O4}$ system or an analogous reaction.
 - Formats: short-answer.
-- Worked instantiation: see the study guide's worked example (warming the NO₂/N₂O₄ tubes shifts toward more brown NO₂).
+- Worked instantiation: see the study guide's worked example (warming the $\ce{NO2}/\ce{N2O4}$ tubes shifts toward more brown $\ce{NO2}$).
 
 **4. Error analysis — catalyst**
 - Variables & ranges: a claim that a catalyst increases equilibrium yield.
@@ -429,7 +429,7 @@ A student can predict the direction of an equilibrium shift for a concentration,
 | Group discussion | Analyze | Debate why temperature is the only stress that changes K itself. |
 | Quiz | Understand/Apply | One or two stress-prediction items, mixing types. |
 | Exam | Analyze | Require identifying the stress type first, then predicting the shift and stating whether K changes. |
-| Project/activity | Evaluate | Research a real industrial or environmental equilibrium system and analyze how each stress type would affect it (e.g., ocean CO₂/carbonate equilibrium under warming). |
+| Project/activity | Evaluate | Research a real industrial or environmental equilibrium system and analyze how each stress type would affect it (e.g., ocean $\ce{CO2}$/carbonate equilibrium under warming). |
 
 ## Rubric Themes for Chapter 14
 
@@ -437,7 +437,7 @@ A student can predict the direction of an equilibrium shift for a concentration,
 |---|---|
 | Q and K never conflated | Student always states which concentrations (given vs. equilibrium) go into a Q or K calculation before comparing them. |
 | Pure solids/liquids/solvent explicitly omitted | Student visibly crosses out or states the omission of pure-phase species before writing a final equilibrium expression, every time. |
-| K_p/K_c conversion applied only when needed | Student checks whether the given data's units match before invoking $K_p=K_c(RT)^{\Delta n}$, and gets the sign of $\Delta n$ right. |
+| $K_p/K_c$ conversion applied only when needed | Student checks whether the given data's units match before invoking $K_p=K_c(RT)^{\Delta n}$, and gets the sign of $\Delta n$ right. |
 | Small-x approximation always checked | Student never reports an approximated answer without an explicit $x/[\ce{A}]_0$ validity check. |
 | Stress type identified before predicting a shift | Student names the stress type (concentration/pressure-volume/temperature/catalyst) explicitly before predicting a direction. |
 | K changes only with temperature | Student correctly states that concentration, pressure/volume, and catalyst changes shift equilibrium position but never change K, while temperature changes both. |
