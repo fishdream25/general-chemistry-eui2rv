@@ -1,0 +1,518 @@
+{{nyml
+kind: document
+format: 1
+title: Chapter 9: Chemical Bonding — The Covalent Bond
+}}
+
+# Chapter 9: Chemical Bonding — The Covalent Bond
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 9 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, first semester
+**Package license:** CC BY 4.0
+**Note:** builds on Chapter 7's valence configurations and Chapter 8's electronegativity-related trends. Facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either). One electronegativity value has been corrected — see §9.1.
+:::
+
+:::success
+**Chapter Learning Objectives**
+- Draw Lewis dot symbols and explain ionic bonding and lattice energy.
+- Classify a bond using electronegativity difference.
+- Draw Lewis structures, calculate formal charges, and identify resonance structures.
+- Identify the three categories of octet-rule exception.
+- Calculate reaction enthalpy from bond enthalpies.
+:::
+
+## Chapter Logic
+
+Chapter 8 ended with two numbers that describe how an atom treats electrons: ionization energy, how hard it holds its own, and electron affinity, how eagerly it takes another. ==Bonding is what happens when two atoms, each with its own answers to those questions, meet — and combining both into a single number, electronegativity, predicts what kind of bond forms.==
+
+If one atom holds loosely and the other grabs hard, the electron changes hands outright: an **ionic** bond. If both grab comparably hard, neither can take it and they share: a **covalent** bond. Everything else in this chapter follows — how to draw the shared electrons, when the drawing rules fail, and how much energy the bonds are worth.
+
+{{mermaid
+graph TD
+  A["Electronegativity:<br/>IE and EA combined"] --> B["Ionic bond:<br/>electron transferred"]
+  A --> C["Covalent bond:<br/>electrons shared"]
+  C --> D["Lewis structures,<br/>formal charge, resonance"]
+  D --> E["Octet exceptions"]
+  C --> F["Bond enthalpy"]
+}}
+
+**Visual description:** A flowchart. Electronegativity splits into the two bonding extremes — transfer (ionic) and sharing (covalent). The covalent branch leads to Lewis structures and their exceptions, and separately to bond enthalpy as a quantitative measure of bond strength.
+
+## 9.1 Ionic Bond and Covalent Bond{{attrs[#blk-ch09sec01]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 9.1a}} Draw Lewis dot symbols for representative elements.
+- {{sp[info] Objective 9.1a}} Explain ionic bonding and relate lattice energy to ion charge and size.
+- {{sp[info] Objective 9.1a}} Describe covalent bonding, lone pairs, and bond order.
+- {{sp[info] Objective 9.1b}} Define electronegativity and distinguish it from electron affinity.
+- {{sp[info] Objective 9.1b}} Classify a bond from its electronegativity difference.
+:::
+
+### Lewis dot symbols
+
+Atoms bond in order to reach a more stable electron arrangement — usually one isoelectronic with a noble gas. Only the **valence electrons** take part, so a notation that shows nothing else is exactly what is needed.
+
+A **Lewis dot symbol** is the element's symbol with one dot for each valence electron, as Figure 9.1 shows for period 2.
+
+![Lewis dot symbols for the period 2 elements](../assets/lewis_dot_symbols.svg =800x)
+*Figure 9.1 — For a representative element the valence count is the group number (in the 1A–8A numbering), so the dot symbol can be written from the periodic table alone. Dots go one to a side before any side receives a second — a singly-first convention resembling Hund's rule for orbital filling in Chapter 7 (the four sides are not actual orbitals). The unpaired dots are the ones available for bonding, which is why carbon forms four bonds, nitrogen three, oxygen two, and fluorine one.*
+
+:::: tabs
+::: tab Problem
+Draw the Lewis dot symbol for (a) magnesium, (b) phosphorus, and \(c) the $\ce{S^2-}$ ion. How many bonds would you expect neutral phosphorus to form?
+:::
+::: tab Solution
+For a representative element the valence count is the group number, so read it off the periodic table.
+
+**(a) Mg** is Group 2A: **two** dots, placed on separate sides.
+
+**(b) P** is Group 5A: **five** dots — one on each of the four sides, and a fifth pairing up with one of them. That leaves **three unpaired** dots, so phosphorus forms **three bonds**, as in $\ce{PH3}$.
+
+**\(c) $\ce{S^2-}$.** Neutral sulfur is Group 6A with six valence electrons; the $2-$ charge adds two more, giving **eight**. All four sides carry a pair, and the symbol is drawn in brackets with the charge outside — the same arrangement as argon, which is the point of forming the ion.
+
+The unpaired-dot count is the useful part: it predicts the number of covalent bonds a nonmetal typically forms.
+:::
+::::
+
+### The ionic bond
+
+An **ionic bond** is the electrostatic attraction holding oppositely charged ions together. The compound as a whole is neutral.
+
+Chapter 8 helps predict which elements are likely to do this. ==A metal with a low ionization energy meets a nonmetal with a high electron affinity, and the electron transfer costs relatively little, and the attraction between the resulting ions more than repays it== — so alkali and alkaline earth metals form the cations, and the halogens and oxygen form the anions. Using dot symbols:
+
+$$\ce{Na\cdot} + \ce{\cdot\overset{..}{\underset{..}{Cl}}{:}} \longrightarrow \ce{Na+} + \ce{[:\overset{..}{\underset{..}{Cl}}{:}]^-}$$
+
+Balance these as you would any equation. Sodium supplies one electron and chlorine needs one, so the ratio is 1:1; but calcium supplies two and chlorine needs one each, so $\ce{Ca + Cl2 -> CaCl2}$ requires two chlorines.
+
+**Lattice energy** is the energy needed to separate one mole of a solid ionic compound completely into gaseous ions. It measures how tightly the lattice is held, and it tracks two things:
+
+- **Charge.** Attraction between doubly charged ions is far stronger than between singly charged ones.
+- **Size.** Smaller ions can approach more closely, and closer means stronger.
+
+This is why $\ce{MgCl2}$, $\ce{MgO}$ and $\ce{CaO}$ have unusually high lattice energies — the first has a doubly charged cation, and the other two have two doubly charged ions. Lattice energy correlates with melting point, for the obvious reason: a more tightly held lattice takes more energy to pull apart.
+
+:::: tabs
+::: tab Problem
+Rank $\ce{NaCl}$, $\ce{MgO}$, and $\ce{KCl}$ by increasing lattice energy, and predict which has the highest melting point.
+:::
+::: tab Solution
+Compare charge first, since it matters more, then size.
+
+**$\ce{MgO}$** has $\ce{Mg^2+}$ and $\ce{O^2-}$ — two doubly charged ions. Nothing else on the list comes close.
+
+**$\ce{NaCl}$ against $\ce{KCl}$**: both are $1+$ with $1-$, so charge is a tie and size decides. $\ce{K+}$ is larger than $\ce{Na+}$ (one shell further down, Chapter 8), so its ions cannot approach as closely and its lattice energy is lower.
+
+$$\ce{KCl} < \ce{NaCl} < \ce{MgO}$$
+
+**$\ce{MgO}$ has the highest melting point** — and by a wide margin: about 2850 °C against 801 °C for $\ce{NaCl}$.
+:::
+::::
+
+### The covalent bond
+
+When neither atom can take the electron outright, they share. A **covalent bond** is two electrons shared between two atoms, usually drawn as a line: $\ce{H-H}$. Each shared electron is attracted to *both* nuclei at once, and that dual attraction is what holds the atoms together.
+
+Pairs of valence electrons not involved in bonding are **lone pairs**. A **Lewis structure** shows bonds as lines and lone pairs as dots.
+
+![Schematic contrasting ionic and covalent bonding](../assets/ionic_vs_covalent_bond.svg =620x)
+*Figure 9.2 — Two routes to a stable configuration. **Ionic (left):** the electron is handed over completely — Na becomes $\ce{Na+}$, Cl becomes $\ce{Cl-}$, and the bond is the electrostatic attraction between those opposite charges. **Covalent (right):** in $\ce{H2}$ each hydrogen contributes exactly one electron, so the bond consists of **two shared electrons** (shown in different colors to mark which atom each came from) sitting between the two nuclei, attracted to both at once. One shared pair = one single bond.*
+
+Figure 9.2 sets the two bonding routes side by side. The **octet rule**: an atom other than hydrogen tends to bond until eight valence electrons surround it. Hydrogen stops at two, since its valence shell is the $1s$.
+
+Atoms can share more than one pair. A **single bond** shares one pair, a **double bond** two, a **triple bond** three — as in $\ce{N2}$, where each nitrogen contributes three electrons. **Bond length** is the distance between the two bonded nuclei, and the pattern is consistent:
+
+| Bond | Pairs shared | Length | Strength |
+|---|---|---|---|
+| C–C single | 1 | 154 pm | 348 kJ/mol |
+| C=C double | 2 | 134 pm | 614 kJ/mol |
+| C≡C triple | 3 | 120 pm | 839 kJ/mol |
+
+More shared pairs pull the nuclei closer and hold them more firmly: **for bonds between the same two atoms, shorter means stronger**.
+
+### Covalent network solids
+
+Covalent bonding is not confined to small molecules. In a **network solid** every atom is covalently bonded to its neighbors throughout the entire crystal, so the whole sample is effectively one molecule.
+
+![Diamond and graphite samples with their crystal structures](../assets/diamond_graphite.jpg =560x)
+*Figure 9.3 — Diamond and graphite are both pure carbon, differing only in bonding arrangement: diamond's carbons each form 4 strong covalent bonds in a rigid 3D network (extremely hard), while graphite's carbons bond covalently within flat sheets that stack with only weak attractions between layers (soft, slippery) — the same element, radically different properties from bonding pattern alone.*
+
+Chapter 2 called these two forms **allotropes**. Figure 9.3 explains what the word conceals: the difference is entirely in how the covalent bonds are arranged, and that alone separates the hardest natural substance from one soft enough to write with.
+
+### Electronegativity
+
+In many bonds the sharing is not equal. In a **polar covalent bond** the electrons spend more time near one atom than the other.
+
+**Electronegativity** is an atom's ability to attract the electrons *in a bond* toward itself. This is the number Chapter 8 promised: an atom with a high electron affinity (takes electrons readily) and a high ionization energy (does not give them up) has a high electronegativity. Fluorine is the extreme case at 3.98; sodium, low in both, sits at 0.93.
+
+:::warning
+**Electronegativity is not electron affinity.** Both describe an attraction for electrons, and they correlate — but they answer different questions. **Electron affinity** is measured on an *isolated* atom taking on an *extra* electron, and it is an energy in kJ/mol. **Electronegativity** describes an atom *already in a bond* competing for the *shared* electrons, and it is a unitless relative scale. Electron affinity is a measurement; electronegativity is a comparison.
+:::
+
+The trend follows Chapter 8's logic exactly, and Figure 9.4 plots it: electronegativity **increases across a period** as metallic character falls, and **decreases down a group** as it rises.
+
+![Line chart of electronegativity across Periods 2 and 3](../assets/electronegativity_trend.svg =560x)
+*Figure 9.4 — Electronegativity climbs steadily across each period as $Z_\text{eff}$ increases, from the alkali metals (lowest) to fluorine and chlorine (highest in their respective periods).*
+
+| Element | EN | Element | EN | Element | EN |
+|---|---|---|---|---|---|
+| F | 3.98 | C | 2.55 | Al | 1.61 |
+| O | 3.44 | S | 2.58 | Mg | 1.31 |
+| Cl | 3.16 | I | 2.66 | Li | 0.98 |
+| N | 3.04 | H | 2.20 | Na | 0.93 |
+| Br | 2.96 | Si | 1.90 | K | 0.82 |
+
+The difference between two atoms' electronegativities, $\Delta\text{EN}$, predicts the bond type — and Figure 9.5 shows where the boundaries fall:
+
+![Bond type as a continuum in electronegativity difference](../assets/bond_type_continuum.svg =800x)
+*Figure 9.5 — $\Delta\text{EN} < 0.3$ is nonpolar covalent, $0.3$ to $2.0$ is polar covalent, and $\ge 2.0$ is ionic. The boundaries are conventions rather than physics: nothing changes abruptly as $\Delta\text{EN}$ crosses 2.0, and an ionic bond is best understood as the limiting case of an extremely polar covalent bond.*
+
+:::warning
+**A corrected value.** An earlier version of this chapter gave $\ce{KF}$ an electronegativity difference of 2.22. On the Pauling scale K is 0.82 and F is 3.98, so $\Delta\text{EN} = 3.16$. The figure 2.22 is essentially that of $\ce{NaCl}$ ($3.16 - 0.93 = 2.23$). Both compounds are comfortably ionic, so the classification was never wrong — but the number was, and it is corrected throughout.
+:::
+
+:::: tabs
+::: tab Problem
+Classify the bond in (a) $\ce{KF}$, (b) $\ce{HCl}$, \(c) $\ce{Cl2}$, and (d) $\ce{CH4}$, using the electronegativity table above.
+:::
+::: tab Solution
+Take the difference, then read Figure 9.5.
+
+**(a) $\ce{KF}$:** $3.98 - 0.82 = 3.16$. That is well past 2.0 → **ionic**.
+
+**(b) $\ce{HCl}$:** $3.16 - 2.20 = 0.96$. Between 0.3 and 2.0 → **polar covalent**, with the electrons pulled toward chlorine.
+
+**\(c) $\ce{Cl2}$:** $3.16 - 3.16 = 0$ → **nonpolar covalent**. Identical atoms always share equally; this is true of every element that exists as $\ce{X2}$.
+
+**(d) $\ce{CH4}$:** $2.55 - 2.20 = 0.35$. Just over 0.3 → **polar covalent**, but only barely. C–H bonds are so nearly nonpolar that they are often treated as such.
+
+Part (d) is the useful one: it sits close enough to a boundary that the label depends on where the convention was drawn, which is exactly what Figure 9.5's caption warns about.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Without a table, predict which bond is more polar: O–H or S–H. Which atom carries the partial negative charge in each?
+:::
+::: tab Solution
+O and S are both in Group 6A, with O above S. Electronegativity **decreases down a group**, so oxygen is the more electronegative.
+
+Hydrogen is the same in both, so **O–H is the more polar bond** — the larger electronegativity gap.
+
+In both bonds the *more electronegative* atom pulls the shared electrons toward itself and carries the **partial negative charge**: oxygen in O–H, sulfur in S–H.
+
+Checking against the table confirms it: O–H is $3.44 - 2.20 = 1.24$ and S–H is $2.58 - 2.20 = 0.38$. But the periodic trend alone answered the question, which is faster and works when no table is available. This difference is also why water is a liquid and $\ce{H2S}$ is a gas — a point Chapter 11 develops.
+:::
+::::
+
+> **Where this goes next.** Sharing electrons is the general case, and §9.2 supplies the notation for it: a procedure that turns a molecular formula into a picture showing how every valence electron is assigned, as bonding pairs or lone pairs.
+
+## 9.2 Lewis Structures{{attrs[#blk-ch09sec02]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 9.2a}} Draw a Lewis structure using the four-step procedure.
+- {{sp[info] Objective 9.2a}} Handle polyatomic ions by adjusting the electron count for charge.
+- {{sp[info] Objective 9.2b}} Calculate formal charge and use it to choose between candidate structures.
+- {{sp[info] Objective 9.2c}} Identify resonance structures and state what resonance does and does not mean.
+:::
+
+### The procedure
+
+Four steps turn a formula into a structure:
+
+1. **Write the skeleton.** Put the least electronegative atom in the center (never hydrogen, which forms only one bond) and arrange the others around it.
+2. **Count the total valence electrons.** For a polyatomic **anion**, *add* one electron per negative charge; for a **cation**, *subtract* one per positive charge.
+3. **Draw single bonds** from the central atom to each neighbor, then complete the octets of the surrounding atoms (a duet for hydrogen) with lone pairs. Place any remaining electrons as lone pairs on the central atom, so that the total equals the number of electrons from step 2.
+4. **If the central atom is short of an octet**, move a lone pair from a neighbor into a double or triple bond.
+
+Figure 9.6 works all four steps through for a single molecule.
+
+![The four-step Lewis structure procedure applied to CO2](../assets/lewis_structure_steps.svg =840x)
+*Figure 9.6 — Step 3 is where the octets are checked and step 4 is where a shortfall is repaired. Converting a lone pair into a bond never changes the electron total — only how those electrons are shared — so the count is 16 before and 16 after.*
+
+{{sp[warning] Reminder}} Step 1 (counting the valence electrons) is the step on which the whole structure depends — an error here makes every later step wrong. Count the valence electrons before drawing anything, and count them again at the end.
+
+:::: tabs
+::: tab Problem
+Draw the Lewis structure of $\ce{NH3}$.
+:::
+::: tab Solution
+**Step 1 — skeleton.** Hydrogen can only ever form one bond, so it can never be the central atom (even though it is less electronegative than nitrogen); N is central with three H around it.
+
+**Step 2 — count.** N contributes 5, each H contributes 1:
+$$5 + 3(1) = 8\ \text{valence electrons}$$
+
+**Step 3 — bonds, then octets.** Three N–H single bonds use 6 electrons. Hydrogen needs only 2 each, and each already has its bond, so no lone pairs go on hydrogen. That leaves $8 - 6 = 2$ electrons, which become one lone pair on nitrogen.
+
+**Step 4 — check the center.** Nitrogen has 3 bonds (6 electrons) plus 1 lone pair (2) = **8**. The octet is satisfied, so no double bond is needed.
+
+$$\ce{H-\overset{\displaystyle{..}}{N}(-H)-H}$$
+
+Final check: 6 bonding + 2 lone-pair electrons = 8, matching step 2. ✓
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Draw the Lewis structure of the sulfate ion, $\ce{SO4^2-}$, treating sulfur as obeying the octet rule.
+:::
+::: tab Solution
+**Step 1.** Sulfur is less electronegative than oxygen, so S is central with four O around it.
+
+**Step 2 — and this is where the charge enters.** S contributes 6, each O contributes 6, and the $2-$ charge *adds* two more:
+$$6 + 4(6) + 2 = 32\ \text{valence electrons}$$
+
+**Step 3.** Four S–O single bonds use 8 electrons. Each oxygen then needs 3 lone pairs to complete its octet: $4 \times 6 = 24$ electrons. Total placed: $8 + 24 = 32$. ✓
+
+**Step 4.** Sulfur has 4 bonds = 8 electrons. Octet satisfied, so we stop.
+
+The whole structure is enclosed in brackets with the $2-$ charge outside:
+$$\left[\ce{O}\!-\!\ce{S}(\!-\!\ce{O})(\!-\!\ce{O})\!-\!\ce{O}\right]^{2-}$$
+
+**Compare with $\ce{CO2}$:** there the count came up short at the center and step 4 had work to do. Here it came out exactly right at step 3. Whether step 4 is needed is something the count tells you — it is not something to guess in advance.
+:::
+::::
+
+### Formal charge
+
+When more than one structure satisfies the octets, **formal charge** decides between them. It asks: how many electrons is this atom assigned in the structure (all its lone-pair electrons plus half its bonding electrons), compared with how many it brought?
+
+$$\text{formal charge} = (\text{valence electrons in the free atom}) - (\text{lone-pair electrons}) - \tfrac12(\text{bonding electrons})$$
+
+The bonding electrons are split evenly — each atom is credited with half of every bond it participates in, regardless of electronegativity. (That is the difference from **oxidation number**, which assigns *all* of a bond's electrons to the more electronegative atom. Both are bookkeeping devices; neither is a real charge.)
+
+Two rules for choosing a structure:
+
+- Prefer the structure with formal charges **closest to zero**.
+- If a negative formal charge is unavoidable, it should sit on the **more electronegative** atom.
+
+:::: tabs
+::: tab Problem
+Calculate the formal charge on each atom in $\ce{CO2}$, drawn as $\ce{O=C=O}$ with two lone pairs on each oxygen.
+:::
+::: tab Solution
+**Carbon:** brings 4 valence electrons. In the structure it has 0 lone-pair electrons and 8 bonding electrons (two double bonds).
+$$4 - 0 - \tfrac12(8) = 4 - 4 = 0$$
+
+**Each oxygen:** brings 6. It has 2 lone pairs (4 electrons) and one double bond (4 bonding electrons).
+$$6 - 4 - \tfrac12(4) = 6 - 4 - 2 = 0$$
+
+**All formal charges are zero**, and they sum to zero as they must for a neutral molecule. This is why $\ce{CO2}$ has one clearly best Lewis structure; other resonance forms (such as O≡C–O) carry nonzero formal charges and contribute little.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Two structures can be drawn for $\ce{OCN-}$ (the cyanate ion): one with a C≡N triple bond and a single C–O bond, and one with a C=O double bond and a C=N double bond. Use formal charge to decide which is preferred. There are 16 valence electrons.
+:::
+::: tab Solution
+**Structure A — $\ce{[O-C#N]^-}$**, with 3 lone pairs on O and 1 on N.
+- O: $6 - 6 - \tfrac12(2) = -1$
+- C: $4 - 0 - \tfrac12(8) = 0$
+- N: $5 - 2 - \tfrac12(6) = 0$
+Charges: $-1, 0, 0$. Sum $= -1$ ✓ (matches the ion's charge).
+
+**Structure B — $\ce{[O=C=N]^-}$**, with 2 lone pairs on O and 2 on N.
+- O: $6 - 4 - \tfrac12(4) = 0$
+- C: $4 - 0 - \tfrac12(8) = 0$
+- N: $5 - 4 - \tfrac12(4) = -1$
+Charges: $0, 0, -1$. Sum $= -1$ ✓.
+
+Both have the same *spread* of formal charges, so the first rule does not separate them. The second does: **oxygen is more electronegative than nitrogen** (3.44 against 3.04), so the negative charge is better placed on oxygen.
+
+**Structure A is preferred.** Note that the sum check — formal charges must add up to the overall charge — caught nothing here, but it is the check that catches an arithmetic slip.
+:::
+::::
+
+### Resonance
+
+Sometimes no single Lewis structure is adequate. **Resonance structures** are two or more Lewis structures for one molecule that have the same arrangement of atoms but differ in the placement of electrons, and **resonance** is the practice of using them together. Figure 9.7 shows ozone's pair, alongside three molecules that need only one structure each.
+
+![Lewis structures for NH3, CH4, and N2, and ozone's resonance structures](../assets/lewis_and_resonance.svg =680x)
+*Figure 9.7 — **Top row:** $\ce{NH3}$ (3 bonds + 1 lone pair on N), $\ce{CH4}$ (4 bonds, no lone pairs), and $\ce{N2}$ (a triple bond drawn as three parallel lines, plus one lone pair on each N). Each uses all of its valence electrons exactly: 8, 8, and 10 respectively. **Bottom:** ozone's two resonance structures, drawn completely — with every lone pair and the formal charge on each atom (red). Note that the charges are not decoration: the central O carries $+1$ and the singly-bonded terminal O carries $-1$, summing to zero for the neutral molecule. The two structures differ only in which side gets the double bond, and the real molecule is the average of both — its two O–O bonds are identical and intermediate in length, not one short and one long.*
+
+:::warning
+**Resonance is not oscillation.** The commonest misconception is that ozone flips rapidly between its two structures. It does not. The molecule has one single, stable, unchanging structure; neither drawing represents it, and the truth is something in between that our notation cannot express. ==Resonance is a limitation of the notation, not a behavior of the molecule.== The measured evidence is decisive: ozone's two O–O bonds are *identical* in length, intermediate between a single and a double bond. A molecule flipping between structures would, at any given instant, have one short bond and one long one.
+:::
+
+:::: tabs
+::: tab Problem
+The nitrate ion $\ce{NO3-}$ has 24 valence electrons. Explain why it requires resonance, how many structures are needed, and what the real ion looks like.
+:::
+::: tab Solution
+**Why resonance is needed.** Nitrogen is central with three oxygens. Three single N–O bonds use 6 electrons, and completing all three oxygen octets uses the remaining 18 — total 24. But nitrogen then has only 6 electrons, short of an octet, so step 4 requires a double bond.
+
+**How many structures.** The double bond could go to *any* of the three oxygens, and nothing distinguishes them. So **three equivalent resonance structures** are needed, each with the double bond on a different oxygen.
+
+**What the ion really is.** Not any one of the three, and not a rapid cycling among them. All three N–O bonds are identical, each intermediate between a single and a double bond — about one and a third bonds' worth. Measurement confirms it: all three bond lengths are equal.
+
+The general signal to watch for: when step 4 forces a multiple bond and **more than one equivalent position** could take it, the molecule needs resonance.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Benzene, $\ce{C6H6}$, is a flat ring of six carbons, usually drawn with alternating single and double bonds — and it can be drawn two ways, with the double bonds in either set of alternating positions. Measurement shows all six C–C bonds are identical at 139 pm, between a single bond (154 pm) and a double bond (134 pm). What does this tell you?
+:::
+::: tab Solution
+The two drawings are **resonance structures**, and the real molecule is neither.
+
+If benzene actually had alternating single and double bonds, the ring would show two different bond lengths, 154 pm and 134 pm alternating around it. It does not. All six are 139 pm — a single value, sitting between the two.
+
+If instead the molecule were rapidly *flipping* between the two structures, a fast enough measurement would still catch one arrangement or the other. None ever has.
+
+**Every bond is genuinely intermediate**, about one and a half bonds' worth, and the electrons are spread evenly around the ring. The two Lewis drawings are the closest our notation can get, and needing two of them is a limitation of the notation, while their average describes the real molecule.
+
+This is the same conclusion as ozone's, on a molecule where the evidence is even more direct: six identical bonds where the drawing demands two kinds.
+:::
+::::
+
+> **Where this goes next.** The octet rule has organized everything so far. §9.3 covers the molecules where it fails, and then puts a number on how much a bond is actually worth.
+
+## 9.3 Exceptions to the Octet Rule and Bond Enthalpy{{attrs[#blk-ch09sec03]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 9.3a}} Identify the three categories of octet-rule exception.
+- {{sp[info] Objective 9.3a}} Recognize a coordinate covalent bond.
+- {{sp[info] Objective 9.3b}} Explain why bond enthalpies are averages.
+- {{sp[info] Objective 9.3b}} Calculate a reaction enthalpy from bond enthalpies.
+:::
+
+### Where the octet rule fails
+
+Second-period elements never exceed an octet, though some fall short of one; beyond the second period, atoms can also exceed it. Figure 9.8 sets out the three categories of exception:
+
+![The three categories of octet-rule exception](../assets/octet_exceptions.svg =840x)
+*Figure 9.8 — An incomplete octet has fewer than eight electrons around the central atom; an odd-electron molecule has a total that makes eight impossible; an expanded octet has more than eight. Only third-period and heavier elements can expand, because they are large enough to accommodate more than four bonding partners around them.*
+
+**Incomplete octet.** Beryllium and boron form stable compounds with fewer than eight electrons around the central atom. In $\ce{BF3}$, boron has only six. Such molecules are electron-hungry, and $\ce{BF3}$ reacts readily with ammonia, which has a lone pair to spare:
+
+$$\ce{BF3 + NH3 -> F3B-NH3}$$
+
+The new B–N bond is a **coordinate covalent bond** — one in which a single atom supplies *both* electrons. Once formed it is indistinguishable from any other covalent bond; the name records only where the electrons came from.
+
+**Odd-electron molecules.** $\ce{NO}$ has 11 valence electrons and $\ce{NO2}$ has 17. An odd total cannot be arranged into all-paired octets, so one electron must remain unpaired. Such species are **radicals**, and they are typically very reactive — two $\ce{NO2}$ molecules readily combine into $\ce{N2O4}$, in which every atom does reach an octet.
+
+**Expanded octet.** From the third period onward, $d$ orbitals become available and the central atom can hold more than eight. Sulfur in $\ce{SF6}$ forms six bonds and is surrounded by twelve electrons.
+
+{{sp[warning] Watch out}} A second-period atom can *never* expand its octet — it has no $d$ orbitals to use. If your structure gives nitrogen five bonds or oxygen three bonds plus two lone pairs, the structure is wrong, not the rule.
+
+:::: tabs
+::: tab Problem
+Which of these violate the octet rule, and in which category? (a) $\ce{PCl5}$; (b) $\ce{CH4}$; \(c) $\ce{BeCl2}$; (d) $\ce{ClO2}$.
+:::
+::: tab Solution
+**(a) $\ce{PCl5}$ — expanded octet.** Phosphorus forms five bonds, so ten electrons surround it. Phosphorus is in period 3, so this is allowed.
+
+**(b) $\ce{CH4}$ — no violation.** Carbon has four bonds, eight electrons: a textbook octet.
+
+**\(c) $\ce{BeCl2}$ — incomplete octet.** Beryllium forms two bonds, so only four electrons surround it.
+
+**(d) $\ce{ClO2}$ — odd-electron molecule.** Count: $7 + 2(6) = 19$ valence electrons. An odd number cannot pair up completely, so one electron is left unpaired and $\ce{ClO2}$ is a radical.
+
+Part (d) shows the fastest test for that category: **count the valence electrons, and if the total is odd, the octet rule cannot possibly be satisfied for every atom.**
+:::
+::::
+
+:::: tabs
+::: tab Problem
+$\ce{BF3}$ has an incomplete octet at boron, yet it is a perfectly stable compound. If a double B=F bond would complete boron's octet, why does it not form?
+:::
+::: tab Solution
+Draw the alternative and check the formal charges.
+
+With three single bonds, every atom carries a formal charge of zero: boron is $3 - 0 - \tfrac12(6) = 0$, and each fluorine is $7 - 6 - \tfrac12(2) = 0$.
+
+With one B=F double bond, boron becomes $3 - 0 - \tfrac12(8) = -1$ and the doubly bonded fluorine becomes $7 - 4 - \tfrac12(4) = +1$.
+
+So completing the octet would put a **positive** formal charge on fluorine — the most electronegative element there is — and a negative one on boron. That violates the second formal-charge rule badly enough to outweigh the benefit of the octet.
+
+**The incomplete octet is the lesser evil**, and this is the general lesson about the octet rule: it is a strong guideline that formal-charge reasoning can override, not a law. $\ce{BF3}$ pays for it by being a powerful electron-pair acceptor, which is exactly why it reacts with ammonia.
+:::
+::::
+
+### Bond enthalpy
+
+**Bond enthalpy** ($D$) is the enthalpy change required to break one mole of a particular bond in gaseous molecules. Breaking a bond always costs energy, so bond enthalpies are always positive.
+
+==The same bond type is not identical in every molecule.== An O–H bond in water and an O–H bond in methanol sit in different surroundings and take slightly different energies to break, so tabulated values are **average bond enthalpies** — averaged over many compounds. This is why bond-enthalpy calculations give estimates rather than exact answers.
+
+For a gas-phase reaction:
+
+$$\Delta H = \sum D_\text{bonds broken} - \sum D_\text{bonds formed}$$
+
+Figure 9.9 shows why that subtraction is the right accounting.
+
+![Energy diagram showing why reaction enthalpy is bonds broken minus bonds formed](../assets/bond_enthalpy_cycle.svg =800x)
+*Figure 9.9 — Imagine taking the long way round: break every reactant bond into free atoms, then let those atoms assemble the products. Breaking costs, forming pays, and the net is the difference. Because enthalpy is a state function (Chapter 6), this imaginary route gives the same answer as the real one — which is what makes the method valid.*
+
+| Bond | $D$ (kJ/mol) | Bond | $D$ (kJ/mol) |
+|---|---|---|---|
+| H–H | 436 | C–H | 414 |
+| Cl–Cl | 242 | C–C | 348 |
+| H–Cl | 431 | C=C | 614 |
+| O=O | 498 | C=O | 799 |
+| O–H | 463 | N≡N | 941 |
+
+:::: tabs
+::: tab Problem
+Estimate $\Delta H$ for $\ce{H2(g) + Cl2(g) -> 2HCl(g)}$.
+:::
+::: tab Solution
+**Bonds broken:** one H–H and one Cl–Cl.
+$$\sum D_\text{broken} = 436 + 242 = 678\ \text{kJ}$$
+
+**Bonds formed:** two H–Cl.
+$$\sum D_\text{formed} = 2(431) = 862\ \text{kJ}$$
+
+$$\Delta H = 678 - 862 = -184\ \text{kJ}$$
+
+**Exothermic** — forming two H–Cl bonds releases more than breaking the two reactant bonds costs. The measured value is −185 kJ, so the estimate is good to about half a percent here; agreement is usually looser, because the tabulated values are averages.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Estimate $\Delta H$ for the combustion of methane, $\ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(g)}$, using the table above.
+:::
+::: tab Solution
+**Count every bond on each side, which is the step that goes wrong most often.**
+
+Broken: 4 C–H bonds in $\ce{CH4}$, and 2 O=O bonds.
+$$\sum D_\text{broken} = 4(414) + 2(498) = 1656 + 996 = 2652\ \text{kJ}$$
+
+Formed: 2 C=O bonds in $\ce{CO2}$, and 4 O–H bonds (2 per water × 2 waters).
+$$\sum D_\text{formed} = 2(799) + 4(463) = 1598 + 1852 = 3450\ \text{kJ}$$
+
+$$\Delta H = 2652 - 3450 = -798\ \text{kJ}$$
+
+Compare with Chapter 6, where formation enthalpies gave −802.5 kJ for this reaction with gaseous water — agreement to within 0.6%.
+
+{{sp[warning] Reminder}} The formation-enthalpy method of Chapter 6 is exact; this one is an estimate, because the bond enthalpies are averages. Use bond enthalpies when formation data are unavailable, and expect disagreement that can reach tens of kJ.
+:::
+::::
+
+## Synthesis
+
+==This chapter answers one question — what happens when two atoms meet — with one number. The difference in electronegativity, which reflects ionization energy and electron affinity combined, decides whether electrons are transferred or shared; and everything else follows: Lewis structures for the shared case, formal charge and resonance to choose among the drawings, the three exceptions where the octet rule breaks, and bond enthalpy to price the result.==
+
+Backwards, none of it stands alone. Valence electrons and the group-number rule come from Chapter 7. Electronegativity is built from Chapter 8's two energy trends, and the ionic side of the ionic-versus-covalent split is a low-IE metal meeting a high-EA nonmetal. Bond enthalpy works only because enthalpy is a state function, which is Chapter 6.
+
+Forwards, the Lewis structure is the handoff. Chapter 10 reads molecular geometry directly off a correct Lewis structure — count the electron groups around the central atom, and how many are lone pairs, and the shape follows — so a wrong structure there produces a wrong shape, a wrong polarity, and a wrong prediction about the substance's physical behavior. Chapter 11 then uses that polarity to explain why some substances are gases and others liquids at the same temperature. From here on, "draw the Lewis structure first" is the standing instruction.
+
+## Asset and License Record for This Chapter
+
+| Asset | Source URL | License | Attribution |
+|---|---|---|---|
+| `assets/lewis_dot_symbols.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/ionic_vs_covalent_bond.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib, schematic; released under this package's CC BY 4.0 license. |
+| `assets/diamond_graphite.jpg` | https://commons.wikimedia.org/wiki/File:Diamond_and_graphite2.jpg | CC BY-SA 3.0 | Itub / Materialscientist, via Wikimedia Commons, CC BY-SA 3.0 (dual-licensed with GFDL 1.2+). |
+| `assets/electronegativity_trend.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib using real Pauling electronegativity values; released under this package's CC BY 4.0 license. |
+| `assets/bond_type_continuum.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/lewis_structure_steps.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/lewis_and_resonance.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib, schematic (replaces multiple hotlinked source images); released under this package's CC BY 4.0 license. |
+| `assets/octet_exceptions.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/bond_enthalpy_cycle.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |

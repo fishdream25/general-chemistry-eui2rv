@@ -1,0 +1,706 @@
+{{nyml
+kind: document
+format: 1
+title: Chapter 14: Chemical Equilibrium
+}}
+
+# Chapter 14: Chemical Equilibrium
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 14 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, second semester
+**Package license:** CC BY 4.0
+**Note:** builds on forward/reverse rate constants (Chapter 13), PV = nRT (Chapter 5), and Hess's-law-style reasoning (Chapter 6); facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+:::
+
+:::success
+**Chapter Learning Objectives**
+- Define chemical equilibrium and the equilibrium constant, and derive $K = k_f/k_r$ for an elementary-step reaction.
+- Write $K_c$ and $K_p$ expressions for homogeneous and heterogeneous equilibria, convert between $K_p$ and $K_c$, and combine equilibrium constants for multi-step reactions.
+- Calculate the reaction quotient Q and compare it to K to predict reaction direction.
+- Set up and solve an ICE table to find equilibrium concentrations.
+- Apply Le Chatelier's principle to predict how a system at equilibrium responds to a change in concentration, pressure/volume, or temperature.
+:::
+
+## Chapter Logic
+
+Chapter 13 asked how fast a reaction goes. This chapter asks: how far does it go before it stops changing — and what determines that stopping point? ==Strictly, in a closed system no reaction runs fully to completion; every one reaches an equilibrium point where net change stops, which may lie far toward products, far toward reactants, or somewhere in between, with reactants and products both still present (sometimes in only tiny amounts).== That stopping point is not an accident and not a failure — it is a number you can predict, and this chapter is about predicting it.
+
+{{mermaid
+graph TD
+  A["Forward rate = reverse rate<br/>K = k_f/k_r (elementary step)"] --> B["K_c, K_p expressions<br/>(homogeneous & heterogeneous)"]
+  B --> C["Reaction quotient Q<br/>compare Q to K"]
+  C --> D["ICE tables:<br/>solve for equilibrium concentrations"]
+  D --> E["Le Chatelier's principle:<br/>predict shifts under stress"]
+}}
+
+**Visual description:** A top-down flowchart. The forward-rate-equals-reverse-rate condition defines K. K's expression is then built for homogeneous and heterogeneous reactions. The reaction quotient Q reuses that same expression to diagnose which direction a non-equilibrium system will move. ICE tables use K to solve for unknown equilibrium concentrations. Le Chatelier's principle closes the chapter with qualitative predictions for how equilibrium responds to stress.
+
+## 14.1 Chemical Equilibrium{{attrs[#blk-ch14sec01]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 14.1b}} Define chemical equilibrium and the equilibrium constant.
+- {{sp[info] Objective 14.1a}} Derive $K = k_f/k_r$ for a reaction occurring as a single elementary step in both directions.
+- {{sp[info] Objective 14.1b}} Interpret the magnitude of K, and predict how K changes when a reaction is written in reverse.
+:::
+
+### What equilibrium actually is
+
+**Chemical equilibrium** is the state where the forward and reverse reaction rates are equal, so the concentrations of reactants and products stop changing — not because the reaction has stopped, but because it is happening in both directions at the same rate. The **equilibrium constant**, $K$, is the value of the reaction quotient once equilibrium is reached.
+
+The word to hold onto is **dynamic**. A sealed flask at equilibrium looks completely inert: no color change, no pressure change, no temperature change, nothing to measure that moves. At the molecular level it is the opposite of inert — reactant molecules are converting to product and product molecules back to reactant, continuously, at matched rates. The stillness is a balance, not a stop.
+
+This is worth belaboring because the wrong picture leads to specific wrong predictions later. If you think the reaction has stopped, you cannot explain why adding more reactant does anything at all, or why adding a catalyst makes the reaction reach equilibrium faster without changing where it lands.
+
+### Where K comes from: $K = k_f/k_r$
+
+For a reaction occurring as a single elementary step in both directions, $a\ce{A}+b\ce{B} \ce{<=>} c\ce{C}+d\ce{D}$, the forward and reverse rates are $\text{rate}_f=k_f[\ce{A}]^a[\ce{B}]^b$ and $\text{rate}_r=k_r[\ce{C}]^c[\ce{D}]^d$ (Chapter 13's elementary-step rate laws). Setting them equal at equilibrium:
+
+$$k_f[\ce{A}]^a[\ce{B}]^b = k_r[\ce{C}]^c[\ce{D}]^d \quad\Rightarrow\quad K=\frac{[\ce{C}]^c[\ce{D}]^d}{[\ce{A}]^a[\ce{B}]^b}=\frac{k_f}{k_r}$$
+
+==K is a ratio of rate constants, not a rate itself. Equilibrium is reached when the forward and reverse rates become equal, not zero, which is why equilibrium is dynamic (both reactions still occurring at equal rates) rather than static (both reactions stopped).== Two consequences follow directly:
+
+- Reversing the reaction's direction inverts $K$: the reverse reaction's equilibrium constant is $1/K$.
+- $K\gg1$ means $k_f\gg k_r$, so equilibrium favors products (lies to the right); $K\ll1$ means the reverse holds, favoring reactants (lies to the left).
+
+Figure 14.1 puts the two extremes side by side. Note what it deliberately does not show: an exact ratio.
+
+![Two schematic pie charts illustrating K much greater than 1 (mostly products) versus K much less than 1 (mostly reactants)](../assets/k_magnitude_schematic.svg)
+*Figure 14.1 — K's magnitude tells you qualitatively which side is favored at equilibrium — it does not by itself tell you the exact product/reactant ratio, which also depends on the reaction's stoichiometry and the amounts you start with. Self-generated with matplotlib; schematic only.*
+
+:::: tabs
+::: tab Problem
+A reaction $\ce{A <=> B}$ has $k_f = 0.20\ \text{s}^{-1}$ and $k_r = 0.05\ \text{s}^{-1}$. (a) Calculate $K$ and state which side is favored at equilibrium. (b) What is $K$ for the reverse reaction, $\ce{B <=> A}$?
+:::
+::: tab Solution
+**(a)** $K=k_f/k_r=0.20/0.05=4.0$. Since $K>1$, equilibrium favors the product side (B).
+
+**(b)** Reversing the reaction inverts $K$: $K_{\text{reverse}}=1/4.0=0.25$.
+
+**Why the reciprocal, in one line:** the reverse reaction's $k_f$ is the forward reaction's $k_r$ and vice versa, so the ratio flips. You never need to re-derive it — but it is worth being able to say *why*, because the same reasoning gives you the multi-step rule in §14.2.
+
+{{sp[warning] A unit note}} $K$ is treated as **dimensionless**, even though the concentrations substituted into it carry units. Strictly, each concentration is divided by a standard-state value of 1 M (or 1 bar for $K_p$), which cancels the units and leaves a pure number. In practice: substitute the numerical values in molarity or bar (atmospheres differ by only about 1%), and report $K$ with no units at all.
+:::
+::::
+
+Figure 14.2 is the picture worth carrying for the rest of the chapter — two rates converging, not one rate dying.
+
+![Two-panel figure: concentration of A and B vs. time approaching a plateau, and forward/reverse rate vs. time converging](../assets/approach_to_equilibrium.svg)
+*Figure 14.2 — As A converts to B, the forward rate (proportional to [A]) falls while the reverse rate (proportional to [B]) rises, until they meet — that meeting point is dynamic equilibrium. Concentrations stop changing macroscopically, but both reactions continue at equal, opposite rates. Self-generated with matplotlib using $k_f=0.20\ \text{s}^{-1}$, $k_r=0.05\ \text{s}^{-1}$ (matching the worked example above), so $K=4.0$ and $[\ce{B}]_{eq}/[\ce{A}]_{eq}=4.0$.*
+
+:::: tabs
+::: tab Problem
+For $\ce{H2(g) + I2(g) <=> 2HI(g)}$ at 448 °C, a flask is found at equilibrium to contain $[\ce{H2}] = 0.106$ M, $[\ce{I2}] = 0.106$ M, and $[\ce{HI}] = 0.756$ M. (a) Calculate $K_c$. (b) A second flask at the same temperature is found at equilibrium to contain $[\ce{H2}] = 0.050$ M, $[\ce{I2}] = 0.050$ M, $[\ce{HI}] = 0.357$ M. Is this consistent with the same $K_c$? \(c) What does that tell you about $K$?
+:::
+::: tab Solution
+**(a)** Substitute the equilibrium values into the expression:
+
+$$K_c = \frac{[\ce{HI}]^2}{[\ce{H2}][\ce{I2}]} = \frac{(0.756)^2}{(0.106)(0.106)} = \frac{0.5715}{0.011236} = 50.9$$
+
+**(b)** Run the same calculation on the second flask:
+
+$$K_c = \frac{(0.357)^2}{(0.050)(0.050)} = \frac{0.1274}{0.0025} = 51.0$$
+
+The two agree to within rounding. **Consistent.**
+
+**\(c) This is what "constant" in "equilibrium constant" means.** The two flasks hold completely different amounts — the second has less than half the material of the first — yet the *ratio* defined by $K$'s expression comes out the same. At a given temperature, a system can reach equilibrium at infinitely many combinations of concentrations, and every one of them satisfies the same $K$.
+
+**What would change it:** only temperature. Not the starting amounts, not the vessel size, not a catalyst. If you measured a genuinely different $K$ in the second flask, the first thing to check is whether the two were at the same temperature.
+:::
+::::
+
+### Reading the magnitude of K
+
+$K$'s size answers one question and one only: **at equilibrium, which side holds most of the material?**
+
+- $K \gg 1$ — equilibrium lies far to the **right**; at equilibrium the mixture is mostly product. The reaction is often described as going "essentially to completion."
+- $K \approx 1$ — appreciable amounts of both are present.
+- $K \ll 1$ — equilibrium lies far to the **left**; the mixture is mostly unreacted reactant, and the reaction is often described as "not proceeding."
+
+:::warning
+$K$ says nothing whatsoever about **how fast** equilibrium is reached. A reaction can have $K = 10^{40}$ — overwhelmingly product-favored — and still be undetectably slow at room temperature, because $K$ is set by thermodynamics and the rate is set by the activation barrier (Chapter 13). Diamond converting to graphite has a favorable $K$ and a barrier so large that the conversion is not observed on any human timescale. **Do not read "large K" as "fast."**
+:::
+
+:::: tabs
+::: tab Problem
+Three gas-phase reactions ((a) and (b) at 25 °C): (a) $\ce{2NO(g) <=> N2(g) + O2(g)}$, $K = 2.4\times10^{30}$; (b) $\ce{N2(g) + O2(g) <=> 2NO(g)}$, $K = 4.1\times10^{-31}$; \(c) $\ce{H2(g) + I2(g) <=> 2HI(g)}$, $K = 54$ (at 430 °C). For each, describe the equilibrium mixture. Then explain why, given (b), the air you are breathing is not slowly turning into nitrogen monoxide — and why a car engine produces it anyway.
+:::
+::: tab Solution
+**(a) $K = 2.4\times10^{30}$ — essentially complete.** At equilibrium virtually all the NO has decomposed; the mixture is $\ce{N2}$ and $\ce{O2}$ with an immeasurably small trace of NO.
+
+**(b) $K = 4.1\times10^{-31}$ — essentially no reaction.** Note that this is the reciprocal of (a), as it must be: $1/(2.4\times10^{30}) \approx 4.2\times10^{-31}$, the same as the given value to within rounding. The same physical situation, described from the other direction.
+
+**\(c) $K = 54$ — genuinely mixed.** Products are favored, but not overwhelmingly; a measurable amount of $\ce{H2}$ and $\ce{I2}$ remains at equilibrium. This is the interesting middle case, and the one that ICE tables in §14.4 exist to handle.
+
+**Why air is stable.** With $K = 4.1\times10^{-31}$, the equilibrium amount of NO in air is vanishing — thermodynamics says almost none should form, and almost none does.
+
+**Why an engine makes NO anyway — two separate reasons, both worth separating.** First, $K$ **rises steeply with temperature** for this endothermic reaction, so at combustion temperatures (~2000 K) the equilibrium amount of NO is far from negligible. Second, the exhaust cools in milliseconds — far too fast for the NO to decompose back, even though at the lower temperature it "should." The NO is kinetically trapped in a state its own $K$ no longer favors. That is precisely why catalytic converters exist: they supply the pathway (Chapter 13) that the cooling exhaust does not have time to find.
+:::
+::::
+
+**Self-check:**
+- If $K = 1$ exactly, what does that tell you about $k_f$ and $k_r$, and about the relative amounts of reactants and products at equilibrium?
+- Why does "the reaction has stopped" describe equilibrium incorrectly, even though concentrations aren't changing?
+
+> **Where this goes next.** §14.1 gave one equilibrium expression, for a reaction that happens in a single elementary step. Most reactions do not. §14.2 shows that the same expression is written from the *balanced equation* regardless of mechanism — and works out the cases the simple form does not cover: gases measured by pressure, solids and pure liquids, and reactions built from several steps.
+
+## 14.2 Equilibrium Constants{{attrs[#blk-ch14sec02]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 14.2a}} Write $K_c$ expressions for homogeneous (gas-phase and liquid-phase) reactions and $K_p$ expressions for gas-phase reactions, and convert between them using $K_p=K_c(RT)^{\Delta n}$.
+- {{sp[info] Objective 14.2b}} Write the equilibrium expression for a heterogeneous reaction, omitting pure solids and liquids.
+- {{sp[info] Objective 14.2c}} Combine equilibrium constants for a multi-step reaction.
+:::
+
+Before the special cases, one general rule that §14.1 did not state. The derivation there assumed a single elementary step in each direction — but ==the equilibrium expression is written from the **balanced equation**, with the coefficients as exponents, no matter how many steps the mechanism actually has.== This is the exact opposite of Chapter 13's rule for rate laws, where coefficients are emphatically *not* exponents unless the step is elementary. Equilibrium is a destination, and it does not depend on the route taken to reach it; a rate does.
+
+### Homogeneous equilibria: $K_c$ and $K_p$
+
+**Homogeneous equilibria** have every reactant and product in the same phase. For gas-phase reactions, $K$ can be written using concentrations ($K_c$) or partial pressures ($K_p$), related through the ideal gas law ($P=\frac{n}{V}RT=cRT$, Chapter 5):
+
+$$K_p=K_c(RT)^{\Delta n}, \qquad \Delta n = (c+d)-(a+b) \text{ (moles of gaseous product} - \text{moles of gaseous reactant)}$$
+
+:::: tabs
+::: tab Problem
+For $\ce{2NH3(g) <=> N2(g) + 3H2(g)}$, $K_p=15.6$ at 217 °C. Write the $K_p$ and $K_c$ expressions, and calculate $K_c$ at this temperature.
+:::
+::: tab Solution
+$$K_p=\frac{P_{\ce{N2}}P_{\ce{H2}}^3}{P_{\ce{NH3}}^2}, \qquad K_c=\frac{[\ce{N2}][\ce{H2}]^3}{[\ce{NH3}]^2}$$
+
+$\Delta n = (1+3)-2 = 2$. Using $T=217+273=490$ K:
+
+$$K_c=K_p(RT)^{-\Delta n}=15.6\times(0.0821\times490)^{-2}=0.00964$$
+
+{{sp[warning] Three things to check every time}} Use $R = 0.0821\ \text{L·atm·mol}^{-1}\text{K}^{-1}$ (not 8.314) because $K_p$ is in atmospheres; convert $T$ to **kelvin**; and count $\Delta n$ using **gas-phase species only** — solids, liquids, and aqueous species do not contribute.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+(a) For $\ce{N2(g) + 3H2(g) <=> 2NH3(g)}$ at 500 K, $K_c = 0.061$. Find $K_p$. (b) For $\ce{H2(g) + I2(g) <=> 2HI(g)}$, $K_c = 54$ at 700 K. Find $K_p$. \(c) What is different about (b), and what does it tell you?
+:::
+::: tab Solution
+**(a)** Count gas moles: 2 on the right, $1+3 = 4$ on the left, so $\Delta n = 2 - 4 = -2$.
+
+$$K_p = K_c(RT)^{\Delta n} = 0.061\times(0.0821\times500)^{-2} = \frac{0.061}{(41.05)^2} = 3.6\times10^{-5}$$
+
+**(b)** Count again: 2 on the right, $1+1 = 2$ on the left, so $\Delta n = 0$.
+
+$$K_p = K_c(RT)^{0} = K_c\times 1 = 54$$
+
+**\(c) When $\Delta n = 0$, $K_p$ and $K_c$ are numerically identical**, and the temperature drops out entirely. That happens whenever the reaction produces exactly as many moles of gas as it consumes — which is also, not coincidentally, exactly when compressing the container will *not* shift the equilibrium (§14.5). Both facts have the same cause: with equal gas moles on both sides, the volume terms cancel.
+
+**Note also the size of the change in (a).** $K_c = 0.061$ and $K_p = 3.6\times10^{-5}$ describe the *same* equilibrium — a factor of about 1,700 apart, purely from the choice of units. **A $K$ value is meaningless without knowing whether it is $K_c$ or $K_p$.**
+:::
+::::
+
+### Liquid-phase and heterogeneous equilibria
+
+For **liquid-phase reactions**, only $K_c$ applies — there are no partial pressures to write. {{sp[warning] Reminder}} when the solvent participates in the reaction but is present in large excess, its concentration barely changes and is absorbed into the constant rather than written explicitly:
+
+$$\ce{CH3COOH(aq) + H2O(l) <=> CH3COO-(aq) + H3O+(aq)} \qquad K_c=K'_c[\ce{H2O}]=\frac{[\ce{CH3COO-}][\ce{H3O+}]}{[\ce{CH3COOH}]}$$
+
+**Heterogeneous equilibria** involve more than one phase. **Pure solids and pure liquids are left out of the equilibrium expression entirely**, because their "concentration" (density ÷ molar mass) is already constant — it doesn't change as more or less of the solid/liquid is present.
+
+:::: tabs
+::: tab Problem
+A closed vessel at high temperature contains solid $\ce{CaCO3}$, solid $\ce{CaO}$, and gaseous $\ce{CO2}$ at equilibrium: $\ce{CaCO3(s) <=> CaO(s) + CO2(g)}$. The equilibrium pressure of $\ce{CO2}$ is found to be 0.220 atm. Write the $K_p$ expression and give its value. Would adding more solid $\ce{CaCO3}$ change this pressure?
+:::
+::: tab Solution
+Both $\ce{CaCO3}$ and $\ce{CaO}$ are pure solids, so neither appears in the expression: $K_p = P_{\ce{CO2}} = 0.220$.
+
+Adding more $\ce{CaCO3(s)}$ would **not** change the equilibrium $\ce{CO2}$ pressure — a pure solid's "concentration" doesn't appear in $K$ at all, so having more or less of it present has no effect on the equilibrium position, only on how much solid is left to react with.
+
+**A consequence worth noticing.** Because $K_p = P_{\ce{CO2}}$ for this reaction, a sealed vessel in which some $\ce{CaCO3}$ and some $\ce{CaO}$ remain at equilibrium at this temperature will always show the same $\ce{CO2}$ pressure, 0.220 atm. That is genuinely useful: it is why net decomposition stops as soon as the vessel reaches that pressure — and restarts the moment you pump some $\ce{CO2}$ away.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Write the $K_c$ expression for each: (a) $\ce{2NaHCO3(s) <=> Na2CO3(s) + H2O(g) + CO2(g)}$; (b) $\ce{Zn(s) + 2H+(aq) <=> Zn^2+(aq) + H2(g)}$; \(c) $\ce{NH3(aq) + H2O(l) <=> NH4+(aq) + OH-(aq)}$; (d) $\ce{2H2O(l) <=> 2H2(g) + O2(g)}$.
+:::
+::: tab Solution
+Apply one rule to all four: **include gases and aqueous species; omit pure solids and pure liquids.**
+
+**(a)** Both sodium salts are pure solids, so only the two gases survive:
+$$K_c = [\ce{H2O}][\ce{CO2}]$$
+Note that $\ce{H2O}$ here is a **gas**, so it *is* included — the phase label is doing real work.
+
+**(b)** Zinc metal is a pure solid and drops out:
+$$K_c = \frac{[\ce{Zn^2+}][\ce{H2}]}{[\ce{H+}]^2}$$
+
+**\(c)** Water is the solvent, present in vast excess, so its concentration is effectively constant and is folded into $K_c$:
+$$K_c = \frac{[\ce{NH4+}][\ce{OH-}]}{[\ce{NH3}]}$$
+This particular constant has a name you will meet in Chapter 15: $K_b$.
+
+**(d)** Liquid water is a pure liquid and drops out, leaving only the gases:
+$$K_c = [\ce{H2}]^2[\ce{O2}]$$
+
+**The distinction that decides every one of these:** is the substance a *pure* solid or liquid (omit), or is it a gas or dissolved species (include)? Liquid water in (d) is pure and omitted; water vapor in (a) is a gas and included; water as solvent in \(c) is omitted for a different reason — not because it is pure, but because its concentration barely changes.
+:::
+::::
+
+### Combining equilibria for multi-step reactions
+
+If an overall reaction is the **sum of two or more reactions**, its equilibrium constant is the *product* of the individual $K$'s — the equilibrium analog of Hess's law (Chapter 6):
+
+:::: tabs
+::: tab Problem
+Given $\ce{CoO(s) + CO(g) <=> Co(s) + CO2(g)}$, $K_{c1}=490$, and $\ce{Co(s) + H2O(g) <=> CoO(s) + H2(g)}$, $K_{c2}=0.0149$, find $K_{c3}$ for $\ce{H2O(g) + CO(g) <=> CO2(g) + H2(g)}$.
+:::
+::: tab Solution
+Adding reaction 1 and reaction 2 cancels $\ce{CoO(s)}$ and $\ce{Co(s)}$, giving reaction 3 exactly. So $K_{c3}=K_{c1}\times K_{c2} = 490\times0.0149 = 7.30$.
+
+**Why multiply rather than add?** Because $K$'s are ratios of concentration terms, and adding reactions multiplies those ratios together. Chapter 6's Hess's law added $\Delta H$ values because enthalpy is an exponent-free sum; here the analogous operation is a product. The two rules pair up exactly:
+
+| Operation on the equation | Effect on $\Delta H$ (Ch. 6) | Effect on $K$ |
+|---|---|---|
+| add two reactions | $\Delta H_1 + \Delta H_2$ | $K_1 \times K_2$ |
+| reverse the reaction | $-\Delta H$ | $1/K$ |
+| multiply coefficients by $n$ | $n\Delta H$ | $K^n$ |
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Given $\ce{N2(g) + O2(g) <=> 2NO(g)}$ with $K_1 = 4.1\times10^{-31}$ and $\ce{2NO(g) + O2(g) <=> 2NO2(g)}$ with $K_2 = 6.4\times10^{9}$, find $K$ for (a) $\ce{N2(g) + 2O2(g) <=> 2NO2(g)}$ and (b) $\ce{2NO2(g) <=> N2(g) + 2O2(g)}$.
+:::
+::: tab Solution
+**(a)** Check first that the two given reactions really do add to the target. Summing them:
+
+$$\ce{N2 + O2 + 2NO + O2 -> 2NO + 2NO2}$$
+
+$\ce{2NO}$ cancels from both sides, leaving $\ce{N2 + 2O2 -> 2NO2}$. ✓ So multiply:
+
+$$K = K_1 \times K_2 = (4.1\times10^{-31})(6.4\times10^{9}) = 2.6\times10^{-21}$$
+
+**(b)** This is the reverse of (a), so take the reciprocal:
+
+$$K = \frac{1}{2.6\times10^{-21}} = 3.8\times10^{20}$$
+
+**What the numbers say.** $\ce{NO2}$ formation from the elements has $K = 2.6\times10^{-21}$ — nitrogen and oxygen in a jar at room temperature will not produce measurable $\ce{NO2}$, ever. But $\ce{NO2}$ that already exists is thermodynamically desperate to decompose, $K = 3.8\times10^{20}$, and does not, because the barrier is high. That combination — enormously favorable and yet persistent — is why $\ce{NO2}$ is a stable enough pollutant to be a public-health problem.
+
+{{sp[warning] Always verify the sum first}} The multiply rule only applies if the reactions genuinely add to the target equation. Writing $K_1 \times K_2$ without checking the cancellation is the standard error, and it produces a confidently wrong number.
+:::
+::::
+
+**Self-check:**
+- Why does $K_p=K_c(RT)^{\Delta n}$ reduce to $K_p=K_c$ when $\Delta n=0$? What kind of reaction does that describe?
+- A reaction has $K = 25$. What is $K$ for the same reaction written with all coefficients doubled?
+
+> **Where this goes next.** You can now write and evaluate $K$ for essentially any reaction. But $K$ describes only one particular state — the one the system ends at. §14.3 asks the question you face when handed an arbitrary mixture: is this at equilibrium, and if not, which way will it move?
+
+## 14.3 Reaction Quotient{{attrs[#blk-ch14sec03]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 14.3a}} Calculate the reaction quotient $Q_c$ from a set of initial (non-equilibrium) concentrations.
+- {{sp[info] Objective 14.3a}} Compare $Q_c$ to $K_c$ to predict whether a reaction proceeds forward, in reverse, or is already at equilibrium.
+:::
+
+### Q: the same expression, different numbers
+
+The **reaction quotient** $Q_c$ uses the *same expression* as $K_c$, but with whatever concentrations are given at some moment — which are not necessarily equilibrium concentrations:
+
+$$Q_c=\frac{[\ce{C}]_0^c[\ce{D}]_0^d}{[\ce{A}]_0^a[\ce{B}]_0^b}$$
+
+{{sp[warning] Reminder}} $Q$ and $K$ use the identical formula — the only difference is *which* concentrations you plug in. Comparing them tells you which way the system must shift to reach equilibrium:
+
+| Comparison | System proceeds |
+|---|---|
+| $Q_c > K_c$ | Right to left (reverse) — too much product for equilibrium |
+| $Q_c = K_c$ | Already at equilibrium |
+| $Q_c < K_c$ | Left to right (forward) — too little product for equilibrium |
+
+![A logarithmic number line with K marked, the region below K shaded and labeled shifts forward, the region above K shaded and labeled shifts reverse, and two example mixtures plotted at their Q values](../assets/q_versus_k.svg)
+*Figure 14.3 — $Q$ and $K$ live on the same axis, and the system always moves so that $Q$ travels toward $K$. The two plotted points are the worked example's mixtures: one at $Q = 0.61$, well below $K = 4.3$, and one at $Q = 195$, far above it. Self-generated with matplotlib from the worked example's own numbers.*
+
+==You do not have to reason about which direction "makes sense" — the comparison does it for you.== Figure 14.3 shows why the rule is a single sentence rather than a set of cases: $Q$ moves toward $K$, always, so whichever side of $K$ your mixture starts on determines the direction. If $Q$ is too small, the numerator (products) must grow — forward. If $Q$ is too large, the numerator must shrink — reverse.
+
+:::: tabs
+::: tab Problem
+For $\ce{2SO2(g) + O2(g) <=> 2SO3(g)}$: (a) At equilibrium, $[\ce{SO2}]=0.90$ M, $[\ce{O2}]=0.35$ M, $[\ce{SO3}]=1.1$ M. Find $K_c$. (b) In a different mixture at the same temperature, $[\ce{SO2}]=1.9$ M, $[\ce{O2}]=0.17$ M, $[\ce{SO3}]=0.61$ M. Which direction does the reaction proceed?
+:::
+::: tab Solution
+**(a)** $K_c=\dfrac{[\ce{SO3}]^2}{[\ce{SO2}]^2[\ce{O2}]}=\dfrac{1.1^2}{0.90^2\times0.35}=4.3$
+
+**(b)** $Q_c=\dfrac{0.61^2}{1.9^2\times0.17}=0.61$. Since $Q_c<K_c$ (0.61 < 4.3), the reaction proceeds **forward**.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+For the same reaction, a third mixture has $[\ce{SO2}]=0.40$ M, $[\ce{O2}]=0.20$ M, $[\ce{SO3}]=2.5$ M. Using $K_c=4.3$ from above, which direction does this mixture proceed?
+:::
+::: tab Solution
+$$Q_c=\frac{2.5^2}{0.40^2\times0.20}=195.3$$
+
+Since $Q_c \gg K_c$ (195 ≫ 4.3), the reaction proceeds in **reverse** — there is far too much $\ce{SO3}$ relative to $\ce{SO2}$ and $\ce{O2}$ for this mixture to be at equilibrium, so it must consume product and regenerate reactants.
+:::
+::::
+
+### A caution about what Q does not tell you
+
+$Q$ gives the **direction** of change, and nothing else. It does not say how far the system must travel, how long it will take, or what the final concentrations will be. The extent of the shift and the final concentrations are §14.4's job; how long it takes is a question of kinetics, which equilibrium cannot answer.
+
+:::warning
+Two mixtures can have the same $Q$ and be in completely different physical situations — one nearly at equilibrium, one nowhere near it. They will shift the same *way*, but by wildly different *amounts*. And note the reverse trap: a large $Q$ does not mean "a lot of product" in any absolute sense. $Q$ is a ratio, so a mixture with tiny concentrations of everything can still have a huge $Q$ if the product concentration happens to be relatively larger.
+:::
+
+:::: tabs
+::: tab Problem
+For $\ce{PCl5(g) <=> PCl3(g) + Cl2(g)}$, $K_c = 0.042$ at 250 °C. A flask contains $[\ce{PCl5}] = 0.20$ M, $[\ce{PCl3}] = 0.10$ M, and $[\ce{Cl2}] = 0.084$ M. (a) Is the system at equilibrium? (b) If not, which direction does it shift, and what happens to each concentration? \(c) The flask is left overnight and nothing measurable changes. Does that prove it was at equilibrium?
+:::
+::: tab Solution
+**(a) Compute $Q$ and compare.**
+
+$$Q_c = \frac{[\ce{PCl3}][\ce{Cl2}]}{[\ce{PCl5}]} = \frac{(0.10)(0.084)}{0.20} = 0.042$$
+
+$Q_c = K_c$ exactly, so **the system is already at equilibrium**. No net change will occur.
+
+**(b)** Nothing shifts. Every concentration stays where it is — though both the forward and reverse reactions continue, at equal rates.
+
+**\(c) No — and this is the point of the question.** "Nothing changes overnight" is consistent with equilibrium, but it is equally consistent with a mixture that is far from equilibrium and simply reacting too slowly to notice. A mixture of hydrogen and oxygen at room temperature also does not change overnight, and its $Q$ is nowhere near its $K$.
+
+**Distinguishing the two requires something beyond observation:** compute $Q$ and compare it with $K$, or perturb the system and see whether it returns. Equilibrium is defined by $Q = K$, not by the absence of visible change.
+:::
+::::
+
+> **Where this goes next.** Comparing $Q$ with $K$ tells you the direction. §14.4 answers the harder question — *how far* — by tracking the change with a single unknown and solving for it.
+
+**Self-check:**
+- Why is it impossible to tell from $Q$ alone (without comparing to $K$) which direction a reaction will proceed?
+- Two mixtures have the same $Q_c$ but different actual concentrations. Do they necessarily shift in the same direction? Why?
+
+## 14.4 Equilibrium Concentrations{{attrs[#blk-ch14sec04]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 14.4a}} Set up and solve an ICE table given initial concentrations and $K$, to find equilibrium concentrations of all species.
+- {{sp[info] Objective 14.4b}} Recognize when a small-x approximation is valid, and check that validity after solving.
+:::
+
+### The ICE table
+
+Given initial concentrations and $K$, an **ICE table** (Initial, Change, Equilibrium) organizes the algebra needed to find unknown equilibrium concentrations, using a single unknown $x$ scaled by each species' stoichiometric coefficient:
+
+| | $\ce{A}$ | $\ce{B}$ | $\ce{C}$ | $\ce{D}$ |
+|---|---|---|---|---|
+| Initial (M) | $[\ce{A}]_0$ | $[\ce{B}]_0$ | 0 | 0 |
+| Change (M) | $-ax$ | $-bx$ | $+cx$ | $+dx$ |
+| Equilibrium (M) | $[\ce{A}]_0-ax$ | $[\ce{B}]_0-bx$ | $cx$ | $dx$ |
+
+Substituting the Equilibrium row into the $K$ expression gives one equation in $x$; solve it, then back-calculate every equilibrium concentration.
+
+:::: tabs
+::: tab Problem
+Acetic acid reacts with ethanol: $\ce{CH3COOH + C2H5OH <=> CH3COOC2H5 + H2O}$, $K_c=4.0$. Starting from 0.15 M acetic acid and 0.15 M ethanol (no products), find the equilibrium concentrations.
+:::
+::: tab Solution
+| | $\ce{CH3COOH}$ | $\ce{C2H5OH}$ | $\ce{CH3COOC2H5}$ | $\ce{H2O}$ |
+|---|---|---|---|---|
+| Initial (M) | 0.15 | 0.15 | 0 | 0 |
+| Change (M) | $-x$ | $-x$ | $+x$ | $+x$ |
+| Equilibrium (M) | $0.15-x$ | $0.15-x$ | $x$ | $x$ |
+
+$$K_c=\frac{x\cdot x}{(0.15-x)(0.15-x)}=\left(\frac{x}{0.15-x}\right)^2=4.0$$
+
+Taking the positive square root of both sides (valid here because both sides are perfect squares, and x/(0.15−x) must be positive since all concentrations are positive): $\dfrac{x}{0.15-x}=2.0 \Rightarrow x=0.10$.
+
+At equilibrium: $[\ce{CH3COOC2H5}]=[\ce{H2O}]=0.10$ M; $[\ce{CH3COOH}]=[\ce{C2H5OH}]=0.15-0.10=0.05$ M.
+
+**Always verify by substituting back:** $\dfrac{(0.10)(0.10)}{(0.05)(0.05)} = \dfrac{0.010}{0.0025} = 4.0$ ✓. This check costs ten seconds and catches sign errors, dropped coefficients, and the wrong root of a quadratic.
+:::
+::::
+
+### When the algebra needs a quadratic
+
+The square-root shortcut above worked only because the concentration expression was a perfect square (equal starting reactant concentrations, no products). Change the starting amounts and it stops working — you get a genuine quadratic, and the physically meaningful root has to be chosen.
+
+:::: tabs
+::: tab Problem
+For $\ce{H2(g) + I2(g) <=> 2HI(g)}$, $K_c = 50.5$ at 448 °C. A flask starts with $[\ce{H2}]_0 = 1.00$ M and $[\ce{I2}]_0 = 2.00$ M and no HI. Find all three equilibrium concentrations.
+:::
+::: tab Solution
+| | $\ce{H2}$ | $\ce{I2}$ | $\ce{HI}$ |
+|---|---|---|---|
+| Initial (M) | 1.00 | 2.00 | 0 |
+| Change (M) | $-x$ | $-x$ | $+2x$ |
+| Equilibrium (M) | $1.00-x$ | $2.00-x$ | $2x$ |
+
+$$K_c = \frac{(2x)^2}{(1.00-x)(2.00-x)} = 50.5$$
+
+The two denominators differ, so no square root is available. Expand:
+
+$$4x^2 = 50.5(2.00 - 3.00x + x^2) = 101 - 151.5x + 50.5x^2$$
+$$46.5x^2 - 151.5x + 101 = 0$$
+
+$$x = \frac{151.5 \pm \sqrt{151.5^2 - 4(46.5)(101)}}{2(46.5)} = \frac{151.5 \pm \sqrt{4166.25}}{93} = \frac{151.5 \pm 64.55}{93}$$
+
+$$x = 2.32 \quad\text{or}\quad x = 0.935$$
+
+**Choosing the root is not optional and not arbitrary.** $x = 2.32$ would make $[\ce{H2}] = 1.00 - 2.32 = -1.32$ M — a negative concentration, which is physically impossible. So $x = 0.935$.
+
+$$[\ce{H2}] = 0.065\ \text{M} \qquad [\ce{I2}] = 1.065\ \text{M} \qquad [\ce{HI}] = 1.870\ \text{M}$$
+
+**Check:** $\dfrac{(1.870)^2}{(0.065)(1.065)} = \dfrac{3.497}{0.0692} = 50.5$ ✓
+
+{{sp[warning] The root test}} A quadratic always gives two roots and exactly one is usually physical. Test each by asking whether it drives any concentration negative — $x$ can never exceed the smallest initial concentration divided by its coefficient. Here that ceiling is 1.00, so 2.32 was excluded before any substitution.
+
+**Notice what the excess $\ce{I2}$ bought you.** Starting with twice as much iodine drove hydrogen down to 0.065 M — 93.5% consumed. With equal 1.00 M starts, hydrogen would only fall to about 0.22 M. Using an excess of the cheaper reactant to consume more of the expensive one is Le Chatelier's principle applied commercially, and §14.5 gives it a name.
+:::
+::::
+
+### The small-x approximation, and when it fails
+
+When $K$ is small enough that $x$ turns out to be tiny compared to the initial concentration, you can **approximate** $[\ce{A}]_0-x\approx[\ce{A}]_0$ and avoid the quadratic entirely. ==The approximation is a shortcut with a *measurable* error, not a matter of taste — which is why checking it afterward is part of the method, not an optional flourish.==
+
+![Two panels: how much reactant actually reacts as a function of K, and the error the small-x shortcut incurs as a function of that percentage, with a 5 percent threshold marked](../assets/small_x_validity.svg)
+*Figure 14.4 — Panel (a): for a fixed starting concentration, the fraction of reactant consumed rises steadily with $K$; below about $K = 5\times10^{-3}$ it stays under 5%. Panel (b): the error the shortcut introduces, plotted against that same percentage. At 0.8% reacted the shortcut is off by 0.4%; at 28% reacted it is off by 18%. Self-generated with matplotlib for $\ce{A <=> 2B}$ with $[\ce{A}]_0 = 0.500$ M.*
+
+Figure 14.4 turns the familiar "5% rule" into something you can see the reason for. The threshold is not magic — it is simply where the error the shortcut introduces becomes comparable to the precision of the data you started from.
+
+:::: tabs
+::: tab Problem
+$\ce{N2O4(g) <=> 2NO2(g)}$, $K_c=1.20\times10^{-4}$, starting from $[\ce{N2O4}]_0=0.500$ M and no $\ce{NO2}$. Use the small-$x$ approximation to find the equilibrium concentrations, and verify the approximation is valid.
+:::
+::: tab Solution
+| | $\ce{N2O4}$ | $\ce{NO2}$ |
+|---|---|---|
+| Initial (M) | 0.500 | 0 |
+| Change (M) | $-x$ | $+2x$ |
+| Equilibrium (M) | $0.500-x$ | $2x$ |
+
+$$K_c=\frac{(2x)^2}{0.500-x}=1.20\times10^{-4}$$
+
+Approximating $0.500-x\approx0.500$ (since $K_c$ is small, $x$ should be small):
+
+$$\frac{4x^2}{0.500}=1.20\times10^{-4} \Rightarrow x^2=1.5\times10^{-5} \Rightarrow x=3.87\times10^{-3}$$
+
+**Check the approximation:** $\dfrac{x}{[\ce{N2O4}]_0}=\dfrac{3.87\times10^{-3}}{0.500}=0.77\%$, well under the usual 5% threshold — the approximation is valid.
+
+Equilibrium concentrations: $[\ce{N2O4}]=0.500-0.00387=0.496$ M; $[\ce{NO2}]=2(0.00387)=0.00775$ M.
+:::
+::::
+
+:::warning
+If checking the small-$x$ approximation gives more than about 5%, the approximation has failed — go back and solve the exact quadratic (or cubic) equation instead of trusting the shortcut.
+:::
+
+:::: tabs
+::: tab Problem
+$\ce{N2O4(g) <=> 2NO2(g)}$ has $K_c = 0.211$ at 100 °C. Starting from $[\ce{N2O4}]_0 = 0.050$ M with no $\ce{NO2}$: (a) attempt the small-$x$ approximation and check it; (b) solve exactly; \(c) compare.
+:::
+::: tab Solution
+| | $\ce{N2O4}$ | $\ce{NO2}$ |
+|---|---|---|
+| Initial (M) | 0.050 | 0 |
+| Change (M) | $-x$ | $+2x$ |
+| Equilibrium (M) | $0.050-x$ | $2x$ |
+
+$$K_c = \frac{(2x)^2}{0.050-x} = 0.211$$
+
+**(a) Try the shortcut.** Approximating $0.050 - x \approx 0.050$:
+
+$$\frac{4x^2}{0.050} = 0.211 \quad\Rightarrow\quad x^2 = 2.64\times10^{-3} \quad\Rightarrow\quad x = 0.051$$
+
+**Check it:** $\dfrac{0.051}{0.050} = 1.0$, i.e. about 100%, not under 5%. The approximation does not merely fail the 5% test — it returns an $x$ **larger than the entire starting concentration**, which would leave $[\ce{N2O4}]$ negative. This is a nonsense answer, and the check is what reveals it.
+
+**(b) Solve exactly.** Clear the denominator:
+
+$$4x^2 = 0.211(0.050 - x) \quad\Rightarrow\quad 4x^2 + 0.211x - 0.01055 = 0$$
+
+$$x = \frac{-0.211 + \sqrt{(0.211)^2 + 4(4)(0.01055)}}{2(4)} = \frac{-0.211 + \sqrt{0.21332}}{8} = \frac{0.2509}{8} = 0.0314$$
+
+(The negative root gives a negative $x$ and is discarded.)
+
+$$[\ce{N2O4}] = 0.050 - 0.0314 = 0.019\ \text{M} \qquad [\ce{NO2}] = 2(0.0314) = 0.063\ \text{M}$$
+
+**Check:** $\dfrac{(0.063)^2}{0.019} = 0.21$ ✓
+
+**\(c)** The shortcut gave $x = 0.051$; the truth is 0.0314. That is a **64% overestimate**, and 63% of the $\ce{N2O4}$ actually reacts — nowhere near "small."
+
+**What to take from this.** $K = 0.211$ is a small-looking number, and small-looking $K$ is exactly what tempts people into the shortcut. Whether the shortcut works depends on $K$ *relative to the starting concentration*, not on $K$ alone: the same $K$ with $[\ce{N2O4}]_0 = 5.0$ M would consume a much smaller fraction. Panel (a) of Figure 14.4 is drawn for one specific $[\ce{A}]_0$ for exactly this reason.
+:::
+::::
+
+### Working backwards: finding one unknown concentration
+
+The commonest exam variant is not a full ICE table at all. You are given $K$ and every equilibrium concentration but one, and asked for the missing one. No table is needed — just rearrange the expression.
+
+:::: tabs
+::: tab Problem
+For $\ce{N2(g) + 3H2(g) <=> 2NH3(g)}$, $K_c = 0.105$ at a certain temperature. At equilibrium a vessel contains $[\ce{N2}] = 0.25$ M and $[\ce{H2}] = 0.50$ M. What is $[\ce{NH3}]$?
+:::
+::: tab Solution
+Write the expression and solve for the unknown. The concentrations given are already **equilibrium** values, so they can be substituted directly — no ICE table, no $x$.
+
+$$K_c = \frac{[\ce{NH3}]^2}{[\ce{N2}][\ce{H2}]^3}$$
+
+$$[\ce{NH3}]^2 = K_c[\ce{N2}][\ce{H2}]^3 = (0.105)(0.25)(0.50)^3 = (0.105)(0.25)(0.125) = 3.28\times10^{-3}$$
+
+$$[\ce{NH3}] = \sqrt{3.28\times10^{-3}} = 0.057\ \text{M}$$
+
+**Two things to watch.** The coefficient 3 on $\ce{H2}$ becomes an **exponent**, so $(0.50)^3 = 0.125$, not $3 \times 0.50$. And the coefficient 2 on $\ce{NH3}$ means the expression gives $[\ce{NH3}]^2$, so a square root is needed at the end — take the **positive** root, since a concentration cannot be negative.
+
+**How to tell this problem from an ICE problem at a glance:** if the concentrations you are given are described as *equilibrium* values, substitute them directly. If they are *initial* values, you need an ICE table, because they will all change before equilibrium is reached.
+:::
+::::
+
+**Self-check:**
+- In the acetic acid/ethanol example, why was it valid to take the square root of both sides directly, instead of expanding into a full quadratic?
+- A quadratic gives roots $x = 0.42$ and $x = 1.30$, and the smallest initial concentration was 0.80 M. Which root is physical, and how do you know without substituting?
+
+> **Where this goes next.** §14.4 solves for the equilibrium state of an undisturbed system. §14.5 asks what happens when you disturb one that has already settled — and answers it, in most cases, without any calculation at all.
+
+## 14.5 Le Chatelier's Principle{{attrs[#blk-ch14sec05]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 14.5a}} State Le Chatelier's principle.
+- {{sp[info] Objective 14.5a}} Predict the direction an equilibrium shifts in response to a change in concentration, pressure/volume, or temperature.
+- {{sp[info] Objective 14.5a}} Explain why a catalyst affects neither the equilibrium position nor the value of K.
+:::
+
+**Le Chatelier's principle:** when a stress is applied to a system at equilibrium, the system shifts in the direction that **partially offsets** that stress as it re-establishes equilibrium.
+
+The word **partially** carries the whole idea. The system never fully undoes what you did — if it could, nothing would have changed and there would be no principle to state. Add reactant and the system consumes *some* of it; the final amount is higher than before, just lower than the instant you added it.
+
+Everything in this section can also be derived from §14.3, and it is worth seeing that once. A stress makes $Q$ and $K$ unequal (a concentration or pressure change moves $Q$; a temperature change moves $K$ itself); the system then shifts in whatever direction brings $Q$ to $K$. Le Chatelier's principle is the shortcut that lets you skip the arithmetic — but $Q$ versus $K$ is the reason it works.
+
+### Changing a concentration
+
+Figure 14.5 separates the two things that happen when you add reactant, which are easy to run together: the instantaneous spike, and the subsequent shift.
+
+![Bar chart showing concentrations of A, B, and C at the initial equilibrium, immediately after adding more A, and at the new equilibrium](../assets/le_chatelier_concentration_shift.svg)
+*Figure 14.5 — Adding reactant A causes an immediate spike in [A] (no reaction has happened yet), then the system shifts right, consuming some A and B and producing more C — partially, not completely, offsetting the added A. Self-generated with matplotlib; schematic/illustrative concentrations for $\ce{A + B <=> C}$.*
+
+:::: tabs
+::: tab Problem
+For $\ce{A + B <=> C}$ at equilibrium, product C is continuously removed from the system as it forms. Which direction does the equilibrium shift, and why?
+:::
+::: tab Solution
+Removing C decreases $[\ce{C}]$ below its equilibrium value, so $Q_c<K_c$ (and, because C is removed continuously, $Q_c$ keeps staying below $K_c$). The system shifts **forward** (toward C) to partially replace what was removed — consuming more A and B — exactly the partial-offset behavior Le Chatelier's principle predicts.
+:::
+::::
+
+### Changing pressure or volume
+
+For gas-phase reactions, **decreasing volume (increasing pressure)** shifts equilibrium toward the side with **fewer moles of gas**; increasing volume shifts it toward the side with more.
+
+![Three vessels showing an ammonia equilibrium before compression, immediately after compression at the same molecule count, and at the new equilibrium with fewer total molecules](../assets/le_chatelier_pressure.svg)
+*Figure 14.6 — Compressing the vessel raises every partial pressure at once, which moves $Q$ away from $K$. The system responds by converting four gas molecules into two, which removes some of the added pressure — 18 molecules become 16. The stress is partially offset, never erased. Self-generated with matplotlib; molecule counts are illustrative.*
+
+Figure 14.6 also shows what the rule does **not** say. The new equilibrium is still at higher pressure than the original — the shift relieves part of the increase, not all of it.
+
+{{sp[warning] Only $\Delta n$ matters}} Compression shifts an equilibrium only when the two sides have **different** numbers of gas moles. For $\ce{H2(g) + I2(g) <=> 2HI(g)}$, with 2 moles of gas on each side, squeezing the container raises all three partial pressures by the same factor and $Q$ does not move at all. And adding an **inert gas at constant volume** changes nothing either: it raises the total pressure but leaves every partial pressure — and therefore $Q$ — untouched.
+
+:::: tabs
+::: tab Problem
+The Haber process, $\ce{N2(g) + 3H2(g) <=> 2NH3(g)}$, is run industrially at very high pressure. Using Le Chatelier's principle, explain why.
+:::
+::: tab Solution
+The reactant side has $1+3=4$ moles of gas; the product side has 2 moles. Compressing the system (high pressure) shifts equilibrium toward the side with fewer gas moles — the product side — increasing $\ce{NH3}$ yield. This is exactly why industrial ammonia plants operate at high pressure rather than atmospheric pressure.
+:::
+::::
+
+Figure 14.7 shows what that argument is worth commercially.
+
+![Industrial ammonia synthesis plant with large reactor and storage structures](../assets/ammonia_plant.jpg =800x)
+*Figure 14.7 — A modern Haber-Bosch ammonia synthesis facility. Because $\ce{N2 + 3H2 <=> 2NH3}$ has fewer gas moles on the product side, running the process under high pressure is a direct, large-scale industrial application of Le Chatelier's principle. Source: DeltaSquad833, via Wikimedia Commons, CC BY-SA 4.0.*
+
+### Changing temperature — the one that changes K
+
+**Temperature** is the one stress that changes $K$ itself, not just the equilibrium position: increasing temperature shifts equilibrium toward the **endothermic** direction; decreasing temperature favors the **exothermic** direction.
+
+The cleanest way to remember which way is to **write heat into the equation as if it were a substance**. For an exothermic reaction, heat is a product:
+
+$$\ce{2NO2(g) <=> N2O4(g)} + \text{heat}$$
+
+Adding heat is then just like adding a product — the system shifts left. Removing heat (cooling) shifts it right. The rule requires no new reasoning, only the concentration rule you already have.
+
+Why $K$ itself changes, when nothing else does: every other stress moves the concentrations and lets the system return to the *same* $K$. Temperature changes $k_f$ and $k_r$ by **different** factors — because the forward and reverse activation energies differ (Chapter 13) — so their ratio $K = k_f/k_r$ genuinely takes a new value. Look up any $K$ and it will be quoted with a temperature attached; that is why.
+
+Figure 14.8 lets you see a temperature shift directly, because one of the two species is colored and the other is not.
+
+![Three sealed glass tubes containing NO2/N2O4 gas mixture at different temperatures, showing more brown color at higher temperature](../assets/no2_n2o4_equilibrium.jpg =800x)
+*Figure 14.8 — Three sealed tubes of the same $\ce{2NO2(g) <=> N2O4(g)}$ mixture, each standing in a water bath at a different temperature, coldest on the left (note the ice) and warmest on the right. The forward, $\ce{N2O4}$-forming direction is exothermic, so heating shifts the equilibrium toward the endothermic reverse direction and produces more $\ce{NO2}$ — which is the colored species. The tint accordingly deepens from left to right, from almost colorless through pale yellow to amber. Source: Gedep, via Wikimedia Commons, CC BY-SA 4.0.*
+
+:::: tabs
+::: tab Problem
+For $\ce{N2(g) + 3H2(g) <=> 2NH3(g)}$, $\Delta H^\circ = -92$ kJ/mol. Predict the effect of **raising** the temperature on (a) the equilibrium yield of $\ce{NH3}$, (b) the value of $K$, and \(c) the time taken to reach equilibrium. (d) Industrial ammonia synthesis nonetheless runs at about 450 °C. Reconcile that with your answer to (a).
+:::
+::: tab Solution
+$\Delta H^\circ < 0$, so the forward reaction is exothermic. Write heat as a product:
+
+$$\ce{N2(g) + 3H2(g) <=> 2NH3(g)} + \text{heat}$$
+
+**(a) Yield falls.** Raising the temperature is like adding a product, so the system shifts **left** — toward $\ce{N2}$ and $\ce{H2}$. Less ammonia at equilibrium.
+
+**(b) $K$ decreases.** Temperature is the one stress that changes $K$ itself, and it moves in the same direction as the shift: the equilibrium now genuinely favors reactants more than it did.
+
+**\(c) Equilibrium is reached faster.** This is a *kinetic* question, and it is independent of (a) and (b). Both $k_f$ and $k_r$ rise with temperature (Chapter 13), so the system gets wherever it is going sooner — even though where it is going is now a worse place.
+
+**(d) The compromise is deliberate.** At room temperature the yield would be excellent and the rate hopeless — the $\ce{N#N}$ triple bond gives the reaction an enormous activation barrier, and equilibrium would take geological time. At 450 °C the yield per pass is poor (around 15%) but it arrives in seconds. Industry then recovers the lost yield by other means: **high pressure** (§14.5's pressure rule, favoring the 2-molecule side), an **iron catalyst** (which improves the rate without touching the yield), and **continuous removal of the ammonia** as it liquefies, which keeps $Q$ below $K$ and pulls the reaction forward indefinitely.
+
+**The generalizable lesson:** thermodynamics and kinetics can point in opposite directions, and when they do, the answer is not to pick one. It is to accept a worse equilibrium in exchange for reaching it, and then claw the yield back with measures that do not sacrifice the rate.
+:::
+::::
+
+### Catalysts, and a summary
+
+Finally, ==a catalyst speeds up how quickly a system reaches equilibrium, but never shifts the equilibrium position or changes the value of K== — it lowers the activation energy for the forward and reverse reactions equally (Chapter 13), so both rates increase by the same factor and their ratio, $K=k_f/k_r$, is unchanged.
+
+| Factor | Shifts equilibrium? | Changes K? |
+|---|---|---|
+| Concentration | Yes | No |
+| Pressure/Volume | Yes (if $\Delta n$ ≠ 0) | No |
+| Temperature | Yes | Yes |
+| Catalyst | No | No |
+
+:::: tabs
+::: tab Problem
+For $\ce{2SO2(g) + O2(g) <=> 2SO3(g)}$, $\Delta H^\circ = -198$ kJ/mol. State the direction of shift and whether $K$ changes, for each: (a) adding more $\ce{O2}$; (b) removing $\ce{SO3}$ as it forms; \(c) compressing the vessel to half its volume; (d) raising the temperature; (e) adding a $\ce{V2O5}$ catalyst; (f) adding argon at constant volume.
+:::
+::: tab Solution
+| Change | Shift | Does $K$ change? | Why |
+|---|---|---|---|
+| (a) add $\ce{O2}$ | right | no | $Q$ drops below $K$; consuming $\ce{O2}$ restores it |
+| (b) remove $\ce{SO3}$ | right | no | $Q$ drops below $K$; making more $\ce{SO3}$ restores it |
+| \(c) halve the volume | right | no | 3 gas moles left, 2 right — the smaller side wins |
+| (d) raise $T$ | left | **yes**, $K$ falls | exothermic, so heat is a product |
+| (e) add catalyst | none | no | both rates rise equally; $k_f/k_r$ unchanged |
+| (f) add argon at constant $V$ | none | no | partial pressures unchanged, so $Q$ unchanged |
+
+**The two rows worth dwelling on.**
+
+**(d) is the only row where $K$ changes.** Every other stress moves the concentrations and lets the system return to the same $K$. Temperature changes $k_f$ and $k_r$ by different factors, so it changes their ratio.
+
+**(f) is the row most often gotten wrong.** Adding argon raises the *total* pressure, which sounds like \(c). But $Q$ is built from **partial** pressures, and at constant volume none of them changed — the argon simply occupies the same space alongside everything else. Contrast this with adding argon at constant *total pressure*, which forces the volume to expand and therefore does shift the equilibrium, toward the side with more gas moles.
+
+**Reading the table as a whole:** this is the reaction at the heart of sulfuric acid manufacture, and every row is a lever a plant actually pulls — excess air for (a), absorbing the $\ce{SO3}$ for (b), a vanadium catalyst for (e), and a temperature chosen, as with ammonia, to trade yield for speed.
+:::
+::::
+
+**Self-check:**
+- For $\ce{H2(g) + I2(g) <=> 2HI(g)}$, would compressing the container shift the equilibrium in either direction? Why?
+- A student says "the catalyst increased the yield of product." Is this consistent with everything in this section? What did the catalyst actually change?
+
+## Synthesis
+
+==This chapter's core move is recognizing that "equilibrium" is a single idea — forward rate equals reverse rate — expressed through four different tools: K's expression (Section 14.2), Q's comparison to K (Section 14.3), the ICE table's algebra (Section 14.4), and Le Chatelier's qualitative predictions (Section 14.5).== Every one of those tools reappears, unchanged in structure, throughout the rest of the course: $K_a$ and $K_b$ (Chapter 15) are just this chapter's $K$ applied to acid/base proton transfer; $K_{sp}$ and buffer/titration calculations (Chapter 16) reuse the exact same ICE-table method; and $\Delta G^\circ=-RT\ln K$ (Chapter 17) and $E^\circ$ related to $K$ (Chapter 18) both connect this chapter's equilibrium constant to thermodynamics and electrochemistry.
+
+## Asset and License Record for This Chapter
+
+| Asset | Source URL | License | Attribution |
+|---|---|---|---|
+| `assets/k_magnitude_schematic.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; schematic composition only, not a precise K-to-mole-fraction conversion (which also depends on stoichiometry and total moles); released under this package's CC BY 4.0 license. |
+| `assets/approach_to_equilibrium.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; illustrative kf/kr values chosen to demonstrate the concept (K = kf/kr = 3), not from a specific experimental dataset; released under this package's CC BY 4.0 license. |
+| `assets/q_versus_k.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/small_x_validity.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/le_chatelier_concentration_shift.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; schematic/illustrative concentrations chosen to demonstrate partial-offset behavior, not from a specific experimental dataset; released under this package's CC BY 4.0 license. |
+| `assets/le_chatelier_pressure.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/ammonia_plant.jpg` | https://commons.wikimedia.org/wiki/File:ThyssenKrupp_Ammonia_&_Urea_Plant.jpg | CC BY SA-4.0 | DeltaSquad833, via Wikimedia Commons, CC BY-SA 4.0. Resized from the original for web use. |
+| `assets/no2_n2o4_equilibrium.jpg` | https://commons.wikimedia.org/wiki/File:NO2_N2O4_evenwicht.jpg | CC BY SA-4.0 | Gedep, via Wikimedia Commons, CC BY-SA 4.0. Resized from the original for web use. |

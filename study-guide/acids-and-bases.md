@@ -1,0 +1,675 @@
+{{nyml
+kind: document
+format: 1
+title: Chapter 15: Acids and Bases
+}}
+
+# Chapter 15: Acids and Bases
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 15 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, second semester
+**Package license:** CC BY 4.0
+**Note:** builds on Brønsted acid/base definitions (Chapter 4), equilibrium constants and ICE tables (Chapter 14), and periodic trends (Chapter 8); facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+:::
+
+:::success
+**Chapter Learning Objectives**
+- Identify conjugate acid-base pairs and write stepwise ionization equations for diprotic/polyprotic acids.
+- Calculate pH and pOH from $[\ce{H+}]$ or $[\ce{OH-}]$, and recognize common strong and weak acids/bases.
+- Explain acid-strength trends (hydrohalic acids, oxoacids) and predict whether a salt solution is acidic, basic, or neutral.
+- Identify Lewis acids and bases in a reaction.
+- Calculate pH for strong acids/bases, weak acids/bases, polyprotic acids, and salt solutions.
+:::
+
+## Chapter Logic
+
+Chapter 14 built the general equilibrium toolkit. This chapter applies that toolkit to the single most common equilibrium in this course: acid-base chemistry. ==Nothing in this chapter is a new kind of calculation — every weak acid/base pH problem is a Chapter 14 ICE table with the letters changed (strong acids and bases are simpler still: they dissociate completely).== What is new is the vocabulary, the memorized lists, and knowing which of four situations you are in.
+
+{{mermaid
+graph TD
+  A["Conjugate acid-base pairs<br/>Water autoionization: Kw"] --> B["Strong vs. weak<br/>acids/bases"]
+  B --> C["WHY acids differ:<br/>structure-property trends"]
+  A --> D["Lewis acid-base theory<br/>(generalizes Brønsted)"]
+  B --> E["pH calculations:<br/>strong, weak, polyprotic, salts"]
+  C --> E
+}}
+
+**Visual description:** conjugate acid-base pairs and water's autoionization ($K_w$) establish the vocabulary. From there, the strong/weak classification and the structure-property trends explaining acid strength build toward the chapter's quantitative core: pH calculations for strong, weak, and polyprotic acids and bases and for salts. Lewis acid-base theory branches off separately as a generalization of the Brønsted definition.
+
+## 15.1 General Concepts{{attrs[#blk-ch15sec01]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 15.1a}} Identify conjugate acid-base pairs in a reaction, including for diprotic/polyprotic acids.
+- {{sp[info] Objective 15.1b}} Write the water autoionization equilibrium and calculate pH/pOH from $[\ce{H+}]$ or $[\ce{OH-}]$.
+- {{sp[info] Objective 15.1b}} Identify common strong and weak acids/bases from memory.
+:::
+
+### Conjugate acid-base pairs
+
+A **Brønsted acid** donates a proton; a **Brønsted base** accepts one (Chapter 4). When an acid donates a proton, what remains is its **conjugate base**; when a base accepts a proton, what results is its **conjugate acid**. **Every acid-base reaction contains exactly two conjugate acid-base pairs, each pair differing by one $\ce{H+}$.**
+
+:::: tabs
+::: tab Problem
+Identify the conjugate acid-base pairs in $\ce{CH3COOH(aq) + H2O(l) <=> CH3COO-(aq) + H3O+(aq)}$.
+:::
+::: tab Solution
+$\ce{CH3COOH}$ (acid) and $\ce{CH3COO-}$ (its conjugate base) are one pair; $\ce{H2O}$ (base) and $\ce{H3O+}$ (its conjugate acid) are the other pair.
+
+**How to find them reliably:** look at each species on the left and find the species on the right that differs from it by exactly one $\ce{H+}$. $\ce{CH3COOH}$ minus one $\ce{H+}$ is $\ce{CH3COO-}$; $\ce{H2O}$ plus one $\ce{H+}$ is $\ce{H3O+}$. Charge bookkeeping is the check: removing $\ce{H+}$ always makes the charge one unit *more negative*.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Identify both conjugate acid-base pairs in each: (a) $\ce{H2S + NH2- <=> HS- + NH3}$; (b) $\ce{HCO3- + OH- <=> CO3^2- + H2O}$; \(c) $\ce{HCO3- + H3O+ <=> H2CO3 + H2O}$. (d) What is unusual about $\ce{HCO3-}$ across (b) and \(c)?
+:::
+::: tab Solution
+Work species by species, matching each left-hand species to the right-hand one that differs by one $\ce{H+}$.
+
+**(a)** $\ce{H2S}$ loses a proton → $\ce{HS-}$, so **$\ce{H2S}$/$\ce{HS-}$** is an acid/conjugate-base pair. $\ce{NH2-}$ gains a proton → $\ce{NH3}$, so **$\ce{NH2-}$/$\ce{NH3}$** is a base/conjugate-acid pair.
+
+**(b)** $\ce{HCO3-}$ loses a proton → $\ce{CO3^2-}$ (**acid** here). $\ce{OH-}$ gains one → $\ce{H2O}$.
+
+**\(c)** $\ce{HCO3-}$ *gains* a proton → $\ce{H2CO3}$ (**base** here). $\ce{H3O+}$ loses one → $\ce{H2O}$.
+
+**(d) $\ce{HCO3-}$ acts as an acid in (b) and as a base in \(c).** A species that can do either is **amphiprotic** — it has both a proton to donate and a lone pair to accept one with. Water is the most familiar example, and the $\ce{H2CO3}$/$\ce{HCO3-}$ conjugate pair is why blood can buffer against both added acid and added base.
+
+**A pattern worth noticing:** every intermediate species of a polyprotic acid ($\ce{HCO3-}$, $\ce{HSO4-}$, $\ce{H2PO4-}$) is amphiprotic, because it sits between a fully protonated and a fully deprotonated form.
+:::
+::::
+
+### Polyprotic acids ionize one step at a time
+
+**Diprotic and polyprotic acids** donate more than one proton, doing so in separate steps, each with its own ionization constant:
+
+:::: tabs
+::: tab Problem
+Write the two-step ionization of $\ce{H2CO3}$ in water, with the $K_a$ expression for each step.
+:::
+::: tab Solution
+$$\ce{H2CO3(aq) + H2O(l) <=> H3O+(aq) + HCO3-(aq)} \qquad K_{a_1}=\frac{[\ce{H3O+}][\ce{HCO3-}]}{[\ce{H2CO3}]}$$
+
+$$\ce{HCO3-(aq) + H2O(l) <=> H3O+(aq) + CO3^2-(aq)} \qquad K_{a_2}=\frac{[\ce{H3O+}][\ce{CO3^2-}]}{[\ce{HCO3-}]}$$
+:::
+::::
+
+Figure 15.1 is the crudest version of the measurement this whole chapter refines into a number.
+
+![Two strips of litmus paper showing the color change from blue (basic) to pink/red (acidic)](../assets/litmus_paper_test.jpg =700x)
+*Figure 15.1 — Litmus paper is a simple acid-base indicator: blue litmus turns red/pink in acid, and red litmus turns blue in base. Source: Chemicalinterest, via Wikimedia Commons, public domain.*
+
+### Water autoionizes: $K_w$, pH, and pOH
+
+**Water autoionizes** even in the absence of any added acid or base:
+
+$$\ce{H2O <=> H+ + OH-} \qquad K_w = [\ce{H+}][\ce{OH-}]=1.0\times10^{-14} \ \text{(at 25°C)}$$
+
+$$\ce{pH}=-\log[\ce{H+}] \qquad \ce{pOH}=-\log[\ce{OH-}] \qquad \ce{pH}+\ce{pOH}=14 \ \text{(at 25°C)}$$
+
+At 25 °C, $\ce{pH}=7$ is neutral, $\ce{pH}<7$ is acidic, and $\ce{pH}>7$ is basic. Knowing any one of $\ce{pH}$, $\ce{pOH}$, $[\ce{H+}]$, or $[\ce{OH-}]$ lets you calculate the other three.
+
+:::warning
+**"Neutral means pH 7" is true only at 25 °C.** Autoionization is endothermic, so heating water shifts it forward (Chapter 14's temperature rule) and $K_w$ rises — at 60 °C, $K_w \approx 9.6\times10^{-14}$ and neutral water has pH 6.51. It is still *neutral*, because $[\ce{H+}]$ still equals $[\ce{OH-}]$; the number 7 simply moved. Neutrality is defined by the equality, never by the value 7. Likewise $\ce{pH}+\ce{pOH}=14$ holds only where $K_w = 1.0\times10^{-14}$.
+:::
+
+:::: tabs
+::: tab Problem
+A solution at 25 °C has $[\ce{OH-}]=2.5\times10^{-3}$ M. Find $[\ce{H+}]$, pH, and pOH.
+:::
+::: tab Solution
+$$[\ce{H+}]=\frac{K_w}{[\ce{OH-}]}=\frac{1.0\times10^{-14}}{2.5\times10^{-3}}=4.0\times10^{-12}\ \text{M}$$
+
+$$\ce{pH}=-\log(4.0\times10^{-12})=11.40 \qquad \ce{pOH}=14-11.40=2.60$$
+
+(Check: $\ce{pOH}=-\log(2.5\times10^{-3})=2.60$ ✓)
+
+**The two routes always agree**, and running both is the cheapest error check available. At 25 °C, if $\ce{pH} + \ce{pOH}$ does not come to 14.00, something went wrong.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+(a) A cola has pH 2.5 and black coffee has pH 5.0. How many times more concentrated is $[\ce{H+}]$ in the cola? (b) Household ammonia has pOH 2.4 — what is its pH, and is it acidic or basic? \(c) A solution has $[\ce{H+}] = [\ce{OH-}]$. What is its pH at 25 °C?
+:::
+::: tab Solution
+**(a)** pH is a **logarithm**, so a difference of 2.5 pH units is a factor of $10^{2.5}$:
+
+$$\frac{[\ce{H+}]_\text{cola}}{[\ce{H+}]_\text{coffee}} = 10^{(5.0-2.5)} = 10^{2.5} = 320$$
+
+The cola is roughly **320 times** more acidic — not twice, as the numbers 2.5 and 5.0 might suggest. Each whole pH unit is a factor of ten.
+
+**(b)** $\ce{pH} = 14.00 - 2.40 = 11.60$. Above 7, so **basic** — as expected for ammonia, a weak base.
+
+**\(c) pH 7.00.** If $[\ce{H+}] = [\ce{OH-}]$ then each equals $\sqrt{K_w} = 1.0\times10^{-7}$ M. Note the reasoning: neutrality is *defined* by the equality, and 7.00 is what that equality happens to give at 25 °C.
+
+{{sp[warning] Significant figures in a log}} Only the digits **after** the decimal point in a pH count as significant. $[\ce{H+}] = 2.5\times10^{-3}$ M has two significant figures, so its pH is written 2.60 — the "2" merely records the exponent. Reporting "pH = 2.6021" claims a precision the concentration never had.
+:::
+::::
+
+### Strong and weak — and why water sets the limits
+
+**Strong** acids and bases are strong electrolytes: they ionize **completely**. **Weak** ones are weak electrolytes: they ionize only **partially**, reaching an equilibrium with most of the acid still intact.
+
+![Two beakers of equally concentrated acid drawn at the particle level: the strong acid fully ionized into H+ and A-, the weak acid almost entirely intact](../assets/strong_vs_weak_ionization.svg)
+*Figure 15.2 — Both beakers hold 0.10 M acid. The strong acid has no intact molecules left; the weak acid has almost nothing but intact molecules, and its pH is nearly two units higher as a result. Self-generated with matplotlib; pH values computed from $K_a(\ce{CH3COOH}) = 1.8\times10^{-5}$.*
+
+Figure 15.2 exists to kill one specific confusion. ==**Strong** describes how *completely* an acid ionizes; **concentrated** describes how *much* acid is present.== They are independent: 0.001 M HCl is a strong acid at low concentration, and 15 M acetic acid is a weak acid at high concentration. A dilute strong acid can easily have a higher pH than a concentrated weak one.
+
+**The lists to memorize.** There are only six common strong acids, so learn those and treat everything else as weak:
+
+| | Examples |
+|---|---|
+| **Strong acids** (memorize) | $\ce{HClO4}$, $\ce{HI}$, $\ce{HBr}$, $\ce{HCl}$, $\ce{H2SO4}$, $\ce{HNO3}$ |
+| **Strong bases** | hydroxides of Group 1A and heavier Group 2A: $\ce{NaOH}$, $\ce{KOH}$, $\ce{Ca(OH)2}$, $\ce{Ba(OH)2}$ |
+| **Weak acids** | $\ce{HSO4-}$, $\ce{HF}$, $\ce{HNO2}$, $\ce{HCOOH}$, $\ce{CH3COOH}$, $\ce{NH4+}$, $\ce{HCN}$ |
+| **Weak bases** | mostly amines — $\ce{NH3}$, $\ce{N(CH3)3}$, $\ce{C6H5NH2}$ |
+
+Two entries on the weak-acid list are worth pausing on: $\ce{HSO4-}$ is an **anion** acting as an acid (the second proton of sulfuric acid is only weakly held), and $\ce{NH4+}$ is a **cation** acting as an acid. An acid does not have to be a neutral molecule.
+
+**Two rules follow, and both matter later:**
+
+- **A stronger acid has a weaker conjugate base.** If an acid gives up its proton eagerly, the resulting base has little appetite to take it back. $\ce{Cl-}$, the conjugate base of the very strong $\ce{HCl}$, is so weak that a solution of a chloride salt whose cation is also not acidic, such as NaCl, is neutral.
+- **$\ce{H3O+}$ is the strongest acid, and $\ce{OH-}$ the strongest base, that can exist in water.** Anything stronger simply reacts with the solvent. This is the **leveling effect**: $\ce{HCl}$ and $\ce{HClO4}$ have very different intrinsic strengths, but in water both transfer their protons 100% to water, forming $\ce{H3O+}$, so both behave identically. Water levels them to its own limit.
+
+![A ladder of acids paired with their conjugate bases, with H3O+ and OH- marked as water's upper and lower limits](../assets/conjugate_strength_ladder.svg)
+*Figure 15.3 — Reading a row across shows the inverse relationship: strong acids at the top pair with negligible bases, and very weak acids at the bottom pair with appreciable ones. The two highlighted rows are water's two conjugate pairs ($\ce{H3O+}/\ce{H2O}$ and $\ce{H2O}/\ce{OH-}$), which bracket the range of acid and base strengths that can persist in aqueous solution. Self-generated with matplotlib.*
+
+Figure 15.3 also explains a fact you will use constantly in §15.2: **the conjugate base of a *weak* acid is strong enough to matter**, which is why an acetate solution is basic — while the conjugate base of a *strong* acid is not, which is why a chloride solution is not.
+
+**Self-check:**
+- Which has the lower pH: 0.001 M $\ce{HCl}$ or 1.0 M $\ce{CH3COOH}$ ($K_a = 1.8\times10^{-5}$)? Reason it out before calculating.
+- Why does a diprotic acid need two separate $K_a$ values rather than one?
+
+> **Where this goes next.** §15.1 tells you *which* acids are strong and weak by asking you to memorize a list. §15.2 asks the better question: what is it about a molecule's structure that makes it a strong or weak acid in the first place?
+
+## 15.2 Structure and Property Correlation{{attrs[#blk-ch15sec02]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 15.2a}} Rank hydrohalic acid strength by bond strength, and oxoacid strength by central-atom electronegativity or oxidation number.
+- {{sp[info] Objective 15.2b}} Predict whether a salt solution is acidic, basic, or neutral.
+- {{sp[info] Objective 15.2b}} Classify an oxide as acidic, basic, or amphoteric.
+:::
+
+### Hydrohalic acids: bond strength decides
+
+For **hydrohalic acids**, a *weaker* H–X bond gives a *stronger* acid — easier to break the bond, easier to release $\ce{H+}$:
+
+$$\ce{HF} \ll \ce{HCl} < \ce{HBr} < \ce{HI}$$
+
+Figure 15.4 lays the four out in order; what changes down the column is the size of the halogen, and with it the length and strength of the H–X bond.
+
+![Structures of HF, HCl, HBr, and HI](../assets/hydrohalic_acids_grid.svg =700x)
+*Figure 15.4 — Bond strength decreases down the halogen group as atomic radius increases, so acid strength increases in the same order. Self-generated with RDKit.*
+
+{{sp[warning] This trend fights your instincts}} Fluorine is the most electronegative halogen, so the H–F bond is the most polar — which would suggest HF should be the strongest acid. It is the **weakest** by a wide margin. Polarity is not what decides here; **bond strength** is. The H–F bond is short and very strong (about 570 kJ/mol versus 300 kJ/mol for H–I), and a proton that is hard to detach gives only a weak acid however polar the bond. Electronegativity wins the oxoacid argument below; bond strength wins this one.
+
+### Oxoacids: two separate trends
+
+For **oxoacids**, two separate trends apply — keep them distinct:
+
+==Both oxoacid trends, and the hydrohalic trend, come down to one question: how easily does the rest of the molecule let go of that proton, and how well does it stabilize the anion left behind?== With that in view, the two rules below are not two facts to memorize but two ways of turning the same screw.
+
+1. **Same oxidation number, different central atom:** acid strength increases with the central atom's *electronegativity* (e.g., $\ce{HClO3} > \ce{HBrO3}$, since Cl is more electronegative than Br).
+2. **Same central atom, different oxidation number:** acid strength increases as the central atom's oxidation number (and number of attached oxygens) increases.
+
+Figure 15.5 puts numbers on the second trend. Remember that a *lower* $\ce{p}K_a$ means a *stronger* acid, so the descending bars are ascending strength.
+
+![Bar chart of approximate pKa1 values for HClO, HClO2, HClO3, HClO4, decreasing as oxygen count increases](../assets/oxoacid_strength_trend.svg)
+*Figure 15.5 — $\ce{HClO4} > \ce{HClO3} > \ce{HClO2} > \ce{HClO}$: with chlorine as the central atom throughout, each additional oxygen pulls more electron density away from the O–H bond, making the acid stronger (lower $\ce{p}K_a$). Self-generated with matplotlib; approximate, commonly cited literature $\ce{p}K_{a1}$ values.*
+
+:::: tabs
+::: tab Problem
+Rank each set from weakest to strongest acid and name the trend you used: (a) $\ce{HF}$, $\ce{HCl}$, $\ce{HI}$; (b) $\ce{H2SO3}$, $\ce{H2SO4}$; \(c) $\ce{HBrO4}$, $\ce{HIO4}$; (d) $\ce{HClO}$, $\ce{HBrO2}$ — and say why (d) is harder than the others.
+:::
+::: tab Solution
+**(a) $\ce{HF} \ll \ce{HCl} < \ce{HI}$ — the bond-strength trend.** Down the group the H–X bond lengthens and weakens, so the proton comes off more easily. HF is the outlier by a large margin, not a small one.
+
+**(b) $\ce{H2SO3} < \ce{H2SO4}$ — same central atom, different oxidation number.** Sulfur is +4 in sulfurous acid and +6 in sulfuric. The extra oxygen pulls electron density away from the O–H bonds, weakening them and stabilizing the anion left behind.
+
+**\(c) $\ce{HIO4} < \ce{HBrO4}$ — same oxidation number (+7), different central atom.** Bromine is more electronegative than iodine, so it withdraws more electron density and makes the stronger acid.
+
+**(d) $\ce{HClO} < \ce{HBrO2}$, but the two trends now point in opposite directions.** Chlorine is more electronegative than bromine (favoring $\ce{HClO}$), yet bromine here carries a +3 oxidation state against chlorine's +1 (favoring $\ce{HBrO2}$). **Oxidation number is the stronger effect**, so $\ce{HBrO2}$ wins.
+
+**Why (d) is the hard case:** the two rules are stated for situations where only *one* variable changes. When both change at once, neither rule applies cleanly, and the oxidation-number effect generally dominates — but this is a judgment call, not a derivation. Exam questions almost always hold one variable fixed for exactly this reason.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Acetic acid ($\ce{CH3COOH}$, $K_a = 1.8\times10^{-5}$) and trichloroacetic acid ($\ce{CCl3COOH}$, $K_a = 0.22$) differ only in that three hydrogens have been replaced by chlorines, four bonds away from the acidic proton. Explain the 12,000-fold difference in $K_a$.
+:::
+::: tab Solution
+The acidic proton is the one on the $\ce{-COOH}$ group in both molecules, and it is not directly bonded to any chlorine. The chlorines act **at a distance**.
+
+**Chlorine is strongly electronegative**, so each C–Cl bond pulls electron density away from the rest of the molecule. That pull is transmitted through the carbon skeleton — the **inductive effect** — and reaches the O–H bond.
+
+Two consequences, and they reinforce each other:
+
+- **The O–H bond is weakened**, because electron density has been drawn off it, so the proton leaves more easily.
+- **The conjugate base is stabilized.** Once the proton has gone, $\ce{CCl3COO-}$ carries a negative charge, and the three chlorines help spread that charge out rather than leaving it concentrated on the carboxylate oxygens. A more stable conjugate base means a stronger acid.
+
+$$K_a = 0.22 \text{ versus } 1.8\times10^{-5} — \text{a factor of } 1.2\times10^{4}$$
+
+**Why this belongs with the oxoacid trend.** It is the *same* mechanism: in $\ce{HClO4}$ versus $\ce{HClO}$, extra electronegative oxygens withdraw density from the O–H bond and stabilize the anion. Here, electronegative chlorines do it instead. **Any electron-withdrawing group near an acidic proton makes the acid stronger** — the oxoacid rule is one instance of a general principle, not a separate fact.
+:::
+::::
+
+### Acid-base properties of salts
+
+A salt's aqueous solution can be neutral, basic, or acidic, depending on the strength of the acid and base that formed it:
+
+| Parent acid | Parent base | Salt solution is | Example |
+|---|---|---|---|
+| Strong | Strong | Neutral | $\ce{NaCl}$ (from $\ce{HCl}$ + $\ce{NaOH}$) |
+| Weak | Strong | Basic (anion hydrolyzes) | $\ce{CH3COONa}$ (from $\ce{CH3COOH}$ + $\ce{NaOH}$) |
+| Strong | Weak | Acidic (cation hydrolyzes) | $\ce{NH4Cl}$ (from $\ce{HCl}$ + $\ce{NH3}$) |
+| Weak | Weak | Compare $K_a$ (cation) to $K_b$ (anion) | depends on the specific pair |
+
+{{sp[warning] Reminder}} small, highly charged metal cations (e.g., $\ce{Al^3+}$, $\ce{Cr^3+}$, $\ce{Fe^3+}$) also hydrolyze and produce acidic solutions — $\ce{Al(H2O)6^3+}$ is roughly as strong an acid as $\ce{CH3COOH}$.
+
+:::: tabs
+::: tab Problem
+Will each of these produce an acidic, basic, or neutral solution? $\ce{NaBr}$, $\ce{NaF}$, $\ce{NH4Cl}$.
+:::
+::: tab Solution
+$\ce{NaBr}$: from strong acid ($\ce{HBr}$) + strong base ($\ce{NaOH}$) → **neutral**.
+
+$\ce{NaF}$: from weak acid ($\ce{HF}$) + strong base ($\ce{NaOH}$) → $\ce{F-}$ hydrolyzes → **basic**.
+
+$\ce{NH4Cl}$: from strong acid ($\ce{HCl}$) + weak base ($\ce{NH3}$) → $\ce{NH4+}$ hydrolyzes → **acidic**.
+:::
+::::
+
+### Acidic, basic, and amphoteric oxides
+
+Most **oxides** are acidic, basic, or amphoteric. Basic (metal) oxides react with water to form hydroxides; acidic (nonmetal) oxides react with water to form acids:
+
+$$\ce{Na2O(s) + H2O(l) -> 2NaOH(aq)} \qquad \ce{SO3(g) + H2O(l) -> H2SO4(aq)}$$
+
+Acidic oxides react with bases, and basic oxides react with acids, just like ordinary acid-base reactions:
+
+$$\ce{CO2(g) + 2NaOH(aq) -> Na2CO3(aq) + H2O(l)} \qquad \ce{BaO(s) + 2HNO3(aq) -> Ba(NO3)2(aq) + H2O(l)}$$
+
+**Amphoteric** oxides (e.g., $\ce{Al2O3}$) react as either an acid or a base depending on what they're reacting with:
+
+$$\ce{Al2O3(s) + 6HCl(aq) -> 2AlCl3(aq) + 3H2O(l)} \qquad \ce{Al2O3(s) + 2NaOH(aq) + 3H2O(l) -> 2NaAl(OH)4(aq)}$$
+
+:::: tabs
+::: tab Problem
+(a) Classify each oxide as acidic, basic, or amphoteric: $\ce{K2O}$, $\ce{P4O10}$, $\ce{ZnO}$, $\ce{SO2}$, $\ce{MgO}$. (b) Write the reaction of $\ce{SO2}$ with water and with $\ce{NaOH}$. \(c) What single feature of an element predicts which category its oxide falls into?
+:::
+::: tab Solution
+**(a)** Sort by whether the element is a metal, a nonmetal, or on the borderline:
+
+| Oxide | Element | Classification |
+|---|---|---|
+| $\ce{K2O}$ | active metal | **basic** |
+| $\ce{MgO}$ | metal | **basic** |
+| $\ce{P4O10}$ | nonmetal | **acidic** |
+| $\ce{SO2}$ | nonmetal | **acidic** |
+| $\ce{ZnO}$ | borderline metal | **amphoteric** |
+
+**(b)** An acidic oxide plus water gives an acid; an acidic oxide plus a base gives a salt and water:
+
+$$\ce{SO2(g) + H2O(l) -> H2SO3(aq)}$$
+$$\ce{SO2(g) + 2NaOH(aq) -> Na2SO3(aq) + H2O(l)}$$
+
+**\(c) Metallic character** — which increases toward the left and toward the bottom of the periodic table (Chapter 8). Metal oxides are basic, nonmetal oxides are acidic, and metals near the metal/nonmetal borderline — $\ce{Al}$, $\ce{Zn}$, $\ce{Sn}$, $\ce{Pb}$ — give **amphoteric** oxides that go either way.
+
+**The connection to §15.2's other trends:** acidic oxides are made of electronegative elements, which is the same electron-withdrawing effect that makes oxoacids strong. $\ce{SO2}$ plus water *is* an oxoacid; classifying the oxide and ranking the oxoacid are two views of one fact.
+
+**And the environmental payoff:** $\ce{SO2}$ and $\ce{NO2}$ from combustion are acidic oxides, which is precisely why they produce acid rain when they meet atmospheric water.
+:::
+::::
+
+**Self-check:**
+- Rank $\ce{HClO3}$ and $\ce{HBrO3}$ by acid strength, and say which of the two oxoacid trends applies.
+- Why does a salt formed from a weak acid and a weak base require comparing $K_a$ and $K_b$ directly, rather than a simple rule of thumb?
+
+> **Where this goes next.** Everything so far has been about protons — who donates one and who accepts one. §15.3 shows that the same acid-base *behavior* appears in reactions where no proton moves at all, and gives the more general definition that covers both.
+
+## 15.3 Lewis Acids and Bases{{attrs[#blk-ch15sec03]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 15.3a}} Define Lewis acid (electron-pair acceptor) and Lewis base (electron-pair donor).
+- {{sp[info] Objective 15.3a}} Identify the Lewis acid and Lewis base in a reaction, including ones with no proton transfer.
+:::
+
+### The Lewis definition
+
+A **Lewis base** donates a pair of electrons; a **Lewis acid** accepts a pair of electrons. ==This generalizes the Brønsted definition beyond proton transfer — a species can be a Lewis acid without ever donating or accepting an $\ce{H+}$.==
+
+The two definitions nest rather than compete:
+
+- **Every Brønsted base is a Lewis base.** To accept a proton you must have a lone pair to attach it with — which is exactly what a Lewis base is. The Brønsted view just names the pair's destination.
+- **Not every Lewis acid is a Brønsted acid.** $\ce{BF3}$ has no proton to donate, so it is not a Brønsted acid at all, yet it accepts an electron pair readily. Brønsted acidity is the special case where the electron-pair acceptor happens to be $\ce{H+}$.
+
+![Three reactions drawn as an electron pair moving from a lone pair on the donor to an empty orbital on the acceptor](../assets/lewis_acid_base.svg)
+*Figure 15.6 — In each row the Lewis base carries a lone pair and the Lewis acid has somewhere to put it. None of the three transfers a proton, which is precisely why the Brønsted definition cannot describe them. Self-generated with matplotlib.*
+
+Figure 15.6 gives the recognition procedure in visual form: **find the lone pair, then find the atom that is short of electrons.** The lone pair identifies the base; whatever it attacks is the acid.
+
+### Recognizing Lewis acids and bases
+
+Three structural cues cover almost every case you will meet:
+
+- **An incomplete octet** — $\ce{BF3}$, $\ce{AlCl3}$, $\ce{BeCl2}$. Boron in $\ce{BF3}$ has only six electrons around it (three bonding pairs) and an empty 2p orbital; it is a Lewis acid on sight.
+- **A metal cation** — $\ce{Al^3+}$, $\ce{Fe^3+}$, $\ce{Cu^2+}$, $\ce{Ag+}$. A small, highly charged cation attracts electron pairs strongly, which is why it binds water molecules to form complexes such as $\ce{Al(H2O)6^3+}$ — and, as §15.2 noted, why those solutions turn acidic.
+- **A polar multiple bond** — $\ce{CO2}$, $\ce{SO3}$. The central atom is electron-poor because the more electronegative oxygens have pulled density away, so it can accept a pair even with a full octet (a $\pi$ bond shifts to make room).
+
+:::: tabs
+::: tab Problem
+Identify the Lewis acid and Lewis base: (a) $\ce{CO2 + OH- -> HCO3-}$; (b) $\ce{AlCl3 + Cl- -> AlCl4-}$.
+:::
+::: tab Solution
+**(a)** $\ce{OH-}$ donates an electron pair to carbon → $\ce{OH-}$ is the Lewis base; $\ce{CO2}$ accepts it → **Lewis acid**.
+
+**(b)** $\ce{Cl-}$ donates an electron pair to aluminum → $\ce{Cl-}$ is the Lewis base; $\ce{AlCl3}$ accepts it (aluminum has an empty orbital) → **Lewis acid**. Notice no proton is transferred in either reaction — the Brønsted definition doesn't even apply here, but Lewis's does.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Identify the Lewis acid and Lewis base in each, and say for each whether it is *also* a Brønsted acid-base reaction: (a) $\ce{Ag+ + 2NH3 -> Ag(NH3)2+}$; (b) $\ce{H+ + OH- -> H2O}$; \(c) $\ce{Fe^3+ + 6H2O -> Fe(H2O)6^3+}$; (d) $\ce{BeCl2 + 2Cl- -> BeCl4^2-}$.
+:::
+::: tab Solution
+For each, find the lone pair (that species is the base) and the electron-poor center (that one is the acid).
+
+**(a)** $\ce{NH3}$ has a lone pair on N → **Lewis base**. $\ce{Ag+}$ is a metal cation with empty orbitals → **Lewis acid**. **Not Brønsted** — no proton moves.
+
+**(b)** $\ce{OH-}$ donates a lone pair → **Lewis base**. $\ce{H+}$ accepts it → **Lewis acid**. **Also Brønsted**, and this is the case where the two definitions coincide: the electron-pair acceptor *is* the proton.
+
+**\(c)** $\ce{H2O}$ donates a lone pair from oxygen → **Lewis base**. $\ce{Fe^3+}$ accepts → **Lewis acid**. **Not Brønsted** as written — though the complex that forms is a Brønsted acid, since the coordinated water molecules become easier to deprotonate. That is the mechanism behind $\ce{FeCl3}$ solutions being acidic.
+
+**(d)** $\ce{Cl-}$ donates → **Lewis base**. $\ce{BeCl2}$ accepts (beryllium has only four electrons around it) → **Lewis acid**. **Not Brønsted.**
+
+**The pattern across all four:** only (b) involves a proton. If you had only the Brønsted definition, three of these four reactions would have no acid and no base in them at all — despite being, mechanistically, exactly the same event.
+:::
+::::
+
+**Self-check:**
+- Why is every Brønsted base also automatically a Lewis base, but not every Lewis acid a Brønsted acid?
+- $\ce{SO3}$ has a complete octet on sulfur, yet acts as a Lewis acid. Which of the three structural cues explains it?
+
+> **Where this goes next.** §15.1–15.3 were about identifying and ranking. §15.4 is where the chapter becomes quantitative: four calculation types, one method, distinguished only by which $K$ you use and whether you need an ICE table at all.
+
+## 15.4 pH Related Calculations{{attrs[#blk-ch15sec04]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 15.4a}} Calculate pH for strong acid/base solutions directly from concentration.
+- {{sp[info] Objective 15.4b}} Calculate pH for weak acid/base solutions using an ICE table and $K_a$ or $K_b$, and calculate percent ionization.
+- {{sp[info] Objective 15.4c}} Calculate equilibrium concentrations for a diprotic acid using stepwise ionization.
+- {{sp[info] Objective 15.4d}} Calculate the pH of a salt solution using hydrolysis, applying $K_aK_b=K_w$.
+:::
+
+Figure 15.7 is worth looking at before doing any calculation, simply to calibrate what answers are plausible — a pH of 15 or −2 for an ordinary solution should look wrong immediately.
+
+![The pH scale with common household substances marked](../assets/ph_scale.svg =800x)
+*Figure 15.7 — pH spans a huge range of $[\ce{H+}]$ values (14 orders of magnitude) compressed into one logarithmic scale. Self-generated with matplotlib; approximate, commonly cited pH values.*
+
+==Four situations, one method.== Every one of them is a Chapter 14 ICE table; what differs is only which constant you use, and whether the table is needed at all. Before calculating anything, ask which situation you are in:
+
+| Situation | Method | Constant needed |
+|---|---|---|
+| strong acid or base | read $[\ce{H+}]$ or $[\ce{OH-}]$ straight off the concentration (times the number of $\ce{H+}$ or $\ce{OH-}$ released per formula unit) | none |
+| weak acid or base | ICE table | $K_a$ or $K_b$ |
+| polyprotic acid | ICE table on step 1, then step 2 | $K_{a_1}$, $K_{a_2}$ |
+| salt solution | ICE table on the hydrolyzing ion | $K_b = K_w/K_a$ (or vice versa) |
+
+### Strong acids and bases: no ICE table needed
+
+**Strong acids/bases** ionize completely, so $[\ce{H+}]$ (or $[\ce{OH-}]$) equals the initial concentration directly (multiplied by the number of $\ce{H+}$ or $\ce{OH-}$ released per formula unit).
+
+:::warning
+For a base like $\ce{Ba(OH)2}$, $[\ce{OH-}]$ is **double** the initial concentration — two hydroxides per formula unit. Forgetting this is worth 0.30 pH units, which is enough to make an answer wrong without looking obviously wrong. Count the ionizable groups in the formula every time.
+:::
+
+:::: tabs
+::: tab Problem
+Calculate the pH of (a) 0.010 M $\ce{HCl}$; (b) 0.025 M $\ce{NaOH}$; \(c) 0.010 M $\ce{Ba(OH)2}$. (d) Which of (b) and \(c) is more basic, and is that what the concentrations alone would suggest?
+:::
+::: tab Solution
+**(a)** HCl is strong, so $[\ce{H+}] = 0.010$ M directly:
+$$\ce{pH} = -\log(0.010) = 2.00$$
+
+**(b)** NaOH is strong and gives one $\ce{OH-}$ per formula unit, so $[\ce{OH-}] = 0.025$ M:
+$$\ce{pOH} = -\log(0.025) = 1.60 \qquad \ce{pH} = 14.00 - 1.60 = 12.40$$
+
+**\(c)** $\ce{Ba(OH)2}$ gives **two** hydroxides per formula unit, so $[\ce{OH-}] = 2(0.010) = 0.020$ M:
+$$\ce{pOH} = -\log(0.020) = 1.70 \qquad \ce{pH} = 14.00 - 1.70 = 12.30$$
+
+**(d) The NaOH solution is slightly more basic** (pH 12.40 versus 12.30). The concentrations alone would suggest a much wider gap — 0.025 M against 0.010 M looks like a 2.5-fold difference — but doubling the barium hydroxide's contribution brings 0.010 M up to 0.020 M of $\ce{OH-}$, nearly closing the gap. **What matters is the concentration of $\ce{OH-}$, never the concentration of the compound.**
+:::
+::::
+
+:::: tabs
+::: tab Problem
+25.0 mL of 0.100 M $\ce{HCl}$ is diluted with water to a total volume of 250.0 mL. Find the pH before and after. Then explain why the answer changes by exactly 1.00 unit.
+:::
+::: tab Solution
+**Before dilution:** HCl is strong, so $[\ce{H+}] = 0.100$ M.
+$$\ce{pH} = -\log(0.100) = 1.00$$
+
+**After dilution:** moles of $\ce{H+}$ are unchanged; only the volume grew.
+$$n_{\ce{H+}} = (0.0250\ \text{L})(0.100\ \text{M}) = 2.50\times10^{-3}\ \text{mol}$$
+$$[\ce{H+}] = \frac{2.50\times10^{-3}\ \text{mol}}{0.2500\ \text{L}} = 0.0100\ \text{M} \quad\Rightarrow\quad \ce{pH} = 2.00$$
+
+**Why exactly 1.00.** The volume increased by a factor of ten, so the concentration fell by a factor of ten, and pH is $-\log[\ce{H+}]$ — a tenfold dilution raises the pH of a strong acid by exactly one unit (as long as the acid is not extremely dilute).
+
+{{sp[warning] This shortcut is for strong acids only}} Dilute a *weak* acid tenfold and the pH rises by **less** than one unit, because dilution also drives the ionization equilibrium forward (Chapter 14), partly replacing the $\ce{H+}$ you removed. Diluting 0.10 M acetic acid tenfold raises its pH from 2.87 to 3.37 — about half a unit, not a full one.
+
+**And a limit worth knowing:** no amount of dilution takes an acid past pH 7. Below about $10^{-6}$ M, water's own autoionization starts contributing a significant share of the $\ce{H+}$, and the pH approaches 7 from below rather than crossing it.
+:::
+::::
+
+### Weak acids and bases
+
+**Weak acids/bases** ionize only partially — $[\ce{H+}]$ or $[\ce{OH-}]$ depends on both the initial concentration and $K_a$ or $K_b$, found via the same ICE-table method as Chapter 14:
+
+$$\ce{HA(aq) <=> H+(aq) + A-(aq)} \qquad K_a=\frac{[\ce{H+}][\ce{A-}]}{[\ce{HA}]} \qquad \text{percent ionization}=\frac{[\ce{H+}]_{eq}}{[\ce{HA}]_0}\times100\%$$
+
+:::: tabs
+::: tab Problem
+Calculate the pH of 0.50 M HF ($K_a=7.1\times10^{-4}$), and its percent ionization.
+:::
+::: tab Solution
+| | $\ce{HF}$ | $\ce{H+}$ | $\ce{F-}$ |
+|---|---|---|---|
+| Initial (M) | 0.50 | 0 | 0 |
+| Change (M) | $-x$ | $+x$ | $+x$ |
+| Equilibrium (M) | $0.50-x$ | $x$ | $x$ |
+
+$$K_a=\frac{x^2}{0.50-x}=7.1\times10^{-4} \Rightarrow x=0.0185\ \text{M}$$
+
+$$\ce{pH}=-\log(0.0185)=1.73 \qquad \text{percent ionization}=\frac{0.0185}{0.50}\times100\%=3.7\%$$
+:::
+::::
+
+:::: tabs
+::: tab Problem
+What is the pH of a 0.40 M ammonia solution ($K_b=1.8\times10^{-5}$)?
+:::
+::: tab Solution
+| | $\ce{NH3}$ | $\ce{NH4+}$ | $\ce{OH-}$ |
+|---|---|---|---|
+| Initial (M) | 0.40 | 0 | 0 |
+| Change (M) | $-x$ | $+x$ | $+x$ |
+| Equilibrium (M) | $0.40-x$ | $x$ | $x$ |
+
+$$K_b=\frac{x^2}{0.40-x}=1.8\times10^{-5} \Rightarrow x=[\ce{OH-}]=0.00268\ \text{M}$$
+
+$$\ce{pOH}=-\log(0.00268)=2.57 \qquad \ce{pH}=14-2.57=11.43$$
+
+**Which method was used, and does it hold?** This used the small-$x$ shortcut, approximating $0.40 - x \approx 0.40$. Validate it: $0.00268/0.40 = 0.67\%$, far under 5% — valid. (The exact quadratic gives 0.00267 M and the same pH to two decimals.) For the HF problem above, $x/[\ce{HA}]_0 = 3.7\%$ — still under 5%, but close enough that the exact quadratic was used there instead.
+
+{{sp[warning] The commonest sign error}} A weak *base* problem gives you $x = [\ce{OH-}]$, not $[\ce{H+}]$. Taking $-\log(0.00268) = 2.57$ and reporting it as the pH would describe a strongly *acidic* ammonia solution. Convert through pOH every time.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Hydrocyanic acid, $\ce{HCN}$, has $K_a = 4.9\times10^{-10}$. Calculate the pH and percent ionization of a 0.10 M solution, and compare with the 0.50 M HF result above.
+:::
+::: tab Solution
+| | $\ce{HCN}$ | $\ce{H+}$ | $\ce{CN-}$ |
+|---|---|---|---|
+| Initial (M) | 0.10 | 0 | 0 |
+| Change (M) | $-x$ | $+x$ | $+x$ |
+| Equilibrium (M) | $0.10-x$ | $x$ | $x$ |
+
+$K_a$ is tiny, so the shortcut is safe:
+
+$$\frac{x^2}{0.10} = 4.9\times10^{-10} \quad\Rightarrow\quad x^2 = 4.9\times10^{-11} \quad\Rightarrow\quad x = 7.0\times10^{-6}\ \text{M}$$
+
+**Validate:** $7.0\times10^{-6}/0.10 = 0.0070\%$ — negligible.
+
+$$\ce{pH} = -\log(7.0\times10^{-6}) = 5.15 \qquad \text{percent ionization} = 0.0070\%$$
+
+**Compare with HF.** HF ($K_a = 7.1\times10^{-4}$) at 0.50 M gave pH 1.73 and 3.7% ionization. HCN's $K_a$ is about a million times smaller, and the result is a solution barely distinguishable from pure water — pH 5.15 against water's 7.00.
+
+**The relationship worth extracting:** percent ionization rises as $K_a$ rises, and — less obviously — **it also rises as the solution gets more dilute.** Dilute the HCN tenfold and $x$ falls by only $\sqrt{10}$, so the *fraction* ionized goes up. Concentration and percent ionization move in opposite directions.
+:::
+::::
+
+### Polyprotic acids: one step at a time
+Ionize one step at a time. {{sp[warning] Reminder}} because $K_{a_2}\ll K_{a_1}$ for most polyprotic acids, $[\ce{H+}]$ is set almost entirely by the *first* step.
+
+:::: tabs
+::: tab Problem
+Find the equilibrium concentrations of all species in 0.10 M $\ce{H2C2O4}$ ($K_{a_1}=6.5\times10^{-2}$, $K_{a_2}=6.1\times10^{-5}$).
+:::
+::: tab Solution
+**Step 1:** $K_{a_1}=\dfrac{x^2}{0.10-x}=6.5\times10^{-2} \Rightarrow x=0.054$ M. So $[\ce{H+}]=[\ce{HC2O4-}]=0.054$ M, $[\ce{H2C2O4}]=0.10-0.054=0.046$ M.
+
+**Step 2:** starting from 0.054 M $\ce{HC2O4-}$ and 0.054 M $\ce{H+}$ already present:
+
+$$K_{a_2}=\frac{(0.054+y)(y)}{0.054-y}=6.1\times10^{-5} \Rightarrow y \approx 6.1\times10^{-5}\ \text{M}$$
+
+Since $y\ll0.054$, the first step's concentrations are essentially unchanged: $[\ce{H+}]\approx[\ce{HC2O4-}]\approx0.054$ M, $[\ce{C2O4^2-}]=y=6.1\times10^{-5}$ M, $[\ce{H2C2O4}]=0.046$ M, and $[\ce{OH-}]=K_w/[\ce{H+}]=1.9\times10^{-13}$ M.
+:::
+::::
+
+
+:::: tabs
+::: tab Problem
+Sulfurous acid, $\ce{H2SO3}$, has $K_{a_1} = 1.4\times10^{-2}$ and $K_{a_2} = 6.3\times10^{-8}$. For a 0.10 M solution, find the pH and $[\ce{SO3^2-}]$.
+:::
+::: tab Solution
+**Step 1 — first ionization sets the pH.**
+
+| | $\ce{H2SO3}$ | $\ce{H+}$ | $\ce{HSO3-}$ |
+|---|---|---|---|
+| Initial (M) | 0.10 | 0 | 0 |
+| Change (M) | $-x$ | $+x$ | $+x$ |
+| Equilibrium (M) | $0.10-x$ | $x$ | $x$ |
+
+$K_{a_1}$ is not small relative to 0.10, so solve the quadratic rather than approximating:
+
+$$\frac{x^2}{0.10-x} = 1.4\times10^{-2} \quad\Rightarrow\quad x^2 + 0.014x - 1.4\times10^{-3} = 0 \quad\Rightarrow\quad x = 0.031\ \text{M}$$
+
+$$\ce{pH} = -\log(0.031) = 1.51$$
+
+(The shortcut would have given $x = \sqrt{1.4\times10^{-3}} = 0.037$ M — 20% high, since 31% of the acid reacts.)
+
+**Step 2 — the second ionization gives $[\ce{SO3^2-}]$ directly.**
+
+$$K_{a_2} = \frac{[\ce{H+}][\ce{SO3^2-}]}{[\ce{HSO3-}]} = 6.3\times10^{-8}$$
+
+After step 1, $[\ce{H+}] \approx [\ce{HSO3-}] \approx 0.031$ M. Those two are equal, so they cancel:
+
+$$[\ce{SO3^2-}] = K_{a_2}\cdot\frac{[\ce{HSO3-}]}{[\ce{H+}]} = K_{a_2} = 6.3\times10^{-8}\ \text{M}$$
+
+**A result worth memorizing.** For a solution containing only a diprotic acid, where the second step is negligible, **the concentration of the fully deprotonated anion simply equals $K_{a_2}$** — independent of how concentrated the acid was. It falls out because step 1 produces $\ce{H+}$ and $\ce{HSO3-}$ in a 1:1 ratio, so the two cancel in the $K_{a_2}$ expression.
+
+**And the justification for ignoring step 2's effect on pH:** it contributes $6.3\times10^{-8}$ M of $\ce{H+}$ to a solution that already has 0.031 M — one part in half a million.
+:::
+::::
+
+### Salt solutions, and $K_a \cdot K_b = K_w$
+
+A **salt solution's** pH comes from hydrolysis of the conjugate ion. The constant you need is usually not the one you are given, and the bridge between them is:
+
+$$K_a \times K_b = K_w = 1.0\times10^{-14}\ (\text{at } 25^\circ\text{C}) \qquad\text{for any conjugate acid-base pair}$$
+
+This falls straight out of the definitions — multiply the $K_a$ expression for $\ce{HA}$ by the $K_b$ expression for $\ce{A-}$ and everything cancels except $[\ce{H+}][\ce{OH-}]$. It is also the quantitative form of §15.1's rule that a stronger acid has a weaker conjugate base: the two constants are locked in inverse proportion.
+
+Figure 15.8 is the same idea as Figure 15.1 but continuous rather than binary.
+
+![Red cabbage extract turns a range of colors from red (acidic) through purple to blue-green (basic), shown across several test tubes](../assets/red_cabbage_indicator.jpg =700x)
+*Figure 15.8 — Red cabbage extract (anthocyanin pigments) is a natural pH indicator spanning the same acid-to-base range as the pH scale above — visible, continuous confirmation that pH is a continuum, not just "acidic" vs. "basic." Source: KennyMex, via Wikimedia Commons, CC BY-SA 4.0.*
+
+:::: tabs
+::: tab Problem
+Calculate the pH of 0.24 M sodium acetate ($\ce{CH3COONa}$), given $K_b=5.6\times10^{-10}$ for $\ce{CH3COO-}$.
+:::
+::: tab Solution
+$\ce{CH3COONa}$ fully dissociates to 0.24 M $\ce{CH3COO-}$, which then hydrolyzes:
+
+$$K_b=5.6\times10^{-10}=\frac{[\ce{CH3COOH}][\ce{OH-}]}{[\ce{CH3COO-}]}=\frac{x^2}{0.24-x} \Rightarrow x=[\ce{OH-}]=1.16\times10^{-5}\ \text{M}$$
+
+$$\ce{pOH}=-\log(1.16\times10^{-5})=4.94 \qquad \ce{pH}=14.00-4.94=9.06$$
+
+**Where the $K_b$ came from**, in case it is not given: acetic acid has $K_a = 1.8\times10^{-5}$, so its conjugate base has
+
+$$K_b = \frac{K_w}{K_a} = \frac{1.0\times10^{-14}}{1.8\times10^{-5}} = 5.6\times10^{-10}$$
+
+**And a sanity check on the answer:** sodium acetate comes from a weak acid and a strong base, so §15.2's table says the solution must be basic. pH 9.06 is basic. ✓
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Calculate the pH of 0.20 M ammonium chloride, $\ce{NH4Cl}$, given $K_b(\ce{NH3}) = 1.8\times10^{-5}$.
+:::
+::: tab Solution
+**Step 1 — decide which ion hydrolyzes.** $\ce{NH4Cl}$ dissociates completely into $\ce{NH4+}$ and $\ce{Cl-}$. $\ce{Cl-}$ is the conjugate base of the strong acid HCl, so it is negligibly basic and does nothing. $\ce{NH4+}$ is the conjugate **acid** of the weak base $\ce{NH3}$, so it hydrolyzes and makes the solution acidic.
+
+$$\ce{NH4+(aq) + H2O(l) <=> NH3(aq) + H3O+(aq)}$$
+
+**Step 2 — get the constant you need.** You were given $K_b$ for ammonia, but the reaction above needs $K_a$ for ammonium:
+
+$$K_a = \frac{K_w}{K_b} = \frac{1.0\times10^{-14}}{1.8\times10^{-5}} = 5.6\times10^{-10}$$
+
+**Step 3 — ICE table.**
+
+| | $\ce{NH4+}$ | $\ce{NH3}$ | $\ce{H3O+}$ |
+|---|---|---|---|
+| Initial (M) | 0.20 | 0 | 0 |
+| Change (M) | $-x$ | $+x$ | $+x$ |
+| Equilibrium (M) | $0.20-x$ | $x$ | $x$ |
+
+$$\frac{x^2}{0.20} = 5.6\times10^{-10} \quad\Rightarrow\quad x = 1.05\times10^{-5}\ \text{M} \quad(0.005\% \text{ of } 0.20 — \text{shortcut valid})$$
+
+$$\ce{pH} = -\log(1.05\times10^{-5}) = 4.98$$
+
+**Check against §15.2's table:** $\ce{NH4Cl}$ comes from a strong acid and a weak base, so it should be acidic. pH 4.98 is acidic. ✓
+
+**The pattern across both salt problems.** The procedure is always the same three questions: *which ion hydrolyzes?* → *do I have the right constant, or do I need $K_w/K$?* → *ICE table*. The qualitative table in §15.2 is not a separate topic; it is the answer to question one, and it doubles as the check on your final answer.
+:::
+::::
+
+**Self-check:**
+- Why is no ICE table needed to find the pH of 0.10 M $\ce{HCl}$, but one *is* needed for 0.10 M $\ce{CH3COOH}$?
+- If $K_b$ for a conjugate base is $1.0\times10^{-11}$, what is $K_a$ for its conjugate acid?
+
+## Synthesis
+
+==This chapter is Chapter 14's equilibrium toolkit applied to one recurring cast of species: $\ce{H+}$, $\ce{OH-}$, and conjugate acid-base pairs.== Every pH calculation for weak, polyprotic, or salt solutions is the same ICE-table method from Chapter 14 (strong acids and bases dissociate completely, so their pH follows directly from stoichiometry), just with a new $K$ each time ($K_a$, $K_b$, or a hydrolysis constant related by $K_aK_b=K_w$). The same equilibrium toolkit reappears in Chapter 16 for buffers, titrations, and solubility equilibria, extended to situations where several species are present at once (with additions such as a neutralization step before the equilibrium step, and the solubility product $K_{sp}$).
+
+## Asset and License Record for This Chapter
+
+| Asset | Source URL | License | Attribution |
+|---|---|---|---|
+| `assets/litmus_paper_test.jpg` | https://commons.wikimedia.org/wiki/File:Litmus_paper.JPG | Public domain | Chemicalinterest, via Wikimedia Commons (public domain). Resized from the original for web use. |
+| `assets/strong_vs_weak_ionization.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/conjugate_strength_ladder.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/hydrohalic_acids_grid.svg` | — (self-generated, RDKit) | CC BY 4.0 | Self-generated with RDKit; released under this package's CC BY 4.0 license. |
+| `assets/oxoacid_strength_trend.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; approximate, commonly cited literature $\ce{p}K_{a1}$ values; released under this package's CC BY 4.0 license. |
+| `assets/lewis_acid_base.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/ph_scale.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; approximate, commonly cited pH values for real substances (actual values vary with concentration/brand); released under this package's CC BY 4.0 license. |
+| `assets/red_cabbage_indicator.jpg` | https://commons.wikimedia.org/wiki/File:Extracto_de_col_morada,_indicador_ácido_base.jpg | CC BY-SA 4.0 | KennyMex, via Wikimedia Commons, CC BY-SA 4.0. |

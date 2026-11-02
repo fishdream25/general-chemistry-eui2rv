@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en" data-orz-kind="slides">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="orz-slides 1.1.0">
+<title>Chapter 16: Acid-Base Equilibria and Solubility Equilibria</title>
+<script type="application/orz-meta+json" id="orz-meta">
+{
+  "title": "Chapter 16: Acid-Base Equilibria and Solubility Equilibria",
+  "uid": "doc-p0shf3h13ks4opnm"
+}
+</script>
+<script type="application/json" id="orz-shell">{"kind":"slides","format":1,"shell":"1.1.0","delivery":"cdn"}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<link rel="stylesheet" id="orz-katex" href="https://cdn.jsdelivr.net/npm/katex@0.16.47/dist/katex.min.css" media="not all">
+<link rel="stylesheet" id="orz-hljs" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css" media="not all">
+</head>
+<body>
+<!-- orz slides document, text format 1. For AI agents and tools:
+  The complete, editable source of this file is the text/markdown island with id "orz-src" below.
+  Read it with extract() from orz-markdown/carrier, or by hand: take the island content, remove one
+  backslash after each "<" that is followed by backslashes and then "script" or "/script" (any case),
+  turn its line breaks into the style named by data-orz-eol, and prefix U+FEFF if data-orz-bom is set.
+  Edit that text only, then assemble again; everything else in this file is a regenerable shell.
+  Skill: https://cdn.jsdelivr.net/npm/orz-slides/orz-slides-skills/SKILL.md
+-->
+<script type="text/markdown" id="orz-src" data-orz-format="1" data-orz-eol="lf">{{nyml
+kind: document
+carrier: slides
+uid: doc-p0shf3h13ks4opnm
+title: Chapter 16: Acid-Base Equilibria and Solubility Equilibria
+ratio: 16:9
+theme: small-press
+}}
+
+<!-- slide template=title -->
+# Acid-Base Equilibria
+## Buffers, titrations, and solubility
+**General Chemistry, Chapter 16**
+
+<!-- slide 2col -->
+## Chapter Learning Objectives
+<!-- @left -->
+- **Objective 16.1a** — Explain buffer action and calculate buffer pH
+- **Objective 16.1b** — Calculate buffer pH after a stress, and design a buffer at a target pH
+- **Objective 16.2a** — Describe titration pH behavior by acid/base strength combination
+- **Objective 16.2b** — Calculate pH at any point during a titration
+- **Objective 16.2c** — Select an appropriate acid-base indicator
+<!-- @right -->
+- **Objective 16.3a** — Write $K_{sp}$ expressions and convert between $K_{sp}$ and molar solubility
+- **Objective 16.3b** — Predict precipitation by comparing Q to $K_{sp}$
+- **Objective 16.3c** — Calculate solubility with a common ion present
+- **Objective 16.4a** — Define complex ion/formation constant and solve $K_f$ problems
+
+<!-- slide template=outline -->
+## Roadmap
+1. Buffer solutions
+2. Titrations
+3. Solubility equilibria
+4. Complex equilibria
+
+<!-- slide -->
+## Chapter Logic
+{{mermaid
+graph TD
+  A["Buffers: weak acid/base<br/>+ its conjugate"] --> B["Henderson-Hasselbalch:<br/>pH = pKa + log(base/acid)"]
+  B --> C["Titrations: buffer region,<br/>equivalence point, excess titrant"]
+  D["Ksp: same K/Q framework,<br/>applied to dissolution"] --> E["Common ion effect<br/>(Le Chatelier, Ch 14)"]
+  C -.reuses ICE tables.-> D
+  D --> F["Complex ions:<br/>Kf, same framework again"]
+}}
+**Visual description:** buffers lead to Henderson-Hasselbalch, extended across a titration curve. $K_{sp}$ applies the same K/Q framework to dissolution, including the common-ion effect. Complex ions ($K_f$) close the chapter.
+
+<!-- slide template=section -->
+# 1. Buffer Solutions
+
+<!-- slide -->
+## Why buffers resist pH change
+- Weak acid + its conjugate base, BOTH present at once
+- Acid component neutralizes added $\ce{OH-}$
+- Base component neutralizes added $\ce{H+}$
+
+<!-- slide main-side -->
+## Two reservoirs — and a limit
+<!-- @main -->
+![The buffer's two reservoirs and a computed pH curve showing the buffer holding and then failing](../assets/buffer_action.svg =740x)
+<!-- @side -->
+The acid reservoir eats added $\ce{OH-}$; the base reservoir eats added $\ce{H+}$.
+
+0.10 mol $\ce{HCl}$ into 1.0 L: buffer **4.74 → 4.65**, pure water **7.00 → 1.00**.
+
+Past 1.0 mol of added $\ce{HCl}$ every acetate is gone — **capacity exceeded**, and the curve falls off a cliff.
+
+<!-- slide step -->
+## Worked example — buffer pH (ICE table)
+1.0 M $\ce{CH3COOH}$ + 1.0 M $\ce{CH3COONa}$, $K_a = 1.8\times10^{-5}$
+- $x(1.0+x)/(1.0-x)=1.8\times10^{-5} \Rightarrow x=1.8\times10^{-5}$ M{{attrs[.fragment]}}
+- **pH = 4.74**{{attrs[.fragment]}}
+
+<!-- slide -->
+## The Henderson-Hasselbalch shortcut
+$$pH = pK_a + \log\frac{[\text{conjugate base}]}{[\text{acid}]}$$
+Same $K_a$ expression, rearranged — skips the ICE table when "x is small" already holds.
+
+<!-- slide step -->
+## Worked example — HH, then add $\ce{HCl}$
+Same buffer. Add 0.10 mol $\ce{HCl}$ to 1.0 L.
+- Original: pH = $\ce{p}K_a$ + log(1.0/1.0) = 4.74{{attrs[.fragment]}}
+- After $\ce{HCl}$: $[\ce{CH3COO-}] = 0.90$, $[\ce{CH3COOH}] = 1.1${{attrs[.fragment]}}
+- **pH = 4.74 + log(0.90/1.1) = 4.65** (vs. pH 7→1 in pure water!){{attrs[.fragment]}}
+
+<!-- slide step -->
+## Worked example — designing a buffer
+0.750 L of 0.100 M $\ce{NH3}$, target pH 9.30. $K_b(\ce{NH3}) = 1.8\times10^{-5}$
+- $\ce{p}K_a(\ce{NH4+}) = 9.25${{attrs[.fragment]}}
+- $[\ce{NH3}]/[\ce{NH4+}] = 10^{0.05} = 1.12$ → $[\ce{NH4+}] = 0.0893$ M{{attrs[.fragment]}}
+- **mass $\ce{NH4Cl} = 0.0670$ mol × 53.5 g/mol = 3.58 g**{{attrs[.fragment]}}
+
+<!-- slide template=section -->
+# 2. Titrations
+
+<!-- slide -->
+## Titration curves: strong vs. weak acid
+![Titration curves](../assets/titration_curves.svg =680x)
+
+<!-- slide -->
+## Equivalence pH is not always 7
+| Titration | Left at equivalence | pH |
+|---|---|---|
+| strong acid + strong base | neutral salt | **= 7** |
+| weak acid + strong base | conjugate **base** | **> 7** |
+| strong acid + weak base | conjugate **acid** | **< 7** |
+
+At **half**-equivalence, $[\mathrm{A^-}]=[\mathrm{HA}]$ and $\mathrm{pH}=\mathrm{p}K_a$ — the standard way to measure an unknown $K_a$.
+
+<!-- slide -->
+## Three regions, three methods
+1. Before equivalence: Henderson-Hasselbalch (weak-strong)
+2. At equivalence: pH=7 (strong-strong) or salt hydrolysis (weak-strong)
+3. After equivalence: excess strong titrant, direct calculation
+
+<!-- slide step -->
+## Worked example — strong acid + strong base
+25.0 mL 0.100 M $\ce{HCl}$ + 0.100 M $\ce{NaOH}$: 10.0, 25.0, 35.0 mL added
+- 10.0 mL: $[\ce{H+}] = 0.0428$ M → **pH=1.37**{{attrs[.fragment]}}
+- 25.0 mL: equal moles → **pH=7** (neutral salt){{attrs[.fragment]}}
+- 35.0 mL: $[\ce{OH-}] = 0.0167$ M → **pH=12.2**{{attrs[.fragment]}}
+
+<!-- slide step -->
+## Worked example — weak acid + strong base
+25.0 mL 0.100 M $\ce{CH3COOH}$ ($K_a = 1.8\times10^{-5}$) + same $\ce{NaOH}$
+- 10.0 mL (buffer region): pH = $\ce{p}K_a$+log(0.0010/0.0015) = **4.57**{{attrs[.fragment]}}
+- 25.0 mL (equivalence): acetate hydrolyzes → **pH=8.72**{{attrs[.fragment]}}
+- 35.0 mL (past equivalence): excess $\ce{OH-}$ sets pH, same as strong acid titration → **pH=12.2**{{attrs[.fragment]}}
+
+<!-- slide -->
+## A titration endpoint
+![Titration endpoint](../assets/titration_endpoint.jpg =380x)
+
+<!-- slide -->
+## Choosing an indicator
+![Indicator ranges](../assets/indicator_ranges.svg =680x)
+:::warning
+The indicator's color-change range (≈$\ce{p}K_a$±1) must fall within the curve's STEEP region near equivalence.
+:::
+
+<!-- slide template=section -->
+# 3. Solubility Equilibria
+
+<!-- slide -->
+## $K_{sp}$: the same $K_c$ framework, new context
+$$\text{AgCl(s)} \rightleftharpoons \text{Ag}^+\text{(aq)} + \text{Cl}^-\text{(aq)} \qquad K_{sp}=[Ag^+][Cl^-]$$
+![Silver chloride precipitate](../assets/silver_chloride_precipitate.jpg =380x)
+
+<!-- slide step -->
+## Worked example — solubility → $K_{sp}$
+$\ce{Ca(OH)2}$ solubility = 0.511 g/L (M = 74.1 g/mol)
+- Molar solubility = $6.90\times10^{-3}$ M{{attrs[.fragment]}}
+- **$K_{sp} = (6.90\times10^{-3})(2\times6.90\times10^{-3})^2 = 1.31\times10^{-6}$** (don't forget to double $[\ce{OH-}]$!){{attrs[.fragment]}}
+
+<!-- slide step -->
+## Worked example — $K_{sp}$ → solubility
+$\ce{CaCO3}$, $K_{sp} = 8.7\times10^{-9}$ (1:1 salt)
+- $[Ca^{2+}]=[CO_3^{2-}]=\sqrt{K_{sp}}=9.3\times10^{-5}$ M{{attrs[.fragment]}}
+- **solubility = $9.3\times10^{-3}$ g/L**{{attrs[.fragment]}}
+
+<!-- slide step -->
+## Worked example — will it precipitate?
+Mix equal volumes of $2.0\times10^{-4}$ M $\ce{AgNO3}$ and $2.0\times10^{-4}$ M $\ce{NaCl}$. $K_{sp}(\ce{AgCl}) = 1.6\times10^{-10}$
+- After mixing: $[\ce{Ag+}] = [\ce{Cl-}] = 1.0\times10^{-4}$ M{{attrs[.fragment]}}
+- $Q = 1.0\times10^{-8} > K_{sp}${{attrs[.fragment]}}
+- **Yes, AgCl precipitates**{{attrs[.fragment]}}
+
+<!-- slide main-side -->
+## The common ion effect, quantified
+<!-- @main -->
+![Molar solubility of AgCl falling by four orders of magnitude as chloride is added](../assets/common_ion_effect.svg =700x)
+<!-- @side -->
+Adding $\ce{Cl-}$ is adding a **product** — the dissolution shifts left.
+
+In 0.001 M $\ce{Cl-}$: **79× less soluble**.
+
+In 0.10 M $\ce{Cl-}$: **7,900× less soluble**.
+
+At a given temperature, $K_\mathrm{sp}$ itself never moves. Only the split between the two ions does.
+
+<!-- slide step -->
+## Worked example — common ion effect
+$\ce{Mn(OH)2}$, $K_{sp} = 2\times10^{-13}$. What pH limits $[\ce{Mn2+}]$ to $1.8\times10^{-6}$ M?
+- $[OH^-]=\sqrt{K_{sp}/[Mn^{2+}]}=3.3\times10^{-4}$ M{{attrs[.fragment]}}
+- **pH = 10.5**{{attrs[.fragment]}}
+
+<!-- slide template=section -->
+# 4. Complex Equilibria
+
+<!-- slide -->
+## Complex ions and $K_f$
+![Complex ion formation](../assets/complex_ion_formation.svg =600x)
+Larger $K_f$ → more stable complex
+
+<!-- slide -->
+## Amphoteric behavior, revisited
+$$\ce{Al(OH)3(s) + 3H+ -> Al^3+ + 3H2O} \qquad \ce{Al(OH)3(s) + OH- <=> Al(OH)4-}$$
+Same $\ce{Al(OH)3}$, acting as base (left) or acting as a (Lewis) acid by forming a complex (right)
+
+<!-- slide template=closing -->
+# One toolkit, four applications
+Every calculation in this chapter — buffers, titrations, $K_{sp}$, or $K_f$ — reuses Chapter 14's K/Q/ICE-table framework and Chapter 15's $K_a/K_b$ toolkit. No new method, only new contexts.
+</script>
+<main id="orz-view" class="orz-view orz-slides" data-orz-theme="small-press" data-orz-ratio="16:9"><p class="orz-fallback" style="opacity:.6;font:14px/1.5 system-ui,sans-serif;margin:1.5em">If this page stays blank, check your connection (this page loads its engine from the web) or open it in a recent browser; the deck's text is inside this file — see the comment at the top.</p></main>
+<div id="orz-chrome"></div>
+<script id="orz-engine" src="https://cdn.jsdelivr.net/npm/orz-slides-browser@1.1.0/orz-slides.browser.js"></script>
+</body>
+</html>

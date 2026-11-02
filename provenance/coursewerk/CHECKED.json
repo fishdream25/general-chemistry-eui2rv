@@ -1,0 +1,1062 @@
+{
+  "schemaVersion": 1,
+  "madeWith": "Coursewerk",
+  "checkedAt": "2026-11-02T02:52:39.936Z",
+  "log": {
+    "seq": 5872,
+    "hash": "553709c197b379cfe2e4bcdb94f2f4448e104774e569d78866b82ebe81aeccb8"
+  },
+  "pages": [
+    {
+      "path": "study-guide/introduction.md",
+      "sha256": "f9abf44b9e03185b72de82093eedac7bee879e66e42670860b5445be3b48e600",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "introduction"
+    },
+    {
+      "path": "slides/introduction.slides.md",
+      "sha256": "44d30d4fb969243292bf9d5fb519fec8851ae0064045a0ec126131b274de3a45",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "introduction"
+    },
+    {
+      "path": "practice/introduction.md",
+      "sha256": "3b7d856d320ed6b26260c0477017c1db1287742a6c813a738bbab9ac493a3c18",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "introduction"
+    },
+    {
+      "path": "study-guide/atoms-molecules-ions.md",
+      "sha256": "21ab9bdf6b793dc4bf22298de725150afb4d9df1f25e5ae6ab98124e2896dfe0",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "atoms-molecules-ions"
+    },
+    {
+      "path": "slides/atoms-molecules-ions.slides.md",
+      "sha256": "911d81eb3bc57e2c520ad5325f63d6b07ee383a19cf308f64cc7fec9305c6327",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "atoms-molecules-ions"
+    },
+    {
+      "path": "practice/atoms-molecules-ions.md",
+      "sha256": "16d2488bd945f27c03298c57b29505d32ebf3d41c6f1f6350d04785344114797",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "atoms-molecules-ions"
+    },
+    {
+      "path": "study-guide/stoichiometry.md",
+      "sha256": "21ea92e62ccdb93842dce65784c9a7429fcf31bf30d9ad955a881137996197c6",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "stoichiometry"
+    },
+    {
+      "path": "slides/stoichiometry.slides.md",
+      "sha256": "c5914bcae806bff25adc789eea8cacbc578a1ad8df7c2ff74bb849fced28ed55",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "stoichiometry"
+    },
+    {
+      "path": "practice/stoichiometry.md",
+      "sha256": "9731c9c5c501d60e064e12dcbbda5a1dc8a2698b055d7f7c0ba2a3dbbc86355c",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "stoichiometry"
+    },
+    {
+      "path": "study-guide/aqueous-reactions.md",
+      "sha256": "51e1a25d534028f137ee04f99fbcec2f6b86d3b41d2899c6447074b74b3b8885",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "aqueous-reactions"
+    },
+    {
+      "path": "slides/aqueous-reactions.slides.md",
+      "sha256": "b273cd91231272b19e178c0bc1cb2907674143a349b8f5d2c0255f7d6c96aba3",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "aqueous-reactions"
+    },
+    {
+      "path": "practice/aqueous-reactions.md",
+      "sha256": "041c983ea159a24a5ba1121bd15187612969aaeb76862c716b51151d35b35707",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "aqueous-reactions"
+    },
+    {
+      "path": "study-guide/gases.md",
+      "sha256": "99bdf8adb224be9cc190a19bc5fa5cf8de4033bbf818aba889b8e218f91f2265",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "gases"
+    },
+    {
+      "path": "slides/gases.slides.md",
+      "sha256": "1dac87ba486c9fc1626ba47a84bcd7238d5b6a78072f05c71a13112ca6daaa89",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "gases"
+    },
+    {
+      "path": "practice/gases.md",
+      "sha256": "42323842371582736f9a2ced778af31d49faf2d14f87601d5f7f0d943e8fc64d",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "gases"
+    },
+    {
+      "path": "study-guide/thermochemistry.md",
+      "sha256": "06ec4a68a8e9976d63d4fbbff151d7c6da93f416b528f5b1eed889d734702c12",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "thermochemistry"
+    },
+    {
+      "path": "slides/thermochemistry.slides.md",
+      "sha256": "3f97e990ca2d4d09473b70ef453ebac4420275033ed8dc68166dea20a75c92fd",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "thermochemistry"
+    },
+    {
+      "path": "practice/thermochemistry.md",
+      "sha256": "3473016933d25e80f5f541506bf91ffba71c4610635a96155d7649103ef7c0a5",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "thermochemistry"
+    },
+    {
+      "path": "study-guide/quantum-theory.md",
+      "sha256": "f1ddabaff1b8d80cfebf9138531250e0fb1e50bf817dcad8407fe5126b47ff43",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "quantum-theory"
+    },
+    {
+      "path": "slides/quantum-theory.slides.md",
+      "sha256": "67204c80a25c0bd011a96ebe73167efbcb0007bd0a901600cc8a4d10c04e937d",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "quantum-theory"
+    },
+    {
+      "path": "practice/quantum-theory.md",
+      "sha256": "6bda552654437e08dab5c75830b8171171974d582054718c0670c2e0cc69713c",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "quantum-theory"
+    },
+    {
+      "path": "study-guide/periodic-table.md",
+      "sha256": "169c86aa75f633816cbfc8945b2999659c52739eedb2c08ee71e1afb5cd31645",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "periodic-table"
+    },
+    {
+      "path": "slides/periodic-table.slides.md",
+      "sha256": "63ea916e7e5e9a785153e17c33d5eb8bb1a033d3061c4d24970faaa7e2a85945",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "periodic-table"
+    },
+    {
+      "path": "practice/periodic-table.md",
+      "sha256": "41b0a7c404293c5ef21f3e6bba8724cc6af07e54dd61b0f4ba484fa50a778ba0",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "periodic-table"
+    },
+    {
+      "path": "study-guide/chemical-bonding.md",
+      "sha256": "30d37417372d9688f107b5fc2afd1f58b77643f5c07418e70ad9a45325d88c91",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "chemical-bonding"
+    },
+    {
+      "path": "slides/chemical-bonding.slides.md",
+      "sha256": "96452ab8c60b24b850878dd36f2c286293090521d2078a2665956fbf4d8a361a",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "chemical-bonding"
+    },
+    {
+      "path": "practice/chemical-bonding.md",
+      "sha256": "75abb394e522d87f85392bb7bf5e81e903ad11f62add78a1f0163e3e3acd63b1",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "chemical-bonding"
+    },
+    {
+      "path": "study-guide/molecular-geometry.md",
+      "sha256": "2e5fee3b8eba7edec3051f3306919e4caf3b40e3c75030265900a3a73955ce80",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "molecular-geometry"
+    },
+    {
+      "path": "slides/molecular-geometry.slides.md",
+      "sha256": "7909dc0750d275c3c6652ac5b7cedf8b5bb14ec694ec8f1fb019508464e24c6a",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "molecular-geometry"
+    },
+    {
+      "path": "practice/molecular-geometry.md",
+      "sha256": "7414da20e8e83bad25f0ee037258915be4a43c6c5e987fef51212d27af8af040",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "molecular-geometry"
+    },
+    {
+      "path": "study-guide/intermolecular-forces.md",
+      "sha256": "2b33340fec73089c55d82ca034d17c5f48649a7891e5bc142ad64b3fe4058975",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "intermolecular-forces"
+    },
+    {
+      "path": "slides/intermolecular-forces.slides.md",
+      "sha256": "a87cd1f56c3492108a9324a4dee5d2ad965b938ef47b13ed97fe5641ed3a90f9",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "intermolecular-forces"
+    },
+    {
+      "path": "practice/intermolecular-forces.md",
+      "sha256": "68a534febcdbcd4d42519e8ed062a7114aa08b16bc411ca480e6cc8bbe8bacc4",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "intermolecular-forces"
+    },
+    {
+      "path": "study-guide/solutions.md",
+      "sha256": "0e4ee5ef792c8763cd84b45a9ba1305787d428fd0c0932a8a0fbf3f51d83cac8",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "solutions"
+    },
+    {
+      "path": "slides/solutions.slides.md",
+      "sha256": "e8e22f184502a6da121609c3c3a2d1f27492c5a493b7a0835d24ab19e6abe60a",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "solutions"
+    },
+    {
+      "path": "practice/solutions.md",
+      "sha256": "1d9c47a1b1541d5052beabfb25107b4bd6bc408bfe33dcbc49331b21f4c201d6",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "solutions"
+    },
+    {
+      "path": "study-guide/chemical-kinetics.md",
+      "sha256": "ab40b2215391855d9f9484f9eddae077710ccf7fad1f1a08b53fa356a29fd99c",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "chemical-kinetics"
+    },
+    {
+      "path": "slides/chemical-kinetics.slides.md",
+      "sha256": "7adf1896c82c1af4aaffdfe2288baccb48eed793948f605bdabb05d4842d2071",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "chemical-kinetics"
+    },
+    {
+      "path": "practice/chemical-kinetics.md",
+      "sha256": "7f79875d91412996eebffa02b600951aabf94423b987dfb0c7a5ffa0b862c93e",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "chemical-kinetics"
+    },
+    {
+      "path": "study-guide/chemical-equilibrium.md",
+      "sha256": "d48efeaf099ca6b19d5c9cd13d1ac118d07354fda0fedaf03c0dbeec6e9ee4b4",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "chemical-equilibrium"
+    },
+    {
+      "path": "slides/chemical-equilibrium.slides.md",
+      "sha256": "f7a9b3031c777065e388b9bc8516f4fa1be685a4bb5c7e6105473444c52da29e",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "chemical-equilibrium"
+    },
+    {
+      "path": "practice/chemical-equilibrium.md",
+      "sha256": "6777c0e9756212a76232707d8f43a43f5744f755fc65b8c268ee633a304202e4",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "chemical-equilibrium"
+    },
+    {
+      "path": "study-guide/acids-and-bases.md",
+      "sha256": "0d4cc0f00a617e995fa8c167079432703fdd929104a0bf7714ac4a49bdb3044e",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "acids-and-bases"
+    },
+    {
+      "path": "slides/acids-and-bases.slides.md",
+      "sha256": "16373391250f6da050512fd8e93ade222f5a012d5678bb81b0f2b4d2727903e5",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "acids-and-bases"
+    },
+    {
+      "path": "practice/acids-and-bases.md",
+      "sha256": "c40196505ec2a107727c49015bf7f32fd0decbdaa4c5da47a2326e9848648e7b",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "acids-and-bases"
+    },
+    {
+      "path": "study-guide/acid-base-equilibria.md",
+      "sha256": "b23e9d29ebc0646f1707d3121880cbdd541edc63e189393d187865a0c51faf2b",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "acid-base-equilibria"
+    },
+    {
+      "path": "slides/acid-base-equilibria.slides.md",
+      "sha256": "31262b59151797640379b8e54b042abab64695af78a96ad30ddf242759134b2c",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "acid-base-equilibria"
+    },
+    {
+      "path": "practice/acid-base-equilibria.md",
+      "sha256": "d5011984f81d4a684fb62718868ba9c695c9d4ce13253b73b09ab7a4f14223e1",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "acid-base-equilibria"
+    },
+    {
+      "path": "study-guide/thermodynamics.md",
+      "sha256": "e9a624bf27d73bb77a979adf8cf3d71ba6d86d9b084ca8caefcfc1c33e8186ba",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "thermodynamics"
+    },
+    {
+      "path": "slides/thermodynamics.slides.md",
+      "sha256": "f1ba9e6d9b01427a619f305fac9a32649c5374c3498338d08ae533444247eb9d",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "thermodynamics"
+    },
+    {
+      "path": "practice/thermodynamics.md",
+      "sha256": "9802c0af6bc7c37c85685b7e3248a50a7488c9414bcb3e1b292c1b7d64793e30",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "thermodynamics"
+    },
+    {
+      "path": "study-guide/electrochemistry.md",
+      "sha256": "27bbcca39a17332f03d93866fed90c8ab1af064fb79da2f65318450f09c0ab3f",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "electrochemistry"
+    },
+    {
+      "path": "slides/electrochemistry.slides.md",
+      "sha256": "9577df01552d7ea11ece86df045728a160ae8da8276e0d97f06a03a78bc9efc9",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "electrochemistry"
+    },
+    {
+      "path": "practice/electrochemistry.md",
+      "sha256": "0b8375d6bb33094e0fd7bb947e206aa65fd86fe34e58c8416cdecbe1609d2f42",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "electrochemistry"
+    },
+    {
+      "path": "study-guide/nuclear-chemistry.md",
+      "sha256": "e9080004001cabed17da516f51b75eb25d876562f7eccd6a8c4af22689af4760",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "nuclear-chemistry"
+    },
+    {
+      "path": "slides/nuclear-chemistry.slides.md",
+      "sha256": "366dadde6e16debddb2fbc5caabd37fc70703eb904c502e3bac8fde2b56331c8",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "nuclear-chemistry"
+    },
+    {
+      "path": "practice/nuclear-chemistry.md",
+      "sha256": "abe3aec9317576f377323e6531f6f6423e086251023f66292def4a2d293e0db3",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "nuclear-chemistry"
+    },
+    {
+      "path": "concepts/course.md",
+      "sha256": "9e488c836390abbce9acd134606e49cb6a7a0ff97e80a66214e13a8ef3ab3614",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": null
+    },
+    {
+      "path": "concepts/introduction.md",
+      "sha256": "dad81cd49e66a7b19f98fe504e79b41582cd9ecea97d28a0e52d9c64cabf59b1",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "introduction"
+    },
+    {
+      "path": "assessment-support/introduction.md",
+      "sha256": "e32217b861521b7abf69aaec41017f4c27bf11456705e1948e84f0710388bdb3",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "introduction"
+    },
+    {
+      "path": "concepts/atoms-molecules-ions.md",
+      "sha256": "b9f9e48b6c0e24fda692436d9cc22d127779cedbc4a67d53d69f6c2569ec6ef4",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "atoms-molecules-ions"
+    },
+    {
+      "path": "assessment-support/atoms-molecules-ions.md",
+      "sha256": "98d023fed3366e83817d76b3abde7b5408b2bfbe390e4bee2566fba4fe3d58f1",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "atoms-molecules-ions"
+    },
+    {
+      "path": "concepts/stoichiometry.md",
+      "sha256": "c8d3e68daf4dc511e22184d3292abcef88257e097c1ec141418f30407e283255",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "stoichiometry"
+    },
+    {
+      "path": "assessment-support/stoichiometry.md",
+      "sha256": "d4a68d2b2d5757b7851e2f3c4a2662a55912910067b0aef6e8ef94f89a056112",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "stoichiometry"
+    },
+    {
+      "path": "concepts/aqueous-reactions.md",
+      "sha256": "e01f74187c2c5f86c28b8dd44e30a5c9a92df68bcdb0e5d7cdc4b45912c503e2",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "aqueous-reactions"
+    },
+    {
+      "path": "assessment-support/aqueous-reactions.md",
+      "sha256": "3bb578666e89d137132154683ec9d7b4edaccbcc84c628785662130c38c4143a",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "aqueous-reactions"
+    },
+    {
+      "path": "concepts/gases.md",
+      "sha256": "cc2d0cabc6fcaedabdbcc14d673cd8c32308cb86872caca26c7799648ea96d05",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "gases"
+    },
+    {
+      "path": "assessment-support/gases.md",
+      "sha256": "9284aec31f7cb49685afdcc43ecfd973a802746bf522e4af9fedb3c2cfda8246",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "gases"
+    },
+    {
+      "path": "concepts/thermochemistry.md",
+      "sha256": "71eb913f843236a5cb32a7fa3b445a88055838694b767718a436f760d75a06dd",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "thermochemistry"
+    },
+    {
+      "path": "assessment-support/thermochemistry.md",
+      "sha256": "a10acce41e315d3a5647c6c3ac1674fe82f3e733b80bb2268ee015068dbd3ea0",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "thermochemistry"
+    },
+    {
+      "path": "concepts/quantum-theory.md",
+      "sha256": "d153aacd67f7c5e589cf27e04cf17ac01536d3c5ae2a6efa7776ac030e334d36",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "quantum-theory"
+    },
+    {
+      "path": "assessment-support/quantum-theory.md",
+      "sha256": "9c7d7abf9722296c0b6a4ce231d2a46ca7a3de9303edd6dffc94f0309731554e",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "quantum-theory"
+    },
+    {
+      "path": "concepts/periodic-table.md",
+      "sha256": "5b4bc6f9fa51bbd606c13263dcfa16130f1430f002c16d08972511bfa91cc740",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "periodic-table"
+    },
+    {
+      "path": "assessment-support/periodic-table.md",
+      "sha256": "1dff07b4a7903801a35e9c6ea5adb57fbaad6651a8d35cab6ff169303dfb2800",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "periodic-table"
+    },
+    {
+      "path": "concepts/chemical-bonding.md",
+      "sha256": "dbebd3f8f3bb70289f04447fa48b834179b1ffc050a6cfd042f9dac38a501301",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "chemical-bonding"
+    },
+    {
+      "path": "assessment-support/chemical-bonding.md",
+      "sha256": "ac84aa4320b335dd43a1195346d0595ce24637cf25ea0f02be9360c93695404d",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "chemical-bonding"
+    },
+    {
+      "path": "concepts/molecular-geometry.md",
+      "sha256": "e0ae022868404fea9ea1e6dcbb00556270ae836595a70dc4d6a5a540f8409eb3",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "molecular-geometry"
+    },
+    {
+      "path": "assessment-support/molecular-geometry.md",
+      "sha256": "08a552e0019652759bbda337c8953bb22109aaf2bbc3665a86d23680a3cbf135",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "molecular-geometry"
+    },
+    {
+      "path": "concepts/intermolecular-forces.md",
+      "sha256": "e84b92fd2a7e44ec2aaae2d357a73d72a0b4e2b3143b1509970356aa89bd0afd",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "intermolecular-forces"
+    },
+    {
+      "path": "assessment-support/intermolecular-forces.md",
+      "sha256": "df19353b74269c137e8ddfe1c78ddaf6837636400c3b9c32e555863734da31e4",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "intermolecular-forces"
+    },
+    {
+      "path": "concepts/solutions.md",
+      "sha256": "e5dbe01cc4954747e8cac1baf303f081c651115e434100454a59cc2c1d00f2a1",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "solutions"
+    },
+    {
+      "path": "assessment-support/solutions.md",
+      "sha256": "a1060948fdce54845106b121f92f790041c51a028552c6b6eb99d6c5b3079575",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "solutions"
+    },
+    {
+      "path": "concepts/chemical-kinetics.md",
+      "sha256": "36e81bf22fbe9482cbc2c11724816706b2f8671ebe06588de473153b5db197b3",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "chemical-kinetics"
+    },
+    {
+      "path": "assessment-support/chemical-kinetics.md",
+      "sha256": "901a6098cb22386d91c1e57e536bbc911e65c2d532eb605a138b3c50e0849a65",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "chemical-kinetics"
+    },
+    {
+      "path": "concepts/chemical-equilibrium.md",
+      "sha256": "bdc10f24d4243a9e314c98412aca30a1bf61c777a562e102ebb67db7093469c1",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "chemical-equilibrium"
+    },
+    {
+      "path": "assessment-support/chemical-equilibrium.md",
+      "sha256": "570b04bc0f098d2e320f03db752d8c452be824388ccfdf4cd9e493a46ea6f2a2",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "chemical-equilibrium"
+    },
+    {
+      "path": "concepts/acids-and-bases.md",
+      "sha256": "a5d0018c18049675fe048aea143ab59c7002f0b51fe4bff3703917c99314e838",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "acids-and-bases"
+    },
+    {
+      "path": "assessment-support/acids-and-bases.md",
+      "sha256": "7d28ef7efbdb5380a37bf5d6fae9b9bf9485f061a3869a26919df811952358e4",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "acids-and-bases"
+    },
+    {
+      "path": "concepts/acid-base-equilibria.md",
+      "sha256": "c34c253add020c9564699fbde9fd62c625ea2d1895d7ad3014f88df3989d657c",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "acid-base-equilibria"
+    },
+    {
+      "path": "assessment-support/acid-base-equilibria.md",
+      "sha256": "bf46bd1b8620b3b2b2a7366827223fd5528155e0a3065053e22d6d7c85f65952",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "acid-base-equilibria"
+    },
+    {
+      "path": "concepts/thermodynamics.md",
+      "sha256": "c6036d546e7524042a1c9489bb02d038546b8ab3c6c1a145468ed2702d33bf91",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "thermodynamics"
+    },
+    {
+      "path": "assessment-support/thermodynamics.md",
+      "sha256": "4910226032dcd3c9471270104fbe5b01ebeb8e499a651e596c66963ee9d0a75e",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "thermodynamics"
+    },
+    {
+      "path": "concepts/electrochemistry.md",
+      "sha256": "4dbd9d425ac0eaa4f98002e5d2d3b009826da92222a9af995d75753c0e551849",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "electrochemistry"
+    },
+    {
+      "path": "assessment-support/electrochemistry.md",
+      "sha256": "906ae9908586a41b359d27429bf8bd7dc454d8da35c8e2f14fd330ff2ab8741b",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "electrochemistry"
+    },
+    {
+      "path": "concepts/nuclear-chemistry.md",
+      "sha256": "24f2bdf0d47dc820a96d260b47aca9b88b52c8d82d7f9dc6f7176c08ba10ad4a",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "nuclear-chemistry"
+    },
+    {
+      "path": "assessment-support/nuclear-chemistry.md",
+      "sha256": "dcdb5ac3c40aa9dbc126cd2cefcbbd5b3a01b0f773ee56c1ee3b7af12b1d10f8",
+      "open": {
+        "defects": 0,
+        "obligations": 0,
+        "questions": 0
+      },
+      "chapter": "nuclear-chemistry"
+    }
+  ],
+  "approvals": [
+    {
+      "scope": "course",
+      "valid": false
+    },
+    {
+      "scope": "chapter:introduction",
+      "valid": false
+    },
+    {
+      "scope": "chapter:atoms-molecules-ions",
+      "valid": false
+    },
+    {
+      "scope": "chapter:stoichiometry",
+      "valid": false
+    },
+    {
+      "scope": "chapter:aqueous-reactions",
+      "valid": false
+    },
+    {
+      "scope": "chapter:gases",
+      "valid": false
+    },
+    {
+      "scope": "chapter:thermochemistry",
+      "valid": false
+    },
+    {
+      "scope": "chapter:quantum-theory",
+      "valid": false
+    },
+    {
+      "scope": "chapter:periodic-table",
+      "valid": false
+    },
+    {
+      "scope": "chapter:chemical-bonding",
+      "valid": false
+    },
+    {
+      "scope": "chapter:molecular-geometry",
+      "valid": false
+    },
+    {
+      "scope": "chapter:intermolecular-forces",
+      "valid": false
+    },
+    {
+      "scope": "chapter:solutions",
+      "valid": false
+    },
+    {
+      "scope": "chapter:chemical-kinetics",
+      "valid": false
+    },
+    {
+      "scope": "chapter:chemical-equilibrium",
+      "valid": false
+    },
+    {
+      "scope": "chapter:acids-and-bases",
+      "valid": false
+    },
+    {
+      "scope": "chapter:acid-base-equilibria",
+      "valid": false
+    },
+    {
+      "scope": "chapter:thermodynamics",
+      "valid": false
+    },
+    {
+      "scope": "chapter:electrochemistry",
+      "valid": false
+    },
+    {
+      "scope": "chapter:nuclear-chemistry",
+      "valid": false
+    }
+  ],
+  "authors": [
+    {
+      "name": "Yu Wang, University of Louisiana at Lafayette",
+      "role": "author and instructor"
+    }
+  ],
+  "aiAssistance": [
+    "Drafting and production assistance provided by an AI agent (Claude, via Claude Code) using the Coursewerk harness, under the instructor's direction and review."
+  ]
+}

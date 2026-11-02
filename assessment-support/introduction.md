@@ -1,0 +1,439 @@
+{{nyml
+kind: document
+format: 1
+title: Chapter 1 Assessment Guide: Introduction to Chemistry
+}}
+
+# Chapter 1 Assessment Guide: Introduction to Chemistry
+
+## Source and Format
+
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 1 (CC BY 4.0). **Audience:** introductory undergraduate general chemistry, first semester. **Note:** this is design guidance for building assessments — question *guides* an instructor or generator can instantiate into many concrete questions — not a finished question bank or answer key.
+
+## General Assessment Priorities
+
+- Treat significant figures and dimensional analysis as **skills that recur in every later chapter**, not chapter-1 trivia — test them with the same rigor expected from Chapter 3 onward.
+- Always require the correct number of significant figures in a numeric answer, even for objectives not explicitly "about" significant figures (density, temperature conversion, unit conversion).
+- Pair matter-classification questions with concrete, everyday examples (not just abstract definitions) so students practice applying the definitions, not just reciting them.
+- For zero-counting significant-figure questions, deliberately include at least one ambiguous trailing-zero case per assessment, so students practice recognizing (not just resolving) the ambiguity.
+
+## Objective 1.1a: Classify matter as a substance or mixture, and identify elements and compounds
+
+### Target understanding
+
+A student can classify a given sample of matter as a pure substance or mixture (and, if a mixture, homogeneous or heterogeneous), and can distinguish an element from a compound.
+
+### Question guides
+
+**1. Forward — classify a list of everyday materials**
+- Variables & ranges: 4–6 familiar materials (diamond, milk, air, salad dressing, brass, granite).
+- Constraint: at least one homogeneous and one heterogeneous mixture must be included.
+- Contexts: household/food, geological, alloy examples.
+- Formats: multiple-choice or short-answer.
+- Worked instantiation: see the study guide's worked example (diamond/milk/air/salad dressing).
+
+**2. Inverse — given a classification, name a matching example**
+- Variables & ranges: a classification is given (e.g., "heterogeneous mixture"); student supplies an original example not used in class.
+- Constraint: example must not duplicate a study-guide or lecture example.
+- Contexts: open-ended, student's own experience.
+- Formats: short-answer.
+- Worked instantiation: "Name a heterogeneous mixture from your own kitchen." → e.g., vegetable soup, granola.
+
+**3. Conceptual — element vs. compound**
+- Variables & ranges: a qualitative prompt distinguishing "cannot be separated chemically" from "fixed ratio of elements."
+- Constraint: explanation must use the fixed-ratio idea, not just "it has more than one atom type."
+- Contexts: water, table salt, oxygen gas.
+- Formats: short-answer.
+- Worked instantiation: "Is oxygen gas ($\ce{O2}$) an element or a compound? Explain." → Element — it contains only one type of atom (oxygen), even though each molecule has two atoms.
+
+**4. Error analysis**
+- Variables & ranges: a student incorrectly calls a homogeneous mixture (e.g., salt water) a "compound" because "it's mixed evenly."
+- Constraint: correction must identify that composition can vary (more or less salt) — the hallmark of a mixture, not a compound.
+- Contexts: solutions, alloys.
+- Formats: short-answer.
+- Worked instantiation: "A student says salt water is a compound because it looks uniform. What's the error?" → A compound has a fixed composition ratio; salt water can be made with more or less salt, so its composition varies — that variability is the defining feature of a mixture, not a compound.
+
+### Design guidance by purpose
+
+| Purpose | Cognitive level | How to design the task |
+|---|---|---|
+| Homework | Understand | 4–6 classification items spanning all four categories. |
+| Group discussion | Understand | Debate borderline cases (e.g., is air "pure" in casual speech but a mixture chemically?). |
+| Quiz | Understand | One classification set of 3–4 items. |
+| Exam | Analyze | Combine with Objective 1.1b (classify, then identify a change type for the same material). |
+| Project/activity | Apply | Students photograph and classify 5 materials from home. |
+
+## Objective 1.1b: Distinguish physical from chemical change, and extensive from intensive properties
+
+### Target understanding
+
+A student can classify a described change as physical or chemical, and a described property as extensive or intensive, using the definitions rather than surface familiarity with the example.
+
+### Question guides
+
+**1. Forward — classify a list of changes**
+- Variables & ranges: 4–6 changes (melting, rusting, cutting, burning, dissolving, tarnishing).
+- Constraint: include at least one commonly-misclassified case (dissolving sugar is physical; tarnishing is chemical).
+- Contexts: kitchen, metals, everyday materials.
+- Formats: multiple-choice.
+- Worked instantiation: see the study guide's worked example (copper mass/tarnishing).
+
+**2. Inverse — given "chemical change," name an example and justify**
+- Variables & ranges: student proposes their own chemical change and states the new substance formed.
+- Constraint: must name the specific new substance, not just say "something changed."
+- Contexts: cooking, combustion, corrosion.
+- Formats: short-answer.
+- Worked instantiation: "Give a chemical change from cooking and name the new substance formed." → e.g., baking bread — starches and proteins undergo Maillard browning reactions, forming new flavor/color compounds.
+
+**3. Conceptual — why density is intensive**
+- Variables & ranges: two different-sized samples of the same substance.
+- Constraint: explanation must reference the ratio (mass/volume) staying constant even as both numerator and denominator scale together.
+- Contexts: any pure substance.
+- Formats: short-answer.
+- Worked instantiation: "Why does density not depend on sample size?" → Both mass and volume scale up together for a larger sample of the same substance, so their ratio (density) stays constant.
+
+**4. Error analysis**
+- Variables & ranges: a student calls volume an intensive property because "it's just a measurement."
+- Constraint: correction must show that volume changes with sample size, unlike density.
+- Contexts: liquids or solids.
+- Formats: short-answer.
+- Worked instantiation: "A student says volume is intensive since it's 'just a physical measurement.' What's wrong?" → Volume scales directly with the amount of matter present (twice the sample, twice the volume), which is the definition of an extensive property, not an intensive one.
+
+### Design guidance by purpose
+
+| Purpose | Cognitive level | How to design the task |
+|---|---|---|
+| Homework | Understand | 4–6 change/property classification items. |
+| Group discussion | Analyze | Discuss why melting is physical even though it looks dramatic. |
+| Quiz | Understand | One mixed set (2 changes + 2 properties). |
+| Exam | Analyze | Combine with a density calculation (Objective 1.2b) using the same substance. |
+| Project/activity | Evaluate | Students identify 3 physical and 3 chemical changes from a video of a science demonstration. |
+
+## Objective 1.2a: Use SI base units and prefixes; distinguish mass from weight
+
+### Target understanding
+
+A student can name the SI base unit for a given quantity, convert between SI prefixes, and explain why mass and weight are not the same quantity.
+
+### Question guides
+
+**1. Forward — prefix conversion**
+- Variables & ranges: convert a quantity between two SI prefixes (e.g., km to mm).
+- Constraint: must show the power-of-ten factor explicitly, not just state a memorized shortcut.
+- Contexts: length, mass, or volume measurements.
+- Formats: workout.
+- Worked instantiation: "Convert 2.5 km to mm." → $2.5\,\text{km}\times\frac{10^3\,\text{m}}{1\,\text{km}}\times\frac{1\,\text{mm}}{10^{-3}\,\text{m}}=2.5\times10^6\,\text{mm}$.
+
+**2. Inverse — identify the correct base unit**
+- Variables & ranges: given a quantity name (time, amount of substance, temperature), state its SI base unit and symbol.
+- Constraint: distinguish mole (amount) from mass-based units.
+- Contexts: the 7 SI base quantities.
+- Formats: multiple-choice or short-answer.
+- Worked instantiation: "What is the SI base unit for amount of substance?" → the mole (mol).
+
+**3. Conceptual — mass vs. weight**
+- Variables & ranges: a scenario comparing the same object on Earth and the Moon.
+- Constraint: explanation must state that mass is constant while weight (a force) depends on local gravity.
+- Contexts: space/astronomy tie-in.
+- Formats: short-answer.
+- Worked instantiation: "An astronaut has a mass of 70 kg on Earth. What is their mass on the Moon? What happens to their weight?" → Mass stays 70 kg (same amount of matter); weight decreases to about one-sixth, since the Moon's gravity is weaker.
+
+**4. Error analysis**
+- Variables & ranges: a problem statement that uses "weight" and "mass" interchangeably where it matters (e.g., "the weight of the sample is 5 kg").
+- Constraint: correction must note kg is a mass unit, not a weight (force) unit.
+- Contexts: any lab-report-style statement.
+- Formats: short-answer.
+- Worked instantiation: "A lab report says 'the weight of the sample is 5 kg.' What's imprecise about this?" → Kilograms measure mass, not weight (a force, properly measured in newtons); the report should say "the mass of the sample is 5 kg."
+
+### Design guidance by purpose
+
+| Purpose | Cognitive level | How to design the task |
+|---|---|---|
+| Homework | Apply | 3–4 prefix-conversion problems across different quantities. |
+| Group discussion | Understand | Discuss why chemists rarely need to distinguish mass from weight in the lab, but astronauts must. |
+| Quiz | Apply | One prefix conversion. |
+| Exam | Apply | Combine with a density or dimensional-analysis problem requiring a prefix conversion mid-calculation. |
+| Project/activity | Understand | Students build a table converting one measured household quantity across 3 different prefixes. |
+
+## Objective 1.2b: Convert volume units and calculate density
+
+### Target understanding
+
+A student can convert among mL, $\text{cm}^{3}$, L, and $\text{m}^{3}$, and can calculate density from mass and volume (or solve for either, given the other two).
+
+### Question guides
+
+**1. Forward — calculate density**
+- Variables & ranges: mass and volume of a sample, density requested.
+- Constraint: correct significant figures in the final answer.
+- Contexts: metals, liquids.
+- Formats: workout.
+- Worked instantiation: see the study guide's worked example (gold, 45.3 g / 2.35 $\text{cm}^{3}$).
+
+**2. Inverse — solve for volume given density and mass**
+- Variables & ranges: given density and mass, find volume.
+- Constraint: correct algebraic rearrangement of $d=m/V$.
+- Contexts: any pure substance with a known density.
+- Formats: workout.
+- Worked instantiation: "The density of iron is 7.87 $\text{g}/\text{cm}^{3}$. What is the volume of 25.7 g of iron?" → $V=m/d=25.7/7.87=3.27\ \text{cm}^3$ (3 sig figs).
+
+**3. Conceptual — why density identifies a substance**
+- Variables & ranges: two samples of different sizes but the same substance.
+- Constraint: must connect back to Objective 1.1b's intensive-property idea.
+- Contexts: metal identification.
+- Formats: short-answer.
+- Worked instantiation: "Why can density help identify an unknown metal, but mass alone cannot?" → Density is intensive (constant for a given substance regardless of sample size), while mass is extensive and depends on how much of the sample you have.
+
+**4. Error analysis**
+- Variables & ranges: a volume-unit conversion error (treating 1 mL as 1 $\text{dm}^{3}$ instead of 1 $\text{cm}^{3}$).
+- Constraint: correction must state the correct volume-unit equivalence.
+- Contexts: any density calculation.
+- Formats: short-answer.
+- Worked instantiation: "A student calculates density using 1 mL = 1 $\text{dm}^{3}$. What's wrong?" → 1 mL = 1 $\text{cm}^{3}$, not 1 $\text{dm}^{3}$ (which equals 1 L = 1000 mL) — using the wrong equivalence would make the calculated density 1000 times too small.
+
+### Design guidance by purpose
+
+| Purpose | Cognitive level | How to design the task |
+|---|---|---|
+| Homework | Apply | 3–4 density/volume problems, forward and inverse. |
+| Group discussion | Analyze | Discuss why an unknown metal's identity can be narrowed down using measured density alone. |
+| Quiz | Apply | One density calculation. |
+| Exam | Analyze | Combine with a unit conversion (Objective 1.4a) requiring a volume-unit change first. |
+| Project/activity | Evaluate | Students measure the mass and volume (by water displacement) of an irregular object and identify its likely material from its density. |
+
+## Objective 1.2c: Convert temperature between Celsius, Fahrenheit, and Kelvin
+
+### Target understanding
+
+A student can convert a temperature among all three scales, correctly applying significant-figure rules (especially not rounding an intermediate step before the final addition/subtraction).
+
+### Question guides
+
+**1. Forward — Celsius to Fahrenheit and Kelvin**
+- Variables & ranges: any Celsius value, request both Fahrenheit and Kelvin.
+- Constraint: full precision through intermediate steps; round only at the end.
+- Contexts: body temperature, weather, lab conditions.
+- Formats: workout.
+- Worked instantiation: see the study guide's worked example (37.0 °C → 98.6 °F).
+
+**2. Inverse — Fahrenheit to Celsius**
+- Variables & ranges: any Fahrenheit value, request Celsius.
+- Constraint: correct significant figures based on the given value's precision.
+- Contexts: weather reports, oven temperatures.
+- Formats: workout.
+- Worked instantiation: see the study guide's worked example (74 °F → 23 °C).
+
+**3. Conceptual — why Kelvin has no negative values in chemistry**
+- Variables & ranges: a qualitative prompt about absolute zero.
+- Constraint: explanation must reference 0 K as the theoretical lowest possible temperature.
+- Contexts: gas laws (forward link to Ch. 5).
+- Formats: short-answer.
+- Worked instantiation: "Why do gas-law calculations always require Kelvin, never Celsius?" → Kelvin is an absolute scale starting at 0 K (absolute zero); gas-law relationships require a scale where temperature is never negative and is directly proportional to average kinetic energy.
+
+**4. Error analysis**
+- Variables & ranges: a student rounds an intermediate multiplication step before adding 32, changing the final answer (as in the study guide's caution: rounding 66.6 to 67 gives 99 °F instead of 98.6 °F).
+- Constraint: correction must identify premature rounding as the specific error.
+- Contexts: any °C-to-°F conversion.
+- Formats: short-answer.
+- Worked instantiation: see the study guide's worked-example caution (37.0 °C rounded mid-calculation gives an incorrect 99 °F instead of 98.6 °F).
+
+### Design guidance by purpose
+
+| Purpose | Cognitive level | How to design the task |
+|---|---|---|
+| Homework | Apply | 3–4 conversions spanning all three scale pairs. |
+| Group discussion | Understand | Discuss why the Kelvin scale never uses a degree symbol. |
+| Quiz | Apply | One conversion, either direction. |
+| Exam | Apply | Combine with a gas-law-flavored prompt requiring a Kelvin conversion first (forward link to Ch. 5). |
+| Project/activity | Understand | Students build a single reference card with the two anchor points (freezing/boiling) in all three scales. |
+
+## Objective 1.3a: Convert to and from scientific notation, and perform arithmetic in scientific notation
+
+### Target understanding
+
+A student can convert any number to scientific notation and back, and can correctly apply the different rules for addition/subtraction (match exponents) vs. multiplication/division (combine exponents).
+
+### Question guides
+
+**1. Forward — convert to scientific notation**
+- Variables & ranges: a large or small decimal number.
+- Constraint: $N$ must be between 1 and 10.
+- Contexts: any measured quantity.
+- Formats: short-answer.
+- Worked instantiation: "Express 0.0215 in scientific notation." → $2.15\times10^{-2}$.
+
+**2. Inverse — arithmetic in scientific notation**
+- Variables & ranges: an addition/subtraction pair and a multiplication/division pair with different exponents.
+- Constraint: student must show the exponent-matching step for addition/subtraction.
+- Contexts: any numeric pair.
+- Formats: workout.
+- Worked instantiation: $4.31\times10^4+3.9\times10^3$ → rewrite as $4.31\times10^4+0.39\times10^4=4.70\times10^4$.
+
+**3. Conceptual — why exponents must match for addition**
+- Variables & ranges: a qualitative prompt.
+- Constraint: explanation must reference place value.
+- Contexts: any addition/subtraction example.
+- Formats: short-answer.
+- Worked instantiation: "Why can't you just add the $N$ values of $4.31\times10^4$ and $3.9\times10^3$ directly?" → The exponents represent different place values; adding the $N$ values directly would be like adding a number in the ten-thousands place to one in the thousands place without aligning them first.
+
+**4. Error analysis**
+- Variables & ranges: a student adds exponents during an addition problem (confusing it with the multiplication rule).
+- Constraint: correction must identify which operation was actually performed.
+- Contexts: mixed-operation problem sets.
+- Formats: short-answer.
+- Worked instantiation: "A student computes $2.0\times10^3+3.0\times10^2$ by adding the exponents to get $5.0\times10^5$. What's wrong?" → That rule applies to multiplication, not addition; for addition the exponents must first be matched (rewrite as $2.0\times10^3+0.30\times10^3=2.3\times10^3$).
+
+### Design guidance by purpose
+
+| Purpose | Cognitive level | How to design the task |
+|---|---|---|
+| Homework | Apply | 4–6 conversion and arithmetic problems. |
+| Group discussion | Understand | Discuss why scientists prefer scientific notation for very large/small numbers. |
+| Quiz | Apply | One conversion + one arithmetic problem. |
+| Exam | Apply | Combine with a significant-figure rule (Objective 1.3c) in the same problem. |
+| Project/activity | Understand | Students express 5 real astronomical or microscopic quantities (found via reference material) in scientific notation. |
+
+## Objective 1.3b: Apply significant-figure rules to a measured value
+
+### Target understanding
+
+A student can count the significant figures in any measured value, correctly applying all five zero rules, and can recognize when a trailing-zero value is genuinely ambiguous.
+
+### Question guides
+
+**1. Forward — count significant figures**
+- Variables & ranges: 5–6 values spanning all five zero rules, including at least one ambiguous case.
+- Constraint: must include a value like 3400 (ambiguous) alongside unambiguous ones.
+- Contexts: any measured quantities.
+- Formats: short-answer.
+- Worked instantiation: see the study guide's worked example (358 m; 0.932 kg; 0.0068 m; $9.320\times10^{23}$; 3400 mL).
+
+**2. Inverse — write a number with a specified number of sig figs**
+- Variables & ranges: a value and a target sig-fig count.
+- Constraint: use scientific notation when the plain-decimal form would be ambiguous.
+- Contexts: any measured quantity.
+- Formats: short-answer.
+- Worked instantiation: "Write 3400 mL to show unambiguously that it has 4 significant figures." → $3.400\times10^3$ mL.
+
+**3. Conceptual — why leading zeros never count**
+- Variables & ranges: a qualitative prompt.
+- Constraint: explanation must reference leading zeros as placeholders for the decimal point, not measurement precision.
+- Contexts: 0.0068 m or similar.
+- Formats: short-answer.
+- Worked instantiation: "Why don't the zeros in 0.0068 count as significant?" → They only fix the position of the decimal point (they'd disappear if the value were rewritten in scientific notation as $6.8\times10^{-3}$); they carry no information about measurement precision.
+
+**4. Error analysis**
+- Variables & ranges: a student miscounts a trailing-zero-after-decimal case (e.g., says 25.0 has 2 sig figs).
+- Constraint: correction must invoke the "zeros after a decimal point in a number greater than 1" rule.
+- Contexts: any decimal value with trailing zeros.
+- Formats: short-answer.
+- Worked instantiation: "A student says 25.0 has 2 significant figures. What's wrong?" → The trailing zero after the decimal point is significant (rule 4), so 25.0 has 3 significant figures, not 2.
+
+### Design guidance by purpose
+
+| Purpose | Cognitive level | How to design the task |
+|---|---|---|
+| Homework | Understand | 5–6 sig-fig counting items covering all five rules. |
+| Group discussion | Understand | Discuss why different textbooks disagree on ambiguous trailing-zero cases. |
+| Quiz | Understand | One 4–5 item counting set. |
+| Exam | Analyze | Combine with Objective 1.3c (count sig figs, then use them in a calculation). |
+| Project/activity | Apply | Students find 5 real specification values (product labels, instrument manuals) and state their sig-fig count. |
+
+## Objective 1.3c: Apply significant-figure rules in calculations, and distinguish accuracy from precision
+
+### Target understanding
+
+A student can apply the correct significant-figure rule (decimal places for addition/subtraction; sig figs for multiplication/division) to a multi-step calculation, and can distinguish accuracy from precision using both definitions correctly.
+
+### Question guides
+
+**1. Forward — apply the correct rule to a calculation**
+- Variables & ranges: a mix of addition/subtraction and multiplication/division problems.
+- Constraint: student must identify which rule applies *before* rounding.
+- Contexts: any numeric operation.
+- Formats: workout.
+- Worked instantiation: see the study guide's worked example ($3245+1.649$; $3.14\times2.5$; $0.0029\div92.1$).
+
+**2. Inverse — identify exact numbers that don't limit precision**
+- Variables & ranges: a calculation involving one exact number (a defined conversion factor or a counted quantity) and one measured number.
+- Constraint: student must recognize the exact number has infinite sig figs and doesn't limit the answer.
+- Contexts: unit-conversion or per-item calculations.
+- Formats: short-answer.
+- Worked instantiation: "A recipe scales for 4 people (exactly) using a measured 2.35 kg of flour. How many sig figs does the scaled answer have?" → 3, matching the measured 2.35 kg; the exact count "4" never limits significant figures.
+
+**3. Conceptual — accuracy vs. precision with a dartboard analogy**
+- Variables & ranges: a described pattern of repeated measurements (tightly clustered but off-target, vs. scattered around the true value).
+- Constraint: explanation must use both terms correctly, not just one.
+- Contexts: any repeated-measurement scenario.
+- Formats: short-answer.
+- Worked instantiation: "Four repeated mass measurements are 10.51, 10.53, 10.52, 10.52 g, but the true mass is 10.80 g. Are these measurements accurate? Precise?" → Precise (tightly clustered, agreeing with each other) but not accurate (all far from the true value of 10.80 g).
+
+**4. Error analysis**
+- Variables & ranges: a mixed-operation calculation where the student applied the multiplication rule to an addition step (or vice versa).
+- Constraint: correction must identify the actual last operation performed.
+- Contexts: any two-step calculation.
+- Formats: short-answer.
+- Worked instantiation: "A student computes $(3.0\times4.00)+1.5=13.5$ and rounds to 2 sig figs (matching 3.0) to get 14. What's wrong?" → The last operation is addition, not multiplication — so the decimal-places rule applies to the sum $(12.0+1.5=13.5)$, not the sig-figs rule; since both terms have 1 decimal place, the correctly rounded answer is 13.5, not 14.
+
+### Design guidance by purpose
+
+| Purpose | Cognitive level | How to design the task |
+|---|---|---|
+| Homework | Apply | 4–6 mixed-operation calculations. |
+| Group discussion | Analyze | Debate the dartboard-style accuracy/precision scenario as a group before revealing the answer. |
+| Quiz | Apply | One multi-step calculation. |
+| Exam | Analyze | Combine with Objective 1.4a (a dimensional-analysis problem requiring correct final sig figs). |
+| Project/activity | Evaluate | Students record 5 repeated measurements of the same object and assess their own precision (and, if a true value is known, accuracy). |
+
+## Objective 1.4a: Solve unit-conversion problems using dimensional analysis
+
+### Target understanding
+
+A student can identify the needed conversion factor(s), set up a calculation so units cancel correctly, and chain multiple conversion factors together for a multi-step conversion.
+
+### Question guides
+
+**1. Forward — single-factor conversion**
+- Variables & ranges: a mass, length, or volume value requiring one conversion factor.
+- Constraint: units must be shown canceling explicitly.
+- Contexts: any simple unit pair.
+- Formats: workout.
+- Worked instantiation: see the study guide's worked example (125 g frisbee → oz).
+
+**2. Inverse — multi-step chained conversion**
+- Variables & ranges: a compound-unit quantity (e.g., a density in one unit system) requiring 2–3 chained factors.
+- Constraint: every intermediate unit must cancel before the next factor is applied.
+- Contexts: cross-unit-system density or rate problems.
+- Formats: workout.
+- Worked instantiation: see the study guide's worked example (antifreeze density, lb/qt → g/mL).
+
+**3. Conceptual — why a conversion factor equals 1**
+- Variables & ranges: a qualitative prompt about why multiplying by a conversion factor doesn't change the actual quantity.
+- Constraint: explanation must state that the factor's numerator and denominator represent the same physical amount.
+- Contexts: any conversion factor.
+- Formats: short-answer.
+- Worked instantiation: "Why is multiplying by (1 oz / 28.349 g) valid — doesn't multiplying always change a number?" → The fraction equals exactly 1 (1 oz and 28.349 g are the same physical mass), so multiplying by it changes only the *units* the quantity is expressed in, not the actual amount of matter.
+
+**4. Error analysis**
+- Variables & ranges: a conversion factor written upside-down, so units fail to cancel.
+- Constraint: correction must show the units explicitly failing to cancel in the flawed setup.
+- Contexts: any single-factor conversion.
+- Formats: short-answer.
+- Worked instantiation: "A student converts 125 g to oz using $125\,\text{g}\times\frac{28.349\,\text{g}}{1\,\text{oz}}$. What's wrong?" → The factor is inverted — grams don't cancel (g × g/oz gives $\text{g}^{2}$/oz, not oz); the conversion factor must be flipped to (1 oz / 28.349 g) so the given "g" cancels.
+
+### Design guidance by purpose
+
+| Purpose | Cognitive level | How to design the task |
+|---|---|---|
+| Homework | Apply | 4–6 conversions, including at least one multi-step chain. |
+| Group discussion | Understand | Discuss why "canceling units" is a reliable self-check for a correctly set-up calculation. |
+| Quiz | Apply | One single-factor conversion. |
+| Exam | Analyze | Combine with Objective 1.2b or 1.2c, requiring a unit conversion as part of a larger problem. |
+| Project/activity | Evaluate | Students convert a real recipe or product-label quantity across at least 2 unit systems. |
+
+## Rubric Themes for Chapter 1
+
+- **Units shown throughout, not just at the end.** Full credit requires every intermediate quantity to carry its unit, with cancellation visible — not just a final bare number.
+- **Significant figures enforced everywhere, not only in Objective 1.3 items.** A numerically correct answer with the wrong number of significant figures should not receive full credit on any objective in this chapter.
+- **No premature rounding.** Multi-step calculations (especially temperature conversions) must carry full precision until the final step; rounding an intermediate result is treated as an error, not a stylistic choice.
+- **Classification answers require justification, not just a label.** "Mixture" alone is insufficient; the response must state *why* (e.g., "composition can vary" or "components retain their identity").

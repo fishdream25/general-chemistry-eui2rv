@@ -1,0 +1,430 @@
+{{nyml
+kind: document
+format: 1
+title: Chapter 10: Molecular Geometry and Hybridization
+}}
+
+# Chapter 10: Molecular Geometry and Hybridization
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 10 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, first semester
+**Package license:** CC BY 4.0
+**Note:** takes a correct Lewis structure from Chapter 9 as its starting point. Facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+:::
+
+:::success
+**Chapter Learning Objectives**
+- Predict molecular geometry with and without lone pairs on the central atom.
+- Determine the polarity of diatomic and polyatomic molecules.
+- Determine hybridization using valence bond theory.
+- Identify sigma and pi bonds and apply the multiple-bond hybridization rule.
+:::
+
+## Chapter Logic
+
+A Lewis structure says which atoms are joined and how many electrons sit where. It says nothing about *shape* — it is drawn flat, and many molecules are not.
+
+==Shape turns out to follow from one idea: electron domains (lone pairs and bonds, with a multiple bond counting as one) repel, so they arrange themselves as far apart as they can get.== That single principle produces every geometry in this chapter. Shape then combines with bond polarity to decide whether the whole molecule is polar, which strongly influences how it behaves around other molecules — the subject of Chapter 11. Finally, valence bond theory explains at the orbital level why those particular angles appear.
+
+{{mermaid
+graph TD
+  A["Lewis structure<br/>from Chapter 9"] --> B["VSEPR:<br/>count electron domains"]
+  B --> C["Molecular shape"]
+  C --> D["Molecular polarity"]
+  E["Bond polarity<br/>from Chapter 9"] --> D
+  C --> F["Hybridization:<br/>why those angles"]
+}}
+
+**Visual description:** A flowchart. A Lewis structure feeds the VSEPR domain count, which gives the molecular shape. Shape combines with bond polarity — carried over from Chapter 9 — to give molecular polarity. Separately, the shape is explained at the orbital level by hybridization.
+
+## 10.1 Molecular Geometry: The VSEPR Model{{attrs[#blk-ch10sec01]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 10.1a}} State the VSEPR assumption and its two working rules.
+- {{sp[info] Objective 10.1a}} Count electron domains on a central atom.
+- {{sp[info] Objective 10.1b}} Distinguish electron geometry from molecular geometry.
+- {{sp[info] Objective 10.1a}} {{sp[info] Objective 10.1b}} Predict the shape for any combination of bonding and lone pairs.
+- {{sp[info] Objective 10.1b}} Describe molecules with more than one central atom.
+:::
+
+### The idea, and the procedure
+
+The **valence shell** is an atom's outermost occupied shell. ==The **valence-shell electron-pair repulsion (VSEPR)** model says that the electron pairs around a central atom — bonding pairs and lone pairs alike — arrange themselves to get as far apart as possible.== That is the entire content of the model; everything else is bookkeeping.
+
+Figure 10.1 turns that idea into a procedure. Two working rules make it usable:
+
+1. **A double or triple bond counts as one domain**, exactly like a single bond. The basic geometry depends on where the electrons are, not how many of them there are.
+2. **For a molecule with resonance structures, use any one of them.** They all give the same domain count.
+
+![The four-step VSEPR procedure](../assets/vsepr_procedure.svg =820x)
+*Figure 10.1 — The procedure in four steps. The one that causes trouble is the last: the **electron** geometry counts every domain including lone pairs, while the **molecular** geometry names only where the atoms are. Water has a tetrahedral electron geometry and a bent molecular shape — two different correct answers to two different questions.*
+
+:::warning
+**Electron geometry and molecular geometry are different questions.** The electron geometry counts *every* domain, lone pairs included, and answers "how are the electron pairs arranged?". The molecular geometry names only where the *atoms* sit, and answers "what shape is the molecule?". Water is tetrahedral by electron geometry and bent by molecular geometry, and both answers are correct. Exam questions ask for one or the other, so read which — and never report an electron geometry when a shape was requested.
+:::
+
+### No lone pairs on the central atom
+
+When every domain is a bond, the molecular shape and the electron geometry are the same thing — the five cases in Figure 10.2.
+
+![The five basic VSEPR shapes with no lone pairs](../assets/vsepr_no_lone_pairs.svg =760x)
+*Figure 10.2 — $\ce{AB2}$ linear (e.g. $\ce{BeH2}$), $\ce{AB3}$ trigonal planar (e.g. $\ce{BH3}$), $\ce{AB4}$ tetrahedral (e.g. $\ce{CH4}$), $\ce{AB5}$ trigonal bipyramidal (e.g. $\ce{PF5}$), $\ce{AB6}$ octahedral (e.g. $\ce{SF6}$) — each shape maximizes the angular distance between the surrounding B atoms.*
+
+| Domains | Electron geometry | Angle | Example |
+|---|---|---|---|
+| 2 | linear | 180° | $\ce{BeCl2}$, $\ce{CO2}$ |
+| 3 | trigonal planar | 120° | $\ce{BF3}$ |
+| 4 | tetrahedral | 109.5° | $\ce{CH4}$ |
+| 5 | trigonal bipyramidal | 120° and 90° | $\ce{PCl5}$ |
+| 6 | octahedral | 90° | $\ce{SF6}$ |
+
+:::: tabs
+::: tab Problem
+Predict the shape of $\ce{BeH2}$, $\ce{BH3}$, and $\ce{PF5}$, and give the bond angles.
+:::
+::: tab Solution
+None of these central atoms has a lone pair, so in each case the molecular shape *is* the electron geometry — the simplest situation there is.
+
+**$\ce{BeH2}$.** Beryllium has 2 bonds, 0 lone pairs → **2 domains** → **linear**, 180°. (An incomplete octet, which Chapter 9 established beryllium tolerates.)
+
+**$\ce{BH3}$.** Boron has 3 bonds, 0 lone pairs → **3 domains** → **trigonal planar**, 120°. Also an incomplete octet.
+
+**$\ce{PF5}$.** Phosphorus has 5 bonds, 0 lone pairs → **5 domains** → **trigonal bipyramidal**. This one has *two* angles: 120° between the three equatorial fluorines, and 90° between each equatorial and each axial one. It is the only common geometry whose angles between adjacent bonds are not all equal.
+:::
+::::
+
+### One or more lone pairs
+
+A lone pair occupies space and repels just as a bonding pair does — in fact slightly more, because it is held by only one nucleus and spreads out further. Figure 10.3 shows three common cases. But a lone pair is invisible in the *name* of the shape, since shapes are named by where the atoms sit.
+
+![VSEPR shapes with lone pairs on the central atom](../assets/vsepr_with_lone_pairs.svg =620x)
+*Figure 10.3 — $\ce{H2O}$ (2 bonds + 2 lone pairs, bent), $\ce{NH3}$ (3 bonds + 1 lone pair, trigonal pyramidal), and $\ce{H2S}$ (2 bonds + 2 lone pairs, bent) — lone pairs occupy real space and compress bond angles, but the molecular shape is named only by the positions of the atoms.*
+
+This is the complete table, and it is the reference the rest of the chapter uses:
+
+| Domains | Bonds | Lone pairs | Electron geometry | Molecular geometry | Example |
+|---|---|---|---|---|---|
+| 2 | 2 | 0 | linear | linear | $\ce{BeCl2}$, $\ce{CO2}$ |
+| 3 | 3 | 0 | trigonal planar | trigonal planar | $\ce{BF3}$ |
+| 3 | 2 | 1 | trigonal planar | bent (~120°) | $\ce{SO2}$ |
+| 4 | 4 | 0 | tetrahedral | tetrahedral | $\ce{CH4}$ |
+| 4 | 3 | 1 | tetrahedral | trigonal pyramidal | $\ce{NH3}$, $\ce{PH3}$ |
+| 4 | 2 | 2 | tetrahedral | bent (~104.5° in H2O) | $\ce{H2O}$, $\ce{H2S}$ |
+| 5 | 5 | 0 | trigonal bipyramidal | trigonal bipyramidal | $\ce{PCl5}$ |
+| 5 | 4 | 1 | trigonal bipyramidal | seesaw | $\ce{SF4}$ |
+| 5 | 3 | 2 | trigonal bipyramidal | T-shaped | $\ce{ClF3}$ |
+| 5 | 2 | 3 | trigonal bipyramidal | linear | $\ce{I3^-}$ |
+| 6 | 6 | 0 | octahedral | octahedral | $\ce{SF6}$ |
+| 6 | 5 | 1 | octahedral | square pyramidal | $\ce{BrF5}$ |
+| 6 | 4 | 2 | octahedral | square planar | $\ce{XeF4}$ |
+
+{{sp[warning] Reminder}} In the five-domain cases, lone pairs always take **equatorial** positions, because there is more room there — 90° from only two neighbors (and 120° from the other two) rather than 90° from three. That is why $\ce{SF4}$ is a seesaw and not something else, and why $\ce{I3^-}$ comes out linear after three lone pairs fill all three equatorial sites.
+
+:::: tabs
+::: tab Problem
+Predict the molecular geometry of $\ce{SO2}$ and of $\ce{CBr4}$.
+:::
+::: tab Solution
+**$\ce{SO2}$.** Sulfur is central. It has two S=O double bonds and one lone pair. By rule 1 each double bond counts once, so there are **3 domains** with **1 lone pair**.
+
+Electron geometry: trigonal planar. Remove the lone pair from the name: **bent**, with an angle slightly under 120° because the lone pair pushes harder than the bonds.
+
+**$\ce{CBr4}$.** Carbon has four bonds and no lone pairs: **4 domains, 0 lone pairs**.
+
+Electron geometry and molecular geometry are both **tetrahedral**, 109.5°.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Predict the molecular geometry of $\ce{SF4}$, $\ce{ClF3}$, and $\ce{XeF4}$.
+:::
+::: tab Solution
+These are the harder cases, and all three are settled by counting domains and then placing the lone pairs.
+
+**$\ce{SF4}$.** Sulfur has 6 valence electrons; four go into S–F bonds, leaving one lone pair. **5 domains, 1 lone pair** → trigonal bipyramidal electron geometry. The lone pair takes an equatorial position, and the remaining four atoms form a **seesaw**.
+
+**$\ce{ClF3}$.** Chlorine has 7 valence electrons; three bond to F, leaving two lone pairs. **5 domains, 2 lone pairs** → both lone pairs go equatorial, leaving the three F atoms in a **T-shape**.
+
+**$\ce{XeF4}$.** Xenon has 8 valence electrons; four bond to F, leaving two lone pairs. **6 domains, 2 lone pairs** → octahedral electron geometry, and the two lone pairs take opposite (trans) positions to stay as far apart as possible. The four F atoms are left in one plane: **square planar**.
+
+All three central atoms have expanded octets, which Chapter 9 established is available only from the third period onward. Sulfur, chlorine and xenon all qualify.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Compare the bond angles in $\ce{CH4}$, $\ce{NH3}$, and $\ce{H2O}$. All three have four electron domains — why do the angles differ?
+:::
+::: tab Solution
+All three have a tetrahedral **electron** geometry, so the ideal angle is 109.5°. The measured angles are:
+
+| Molecule | Lone pairs | Angle |
+|---|---|---|
+| $\ce{CH4}$ | 0 | 109.5° |
+| $\ce{NH3}$ | 1 | 107° |
+| $\ce{H2O}$ | 2 | 104.5° |
+
+**A lone pair repels more strongly than a bonding pair.** A bonding pair is held between two nuclei and is drawn out into a relatively narrow region; a lone pair is held by only one nucleus and spreads wider, so it presses harder on its neighbors.
+
+Each lone pair therefore squeezes the remaining bonds a little closer together, and the effect accumulates: no lone pairs gives the ideal angle, one gives 107°, two give 104.5°.
+
+This is why the shapes must be named separately from the electron geometry — and why "bent" covers a range of angles rather than one value.
+:::
+::::
+
+### More than one central atom
+
+Many molecules have no single central atom. For these, there is no one overall shape to name — the honest description is the geometry **around each central atom in turn**.
+
+Methanol, $\ce{CH3OH}$, has two. The carbon has four bonds and no lone pairs, so it is **tetrahedral**. The oxygen has two bonds and two lone pairs, so it is **bent**, like the oxygen in water. The molecule as a whole is best described as a tetrahedral carbon joined to a bent oxygen — not as any single named shape.
+
+> **Where this goes next.** Shape is settled. §10.2 combines it with the bond polarities of Chapter 9 to answer the question that actually matters for a substance's behavior: is the molecule as a whole polar?
+
+## 10.2 Dipole Moments{{attrs[#blk-ch10sec02]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 10.2a}} Define dipole moment.
+- {{sp[info] Objective 10.2a}} Determine the polarity of a diatomic molecule.
+- {{sp[info] Objective 10.2b}} Combine bond polarity with geometry to determine the polarity of a polyatomic molecule.
+- {{sp[info] Objective 10.2b}} Recognize when identical polar bonds give opposite polarity verdicts because of differing molecular geometry.
+:::
+
+### Dipole moment
+
+A **dipole moment** ($\mu$) measures charge separation: the product of the charge $Q$ and the distance $r$ between the separated charges.
+
+$$\mu = Q \times r$$
+
+It is measured in debye (D). A molecule with a nonzero dipole moment is **polar**; one with $\mu = 0$ is **nonpolar**.
+
+For a **diatomic** molecule the answer is immediate, because there is only one bond and nothing to cancel it:
+
+- **Different elements** — $\ce{HCl}$, $\ce{CO}$, $\ce{NO}$ — the bond is polar, so the molecule is polar.
+- **Same element** — $\ce{H2}$, $\ce{O2}$, $\ce{F2}$ — $\Delta\text{EN} = 0$, so there is no bond dipole and the molecule is nonpolar.
+
+:::: tabs
+::: tab Problem
+Which of these are polar: $\ce{Br2}$, $\ce{HBr}$, $\ce{CO}$, $\ce{N2}$? Rank the polar ones.
+:::
+::: tab Solution
+Every one is diatomic, so there is only one bond and nothing can cancel. The question reduces to whether the two atoms differ.
+
+- **$\ce{Br2}$** — identical atoms, $\Delta\text{EN} = 0$: **nonpolar**.
+- **$\ce{N2}$** — identical atoms: **nonpolar**.
+- **$\ce{HBr}$** — $2.96 - 2.20 = 0.76$: **polar**.
+- **$\ce{CO}$** — $3.44 - 2.55 = 0.89$: **polar**.
+
+Ranking the two polar ones by $\Delta\text{EN}$ predicts $\ce{CO}$ more polar than $\ce{HBr}$.
+
+{{sp[warning] Watch out}} The measured dipole moments are $\ce{HBr}$ 0.83 D and $\ce{CO}$ **0.11 D** — carbon monoxide is far *less* polar than $\Delta\text{EN}$ suggests, because its lone pairs contribute a dipole pointing the other way. $\Delta\text{EN}$ reliably tells you *whether* a diatomic is polar; it is only a rough guide to *how much*.
+:::
+::::
+
+### Polyatomic molecules
+
+With three or more atoms the bond dipoles are **vectors**, and as Figure 10.4 shows, they may or may not cancel. ==A molecule is polar only if it has polar bonds *and* a geometry in which those bond dipoles fail to cancel.==
+
+![Bond dipoles added as vectors for four molecules](../assets/dipole_cancellation.svg =820x)
+*Figure 10.4 — Each red arrow is one bond dipole, with its head on the more electronegative atom. $\ce{CO2}$ and $\ce{H2O}$ have comparably polar bonds and opposite verdicts: carbon dioxide is linear, so its two dipoles point exactly opposite and cancel, while water is bent, so its two add to a net dipole. $\ce{BF3}$'s three dipoles at 120° sum to zero; $\ce{NH3}$'s lone pair breaks the symmetry and leaves a net dipole.*
+
+The useful shortcut: **symmetric arrangements of identical bonds cancel**. Linear $\ce{AB2}$, trigonal planar $\ce{AB3}$, tetrahedral $\ce{AB4}$, trigonal bipyramidal $\ce{AB5}$, and octahedral $\ce{AB6}$ are all nonpolar when every B is the same. Break the symmetry — with a lone pair that makes the shape unsymmetric (as in bent H2O or pyramidal NH3), or by replacing one B with a different atom — and a net dipole appears.
+
+:::: tabs
+::: tab Problem
+Is $\ce{BeCl2}$ polar? Is $\ce{ClNO}$ (skeleton Cl–N=O, bent at N) polar?
+:::
+::: tab Solution
+**$\ce{BeCl2}$.** Two bonds, no lone pairs on Be → linear. The two Be–Cl bonds are polar, but they point in exactly opposite directions and are identical in magnitude, so they cancel: **nonpolar**.
+
+**$\ce{ClNO}$.** Nitrogen has three domains (two bonds and one lone pair) → bent. The Cl–N and N=O dipoles differ in magnitude *and* are not opposed, so nothing cancels: **polar**.
+
+$\ce{BeCl2}$ shows the general rule and $\ce{ClNO}$ shows both ways of breaking it — a lone pair, and two different terminal atoms.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+$\ce{CCl4}$ is nonpolar but $\ce{CHCl3}$ is polar, even though both are built on a tetrahedral carbon and every C–Cl bond is polar in both. Explain.
+:::
+::: tab Solution
+**$\ce{CCl4}$.** Four identical C–Cl dipoles point at the four corners of a tetrahedron. That arrangement is perfectly symmetric, so the four vectors sum to exactly zero: **nonpolar**, despite four polar bonds.
+
+**$\ce{CHCl3}$.** One chlorine has been replaced by hydrogen. The C–H bond is far less polar than a C–Cl bond ($\Delta\text{EN}$ of 0.35 against 0.61), so the vector that used to balance the other three C–Cl dipoles is now much weaker. The three C–Cl dipoles no longer have a matching counterweight, and a net dipole survives pointing away from the hydrogen: **polar**.
+
+This pair is the cleanest demonstration in the chapter that **polarity is a property of the whole molecule, not of its bonds**. The same tetrahedral framework, nearly the same bonds, opposite answers — because symmetry was broken.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Predict the polarity of $\ce{SF6}$, $\ce{SF4}$, and $\ce{XeF4}$.
+:::
+::: tab Solution
+All three have polar S–F or Xe–F bonds, so the geometry decides every case.
+
+**$\ce{SF6}$** — octahedral, six identical bonds, perfectly symmetric. Every dipole is opposed by an identical one directly across the center: **nonpolar**.
+
+**$\ce{SF4}$** — seesaw. The lone pair occupies an equatorial position, so the four S–F dipoles are not symmetrically arranged and cannot cancel: **polar**.
+
+**$\ce{XeF4}$** — square planar. The two lone pairs sit on *opposite* sides of the xenon, and the four Xe–F bonds lie in a plane at 90° to one another. Those four cancel in pairs: **nonpolar**.
+
+$\ce{XeF4}$ is the instructive one. It has lone pairs, and lone pairs usually break symmetry — but here they are arranged symmetrically themselves, so the molecule stays nonpolar. **The rule is about symmetry, not about whether lone pairs are present.**
+:::
+::::
+
+> **Where this goes next.** VSEPR predicts shapes correctly but never explains, in terms of atomic orbitals, *why* four bonds should point at 109.5°. §10.3 supplies the orbital-level reason.
+
+## 10.3 Valence Bond Theory and Hybridization{{attrs[#blk-ch10sec03]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 10.3a}} Explain bond formation using the valence bond potential-energy argument.
+- {{sp[info] Objective 10.3a}} Explain why hybridization is needed, including the promotion step.
+- {{sp[info] Objective 10.3a}} Determine $sp$, $sp^2$, and $sp^3$ hybridization from the domain count.
+- {{sp[info] Objective 10.3b}} Distinguish sigma from pi bonds.
+- {{sp[info] Objective 10.3b}} Apply the multiple-bond hybridization rule.
+:::
+
+### Valence bond theory
+
+**Valence bond (VB) theory** treats a covalent bond as the **overlap of two atomic orbitals**, each already belonging to its own atom. (The alternative, **molecular orbital theory**, instead builds new orbitals belonging to the whole molecule; it is more accurate and more work, and is left to later courses.)
+
+Figure 10.5 plots what happens. Consider two hydrogen atoms approaching: far apart, they do not interact and the potential energy is zero. As they approach, each electron is attracted to the *other* atom's nucleus while the two electrons repel each other and the two nuclei repel each other. At first attraction wins, so the energy falls. It keeps falling until the orbitals overlap substantially — and then, pushed closer still, the repulsions take over and the energy climbs steeply.
+
+![Potential energy against internuclear distance for H2](../assets/vb_potential_energy.svg =780x)
+*Figure 10.5 — A bond is the bottom of an energy well. The position of the minimum is the **bond length**, 74 pm for $\ce{H2}$; its depth is the **bond enthalpy**, 436 kJ/mol — the same number Chapter 9 tabulated. Forming the bond releases that energy; breaking it requires putting the energy back.*
+
+The same picture handles other diatomics. $\ce{F2}$ forms when the singly occupied $2p$ orbitals of two fluorines overlap; $\ce{HF}$ forms when hydrogen's $1s$ overlaps fluorine's $2p$. Because different orbital types overlap differently, VB theory naturally explains why bond lengths and bond enthalpies differ from one molecule to the next.
+
+### Hybridization
+
+VB theory has an immediate problem with carbon. Carbon's ground state is $1s^2 2s^2 2p^2$ — only **two** unpaired electrons, so it should form two bonds. It forms four, and in $\ce{CH4}$ all four are identical.
+
+![Carbon's orbitals through promotion and hybridization](../assets/sp3_promotion_mixing.svg =800x)
+*Figure 10.6 — Two steps fix it. **Promotion:** one $2s$ electron moves to the empty $2p$, giving four unpaired electrons and costing energy. **Mixing:** the one $2s$ and three $2p$ orbitals combine into four identical $sp^3$ hybrid orbitals pointing at the corners of a tetrahedron. The promotion cost is more than repaid by the two extra bonds it makes possible.*
+
+**Hybrid orbitals** are new orbitals formed by mixing nonequivalent orbitals of the same atom in preparation for bonding. The number of hybrids always equals the number of atomic orbitals mixed, and it matches the domain count from §10.1:
+
+| Domains | Hybridization | Orbitals mixed | Geometry | Example |
+|---|---|---|---|---|
+| 2 | $sp$ | one $s$ + one $p$ | linear | $\ce{BeCl2}$ |
+| 3 | $sp^2$ | one $s$ + two $p$ | trigonal planar | $\ce{BF3}$ |
+| 4 | $sp^3$ | one $s$ + three $p$ | tetrahedral (electron-domain geometry) | $\ce{CH4}$, $\ce{NH3}$, $\ce{H2O}$ |
+
+{{sp[warning] Reminder}} Count **domains**, not bonds. Nitrogen in $\ce{NH3}$ has three bonds and one lone pair — four domains, so $sp^3$, not $sp^2$. Lone pairs occupy hybrid orbitals just as bonds do.
+
+:::: tabs
+::: tab Problem
+Determine the hybridization of the central atom in $\ce{PCl3}$, $\ce{BeCl2}$, and $\ce{H2O}$.
+:::
+::: tab Solution
+Count domains, then read the table.
+
+**$\ce{PCl3}$.** Phosphorus has 3 bonds + 1 lone pair = **4 domains** → **$sp^3$**.
+
+**$\ce{BeCl2}$.** Beryllium has 2 bonds + 0 lone pairs = **2 domains** → **$sp$**.
+
+**$\ce{H2O}$.** Oxygen has 2 bonds + 2 lone pairs = **4 domains** → **$sp^3$**.
+
+$\ce{H2O}$ is the case that catches people. It has only two bonds, which suggests $sp$ — but the two lone pairs are domains too, and they need orbitals to live in. Four domains means four hybrid orbitals, so $sp^3$.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Determine the hybridization of the central atom in $\ce{SF6}$ and in $\ce{PCl5}$. What does this tell you about the limits of the $sp/sp^2/sp^3$ scheme?
+:::
+::: tab Solution
+Count domains as before.
+
+**$\ce{SF6}$.** Sulfur has 6 bonds, 0 lone pairs → **6 domains**. Six hybrid orbitals are needed, and one $s$ plus three $p$ gives only four — so two $d$ orbitals must join in: **$sp^3d^2$**.
+
+**$\ce{PCl5}$.** Phosphorus has 5 bonds, 0 lone pairs → **5 domains** → **$sp^3d$**.
+
+**The limit this exposes:** $sp$, $sp^2$ and $sp^3$ cover only two, three and four domains. Beyond four, $d$ orbitals must be brought in — which is possible only for third-period elements and heavier, exactly the condition Chapter 9 gave for an expanded octet.
+
+The same restriction, seen from both sides: a second-period atom can neither expand its octet nor hybridize past $sp^3$, because in both cases it lacks the $d$ orbitals.
+:::
+::::
+
+### Sigma and pi bonds
+
+Not all overlap is the same.
+
+- A **sigma ($\sigma$) bond** forms by **end-to-end** overlap, with electron density concentrated directly on the line between the nuclei.
+- A **pi ($\pi$) bond** forms by **sideways** overlap of unhybridized $p$ orbitals, with density above and below that line and a nodal plane containing it.
+
+Figure 10.7 contrasts the two kinds of overlap.
+
+![Sigma vs. pi bonds: end-to-end vs. sideways orbital overlap](../assets/sigma_pi_bonds.svg =560x)
+*Figure 10.7 — A $\sigma$ bond's electron density lies directly on the internuclear axis (strong, allows free rotation); a $\pi$ bond's density lies above and below the axis, with a nodal plane along it (restricts rotation around that bond).*
+
+Every single bond is one $\sigma$ bond. A double bond is one $\sigma$ plus one $\pi$; a triple bond is one $\sigma$ plus two $\pi$. The $\sigma$ always forms first, because end-to-end overlap is more effective than sideways.
+
+==Multiple-bond rule, for second-period elements: a central atom forming **one double bond** is $sp^2$; one forming **two double bonds or a triple bond** is $sp$.== This is the domain rule again — a double bond is one domain — expressed in the language of hybridization.
+
+:::: tabs
+::: tab Problem
+For ethylene, $\ce{CH2=CH2}$: what is each carbon's hybridization, and how many $\sigma$ and $\pi$ bonds does the molecule contain?
+:::
+::: tab Solution
+**Hybridization.** Each carbon has two C–H bonds and one C=C double bond — **3 domains** → **$sp^2$**. Only the $2s$, $2p_x$ and $2p_y$ mix; the $2p_z$ is left unhybridized on each carbon.
+
+**Bonds.** Each carbon uses two $sp^2$ orbitals for the two C–H $\sigma$ bonds and one for the C–C $\sigma$ bond. The two leftover $2p_z$ orbitals then overlap **sideways** to form one $\pi$ bond.
+
+- 4 C–H $\sigma$ bonds
+- 1 C–C $\sigma$ bond
+- 1 C–C $\pi$ bond
+
+**Total: 5 $\sigma$ and 1 $\pi$.** The C=C double bond is $1\sigma + 1\pi$.
+
+The $\pi$ bond is why ethylene is flat and cannot rotate about its C=C: twisting would pull the two $2p_z$ orbitals out of alignment and break the sideways overlap.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+For acetylene, $\ce{CH#CH}$: what is each carbon's hybridization, and how many $\sigma$ and $\pi$ bonds are there?
+:::
+::: tab Solution
+**Hybridization.** Each carbon has one C–H bond and one C≡C triple bond — **2 domains** → **$sp$**. Only the $2s$ and $2p_x$ mix, leaving *two* unhybridized orbitals ($2p_y$ and $2p_z$) on each carbon.
+
+**Bonds.** Each carbon uses one $sp$ orbital for the C–H $\sigma$ and one for the C–C $\sigma$. The two pairs of leftover $p$ orbitals then form **two** $\pi$ bonds, at right angles to each other.
+
+- 2 C–H $\sigma$ bonds
+- 1 C–C $\sigma$ bond
+- 2 C–C $\pi$ bonds
+
+**Total: 3 $\sigma$ and 2 $\pi$.** The C≡C triple bond is $1\sigma + 2\pi$.
+
+Two $sp$ orbitals point in exactly opposite directions, which is why acetylene is linear — 180° across the whole $\ce{H-C#C-H}$ chain, as Figure 10.8 shows.
+:::
+::::
+
+![A physical ball-and-stick model of acetylene](../assets/acetylene_model.jpg =520x)
+*Figure 10.8 — Acetylene's linear geometry (180° bond angle) is exactly what $sp$ hybridization predicts: two $sp$ orbitals point in opposite directions, while the two unhybridized $p$ orbitals on each carbon form the two $\pi$ bonds that, together with the $\sigma$ bond, make up the $\ce{C#C}$ triple bond.*
+
+## Synthesis
+
+==This chapter turns a flat drawing into a three-dimensional object with measurable consequences. VSEPR gives the shape from a domain count; shape and bond polarity together give molecular polarity; and valence bond theory with hybridization explains at the orbital level why those angles and not others.==
+
+Backwards, the chain is unbroken. The Lewis structure comes from Chapter 9, the bond polarities from Chapter 9's electronegativity, and the orbitals being mixed are Chapter 7's. The promotion step in Figure 10.6 is Chapter 7's orbital-box diagram put to work.
+
+Forwards, molecular polarity is the handoff. Chapter 11 explains why some substances are gases and others liquids at the same temperature, and a large part of the answer is whether molecules are polar and what shape they present to their neighbors. Water's bent shape — a fact established in this chapter from nothing but a domain count — is a key reason, through the polarity and hydrogen bonding it makes possible, that it is a liquid at room temperature while carbon dioxide, with polar bonds of its own, is a gas.
+
+## Asset and License Record for This Chapter
+
+| Asset | Source URL | License | Attribution |
+|---|---|---|---|
+| `assets/vsepr_procedure.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/vsepr_no_lone_pairs.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib, schematic; released under this package's CC BY 4.0 license. |
+| `assets/vsepr_with_lone_pairs.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib, schematic; released under this package's CC BY 4.0 license. |
+| `assets/dipole_cancellation.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/vb_potential_energy.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/sp3_promotion_mixing.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/sigma_pi_bonds.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib, schematic; released under this package's CC BY 4.0 license. |
+| `assets/acetylene_model.jpg` | https://commons.wikimedia.org/wiki/File:Acetylene_8162.JPG | CC BY-SA 3.0 | Bin im Garten, via Wikimedia Commons, CC BY-SA 3.0. Resized from the original for web use. |

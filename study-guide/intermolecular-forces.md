@@ -1,0 +1,647 @@
+{{nyml
+kind: document
+format: 1
+title: Chapter 11: Intermolecular Forces, Liquids, and Solids
+}}
+
+# Chapter 11: Intermolecular Forces, Liquids, and Solids
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 11 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, second semester
+**Package license:** CC BY 4.0
+**Note:** builds on molecular polarity from Chapter 10; facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+:::
+
+:::success
+**Chapter Learning Objectives**
+- Identify the intermolecular force(s) present between molecules and rank their relative strength.
+- Relate intermolecular forces to the properties of liquids: surface tension, viscosity, and water's anomalous behavior.
+- Classify a solid as molecular, ionic, covalent-network, or metallic, and describe its expected hardness, melting point, and conductivity.
+- Count atoms per unit cell and determine coordination number for simple cubic, body-centered cubic, and face-centered cubic lattices.
+- Describe phase changes in terms of energy, apply the Clausius–Clapeyron equation, and interpret a phase diagram.
+:::
+
+## Chapter Logic
+
+Chapter 10 established which molecules are polar. This chapter asks: once you know that, what *physical* consequences follow? The answer runs in one direction — from force type, to bulk liquid behavior and solid structure, to the energetics of moving between phases. ==Chapter 10 told you what a molecule *is*; this chapter tells you what a beaker full of them *does*.==
+
+{{mermaid
+graph TD
+  A["Molecular polarity & structure (Ch. 10)"] --> B["Type & strength of interparticle force (intermolecular forces, or ionic/covalent/metallic bonding in non-molecular solids)"]
+  B --> C["Liquid properties:<br/>surface tension, viscosity"]
+  B --> D["Solid classification:<br/>molecular / ionic / covalent-network / metallic"]
+  B --> E["Phase-change energetics<br/>& phase diagrams"]
+  C --> F["Everything in this chapter<br/>traces back to force type"]
+  D --> F
+  E --> F
+}}
+
+**Visual description:** A top-down flowchart. Molecular polarity and structure (from Chapter 10) determines the type and strength of intermolecular force present. That single fact then branches into three consequences covered in this chapter: liquid properties (surface tension, viscosity), solid classification (four solid types), and phase-change energetics (heats of transition, phase diagrams) — all three trace back to the same root cause.
+
+:::warning
+Intermolecular forces are attractions **between** separate molecules. Do not confuse them with intramolecular forces — the covalent bonds **within** a molecule — which are 10–100 times stronger and are not what breaks when a molecular substance melts or boils.
+:::
+
+## 11.1 Intermolecular Forces{{attrs[#blk-ch11sec01]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 11.1a}} Distinguish intermolecular from intramolecular forces.
+- {{sp[info] Objective 11.1a}} Identify dipole-dipole forces, dispersion forces, and hydrogen bonds from a molecule's structure.
+- {{sp[info] Objective 11.1b}} Rank ion-dipole, hydrogen-bonding, dipole-dipole, and dispersion forces by relative strength.
+:::
+
+**Intermolecular forces** (also called **van der Waals forces**) are the attractive forces *between* molecules. **Intramolecular forces** — the covalent bonds that hold atoms together within one molecule — are a different and much stronger phenomenon. A typical covalent bond takes on the order of 150–1,100 kJ/mol to break; a hydrogen bond, typically the strongest common intermolecular force between neutral molecules, takes only about 10–40 kJ/mol. ==That roughly ten- to hundred-fold difference is *why* melting or boiling a molecular substance never breaks its covalent bonds==: ice melts and water boils while every H–O covalent bond in the $\ce{H2O}$ molecule stays perfectly intact.
+
+Figure 11.1 collects six molecules you will meet repeatedly in this chapter; keep it in view while reading the next three subsections, because deciding which forces act in a substance always starts with deciding whether its molecules look like the top row or the bottom row.
+
+![Six example molecules: three polar hydrogen-bond donors (water, hydrogen fluoride, ammonia) and three nonpolar molecules (methane, carbon tetrachloride, carbon dioxide)](../assets/polar_nonpolar_molecules.svg)
+*Figure 11.1 — Polar molecules (top row) each have a permanent dipole and can act as hydrogen-bond donors when H is attached to N, O, or F. Nonpolar molecules (bottom row) either have no polar bonds ($\ce{CH4}$) or have polar bonds arranged so symmetrically that their dipoles cancel ($\ce{CO2}$). Self-generated with RDKit.*
+
+### Dipole-dipole forces
+
+A **polar molecule** has a permanent dipole: a partial positive end and a partial negative end. When two polar molecules approach each other, the positive end of one is attracted to the negative end of the other — a **dipole-dipole force**. Examples: $\ce{HCl}$, $\ce{H2O}$, acetone. These forces exist in addition to the dispersion forces described next and, for molecules of similar size and molar mass, are generally stronger than them.
+
+### Dispersion forces
+
+Even a completely nonpolar molecule like $\ce{CH4}$ or $\ce{Br2}$ experiences intermolecular attraction — otherwise it could never condense into a liquid at all. The electron cloud around any atom or molecule is in constant motion, and at any instant it may be shifted slightly to one side, creating a momentary **instantaneous dipole**. That instantaneous dipole induces a matching **induced dipole** in a neighboring molecule, and the two weakly attract — a **dispersion force** (also called a London dispersion force).
+
+**Polarizability** — how easily a molecule's electron cloud can be distorted into an instantaneous dipole — increases with:
+- **more electrons** (heavier atoms, larger molecules), and
+- **a more diffuse electron cloud** (larger atoms/molecules of the same general shape).
+
+This is why dispersion forces, though individually weak, can dominate for large molecules: $\ce{I2}$ (a solid at room temperature) is held together entirely by dispersion forces, yet those forces are strong enough to make it a solid at room temperature, whereas water, despite its hydrogen bonding, is a liquid.
+
+### Hydrogen bonds
+
+A **hydrogen bond** is an especially strong dipole-dipole interaction that occurs specifically when a hydrogen atom is covalently bonded to a small, highly electronegative atom — **N, O, or F** — and is then attracted to a lone pair on a nearby N, O, or F atom. The N–H, O–H, or F–H bond is so polar, and the H atom so small, that the resulting attraction is unusually strong (roughly 10–40 kJ/mol, versus 2–5 kJ/mol for a typical dipole-dipole interaction).
+
+:::warning
+"Hydrogen bond" is a common-mistake magnet: **not every molecule containing hydrogen forms hydrogen bonds.** $\ce{CH4}$ has hydrogen atoms, but they are bonded to carbon (not N, O, or F) and are barely polar — no hydrogen bonding. Always check specifically for H bonded *directly* to N, O, or F.
+:::
+
+**The payoff: why water is a liquid and methane is a gas.** Chapter 10's Synthesis promised that molecular shape would eventually explain why some substances are liquids at room temperature and others gases. This is where that promise is kept, and water is the case to work through.
+
+Water is *bent* (about 104.5°), not linear. That geometry is a consequence of the two lone pairs on oxygen, and it has two structural results at once. First, the bent shape prevents the two O–H bond dipoles from cancelling, so the molecule has a permanent dipole — a linear H–O–H would have none. Second, each water molecule carries **two O–H donors and two lone-pair acceptors**, so it can participate in up to **four** hydrogen bonds simultaneously, tying every molecule into an extended three-dimensional network rather than into isolated pairs.
+
+Now compare molecules of similar size at 25 °C:
+
+| Substance | Molar mass | Shape | Strongest force | State at 25 °C | Boiling point |
+|---|---|---|---|---|---|
+| $\ce{CH4}$ | 16.04 g/mol | tetrahedral, symmetric | dispersion | gas | −161 °C |
+| $\ce{H2S}$ | 34.08 g/mol | bent | dipole-dipole | gas | −60 °C |
+| $\ce{H2O}$ | 18.02 g/mol | bent | hydrogen bonding | **liquid** | **100 °C** |
+
+$\ce{CH4}$ is the *lightest* of the three and boils lowest, because symmetry leaves it with no dipole at all. $\ce{H2S}$ is bent like water and twice water's mass, yet still boils 160 degrees lower: bent shape gives it a dipole, but sulfur is too large and insufficiently electronegative to hydrogen-bond. Only water gets the four-hydrogen-bond network — and that network, not mass and not shape alone, is what keeps it condensed at room temperature.
+
+So the full causal chain is: **lone pairs → bent shape → permanent dipole → H-on-O → four hydrogen bonds per molecule → liquid at 25 °C.** Every link but the last two comes from Chapter 10; only the last two are new here.
+
+
+
+:::: tabs
+::: tab Problem
+Identify every intermolecular force present in (a) $\ce{CH4}$, (b) $\ce{CH3Cl}$, \(c) $\ce{CH3OH}$, and (d) $\ce{NaCl}$ dissolved in water.
+:::
+::: tab Solution
+Work down a fixed checklist: dispersion is always present; add dipole-dipole if the molecule is polar; add hydrogen bonding if H is bonded to N, O or F; add ion-dipole if ions are involved.
+
+**(a) $\ce{CH4}$.** Tetrahedral and symmetric, so nonpolar (Chapter 10). No polar bonds arranged asymmetrically, no H on N/O/F. **Dispersion only.**
+
+**(b) $\ce{CH3Cl}$.** Tetrahedral but with one different substituent, so polar. Its H atoms are on carbon, not on N/O/F. **Dispersion + dipole-dipole.**
+
+**\(c) $\ce{CH3OH}$.** Polar, and it has an O–H group. **Dispersion + dipole-dipole + hydrogen bonding.**
+
+**(d) $\ce{NaCl}$ in water.** The $\ce{Na+}$ and $\ce{Cl-}$ ions each attract the polar water molecules. **Ion-dipole**, plus the hydrogen bonding, dipole-dipole forces and dispersion among the water molecules themselves.
+
+{{sp[warning] Reminder}} Dispersion forces are present in **every** substance without exception — they arise from instantaneous dipoles, which every electron cloud produces. The question is never *whether* dispersion is present, only what else is.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Which of these can form hydrogen bonds **with other molecules of the same substance**: $\ce{CH3OCH3}$ (dimethyl ether), $\ce{CH3CH2OH}$ (ethanol), $\ce{HCHO}$ (formaldehyde), $\ce{NH3}$?
+:::
+::: tab Solution
+Hydrogen bonding between like molecules needs **both** halves: a hydrogen covalently bonded to N, O or F to donate, and a lone pair on N, O or F to accept. Check each molecule for both.
+
+- **$\ce{CH3OCH3}$** — has oxygen with lone pairs (can accept) but all its hydrogens are on carbon (cannot donate). **No**, not with itself.
+- **$\ce{CH3CH2OH}$** — the O–H group donates and the oxygen's lone pairs accept. **Yes.**
+- **$\ce{HCHO}$** — oxygen accepts, but the hydrogens are on carbon. **No**, not with itself.
+- **$\ce{NH3}$** — N–H donates, nitrogen's lone pair accepts. **Yes.**
+
+The two "no" cases can still hydrogen-bond **to water**, because water supplies the donor. That is why dimethyl ether and formaldehyde dissolve in water despite not hydrogen-bonding among themselves — and it is a distinction worth keeping straight, since exam questions ask both versions.
+:::
+::::
+
+### Ranking the forces
+
+$$\text{ion-dipole} > \text{hydrogen bond} > \text{dipole-dipole} > \text{ion-induced dipole} > \text{dipole-induced dipole} > \text{dispersion force}$$
+
+:::info
+This ranking is for *comparable-sized* species. A very large, highly polarizable nonpolar molecule can have *stronger* dispersion forces than a small polar molecule has dipole-dipole forces — size and electron count matter as much as polarity itself.
+:::
+
+{{chart
+type: bar
+title: Typical interaction energy by type (order of magnitude, kJ/mol)
+labels: Covalent bond, Ionic lattice, Hydrogen bond, Dipole-dipole, Dispersion (small molecule)
+series: kJ/mol (approx.) = 350, 700, 25, 5, 2
+}}
+**Data summary:** Approximate, illustrative order-of-magnitude energies. Covalent bonds (~350 kJ/mol) and ionic lattice energies (~700 kJ/mol) are intramolecular/ionic-bonding energies shown for scale; among the intermolecular forces, hydrogen bonds (~25 kJ/mol) are markedly stronger than ordinary dipole-dipole (~5 kJ/mol) or dispersion forces between small molecules (~2 kJ/mol). Real values vary considerably by specific substance.
+
+:::: tabs
+::: tab Problem
+For each pair, identify every intermolecular force present, and state which substance should have the higher boiling point: (a) $\ce{CH3OH}$ (methanol) vs. $\ce{CH3SH}$ (methanethiol); (b) $\ce{Kr}$ vs. $\ce{He}$.
+:::
+::: tab Solution
+**(a)** Methanol has an O–H bond, so it experiences hydrogen bonding, dipole-dipole forces, and dispersion forces. Methanethiol has an S–H bond — sulfur is not N, O, or F, so there is no hydrogen bonding, only dipole-dipole and dispersion forces. Methanol's additional hydrogen bonding makes it the higher-boiling substance (actual values: methanol 64.7 °C, methanethiol 6.2 °C).
+
+**(b)** Both are nonpolar monatomic noble gases, so only dispersion forces apply to either. Kr (36 electrons) is far more polarizable than He (2 electrons), so Kr has the stronger dispersion forces and the higher boiling point (Kr: −153.2 °C vs. He: −268.9 °C).
+:::
+::::
+
+**Self-check:**
+- Does $\ce{HF}$ hydrogen-bond with itself? What about $\ce{CH3F}$?
+- Why is $\ce{I2}$ a solid at room temperature while $\ce{Cl2}$ is a gas, given that both are nonpolar diatomic halogens?
+
+
+
+:::: tabs
+::: tab Problem
+Rank the boiling points of $\ce{CH4}$ (−162 °C), $\ce{SiH4}$, $\ce{GeH4}$, and $\ce{SnH4}$ from lowest to highest, and explain. Then explain why $\ce{H2O}$ breaks the analogous pattern for Group 6A.
+:::
+::: tab Solution
+**The Group 4A hydrides.** None of them can hydrogen-bond — the hydrogens are on Group 4A atoms, not on N, O or F — and all four are tetrahedral and nonpolar. So **dispersion is the only force present**, and dispersion strength tracks polarizability, which tracks the number of electrons.
+
+$$\ce{CH4} < \ce{SiH4} < \ce{GeH4} < \ce{SnH4}$$
+
+Boiling point rises steadily down the group, exactly as electron count does. This is what a series governed by dispersion alone looks like.
+
+**Why water breaks it.** The Group 6A hydrides should follow the same rising pattern: $\ce{H2S} < \ce{H2Se} < \ce{H2Te}$, and they do. But $\ce{H2O}$, which has the *fewest* electrons of the four, has by far the *highest* boiling point — 100 °C against $\ce{H2S}$'s −60 °C.
+
+Water can hydrogen-bond and the others cannot. Hydrogen bonding is considerably stronger than the dispersion forces it competes with here, so it overwhelms the dispersion trend completely.
+
+**The general lesson:** compare dispersion only among molecules with the *same* kinds of force. As soon as one member of a series can hydrogen-bond, the electron-count argument stops applying to it.
+:::
+::::
+
+> **Where this goes next.** You can now name the forces acting between any two molecules and rank their strength. §11.2 cashes that in: the everyday properties of a liquid you can actually observe — how it beads, how it pours, what temperature it boils at — is a direct readout of those forces.
+
+## 11.2 Properties of Liquids{{attrs[#blk-ch11sec02]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 11.2a}} Define surface tension and viscosity, and connect both to intermolecular force strength.
+- {{sp[info] Objective 11.2a}} Distinguish cohesion from adhesion, and explain capillary action.
+- {{sp[info] Objective 11.2b}} Explain water's unusually high melting/boiling point, specific heat, and density-at-4-°C behavior in terms of hydrogen bonding.
+:::
+
+### Surface tension
+
+**Surface tension** measures a liquid's resistance to increasing its surface area. A molecule in the interior of a liquid is pulled equally in every direction by its neighbors, but a molecule at the surface is pulled only sideways and downward — a net inward force that makes the surface act like a stretched, elastic skin. **Stronger intermolecular forces produce higher surface tension.**
+
+Figure 11.2 shows the effect at a scale you can see without instruments.
+
+![A water strider standing on a water surface, supported entirely by surface tension](../assets/water_strider_surface_tension.jpg =700x)
+*Figure 11.2 — A water strider's weight is fully supported by the surface tension of water — a direct, everyday consequence of hydrogen bonding between water molecules. Source: NPS Photo, via Wikimedia Commons (public domain).*
+
+**Cohesion** is the attraction between *like* molecules (e.g., water molecules to each other); **adhesion** is the attraction between *unlike* molecules (e.g., water to glass). When adhesion exceeds cohesion, a liquid climbs a narrow tube against gravity — **capillary action** — which is how paper towels wick up spills and how water is helped upward in narrow plant xylem vessels (though tall trees rely mainly on transpiration pull, which also depends on water's cohesion).
+
+### Viscosity
+
+**Viscosity** measures a fluid's resistance to flow. Like surface tension, **stronger intermolecular forces mean higher viscosity** — think of honey (extensive hydrogen bonding among its sugar molecules) versus water versus gasoline. Viscosity also decreases as temperature rises, because added thermal energy helps molecules slip past their neighbors' attractive pull.
+
+
+
+:::: tabs
+::: tab Problem
+Rank these liquids by increasing viscosity and explain: hexane ($\ce{C6H14}$), water, and glycerol ($\ce{HOCH2CH(OH)CH2OH}$, which has three OH groups).
+:::
+::: tab Solution
+Viscosity measures resistance to flow, and flowing means molecules sliding past one another. The stronger the attractions holding them together, the harder that is.
+
+**Hexane** — a nonpolar hydrocarbon, so **dispersion only**. Weakest attractions, flows most freely.
+
+**Water** — hydrogen bonds, and each molecule can form up to four.
+
+**Glycerol** — three OH groups per molecule, so more hydrogen-bonding sites per molecule (and a larger molecule) than water, with its two O–H bonds.
+
+$$\text{hexane} < \text{water} < \text{glycerol}$$
+
+Measured values confirm the ordering: about 0.3, 1.0 and 950 centipoise at room temperature. Glycerol is roughly a thousand times more viscous than water, which is why it pours like syrup.
+
+Surface tension also reflects intermolecular attractions, so hexane is lowest there too, but the orderings need not match: water (~72 mN/m) actually exceeds glycerol (~63 mN/m), because viscosity also depends on molecular size and shape.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Water forms a concave meniscus in a glass tube and climbs the walls; mercury forms a convex meniscus and is pushed down. Explain using cohesion and adhesion.
+:::
+::: tab Solution
+Two competing attractions decide the shape.
+
+**Cohesion** is the attraction between like molecules — liquid to liquid. **Adhesion** is the attraction between unlike molecules — liquid to the container wall.
+
+**Water in glass.** Glass is covered in Si–OH groups, so water can hydrogen-bond to it. **Adhesion beats cohesion**, so water is pulled up the walls: the meniscus curves upward (concave), and capillary action draws water up a narrow tube against gravity.
+
+**Mercury in glass.** Mercury atoms are held to each other by strong metallic bonding and have no way to bond to glass. **Cohesion beats adhesion**, so mercury pulls away from the walls: the meniscus bulges (convex) and the liquid is depressed in a capillary.
+
+This is why Chapter 1's instruction was to read a graduated cylinder at the *bottom* of the meniscus — for water, which is what laboratory cylinders contain. A mercury thermometer is read at the *top* of its curve, for exactly the opposite reason.
+:::
+::::
+
+### Water's anomalous behavior
+
+Each water molecule can form up to **four hydrogen bonds** (two through its own O–H bonds as a donor, two through its oxygen lone pairs as an acceptor) — more than almost any other small molecule. ==This extensive hydrogen-bonding network is the main cause behind water's "anomalous" properties==, which would otherwise be surprising for a molecule as small as $\ce{H2O}$ (molar mass 18 g/mol):
+
+- an unusually **high melting point and boiling point** compared to $\ce{H2S}$, $\ce{NH3}$, or $\ce{HF}$ of similar or larger size (see Figure 11.3, below),
+- an unusually **high specific heat** (4.184 J/g·°C — this is why oceans and lakes moderate regional climate), and
+- **maximum density at 4 °C**, not at its freezing point — ice's open hydrogen-bonded lattice is actually *less* dense than liquid water, which is why ice floats and lakes freeze from the top down, insulating aquatic life below.
+
+![Line chart comparing normal boiling points of period 2-5 hydrides in groups 14, 15, 16, and 17](../assets/hydride_boiling_points.svg)
+*Figure 11.3 — Group 14 hydrides (no hydrogen bonding) follow a smooth, steadily increasing trend with size. $\ce{NH3}$, $\ce{H2O}$, and $\ce{HF}$ each sit far above where their own group's trend would otherwise put them — the extra lift is hydrogen bonding, and water's is the largest of the three. Self-generated with matplotlib from verified literature boiling points.*
+
+:::info
+Water's expansion on freezing is the same hydrogen-bonding effect that gives ice its negative melting-point/pressure slope in the phase diagram — see Section 11.4.
+:::
+
+**Self-check:**
+- Why does breaking a paper towel's capillary wicking require making adhesion weaker than cohesion (e.g., coating the fibers with wax)?
+- If water had no hydrogen bonding at all (imagine a hypothetical $\ce{H2O}$ that is still polar but cannot form hydrogen bonds), would you expect its boiling point to be higher or lower than −80 °C (roughly where the Group 16 hydride trend predicts it should fall)?
+
+
+
+:::: tabs
+::: tab Problem
+Ice floats on water, which is unusual — almost every other substance's solid sinks in its own liquid. Explain, and give one consequence.
+:::
+::: tab Solution
+Floating means the solid is **less dense** than the liquid, so a given mass of ice occupies more space than the same mass of water.
+
+**Why.** Each water molecule can form four hydrogen bonds — two through its own O–H bonds and two through its oxygen's lone pairs. In ice these four bonds are all satisfied simultaneously, which forces the molecules into an **open hexagonal lattice** with substantial empty space within its hexagonal rings.
+
+When ice melts, that rigid lattice collapses. The molecules still hydrogen-bond, but now transiently and in a disordered way, and they can pack **closer together**. Liquid water is therefore denser than ice, reaching maximum density at 4 °C — below which the hexagonal ordering begins to reassert itself and the density falls again.
+
+**A consequence.** Lakes freeze from the top down. The ice layer floats and insulates the water beneath, so a deep lake never freezes solid and aquatic life survives the winter. If ice sank, each winter's ice would accumulate on the bottom out of reach of the sun.
+
+The general point: this whole behavior traces back to a **geometric** fact — the tetrahedral arrangement of two O–H bonds and two lone pairs, which Chapter 10 derived from a domain count.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Water's specific heat (4.184 $\text{J}\,\text{g}^{-1}\,\text{°C}^{-1}$) and molar heat of vaporization (40.66 kJ/mol) are both unusually high for such a small molecule. Explain both with one argument, and connect them.
+:::
+::: tab Solution
+Both are consequences of the same thing: **an extensive hydrogen-bond network that must be disrupted before anything else can happen.**
+
+**Specific heat.** Warming a liquid means raising its molecules' kinetic energy. In water, much of the energy added goes first into partially breaking hydrogen bonds rather than into faster motion — so a large amount of heat produces only a small temperature rise. Chapter 6's Figure 6.4 showed the result: water's specific heat is about 32 times gold's.
+
+**Heat of vaporization.** Boiling requires breaking the hydrogen-bond network *completely*, since a molecule in the vapor has no neighbors. At roughly 20 kJ/mol per hydrogen bond and about two per molecule on average in the liquid (each molecule takes part in up to four, but each bond is shared between two molecules), the ~41 kJ/mol figure follows directly.
+
+**The connection.** Specific heat measures partial disruption; heat of vaporization measures total disruption. Both are large for water for the same reason, and both are why water moderates climate — coastal regions stay mild because the ocean absorbs and releases enormous quantities of heat with little temperature change.
+:::
+::::
+
+> **Where this goes next.** In a liquid the molecules are held together but still moving past one another. §11.3 removes that freedom to move past one another: in a solid the same kinds of attractive forces (or, in ionic, metallic, and network solids, chemical bonds) hold every particle in a fixed position, about which it can only vibrate, and what holds the solid together decides everything about it.
+
+## 11.3 Solids{{attrs[#blk-ch11sec03]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 11.3a}} Distinguish crystalline solids from amorphous solids.
+- {{sp[info] Objective 11.3a}} Classify a solid as molecular, covalent-network, ionic, or metallic from the kind of attraction (bonds or intermolecular forces) holding it together, and predict its hardness, melting point, and conductivity.
+- {{sp[info] Objective 11.3b}} Count atoms per unit cell and calculate coordination number for simple cubic, body-centered cubic, and face-centered cubic lattices.
+:::
+
+A **crystalline solid** has long-range, repeating order — its atoms, ions, or molecules occupy specific, predictable positions. An **amorphous solid**, such as glass, lacks that long-range order even though it is rigid. ==A solid's properties depend less on *what particles it contains* than on *what kind of attraction holds those particles in place*== — which is why solid $\ce{CO2}$ sublimes at −78 °C while solid $\ce{SiO2}$, built from comparable atoms, survives past 1,600 °C.
+
+### Four types of crystalline solids
+
+| Type | Held together by | Hardness | Melting point | Conductivity | Examples |
+|---|---|---|---|---|---|
+| Molecular | Intermolecular forces | Soft | Low | Poor | $\ce{Ar}$, $\ce{H2O}$ (ice), $\ce{CO2}$ (dry ice) |
+| Covalent network | Covalent bonds throughout | Hard (graphite is soft) | High | Poor (graphite is the exception) | Diamond, graphite, quartz |
+| Ionic | Ionic bonds | Hard, brittle | High | Poor solid; good when molten/dissolved | $\ce{NaCl}$, $\ce{MgCl2}$ |
+| Metallic | Metallic bonds | Soft to hard | Low to high | Good | $\ce{Fe}$, $\ce{Cu}$, $\ce{Hg}$ |
+
+Figure 11.4 and Figure 11.5 show the two extremes of that table. Both are hard and high-melting, but for different reasons — one from ions locked in an electrostatic grid, the other from an unbroken covalent network.
+
+![Sodium chloride's ionic lattice, shown as a 3D ball-and-stick model](../assets/nacl_ionic_lattice.png =520x)
+*Figure 11.4 — In an ionic solid such as NaCl, each ion is surrounded by six oppositely charged ions in a rigid, repeating lattice — the electrostatic attraction extends through the whole crystal, which is why ionic solids are hard, brittle, and high-melting. Source: Benjah-bmm27, via Wikimedia Commons (public domain).*
+
+![A quartz crystal specimen (SiO2), an example of a covalent-network solid](../assets/quartz_crystal.jpg =520x)
+*Figure 11.5 — Quartz ($\ce{SiO2}$) is a covalent-network solid: every Si and O atom is linked into one continuous three-dimensional network of covalent bonds, giving it the hardness needed to scratch glass and a melting point above 1,600 °C. Source: Masha Milshina, via Wikimedia Commons, CC BY 4.0.*
+
+
+
+:::: tabs
+::: tab Problem
+Classify each solid and predict whether it is hard or soft, high- or low-melting, and a good or poor electrical conductor: $\ce{SiO2}$ (quartz), solid $\ce{CO2}$ (dry ice), $\ce{KBr}$, and copper.
+:::
+::: tab Solution
+Identify what holds the solid together — that alone predicts all three properties.
+
+**$\ce{SiO2}$ — covalent network.** Every atom is covalently bonded into one continuous structure. **Very hard, very high melting (1600+ °C), poor conductor.** Melting means breaking covalent bonds.
+
+**$\ce{CO2}$ — molecular.** Discrete $\ce{CO2}$ molecules held by dispersion forces only (the molecule is nonpolar). **Soft, very low melting — it sublimes at −78 °C — and a poor conductor.** Melting (here, subliming) breaks only the weak intermolecular forces, never the C=O bonds.
+
+**$\ce{KBr}$ — ionic.** A lattice of $\ce{K+}$ and $\ce{Br-}$. **Hard but brittle, high melting (734 °C), poor conductor as a solid but good when molten**, once the ions can move.
+
+**Copper — metallic.** Cations in a sea of delocalized electrons. **Malleable rather than brittle, moderately high melting (1085 °C), an excellent conductor** both solid and molten, because the electrons are mobile without the lattice moving.
+
+Two contrasts worth holding onto: $\ce{SiO2}$ and $\ce{CO2}$ are both covalent compounds of a nonmetal with oxygen, and their melting points differ by 1,700 °C because one is a network and the other is molecules. And $\ce{KBr}$ and copper are both high-melting solids, but one shatters and insulates while the other bends and conducts.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+A white solid melts at 801 °C, does not conduct electricity as a solid, but conducts well once molten and also when dissolved in water. What type of solid is it, and what does each observation rule out?
+:::
+::: tab Solution
+Take the observations one at a time.
+
+**High melting point (801 °C)** rules out a **molecular** solid, whose weak intermolecular forces would give a low melting point.
+
+**Non-conducting as a solid but conducting when molten** is the decisive observation. It rules out **metallic** — a metal conducts in every state, because its electrons are delocalized whether or not the lattice can move. And it rules out **covalent network** — quartz and diamond conduct in no state at all.
+
+What remains is **ionic**. Charged particles are present, but in the solid they are locked in the lattice and cannot move. Melting frees them, and so does dissolving.
+
+The solid is consistent with $\ce{NaCl}$, whose melting point is exactly 801 °C. Note how §4.1's electrolyte discussion and this classification are the same fact seen from two sides.
+:::
+::::
+
+### Unit cells
+
+A **unit cell** is the smallest repeating structural unit of a crystal lattice; stacking copies of it in three dimensions builds the entire crystal. There are seven unit-cell shapes in total, but general chemistry focuses on the three **cubic** cells:
+
+Compare the three cells in Figure 11.6 before reading the table below it: the only difference between them is *where* the extra atoms sit, and that placement alone determines both the atom count and the coordination number.
+
+![Simple cubic, body-centered cubic, and face-centered cubic unit cells, shown as 3D wireframes with atoms at their lattice positions](../assets/cubic_unit_cells.svg)
+*Figure 11.6 — The three cubic unit cells. Corner atoms are shared among 8 adjacent cells; a face atom is shared between 2 cells; a body-centered atom belongs entirely to its own cell. Self-generated with matplotlib.*
+
+| Unit cell | Atoms per cell | Coordination number | How atoms touch |
+|---|---|---|---|
+| Simple cubic (SCC) | 1 | 6 | along the cell edge |
+| Body-centered cubic (BCC) | 2 | 8 | along the cube diagonal |
+| Face-centered cubic (FCC) | 4 | 12 | along the face diagonal |
+
+The **coordination number** is the number of nearest neighbors surrounding one atom in the lattice. Counting atoms *per cell* requires accounting for sharing: a corner atom counts $\frac{1}{8}$ toward its cell (shared among 8 cells meeting at that corner), a face atom counts $\frac{1}{2}$ (shared between 2 cells), and a body-centered atom counts fully (not shared at all).
+
+**Close packing** — the most space-efficient way to stack spheres — comes in two forms: hexagonal close-packed (an "ABAB…" stacking pattern) and cubic close-packed (an "ABCABC…" pattern, which is geometrically identical to the FCC unit cell).
+
+:::: tabs
+::: tab Problem
+Verify the atom count for a body-centered cubic (BCC) unit cell: 8 corner atoms plus 1 body-centered atom. How many atoms belong to the cell in total?
+:::
+::: tab Solution
+Each of the 8 corner atoms is shared among 8 unit cells, so each contributes $\frac{1}{8}$ atom to this cell:
+
+$$8 \times \frac{1}{8} = 1\ \text{atom from the corners}$$
+
+The single body-centered atom is not shared with any other cell, so it contributes a full atom:
+
+$$1 \times 1 = 1\ \text{atom from the center}$$
+
+$$\text{Total} = 1 + 1 = 2\ \text{atoms per BCC unit cell}$$
+
+This matches the table above, and is why the coordination number (8, from the atoms touching along the cube diagonal) is higher than a simple cubic cell's (6) despite BCC having the same corner arrangement — the added body atom touches all 8 corner atoms directly.
+:::
+::::
+
+**Self-check:**
+- How many atoms belong to a face-centered cubic (FCC) unit cell? (Hint: 8 corner atoms + 6 face atoms, using the sharing fractions above.)
+- Why is graphite a good electrical conductor even though, like diamond, it is classified as a covalent-network solid?
+
+
+
+:::: tabs
+::: tab Problem
+A face-centered cubic (FCC) unit cell has atoms at all eight corners and at the center of each of the six faces. How many atoms does it contain, and what fraction of each kind of atom belongs to the cell?
+:::
+::: tab Solution
+The rule is that an atom is shared among every cell it touches, so each cell owns only its fraction.
+
+**Corner atoms.** A corner is shared by **eight** adjacent cells, so each corner atom contributes $\tfrac18$.
+$$8 \text{ corners} \times \tfrac18 = 1 \text{ atom}$$
+
+**Face atoms.** A face is shared by **two** cells, so each face atom contributes $\tfrac12$.
+$$6 \text{ faces} \times \tfrac12 = 3 \text{ atoms}$$
+
+$$\text{total} = 1 + 3 = \mathbf{4 \text{ atoms per FCC unit cell}}$$
+
+Compare the three cubic cells:
+
+| Cell | Corners | Other | Atoms per cell |
+|---|---|---|---|
+| simple cubic | $8\times\tfrac18 = 1$ | — | **1** |
+| body-centered | $8\times\tfrac18 = 1$ | 1 body $\times\,1$ | **2** |
+| face-centered | $8\times\tfrac18 = 1$ | $6\times\tfrac12 = 3$ | **4** |
+
+A body-centered atom is the only one that counts as a whole, because it lies entirely inside its cell and is shared with nobody.
+:::
+::::
+
+> **Where this goes next.** Solid, liquid and gas have each been treated on their own. §11.4 puts them on one map and asks what it takes to move between them — which turns out to be a question about how much energy is needed to overcome exactly the forces §11.1 catalogued.
+
+## 11.4 Phase Changes and Diagrams{{attrs[#blk-ch11sec04]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 11.4a}} Define evaporation, condensation, dynamic equilibrium, and equilibrium vapor pressure.
+- {{sp[info] Objective 11.4a}} Calculate heat absorbed or released during a phase change using molar heat of vaporization, fusion, or sublimation.
+- {{sp[info] Objective 11.4b}} Apply the Clausius–Clapeyron equation to relate vapor pressure and temperature.
+- {{sp[info] Objective 11.4c}} Interpret a phase diagram, including the triple point and critical point.
+:::
+
+A **phase** is a physically distinct, uniform region of a substance (solid, liquid, or vapor). A **phase change** is a transition between phases that can occur when energy is added to or removed from a substance, without changing its chemical identity. ==For molecular substances, a phase change is essentially intermolecular forces being overcome or re-formed== — so the quantities in this section reflect the strength of the forces catalogued in §11.1.
+
+### Liquid–vapor equilibrium
+
+At any given temperature, some molecules at a liquid's surface have enough kinetic energy to escape into the vapor phase — **evaporation**. Some vapor molecules simultaneously return to the liquid — **condensation**. In a sealed container, these two rates eventually become equal: a **dynamic equilibrium**, where both processes continue but the *amounts* of liquid and vapor no longer change. The vapor pressure at this equilibrium is the **equilibrium vapor pressure**, and it depends only on temperature and the substance's identity (not on the amount of liquid present).
+
+The **molar heat of vaporization** ($\Delta H_\text{vap}$) is the energy needed to vaporize one mole of liquid — a direct measure of how strongly a liquid's molecules attract each other (larger $\Delta H_\text{vap}$ means stronger intermolecular forces).
+
+:::: tabs
+::: tab Problem
+The molar heat of vaporization of water is 40.66 kJ/mol. How much heat is absorbed when 10.0 g of water boils away?
+:::
+::: tab Solution
+First convert grams of water to moles:
+
+$$10.0\ \text{g}\ \ce{H2O} \times \frac{1\ \text{mol}\ \ce{H2O}}{18.0\ \text{g}\ \ce{H2O}} = 0.556\ \text{mol}\ \ce{H2O}$$
+
+Then multiply by the molar heat of vaporization:
+
+$$0.556\ \text{mol} \times 40.66\ \text{kJ/mol} = 22.6\ \text{kJ absorbed}$$
+
+Notice the units track exactly as in a Chapter 3 stoichiometry problem or a Chapter 6 enthalpy problem — mass converts to moles, then moles convert to the desired quantity (here, heat) using a per-mole conversion factor ($\Delta H_\text{vap}$).
+:::
+::::
+
+
+
+:::: tabs
+::: tab Problem
+How much heat is needed to convert 25.0 g of ice at 0 °C into steam at 100 °C? ($\Delta H_\text{fus} = 6.01$ kJ/mol, $\Delta H_\text{vap} = 40.66$ kJ/mol, $s_\text{water} = 4.184\ \text{J}\,\text{g}^{-1}\,\text{°C}^{-1}$.)
+:::
+::: tab Solution
+Three separate steps, and the phase changes happen at **constant temperature** — so they use $\Delta H$ values, not $q = ms\Delta T$.
+
+First convert to moles: $25.0\,\text{g} \div 18.02\,\text{g/mol} = 1.387$ mol.
+
+**Step 1 — melt the ice at 0 °C.**
+$$q_1 = (1.387\,\text{mol})(6.01\,\text{kJ/mol}) = 8.34\ \text{kJ}$$
+
+**Step 2 — warm the liquid from 0 to 100 °C.** Now the temperature changes, so Chapter 6's $q = ms\Delta T$ applies.
+$$q_2 = (25.0)(4.184)(100.0) = 10{,}460\ \text{J} = 10.46\ \text{kJ}$$
+
+**Step 3 — boil the water at 100 °C.**
+$$q_3 = (1.387\,\text{mol})(40.66\,\text{kJ/mol}) = 56.4\ \text{kJ}$$
+
+$$q_\text{total} = 8.34 + 10.46 + 56.4 = 75.2\ \text{kJ}$$
+
+Notice the proportions: **boiling alone accounts for three-quarters of the total**, and takes more than five times as much energy as heating the liquid across its entire 100-degree liquid range. Vaporization must break the hydrogen-bond network completely; warming only loosens it.
+
+{{sp[warning] Watch out}} A phase change does not raise the temperature. Adding $q = ms\Delta T$ "across" a melting or boiling point is the standard error — the three steps must be computed separately and summed.
+:::
+::::
+
+### The Clausius–Clapeyron equation
+
+Because $\Delta H_\text{vap}$ links a liquid's vapor pressure to its temperature, we can relate vapor pressure at two different temperatures directly:
+
+$$\ln\frac{P_1}{P_2} = \frac{\Delta H_\text{vap}}{R}\left(\frac{T_1 - T_2}{T_1 T_2}\right)$$
+
+{{sp[warning] Reminder}} both $T_1$ and $T_2$ must be in **kelvin** before you substitute — the same habit from Chapter 5's ideal gas law.
+
+Figure 11.7 makes the temperature dependence visible. Notice that the curve is not a straight line — vapor pressure rises far faster near the boiling point than it does at low temperature, which is the graphical form of the exponential relationship the equation expresses.
+
+![Vapor pressure of diethyl ether plotted against temperature, computed from the Clausius-Clapeyron equation](../assets/vapor_pressure_diethyl_ether.svg)
+*Figure 11.7 — The vapor pressure of diethyl ether rises steeply and non-linearly with temperature, crossing 760 mmHg (1 atm) at about 35 °C — its normal boiling point (the curve gives 35.4 °C; the measured value is 34.6 °C). Curve computed from the Clausius–Clapeyron equation using the worked example's data (442 mmHg at 20.0 °C, $\Delta H_\text{vap}$ = 26.5 kJ/mol). Self-generated with matplotlib.*
+
+:::: tabs
+::: tab Problem
+Diethyl ether ($\ce{CH3CH2OCH2CH3}$) has a vapor pressure of 442 mmHg at 20.0 °C and a molar heat of vaporization of 26.5 kJ/mol. Calculate its vapor pressure at 30.0 °C.
+
+{{smiles CCOCC}}
+:::
+::: tab Solution
+Convert both temperatures to kelvin ($T_1 = 293.15\ \text{K}$, $T_2 = 303.15\ \text{K}$) and substitute into the Clausius–Clapeyron equation:
+
+$$\ln\left(\frac{442\ \text{mmHg}}{P_2}\right) = \frac{26.5\times10^3\ \text{J/mol}}{8.314\ \text{J/K·mol}}\left(\frac{1}{303.15\ \text{K}} - \frac{1}{293.15\ \text{K}}\right)$$
+
+$$\ln\left(\frac{442\ \text{mmHg}}{P_2}\right) = (3187.4\ \text{K})(-1.1253\times10^{-4}\ \text{K}^{-1}) = -0.3587$$
+
+$$\frac{442\ \text{mmHg}}{P_2} = e^{-0.3587} = 0.6986$$
+
+$$P_2 = \frac{442\ \text{mmHg}}{0.6986} = 633\ \text{mmHg}$$
+
+Ten degrees raised the vapor pressure by more than 40%. The measured value at 30.0 °C is about 640 mmHg; the equation comes within about 1%. The small gap is there because the equation treats $\Delta H_\text{vap}$ as constant over the range. Still below 760 mmHg, so ether at 30 °C does not boil in an open container — but about five degrees warmer it does, which is why it is stored cold and handled away from flames.
+:::
+::::
+
+
+
+:::: tabs
+::: tab Problem
+Benzene has a vapor pressure of 100 mmHg at 26.1 °C and 400 mmHg at 60.6 °C. Calculate its molar heat of vaporization.
+:::
+::: tab Solution
+This runs the Clausius–Clapeyron equation backwards: two pressure–temperature pairs are given and $\Delta H_\text{vap}$ is the unknown.
+
+$$\ln\frac{P_1}{P_2} = \frac{\Delta H_\text{vap}}{R}\left(\frac{1}{T_2} - \frac{1}{T_1}\right)$$
+
+Convert both temperatures to kelvin: $T_1 = 299.25$ K, $T_2 = 333.75$ K.
+
+$$\ln\frac{100}{400} = \ln(0.250) = -1.386$$
+$$\frac{1}{333.75} - \frac{1}{299.25} = 0.0029963 - 0.0033417 = -3.454\times10^{-4}\ \text{K}^{-1}$$
+
+$$-1.386 = \frac{\Delta H_\text{vap}}{8.314}\left(-3.454\times10^{-4}\right)$$
+$$\Delta H_\text{vap} = \frac{(-1.386)(8.314)}{-3.454\times10^{-4}} = 3.34\times10^{4}\ \text{J/mol} = 33.4\ \text{kJ/mol}$$
+
+This is close to benzene's $\Delta H_\text{vap}$ near room temperature (about 33–34 kJ/mol). The commonly tabulated 30.8 kJ/mol is the value at the normal boiling point (80.1 °C); it is lower because $\Delta H_\text{vap}$ declines as temperature rises. The two-point method assumes $\Delta H_\text{vap}$ is constant, so it gives an average value over the 26–61 °C range.
+
+**Sanity check on the magnitude:** benzene is nonpolar and held together by dispersion only, so its value should be well below water's 40.66 kJ/mol. It is.
+:::
+::::
+
+### Liquid–solid and solid–vapor equilibrium
+
+The **melting point** (solid → liquid) and **freezing point** (liquid → solid) describe the same equilibrium temperature, and the **molar heat of fusion** ($\Delta H_\text{fus}$) is the energy needed to melt one mole of solid. The **molar heat of sublimation** ($\Delta H_\text{sub}$, solid directly to vapor) follows Hess's law exactly as in Chapter 6:
+
+$$\Delta H_\text{sub} = \Delta H_\text{fus} + \Delta H_\text{vap}$$
+
+### Phase diagrams
+
+A **phase diagram** maps out which phase (solid, liquid, or vapor) is stable at every combination of temperature and pressure.
+
+Figure 11.8 is the map for water. Read it the way you would read a geographic map: each region is a phase, each line is a border, and moving across the diagram means changing temperature (left–right) or pressure (up–down).
+
+![Schematic phase diagram of water, with the solid, liquid, and vapor regions labeled and the triple point, normal melting/boiling points, and critical point marked](../assets/water_phase_diagram.svg)
+*Figure 11.8 — Phase diagram of water. The solid-liquid boundary has a slight negative slope — unique among common substances — because ice is less dense than liquid water, so increasing pressure favors the denser liquid phase and lowers the melting point. Self-generated with matplotlib; boundary shapes are schematic, but all four labeled points (triple, normal melting, normal boiling, and critical) are real, verified values. Data summary: triple point 0.01 °C at 0.00604 atm; normal melting point 0 °C at 1 atm; normal boiling point 100 °C at 1 atm; critical point 374 °C at 218 atm.*
+
+Two points are worth memorizing conceptually:
+- The **triple point** is the single temperature/pressure combination where all three phases coexist in equilibrium simultaneously.
+- The **critical point** marks the temperature and pressure above which liquid and vapor become indistinguishable — no amount of pressure can liquefy a gas above its **critical temperature**.
+
+:::warning
+Water's negative-sloped solid-liquid boundary is the *exception*, not the rule — for nearly every other substance, increasing pressure on a solid favors the (denser) solid phase and *raises* the melting point. Water is unusual because hydrogen bonding makes its solid phase (ice) *less* dense than its liquid phase.
+:::
+
+**Self-check:**
+- Using the phase diagram above, what phase change occurs if you start at 0.001 atm and −40 °C and slowly raise the temperature at constant pressure?
+- Why does increasing pressure on ice (e.g., under an ice skate) very slightly lower its melting point, while doing the same to a block of paraffin wax would raise its melting point?
+
+
+
+:::: tabs
+::: tab Problem
+On a phase diagram, what does each of these represent: the triple point, the critical point, and a boundary line? What happens if you follow a horizontal line (constant pressure) left to right across a typical diagram?
+:::
+::: tab Solution
+**A boundary line** marks conditions where **two phases coexist in equilibrium**. Crossing it is a phase change. The three lines are solid–liquid (melting/freezing), liquid–vapor (boiling/condensing) and solid–vapor (sublimation/deposition).
+
+**The triple point** is where all three lines meet — the single temperature and pressure at which solid, liquid and vapor coexist simultaneously. There is exactly one per substance.
+
+**The critical point** ends the liquid–vapor line. Beyond the **critical temperature** no amount of pressure will liquefy the gas, because above it the liquid and vapor phases become indistinguishable. The pressure needed to liquefy *at* that temperature is the **critical pressure**.
+
+**Moving right at constant pressure** means heating at fixed pressure. Starting in the solid region, at a pressure between the triple-point and critical pressures, you cross the solid–liquid line (melting), then the liquid–vapor line (boiling) — the ordinary sequence, and at 1 atm the two crossing temperatures are the normal melting and boiling points.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+$\ce{CO2}$'s triple point is at 5.11 atm and −56.6 °C. Explain why dry ice sublimes rather than melting at ordinary conditions, and what you would have to do to obtain liquid $\ce{CO2}$.
+:::
+::: tab Solution
+The key comparison is between atmospheric pressure and the triple-point pressure.
+
+**Liquid can exist only above the triple-point pressure.** For $\ce{CO2}$ that threshold is 5.11 atm — well above the 1 atm of ordinary air. At 1 atm you are *below* the triple point, so a horizontal path crosses only the solid–vapor line: the solid goes straight to gas. That is **sublimation**, and it is why dry ice leaves no puddle and why it is called dry ice.
+
+**To get liquid $\ce{CO2}$ you must raise the pressure above 5.11 atm, and high enough to cross the liquid–vapor line at the temperature you are working at, which must lie between the triple-point temperature (−56.6 °C) and the critical temperature (about 31 °C).** Commercial $\ce{CO2}$ cylinders do exactly this and contain liquid at around 57 atm at room temperature.
+
+**Compare water**, whose triple point is at 0.006 atm — far *below* atmospheric. At 1 atm you are comfortably above it, so ice melts to liquid in the ordinary way.
+
+The rule generalizes: **a substance sublimes at 1 atm precisely when its triple-point pressure exceeds 1 atm.** Whether a solid melts or sublimes is not a special property of the substance so much as a question of where 1 atm falls on its diagram.
+:::
+::::
+
+## Synthesis
+
+==Every idea in this chapter is downstream of one fact: which attractive force (an intermolecular force, or in ionic, metallic, and covalent-network solids, chemical bonding) acts between a substance's particles.== That single fact sets the strength of attraction, and the strength of attraction sets everything measurable that follows — how strongly a liquid resists spreading out (surface tension) or flowing (viscosity), how a solid is classified and how hard and high-melting it is, and how much energy is required to loosen the particles into a liquid or pry them apart into a gas (heats of fusion, vaporization, and sublimation, and the shape of the phase diagram itself). Water's unusual behavior throughout this chapter — its high boiling point, its high specific heat, its expansion on freezing, its negative-sloped solid-liquid phase boundary — is not four unrelated facts but one fact (extensive hydrogen bonding) appearing four times.
+
+## Asset and License Record for This Chapter
+
+| Asset | Source URL | License | Attribution |
+|---|---|---|---|
+| `assets/polar_nonpolar_molecules.svg` | — (self-generated, RDKit) | CC BY 4.0 | Self-generated; released under this package's CC BY 4.0 license. |
+| `assets/hydride_boiling_points.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated from verified literature boiling points; released under this package's CC BY 4.0 license. |
+| `assets/water_strider_surface_tension.jpg` | https://commons.wikimedia.org/wiki/File:A_water_strider_stands_on_the_water_because_of_its_light_weight_and_the_surface_tension_of_the_water._(3116c804-0240-4b9a-b937-70fc7c2b156e).jpg | Public domain | NPS Photo, via Wikimedia Commons. |
+| `assets/nacl_ionic_lattice.png` | https://commons.wikimedia.org/wiki/File:Lattice-enthalpy-NaCl-3D-ionic.png | Public domain | Benjah-bmm27, via Wikimedia Commons. |
+| `assets/quartz_crystal.jpg` | https://commons.wikimedia.org/wiki/File:Grape_quartz_04.jpg | CC BY 4.0 | Masha Milshina, via Wikimedia Commons. |
+| `assets/cubic_unit_cells.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated; released under this package's CC BY 4.0 license. |
+| `assets/vapor_pressure_diethyl_ether.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated from the Clausius–Clapeyron equation and this study guide's own worked-example data; released under this package's CC BY 4.0 license. |
+| `assets/water_phase_diagram.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated; boundary curves schematic, key points from verified real data; released under this package's CC BY 4.0 license. |

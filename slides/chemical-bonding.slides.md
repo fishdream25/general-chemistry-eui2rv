@@ -1,0 +1,139 @@
+{{nyml
+kind: document
+carrier: slides
+uid: doc-owjyxzbvnioq04dd
+title: Chapter 9: Chemical Bonding — Basic Concepts
+ratio: 16:9
+theme: paper
+}}
+
+<!-- slide template=title -->
+# Chemical Bonding: Basic Concepts
+## Why atoms bond, and how to draw the result
+**General Chemistry, Chapter 9**
+
+<!-- slide 2col -->
+## Chapter Learning Objectives
+<!-- @left -->
+- **Objective 9.1a** — Draw Lewis dot symbols and explain ionic bonding and lattice energy
+- **Objective 9.1b** — Classify bond type using electronegativity difference
+- **Objective 9.2a** — Draw Lewis structures using the standard procedure
+- **Objective 9.2b** — Calculate formal charge
+<!-- @right -->
+- **Objective 9.2c** — Identify and explain resonance structures
+- **Objective 9.3a** — Identify octet-rule exceptions
+- **Objective 9.3b** — Calculate reaction enthalpy from bond enthalpies
+
+<!-- slide template=outline -->
+## Roadmap
+1. Ionic bond and covalent bond
+2. Lewis structures
+3. Exceptions to the octet rule and bond enthalpy
+
+<!-- slide -->
+## Chapter Logic
+{{mermaid
+graph TD
+  A["Electronegativity difference:<br/>ionic vs. covalent bonding"] --> B["Lewis structures:<br/>systematic bond-drawing method"]
+  B --> C["Formal charge and resonance:<br/>choosing among structures"]
+  C --> D["Octet-rule exceptions<br/>and bond enthalpy"]
+}}
+**Visual description:** electronegativity difference sorts bond type; Lewis structures draw covalent molecules systematically; formal charge and resonance choose among possible structures; octet exceptions and bond enthalpy close the chapter.
+
+<!-- slide template=section -->
+# 1. Ionic Bond and Covalent Bond
+
+<!-- slide -->
+## Lewis dot symbols
+![Dot symbols across period 2](../assets/lewis_dot_symbols.svg =800x)
+Dots equal the valence electrons (main-group number, 1A–8A), placed singly first — the unpaired ones are what bond
+
+<!-- slide -->
+## Ionic vs. covalent
+![Ionic vs covalent](../assets/ionic_vs_covalent_bond.svg =620x)
+Ionic: the electron is handed over · Covalent: **2 electrons** shared, one from each atom
+
+<!-- slide -->
+## Lattice energy
+Energy to separate 1 mol solid ionic compound into gaseous ions
+- Higher charge → higher lattice energy ($\ce{MgCl2}$, $\ce{MgO}$, $\ce{CaO}$)
+- Smaller ions → higher lattice energy
+
+<!-- slide -->
+## Electronegativity trend
+![Electronegativity trend](../assets/electronegativity_trend.svg =560x)
+
+<!-- slide -->
+## Bond type is a continuum
+![Bond type vs electronegativity difference](../assets/bond_type_continuum.svg =800x)
+$<0.3$ nonpolar covalent · $0.3$–$2.0$ polar covalent · $\ge 2.0$ ionic — conventions, not physics
+
+<!-- slide step -->
+## Classifying bonds by ΔEN
+- $\Delta EN \ge 2.0$ → ionic{{attrs[.fragment]}}
+- $0.3 \le \Delta EN < 2.0$ → polar covalent{{attrs[.fragment]}}
+- $\Delta EN < 0.3$ → (nonpolar) covalent{{attrs[.fragment]}}
+
+<!-- slide template=section -->
+# 2. Lewis Structures
+
+<!-- slide -->
+## Four steps, worked
+![Lewis structure procedure for CO2](../assets/lewis_structure_steps.svg =840x)
+Count the electrons before drawing, and count them again at the end
+
+<!-- slide -->
+## Drawing a Lewis structure
+1. Skeletal structure
+2. Count valence electrons (add 1 per negative charge, subtract 1 per positive charge)
+3. Single bonds + complete octets with lone pairs
+4. Add multiple bonds if center is short
+
+<!-- slide -->
+## Examples and resonance
+![Lewis structures and resonance](../assets/lewis_and_resonance.svg =680x)
+Ozone's formal charges (red) sum to zero — the molecule is neutral
+
+<!-- slide -->
+## Formal charge
+$$\text{FC}=\text{(valence e}^-\text{)}-\text{(lone-pair e}^-\text{)}-\tfrac12\text{(bonding e}^-\text{)}$$
+Best structure usually minimizes formal charges
+
+<!-- slide -->
+## Resonance
+:::warning
+Resonance structures are a human bookkeeping device — the real molecule has one unique, stable structure — a hybrid of the drawn forms, not any one of them, not a rapid flip between drawn forms.
+:::
+
+<!-- slide template=section -->
+# 3. Octet-Rule Exceptions and Bond Enthalpy
+
+<!-- slide -->
+## Three ways the octet rule fails
+![Incomplete, odd-electron, expanded](../assets/octet_exceptions.svg =840x)
+Only period 3 and beyond can expand — a second-period atom never exceeds eight
+
+<!-- slide -->
+## Three exception categories
+- Incomplete octet: $\ce{BF3}$ ($\ce{6e-}$ around B)
+- Odd-electron radicals: NO, $\ce{NO2}$
+- Expanded octet: $\ce{SF6}$ ($\ce{12e-}$ around S; possible for period 3 and heavier elements)
+
+<!-- slide -->
+## Covalent network solids
+![Diamond and graphite](../assets/diamond_graphite.jpg =520x)
+Same element (carbon), different bonding arrangement → dramatically different properties
+
+<!-- slide -->
+## Why broken minus formed
+![Bond enthalpy energy cycle](../assets/bond_enthalpy_cycle.svg =800x)
+Break everything into atoms, then rebuild — valid because enthalpy is a state function
+
+<!-- slide -->
+## Bond enthalpy
+$$\Delta H=\sum D_\text{bonds broken}-\sum D_\text{bonds formed}$$
+Breaking bonds costs energy; forming bonds releases it
+
+<!-- slide template=closing -->
+# From electronegativity to a full structural picture
+Electronegativity difference sorts every bond into ionic or covalent; Lewis structures, formal charge, and resonance give a systematic way to draw any covalent molecule; octet exceptions and bond enthalpy round out the picture — and become the direct starting point for Chapter 10's molecular geometry.

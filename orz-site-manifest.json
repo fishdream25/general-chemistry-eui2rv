@@ -1,0 +1,1677 @@
+{
+  "assets": [
+    {
+      "path": "LICENSE",
+      "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94"
+    },
+    {
+      "path": "assets/accuracy_vs_precision.svg",
+      "sha256": "448f4d180b124936c6ff9d2f4fcc0e009c6acb0097d6c36362004cd054fd2d9e"
+    },
+    {
+      "path": "assets/acetylene_model.jpg",
+      "sha256": "d2a3e411aa0ee06a68d2d21131315d33d20c5cfe1026680b90bb761f00d0dbb0"
+    },
+    {
+      "path": "assets/acetylene_model.jpg.attrib.json",
+      "sha256": "dd9cb9a43620be203ea380b7e1bf52ab232731a00d67c7fc2c5c5717aa620f4b"
+    },
+    {
+      "path": "assets/activity_series_ladder.svg",
+      "sha256": "fcc1464082c8bc16765d6f87c8c4d70bbf77f1e2d48a939e40803bd254888ecc"
+    },
+    {
+      "path": "assets/ammonia_plant.jpg",
+      "sha256": "6698a687a5be8a8669bc063559111d360ab5b1342d3f0bba69669635b7410d43"
+    },
+    {
+      "path": "assets/ammonia_plant.jpg.attrib.json",
+      "sha256": "03751f68b177065cc959d08c24a600091b296632d0bf42b65e77829f5c6b8495"
+    },
+    {
+      "path": "assets/approach_to_equilibrium.svg",
+      "sha256": "ff1e245991add10389564abc0bf7b45fd3814c053dcb3f8be4b06cd3078890d0"
+    },
+    {
+      "path": "assets/arrhenius_plot.svg",
+      "sha256": "4314b6df72c4cfcc6b6c7a69022feec92cea44afc0fc9e7e2db9de149ddb6b03"
+    },
+    {
+      "path": "assets/atom_structure.svg",
+      "sha256": "ace028dfcefac458642af6479fcbdb1ebcc4c2c543cb7697d9cd0f861a360d40"
+    },
+    {
+      "path": "assets/aufbau_diagonal_rule.svg",
+      "sha256": "a243a0c39f20d319be8d3fd53b141052cfde90d0eaba3da737cd44cb04fb2db8"
+    },
+    {
+      "path": "assets/balancing_atom_tally.svg",
+      "sha256": "64f315ed732678df57d0efa52724c2a3afbbb31770545b30afe70014a8f3ae0a"
+    },
+    {
+      "path": "assets/band_of_stability.svg",
+      "sha256": "e97d23973f21228aa438e0eab5a97d423fed4b6e3f7e3a12fc9c34a375344aed"
+    },
+    {
+      "path": "assets/batteries.jpg",
+      "sha256": "6b4a8838dbc53184bf54541e8322bb7d15e8124d88c49858744f7189c76b9fb9"
+    },
+    {
+      "path": "assets/batteries.jpg.attrib.json",
+      "sha256": "7c79119db46e14d4613c09c09425fc80dba5c3c919819c5b733bc3c6d470baff"
+    },
+    {
+      "path": "assets/binding_energy_curve.svg",
+      "sha256": "27348196adec1d3bb94634e9dda08d806399d3ec06a1dfeb727d04c00734dcfe"
+    },
+    {
+      "path": "assets/bohr_energy_levels.svg",
+      "sha256": "3c73814242af09d06f9935ad73d0a1614e0003f6547c1550b8b9884f13028264"
+    },
+    {
+      "path": "assets/bomb_calorimeter.svg",
+      "sha256": "f68da77a287f70602449ec0d935c31e232ab1fa01afd77c4da7af40fe7406171"
+    },
+    {
+      "path": "assets/bomb_calorimeter_photo.jpg",
+      "sha256": "23605c730676ace5c97bc0b9448d7fcd4030ad8b004e236ead3738f2350e3173"
+    },
+    {
+      "path": "assets/bomb_calorimeter_photo.jpg.attrib.json",
+      "sha256": "31aadfc0574060d6b4ba7cfd6115a71691f9ec65322c7e8b5f8e9fd04b7a305f"
+    },
+    {
+      "path": "assets/bond_enthalpy_cycle.svg",
+      "sha256": "c44232a011ca705e588c7c07eb5facb2c9e65bb480eaed8cff92e69cfef33962"
+    },
+    {
+      "path": "assets/bond_type_continuum.svg",
+      "sha256": "10cbc76496188ec6dbf60fda7df07fdf0973f73d1d202e7066bf54b45f3b9f52"
+    },
+    {
+      "path": "assets/buffer_action.svg",
+      "sha256": "b8347b967936cdbeae10a919e72bfbac018bfae55f6a9d1dca6b4ac0f5f1da50"
+    },
+    {
+      "path": "assets/carbon14_decay.svg",
+      "sha256": "f185307dc15a27a6971a0b283f2177861b05fa34dbeffc96d321f70fc626d86b"
+    },
+    {
+      "path": "assets/catalytic_converter.jpg",
+      "sha256": "fb6b09e2b680ad1764e1a2f4ec3deaa1018bd1a39f7eb3b05508e739ac304e85"
+    },
+    {
+      "path": "assets/catalytic_converter.jpg.attrib.json",
+      "sha256": "915e1c3fae0381c7de933e5536211294dd1fbe22eca5029069ed7321cd0c22d6"
+    },
+    {
+      "path": "assets/catalyzed_vs_uncatalyzed.svg",
+      "sha256": "81871aaaad58f94e7ebded02c291315754190a8e43d404be4c35c0b54a819e67"
+    },
+    {
+      "path": "assets/collision_theory.svg",
+      "sha256": "481b9d7d4e6b0c718ecf2651a37c02509369d218dd538a2fbd47439888a21887"
+    },
+    {
+      "path": "assets/combustion_analysis.svg",
+      "sha256": "9373040cc4740de0549ae5170a8fb146a3afcb1c823115184d3a651921260301"
+    },
+    {
+      "path": "assets/common_ion_effect.svg",
+      "sha256": "7667a9ff0e2c13ee22827f2575fae317d97f21a9172cd98e599b657291974dfa"
+    },
+    {
+      "path": "assets/complex_ion_formation.svg",
+      "sha256": "5ea5f68f8194eabd5b6799964e4840f6aeabbfc171e18302720e39f519f3cca3"
+    },
+    {
+      "path": "assets/conjugate_strength_ladder.svg",
+      "sha256": "da138f3ac33b165863f3aa3425e183a2ec913ca1b1e5743ee6f52f650002d636"
+    },
+    {
+      "path": "assets/cubic_unit_cells.svg",
+      "sha256": "3564c7c90c380027522146ea8bbb97b6b330a39ca5147364bbc9b0e7c6d7fc84"
+    },
+    {
+      "path": "assets/decay_modes_nz.svg",
+      "sha256": "5bfe9908c115d034c908a6b4f2d4fe4b03829d2dcfa280ab3a8ebfb853113d8d"
+    },
+    {
+      "path": "assets/diamond.jpg",
+      "sha256": "6fa338604704c2d994796a5c6bcda62dbee7d0d2ee313742c3aa7da5553c3bce"
+    },
+    {
+      "path": "assets/diamond.jpg.attrib.json",
+      "sha256": "53d190debbcaed7d33c7cd92ff220e7a075edad3b6f1950087a58703cf884f06"
+    },
+    {
+      "path": "assets/diamond_graphite.jpg",
+      "sha256": "da80a3233e520e3e3f09514810ef05fcd90a0821ed21be9ffe54c97143b5bb12"
+    },
+    {
+      "path": "assets/diamond_graphite.jpg.attrib.json",
+      "sha256": "1e85bb76c6756e3bcb5bf0561a1d3f21bee6fd7c70432356f667f1b572968d99"
+    },
+    {
+      "path": "assets/dilution_same_moles.svg",
+      "sha256": "c1ebfc139ccdb99f393c820d01fc7652f73ac50352baffd0510c320228e76acc"
+    },
+    {
+      "path": "assets/dimensional_analysis_cancel.svg",
+      "sha256": "17e7ae751b8e2f197a2b9a5b7ec26a4ff6b045234abdde1c118f4d7bf923f4da"
+    },
+    {
+      "path": "assets/dipole_cancellation.svg",
+      "sha256": "b26b245468a49e148b7614548e2f8dcee929b842af79b11f7d300e576a75a8f6"
+    },
+    {
+      "path": "assets/displaced_copper.jpg",
+      "sha256": "a9fffe510b979c1d6d77be4f81a4e91dfccbc89c09fcf335dd4d6e841f8c0253"
+    },
+    {
+      "path": "assets/displaced_copper.jpg.attrib.json",
+      "sha256": "d715e31991705ad820f5cb2339b8253c374fc1439179a8613cad557b06715a18"
+    },
+    {
+      "path": "assets/effective_nuclear_charge.svg",
+      "sha256": "6857c3775545e4a021c1612d3ef99238a1853f1c0be68aa50007d6fb30aaffcb"
+    },
+    {
+      "path": "assets/electrolyte_conductivity.svg",
+      "sha256": "7b9b5f7750e27448cc9ececbdb4477fead0ef376218a8bc568390884d10bc7b7"
+    },
+    {
+      "path": "assets/electron_transfer_naf.svg",
+      "sha256": "b3368156f7fb330b59b95ab7517e562d4245f4a275048e200b9ab73b5c114145"
+    },
+    {
+      "path": "assets/electronegativity_trend.svg",
+      "sha256": "45e90470ca2b92131842970c2a48542aebcb699915283b33ed9212648e3bcefb"
+    },
+    {
+      "path": "assets/electronic_balance.jpg",
+      "sha256": "4033a978f7e680fedc7b5ba55ceaaa4fb2bf9401b0292cc5c1d9e089392027a4"
+    },
+    {
+      "path": "assets/electronic_balance.jpg.attrib.json",
+      "sha256": "44b108422cee27525d533cbd5e1e32b1b189ae0a2e16d30c7bf4484abe1e246e"
+    },
+    {
+      "path": "assets/element_category_map.svg",
+      "sha256": "3889f94b985d635bf51a230b6034b5a942db7330146c932fc4a6bc7ff8768161"
+    },
+    {
+      "path": "assets/em_spectrum_ladder.svg",
+      "sha256": "0a81f90c60ad61627ef5404e948a760fe63ed01cac9055050264ce3e8aed257c"
+    },
+    {
+      "path": "assets/entropy_trends.svg",
+      "sha256": "eb94d34d891ca408ae6dfa8319e9c5d7868ee6cd30aed7e457344d96737ec1e1"
+    },
+    {
+      "path": "assets/enzyme_lock_and_key.svg",
+      "sha256": "0ef3ed1e1e416c503ed16ac6be4014b30936a83c45d78ab4390a80a993aa4b8a"
+    },
+    {
+      "path": "assets/enzyme_lock_and_key.svg.attrib.json",
+      "sha256": "a113a67926c2ce4f3c57271f56e2b1abc05131e43a146d9dd35bcb3a0f586981"
+    },
+    {
+      "path": "assets/exo_endo_diagram.svg",
+      "sha256": "c5f731edd2f46a3f9fa17b40ef6b7a6bd89d404af7354315b783322c3e68cffc"
+    },
+    {
+      "path": "assets/fission_chain_reaction.svg",
+      "sha256": "a8f314bd8f66102b244722ae018e043d0cb29cd034fd5464a0808e60415bf759"
+    },
+    {
+      "path": "assets/formation_enthalpy_reference.svg",
+      "sha256": "04bed412e923b1b745447a10f9e9e4cc2eeea36bbb7fda5c42245627a5112c96"
+    },
+    {
+      "path": "assets/foundations-check/test2.png",
+      "sha256": "f78324a3d1694c16d07b199eeae7738382a488185cebfd4633a5929aba9da24f"
+    },
+    {
+      "path": "assets/free_energy_vs_reaction_progress.svg",
+      "sha256": "15ae7c4e7956c95f3b77d1213455e9c8fdd98efcc0aad4cf7de77023fb919de8"
+    },
+    {
+      "path": "assets/freezing_point_depression.svg",
+      "sha256": "b8655c524c530e63a9b596d3ad2a7c1bdb49c274b6d72628309f9267be276611"
+    },
+    {
+      "path": "assets/galvanic_cell_diagram.svg",
+      "sha256": "725ef683d608b48f88735055ec8f9329a8fda29a00d4610f5392d6bbfaee2184"
+    },
+    {
+      "path": "assets/galvanic_vs_electrolytic.svg",
+      "sha256": "2282f15c91bcdc8bd8731fde321d74edf84e5af5b1f38a57d5c64523827e71b8"
+    },
+    {
+      "path": "assets/gas_collected_over_water.svg",
+      "sha256": "6ba746f9d6372d033907db721c9ab206c93950fddf0d342ced630681eac2ff3a"
+    },
+    {
+      "path": "assets/gas_laws_panels.svg",
+      "sha256": "3e9cce37f3a810316e7e8ceb88fc4058921d6b5d9a46ad06b053d8b9e319233c"
+    },
+    {
+      "path": "assets/gas_stoichiometry_road_map.svg",
+      "sha256": "ca051e15402b7359c66a9a05047d27ebc2c1cb124adf8de47061a79376f662e4"
+    },
+    {
+      "path": "assets/geiger_marsden_expectation_result.svg",
+      "sha256": "7b19168f7a56caab59eae3267b379c713abdad75f610cf972d1d5896d34ff094"
+    },
+    {
+      "path": "assets/geiger_marsden_expectation_result.svg.attrib.json",
+      "sha256": "2ee6ad8111324ecebd7d897e7bca24d8aa2d8e104a15c569a2b27e27e20fb7bb"
+    },
+    {
+      "path": "assets/gibbs_temperature_crossover.svg",
+      "sha256": "ccb1c54fedec540b2f3ebf7dcacb557709a78a3e6b5c291c13276e61e2e5dea0"
+    },
+    {
+      "path": "assets/graduated_cylinder_meniscus.svg",
+      "sha256": "bc80550c5ee4e151f61a700da1d40349fec68eaedcd5e9658e0caf1e5f6ed37a"
+    },
+    {
+      "path": "assets/grahams_law_effusion.svg",
+      "sha256": "7ba9efdeb3338ac42d33e9380947a644fe6de08daa46aabca2c2b02133ab1661"
+    },
+    {
+      "path": "assets/hess_law_cycle.svg",
+      "sha256": "82248df778ead679a94fd5f148c7aa09f22ea587f346ee467f72b14b7f6e9740"
+    },
+    {
+      "path": "assets/hot_air_balloon.jpg",
+      "sha256": "513a5601d80d8076e105310658df87bd93eafcee00ed255734afc13fa49340bb"
+    },
+    {
+      "path": "assets/hot_air_balloon.jpg.attrib.json",
+      "sha256": "6983184f6d68eb36b519d3361e6a843278accc360e5fedd680995a48e774d44e"
+    },
+    {
+      "path": "assets/how_big_is_a_mole.svg",
+      "sha256": "efa9499b523b039a245df11489c0d09522ec234b2d2e921c1dd7935b1cd543ff"
+    },
+    {
+      "path": "assets/hydration_of_ions.svg",
+      "sha256": "53729469f30fa886766c2d0ac7e56c981ce79bee90751cd7382a4d32a7de3a62"
+    },
+    {
+      "path": "assets/hydride_boiling_points.svg",
+      "sha256": "72f26eadb5092c4d9e00946a9a67e9a02e44511d5c1dc0efd983e2dbea359ba3"
+    },
+    {
+      "path": "assets/hydrogen_lamp.jpg",
+      "sha256": "c0e5087c13bce9cd921e66a4ffc6d3d0d61601884d76edfd4c64af72694e0c30"
+    },
+    {
+      "path": "assets/hydrogen_lamp.jpg.attrib.json",
+      "sha256": "10e254fad0a59be0449adfa4caf950223e22a8412b10eabbd0cbc7022c6bd5c6"
+    },
+    {
+      "path": "assets/hydrohalic_acids_grid.svg",
+      "sha256": "e061356972a2db5d107540d7659d4a14e4d3df13de3db44b3e80d63dc5796d40"
+    },
+    {
+      "path": "assets/ice_melting.jpg",
+      "sha256": "07faf0af318484c92692845da061474bf96f44440290ff159a0756d22bbc60fd"
+    },
+    {
+      "path": "assets/ice_melting.jpg.attrib.json",
+      "sha256": "92d9b9d30904ae9b03fad8999b39b1904610dfceaf9aeb0a118b5aca1362fba6"
+    },
+    {
+      "path": "assets/indicator_ranges.svg",
+      "sha256": "49958296b3aa249cb3748bac2a94d689d4bf77fe45de7ab7b2fb9e8e9afe540f"
+    },
+    {
+      "path": "assets/ion_charges_by_group.svg",
+      "sha256": "c33ad18130ef53e29784d4461a47e1be964811689d13c2e93f29761184a8778f"
+    },
+    {
+      "path": "assets/ionic_formula_charge_balance.svg",
+      "sha256": "29100c15869fd16c84fcf1dcafcbb747e51757ff23f072a53bfe8623c11212fb"
+    },
+    {
+      "path": "assets/ionic_vs_covalent_bond.svg",
+      "sha256": "86f01f8ff25271d20e8edb0011dab52d362f9b52a613679cb9495e14cfe8b420"
+    },
+    {
+      "path": "assets/ionization_energy_trend.svg",
+      "sha256": "f5fc9256e361614d2419bf58ba0a6ec0a299d45cc9bd56be413ffbae479042ae"
+    },
+    {
+      "path": "assets/isoelectronic_radius_series.svg",
+      "sha256": "21d0073b8c3eba724dce852760d06b4526d4af2994d5d1500470fa03c7f99fed"
+    },
+    {
+      "path": "assets/isotope_notation.svg",
+      "sha256": "862ccd760ea5ab0265207dfec55e7da3d3169f9f77f957ee649d0460a512fc99"
+    },
+    {
+      "path": "assets/k_magnitude_schematic.svg",
+      "sha256": "e819c0ef4e7e43879acdde086718b0ba4bf67cf97a8ff9b44829f8c3117ad825"
+    },
+    {
+      "path": "assets/kmt_explains_gas_laws.svg",
+      "sha256": "8b203bb3c27505a5d432963e1ff75ac2d609dd7641fb5d72f8258d5e0096a9e8"
+    },
+    {
+      "path": "assets/lab_balance.jpg",
+      "sha256": "cc33b0eb964338de2f010db91451107e58f9d01bb0baa6766552a7e29a591beb"
+    },
+    {
+      "path": "assets/lab_balance.jpg.attrib.json",
+      "sha256": "51909105f013a121927cdded1ea4ecd8f2b884956012a8900ce6591dc31d93ad"
+    },
+    {
+      "path": "assets/le_chatelier_concentration_shift.svg",
+      "sha256": "83d2038483c3c3a1cab43417df4d5a6e7809edaf3891a8bd6347f3a5882a055f"
+    },
+    {
+      "path": "assets/le_chatelier_pressure.svg",
+      "sha256": "1589401f42d31d3aa7987bb4f0f4dcbd6ffa08d1a25b4a0ae4c1b0022c3d29eb"
+    },
+    {
+      "path": "assets/lewis_acid_base.svg",
+      "sha256": "669156c9edbc486caac601ea19eebfd0c5cf8aecfb96b310a9d913b58c3b62b0"
+    },
+    {
+      "path": "assets/lewis_and_resonance.svg",
+      "sha256": "36e00290caf51568a54c180d35ef00831af0f7b2618be9e2c6d129425259b793"
+    },
+    {
+      "path": "assets/lewis_dot_symbols.svg",
+      "sha256": "744e51673870257092ea321ca41c79658753e91305d325edece03533287df433"
+    },
+    {
+      "path": "assets/lewis_structure_steps.svg",
+      "sha256": "d55775cc7dfc8aa47d136f9cb244ef865266a6b0e1073a8b95a5d194b7d1fa0c"
+    },
+    {
+      "path": "assets/like_dissolves_like.svg",
+      "sha256": "4526284aad9e23b225d276ae23d9f25e360c921a0df381af08bb43c5d5f08c06"
+    },
+    {
+      "path": "assets/limiting_reagent_bar.svg",
+      "sha256": "cc170f185a5e02506d27dc11b4595b34a5948aba1b69659c793659188cc6eeb3"
+    },
+    {
+      "path": "assets/limiting_reagent_concept.svg",
+      "sha256": "db2a83f29540a1ae22be5b74ce09597046071486a03483da9112cf5ae7cea6f1"
+    },
+    {
+      "path": "assets/litmus_paper_test.jpg",
+      "sha256": "1b576b5ca54d13ad64ad50933e920bf1d10438f1ea02f52eae52c98b4a42606b"
+    },
+    {
+      "path": "assets/litmus_paper_test.jpg.attrib.json",
+      "sha256": "0c7ffdfac84d7f37c81516360cb55fdbf9c67d456fe5d328d1a8757db595a37f"
+    },
+    {
+      "path": "assets/magnesium_burning.jpg",
+      "sha256": "dbeceeb4f8768374cedb266c6d530ee60b5eedfd256e94fb2504ad56ff87465e"
+    },
+    {
+      "path": "assets/magnesium_burning.jpg.attrib.json",
+      "sha256": "39f7ee7bb46fd03441e9d80716cdb482bbf25b5b4c5e6efb17c01176f332f701"
+    },
+    {
+      "path": "assets/matter_classification_tree.svg",
+      "sha256": "314fc72bda14c8d6cf7747d7dc6690e853028eacec0863f8796fe26e89f26147"
+    },
+    {
+      "path": "assets/microstates_distribution.svg",
+      "sha256": "50aefc3e9568cb5345eb11061c429d69fd509932eae29ccd7c0eae431772334f"
+    },
+    {
+      "path": "assets/mole_conversion_triangle.svg",
+      "sha256": "317a6cda55087263f85e14b59dee81e61b9c0e25e08a7ec48a802357d0928e53"
+    },
+    {
+      "path": "assets/molecular_speed_distribution.svg",
+      "sha256": "ad96bfe72e9424a6e6176a2147a01a7bd4b7e039306e4dbca5b952473d18ccc6"
+    },
+    {
+      "path": "assets/nacl_ionic_lattice.png",
+      "sha256": "f3e2e11f22adb4649aa79a0b52bffb7b7d8a417ecdae769a496439560292b1bb"
+    },
+    {
+      "path": "assets/nacl_ionic_lattice.png.attrib.json",
+      "sha256": "2245d81325a83ea7bc2061582948751a369a12cc272e31581bd88b17d3416c7e"
+    },
+    {
+      "path": "assets/nacl_salt.jpg",
+      "sha256": "60186831408f4fc146b3f5b005509dc19ac0ca2a1343866dcef12e49362645fe"
+    },
+    {
+      "path": "assets/nacl_salt.jpg.attrib.json",
+      "sha256": "9874350dc42b39fe31d93ecfee6b2938716f1034c14adf65901cf770134f3f38"
+    },
+    {
+      "path": "assets/naming_decision_tree.svg",
+      "sha256": "ff05a6860eaf552a967d030e638ac4c3452f699aa935ca7fe086ea55e72d6b18"
+    },
+    {
+      "path": "assets/nernst_concentration_cell.svg",
+      "sha256": "ba14c115a5ba19011f320d3c4de30ec2c57a5695f99e6c198b814b72ab914765"
+    },
+    {
+      "path": "assets/no2_n2o4_equilibrium.jpg",
+      "sha256": "f1f9e756730088ff2486d2c17f800265aa0ca491c315b69554803fd9fa3bc8eb"
+    },
+    {
+      "path": "assets/no2_n2o4_equilibrium.jpg.attrib.json",
+      "sha256": "14a34f6b78d86090aab2a3d534afc4dd2d25cf5fba85a2498556345d864b8703"
+    },
+    {
+      "path": "assets/nuclear_power_plant.jpg",
+      "sha256": "41165bc16a063a43a147cd9d87aebd7568a63772a14aeb00a2c71d03d090be7b"
+    },
+    {
+      "path": "assets/nuclear_power_plant.jpg.attrib.json",
+      "sha256": "692f33572efc04a2b4ed7f53b0c775190755310d64ec5bd5e57952f374ab5ec9"
+    },
+    {
+      "path": "assets/octet_exceptions.svg",
+      "sha256": "c8f5309931903781194cecdfb2f5a5a9b251fcf42b047b6deb39e8d582e833e1"
+    },
+    {
+      "path": "assets/orbit_vs_orbital.svg",
+      "sha256": "c57bd435b37010599e9f1daf31d430641d26fc6b9aa64318ad6099f0199b8481"
+    },
+    {
+      "path": "assets/orbital_filling_h_to_ne.svg",
+      "sha256": "24ae0d472c895d86910d8d669ec9a98de7ec52e0087dce224beffcf2f3028198"
+    },
+    {
+      "path": "assets/orbital_shapes.svg",
+      "sha256": "b5b54fe950757339236fb5414b4689c2c6505eb69ceef1a6fc832b8949560ab3"
+    },
+    {
+      "path": "assets/osmosis_semipermeable.svg",
+      "sha256": "c9723b76b8af0b7ace47bed9e27629ed2475b9f469704911db844fa58f4f97b0"
+    },
+    {
+      "path": "assets/oxidation_number_line.svg",
+      "sha256": "accb21ef79d6b9936f7354f32b0e15728a1fdcc700473751d05f34e7e82689e1"
+    },
+    {
+      "path": "assets/oxide_character_period3.svg",
+      "sha256": "add37409940da8dbd89f21ceaa715d71aa5504a892cc1da162a46fe4434c756a"
+    },
+    {
+      "path": "assets/oxoacid_strength_trend.svg",
+      "sha256": "7deffc6bf9fbd59a9f006a4c934631d655542204a333a8fd6043019fa1d69c3f"
+    },
+    {
+      "path": "assets/percent_composition_water.svg",
+      "sha256": "c3e5b7cc69f4717a5f3ad38895401b8d71eea07c257ed8bcf86c10e1c8cb6d5a"
+    },
+    {
+      "path": "assets/periodic_table_overview.svg",
+      "sha256": "58bc348584b8f42c452a8bd3661f3e6bf81ba811e579547e4d19aa3395338293"
+    },
+    {
+      "path": "assets/periodic_trend_map.svg",
+      "sha256": "8f476ab58681339b1d32565c519c079fcb4f6b3cf7ab1039ddab08ea09fea162"
+    },
+    {
+      "path": "assets/ph_scale.svg",
+      "sha256": "5a187f7d1be92f8dfaa67f4d6be8fbd4a4ed4385e31efd11589387d385b99101"
+    },
+    {
+      "path": "assets/photoelectric_effect.svg",
+      "sha256": "254d6b1e0c230373691096fcfad4caebd80d7e00d1c00c4dddbd702122e4707e"
+    },
+    {
+      "path": "assets/polar_nonpolar_molecules.svg",
+      "sha256": "c1212f48ac18938eb03dc1407e5bdb065a4c26978665164277e89b8aa9eae85a"
+    },
+    {
+      "path": "assets/potential_energy_profile.svg",
+      "sha256": "a4ed9b6335eaf4b98db4013fe7d29acc8eccb5304004d5e6ce35979b51ac4e58"
+    },
+    {
+      "path": "assets/precipitation_reaction.svg",
+      "sha256": "92e91ac1576261db4fe7e2d2f9159a2def936db6b3cdb92444af152013e229a5"
+    },
+    {
+      "path": "assets/pressure_and_barometer.svg",
+      "sha256": "73d95d273259dd9cba4570a537cbdff07404d35e5c5b635e5c5603bbb78a95d8"
+    },
+    {
+      "path": "assets/q_versus_k.svg",
+      "sha256": "f3e9a0d1d71841b73732c7823db1998624b01e895f47a1d339aba60618088ab5"
+    },
+    {
+      "path": "assets/quartz_crystal.jpg",
+      "sha256": "95d22a69f05ff8fe9793cfdcf01f85b75446054d3cd26924e2f5594ed7d1e79b"
+    },
+    {
+      "path": "assets/quartz_crystal.jpg.attrib.json",
+      "sha256": "afb24c4723b43adc90c52196807ad19270a0707382fb2a02b2090b59a4f65409"
+    },
+    {
+      "path": "assets/radiation_types.svg",
+      "sha256": "19c9c32d84b1063c1103b2c9a5a5df06fc41fdc97fe582a4278258a1353a71e6"
+    },
+    {
+      "path": "assets/raoults_law.svg",
+      "sha256": "dd8dd11cba7c735ec90995df527870dd0ecd7faf80a09941f43acb2d0a413656"
+    },
+    {
+      "path": "assets/reaction_order_half_lives.svg",
+      "sha256": "93aaca49ea348843f4c5fc90d4cf1bf070b52e9468cf7167b91a84214babf735"
+    },
+    {
+      "path": "assets/reaction_order_linearization.svg",
+      "sha256": "c92e729f09ce461c3dd3b177694e4eb1c1c6dbf5b77fb0b8185c3790f2b68654"
+    },
+    {
+      "path": "assets/real_gas_deviation.svg",
+      "sha256": "7af6946b0d20cb6a66cdae36a56f4d27925820a0ce0b1946c765ef98b456a5d6"
+    },
+    {
+      "path": "assets/red_cabbage_indicator.jpg",
+      "sha256": "35a6763b91f72bff3ab9cee1cfc02293e0c43659d8400a946bfd2a249bb0c634"
+    },
+    {
+      "path": "assets/red_cabbage_indicator.jpg.attrib.json",
+      "sha256": "95d4c90f49d36fb46239faddb6b9b97fb795c1713bdfd24fc2c72821b40f8705"
+    },
+    {
+      "path": "assets/redox_electron_transfer.svg",
+      "sha256": "2cfa004f07b79f897460581123d15265e3326b7d6f16a3e641279c17bd9d99f5"
+    },
+    {
+      "path": "assets/reduction_potential_series.svg",
+      "sha256": "aa7da1aaa9f9cc152d6504d9c60905cbafda9a11933aa43960b8d3783be08fc4"
+    },
+    {
+      "path": "assets/rock_salt_deicing.jpg",
+      "sha256": "b424163f10ddf5601d57e79aa80a77fa7a0fe247c9d5ea81de6d2f8199eee76c"
+    },
+    {
+      "path": "assets/rock_salt_deicing.jpg.attrib.json",
+      "sha256": "f8b63f5276b6c4e368ce869364d693ffa96fd62260089e5dcf4fac8ccf6983cd"
+    },
+    {
+      "path": "assets/rust_corrosion.jpg",
+      "sha256": "90f4a80344b14c0e4ee8999360cba1d4b8cfddc3e062aff573578cbb2b48b79c"
+    },
+    {
+      "path": "assets/rust_corrosion.jpg.attrib.json",
+      "sha256": "1d6387ed06c805489df427b930a2dd055541e2ddcd26f4eb03c790980d5cb934"
+    },
+    {
+      "path": "assets/si_prefix_ladder.svg",
+      "sha256": "e6bc68199e0da09d44d4a3eaed09ac84461984bcdbbbb4f19b39c25b7e4f43d8"
+    },
+    {
+      "path": "assets/sigma_pi_bonds.svg",
+      "sha256": "15ecfab51e76dd101a876954dee4fe24b179db7891f2a28f45561db183675846"
+    },
+    {
+      "path": "assets/sign_conventions_q_w.svg",
+      "sha256": "299a7c73a7f09de5926c686c7de38f50e5cb0d5e07fe0be69b556177fb5c45d9"
+    },
+    {
+      "path": "assets/silver_chloride_precipitate.jpg",
+      "sha256": "f336c43f176add98f7b9e14b31e813e1e9f19d213d064bb468195f3d39fe535d"
+    },
+    {
+      "path": "assets/silver_chloride_precipitate.jpg.attrib.json",
+      "sha256": "c7f79824ea550a29a177c7c7a50031f765e917208c2cc62d3406158373ffddb8"
+    },
+    {
+      "path": "assets/small_x_validity.svg",
+      "sha256": "7b704ebd7d9efce26065d5bef63b0cb0a64b88e43527e82100089532f3c91819"
+    },
+    {
+      "path": "assets/sodium_water.png",
+      "sha256": "9dc92ad6de5f219a1f10efffafb445ceb9fbb99bce5da99c7431399d86990f7a"
+    },
+    {
+      "path": "assets/sodium_water.png.attrib.json",
+      "sha256": "d653cc3068ef1ea77ae640edb643cb730c1a4e40e39f719f1383be79bf679a0b"
+    },
+    {
+      "path": "assets/solubility_temperature_pressure.svg",
+      "sha256": "c1b59411441e8f4210649b13a4abbc8a2ef566270ee7ff9bfe63fdb07ffc4ca5"
+    },
+    {
+      "path": "assets/solution_energetics.svg",
+      "sha256": "1688ecdab8cfc9765bb1266792b49bcaba99687781f736242fbe9aa3821fb1bb"
+    },
+    {
+      "path": "assets/sp3_promotion_mixing.svg",
+      "sha256": "00b3ee70cb0203d23bca837f1ada3673a68b421bd5ddc9caf948ba10913cd9a4"
+    },
+    {
+      "path": "assets/specific_heat_comparison.svg",
+      "sha256": "b40dae875154c6bbdafcc376b0fd9167b6cfe94434a2c05c5d323682f82267f7"
+    },
+    {
+      "path": "assets/spontaneity_quadrants.svg",
+      "sha256": "f3d09be99f9c3246eb22b140a31c7a6580c5580862ab4829f57c0ccccf3467bc"
+    },
+    {
+      "path": "assets/standing_wave_orbit.svg",
+      "sha256": "4dea414d9bd4171603f0096f57d1a591a77209d786f8077dde0cd5fdc9987362"
+    },
+    {
+      "path": "assets/states_of_matter.svg",
+      "sha256": "34fdfd61958930d8bcd4164afc552d34e64c18944885c47946cb3b229b06f3ce"
+    },
+    {
+      "path": "assets/stoichiometry_road_map.svg",
+      "sha256": "540a4c86a6647c40020fd00ce20b85ebcf99d13d60aae9c83319821c4c2eb33b"
+    },
+    {
+      "path": "assets/strong_vs_weak_ionization.svg",
+      "sha256": "f24ce90e748d59646ba36c9c5bd6c9d3c4130060ef9731c1f998fc6c05b69c83"
+    },
+    {
+      "path": "assets/subatomic_particle_masses.svg",
+      "sha256": "4b8cb00d48ad98505328e07b7f34fbbb17127682a1219b7fd5bc82a50251f9e3"
+    },
+    {
+      "path": "assets/successive_ionization_energies.svg",
+      "sha256": "a26f1ccdd4afaf6ae4a1751dc6c449fc7af5f408504d25981d3ae3e12e9fa4d3"
+    },
+    {
+      "path": "assets/sugar_crystals.jpg",
+      "sha256": "7719401140f4b6791c4ae4e9c8f4b0be331ebbc639d7c695d43c69d891823abe"
+    },
+    {
+      "path": "assets/sugar_crystals.jpg.attrib.json",
+      "sha256": "8ff11bddf9dfb9074c42df3849b7b173972c591ff2ddb10c992286ed427c0df8"
+    },
+    {
+      "path": "assets/system_and_surroundings.svg",
+      "sha256": "f326b80d52d0b38c566c969c92dba10e27072db71d74e7c27463531e6570b3d4"
+    },
+    {
+      "path": "assets/the_sun.jpg",
+      "sha256": "5aef0e89e7b542dda395e671e787d8ebdd92701e6b90292bce9f31c796e5a369"
+    },
+    {
+      "path": "assets/the_sun.jpg.attrib.json",
+      "sha256": "9c374c84e555a806a082f8b98757cf1b56f34785a6eada4bfa29085c7392d7c8"
+    },
+    {
+      "path": "assets/theoretical_vs_actual_yield.svg",
+      "sha256": "451905417ad01d9809349d59940e7d326f63c04fef6801d1158eda8d6f11c331"
+    },
+    {
+      "path": "assets/titration_curves.svg",
+      "sha256": "03e82f0bbf1fd6b16b56f61cdbda80fcc6028d9cf80c180816fd3b09344b5b34"
+    },
+    {
+      "path": "assets/titration_endpoint.jpg",
+      "sha256": "da22f4fda5ff449d77412b6f877a4702133e4b796cf5d20b73fc6569dc623ff2"
+    },
+    {
+      "path": "assets/titration_endpoint.jpg.attrib.json",
+      "sha256": "05d4177ab98325a2d858098c8f5c6dcecf74675d79c922135aa7ca0681603226"
+    },
+    {
+      "path": "assets/titration_setup.svg",
+      "sha256": "028b755cd31ba90c2e3c5fa6ddd91c8aaeca62e430908e2b0e122143edc72562"
+    },
+    {
+      "path": "assets/two_calorimeters.svg",
+      "sha256": "d4c56e227d9b8b60c35b35fb09e35ef11b5f285c8ec6eac3d5c911cc4dc997b8"
+    },
+    {
+      "path": "assets/vapor_pressure_diethyl_ether.svg",
+      "sha256": "6c437d5b2c392e40aa46e3ee8bf9adc265020f388bcb1e6e24c50ed5666fc750"
+    },
+    {
+      "path": "assets/vb_potential_energy.svg",
+      "sha256": "fbdcb8683ba2267fcae2b3e047223863c823e03a121132139ff23adfa5f6235a"
+    },
+    {
+      "path": "assets/vsepr_no_lone_pairs.svg",
+      "sha256": "b24a45c1c3ee44c683526eac3f363a3c5c7ec26794d874895b5cca10acb4c046"
+    },
+    {
+      "path": "assets/vsepr_procedure.svg",
+      "sha256": "c92a4a367b072c468b2ba48b4ce18786825a17ed8011040a09f3cfb0c9a748c7"
+    },
+    {
+      "path": "assets/vsepr_with_lone_pairs.svg",
+      "sha256": "36686755e95480c79a0e1adbd723d568809bbe4f6ae5501c75ab16ed33edf673"
+    },
+    {
+      "path": "assets/water_phase_diagram.svg",
+      "sha256": "b76124d217d00eb3df82efef0fe73c534d0662797f9124a56f46c62e5d44395b"
+    },
+    {
+      "path": "assets/water_strider_surface_tension.jpg",
+      "sha256": "e34d20a69e574a4e4b41322fd7ef72d4e13a8fcef124a7ca580ce893413ff863"
+    },
+    {
+      "path": "assets/water_strider_surface_tension.jpg.attrib.json",
+      "sha256": "78a76c8a97c4a98615b63c169bfd3b3b0f539e1324a2e3630c626cfcc6a08261"
+    },
+    {
+      "path": "index.html",
+      "sha256": "9030cd99b72fef2dbb3dc910c5f4f76599010382125d990b4d619c92810a6acc"
+    },
+    {
+      "path": "provenance/coursewerk/CHECKED.json",
+      "sha256": "c69c896b64991d9ab498c4957c9978bff90f1090f2bf735cdd687fcd2a03c6dc"
+    }
+  ],
+  "baseUrl": "https://fishdream25.github.io/general-chemistry-eui2rv/",
+  "carriers": {
+    "md": {
+      "version": "1.1.0"
+    },
+    "slides": {
+      "version": "1.1.0"
+    }
+  },
+  "config": {
+    "sha256": "edf07aa5cc3ca83e1a269588acc167d7daf2c3a19cc119bfe8caf7229aed9b2d"
+  },
+  "documents": [
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "c303f3485f00894f45994cb8408bd1c9cf82c0ea106f2aa0059d1b83318a66e8",
+      "kind": "md",
+      "output": "assessment-support/acid-base-equilibria.md.html",
+      "outputSha256": "58743ad5f95c723ce976d772b93e4f23575350622cf2234ea2b7b313071a99e4",
+      "path": "assessment-support/acid-base-equilibria.md",
+      "sha256": "bf46bd1b8620b3b2b2a7366827223fd5528155e0a3065053e22d6d7c85f65952",
+      "title": "Chapter 16 Assessment Guide: Acid-Base Equilibria and Solubility Equilibria"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "4ce8d002970fb7f1cdebd68ac68c671a395594632f31dbd7b96a9aadef5ac2bd",
+      "kind": "md",
+      "output": "assessment-support/acids-and-bases.md.html",
+      "outputSha256": "14011100b6af51f34f70e8d5d37d583f36d01da9d7cade8ba4f182a4f424d61e",
+      "path": "assessment-support/acids-and-bases.md",
+      "sha256": "7d28ef7efbdb5380a37bf5d6fae9b9bf9485f061a3869a26919df811952358e4",
+      "title": "Chapter 15 Assessment Guide: Acids and Bases"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "c6965ec0331b813ad597cd54c8954d31dd383e2822c9c5edcb927ae8c132baa2",
+      "kind": "md",
+      "output": "assessment-support/aqueous-reactions.md.html",
+      "outputSha256": "28f227fa49831c5b5cbb13addaaee310cb45952ed92dc10fcb444d046ee9459e",
+      "path": "assessment-support/aqueous-reactions.md",
+      "sha256": "3bb578666e89d137132154683ec9d7b4edaccbcc84c628785662130c38c4143a",
+      "title": "Chapter 4 Assessment Guide: Reactions in Aqueous Solutions"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "901aff70784a716be7c9f3921df59c5a68eec2527dbd028bf6a7f15423e2b65b",
+      "kind": "md",
+      "output": "assessment-support/atoms-molecules-ions.md.html",
+      "outputSha256": "d87369433a4f2dd65ccaf5709771070c974ef9848b6c4b7494e0a4aaa1d3400d",
+      "path": "assessment-support/atoms-molecules-ions.md",
+      "sha256": "98d023fed3366e83817d76b3abde7b5408b2bfbe390e4bee2566fba4fe3d58f1",
+      "title": "Chapter 2 Assessment Guide: Atoms, Molecules, and Ions"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "2b91b348a14dc7bacc80587a01feccda083c8aaa923bf6d5f56762c14bf756d7",
+      "kind": "md",
+      "output": "assessment-support/chemical-bonding.md.html",
+      "outputSha256": "6fba43d553e601d540e4e8f97329663982135aeff46649af16ab2e94b34d6430",
+      "path": "assessment-support/chemical-bonding.md",
+      "sha256": "ac84aa4320b335dd43a1195346d0595ce24637cf25ea0f02be9360c93695404d",
+      "title": "Chapter 9 Assessment Guide: Chemical Bonding — Basic Concepts"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "f8a26e69e440b246e308e4b547b3568e9c71af036c432e0ba085eeba4d00bd97",
+      "kind": "md",
+      "output": "assessment-support/chemical-equilibrium.md.html",
+      "outputSha256": "f7d6de82041b85834c7827e460a775ca71bcf023acc06b814ed22cd10c9ae0a2",
+      "path": "assessment-support/chemical-equilibrium.md",
+      "sha256": "570b04bc0f098d2e320f03db752d8c452be824388ccfdf4cd9e493a46ea6f2a2",
+      "title": "Chapter 14 Assessment Guide: Chemical Equilibrium"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "c77603fb4ef3197534bb7df55e83b9bc56b5e894c4731f2a60a3084356915d3e",
+      "kind": "md",
+      "output": "assessment-support/chemical-kinetics.md.html",
+      "outputSha256": "b8d621e602da6ddd301d8201d8595f4085f55fab99bd30fd576f8cf08d6a1e49",
+      "path": "assessment-support/chemical-kinetics.md",
+      "sha256": "901a6098cb22386d91c1e57e536bbc911e65c2d532eb605a138b3c50e0849a65",
+      "title": "Chapter 13 Assessment Guide: Chemical Kinetics"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "3fdd272588c8b3d066a65ca516963b1b42119332a6fb818a36feaf606f6cd4b7",
+      "kind": "md",
+      "output": "assessment-support/electrochemistry.md.html",
+      "outputSha256": "fcf62663f11463bb1ad3ef592ee6c1a68ea962d2cf159712e6229c9a19346814",
+      "path": "assessment-support/electrochemistry.md",
+      "sha256": "906ae9908586a41b359d27429bf8bd7dc454d8da35c8e2f14fd330ff2ab8741b",
+      "title": "Chapter 18 Assessment Guide: Redox Reactions and Electrochemistry"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "4748b5c0ece3540cad9638db63ff4ace4a6b3c06be44b21ea28be24af1673b29",
+      "kind": "md",
+      "output": "assessment-support/gases.md.html",
+      "outputSha256": "d17b6d8883b930a947d5844c181383a9f92b31e67215af636612ad90c4b01930",
+      "path": "assessment-support/gases.md",
+      "sha256": "9284aec31f7cb49685afdcc43ecfd973a802746bf522e4af9fedb3c2cfda8246",
+      "title": "Chapter 5 Assessment Guide: Gases"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "0f5233696008e62e9d15cda713bbeb716d30ba11abef6ebcd672829c471b1f47",
+      "kind": "md",
+      "output": "assessment-support/intermolecular-forces.md.html",
+      "outputSha256": "b97b25b04dd11c4baae7dd0e92e54baadf370def1aa2a54a21c66ac31281db85",
+      "path": "assessment-support/intermolecular-forces.md",
+      "sha256": "df19353b74269c137e8ddfe1c78ddaf6837636400c3b9c32e555863734da31e4",
+      "title": "Chapter 11 Assessment Guide: Intermolecular Forces, Liquids, and Solids"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "f51a3ba7a0251be10363260e374c66d25eb4a56669cfcba3efefdf60e58ab5f3",
+      "kind": "md",
+      "output": "assessment-support/introduction.md.html",
+      "outputSha256": "4528d94ef71030410ed0bfc211047271b4c786a5eb1ecdedc6a7ec64611d4435",
+      "path": "assessment-support/introduction.md",
+      "sha256": "e32217b861521b7abf69aaec41017f4c27bf11456705e1948e84f0710388bdb3",
+      "title": "Chapter 1 Assessment Guide: Introduction to Chemistry"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "f7a9505798dcda61ca55274678fae0660fcebd5d868496bebe733b24df68aba4",
+      "kind": "md",
+      "output": "assessment-support/molecular-geometry.md.html",
+      "outputSha256": "838de532e18160e8c04df1bdf12a6d5fbd9b35794eecc7164e3aabff8641b451",
+      "path": "assessment-support/molecular-geometry.md",
+      "sha256": "08a552e0019652759bbda337c8953bb22109aaf2bbc3665a86d23680a3cbf135",
+      "title": "Chapter 10 Assessment Guide: Molecular Geometry and Bonding Theories"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "2b869b9f6019a08ddcca3e62246f866ac5bc44c3dc9b7df6d988961c913e2bb1",
+      "kind": "md",
+      "output": "assessment-support/nuclear-chemistry.md.html",
+      "outputSha256": "e21bee6614681de0d63111e9638a3effa557b986ddb186b0e96c99a92e5918f1",
+      "path": "assessment-support/nuclear-chemistry.md",
+      "sha256": "dcdb5ac3c40aa9dbc126cd2cefcbbd5b3a01b0f773ee56c1ee3b7af12b1d10f8",
+      "title": "Chapter 19 Assessment Guide: Nuclear Chemistry"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "a2a00d9911ec5a281462a9589d860994aa2bc20526aa4ed03a77e7f5ef5edf68",
+      "kind": "md",
+      "output": "assessment-support/periodic-table.md.html",
+      "outputSha256": "e8f1177b5bba7c8764b3b7df37e791755d886e076533838d0d435f847738811d",
+      "path": "assessment-support/periodic-table.md",
+      "sha256": "1dff07b4a7903801a35e9c6ea5adb57fbaad6651a8d35cab6ff169303dfb2800",
+      "title": "Chapter 8 Assessment Guide: Periodic Relationships Among the Elements"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "d9de7b4453174953f100fa519fa198224aff2b78ddb03605e73e436131529bd6",
+      "kind": "md",
+      "output": "assessment-support/quantum-theory.md.html",
+      "outputSha256": "8a86f025ee9cbe285c3a8761131359f216425a9123f95a83851c7e9ed9691148",
+      "path": "assessment-support/quantum-theory.md",
+      "sha256": "9c7d7abf9722296c0b6a4ce231d2a46ca7a3de9303edd6dffc94f0309731554e",
+      "title": "Chapter 7 Assessment Guide: The Electronic Structure of Atoms"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "d6c9a948e747a4330943af6d65db64ab0cd85eedba2874565e8cb11119f7db30",
+      "kind": "md",
+      "output": "assessment-support/solutions.md.html",
+      "outputSha256": "b3712448c441490dcdfccd344f4727677559130f709c8324a45513bafa486992",
+      "path": "assessment-support/solutions.md",
+      "sha256": "a1060948fdce54845106b121f92f790041c51a028552c6b6eb99d6c5b3079575",
+      "title": "Chapter 12 Assessment Guide: Physical Properties of Solutions"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "35abef03ca88f7bf6e7fffa068dc4469080e68c25334d584e41edd8bd25ab345",
+      "kind": "md",
+      "output": "assessment-support/stoichiometry.md.html",
+      "outputSha256": "e54f0849f34a9f3e1a4d1f10333f6290170be50cf5ca62ea3d05da3f48ac4123",
+      "path": "assessment-support/stoichiometry.md",
+      "sha256": "d4a68d2b2d5757b7851e2f3c4a2662a55912910067b0aef6e8ef94f89a056112",
+      "title": "Chapter 3 Assessment Guide: Stoichiometry"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "2c95e022c934d40167fefae6bbc7dd4e30c4d907aa91f31d2fa2a35bd62068bb",
+      "kind": "md",
+      "output": "assessment-support/thermochemistry.md.html",
+      "outputSha256": "2e283337d4e364444aefc235f6ae1b23a1bb843f17f94c6907e5fb8518c59fae",
+      "path": "assessment-support/thermochemistry.md",
+      "sha256": "a10acce41e315d3a5647c6c3ac1674fe82f3e733b80bb2268ee015068dbd3ea0",
+      "title": "Chapter 6 Assessment Guide: Energy Relationships in Chemical Reactions"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "0b2a00ab5762ea90e7541ef4f67a697e9025fd58793031f46c46db8679261194",
+      "kind": "md",
+      "output": "assessment-support/thermodynamics.md.html",
+      "outputSha256": "5fa7dfc544069b1458655fc6a1351313c053e24b19744c646d79e9d94872e2c9",
+      "path": "assessment-support/thermodynamics.md",
+      "sha256": "4910226032dcd3c9471270104fbe5b01ebeb8e499a651e596c66963ee9d0a75e",
+      "title": "Chapter 17 Assessment Guide: Entropy, Free Energy, and Equilibrium"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "029dd42d180da3426c93c765b18d4aed9d59ea3dd22976d0c576081a0460e253",
+      "kind": "md",
+      "output": "index.md.html",
+      "outputSha256": "791908d6248662d51db6b303e8b27048f3fddbf64486a2b2aa9ca0a01e1fe5ce",
+      "path": "index.md",
+      "sha256": "768e3096fa061f878c9541dea82fcb492626b0b1dcb70c7288a23c84c48392da",
+      "title": "General Chemistry"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "9fd3ebb0686be36ca04543589a8f63080332a777fdca5764a6ea8ea9de7ce103",
+      "kind": "md",
+      "output": "practice/acid-base-equilibria.md.html",
+      "outputSha256": "8f7d95ec64dc359d1e4a746100ca2160c1d32a0b4dd2f895070c2a58c1bab8cb",
+      "path": "practice/acid-base-equilibria.md",
+      "sha256": "d5011984f81d4a684fb62718868ba9c695c9d4ce13253b73b09ab7a4f14223e1",
+      "title": "Chapter 16 Practice: Acid-Base Equilibria and Solubility Equilibria"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "26abf953366a63f06481271f7e607b4866b0fae23eedb0719d0bf41572cd252f",
+      "kind": "md",
+      "output": "practice/acids-and-bases.md.html",
+      "outputSha256": "6380a544a0954ce9b9ca1727facb0dcde3fc9ec4b2b572e42c58e4fa3300a900",
+      "path": "practice/acids-and-bases.md",
+      "sha256": "c40196505ec2a107727c49015bf7f32fd0decbdaa4c5da47a2326e9848648e7b",
+      "title": "Chapter 15 Practice: Acids and Bases"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "8f7372ff67f1ded15a555c4ce6c097a3beaaeb3a70a08a0232caf8d112524fe6",
+      "kind": "md",
+      "output": "practice/aqueous-reactions.md.html",
+      "outputSha256": "8f1e8de0736da91c662b20c9603a2b489f6ac779fe4b83c23dabbe8399405164",
+      "path": "practice/aqueous-reactions.md",
+      "sha256": "041c983ea159a24a5ba1121bd15187612969aaeb76862c716b51151d35b35707",
+      "title": "Chapter 4 Practice: Reactions in Aqueous Solution"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "4a8a9535fa848881e3f24dfd5af045e37daee6afc2274b3c94cc293944d7b810",
+      "kind": "md",
+      "output": "practice/atoms-molecules-ions.md.html",
+      "outputSha256": "7a71a8bc69bc43a930eaae4df3a63258d336dca334def33089f5cea2e15ad798",
+      "path": "practice/atoms-molecules-ions.md",
+      "sha256": "16d2488bd945f27c03298c57b29505d32ebf3d41c6f1f6350d04785344114797",
+      "title": "Chapter 2 Practice: Atoms, Molecules, and Ions"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "01fc2afa5eec023d427142ade91ff3d5e127dddf55c3d97976c3c950f18859c0",
+      "kind": "md",
+      "output": "practice/chemical-bonding.md.html",
+      "outputSha256": "febbb8cc75b445966cc304d74828a57d061740bed43f03893cee4914dc124d2d",
+      "path": "practice/chemical-bonding.md",
+      "sha256": "75abb394e522d87f85392bb7bf5e81e903ad11f62add78a1f0163e3e3acd63b1",
+      "title": "Chapter 9 Practice: Chemical Bonding — The Covalent Bond"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "f30b2b4e25eb949d5ec2b5fe6c779a6dd94cf7d6378cd4c00bc50a926c7c0e20",
+      "kind": "md",
+      "output": "practice/chemical-equilibrium.md.html",
+      "outputSha256": "0017b5ee573cdc222f94de08bbec05509e8f059c3f23c1a436aa06283a0a1f17",
+      "path": "practice/chemical-equilibrium.md",
+      "sha256": "6777c0e9756212a76232707d8f43a43f5744f755fc65b8c268ee633a304202e4",
+      "title": "Chapter 14 Practice: Chemical Equilibrium"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "3861160f622cf18da5d1e2fe11ee74d91eb477079d4be73a75dd27eb43dc51af",
+      "kind": "md",
+      "output": "practice/chemical-kinetics.md.html",
+      "outputSha256": "233133011a1978712653e65872730e70f32698faa4b5b7c0e15b8a31ea4bd6a4",
+      "path": "practice/chemical-kinetics.md",
+      "sha256": "7f79875d91412996eebffa02b600951aabf94423b987dfb0c7a5ffa0b862c93e",
+      "title": "Chapter 13 Practice: Chemical Kinetics"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "e99d6696d31adf12d66c711ddb5882982aa399b8087a6c0afe87ccbc4dd23792",
+      "kind": "md",
+      "output": "practice/electrochemistry.md.html",
+      "outputSha256": "043003486cecd3b3c03adbef277f4814c109c379ff466f9f504d716ecb131561",
+      "path": "practice/electrochemistry.md",
+      "sha256": "0b8375d6bb33094e0fd7bb947e206aa65fd86fe34e58c8416cdecbe1609d2f42",
+      "title": "Chapter 18 Practice: Redox Reactions and Electrochemistry"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "9542ad79b501c458b5bca53de9424ba4ddf566b3649025fd804158b26ebbc91d",
+      "kind": "md",
+      "output": "practice/gases.md.html",
+      "outputSha256": "c43feaec6f84caee3d92606b305ed6be603987e42500d3e099877a497045a881",
+      "path": "practice/gases.md",
+      "sha256": "42323842371582736f9a2ced778af31d49faf2d14f87601d5f7f0d943e8fc64d",
+      "title": "Chapter 5 Practice: Gases"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "75893c73c8a63cbb9f80b9c08e3af310569942c95f08cddb1b9d028519ee6582",
+      "kind": "md",
+      "output": "practice/intermolecular-forces.md.html",
+      "outputSha256": "8ebc18729cbc25d7de2f051197327a21bdc9a96dbc26d4124530e4734c926e35",
+      "path": "practice/intermolecular-forces.md",
+      "sha256": "68a534febcdbcd4d42519e8ed062a7114aa08b16bc411ca480e6cc8bbe8bacc4",
+      "title": "Chapter 11 Practice: Intermolecular Forces, Liquids, and Solids"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "924e1551edeaf31a924e027438a28196683c90d4483cb29a43f0557e047bcabb",
+      "kind": "md",
+      "output": "practice/introduction.md.html",
+      "outputSha256": "1d315cec9986e428e7fb69f91a62db4aed87b1fb7aaa135af31f6b99d105578f",
+      "path": "practice/introduction.md",
+      "sha256": "3b7d856d320ed6b26260c0477017c1db1287742a6c813a738bbab9ac493a3c18",
+      "title": "Chapter 1 Practice: Introduction to Chemistry"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "b8a39ae5a3dff6f2c32e2d6d3e01137ee7b4be4b9f783230ea9619512073fa5f",
+      "kind": "md",
+      "output": "practice/molecular-geometry.md.html",
+      "outputSha256": "56fe3e5643f0e3df132307a684fb1b3d515ac9e800552330fb3227a1cc7b6db7",
+      "path": "practice/molecular-geometry.md",
+      "sha256": "7414da20e8e83bad25f0ee037258915be4a43c6c5e987fef51212d27af8af040",
+      "title": "Chapter 10 Practice: Molecular Geometry and Hybridization"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "e73bbb86f2b81fe3898c6cb1433bd01b670b489ad1f336e920409bb70b532887",
+      "kind": "md",
+      "output": "practice/nuclear-chemistry.md.html",
+      "outputSha256": "66df1655630b328db280b072de77f19f5417e30f78e718c7ce7e4829d858d767",
+      "path": "practice/nuclear-chemistry.md",
+      "sha256": "abe3aec9317576f377323e6531f6f6423e086251023f66292def4a2d293e0db3",
+      "title": "Chapter 19 Practice: Nuclear Chemistry"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "5417d0925429d906ec3f6fc68da31686ba7e9d7ff91cd10b2b2dd7fd9b84d77e",
+      "kind": "md",
+      "output": "practice/periodic-table.md.html",
+      "outputSha256": "ea3cb4ae5372ca16ca388c03f4c3de3c235db9ea81e027eae950c8b57e164cf2",
+      "path": "practice/periodic-table.md",
+      "sha256": "41b0a7c404293c5ef21f3e6bba8724cc6af07e54dd61b0f4ba484fa50a778ba0",
+      "title": "Chapter 8 Practice: The Periodic Table"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "eb14a38c4e03c35cc214b4aa110f0998d69e3dbb013490603aa34beeb6c844be",
+      "kind": "md",
+      "output": "practice/quantum-theory.md.html",
+      "outputSha256": "f2799157e4d3d1da064d05c96dc735b94c62ea0dda023b9342d5e19060cd4813",
+      "path": "practice/quantum-theory.md",
+      "sha256": "6bda552654437e08dab5c75830b8171171974d582054718c0670c2e0cc69713c",
+      "title": "Chapter 7 Practice: The Electronic Structure of Atoms"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "f9e7a79c090e4e6cd5e6ba9f82ddc575a05cc2c9d8fef0e2c83a3826ce298448",
+      "kind": "md",
+      "output": "practice/solutions.md.html",
+      "outputSha256": "a65f8e60388f3c54a59e224a3f5a8f6c1200dec267255d1865d450e62940fdc8",
+      "path": "practice/solutions.md",
+      "sha256": "1d9c47a1b1541d5052beabfb25107b4bd6bc408bfe33dcbc49331b21f4c201d6",
+      "title": "Chapter 12 Practice: Physical Properties of Solutions"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "1d9db07640b1ef2cb76655cd22066e8982f8f9e92b1fede8d18de01b5eda57ba",
+      "kind": "md",
+      "output": "practice/stoichiometry.md.html",
+      "outputSha256": "a64b68f47fc549c65f0eb6537522545bb596ee5f8c9c3a6879cfac703572be5f",
+      "path": "practice/stoichiometry.md",
+      "sha256": "9731c9c5c501d60e064e12dcbbda5a1dc8a2698b055d7f7c0ba2a3dbbc86355c",
+      "title": "Chapter 3 Practice: Stoichiometry"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "d94ce2df0bd05071371f9b62fdd33e46fd707f5d0ce03dfc8b826802e7ce70c1",
+      "kind": "md",
+      "output": "practice/thermochemistry.md.html",
+      "outputSha256": "d65a41ae4ae46595edebfbe602f69743f720aa91666c42533bfd42ff7f38626b",
+      "path": "practice/thermochemistry.md",
+      "sha256": "3473016933d25e80f5f541506bf91ffba71c4610635a96155d7649103ef7c0a5",
+      "title": "Chapter 6 Practice: Thermochemistry"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "3b82e2547def7215366fe7cd8f4d5a5142a8bf75d61edb6dec572e0138679738",
+      "kind": "md",
+      "output": "practice/thermodynamics.md.html",
+      "outputSha256": "369714023b8b8476984082ed11072ab4e9a22a4c88e6ac77b89b604762d87304",
+      "path": "practice/thermodynamics.md",
+      "sha256": "9802c0af6bc7c37c85685b7e3248a50a7488c9414bcb3e1b292c1b7d64793e30",
+      "title": "Chapter 17 Practice: Entropy, Free Energy, and Equilibrium"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "52b06cc51dec3a1dce68422d677a6484948ffa8224766e4321d1126a455262bf",
+      "kind": "md",
+      "output": "provenance/coursewerk/ATTRIBUTION.md.html",
+      "outputSha256": "1f3b7165e51f7d83b0606ba5afca72edc5e28b276c8f9392bf51ac3f357574ee",
+      "path": "provenance/coursewerk/ATTRIBUTION.md",
+      "sha256": "f02802155763f8287c5da643358c39ed624f87c4d77fa34f965685168b9915ee",
+      "title": "Attribution"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "f4a22090b1cf4efdbaaac821ad3fe086f3f368fcf66760b860183471fb3d618e",
+      "kind": "slides",
+      "output": "slides/acid-base-equilibria.slides.html",
+      "outputSha256": "fffd89e60efbc74f5aacdb814df04685016912f7ef65d845b69abd1e69e7f816",
+      "path": "slides/acid-base-equilibria.slides.md",
+      "sha256": "31262b59151797640379b8e54b042abab64695af78a96ad30ddf242759134b2c",
+      "title": "Chapter 16: Acid-Base Equilibria and Solubility Equilibria",
+      "uid": "doc-p0shf3h13ks4opnm"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "fd2798fedd1bf0102f2f5cf2e01d567699ece938af05b8876d0db1bf651c606b",
+      "kind": "slides",
+      "output": "slides/acids-and-bases.slides.html",
+      "outputSha256": "fb1b7fb0611feca98059092b96f833a6976a66ad48d5ef2ed5b7855cf6396a79",
+      "path": "slides/acids-and-bases.slides.md",
+      "sha256": "16373391250f6da050512fd8e93ade222f5a012d5678bb81b0f2b4d2727903e5",
+      "title": "Chapter 15: Acids and Bases",
+      "uid": "doc-vj5sqjpxidfbe5bf"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "32493697851a5ac743f36f87c592d5106bb3ee281840d9ac5ea1b4104efcf7f1",
+      "kind": "slides",
+      "output": "slides/aqueous-reactions.slides.html",
+      "outputSha256": "dff192ef26158fa4cf6d2b1d2a7064bbf9ba63fa12fb9e8b1c159eb4f5658497",
+      "path": "slides/aqueous-reactions.slides.md",
+      "sha256": "b273cd91231272b19e178c0bc1cb2907674143a349b8f5d2c0255f7d6c96aba3",
+      "title": "Chapter 4: Reactions in Aqueous Solutions",
+      "uid": "doc-s7x9y7bnc4575n1p"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "c59e10f8d7d30813a2aea306417572b6e94c56ac66c6030642269fbca9998625",
+      "kind": "slides",
+      "output": "slides/atoms-molecules-ions.slides.html",
+      "outputSha256": "123c103bf3af35a19dcd99d983abaff1a9c8b3ecb422508236306adaa156cf63",
+      "path": "slides/atoms-molecules-ions.slides.md",
+      "sha256": "911d81eb3bc57e2c520ad5325f63d6b07ee383a19cf308f64cc7fec9305c6327",
+      "title": "Chapter 2: Atoms, Molecules, and Ions",
+      "uid": "doc-tm68x747sy857p0o"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "44530b2fe4d19d6629ea9dfda4de378e22b8b8a2790be8f603a135cf476015c6",
+      "kind": "slides",
+      "output": "slides/chemical-bonding.slides.html",
+      "outputSha256": "4e814075fb8046f563ebe905f91605e94c705e28c165cc98aec67c40a776652e",
+      "path": "slides/chemical-bonding.slides.md",
+      "sha256": "96452ab8c60b24b850878dd36f2c286293090521d2078a2665956fbf4d8a361a",
+      "title": "Chapter 9: Chemical Bonding — Basic Concepts",
+      "uid": "doc-owjyxzbvnioq04dd"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "bf03b3873ba243248017f1ca45cb180554c8d1a6235b35415e71641c59a0a688",
+      "kind": "slides",
+      "output": "slides/chemical-equilibrium.slides.html",
+      "outputSha256": "9255de1dbb9a8fcdcba83c4aeaa74e03829d44ea49d9461cbe7b53762cdab1a5",
+      "path": "slides/chemical-equilibrium.slides.md",
+      "sha256": "f7a9b3031c777065e388b9bc8516f4fa1be685a4bb5c7e6105473444c52da29e",
+      "title": "Chapter 14: Chemical Equilibrium",
+      "uid": "doc-bq37i1j3e946jwhx"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "4e2900b2a52a6fb3b3b50fa57a1dde99aa6371e398ad5dd2c79ebf258a0e07c8",
+      "kind": "slides",
+      "output": "slides/chemical-kinetics.slides.html",
+      "outputSha256": "fa077c071060439a1a2362a21bec8cacd94b7d838b7858c6ecb3f413605b48ed",
+      "path": "slides/chemical-kinetics.slides.md",
+      "sha256": "7adf1896c82c1af4aaffdfe2288baccb48eed793948f605bdabb05d4842d2071",
+      "title": "Chapter 13: Chemical Kinetics",
+      "uid": "doc-tow95g4g8ubrkx67"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "e94c6ea80341f77dd21e81f606f099860fc136e3a07fb0e1ac890d6ce9582def",
+      "kind": "slides",
+      "output": "slides/electrochemistry.slides.html",
+      "outputSha256": "cb0c0122837405deec6ac0f16d482e22e9e61f709d297d8c70797987b14daa2c",
+      "path": "slides/electrochemistry.slides.md",
+      "sha256": "9577df01552d7ea11ece86df045728a160ae8da8276e0d97f06a03a78bc9efc9",
+      "title": "Chapter 18: Redox Reactions and Electrochemistry",
+      "uid": "doc-zgjm3jgnxwim590d"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "c875199c6f07e101585859c3b07b64b859744703dea2fccc731cc16857ee06f5",
+      "kind": "slides",
+      "output": "slides/gases.slides.html",
+      "outputSha256": "83966eceacab41dc73465fc4b89c9addcffa235f154f93d16324ad2a61a7ab74",
+      "path": "slides/gases.slides.md",
+      "sha256": "1dac87ba486c9fc1626ba47a84bcd7238d5b6a78072f05c71a13112ca6daaa89",
+      "title": "Chapter 5: Gases",
+      "uid": "doc-cjvn43y0cn7lrwes"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "e35d73a98d47b3eb2d8fd7b252e9876f418320e72382a3c9c7c5e2509ec08489",
+      "kind": "slides",
+      "output": "slides/intermolecular-forces.slides.html",
+      "outputSha256": "789c6a33d5d1d2595f16e4e267d78be33b763c1cfc64dc560cbb62e117faf711",
+      "path": "slides/intermolecular-forces.slides.md",
+      "sha256": "a87cd1f56c3492108a9324a4dee5d2ad965b938ef47b13ed97fe5641ed3a90f9",
+      "title": "Chapter 11: Intermolecular Forces, Liquids, and Solids",
+      "uid": "doc-a34cg029dytne24h"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "f9a5d6975b48d3a284d12845250ab311db88a6a16dc52be663b5058e8c0e6900",
+      "kind": "slides",
+      "output": "slides/introduction.slides.html",
+      "outputSha256": "82c914d025530eb177a6a8f0b5c58e73cea9e36d5988816fc667e3f0db927a78",
+      "path": "slides/introduction.slides.md",
+      "sha256": "44d30d4fb969243292bf9d5fb519fec8851ae0064045a0ec126131b274de3a45",
+      "title": "Chapter 1: Introduction to Chemistry",
+      "uid": "doc-p8u4csx04e24rnbb"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "d59bf0767a35ee027fdfe2fc79e75388d65eace238d9f072c9baf456d1f9d2d7",
+      "kind": "slides",
+      "output": "slides/molecular-geometry.slides.html",
+      "outputSha256": "b7f3798c3869d224b82555ce28f50ddc0a1dc266fada386d3b601e5daacbe019",
+      "path": "slides/molecular-geometry.slides.md",
+      "sha256": "7909dc0750d275c3c6652ac5b7cedf8b5bb14ec694ec8f1fb019508464e24c6a",
+      "title": "Chapter 10: Molecular Geometry and Bonding Theories",
+      "uid": "doc-2qsttdw3uzjyrgem"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "cf0d6e437ceeff7c6ae04c6b89f4dc03ae9e0c8dead96d16ce9a7b44c098ef20",
+      "kind": "slides",
+      "output": "slides/nuclear-chemistry.slides.html",
+      "outputSha256": "4c39b86b775fff642a92c4a765efc5b3f953e7b8e449c8a7cd03f317b5c1b9c3",
+      "path": "slides/nuclear-chemistry.slides.md",
+      "sha256": "366dadde6e16debddb2fbc5caabd37fc70703eb904c502e3bac8fde2b56331c8",
+      "title": "Chapter 19: Nuclear Chemistry",
+      "uid": "doc-701vs3kkmi7k9otj"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "182c7f65912bf5cb7e957a2ae475ba146fb587a137506ec419021407ae9d979a",
+      "kind": "slides",
+      "output": "slides/periodic-table.slides.html",
+      "outputSha256": "cdda55185be1724f5d3ffc874a7b22ece032aa78103e0ac3d9c590080e6a71b3",
+      "path": "slides/periodic-table.slides.md",
+      "sha256": "63ea916e7e5e9a785153e17c33d5eb8bb1a033d3061c4d24970faaa7e2a85945",
+      "title": "Chapter 8: Periodic Relationships Among the Elements",
+      "uid": "doc-9lgq9cp49j4xthzk"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "9a43036e91299b162a8149b38b63927831fdd6ececb0703d8bd26f01f00fda2f",
+      "kind": "slides",
+      "output": "slides/quantum-theory.slides.html",
+      "outputSha256": "278a45087830c8c2687ec4a58a09ab4dafe4427b15459b73635b7d289daf4215",
+      "path": "slides/quantum-theory.slides.md",
+      "sha256": "67204c80a25c0bd011a96ebe73167efbcb0007bd0a901600cc8a4d10c04e937d",
+      "title": "Chapter 7: The Electronic Structure of Atoms",
+      "uid": "doc-ku88yqgmzw93kjm0"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "b9aa65bc196b8878399501ebfe8659294456801d06966833c65f54a3fc82a551",
+      "kind": "slides",
+      "output": "slides/solutions.slides.html",
+      "outputSha256": "09db6cb5c6b38092b844eb6d12429485bfcfa01fc7b9ef86f199adb7ca5535db",
+      "path": "slides/solutions.slides.md",
+      "sha256": "e8e22f184502a6da121609c3c3a2d1f27492c5a493b7a0835d24ab19e6abe60a",
+      "title": "Chapter 12: Physical Properties of Solutions",
+      "uid": "doc-9il6dtw7931vh3rg"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "97876bc0aa6c9cf2682fd64df5f20f1db7f3feddb41f1450e4fe38ae8f863d85",
+      "kind": "slides",
+      "output": "slides/stoichiometry.slides.html",
+      "outputSha256": "e1eec3c79f6bc0f506b6f59ab54825f8075fb8f282d88f349029b631ca3f5aab",
+      "path": "slides/stoichiometry.slides.md",
+      "sha256": "c5914bcae806bff25adc789eea8cacbc578a1ad8df7c2ff74bb849fced28ed55",
+      "title": "Chapter 3: Stoichiometry",
+      "uid": "doc-6iu02kdjm2tg6bs5"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "fd624918dc65a572f5d774aacb95608f2535474d59589d312523ae4827ca214b",
+      "kind": "slides",
+      "output": "slides/thermochemistry.slides.html",
+      "outputSha256": "61e1ca0902765c1ac70ac443d48c008b8c9146f129acf79854c1733b956bfe08",
+      "path": "slides/thermochemistry.slides.md",
+      "sha256": "3f97e990ca2d4d09473b70ef453ebac4420275033ed8dc68166dea20a75c92fd",
+      "title": "Chapter 6: Thermochemistry",
+      "uid": "doc-zrgauk7rghzgm8p8"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "3ca8d85d2e1699cd3347cd6ac8633ff4e568b9436968cfd98fe93bf6ca0c44c8",
+      "kind": "slides",
+      "output": "slides/thermodynamics.slides.html",
+      "outputSha256": "9bf29da8f3ab6edf349deb70250e685aab9708c3a487602613673e917af01217",
+      "path": "slides/thermodynamics.slides.md",
+      "sha256": "f1ba9e6d9b01427a619f305fac9a32649c5374c3498338d08ae533444247eb9d",
+      "title": "Chapter 17: Entropy, Free Energy, and Equilibrium",
+      "uid": "doc-1mogplhrgld2mkx6"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "5c0aac0296feb73b17b2898ede924e496a37b1bfdc8a0f847cccbaf8ccd6f550",
+      "kind": "md",
+      "output": "study-guide/acid-base-equilibria.md.html",
+      "outputSha256": "214443c90fb6ee5947e927c040e5e896af26b9f9f4c5eacf82126e0aa5b317ae",
+      "path": "study-guide/acid-base-equilibria.md",
+      "sha256": "b23e9d29ebc0646f1707d3121880cbdd541edc63e189393d187865a0c51faf2b",
+      "title": "Chapter 16: Acid-Base Equilibria and Solubility Equilibria"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "9d23f010d23b8fc0c321ee08b7ba4a63c0ca93a9e507515bc94a773640b9622a",
+      "kind": "md",
+      "output": "study-guide/acids-and-bases.md.html",
+      "outputSha256": "1914a7c1066f47a4b8ff698870b9747f9c62a0de35df174d063da18edc0a954b",
+      "path": "study-guide/acids-and-bases.md",
+      "sha256": "0d4cc0f00a617e995fa8c167079432703fdd929104a0bf7714ac4a49bdb3044e",
+      "title": "Chapter 15: Acids and Bases"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "aa05fd647bcfce2a3cf06f89ac4dc02e944b03ef7e7866f943e06e6008f608f8",
+      "kind": "md",
+      "output": "study-guide/aqueous-reactions.md.html",
+      "outputSha256": "15d2b07b67acfa9b4d70ab06ea5572a98d65ae2b62daafd41523fc8f07daa6f3",
+      "path": "study-guide/aqueous-reactions.md",
+      "sha256": "51e1a25d534028f137ee04f99fbcec2f6b86d3b41d2899c6447074b74b3b8885",
+      "title": "Chapter 4: Reactions in Aqueous Solution"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "9ffdafcfbd0cecc758addd4554d970ef9165e224fea7270c93d79316c1b42def",
+      "kind": "md",
+      "output": "study-guide/atoms-molecules-ions.md.html",
+      "outputSha256": "d1004b0a35cae600ef52080f83dc70e4adc48f2de9b5ee507272a9c16860c07a",
+      "path": "study-guide/atoms-molecules-ions.md",
+      "sha256": "21ab9bdf6b793dc4bf22298de725150afb4d9df1f25e5ae6ab98124e2896dfe0",
+      "title": "Chapter 2: Atoms, Molecules, and Ions"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "0ea914e5801f678f9b582533b2d6ca732cd01bb7826a18f797571772e3799277",
+      "kind": "md",
+      "output": "study-guide/chemical-bonding.md.html",
+      "outputSha256": "1ebd0616c19f3df2db62827b2b254ece79e949685a41e986ec921e34aacec184",
+      "path": "study-guide/chemical-bonding.md",
+      "sha256": "30d37417372d9688f107b5fc2afd1f58b77643f5c07418e70ad9a45325d88c91",
+      "title": "Chapter 9: Chemical Bonding — The Covalent Bond"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "0695b3d3438f20b9c151e14b8e1472d56a852400c4c1b31e7f2e24fb0162f9ad",
+      "kind": "md",
+      "output": "study-guide/chemical-equilibrium.md.html",
+      "outputSha256": "a0272181f3a9d5b90bd256fb3a17553b078166be8f940583abcd3f82d82d6fdc",
+      "path": "study-guide/chemical-equilibrium.md",
+      "sha256": "d48efeaf099ca6b19d5c9cd13d1ac118d07354fda0fedaf03c0dbeec6e9ee4b4",
+      "title": "Chapter 14: Chemical Equilibrium"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "80aaaa8d6df72b7623e7c0610d0405b3b17d0fbb2e6d5976932c5848163c60e7",
+      "kind": "md",
+      "output": "study-guide/chemical-kinetics.md.html",
+      "outputSha256": "6ae34c2930cc32e883c430c8bfa48aacb0fe93530d3267aafacc5ce958908531",
+      "path": "study-guide/chemical-kinetics.md",
+      "sha256": "ab40b2215391855d9f9484f9eddae077710ccf7fad1f1a08b53fa356a29fd99c",
+      "title": "Chapter 13: Chemical Kinetics"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "95fc8140722769d0bf78ec5e8dda1ca7f7e010ab5141bbcf903e7ad933211698",
+      "kind": "md",
+      "output": "study-guide/electrochemistry.md.html",
+      "outputSha256": "b50c01d416807a4870943c86fea37156b2c3f75887f769ab9f35f4f03bae822d",
+      "path": "study-guide/electrochemistry.md",
+      "sha256": "27bbcca39a17332f03d93866fed90c8ab1af064fb79da2f65318450f09c0ab3f",
+      "title": "Chapter 18: Redox Reactions and Electrochemistry"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "f0aff16c5ef05af837e0cbf78d2e1db5ff923256d31fbd08d9a1036cbecb9394",
+      "kind": "md",
+      "output": "study-guide/gases.md.html",
+      "outputSha256": "40963f0ec12f1d0cd9b1471ac090fe78e3eda8c553d3be71e673407214ec24bc",
+      "path": "study-guide/gases.md",
+      "sha256": "99bdf8adb224be9cc190a19bc5fa5cf8de4033bbf818aba889b8e218f91f2265",
+      "title": "Chapter 5: Gases"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "ad866f7b1d9ed78434c3585e107eb2d3418d194308a5ed0ea60d88b09b202d86",
+      "kind": "md",
+      "output": "study-guide/intermolecular-forces.md.html",
+      "outputSha256": "643338656899adfef80328b5762cb70367041328a6f2cfa9f14841762be66a89",
+      "path": "study-guide/intermolecular-forces.md",
+      "sha256": "2b33340fec73089c55d82ca034d17c5f48649a7891e5bc142ad64b3fe4058975",
+      "title": "Chapter 11: Intermolecular Forces, Liquids, and Solids"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "335a79dac8846fee3a87ad1c3f14b7b48f93acb2110e8be48dd3784d37db27ae",
+      "kind": "md",
+      "output": "study-guide/introduction.md.html",
+      "outputSha256": "aae295218cb6ee7c6a379735fd519bfeb2c29813aab8c65a260083c522b0994e",
+      "path": "study-guide/introduction.md",
+      "sha256": "f9abf44b9e03185b72de82093eedac7bee879e66e42670860b5445be3b48e600",
+      "title": "Chapter 1: Introduction to Chemistry"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "0116412fb66c85c5a1e4efa0ca59b323d9ca3a257728bd703a0d68cf3c9e774d",
+      "kind": "md",
+      "output": "study-guide/molecular-geometry.md.html",
+      "outputSha256": "29a422b902a0ba3b827af9cc1d5f49c44ed1c18efd94587a981c5c6cc26ae463",
+      "path": "study-guide/molecular-geometry.md",
+      "sha256": "2e5fee3b8eba7edec3051f3306919e4caf3b40e3c75030265900a3a73955ce80",
+      "title": "Chapter 10: Molecular Geometry and Hybridization"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "dc364d948862ea58c64444b5bb981e7bf650d493366dcbfa399bf5718a0c4b87",
+      "kind": "md",
+      "output": "study-guide/nuclear-chemistry.md.html",
+      "outputSha256": "44705cb11965193477a5652ac69e6ce18eadc0910f5130ef6a7a0063f9d45e9f",
+      "path": "study-guide/nuclear-chemistry.md",
+      "sha256": "e9080004001cabed17da516f51b75eb25d876562f7eccd6a8c4af22689af4760",
+      "title": "Chapter 19: Nuclear Chemistry"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "266339544d8563136cd8df3afdbb3a769024d2c9d532fc1c10147df599618323",
+      "kind": "md",
+      "output": "study-guide/periodic-table.md.html",
+      "outputSha256": "6ce0c6dae724317568d67a49e464330d3ddda2d1a16db26f8a2f944083490237",
+      "path": "study-guide/periodic-table.md",
+      "sha256": "169c86aa75f633816cbfc8945b2999659c52739eedb2c08ee71e1afb5cd31645",
+      "title": "Chapter 8: The Periodic Table"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "1af9197a47105ed867ce1959f977d137b66f999e6953f9b36095282943e0200e",
+      "kind": "md",
+      "output": "study-guide/quantum-theory.md.html",
+      "outputSha256": "506ec279543dc0bed3ee1a42ab1f4e39151e3b8b9f58b6a19cba3d59fcec0ace",
+      "path": "study-guide/quantum-theory.md",
+      "sha256": "f1ddabaff1b8d80cfebf9138531250e0fb1e50bf817dcad8407fe5126b47ff43",
+      "title": "Chapter 7: The Electronic Structure of Atoms"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "88b617afce02ba01407f296d2eff903202542080d16d10dfbef629acb9be9b15",
+      "kind": "md",
+      "output": "study-guide/solutions.md.html",
+      "outputSha256": "573357bc013e882fa1f910e853e4fa6eb0429252002ccecd7488390c3e857834",
+      "path": "study-guide/solutions.md",
+      "sha256": "0e4ee5ef792c8763cd84b45a9ba1305787d428fd0c0932a8a0fbf3f51d83cac8",
+      "title": "Chapter 12: Physical Properties of Solutions"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "4c134994b35a1347738a70a892ba48c432fd9a4b8b7429ce3c5324c4cbe849be",
+      "kind": "md",
+      "output": "study-guide/stoichiometry.md.html",
+      "outputSha256": "bb667b397edaeffeabe888bf3d555dae7299afaf5472d52d6e681b411195dcfa",
+      "path": "study-guide/stoichiometry.md",
+      "sha256": "21ea92e62ccdb93842dce65784c9a7429fcf31bf30d9ad955a881137996197c6",
+      "title": "Chapter 3: Stoichiometry"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "ed658ceec3dfe8bc2db1591c96690ec7ac152ca5db42a48b265a61f0a9519983",
+      "kind": "md",
+      "output": "study-guide/thermochemistry.md.html",
+      "outputSha256": "f259d1e423c5b7d61424be9d51a93eb5e4f55c55afa2567ce0ffa17e9b6a68cb",
+      "path": "study-guide/thermochemistry.md",
+      "sha256": "06ec4a68a8e9976d63d4fbbff151d7c6da93f416b528f5b1eed889d734702c12",
+      "title": "Chapter 6: Thermochemistry"
+    },
+    {
+      "delivery": "cdn",
+      "includes": [],
+      "key": "08abd849c9f86cd8bb046f1d2c48980ca5df94456ea2dfe153c7e1004b88e020",
+      "kind": "md",
+      "output": "study-guide/thermodynamics.md.html",
+      "outputSha256": "a9a1e8831f0b36495c5cf62c7e8c69951218d1625abbbd5c577811d495a4640c",
+      "path": "study-guide/thermodynamics.md",
+      "sha256": "e9a624bf27d73bb77a979adf8cf3d71ba6d86d9b084ca8caefcfc1c33e8186ba",
+      "title": "Chapter 17: Entropy, Free Energy, and Equilibrium"
+    }
+  ],
+  "format": 1,
+  "generated": [
+    {
+      "path": ".nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sitemap.xml",
+      "sha256": "273eb574ae1f3c52f47ec895a6ae6b463452dd83c24d398356323c0cbd8e21fa"
+    }
+  ],
+  "generator": "orz-site 0.1.0",
+  "naming": "family",
+  "skipped": []
+}

@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en" data-orz-kind="md">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="orz-md 1.1.0">
+<title>Chapter 14 Practice: Chemical Equilibrium</title>
+<script type="application/orz-meta+json" id="orz-meta">
+{
+  "title": "Chapter 14 Practice: Chemical Equilibrium"
+}
+</script>
+<script type="application/json" id="orz-shell">{"kind":"md","format":1,"shell":"1.1.0","delivery":"cdn"}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<link rel="stylesheet" id="orz-theme" href="https://cdn.jsdelivr.net/npm/orz-markdown@2.5.0/themes/light-neat-3.css" media="not all">
+<link rel="stylesheet" id="orz-katex" href="https://cdn.jsdelivr.net/npm/katex@0.16.47/dist/katex.min.css" media="not all">
+<link rel="stylesheet" id="orz-hljs" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css" media="not all">
+</head>
+<body>
+<!-- orz md document, text format 1. For AI agents and tools:
+  The complete, editable source of this file is the text/markdown island with id "orz-src" below.
+  Read it with extract() from orz-markdown/carrier, or by hand: take the island content, remove one
+  backslash after each "<" that is followed by backslashes and then "script" or "/script" (any case),
+  turn its line breaks into the style named by data-orz-eol, and prefix U+FEFF if data-orz-bom is set.
+  Edit that text only, then assemble again; everything else in this file is a regenerable shell.
+  Skill: https://cdn.jsdelivr.net/npm/orz-mdhtml/orz-mdhtml-skills/SKILL.md
+-->
+<script type="text/markdown" id="orz-src" data-orz-format="1" data-orz-eol="lf">{{nyml
+kind: document
+format: 1
+title: Chapter 14 Practice: Chemical Equilibrium
+}}
+
+# Chapter 14 Practice: Chemical Equilibrium
+
+*Auto-generated from the assessment guide (`assessment-support/chemical-equilibrium.md`), grouped by objective. 27 questions spanning multiple-choice, short-answer, and workout formats.*
+
+:::: tabs
+::: tab Q 1
+{{sp[info] Objective 14.1a}} · *workout* A reaction $\ce{A <=> B}$ has $k_f = 0.36\ \text{s}^{-1}$ and $k_r = 0.12\ \text{s}^{-1}$. Calculate $K$ and state which side is favored at equilibrium.
+:::
+::: tab Answer
+$$K=\frac{k_f}{k_r}=\frac{0.36}{0.12}=3.0$$
+
+Since $K>1$, the equilibrium favors the product side (B).
+:::
+::::
+
+:::: tabs
+::: tab Q 2
+{{sp[info] Objective 14.1a}} · *workout* A reaction $\ce{A(g) <=> 3B(g)}$ has $K_c=0.10$ at 298 K. What is $K_c$ for the reverse reaction, $\ce{3B(g) <=> A(g)}$, at the same temperature?
+:::
+::: tab Answer
+Reversing a reaction inverts $K$: $K_c(\text{reverse}) = 1/0.10 = 10$.
+:::
+::::
+
+:::: tabs
+::: tab Q 3
+{{sp[info] Objective 14.1a}} · *short answer* A sealed flask of $\ce{N2O4}$ and $\ce{NO2}$ sits at equilibrium. A student adds a trace of $\ce{NO2}$ made from nitrogen-15 and, hours later, finds $^{15}\ce{N}$ distributed through both species. Explain what this shows.
+:::
+::: tab Answer
+It shows that **equilibrium is dynamic, not static** — and it is one of the few experiments that demonstrate this directly.
+
+If the reaction had genuinely stopped, the labeled nitrogen would still be sitting in $\ce{NO2}$ where it was placed. Instead it has been scrambled between both species, which can only happen if $\ce{NO2}$ molecules are continuously converting to $\ce{N2O4}$ and back.
+
+**What did not change:** the *concentrations* of $\ce{N2O4}$ and $\ce{NO2}$ were constant throughout, because the forward and reverse reactions proceed at equal rates. Nothing an ordinary instrument measures would have moved.
+
+**Why this matters beyond the demonstration:** isotope scrambling, together with constant concentrations, is a direct way to show that a system which *looks* inert is genuinely at equilibrium rather than kinetically stuck. A hydrogen-oxygen mixture at room temperature would show no scrambling at all — it is not at equilibrium, merely too slow to react.
+:::
+::::
+
+:::: tabs
+::: tab Q 4
+{{sp[info] Objective 14.1b}} · *short answer* A reaction has $K = 4.8\times10^{-11}$. A student concludes the reaction "does not happen at all." Is this an accurate description? Explain, connecting back to Chapter 13.
+:::
+::: tab Answer
+Not quite accurate. $K$ describes the equilibrium *position* — with $K$ this small, only a tiny (but nonzero) amount of product is present at equilibrium, so the reaction proceeds hardly at all in the forward direction. But this says nothing about *rate*: a reaction can also be slow for kinetic reasons (a large activation energy, Chapter 13) independent of how small or large $K$ is. "Doesn't happen" conflates a strongly reactant-favored equilibrium with a reaction that is intrinsically slow — they are related but distinct ideas.
+:::
+::::
+
+:::: tabs
+::: tab Q 5
+{{sp[info] Objective 14.1b}} · *short answer* At 25 °C the reaction $\ce{H2(g) + Cl2(g) <=> 2HCl(g)}$ has $K = 4.4\times10^{32}$, while $\ce{N2(g) + 3H2(g) <=> 2NH3(g)}$ has $K = 6.0\times10^{5}$. Both are described as "product-favored." Is that description equally useful for both? What practical difference does the size gap make?
+:::
+::: tab Answer
+Both have $K > 1$, so both do favor products — but the two numbers describe very different situations, and treating them as the same loses information that matters.
+
+**$K = 4.4\times10^{32}$ is effectively irreversible.** At equilibrium the amount of unreacted $\ce{H2}$ and $\ce{Cl2}$ is so small as to be undetectable. For any practical purpose the reaction goes to completion, and an ICE table would return $x$ essentially equal to the limiting reactant's entire initial amount.
+
+**$K = 6.0\times10^{5}$ is large but genuinely finite.** Products dominate, yet a measurable quantity of $\ce{N2}$ and $\ce{H2}$ remains, and — crucially — that remainder can be pushed further by the stresses in §14.5. There is something left to optimize.
+
+**The practical difference.** Nobody engineers the pressure of an HCl synthesis to improve its yield; the yield is already 100% for all purposes. Ammonia synthesis is engineered obsessively — high pressure, product removal, recycle loops — precisely because at the high temperature needed for a useful rate, the exothermic reaction's K falls far below its 25 °C value of $6.0\times10^{5}$, leaving much room to gain.
+
+**And neither number says anything about rate.** The ammonia reaction, despite its favorable $K$, requires a catalyst and 450 °C to proceed at a useful rate.
+:::
+::::
+
+:::: tabs
+::: tab Q 6
+{{sp[info] Objective 14.1b}} · *multiple-choice* A reaction has $K = 3\times10^{25}$ at 25 °C, yet no product forms when the reactants are mixed and left on the bench for a week. Which statement is correct?
+
+(A) The reported value of $K$ must be wrong\
+(B) The reaction is thermodynamically favorable but kinetically slow — it has a large activation energy\
+\(C) $K$ must actually be small at 25 °C\
+(D) The mixture has already reached equilibrium
+:::
+::: tab Answer
+**(B).** $K$ and rate are set by two different quantities and are logically independent. $K$ is fixed by the (free) energy difference between reactants and products; the rate is fixed by the height of the barrier between them (Chapter 13). A reaction can have an enormous $K$ and a barrier so high that nothing measurable happens at room temperature.
+
+**Why the others fail:**
+- **(A)** Nothing observed contradicts $K$. $K$ predicts where the system ends up, not when it gets there.
+- **\(C)** The problem states $K = 3\times10^{25}$ *at 25 °C* — that is already the value at the relevant temperature.
+- **(D)** A system at equilibrium with $K = 3\times10^{25}$ would be essentially pure product. This flask is essentially pure reactant, which is as far from equilibrium as it is possible to be.
+
+**The canonical case:** hydrogen and oxygen have $K \approx 10^{41}$ for forming water and will sit unchanged indefinitely — until a spark supplies the activation energy.
+:::
+::::
+
+:::: tabs
+::: tab Q 7
+{{sp[info] Objective 14.2a}} · *workout* What is $\Delta n$ in $K_p=K_c(RT)^{\Delta n}$ for $\ce{CH3OH(g) <=> CO(g) + 2H2(g)}$?
+:::
+::: tab Answer
+$$\Delta n = (1+2) - 1 = 2$$
+:::
+::::
+
+:::: tabs
+::: tab Q 8
+{{sp[info] Objective 14.2a}} · *multiple-choice* For $\ce{N2(g) + O2(g) <=> 2NO(g)}$, $K_p = 1.1\times10^{-3}$ at 2200 K and $3.6\times10^{-3}$ at 2500 K. Which statement is true?
+
+A. The reaction is endothermic.\
+B. The partial pressure of NO(g) is less at 2500 K than at 2200 K.\
+C. $K_p$ is less than $K_c$ by a factor of (RT).\
+D. The total pressure at 2200 K is the same as at 2500 K.\
+E. Higher total pressure shifts the equilibrium to the left.
+:::
+::: tab Answer
+**A.** $K_p$ increases as temperature increases, which by Le Chatelier's principle means raising temperature shifts the equilibrium toward the forward direction — true only if the forward reaction is endothermic. (For B: a larger K at higher T means more NO forms, the opposite of B. For C: since $\Delta n = 2-(1+1)=0$ here, $K_p=K_c$ exactly — C is false. For D: total pressure depends on temperature and the conditions chosen, so nothing given supports D. For E: this reaction's total moles of gas don't change, $\Delta n=0$, so pressure/volume changes don't shift this particular equilibrium at all.)
+:::
+::::
+
+:::: tabs
+::: tab Q 9
+{{sp[info] Objective 14.2a}} · *workout* For $\ce{2SO2(g) + O2(g) <=> 2SO3(g)}$ at 1000 K, $K_p = 3.4$. Calculate $K_c$.
+:::
+::: tab Answer
+Count gas moles: 2 on the right, $2 + 1 = 3$ on the left, so $\Delta n = 2 - 3 = -1$.
+
+Rearrange $K_p = K_c(RT)^{\Delta n}$ for $K_c$:
+
+$$K_c = K_p(RT)^{-\Delta n} = 3.4\times(0.0821\times1000)^{+1} = 3.4\times82.1 = 2.8\times10^{2}$$
+
+**Check the direction before trusting the number.** $\Delta n$ is negative — fewer gas molecules on the product side — so $K_c$ should come out *larger* than $K_p$, and it does, 280 versus 3.4. Had it come out smaller, the exponent's sign was applied backwards.
+
+{{sp[warning] Which R}} Use $R = 0.0821\ \text{L·atm·mol}^{-1}\text{K}^{-1}$, not 8.314 — the gas-constant value must match the pressure units $K_p$ is expressed in.
+:::
+::::
+
+:::: tabs
+::: tab Q 10
+{{sp[info] Objective 14.2b}} · *workout* At a certain temperature, solid ammonium carbamate decomposes: $\ce{NH4CO2NH2(s) <=> 2NH3(g) + CO2(g)}$. At equilibrium, $P_{\ce{NH3}}=0.30$ atm and $P_{\ce{CO2}}=0.15$ atm. Write the $K_p$ expression and calculate its value.
+:::
+::: tab Answer
+$\ce{NH4CO2NH2}$ is a pure solid and is omitted:
+
+$$K_p = P_{\ce{NH3}}^2 \times P_{\ce{CO2}} = (0.30)^2\times(0.15) = 0.0135$$
+:::
+::::
+
+:::: tabs
+::: tab Q 11
+{{sp[info] Objective 14.2b}} · *short answer* A student writes the equilibrium expression for $\ce{HF(aq) + H2O(l) <=> F-(aq) + H3O+(aq)}$ as $K_c=\dfrac{[\ce{F-}][\ce{H3O+}]}{[\ce{HF}][\ce{H2O}]}$. Is this the conventional final form? If not, what is?
+:::
+::: tab Answer
+Not the conventional final form. Water is the solvent, present in large excess with a nearly constant concentration, so it is absorbed into the equilibrium constant rather than written explicitly: $K_c=\dfrac{[\ce{F-}][\ce{H3O+}]}{[\ce{HF}]}$.
+:::
+::::
+
+:::: tabs
+::: tab Q 12
+{{sp[info] Objective 14.2b}} · *short answer* A student writes the expression for $\ce{Fe3O4(s) + 4H2(g) <=> 3Fe(s) + 4H2O(g)}$ as $K_c = \dfrac{[\ce{Fe}]^3[\ce{H2O}]^4}{[\ce{Fe3O4}][\ce{H2}]^4}$. Correct it and explain the error.
+:::
+::: tab Answer
+**The correct expression:**
+
+$$K_c = \frac{[\ce{H2O}]^4}{[\ce{H2}]^4}$$
+
+**The error:** $\ce{Fe3O4}$ and $\ce{Fe}$ are both **pure solids**, and pure solids are omitted.
+
+**Why they are omitted.** A pure solid's "concentration" is its density divided by its molar mass — a property of the substance, not of how much is present. Grinding up more iron does not make the iron more concentrated. Being constant, the quantity is folded into $K$ rather than written as a variable.
+
+**The observable consequence, which is the real point:** adding more $\ce{Fe3O4}$ does not shift this equilibrium at all. The ratio $[\ce{H2O}]/[\ce{H2}]$ is fixed by temperature alone. If the student's expression were right, adding solid would change the gas composition — and it does not.
+
+**A useful cross-check:** any species you could add a spoonful of without changing the answer does not belong in $K$.
+:::
+::::
+
+:::: tabs
+::: tab Q 13
+{{sp[info] Objective 14.2c}} · *workout* Given $\ce{H2(g) + S(s) <=> H2S(g)}$, $K_1=0.78$, and $\ce{S(s) + O2(g) <=> SO2(g)}$, $K_2=4.2\times10^{52}$, find $K_3$ for $\ce{H2(g) + SO2(g) <=> H2S(g) + O2(g)}$.
+:::
+::: tab Answer
+Reaction 3 = reaction 1 − reaction 2 (subtracting reaction 2 is the same as adding its reverse, whose K is $1/K_2$):
+
+$$K_3 = K_1 \times \frac{1}{K_2} = \frac{0.78}{4.2\times10^{52}} = 1.9\times10^{-53}$$
+:::
+::::
+
+:::: tabs
+::: tab Q 14
+{{sp[info] Objective 14.2c}} · *workout* Given $\ce{N2(g) + O2(g) <=> 2NO(g)}$, $K_1 = 4.1\times10^{-31}$, and $\ce{2NO(g) + O2(g) <=> 2NO2(g)}$, $K_2 = 6.4\times10^{9}$, find $K$ for $\ce{NO2(g) <=> 1/2N2(g) + O2(g)}$.
+:::
+::: tab Answer
+Three operations, applied in order — and the order does not matter as long as each is applied correctly.
+
+**Step 1 — add the two given reactions.** Summing them cancels $\ce{2NO}$:
+
+$$\ce{N2 + 2O2 <=> 2NO2} \qquad K_3 = K_1K_2 = (4.1\times10^{-31})(6.4\times10^{9}) = 2.6\times10^{-21}$$
+
+**Step 2 — reverse it**, since the target has $\ce{NO2}$ on the left:
+
+$$\ce{2NO2 <=> N2 + 2O2} \qquad K_4 = \frac{1}{2.6\times10^{-21}} = 3.8\times10^{20}$$
+
+**Step 3 — halve every coefficient**, which takes the square root:
+
+$$\ce{NO2 <=> 1/2N2 + O2} \qquad K = \sqrt{3.8\times10^{20}} = 2.0\times10^{10}$$
+
+**Handling the exponent by hand:** $\sqrt{3.8\times10^{20}} = \sqrt{3.8}\times10^{10} = 1.95\times10^{10}$. Square roots of powers of ten are easiest when the exponent is even — if it is odd, shift the decimal first, e.g. $\sqrt{3.8\times10^{21}} = \sqrt{38\times10^{20}} = 6.2\times10^{10}$.
+
+**Summary of the three rules used:**
+
+| Operation | Effect on $K$ |
+|---|---|
+| add reactions | multiply the $K$'s |
+| reverse | reciprocal |
+| multiply coefficients by $n$ | raise to the $n$th power ($n = \tfrac12$ here) |
+:::
+::::
+
+:::: tabs
+::: tab Q 15
+{{sp[info] Objective 14.2c}} · *workout* Given $\ce{SO2(g) + 1/2O2(g) <=> SO3(g)}$ with $K_1 = 20.$, find $K$ for (a) $\ce{2SO2(g) + O2(g) <=> 2SO3(g)}$ and (b) $\ce{2SO3(g) <=> 2SO2(g) + O2(g)}$.
+:::
+::: tab Answer
+**(a) Doubling every coefficient squares $K$:**
+
+$$K = (K_1)^2 = (20.)^2 = 4.0\times10^{2}$$
+
+**(b) This is the reverse of (a), so take the reciprocal of (a)'s answer:**
+
+$$K = \frac{1}{4.0\times10^{2}} = 2.5\times10^{-3}$$
+
+**Why doubling squares rather than doubles.** Doubling the coefficients doubles every exponent, and doubling an exponent squares the whole quantity:
+
+$$\frac{[\ce{SO3}]^2}{[\ce{SO2}]^2[\ce{O2}]} = \left(\frac{[\ce{SO3}]}{[\ce{SO2}][\ce{O2}]^{1/2}}\right)^2$$
+
+{{sp[warning] Order does not matter; the operation does}} Doing (b) as "reverse first, then double" gives $(1/20.)^2 = 2.5\times10^{-3}$ — the same answer. What goes wrong is mixing the operations up, for instance writing $2\times20. = 40$. **Reversing takes a reciprocal; scaling takes a power; neither ever adds to or multiplies $K$ by the coefficient.**
+:::
+::::
+
+:::: tabs
+::: tab Q 16
+{{sp[info] Objective 14.3a}} · *workout* At 375 °C, $\ce{N2(g) + 3H2(g) <=> 2NH3(g)}$ has $K_c=1.2$. A 3.75 L container holds 0.351 mol $\ce{N2}$, 0.267 mol $\ce{H2}$, and $8.51\times10^{-4}$ mol $\ce{NH3}$. Is the system at equilibrium? If not, which direction does it proceed?
+:::
+::: tab Answer
+Convert to concentrations: $[\ce{N2}]=0.351/3.75=0.0936$ M, $[\ce{H2}]=0.267/3.75=0.0712$ M, $[\ce{NH3}]=8.51\times10^{-4}/3.75=2.27\times10^{-4}$ M.
+
+$$Q_c=\frac{(2.27\times10^{-4})^2}{(0.0936)(0.0712)^3}=0.00152$$
+
+Since $Q_c<K_c$ (0.00152 < 1.2), the system is **not** at equilibrium and proceeds to the **right** (forward).
+:::
+::::
+
+:::: tabs
+::: tab Q 17
+{{sp[info] Objective 14.3a}} · *short answer* For the same reaction and $K_c=1.2$, a different mixture gives $Q_c=8.4$. Which direction does this system proceed, and what is physically happening to the ammonia concentration as it does?
+:::
+::: tab Answer
+Since $Q_c>K_c$ (8.4 > 1.2), the system proceeds in **reverse** (right to left) — $\ce{NH3}$ concentration will *decrease* as it decomposes back into $\ce{N2}$ and $\ce{H2}$ until $Q_c$ falls to 1.2.
+:::
+::::
+
+:::: tabs
+::: tab Q 18
+{{sp[info] Objective 14.3a}} · *workout* For $\ce{CO(g) + H2O(g) <=> CO2(g) + H2(g)}$, $K_c = 5.10$ at 700 K. A vessel contains $[\ce{CO}] = 0.15$ M, $[\ce{H2O}] = 0.25$ M, $[\ce{CO2}] = 0.42$ M, $[\ce{H2}] = 0.37$ M. Is it at equilibrium? If not, which way does it shift, and what happens to $[\ce{CO}]$?
+:::
+::: tab Answer
+Compute $Q_c$ from the same expression as $K_c$, using the concentrations given:
+
+$$Q_c = \frac{[\ce{CO2}][\ce{H2}]}{[\ce{CO}][\ce{H2O}]} = \frac{(0.42)(0.37)}{(0.15)(0.25)} = \frac{0.1554}{0.0375} = 4.14$$
+
+$$Q_c = 4.14 < K_c = 5.10$$
+
+**Not at equilibrium.** With $Q < K$ the product-to-reactant ratio is too small, so the system shifts **forward**, making more $\ce{CO2}$ and $\ce{H2}$ at the expense of $\ce{CO}$ and $\ce{H2O}$.
+
+**$[\ce{CO}]$ therefore decreases.**
+
+**A sense of scale:** $Q$ and $K$ are within about 20% of each other, so this mixture is close to equilibrium and the shift will be modest. A mixture at $Q = 0.01$ would shift the same *direction* but far further — $Q$ versus $K$ gives direction reliably and distance only roughly.
+:::
+::::
+
+:::: tabs
+::: tab Q 19
+{{sp[info] Objective 14.4a}} · *workout* At 686 °C, $\ce{CO2(g) + H2(g) <=> CO(g) + H2O(g)}$ has $K_c=0.517$. Starting with only $[\ce{CO2}]_0=0.086$ M and $[\ce{H2}]_0=0.045$ M (no products), find the equilibrium concentrations of all four species.
+:::
+::: tab Answer
+| | $\ce{CO2}$ | $\ce{H2}$ | $\ce{CO}$ | $\ce{H2O}$ |
+|---|---|---|---|---|
+| Initial (M) | 0.086 | 0.045 | 0 | 0 |
+| Change (M) | $-x$ | $-x$ | $+x$ | $+x$ |
+| Equilibrium (M) | $0.086-x$ | $0.045-x$ | $x$ | $x$ |
+
+$$K_c=\frac{x^2}{(0.086-x)(0.045-x)}=0.517$$
+
+Solving the quadratic gives $x=0.025$. Equilibrium: $[\ce{CO2}]=0.061$ M, $[\ce{H2}]=0.020$ M, $[\ce{CO}]=[\ce{H2O}]=0.025$ M.
+:::
+::::
+
+:::: tabs
+::: tab Q 20
+{{sp[info] Objective 14.4a}} · *short answer* Set up (but do not solve) the ICE table for $\ce{N2(g) + 3H2(g) <=> 2NH3(g)}$ starting from $[\ce{N2}]_0=0.50$ M, $[\ce{H2}]_0=0.80$ M, no initial $\ce{NH3}$. Why is $\ce{H2}$'s Change-row entry $-3x$ rather than $-x$?
+:::
+::: tab Answer
+| | $\ce{N2}$ | $\ce{H2}$ | $\ce{NH3}$ |
+|---|---|---|---|
+| Initial (M) | 0.50 | 0.80 | 0 |
+| Change (M) | $-x$ | $-3x$ | $+2x$ |
+| Equilibrium (M) | $0.50-x$ | $0.80-3x$ | $2x$ |
+
+$\ce{H2}$'s Change row is $-3x$ because the balanced equation consumes 3 mol of $\ce{H2}$ for every 1 mol of $\ce{N2}$ consumed — the same progress variable $x$ must be scaled by each species' own stoichiometric coefficient to stay consistent with the reaction's actual ratios.
+:::
+::::
+
+:::: tabs
+::: tab Q 21
+{{sp[info] Objective 14.4a}} · *workout* For $\ce{PCl5(g) <=> PCl3(g) + Cl2(g)}$, $K_c = 1.80$ at 250 °C. A flask is charged with $[\ce{PCl5}]_0 = 1.00$ M and nothing else. Find all three equilibrium concentrations.
+:::
+::: tab Answer
+| | $\ce{PCl5}$ | $\ce{PCl3}$ | $\ce{Cl2}$ |
+|---|---|---|---|
+| Initial (M) | 1.00 | 0 | 0 |
+| Change (M) | $-x$ | $+x$ | $+x$ |
+| Equilibrium (M) | $1.00-x$ | $x$ | $x$ |
+
+$$K_c = \frac{x^2}{1.00 - x} = 1.80$$
+
+$K_c$ is not small, so no shortcut is available. Clear the denominator:
+
+$$x^2 = 1.80 - 1.80x \quad\Rightarrow\quad x^2 + 1.80x - 1.80 = 0$$
+
+$$x = \frac{-1.80 + \sqrt{(1.80)^2 + 4(1.80)}}{2} = \frac{-1.80 + \sqrt{10.44}}{2} = \frac{-1.80 + 3.231}{2} = 0.716$$
+
+The other root is negative and is discarded — a negative $x$ would mean the reaction ran backwards from a flask containing no products at all.
+
+$$[\ce{PCl5}] = 1.00 - 0.716 = 0.28\ \text{M} \qquad [\ce{PCl3}] = [\ce{Cl2}] = 0.72\ \text{M}$$
+
+**Check:** $\dfrac{(0.716)^2}{0.284} = \dfrac{0.513}{0.284} = 1.80$ ✓
+
+Note that 72% of the $\ce{PCl5}$ dissociated. With $K$ near 1 a large fraction reacts, and any small-$x$ assumption would have been badly wrong.
+:::
+::::
+
+:::: tabs
+::: tab Q 22
+{{sp[info] Objective 14.4b}} · *workout* $\ce{PCl5(g) <=> PCl3(g) + Cl2(g)}$, $K_c=1.80\times10^{-5}$ (at a different, lower temperature than in Q 21), starting from $[\ce{PCl5}]_0=0.750$ M and no products. Use the small-$x$ approximation to find $[\ce{Cl2}]$ at equilibrium, and verify the approximation is valid.
+:::
+::: tab Answer
+$$K_c=\frac{x^2}{0.750-x}\approx\frac{x^2}{0.750}=1.80\times10^{-5}$$
+
+$$x^2 = 1.35\times10^{-5} \Rightarrow x = 3.67\times10^{-3}$$
+
+Check: $x/[\ce{PCl5}]_0 = 3.67\times10^{-3}/0.750 = 0.49\%$, well under 5% — valid. $[\ce{Cl2}]=3.67\times10^{-3}$ M.
+:::
+::::
+
+:::: tabs
+::: tab Q 23
+{{sp[info] Objective 14.4b}} · *workout* For $\ce{2HBr(g) <=> H2(g) + Br2(g)}$, $K_c = 4.6\times10^{-9}$ at 500 K. Starting from $[\ce{HBr}]_0 = 0.400$ M, find the equilibrium concentrations using the small-$x$ approximation, and validate it.
+:::
+::: tab Answer
+| | $\ce{HBr}$ | $\ce{H2}$ | $\ce{Br2}$ |
+|---|---|---|---|
+| Initial (M) | 0.400 | 0 | 0 |
+| Change (M) | $-2x$ | $+x$ | $+x$ |
+| Equilibrium (M) | $0.400-2x$ | $x$ | $x$ |
+
+$$K_c = \frac{x^2}{(0.400-2x)^2} = 4.6\times10^{-9}$$
+
+$K_c$ is tiny, so assume $2x \ll 0.400$ and approximate the denominator as $(0.400)^2 = 0.160$:
+
+$$\frac{x^2}{0.160} = 4.6\times10^{-9} \quad\Rightarrow\quad x^2 = 7.36\times10^{-10} \quad\Rightarrow\quad x = 2.7\times10^{-5}$$
+
+**Validate against what was actually subtracted**, which is $2x = 5.4\times10^{-5}$:
+
+$$\frac{2x}{[\ce{HBr}]_0} = \frac{5.4\times10^{-5}}{0.400} = 0.014\% \ \ll 5\%$$
+
+The approximation is excellent.
+
+$$[\ce{HBr}] = 0.400\ \text{M} \qquad [\ce{H2}] = [\ce{Br2}] = 2.7\times10^{-5}\ \text{M}$$
+
+{{sp[warning] Check what you subtracted, not x}} The change in $[\ce{HBr}]$ is $2x$ because of the coefficient 2. Validating against $x/0.400$ understates the error by a factor of two — harmless here, not always.
+:::
+::::
+
+:::: tabs
+::: tab Q 24
+{{sp[info] Objective 14.4b}} · *short answer* Two problems use the same $K = 1.0\times10^{-3}$ for $\ce{X <=> Y + Z}$. In problem A, $[\ce{X}]_0 = 2.0$ M; in problem B, $[\ce{X}]_0 = 1.0\times10^{-3}$ M. Will the small-$x$ approximation work equally well in both? Explain without fully solving either.
+:::
+::: tab Answer
+**No — it works in A and fails in B.** Validity depends on $K$ **relative to the initial concentration**, never on $K$ alone.
+
+**Problem A.** Approximating gives $x \approx \sqrt{(1.0\times10^{-3})(2.0)} = 0.045$ M, which is 2.2% of 2.0 M — comfortably under 5%. Valid.
+
+**Problem B.** Approximating gives $x \approx \sqrt{(1.0\times10^{-3})(1.0\times10^{-3})} = 1.0\times10^{-3}$ M — **100%** of the starting concentration. Not merely invalid: it claims every bit of X reacts, which this $K$ does not support.
+
+**The pattern.** As the initial concentration falls, the *fraction* that reacts rises, so dilute solutions are exactly where the shortcut breaks. Compare $K$ against $[\ce{X}]_0$: when $[\ce{X}]_0$ is many times larger than $K$, the shortcut is safe; when they are comparable, it is not.
+
+**The practical rule:** never decide from the look of $K$ alone. Do the approximation, then check the percentage — the check is what tells you whether to keep the answer.
+:::
+::::
+
+:::: tabs
+::: tab Q 25
+{{sp[info] Objective 14.5a}} · *multiple-choice* $\ce{Cu(s) + H2O(g) <=> H2(g) + CuO(s)}$, $\Delta H^\circ = 2.0$ kJ/mol. Equilibrium can be shifted to favor the products by:
+
+A. increasing the pressure by means of a moving piston at constant T.\
+B. decreasing the pressure by means of a moving piston at constant T.\
+C. decreasing the temperature at constant pressure.\
+D. increasing the temperature at constant pressure.\
+E. adding a catalyst.
+:::
+::: tab Answer
+**D.** $\Delta H^\circ>0$ means the forward reaction is endothermic; increasing temperature favors the endothermic direction, shifting toward products. (A/B: both sides have exactly 1 mole of gas, $\Delta n=0$, so pressure/volume changes don't shift this equilibrium at all. C: decreasing T would favor the exothermic — reverse — direction. E: a catalyst never shifts equilibrium.)
+:::
+::::
+
+:::: tabs
+::: tab Q 26
+{{sp[info] Objective 14.5a}} · *short answer* In the uncatalyzed reaction $\ce{N2O4(g) <=> 2NO2(g)}$ at 373 K, equilibrium partial pressures are $P_{\ce{N2O4}}=0.377$ atm and $P_{\ce{NO2}}=1.56$ atm. If a catalyst were introduced, what would happen to these equilibrium pressures?
+:::
+::: tab Answer
+Nothing would change at equilibrium — a catalyst speeds up how quickly equilibrium is reached (by lowering the activation energy for both the forward and reverse reactions equally) but does not shift the equilibrium position or change $K_p$. The equilibrium pressures $P_{\ce{N2O4}}=0.377$ atm and $P_{\ce{NO2}}=1.56$ atm would be exactly the same, just reached faster.
+:::
+::::
+
+:::: tabs
+::: tab Q 27
+{{sp[info] Objective 14.5a}} · *short answer* Carbonated water holds the equilibrium $\ce{CO2(g) <=> CO2(aq)}$. Use Le Chatelier's principle to explain (a) why an opened bottle goes flat, and (b) why it goes flat faster when warm.
+:::
+::: tab Answer
+**(a) Opening the bottle removes a reactant from the equilibrium.** A sealed bottle is pressurized with $\ce{CO2}$ gas above the liquid. Opening it lets that gas escape, dropping $P_{\ce{CO2}}$ nearly to zero.
+
+The system shifts **left** — dissolved $\ce{CO2}$ leaves solution to replace the gas lost. But the gas keeps escaping into the room, so equilibrium is never re-established and the shift continues until essentially all the dissolved $\ce{CO2}$ is gone. That is flatness.
+
+A second equilibrium follows along: $\ce{CO2(aq) + H2O(l) <=> H2CO3(aq)}$. As $\ce{CO2(aq)}$ depletes, carbonic acid decomposes to replace it, so the drink also becomes less acidic — it tastes different, not merely less fizzy.
+
+**(b) Dissolving a gas is exothermic**, so heat is a product:
+
+$$\ce{CO2(g) <=> CO2(aq)} + \text{heat}$$
+
+Raising the temperature is like adding a product, so the equilibrium shifts **left**, toward the gas. Warm liquid holds less dissolved $\ce{CO2}$ at equilibrium *and* loses it faster, since the higher temperature speeds the escape as well. Position and rate move the same way here.
+
+**The connection back to Chapter 12:** this is Henry's law and the temperature-dependence of gas solubility — now derivable rather than merely stated.
+:::
+::::
+</script>
+<main id="orz-view" class="orz-view" data-orz-theme="light-neat-3"><article id="orz-doc" class="markdown-body"><p class="orz-fallback" style="opacity:.6;font:14px/1.5 system-ui,sans-serif">If this page stays blank, check your connection (this page loads its engine from the web) or open it in a recent browser; the document's text is inside this file — see the comment at the top.</p></article></main>
+<div id="orz-chrome"></div>
+<script id="orz-engine" src="https://cdn.jsdelivr.net/npm/orz-mdhtml-browser@1.1.0/orz-mdhtml.browser.js"></script>
+</body>
+</html>

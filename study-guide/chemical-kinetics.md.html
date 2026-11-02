@@ -1,0 +1,795 @@
+<!doctype html>
+<html lang="en" data-orz-kind="md">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="orz-md 1.1.0">
+<title>Chapter 13: Chemical Kinetics</title>
+<script type="application/orz-meta+json" id="orz-meta">
+{
+  "title": "Chapter 13: Chemical Kinetics"
+}
+</script>
+<script type="application/json" id="orz-shell">{"kind":"md","format":1,"shell":"1.1.0","delivery":"cdn"}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<link rel="stylesheet" id="orz-theme" href="https://cdn.jsdelivr.net/npm/orz-markdown@2.5.0/themes/light-neat-3.css" media="not all">
+<link rel="stylesheet" id="orz-katex" href="https://cdn.jsdelivr.net/npm/katex@0.16.47/dist/katex.min.css" media="not all">
+<link rel="stylesheet" id="orz-hljs" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css" media="not all">
+</head>
+<body>
+<!-- orz md document, text format 1. For AI agents and tools:
+  The complete, editable source of this file is the text/markdown island with id "orz-src" below.
+  Read it with extract() from orz-markdown/carrier, or by hand: take the island content, remove one
+  backslash after each "<" that is followed by backslashes and then "script" or "/script" (any case),
+  turn its line breaks into the style named by data-orz-eol, and prefix U+FEFF if data-orz-bom is set.
+  Edit that text only, then assemble again; everything else in this file is a regenerable shell.
+  Skill: https://cdn.jsdelivr.net/npm/orz-mdhtml/orz-mdhtml-skills/SKILL.md
+-->
+<script type="text/markdown" id="orz-src" data-orz-format="1" data-orz-eol="lf">{{nyml
+kind: document
+format: 1
+title: Chapter 13: Chemical Kinetics
+}}
+
+# Chapter 13: Chemical Kinetics
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 13 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, second semester
+**Package license:** CC BY 4.0
+**Note:** builds on balanced equations and stoichiometric coefficients (Chapter 3); facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+:::
+
+:::success
+**Chapter Learning Objectives**
+- Write rate expressions from a balanced equation, and determine a rate law, reaction order, and rate constant from experimental data.
+- Apply the integrated rate laws and half-life formulas for zero-, first-, and second-order reactions, and identify order graphically.
+- Apply the Arrhenius equation to relate rate constant, temperature, and activation energy.
+- Analyze a reaction mechanism: identify intermediates, the rate-determining step, and interpret a potential-energy profile.
+- Explain how a catalyst increases rate and distinguish heterogeneous, homogeneous, and enzyme catalysis.
+:::
+
+## Chapter Logic
+
+Every prior chapter asked "how much" or "in what state." This chapter asks a new question — how *fast* — and then asks *why* that speed is what it is. ==Thermodynamics tells you whether a reaction *can* happen; kinetics tells you whether it happens in a second, a year, or never on any human timescale.== Diamond turning into graphite is a downhill reaction that has been running for a billion years and is nowhere near finished — that gap is what this chapter measures.
+
+{{mermaid
+graph TD
+  A["Rate law (from experimental data)"] --> B["Integrated rate laws & half-life<br/>(zero/first/second order)"]
+  B --> C["Why does k depend on T?<br/>Arrhenius equation"]
+  C --> D["Reaction mechanisms<br/>explain WHY this rate law"]
+  D --> E["Catalysis:<br/>a practical application"]
+}}
+
+**Visual description:** A top-down flowchart. The experimentally-measured rate law leads to integrated rate laws and half-life formulas for each reaction order. The Arrhenius equation then explains why the rate constant itself depends on temperature. Reaction mechanisms explain, at the molecular level, why a particular rate law is observed. Catalysis closes the chapter as a practical application of lowering activation energy.
+
+## 13.1 Rate of Reaction and Rate Law{{attrs[#blk-ch13sec01]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 13.1a}} Write the rate expression for a reaction in terms of the disappearance of reactants and appearance of products, using stoichiometric coefficients. Rate laws come from experiment, not from the balanced equation (review r4).
+- {{sp[info] Objective 13.1b}} Determine the rate law (reaction order in each reactant and overall) and the rate constant $k$ from initial-rate experimental data.
+:::
+
+### One reaction, one rate
+
+For the reaction $a\ce{A} + b\ce{B} \rightarrow c\ce{C} + d\ce{D}$, the **reaction rate** can be tracked through any species, and every choice must agree:
+
+$$\text{rate} = -\frac{1}{a}\frac{\Delta[\ce{A}]}{\Delta t} = -\frac{1}{b}\frac{\Delta[\ce{B}]}{\Delta t} = \frac{1}{c}\frac{\Delta[\ce{C}]}{\Delta t} = \frac{1}{d}\frac{\Delta[\ce{D}]}{\Delta t}$$
+
+Dividing by each stoichiometric coefficient converts "how fast this particular species changes" into a single, shared rate — otherwise a reactant with coefficient 4 would appear to disappear four times faster than a product with coefficient 1, even though the reaction is proceeding at one single pace.
+
+:::: tabs
+::: tab Problem
+For $\ce{4PH3(g) -> P4(g) + 6H2(g)}$, molecular hydrogen is forming at 0.078 M/s. At what rate is $\ce{P4}$ forming, and at what rate is $\ce{PH3}$ reacting?
+:::
+::: tab Solution
+Write the shared rate expression:
+
+$$\text{rate} = -\frac{1}{4}\frac{\Delta[\ce{PH3}]}{\Delta t} = \frac{\Delta[\ce{P4}]}{\Delta t} = \frac{1}{6}\frac{\Delta[\ce{H2}]}{\Delta t}$$
+
+Given $\dfrac{\Delta[\ce{H2}]}{\Delta t} = 0.078$ M/s:
+
+$$\frac{\Delta[\ce{P4}]}{\Delta t} = \frac{1}{6}(0.078) = 0.013\ \text{M/s}$$
+
+$$\frac{\Delta[\ce{PH3}]}{\Delta t} = -\frac{4}{6}(0.078) = -0.052\ \text{M/s}$$
+
+**Read the signs.** $\ce{PH3}$ is a reactant, so its concentration change is **negative** — it is being consumed. $\ce{P4}$ and $\ce{H2}$ are products, so theirs are positive. The reaction *rate* itself is always reported as a positive number, which is what the minus signs in the shared expression are there to arrange.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+In the industrial synthesis of ammonia, $\ce{N2(g) + 3H2(g) -> 2NH3(g)}$, hydrogen is consumed at 0.30 M/s at a certain instant. (a) What is the reaction rate? (b) At what rate is $\ce{N2}$ consumed, and $\ce{NH3}$ produced? \(c) A student reports "the reaction rate is 0.30 M/s because that is what we measured." What is wrong with that?
+:::
+::: tab Solution
+**(a)** The shared rate divides each species' rate of change by its own coefficient:
+
+$$\text{rate} = -\frac{\Delta[\ce{N2}]}{\Delta t} = -\frac{1}{3}\frac{\Delta[\ce{H2}]}{\Delta t} = \frac{1}{2}\frac{\Delta[\ce{NH3}]}{\Delta t}$$
+
+Given $\dfrac{\Delta[\ce{H2}]}{\Delta t} = -0.30$ M/s,
+
+$$\text{rate} = -\frac{1}{3}(-0.30) = 0.10\ \text{M/s}$$
+
+**(b)** Work outward from that single number:
+
+$$\frac{\Delta[\ce{N2}]}{\Delta t} = -(0.10) = -0.10\ \text{M/s} \qquad \frac{\Delta[\ce{NH3}]}{\Delta t} = 2(0.10) = +0.20\ \text{M/s}$$
+
+Hydrogen disappears three times faster than nitrogen because the equation consumes three of it per one of them — the stoichiometry of Chapter 3, now expressed per unit time.
+
+**\(c)** 0.30 M/s is the rate of change of **hydrogen**, not the rate of the reaction. Without dividing by the coefficient, the same reaction would appear to have three different "rates" depending on which species you happened to watch. Dividing by the coefficient is what makes the rate a property of the reaction rather than of your choice of instrument.
+:::
+::::
+
+### The rate law and the method of initial rates
+
+$$\text{rate} = k[\ce{A}]^x[\ce{B}]^y$$
+
+==The exponents $x$ and $y$ must be determined experimentally — they are generally NOT equal to the balanced equation's coefficients $a$ and $b$.== The reaction is "$x$th order in A," "$y$th order in B," and "$(x+y)$th order overall." The **method of initial rates** finds $x$ and $y$ by comparing experiments where only one concentration changes at a time: doubling $[\ce{A}]$ while holding $[\ce{B}]$ fixed reveals $x$ directly from how the rate responds.
+
+:::: tabs
+::: tab Problem
+For $\ce{2NO + Cl2 -> 2NOCl}$, three trials give:
+
+| Trial | [NO] (M) | $[\ce{Cl2}]$ (M) | Rate (M/s) |
+|---|---|---|---|
+| 1 | 0.10 | 0.10 | 0.00300 |
+| 2 | 0.10 | 0.15 | 0.00450 |
+| 3 | 0.15 | 0.10 | 0.00675 |
+
+Determine the rate law and the rate constant.
+:::
+::: tab Solution
+Write $\text{rate} = k[\ce{NO}]^x[\ce{Cl2}]^y$. Compare trials 1 and 2, where only $[\ce{Cl2}]$ changes:
+
+$$\frac{\text{rate}_2}{\text{rate}_1} = \left(\frac{0.15}{0.10}\right)^y = \frac{0.00450}{0.00300} = 1.5 \Rightarrow y = 1$$
+
+Compare trials 1 and 3, where only $[\ce{NO}]$ changes:
+
+$$\frac{\text{rate}_3}{\text{rate}_1} = \left(\frac{0.15}{0.10}\right)^x = \frac{0.00675}{0.00300} = 2.25 \Rightarrow x = 2$$
+
+So $\text{rate} = k[\ce{NO}]^2[\ce{Cl2}]$ — second order in NO, first order in $\ce{Cl2}$, **third order overall**.
+
+**Now finish the job and get $k$.** Substitute any one trial into the rate law and solve. Using trial 1:
+
+$$k = \frac{\text{rate}}{[\ce{NO}]^2[\ce{Cl2}]} = \frac{0.00300\ \text{M/s}}{(0.10\ \text{M})^2(0.10\ \text{M})} = 3.0\ \text{M}^{-2}\text{s}^{-1}$$
+
+**Check it against a trial you did not use.** Trial 3 predicts $(3.0)(0.15)^2(0.10) = 0.00675$ M/s, matching the measurement exactly. A rate law that reproduces every trial, not just the one you fitted, is a rate law you can trust.
+
+{{sp[warning] Units}} $k$'s units are whatever makes both sides balance, and they change with the overall order. Here rate is M/s and $[\ce{NO}]^2[\ce{Cl2}]$ is $\text{M}^{3}$, so $k$ must carry $\text{M}^{-2}\,\text{s}^{-1}$. **A rate constant's units are therefore a fingerprint of the overall reaction order** — see the units row of the table in §13.2.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+For $\ce{A + B -> products}$, initial-rate data are:
+
+| Trial | [A] (M) | [B] (M) | Initial rate (M/s) |
+|---|---|---|---|
+| 1 | 0.10 | 0.20 | $2.0\times10^{-3}$ |
+| 2 | 0.20 | 0.20 | $8.0\times10^{-3}$ |
+| 3 | 0.10 | 0.40 | $2.0\times10^{-3}$ |
+
+Find the rate law, the overall order, and $k$.
+:::
+::: tab Solution
+**Order in A** — compare trials 1 and 2, where only $[\ce{A}]$ changes:
+
+$$\frac{8.0\times10^{-3}}{2.0\times10^{-3}} = 4.0 = \left(\frac{0.20}{0.10}\right)^x = 2^x \quad\Rightarrow\quad x = 2$$
+
+**Order in B** — compare trials 1 and 3, where only $[\ce{B}]$ changes:
+
+$$\frac{2.0\times10^{-3}}{2.0\times10^{-3}} = 1.0 = \left(\frac{0.40}{0.20}\right)^y = 2^y \quad\Rightarrow\quad y = 0$$
+
+**Doubling $[\ce{B}]$ did nothing at all, so the reaction is zero order in B**, and B drops out of the rate law entirely:
+
+$$\text{rate} = k[\ce{A}]^2 \qquad \text{second order overall}$$
+
+$$k = \frac{2.0\times10^{-3}\ \text{M/s}}{(0.10\ \text{M})^2} = 0.20\ \text{M}^{-1}\text{s}^{-1}$$
+
+**What a zero order means, and what it does not.** B is definitely involved — it is in the balanced equation and it gets consumed. It simply does not appear in the *rate-determining* step or any step before it, so adding more of it cannot make the bottleneck any wider. §13.4 explains how a mechanism produces this.
+
+**And notice the units check out:** second order overall, so $k$ should carry $\text{M}^{-1}\,\text{s}^{-1}$, and it does. If your $k$'s units disagree with the order you derived, one of the two is wrong.
+:::
+::::
+
+### What $k$ is, and what it is not
+
+The rate constant $k$ is where all the chemistry that is *not* concentration ends up. It depends on the **identity of the reactants**, on the **temperature**, and on the presence of a **catalyst** — but not on concentration. In particular, **$k$ does not depend on concentration; that is precisely the point of factoring the rate law into a constant times concentration terms**. Doubling $[\ce{A}]$ changes the *rate*, never $k$.
+
+Two consequences follow, and both matter later in the chapter:
+
+- **A rate constant is meaningless without its temperature.** Quote a $k$ and you must quote the $T$ at which it was measured. §13.3 is entirely about that dependence.
+- **$k$'s units are set by the overall order**, since the two sides of the rate law must balance. For an overall order $n$, $k$ carries units of $\text{M}^{1-n}\text{s}^{-1}$: zero order gives $\text{M}\,\text{s}^{-1}$, first order $\text{s}^{-1}$, second order $\text{M}^{-1}\,\text{s}^{-1}$, third order $\text{M}^{-2}\,\text{s}^{-1}$. Given nothing but "$k = 3.0\ \text{M}^{-2}\text{s}^{-1}$" you can already say the reaction is third order overall.
+
+**Self-check:**
+- If a reaction's rate law is rate $= k[\ce{A}]$, but the balanced equation is $2\ce{A} \rightarrow$ products, is that a contradiction? Why or why not?
+- In the NO/$\ce{Cl2}$ example, why does comparing trials 1 and 3 (rather than 2 and 3) isolate the exponent on [NO]?
+
+> **Where this goes next.** §13.1 gives you the rate law at a single instant — a snapshot. But the concentration that appears in it is itself changing as the reaction runs, so "rate $= k[\ce{A}]$" cannot answer the question you usually care about: how much is left after ten minutes? §13.2 integrates each rate law to answer exactly that.
+
+## 13.2 Reaction Orders{{attrs[#blk-ch13sec02]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 13.2a}} Distinguish zero-, first-, and second-order reactions by their rate laws.
+- {{sp[info] Objective 13.2a}} Apply the integrated rate law for each order to solve for concentration at a given time, or time to reach a given concentration.
+- {{sp[info] Objective 13.2b}} Calculate half-life for each order, and determine reaction order from a linearized plot.
+:::
+
+An **integrated rate law** answers the question a rate law by itself cannot: given the starting concentration, what is left at time $t$? Each order has its own, and its own half-life formula with it.
+
+### The three orders at a glance
+
+Each reaction order has its own integrated rate law (concentration as an explicit function of time) and its own half-life formula:
+
+| Order | Rate law | Integrated rate law | Half-life |
+|---|---|---|---|
+| Zero | rate $=k$ | $[\ce{A}]_t=[\ce{A}]_0-kt$ | $t_{1/2}=\dfrac{[\ce{A}]_0}{2k}$ |
+| First | rate $=k[\ce{A}]$ | $\ln[\ce{A}]_t=\ln[\ce{A}]_0-kt$ | $t_{1/2}=\dfrac{\ln 2}{k}$ |
+| Second | rate $=k[\ce{A}]^2$ | $\dfrac{1}{[\ce{A}]_t}=\dfrac{1}{[\ce{A}]_0}+kt$ | $t_{1/2}=\dfrac{1}{k[\ce{A}]_0}$ |
+
+{{sp[warning] Reminder}} only first-order half-life is a true constant. Zero- and second-order half-lives both change as the reaction proceeds, because they depend explicitly on $[\ce{A}]_0$, taken as the concentration at the start of each half-life.
+
+![Three panels of concentration versus time for zero-, first- and second-order reactions from the same starting concentration, with successive half-lives marked and shown to shorten, stay constant, and lengthen respectively](../assets/reaction_order_half_lives.svg)
+*Figure 13.1 — The same starting concentration decaying under each of the three rate laws. Read the half-life brackets along the bottom: zero order gets faster at halving as it runs down, first order takes exactly as long every time, and second order takes progressively longer. Self-generated with matplotlib.*
+
+Figure 13.1 is the picture to hold onto for the rest of the section. The three curves look superficially similar — all fall, and the first- and second-order curves both flatten — and telling them apart by shape alone is unreliable. The half-life brackets are what actually separate them.
+
+### First-order reactions
+
+A **first-order reaction** has a rate proportional to the first power of one reactant's concentration: rate $=k[\ce{A}]$. Because rate has units M/s and $[\ce{A}]$ has units M, $k$ carries units of $\text{s}^{-1}$ — a pure reciprocal time, with no concentration in it at all.
+
+Integrating gives the two equivalent forms you will actually use:
+
+$$\ln\frac{[\ce{A}]_t}{[\ce{A}]_0} = -kt \qquad\text{or}\qquad \ln[\ce{A}]_t = -kt + \ln[\ce{A}]_0$$
+
+The second form is the first one rearranged into $y = mx + b$: plot $\ln[\ce{A}]$ against $t$ and a first-order reaction gives a straight line of slope $-k$.
+
+$$t_{1/2} = \frac{\ln 2}{k}$$
+
+==This half-life formula contains no $[\ce{A}]_0$, and that single absence is the most useful fact in the section== — it means a first-order reaction takes the same time to fall from 1.0 M to 0.5 M as it does to fall from 0.001 M to 0.0005 M. Radioactive decay works this way, which is what makes carbon dating possible.
+
+:::: tabs
+::: tab Problem
+The rate constant for the first-order decomposition of cyclobutane at 500 °C is $9.2\times10^{-3}\ \text{s}^{-1}$. (a) Find the half-life. (b) Starting from 1 mol, how much remains after 3 minutes (180 s)?
+:::
+::: tab Solution
+**(a)**
+
+$$t_{1/2} = \frac{\ln 2}{k} = \frac{\ln 2}{9.2\times10^{-3}\ \text{s}^{-1}} = 75\ \text{s}$$
+
+**(b)** Using the integrated rate law with $t = 180$ s:
+
+$$\ln\left(\frac{[\ce{A}]_0}{[\ce{A}]_t}\right) = kt = (9.2\times10^{-3}\ \text{s}^{-1})(180\ \text{s}) = 1.66$$
+
+$$\frac{[\ce{A}]_0}{[\ce{A}]_t} = e^{1.66} = 5.2 \qquad [\ce{A}]_t = \frac{1\ \text{mol}}{5.2} = 0.19\ \text{mol}$$
+
+**Cross-check against (a).** 180 s is 2.4 half-lives. Two half-lives would leave 0.25 mol and three would leave 0.125 mol, so an answer between them — 0.19 mol — is right. Half-lives are a fast sanity check on any first-order calculation.
+
+{{sp[warning] Carry the digits}} $kt = 1.656$, and rounding it to 1.7 before exponentiating gives 0.18 mol instead of 0.19 — about a 4% error introduced entirely by rounding one intermediate. Round at the end, not in the middle.
+:::
+::::
+
+### Second-order reactions
+
+A **second-order reaction** depends on the concentration of one reactant squared, rate $=k[\ce{A}]^2$ — or on two different reactants each to the first power. Balancing units this time, $k$ must carry $\text{M}^{-1}\,\text{s}^{-1}$.
+
+$$\frac{1}{[\ce{A}]_t} = \frac{1}{[\ce{A}]_0} + kt \qquad t_{1/2} = \frac{1}{k[\ce{A}]_0}$$
+
+The linear form here is $1/[\ce{A}]$ against $t$, giving a straight line of slope $+k$ — note the sign flip relative to first order, because the reciprocal *grows* as the concentration falls.
+
+:::: tabs
+::: tab Problem
+Butadiene gas dimerizes, $\ce{2C4H6 -> C8H12}$, by a second-order reaction with $k = 5.76\times10^{-2}\ \text{L mol}^{-1}\text{min}^{-1}$. If $[\ce{C4H6}]_0 = 0.200\ \text{mol L}^{-1}$, what is the concentration after 10.0 min?
+:::
+::: tab Solution
+Use the second-order integrated rate law directly. The one thing to watch is that it solves for the **reciprocal** concentration, so there is an extra inversion at the end.
+
+$$\frac{1}{[\ce{C4H6}]_t} = \frac{1}{[\ce{C4H6}]_0} + kt = \frac{1}{0.200} + (5.76\times10^{-2})(10.0)$$
+
+$$= 5.00 + 0.576 = 5.58\ \text{L mol}^{-1}$$
+
+$$[\ce{C4H6}]_t = \frac{1}{5.58} = 0.179\ \text{mol L}^{-1}$$
+
+**Notice how little happened.** In ten minutes the concentration fell only from 0.200 to 0.179 M — about 10%. Check it against the half-life: $t_{1/2} = 1/(k[\ce{A}]_0) = 1/(5.76\times10^{-2} \times 0.200) = 87$ min. Ten minutes is a small fraction of one half-life, so a small change is exactly what should be expected.
+
+{{sp[warning] Don't forget to invert}} The single most common error here is reporting 5.58 as the answer. The integrated law gives $1/[\ce{A}]_t$; the concentration is its reciprocal, and it must come out *smaller* than $[\ce{A}]_0$.
+:::
+::::
+
+### Zero-order reactions — and why half-life behaves differently for each order
+
+A **zero-order reaction** has a rate that does not depend on concentration at all: rate $= k[\ce{A}]^0 = k$. The reaction proceeds at a fixed pace until the reactant is simply gone. Here $k$ carries the units of a rate itself, $\text{M}\,\text{s}^{-1}$.
+
+$$[\ce{A}]_t = [\ce{A}]_0 - kt \qquad t_{1/2} = \frac{[\ce{A}]_0}{2k}$$
+
+This looks strange at first — how can adding more reactant not speed things up? It happens whenever something *other* than the reactant concentration is the bottleneck. The commonest case is a reaction running on a catalyst surface that is already completely covered: extra reactant in the gas above has nowhere to land, so the rate is set by the surface, not by the concentration. Enzyme reactions behave the same way at high substrate concentration, and so does the human liver metabolizing ethanol — which is why blood alcohol falls at a fixed rate per hour regardless of how much was drunk.
+
+Gas-phase decomposition of nitrosyl bromide, $\ce{2NOBr(g) -> 2NO(g) + Br2(g)}$, is second order in NOBr: rate $=k[\ce{NOBr}]^2$, with $k = 0.80\ \text{M}^{-1}\text{s}^{-1}$ at a given temperature. Use it to see the half-life difference in numbers rather than in words.
+
+:::: tabs
+::: tab Problem
+Starting from $[\ce{NOBr}]_0 = 0.10$ M, find the first half-life. Then find how long the *second* half-life takes — the time for the concentration to drop from 0.050 M to 0.025 M.
+:::
+::: tab Solution
+**First half-life**, using $[\ce{A}]_0=0.10$ M:
+
+$$t_{1/2}=\frac{1}{k[\ce{A}]_0}=\frac{1}{(0.80)(0.10)}=12.5\ \text{s}$$
+
+**Second half-life** uses the same formula, but now with $[\ce{A}]_0=0.050$ M — the concentration at the *start of this interval*:
+
+$$t_{1/2}=\frac{1}{(0.80)(0.050)}=25\ \text{s}$$
+
+The second half-life is twice as long as the first, because second-order half-life is inversely proportional to whatever concentration the interval starts from, and that concentration keeps dropping.
+:::
+::::
+
+This is exactly why only **first-order** half-life is a true constant: its formula, $t_{1/2}=\ln2/k$, never references $[\ce{A}]_0$ at all, so every successive half-life takes identically as long. Zero- and second-order half-lives both change, but in *opposite* directions: zero-order half-life **shortens** as the reaction proceeds (less material left means less time is needed to remove half of what remains, since the rate itself stays constant), while second-order half-life **lengthens** (the rate itself slows as concentration drops, so halving takes progressively longer).
+
+:::: tabs
+::: tab Problem
+The human body metabolizes ethanol by a zero-order process, because the liver enzyme responsible is saturated at typical intoxicating concentrations. Blood alcohol content falls at a constant $k = 0.015$ %BAC per hour. A person's BAC peaks at 0.100%. (a) How long until it reaches the 0.080% legal driving limit? (b) How long until it reaches zero? \(c) Compute the half-life starting from 0.100% and again from 0.050%, and comment.
+:::
+::: tab Solution
+Zero order means the integrated rate law is a straight line: $[\ce{A}]_t = [\ce{A}]_0 - kt$.
+
+**(a)**
+$$0.080 = 0.100 - (0.015)t \quad\Rightarrow\quad t = \frac{0.020}{0.015} = 1.3\ \text{h}$$
+
+**(b)**
+$$0 = 0.100 - (0.015)t \quad\Rightarrow\quad t = \frac{0.100}{0.015} = 6.7\ \text{h}$$
+
+**\(c)**
+$$t_{1/2}(\text{from }0.100) = \frac{0.100}{2(0.015)} = 3.3\ \text{h} \qquad t_{1/2}(\text{from }0.050) = \frac{0.050}{2(0.015)} = 1.7\ \text{h}$$
+
+**The second half-life is half as long as the first** — the opposite of the second-order behavior in the NOBr example, and the reason Figure 13.1's left panel shows the brackets narrowing. It follows directly from $t_{1/2} = [\ce{A}]_0/2k$: the formula is *proportional* to the starting concentration, so as that falls, so does the half-life.
+
+**Why the practical advice follows.** Because the process is zero order, nothing speeds it up — not coffee, not water, not exercise. Those change concentration or comfort, and a zero-order rate is indifferent to concentration. The only variable is time, at a fixed 0.015 %BAC per hour.
+:::
+::::
+
+### Finding the order from a graph
+
+You will rarely be told the order — you will have concentration-versus-time data and have to determine it. Because each integrated rate law is linear in a *different* function of $[\ce{A}]$, the method is mechanical: plot the data **three ways** and see which one comes out straight.
+
+| Plot | Straight line means | Slope is |
+|---|---|---|
+| $[\ce{A}]$ vs. $t$ | zero order | $-k$ |
+| $\ln[\ce{A}]$ vs. $t$ | first order | $-k$ |
+| $1/[\ce{A}]$ vs. $t$ | second order | $+k$ |
+
+![Three plots of cyclobutane decomposition data: [A] vs time (curved), ln[A] vs time (linear), and 1/[A] vs time (curved)](../assets/reaction_order_linearization.svg)
+*Figure 13.2 — The same first-order dataset plotted all three ways. Only the middle plot is a straight line, and that linearity is itself the evidence of first order — no other calculation required. Self-generated with matplotlib using the worked example's own rate constant.*
+
+Figure 13.2 shows what a successful test looks like: two curved plots and one straight one. If none of the three is straight, the reaction is not a simple zero-, first- or second-order reaction in that one species.
+
+:::: tabs
+::: tab Problem
+The decomposition of $\ce{N2O5}$ is followed at constant temperature:
+
+| $t$ (s) | 0 | 100 | 200 | 300 | 400 |
+|---|---|---|---|---|---|
+| $[\ce{N2O5}]$ (M) | 0.400 | 0.283 | 0.200 | 0.141 | 0.100 |
+
+Determine the reaction order and the value of $k$, without plotting anything.
+:::
+::: tab Solution
+When the data are evenly spaced in time, you can run the graphical test arithmetically — a straight line means **equal steps in the plotted quantity for equal steps in time**.
+
+**Test zero order** ($[\ce{A}]$ itself): the successive differences are $-0.117, -0.083, -0.059, -0.041$. These are shrinking steadily, not constant. **Not zero order.**
+
+**Test first order** ($\ln[\ce{A}]$): the values are $-0.916, -1.262, -1.609, -1.959, -2.303$, and the successive differences are $-0.346, -0.347, -0.350, -0.344$. **Constant — first order.**
+
+**Confirm by half-life instead**, which is faster here once you notice it: 0.400 falls to 0.200 in 200 s, and 0.200 falls to 0.100 in the next 200 s. Two successive half-lives of identical length is the signature of first order, and of nothing else.
+
+**Now get $k$** from the half-life:
+
+$$k = \frac{\ln 2}{t_{1/2}} = \frac{0.693}{200\ \text{s}} = 3.5\times10^{-3}\ \text{s}^{-1}$$
+
+Cross-check against the slope: the $\ln[\ce{A}]$ steps averaged $-0.347$ per 100 s, so $k = 0.347/100 = 3.5\times10^{-3}\ \text{s}^{-1}$. The units, $\text{s}^{-1}$, are the ones expected for a first-order rate constant.
+:::
+::::
+
+**Self-check:**
+- A second-order reaction has $[\ce{A}]_0 = 0.50$ M. Is its half-life longer or shorter than the half-life measured starting from $[\ce{A}]_0 = 0.10$ M? (You don't need $k$ — reason from the formula's structure.)
+- A rate constant is reported as $2.4\ \text{M}^{-1}\text{s}^{-1}$ with no other information. What is the reaction's overall order, and how do you know?
+
+> **Where this goes next.** Everything so far has held temperature fixed and treated $k$ as a given number. But $k$ is the one thing in a rate law that temperature *does* change — often enormously. §13.3 asks why, and answers it by looking at what happens in an individual collision.
+
+## 13.3 Temperature Effect{{attrs[#blk-ch13sec03]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 13.3a}} State collision theory's two requirements for a reaction to occur.
+- {{sp[info] Objective 13.3a}} Define activation energy and transition state.
+- {{sp[info] Objective 13.3b}} Apply the Arrhenius equation and its two-point form to find activation energy or a rate constant at a new temperature.
+:::
+
+### Collision theory
+
+**Collision theory** rests on two claims, and both are needed.
+
+**1. Reaction rate is proportional to how often reactant particles collide.** This is what explains the concentration dependence in rate laws, most directly for elementary steps: crowd more particles into the same volume and they meet more often. It is the molecular-level reason a rate law has concentrations in it at all.
+
+**2. Not every collision reacts.** A collision produces a reaction only if it clears two separate hurdles:
+
+- **Energy.** The colliding pair must carry at least the **activation energy** ($E_a$) between them.
+- **Orientation.** They must also meet the right way round. Two molecules with ample energy simply bounce apart if the reacting ends were not the ends that touched.
+
+![Two panels: energy distributions of colliding pairs at a lower and a higher temperature with the activation energy marked and the reacting fraction shaded, and a productive versus unproductive collision orientation](../assets/collision_theory.svg)
+*Figure 13.3 — Panel (a): the shaded tail beyond $E_a$ is the fraction of collisions energetic enough to react. Raising the temperature does not move $E_a$; it redistributes collisions so that far more of them land past it — here from 8.8% to 26.7%, a threefold increase from a modest temperature rise. Panel (b): both collisions carry identical energy, and only one is oriented to react. Self-generated with matplotlib.*
+
+Panel (a) of Figure 13.3 is the main explanation of why reactions speed up when heated, and it is worth being precise about it. ==Heating does not lower the activation energy — it does not change $E_a$ at all. It increases the fraction of collisions that already have enough energy to clear it.== The barrier stays exactly where it was; more molecules simply arrive able to jump it.
+
+:::: tabs
+::: tab Problem
+Burning paper is strongly exothermic, releasing about 2800 kJ per mole of cellulose (C6H10O5) units. Yet a book sitting on a desk in an oxygen-rich atmosphere does not burst into flame. (a) Explain using collision theory. (b) What does a lit match supply? \(c) Once lit, why does the paper keep burning after the match is removed?
+:::
+::: tab Solution
+**(a) A large $E_a$, not a lack of energy release.** Cellulose and $\ce{O2}$ collide constantly at room temperature. But the reaction requires beginning to break strong C–C, C–H and O=O bonds to get started, so the barrier is high — several hundred kJ/mol. At 298 K essentially none of the collisions in the tail of Figure 13.3(a) reach it. The reaction is enormously **favorable** and enormously **slow**, and those are independent facts.
+
+**(b) The match supplies energy to a small region**, raising the local temperature enough that a workable fraction of collisions there clear the barrier. It does not lower $E_a$ and it does not change $\Delta H$; it moves molecules up the existing distribution. This is the difference between a match and a catalyst, and it is worth being able to state precisely.
+
+**\(c) The reaction supplies its own activation energy from then on.** Each mole of cellulose units that burns releases ~2800 kJ, part of it as heat into the immediately surrounding paper — which raises *its* temperature past the threshold, which burns and heats the next region. The match is needed only to start the chain, not to sustain it.
+
+**The general shape of this argument:** thermodynamics ($\Delta H$, or strictly $\Delta G$) says whether the products are more stable; kinetics ($E_a$) says whether anyone will live to see it. A large negative $\Delta H$ with a large $E_a$ describes gasoline, diamond, and most of the organic matter you are made of — all of which are, thermodynamically, waiting to burn.
+:::
+::::
+
+### Activation energy and the transition state
+
+**Activation energy** ($E_a$) is the minimum energy a collision must supply for a reaction to occur. The **transition state** is what exists at the top of that barrier: a fleeting arrangement, part-way between reactants and products, with old bonds partly broken and new ones partly formed. It is not a substance you can isolate or put in a bottle — it exists for roughly the duration of one bond vibration and then falls one way or the other.
+
+Three things follow that are worth stating separately, because each is confused with another in practice:
+
+- **$E_a$ is a property of the reaction, not of the temperature.** Heating a reaction does not lower its barrier. Figure 13.3(a) shows the barrier fixed and the distribution shifting.
+- **$E_a$ is not determined by $\Delta H$.** A reaction can be strongly exothermic and still have a huge barrier — that combination describes most fuels.
+- **The forward and reverse reactions share one peak but have different barriers.** Their two activation energies differ by exactly $\Delta H$, a relationship that Figure 13.5 makes visible and that §13.4's profile example puts numbers to.
+
+### The Arrhenius equation
+
+Collision theory becomes quantitative in the **Arrhenius equation**:
+
+$$k = Ae^{-E_a/RT} \qquad\text{or, taking logarithms,}\qquad \ln k = \ln A - \frac{E_a}{RT}$$
+
+Read the pieces separately. The **frequency factor** $A$ collects how often collisions happen and how often they are correctly oriented. The exponential $e^{-E_a/RT}$ is the fraction of collisions with enough energy — exactly the shaded tail in Figure 13.3. Because $E_a$ sits in an exponent, a modest change in temperature can change $k$ by a large factor.
+
+The logarithmic form is again a straight line, $y = mx + b$, with $\ln k$ against $1/T$ and slope $-E_a/R$. Subtracting that equation from itself at two temperatures eliminates $A$ entirely and leaves the form you will use most:
+
+$$\ln\frac{k_1}{k_2} = \frac{E_a}{R}\left(\frac{1}{T_2}-\frac{1}{T_1}\right)$$
+
+Figure 13.4 shows the linearized form applied to real data. Its usefulness is that a curved relationship between $k$ and $T$ becomes a straight line you can fit a ruler to, and the slope of that line is $-E_a/R$.
+
+![Arrhenius plot of ln k vs 1/T for acetaldehyde decomposition, showing a straight line through two experimental points](../assets/arrhenius_plot.svg)
+*Figure 13.4 — A straight line on a ln k vs. 1/T plot is the signature of Arrhenius behavior; its slope is $-E_a/R$. The two marked points are real experimental data from the worked example below. Self-generated with matplotlib.*
+
+:::: tabs
+::: tab Problem
+The rate constant for acetaldehyde decomposition is $1.1\times10^{-2}\ \text{L/mol·s}$ at 703 K and $4.95\ \text{L/mol·s}$ at 865 K. Find $E_a$.
+:::
+::: tab Solution
+$$\ln\frac{1.1\times10^{-2}}{4.95} = \frac{E_a}{8.314\ \text{J/mol·K}}\left(\frac{1}{865\ \text{K}}-\frac{1}{703\ \text{K}}\right)$$
+
+Solving for $E_a$:
+
+$$E_a = 1.9\times10^5\ \text{J/mol} = 1.9\times10^2\ \text{kJ/mol}$$
+
+Notice the pattern: this is the same two-point rearrangement strategy as the Clausius–Clapeyron equation in Chapter 11 — both relate the logarithm of a temperature-dependent quantity (a rate constant or a vapor pressure) to $1/T$.
+
+**Two habits worth building here.** $R$ is $8.314\ \text{J}\,\text{mol}^{-1}\,\text{K}^{-1}$, so the answer arrives in **joules** per mole and usually wants converting to kJ/mol. And the temperatures must be in **kelvin**, because $1/T$ appears in the equation — a Celsius value would not merely shift the answer, it would make the reciprocal meaningless.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+A reaction has $E_a = 50.$ kJ/mol. By what factor does its rate constant increase when the temperature is raised from 300. K to 310. K? Repeat for a reaction with $E_a = 100.$ kJ/mol, and explain the difference.
+:::
+::: tab Solution
+Use the two-point form with $k_2$ as the unknown, solving for the ratio $k_2/k_1$:
+
+$$\ln\frac{k_2}{k_1} = \frac{E_a}{R}\left(\frac{1}{T_1}-\frac{1}{T_2}\right)$$
+
+$$\frac{1}{300.} - \frac{1}{310.} = 3.3333\times10^{-3} - 3.2258\times10^{-3} = 1.075\times10^{-4}\ \text{K}^{-1}$$
+
+**For $E_a = 50.$ kJ/mol:**
+$$\ln\frac{k_2}{k_1} = \frac{50{,}000}{8.314}(1.075\times10^{-4}) = 0.647 \quad\Rightarrow\quad \frac{k_2}{k_1} = e^{0.647} = 1.9$$
+
+**For $E_a = 100.$ kJ/mol:**
+$$\ln\frac{k_2}{k_1} = \frac{100{,}000}{8.314}(1.075\times10^{-4}) = 1.293 \quad\Rightarrow\quad \frac{k_2}{k_1} = e^{1.293} = 3.6$$
+
+**Why the higher barrier is more temperature-sensitive.** Look at panel (a) of Figure 13.3 again. A large $E_a$ sits far out in the thin tail of the distribution, where a small shift in the curve multiplies a tiny fraction by a lot. A small $E_a$ sits nearer the bulk, where the same shift adds proportionally less. Doubling $E_a$ doubles the exponent, and the exponent is what gets exponentiated.
+
+**The rule of thumb this justifies:** "reaction rates roughly double for every 10 °C" is true near room temperature for reactions with $E_a$ near 50 kJ/mol, which is a common range — but it is a coincidence of that range, not a law. A 100 kJ/mol reaction nearly quadruples.
+:::
+::::
+
+:::warning
+Don't confuse activation energy with the reaction's overall $\Delta H$. $E_a$ is measured from reactants (or an intermediate) *up to* the transition-state peak; $\Delta H$ compares only the starting reactants to the final products, regardless of the path between them. A reaction can have a large $E_a$ and still be strongly exothermic overall.
+:::
+
+:::: tabs
+::: tab Problem
+For each change, say whether the reaction rate increases, and identify which of collision theory's factors is responsible: (a) grinding a solid reactant into a fine powder; (b) raising the temperature by 20 °C; \(c) doubling the concentration of a gaseous reactant; (d) adding a catalyst.
+:::
+::: tab Solution
+Sort each one by which part of the theory it touches — **collision frequency**, **fraction with enough energy**, or **the barrier itself**.
+
+**(a) Powdering a solid: rate increases — collision frequency.** Only surface particles can be collided with, and grinding multiplies the surface area enormously. Neither $E_a$ nor the energy distribution changes; there are simply far more places for a collision to happen. This is why flour dust can explode while a bag of flour cannot burn quickly.
+
+**(b) Raising the temperature: rate increases — fraction with enough energy** (and, more weakly, collision frequency). This is the shaded-tail effect of Figure 13.3(a), and it is the larger of the two contributions by a wide margin.
+
+**\(c) Doubling a gaseous reactant: rate increases — collision frequency.** Twice as many particles in the same volume means more encounters per second. Whether the rate exactly doubles depends on the reaction's order in that species — which is a question for §13.1's rate law, not for collision theory.
+
+**(d) Adding a catalyst: rate increases — but by lowering the barrier.** This is the one change in the list that does not act through frequency or through the energy distribution. The catalyst opens a different pathway with a smaller $E_a$, so a larger fraction of the *unchanged* energy distribution now qualifies. §13.5 takes this up.
+
+**The distinction worth keeping:** (a) and \(c) change how often molecules meet. (b) changes how energetic the meetings are. (d) changes how much energy a meeting needs. Only (d) touches $E_a$.
+:::
+::::
+
+**Self-check:**
+- Two reactions have the same $A$ (frequency factor) but different $E_a$. Which one is more sensitive to a temperature increase — the one with the larger or smaller $E_a$?
+- Why does the two-point Arrhenius equation not require knowing $A$ at all?
+
+> **Where this goes next.** §13.3 explains why a barrier makes reactions slow, but it treats the reaction as a single event. Real reactions almost never happen in one collision — they happen as a sequence of steps, each with its own barrier. §13.4 opens that sequence up, and in doing so finally explains *where a rate law comes from*.
+
+## 13.4 Reaction Mechanisms{{attrs[#blk-ch13sec04]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 13.4a}} Distinguish an elementary reaction from an overall reaction, and identify intermediates.
+- {{sp[info] Objective 13.4a}} Write the rate law for an elementary step directly from its molecularity.
+- {{sp[info] Objective 13.4a}} Identify the rate-determining step and relate it to the overall experimental rate law.
+- {{sp[info] Objective 13.4b}} Interpret a potential-energy profile (transition states, intermediates, activation energies).
+:::
+
+### Elementary steps, intermediates, and molecularity
+
+A **reaction mechanism** is the sequence of **elementary reactions** — individual molecular-level steps — that together add up to the overall balanced equation. Two rules govern any proposed mechanism, and both are testable:
+
+1. **The steps must sum to the overall balanced equation.**
+2. **The mechanism must predict the experimentally observed rate law.** A mechanism that predicts a different rate law is wrong, however plausible it looks.
+
+A species produced in an early step and consumed in a later one is an **intermediate**; because it cancels out, it never appears in the overall equation.
+
+:::warning
+**An intermediate is not a transition state.** An intermediate is a real chemical species sitting in an energy *valley* — it has ordinary bonds, a finite lifetime, and can sometimes be detected or even trapped. A transition state sits at an energy *peak*: it is the configuration at the instant of change, lasts about one bond vibration, and can never be isolated. On a potential-energy profile, intermediates are the minima between peaks and transition states are the maxima.
+:::
+
+Unlike an overall rate law (always experimental), an **elementary step's** rate law can be written directly from its **molecularity** — the number of particles that must come together in that one step:
+
+- **Unimolecular** (one particle rearranges or falls apart): $\ce{A -> B}$ gives rate $=k[\ce{A}]$.
+- **Bimolecular** (two particles collide): $\ce{A + B -> C}$ gives rate $=k[\ce{A}][\ce{B}]$; $2\ce{A -> B}$ gives rate $=k[\ce{A}]^2$. Bimolecular steps are by far the most common, since they require only two particles to meet at once.
+- **Termolecular** (three particles collide simultaneously): $2\ce{A}+\ce{B -> C}$ gives rate $=k[\ce{A}]^2[\ce{B}]$. Termolecular elementary steps are rare — three particles arriving at the same point at the same instant, with the right orientation and energy, is far less probable than a two-particle collision, so most mechanisms avoid them in favor of two or more successive bimolecular steps.
+
+{{sp[warning] The one place coefficients do become exponents}} §13.1 insisted that exponents in a rate law are not necessarily the balanced equation's coefficients. That rule holds for **overall** equations. For a single **elementary step** the coefficients *are* the exponents — because an elementary step is a literal description of one molecular event, so its molecularity is its order. Knowing which situation you are in is the whole skill.
+
+### The rate-determining step
+
+The **rate-determining step** — the slowest elementary step, equivalently the one with the largest activation energy — controls the observed overall rate law, because the overall reaction can only proceed as fast as its slowest link.
+
+![Potential-energy profile for a two-step mechanism showing reactants, two transition states, an intermediate, and products](../assets/potential_energy_profile.svg)
+*Figure 13.5 — Each peak is a transition state (its height above the previous point is that step's activation energy); each valley between peaks (other than the starting reactants or final products) is an intermediate. Step 1 has the larger activation energy (its climb to TS1, measured from the reactants), so step 1 is the rate-determining step. Self-generated with matplotlib; energies are schematic/illustrative — the relative ordering matches the worked example's conclusion that step 1 is rate-determining.*
+
+:::: tabs
+::: tab Problem
+A proposed two-step mechanism for $\ce{NO2 + CO -> NO + CO2}$:
+
+Step 1 (slow): $\ce{2NO2 -> NO3 + NO}$
+Step 2 (fast): $\ce{NO3 + CO -> NO2 + CO2}$
+
+What is the overall reaction, the intermediate, and the overall rate law?
+:::
+::: tab Solution
+Add the two steps and cancel species appearing on both sides:
+
+$$\ce{2NO2 + NO3 + CO -> NO3 + NO + NO2 + CO2}$$
+
+Canceling one $\ce{NO2}$ and the $\ce{NO3}$ gives the overall reaction: $\ce{NO2 + CO -> NO + CO2}$.
+
+$\ce{NO3}$ is produced in step 1 and consumed in step 2 — it is the **intermediate**.
+
+The rate-determining step is step 1 (given as slow), so the overall rate law equals that elementary step's rate law: $\text{rate} = k[\ce{NO2}]^2$.
+:::
+::::
+
+### When the rate-determining step isn't first
+
+The rate-determining step can be *any* step in the mechanism — whichever one has the largest activation energy — not necessarily the one written first. ==Always identify the rate-determining step from its activation energy (or an explicit "slow"/"fast" label); never assume it by position in the list.==
+
+:::: tabs
+::: tab Problem
+A proposed mechanism for atmospheric ozone destruction, $\ce{2O3(g) -> 3O2(g)}$:
+
+Step 1 (fast equilibrium): $\ce{O3 <=> O2 + O}$
+Step 2 (slow): $\ce{O + O3 -> 2O2}$
+
+What is the intermediate, and what is the overall rate law?
+:::
+::: tab Solution
+**Overall reaction.** Adding the two steps gives $\ce{O3 + O + O3 -> O2 + 2O2 + O}$; canceling the atomic oxygen that appears on both sides leaves $\ce{2O3 -> 3O2}$. ✓
+
+**Intermediate.** Atomic oxygen, $\ce{O}$, is produced in step 1 and consumed in step 2.
+
+**Start from the rate-determining step.** Step 2 is slow, so it sets the pace:
+
+$$\text{rate} = k_2[\ce{O}][\ce{O3}]$$
+
+**But this is not yet an acceptable answer**, because $\ce{O}$ is an intermediate. Intermediates cannot appear in a final rate law — you cannot measure the concentration of a species that never accumulates, so a rate law containing one predicts nothing you could test.
+
+**Eliminate the intermediate using the fast equilibrium.** Step 1 reaches equilibrium quickly, so its forward and reverse rates are equal:
+
+$$k_1[\ce{O3}] = k_{-1}[\ce{O2}][\ce{O}] \quad\Rightarrow\quad [\ce{O}] = \frac{k_1}{k_{-1}}\cdot\frac{[\ce{O3}]}{[\ce{O2}]}$$
+
+**Substitute back:**
+
+$$\text{rate} = k_2\cdot\frac{k_1}{k_{-1}}\cdot\frac{[\ce{O3}]}{[\ce{O2}]}\cdot[\ce{O3}] = k\,\frac{[\ce{O3}]^2}{[\ce{O2}]} \qquad\text{where } k = \frac{k_1k_2}{k_{-1}}$$
+
+**Two things this predicts that no one could have guessed from $\ce{2O3 -> 3O2}$.** The reaction is second order in ozone — and it is **inhibited by its own product**: a build-up of $\ce{O2}$ pushes the first equilibrium backward, starves step 2 of atomic oxygen, and slows everything down. A negative order in a product is a strong hint that a fast pre-equilibrium precedes the rate-determining step. Both predictions match experiment, which is what makes this mechanism credible.
+:::
+::::
+
+:::warning
+**A final rate law may contain only species whose concentrations you could actually measure** — reactants, products, or catalysts, never intermediates. If the rate-determining step's rate law contains an intermediate, you are not finished: use the preceding fast equilibrium to express that intermediate in terms of real species, and substitute. This is the single most-skipped step in mechanism problems.
+:::
+
+### Reading a potential-energy profile
+
+A potential-energy profile is the mechanism drawn as a landscape, and five things can be read straight off it:
+
+| Feature on the diagram | What it tells you |
+|---|---|
+| products lower than reactants | overall reaction is exothermic (higher = endothermic) |
+| each **maximum** | a transition state |
+| **number** of maxima | number of elementary steps |
+| each **minimum** between maxima | an intermediate |
+| height from a valley up to the next peak | that step's activation energy |
+| the **largest** such climb | the rate-determining step |
+
+:::: tabs
+::: tab Problem
+A two-step mechanism has a profile with the following energies (kJ/mol): reactants 40, first peak 130, intermediate 60, second peak 105, products 15. (a) How many elementary steps? (b) Is the overall reaction exo- or endothermic, and by how much? \(c) Give $E_a$ for each step. (d) Which step is rate-determining? (e) What is $E_a$ for the *reverse* of step 1?
+:::
+::: tab Solution
+**(a) Two steps** — two maxima, one per elementary step. The single minimum between them is the intermediate.
+
+**(b) Exothermic.** Compare only the two endpoints, ignoring everything in between: $15 - 40 = -25$ kJ/mol, so $\Delta H = -25$ kJ/mol.
+
+**\(c) Measure each climb from the valley it starts in, not from the reactants:**
+
+$$E_{a,1} = 130 - 40 = 90\ \text{kJ/mol} \qquad E_{a,2} = 105 - 60 = 45\ \text{kJ/mol}$$
+
+**(d) Step 1 is rate-determining**, because 90 > 45. Note that the *absolute* height of the second peak (105) is not what matters — what matters is how far the system must climb from where it currently sits. The second peak is high on the page but is an easier climb.
+
+**(e) Reverse of step 1** runs from the intermediate back up over the first peak: $130 - 60 = 70$ kJ/mol.
+
+**Why (e) is worth doing.** Comparing 90 kJ/mol forward with 70 kJ/mol reverse shows step 1 is itself endothermic by 20 kJ/mol — and the difference between the forward and reverse activation energies is always exactly that step's $\Delta H$. That relationship is what §13.5 exploits and what Chapter 14 turns into the equilibrium constant.
+:::
+::::
+
+**Self-check:**
+- In the ozone example above, why couldn't you have predicted rate $= k[\ce{O3}]^2/[\ce{O2}]$ just from the overall balanced equation $\ce{2O3 -> 3O2}$?
+- Why can't you simply look at the overall balanced equation to predict the rate law, the way you can for a single elementary step?
+
+:::: tabs
+::: tab Problem
+A two-step mechanism has a **fast** first step and a **slow** second step, and the overall reaction is **endothermic**. Sketch — in words — the potential-energy profile: how many peaks, which peak is higher, and how the two endpoints compare. Then say where the intermediate sits relative to the reactants, given that the first step is endothermic too.
+:::
+::: tab Solution
+Translate each stated fact into one feature of the drawing.
+
+**Two elementary steps → two peaks**, with a single valley (the intermediate) between them.
+
+**Step 2 is slow → the second climb is the taller one.** Be careful about what "taller" means: it is the height measured **from the intermediate valley up to peak 2**, not peak 2's height on the page. In general, peak 2 could even be drawn lower than peak 1 and still be the rate-determining step, if the intermediate sits low enough (below the reactants, which cannot happen here because step 1 is endothermic).
+
+**Overall endothermic → products end higher than reactants.** Only the two endpoints are compared; nothing between them affects $\Delta H$.
+
+**Step 1 endothermic → the intermediate sits above the reactants.**
+
+Putting it together, reading left to right: start at the reactants; climb a **smaller** barrier to peak 1; drop into a valley that is still **above** where you started; climb a **larger** barrier to peak 2; descend to products that are **above** the reactants but below peak 2.
+
+**A check you can apply to any profile you draw:** the rate-determining step is the largest single climb *from wherever the system currently sits*, and $\Delta H$ is the endpoint difference alone. Confusing "highest peak" with "largest climb" is the standard error, and in this problem the two happen to coincide (both are peak 2), but in other profiles, for example one with an exothermic first step, they can differ.
+:::
+::::
+
+> **Where this goes next.** Mechanisms explain why a reaction has the rate law it has, and the rate-determining step's activation energy explains why it is as slow as it is. That immediately suggests a way to intervene: give the reaction a different mechanism, with a smaller barrier. §13.5 is that idea.
+
+## 13.5 Catalysis{{attrs[#blk-ch13sec05]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 13.5a}} Define catalyst and explain how it increases reaction rate without being consumed.
+- {{sp[info] Objective 13.5a}} Distinguish heterogeneous, homogeneous, and enzyme catalysis.
+:::
+
+### How a catalyst works
+
+A **catalyst** speeds up a reaction by opening an alternative pathway with a **lower activation energy**, without being consumed and without appearing in the overall balanced equation.
+
+![Two potential-energy curves for the same reaction, uncatalyzed and catalyzed, showing a lower peak for the catalyzed path while reactant and product energies are unchanged](../assets/catalyzed_vs_uncatalyzed.svg)
+*Figure 13.6 — The catalyst does not push the reactants uphill or pull the products down — both endpoints sit exactly where they were, so $\Delta H$ is unchanged. What moves is the peak between them. Because the peak drops while both endpoints stay put, the barrier falls in the reverse direction too, and by the same amount. Self-generated with matplotlib; energies are illustrative.*
+
+Figure 13.6 makes three separate claims, and each is a common exam question:
+
+- ==A catalyst changes the pathway, not the destination — so it changes $E_a$ but never $\Delta H$.== The reactants and products are the same substances at the same energies whether or not a catalyst is present.
+- **The barrier falls in both directions, by the same amount.** Here the forward barrier drops 90 → 38 kJ/mol and the reverse drops 120 → 68 kJ/mol — both by 52 kJ/mol, because both are measured to the same lowered peak. A catalyst therefore speeds up the reverse reaction by the same factor as the forward one, which means **a catalyst cannot shift a position of equilibrium**; it only gets there faster. Chapter 14 will lean on this.
+- **The catalyst is regenerated.** It participates — it is consumed in an early step of the new mechanism and returned in a later one — which is precisely how an intermediate behaves, but reversed in order. A catalyst appears in the mechanism, on the reactant side of an early step and the product side of a later one, and cancels from the overall equation.
+
+:::: tabs
+::: tab Problem
+An uncatalyzed reaction has $E_a = 75$ kJ/mol; a catalyst lowers it to 45 kJ/mol. Assuming the frequency factor $A$ is unchanged, by what factor does the catalyst speed the reaction up at 298 K? Does it change how much product is eventually formed?
+:::
+::: tab Solution
+Take the ratio of two Arrhenius expressions. Because $A$ is common to both, it cancels — the same trick as the two-point form:
+
+$$\frac{k_\text{cat}}{k_\text{uncat}} = \frac{Ae^{-E_{a,\text{cat}}/RT}}{Ae^{-E_{a,\text{uncat}}/RT}} = e^{(E_{a,\text{uncat}} - E_{a,\text{cat}})/RT}$$
+
+$$= \exp\!\left(\frac{30{,}000\ \text{J/mol}}{(8.314)(298)}\right) = e^{12.11} = 1.8\times10^{5}$$
+
+**The catalyst makes the reaction about 180,000 times faster** — from a 30 kJ/mol change in a barrier. A reaction that would have taken two years now takes about six minutes. This exponential leverage is why catalysts matter industrially: they are not a marginal improvement.
+
+**Does it change how much product forms? No.** The catalyst leaves both endpoints untouched, so $\Delta H$ is unchanged and, as Chapter 14 will show, so is the equilibrium position. The reverse reaction was sped up by the identical factor of $1.8\times10^5$. **A catalyst changes when you arrive, never where.**
+:::
+::::
+
+### The three types of catalysis
+
+Figure 13.7 shows the commonest heterogeneous catalyst most people own.
+
+![Interior of a catalytic converter, showing its ceramic honeycomb structure coated with catalytic metal](../assets/catalytic_converter.jpg =700x)
+*Figure 13.7 — A catalytic converter is heterogeneous catalysis in action: exhaust gases (a different phase from the solid catalyst coating the honeycomb) react on its surface at a far lower activation energy than they would uncatalyzed, converting pollutants like CO and NOₓ into $\ce{CO2}$ and $\ce{N2}$ before they leave the tailpipe. Source: Cyrogigabyte, via Wikimedia Commons, $\ce{CC0}$.*
+
+- **Heterogeneous catalysis** — catalyst in a different phase from the reactants (e.g., a solid metal surface catalyzing gas-phase reactants, as in the catalytic converter above).
+- **Homogeneous catalysis** — catalyst in the same phase as the reactants (e.g., a dissolved catalyst in a liquid-phase reaction).
+- **Enzyme catalysis** — biological catalysts (proteins) that bind a specific substrate at an active site, dramatically lowering $E_a$ for a specific biochemical reaction.
+
+Figure 13.8 shows why enzymes are so specific: the active site's shape is the selection mechanism.
+
+![A schematic lock-and-key diagram of enzyme catalysis: a substrate binding to an enzyme's active site to form product](../assets/enzyme_lock_and_key.svg =500x)
+*Figure 13.8 — The lock-and-key model: an enzyme's active site is shaped to bind a specific substrate, positioning it precisely and lowering the activation energy needed to convert it to product. Source: domdomegg, via Wikimedia Commons, CC BY 4.0.*
+
+:::: tabs
+::: tab Problem
+Classify each as heterogeneous, homogeneous, or enzyme catalysis, and say what identifies it: (a) solid platinum in a catalytic converter turning exhaust CO into $\ce{CO2}$; (b) chlorine atoms from CFCs, in the gas phase, destroying gas-phase ozone; \(c) catalase in your cells breaking hydrogen peroxide into water and oxygen; (d) a dissolved acid speeding the hydrolysis of an ester in solution.
+:::
+::: tab Solution
+Apart from enzymes (protein catalysts acting at an active site), the test is a single question: **is the catalyst in the same phase as the reactants?**
+
+**(a) Heterogeneous.** Solid catalyst, gaseous reactants — two phases. The reaction happens only on the surface, which is why these catalysts are made as thin coatings on honeycombs: surface area is the whole product.
+
+**(b) Homogeneous.** Both the $\ce{Cl}$ atoms and the $\ce{O3}$ are gases — one phase. This is the mechanism behind the ozone hole, and it shows why "catalyst" is a kinetic label, not a compliment: one chlorine atom can destroy tens of thousands of ozone molecules precisely because it is regenerated each cycle.
+
+**\(c) Enzyme catalysis.** A protein binding a specific substrate at an active site. Catalase is among the fastest enzymes known, and the effect is dramatic — hydrogen peroxide decomposes on its own over months, but foams instantly on contact with a cut.
+
+**(d) Homogeneous.** Dissolved acid, dissolved ester — both in the liquid phase.
+
+**Why the phase distinction is worth making:** it decides how you separate the catalyst afterward. A heterogeneous catalyst can be filtered out or simply left in place as a fixed bed; a homogeneous one is mixed into the product and must be separated chemically. That practical difference, not any difference in mechanism, is why industry prefers heterogeneous catalysts where it can get them.
+:::
+::::
+
+**Self-check:**
+- Does a catalyst change the value of $\Delta H$ for a reaction? Does it change $E_a$? Explain the difference.
+- Why is an enzyme's specificity (binding only one substrate shape) a direct consequence of the lock-and-key idea?
+
+## Synthesis
+
+==This chapter builds a single chain of reasoning: rate laws are measured, not assumed; integrated rate laws turn that measured law into a prediction of concentration over time; the Arrhenius equation explains why the rate constant itself depends on temperature; and reaction mechanisms explain, at the molecular level, why a particular rate law was observed in the first place.== Catalysis is the payoff — once you understand that a reaction's speed is governed by its activation-energy barrier, lowering that barrier (without touching the reactants or products) is exactly how a catalyst works. This chapter's first-order kinetics and half-life formula will reappear essentially unchanged in Chapter 19 for radioactive decay, and its forward/reverse rate-constant framing is the direct bridge to Chapter 14's equilibrium constant, $K = k_f/k_r$ for an elementary reaction.
+
+## Asset and License Record for This Chapter
+
+| Asset | Source URL | License | Attribution |
+|---|---|---|---|
+| `assets/reaction_order_half_lives.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/reaction_order_linearization.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib using the study guide's own first-order worked-example data (cyclobutane decomposition); released under this package's CC BY 4.0 license. |
+| `assets/collision_theory.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/arrhenius_plot.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib using the study guide's own two real data points (703 K/865 K); released under this package's CC BY 4.0 license. |
+| `assets/potential_energy_profile.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; energy values are schematic/illustrative (relative ordering matches the worked example's conclusion that step 1 is rate-determining), not exact experimental data; released under this package's CC BY 4.0 license. |
+| `assets/catalyzed_vs_uncatalyzed.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/catalytic_converter.jpg` | https://commons.wikimedia.org/wiki/File:Catalytic_Converter_Interior.jpg | CC0 | Cyrogigabyte, via Wikimedia Commons, CC0. Resized from the original for web use. |
+| `assets/enzyme_lock_and_key.svg` | https://commons.wikimedia.org/wiki/File:Lock_and_key_enzyme_mechanism.svg | CC BY 4.0 | domdomegg, via Wikimedia Commons, CC BY 4.0. |
+</script>
+<main id="orz-view" class="orz-view" data-orz-theme="light-neat-3"><article id="orz-doc" class="markdown-body"><p class="orz-fallback" style="opacity:.6;font:14px/1.5 system-ui,sans-serif">If this page stays blank, check your connection (this page loads its engine from the web) or open it in a recent browser; the document's text is inside this file — see the comment at the top.</p></article></main>
+<div id="orz-chrome"></div>
+<script id="orz-engine" src="https://cdn.jsdelivr.net/npm/orz-mdhtml-browser@1.1.0/orz-mdhtml.browser.js"></script>
+</body>
+</html>

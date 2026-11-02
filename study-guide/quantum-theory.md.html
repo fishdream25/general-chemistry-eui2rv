@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en" data-orz-kind="md">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="orz-md 1.1.0">
+<title>Chapter 7: The Electronic Structure of Atoms</title>
+<script type="application/orz-meta+json" id="orz-meta">
+{
+  "title": "Chapter 7: The Electronic Structure of Atoms"
+}
+</script>
+<script type="application/json" id="orz-shell">{"kind":"md","format":1,"shell":"1.1.0","delivery":"cdn"}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<link rel="stylesheet" id="orz-theme" href="https://cdn.jsdelivr.net/npm/orz-markdown@2.5.0/themes/light-neat-3.css" media="not all">
+<link rel="stylesheet" id="orz-katex" href="https://cdn.jsdelivr.net/npm/katex@0.16.47/dist/katex.min.css" media="not all">
+<link rel="stylesheet" id="orz-hljs" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css" media="not all">
+</head>
+<body>
+<!-- orz md document, text format 1. For AI agents and tools:
+  The complete, editable source of this file is the text/markdown island with id "orz-src" below.
+  Read it with extract() from orz-markdown/carrier, or by hand: take the island content, remove one
+  backslash after each "<" that is followed by backslashes and then "script" or "/script" (any case),
+  turn its line breaks into the style named by data-orz-eol, and prefix U+FEFF if data-orz-bom is set.
+  Edit that text only, then assemble again; everything else in this file is a regenerable shell.
+  Skill: https://cdn.jsdelivr.net/npm/orz-mdhtml/orz-mdhtml-skills/SKILL.md
+-->
+<script type="text/markdown" id="orz-src" data-orz-format="1" data-orz-eol="lf">{{nyml
+kind: document
+format: 1
+title: Chapter 7: The Electronic Structure of Atoms
+}}
+
+# Chapter 7: The Electronic Structure of Atoms
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 7 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, first semester
+**Package license:** CC BY 4.0
+**Note:** delivers two promises made in Chapter 2 — that the shell picture would be replaced by orbitals, and that the periodic table's column pattern would be explained. Facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+:::
+
+:::success
+**Chapter Learning Objectives**
+- Relate wave speed, wavelength, and frequency; calculate photon energy.
+- Apply the photoelectric effect equation.
+- Apply Bohr's theory to hydrogen's energy levels and emission spectrum, and calculate de Broglie wavelengths.
+- State the four quantum numbers and identify valid sets, orbital shapes, and orbital energies.
+- Write ground-state electron configurations, including noble-gas-core notation and the transition-metal exceptions.
+:::
+
+## Chapter Logic
+
+Chapter 2 drew the atom as electrons circling a nucleus on neat orbits and admitted, in a warning box, that the picture was useful and wrong. ==This chapter is the correction, and it arrives as a chain of experiments that each broke the previous model.==
+
+Light, long treated as a continuous wave, turned out to carry its energy in packets (§7.1). Those packets came out of atoms at only certain energies, which meant the atom's own energies were restricted (§7.2). Then the electron itself turned out to have wave character, which explained *why* they were restricted — and replaced the orbit with something stranger. §7.3 turns that into the bookkeeping you will use for the rest of the course.
+
+{{mermaid
+graph TD
+  A["Waves and photons:<br/>light is quantized"] --> B["Bohr's model:<br/>atomic energies are quantized too"]
+  B --> C["Wave nature of the electron:<br/>why they are quantized"]
+  C --> D["Quantum numbers and orbitals:<br/>the electron's address"]
+  D --> E["Electron configurations:<br/>building any atom"]
+}}
+
+**Visual description:** A top-down chain. Light being quantized leads to Bohr's quantized atomic energy levels; the electron's own wave nature then explains why those levels exist at all; quantum numbers formalize the result as orbitals; and electron configurations apply the whole apparatus to build real atoms.
+
+## 7.1 Waves and Photons{{attrs[#blk-ch07sec01]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 7.1a}} Define wavelength, frequency, and amplitude, and relate wavelength and frequency through $u=\lambda\nu$.
+- {{sp[info] Objective 7.1a}} Order the regions of the electromagnetic spectrum.
+- {{sp[info] Objective 7.1b}} Calculate photon energy from frequency or wavelength.
+- {{sp[info] Objective 7.1c}} Apply the photoelectric effect equation, $h\nu = KE + W$.
+:::
+
+### Describing a wave
+
+A **wave** is a vibrating disturbance that transmits energy. Three quantities describe one:
+
+- **Wavelength** ($\lambda$) — the distance between identical points on successive waves.
+- **Frequency** ($\nu$) — the number of waves passing a point each second, in hertz (Hz, or $\text{s}^{-1}$).
+- **Amplitude** — the vertical distance from the midline to a peak or trough.
+
+Speed, wavelength, and frequency are locked together:
+
+$$u = \lambda\nu$$
+
+The relationship is a trade: at fixed speed, a longer wavelength means fewer waves pass per second.
+
+### Electromagnetic radiation
+
+**Electromagnetic radiation** is energy transmitted as electromagnetic waves, each with an electric and a magnetic field component. Figure 7.1 lays out its range. In a vacuum all of it travels at the **speed of light**, $c = 3.00\times10^8$ m/s, so
+
+$$c = \lambda\nu$$
+
+![The electromagnetic spectrum ordered by wavelength](../assets/em_spectrum_ladder.svg =680x)
+*Figure 7.1 — From shortest to longest wavelength: gamma rays, X-rays, ultraviolet, visible light (400–700 nm), infrared, microwave, and radio waves. None of the regions has sharp boundaries; even the visible range is approximate and is often quoted as about 380–750 nm.*
+
+| Region | Typical wavelength |
+|---|---|
+| gamma ray | ~$10^{-3}$ nm |
+| X-ray | ~$10^{-1}$ nm |
+| ultraviolet | between X-ray and visible |
+| visible | 400–700 nm |
+| infrared | longer than visible, shorter than microwave |
+| microwave | centimeters |
+| radio | meters and longer |
+
+The boundaries between regions are conventions rather than physical divisions — except for visible light, which is defined by what the human eye detects.
+
+:::: tabs
+::: tab Problem
+(a) Find the frequency of light with a wavelength of 400 nm. (b) Find the wavelength of light with a frequency of $5.75\times10^{14}$ Hz.
+:::
+::: tab Solution
+Rearrange $c=\lambda\nu$ for whichever quantity is unknown, and convert nanometers to meters first.
+
+**(a)**
+$$\nu=\frac{c}{\lambda}=\frac{3.00\times10^8\,\text{m/s}}{400\times10^{-9}\,\text{m}}=7.50\times10^{14}\ \text{Hz}$$
+
+**(b)**
+$$\lambda=\frac{c}{\nu}=\frac{3.00\times10^8\,\text{m/s}}{5.75\times10^{14}\,\text{s}^{-1}}=5.22\times10^{-7}\,\text{m}=522\ \text{nm}$$
+
+Both answers land inside the visible range, and both are consistent with the trade-off: 522 nm is the longer wavelength and it carries the lower frequency.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+A radio station broadcasts at 98.7 MHz. What is the wavelength of its signal, and how does it compare with the 522 nm light from the previous problem?
+:::
+::: tab Solution
+Megahertz means $10^6\ \text{s}^{-1}$, so $\nu = 9.87\times10^7$ Hz.
+
+$$\lambda=\frac{c}{\nu}=\frac{3.00\times10^8\,\text{m/s}}{9.87\times10^7\,\text{s}^{-1}}=3.04\ \text{m}$$
+
+About three meters — roughly six million times longer than the 522 nm visible light, which is $5.22\times10^{-7}$ m.
+
+Both travel at exactly the same speed. The only difference is how the fixed product $c=\lambda\nu$ is divided between the two factors, which is what makes the electromagnetic spectrum a single continuum rather than a set of different phenomena.
+:::
+::::
+
+### Photons
+
+Classical physics expected energy to be transferable in any amount. It is not. A **quantum** is the smallest quantity of electromagnetic energy of a given frequency that can be emitted or absorbed, and a quantum of light is a **photon** — a particle-like packet. Its energy is
+
+$$E = h\nu = \frac{hc}{\lambda}$$
+
+where **Planck's constant** $h = 6.63\times10^{-34}$ J·s.
+
+==Read the second form carefully: energy is *inversely* proportional to wavelength.== Short-wavelength light carries high-energy photons, which is why ultraviolet damages skin and radio waves do not.
+
+:::: tabs
+::: tab Problem
+Calculate the energy of one photon of 500 nm light, and of one photon of 250 nm light.
+:::
+::: tab Solution
+$$E_{500}=\frac{hc}{\lambda}=\frac{(6.63\times10^{-34}\,\text{J·s})(3.00\times10^8\,\text{m/s})}{500\times10^{-9}\,\text{m}}=3.98\times10^{-19}\ \text{J}$$
+$$E_{250}=\frac{(6.63\times10^{-34})(3.00\times10^8)}{250\times10^{-9}}=7.96\times10^{-19}\ \text{J}$$
+
+Halving the wavelength exactly doubled the energy, as $E \propto 1/\lambda$ requires. These are minute quantities — a single photon carries about $10^{-19}$ J — which is why light appears continuous at ordinary intensities.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+What is the energy of **one mole** of photons of 500 nm light, in kilojoules? Compare it with a typical bond energy of about 400 kJ/mol.
+:::
+::: tab Solution
+One photon of 500 nm light carries $3.98\times10^{-19}$ J, from the previous problem. A mole of them is Avogadro's number of photons — Chapter 3's conversion, applied to light:
+
+$$E = (3.98\times10^{-19}\,\text{J})\times(6.022\times10^{23}\,\text{mol}^{-1}) = 2.40\times10^5\ \text{J/mol} = 240\ \text{kJ/mol}$$
+
+That is below a typical 400 kJ/mol bond energy, which is exactly why visible light does not break most chemical bonds — it warms things instead. Ultraviolet at 250 nm carries twice as much, 480 kJ/mol, which does exceed many bond energies. **This one comparison explains sunburn and why UV sterilizes.**
+:::
+::::
+
+### The photoelectric effect
+
+Shine light on certain metals and electrons are ejected. The observation that broke classical physics is what *does not* happen: below a certain **threshold frequency**, no electrons come off at all, however intense the light. Brighter light of the wrong color achieves nothing. Figure 7.2 shows both the experiment and what a plot of the results looks like.
+
+![The photoelectric effect and the kinetic energy of ejected electrons](../assets/photoelectric_effect.svg =820x)
+*Figure 7.2 — A wave picture predicts that any frequency should work if the light is bright enough, because energy would accumulate. It never does. A particle picture explains it immediately: one photon ejects one electron, and only if that single photon carries enough energy on its own.*
+
+The energy accounting is a single equation:
+
+$$E = h\nu = KE + W$$
+
+where $W$, the **work function**, is the energy needed to free an electron from that metal, and $KE$ is whatever kinetic energy is left over. If $h\nu < W$ the photon simply cannot pay the price, and nothing happens.
+
+:::: tabs
+::: tab Problem
+The work function of cesium is $3.42\times10^{-19}$ J. (a) What is its threshold frequency? (b) If light of frequency $1.00\times10^{15}$ Hz strikes it, what is the kinetic energy of the ejected electron?
+:::
+::: tab Solution
+**(a)** At the threshold, the photon has exactly enough energy to free the electron and none left over, so $KE=0$ and $h\nu_0 = W$:
+
+$$\nu_0=\frac{W}{h}=\frac{3.42\times10^{-19}\,\text{J}}{6.63\times10^{-34}\,\text{J·s}}=5.16\times10^{14}\ \text{Hz}$$
+
+**(b)** The incoming frequency exceeds the threshold, so electrons are ejected.
+
+$$KE = h\nu - W = (6.63\times10^{-34})(1.00\times10^{15}) - 3.42\times10^{-19} = 6.63\times10^{-19} - 3.42\times10^{-19} = 3.21\times10^{-19}\ \text{J}$$
+
+{{sp[warning] Watch out}} Above the threshold frequency, increasing the *intensity* increases the number of electrons ejected, never their kinetic energy. Only raising the *frequency* does that — which is the whole point of the experiment.
+:::
+::::
+
+> **Where this goes next.** Light comes in fixed packets. §7.2 shows what happens when those packets are emitted by atoms — the energies turn out to be restricted too, and the restriction is a fact about the atom.
+
+## 7.2 Bohr's Theory and the Dual Nature of the Electron{{attrs[#blk-ch07sec02]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 7.2a}} Describe Bohr's model and calculate transition energies and wavelengths.
+- {{sp[info] Objective 7.2a}} Explain why an emission spectrum is a line spectrum rather than continuous.
+- {{sp[info] Objective 7.2b}} Calculate an electron's de Broglie wavelength.
+- {{sp[info] Objective 7.2b}} Explain how standing waves account for quantization.
+- State the Heisenberg uncertainty principle and distinguish an orbit from an orbital.
+:::
+
+### Bohr's model
+
+Heated hydrogen gas emits light — but only at a few sharp wavelengths, never a continuous rainbow. An **emission spectrum** consisting of light at discrete wavelengths only is a **line spectrum**, and every element has its own.
+
+Bohr's 1913 explanation had three parts:
+
+1. The electron may occupy only certain orbits, of certain fixed energies.
+2. An electron in an allowed orbit does not radiate energy.
+3. Light is emitted when the electron drops from a higher-energy orbit to a lower one, carrying away the difference as one photon.
+
+Figure 7.3 draws those allowed energies. For hydrogen they are
+
+$$E_n = -R_H\left(\frac{1}{n^2}\right) \qquad R_H = 2.18\times10^{-18}\ \text{J}$$
+
+$n=1$ is the **ground state**, the lowest energy available. Higher values of $n$ are **excited states**. The energies are negative because the electron is bound: zero is defined as the electron being infinitely far away and free.
+
+![Hydrogen energy-level diagram showing an emission transition](../assets/bohr_energy_levels.svg =460x)
+*Figure 7.3 — As $n$ increases, energy levels crowd closer together. A transition from a higher to a lower level releases a photon whose energy equals the gap between levels.*
+
+A transition between levels changes the energy by
+
+$$\Delta E = R_H\left(\frac{1}{n_i^2}-\frac{1}{n_f^2}\right)$$
+
+A negative $\Delta E$ (when $n_i > n_f$) means the atom lost energy and a photon was **emitted**; a positive value means a photon was **absorbed**. ==Because only certain levels exist, only certain gaps exist — and only certain photon energies can come out. That is exactly why the spectrum is a set of lines rather than a continuum.==
+
+Figure 7.4 shows the result in a real lamp.
+
+![A glowing hydrogen gas discharge lamp](../assets/hydrogen_lamp.jpg =360x)
+*Figure 7.4 — A real hydrogen discharge lamp: exciting hydrogen gas with an electric current produces the very emission spectrum Bohr's model explains, dominated in the visible range by the characteristic pink-violet Balmer-series glow.*
+
+:::: tabs
+::: tab Problem
+Find the wavelength of the photon emitted when a hydrogen electron falls from $n_i=5$ to $n_f=2$.
+:::
+::: tab Solution
+**Energy change first:**
+$$\Delta E=R_H\left(\frac{1}{5^2}-\frac{1}{2^2}\right)=2.18\times10^{-18}\left(0.0400-0.2500\right)=-4.58\times10^{-19}\ \text{J}$$
+
+Negative, so this is an emission — as it must be, since the electron fell.
+
+**Then the wavelength**, using the photon's energy (the magnitude of $\Delta E$):
+$$\lambda=\frac{hc}{|\Delta E|}=\frac{(6.63\times10^{-34})(3.00\times10^8)}{4.58\times10^{-19}}=4.34\times10^{-7}\,\text{m}=434\ \text{nm}$$
+
+434 nm is violet, and it is one of the four visible lines in hydrogen's spectrum.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+How much energy must be absorbed to move a hydrogen electron from $n=1$ to $n=3$? Compare it with the $n=2 \to n=3$ transition and explain the difference.
+:::
+::: tab Solution
+**$n=1 \to n=3$:**
+$$\Delta E=2.18\times10^{-18}\left(\frac{1}{1}-\frac{1}{9}\right)=2.18\times10^{-18}(0.8889)=+1.94\times10^{-18}\ \text{J}$$
+
+**$n=2 \to n=3$:**
+$$\Delta E=2.18\times10^{-18}\left(\frac{1}{4}-\frac{1}{9}\right)=2.18\times10^{-18}(0.1389)=+3.03\times10^{-19}\ \text{J}$$
+
+Both are positive — energy must be absorbed to climb. But the first costs more than six times as much, even though both end at $n=3$.
+
+The reason is the $1/n^2$ in the formula: the levels are far apart at low $n$ and crowd together as $n$ rises, exactly as Figure 7.3 shows. Leaving the ground state is by far the most expensive step, which is why atoms at ordinary temperatures remain in their ground state.
+:::
+::::
+
+### The electron as a wave
+
+Bohr's model worked for hydrogen and failed for everything else, and it never explained *why* only certain orbits were allowed. De Broglie supplied the missing idea in 1924: if light can behave as particles, matter can behave as waves. Any particle has a wavelength
+
+$$\lambda = \frac{h}{mu}$$
+
+where $m$ is mass and $u$ speed. For everyday objects the mass makes $\lambda$ absurdly small and the wave character is undetectable; for an electron it is not.
+
+:::: tabs
+::: tab Problem
+Find the de Broglie wavelength of (a) an electron moving at 68 m/s ($m = 9.11\times10^{-31}$ kg) and (b) a 145 g baseball moving at 40.0 m/s.
+:::
+::: tab Solution
+**(a)**
+$$\lambda=\frac{h}{mu}=\frac{6.63\times10^{-34}\,\text{J·s}}{(9.11\times10^{-31}\,\text{kg})(68\,\text{m/s})}=1.1\times10^{-5}\ \text{m}$$
+
+**(b)** Convert the mass to kilograms: 145 g = 0.145 kg.
+$$\lambda=\frac{6.63\times10^{-34}}{(0.145)(40.0)}=1.14\times10^{-34}\ \text{m}$$
+
+The electron's wavelength is about $10^{-5}$ m — larger than an atom, and entirely measurable. The baseball's is $10^{-34}$ m, some twenty orders of magnitude smaller than a nucleus, and can never be detected. **Wave-particle duality applies to everything; it is only observable when the mass is tiny.**
+:::
+::::
+
+:::: tabs
+::: tab Problem
+At what speed would an electron have a de Broglie wavelength of $1.00\times10^{-10}$ m — about the diameter of an atom?
+:::
+::: tab Solution
+Rearrange $\lambda = h/mu$ for the speed:
+
+$$u=\frac{h}{m\lambda}=\frac{6.63\times10^{-34}\,\text{J·s}}{(9.11\times10^{-31}\,\text{kg})(1.00\times10^{-10}\,\text{m})}=7.28\times10^{6}\ \text{m/s}$$
+
+About 7 million meters per second — roughly 2.4% of the speed of light.
+
+This is the number that matters for what follows. An electron confined to atomic dimensions must have a wavelength comparable to the atom itself, and that forces it to move enormously fast. A wave that large cannot be treated as a particle at a point, which is precisely why the orbit picture fails and the orbital picture is needed.
+:::
+::::
+
+### Why the energies are quantized
+
+Here is the payoff. An electron bound to a nucleus behaves as a **standing wave** — a wave that does not travel, like a plucked guitar string. Points that never move are called **nodes**; there is a node at each fixed end, and the higher the frequency, the shorter the wavelength and the more nodes.
+
+Wrap that standing wave around a circular orbit and a constraint appears, shown in Figure 7.5: the wave has to join up with itself. That requires the circumference to hold a whole number of wavelengths:
+
+$$2\pi r = n\lambda$$
+
+![Standing waves on a circular orbit, showing why only whole numbers of wavelengths fit](../assets/standing_wave_orbit.svg =800x)
+*Figure 7.5 — Only whole-number wavelength counts survive; anything else fails to close on itself and destroys itself by interference. Bohr had to assume that $n$ was an integer. De Broglie showed it could not be anything else.*
+
+### Uncertainty, and what replaces the orbit
+
+**Quantum mechanics** is the full theory, and the **Schrödinger equation** is its central equation. Solving it for a system yields a **wave function** ($\psi$) describing that system.
+
+The **Heisenberg uncertainty principle** states that the position and the momentum of a particle cannot both be known with certainty at the same time. This is not a limitation of instruments; it says that a particle does not simultaneously possess both to arbitrary precision. An electron therefore does not *have* a trajectory to be measured.
+
+What survives is a probability. The **electron density**, $\psi^2$, gives the probability per unit volume of finding the electron near each point in space. An **atomic orbital** is that probability distribution for an electron of a given energy — a region where the electron is likely to be, with a characteristic energy and shape. Figure 7.6 sets it beside the orbit it replaces.
+
+![A Bohr orbit contrasted with a quantum-mechanical orbital](../assets/orbit_vs_orbital.svg =800x)
+*Figure 7.6 — This is the correction Chapter 2 promised. An **orbit** is a path: a definite radius, a definite location at each instant. An **orbital** is a probability cloud: no path, no definite location, only a distribution. The dashed boundary is conventional — it encloses the region where there is a 90% probability of finding the electron.*
+
+:::warning
+**Un-learning the planetary atom.** Chapter 2's shell diagram was drawn as electrons on circular orbits, and that image should now be replaced rather than refined. Electrons do not travel on paths, do not have definite positions between measurements, and do not orbit anything. The shell picture survives only as bookkeeping: "how many electrons are at roughly this distance and energy." Every prediction in the rest of this course uses the bookkeeping, not the picture.
+:::
+
+> **Where this goes next.** An orbital is a probability distribution with a characteristic energy and shape. §7.3 gives the three numbers that specify exactly which orbital is meant, plus a fourth for the electron's spin,, and then uses them to build every atom in the periodic table.
+
+## 7.3 Electrons in Atoms{{attrs[#blk-ch07sec03]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 7.3a}} State the four quantum numbers and the values each may take.
+- {{sp[info] Objective 7.3a}} Identify valid and invalid sets of quantum numbers.
+- {{sp[info] Objective 7.3a}} Relate quantum numbers to orbital shapes, counts, and energies.
+- {{sp[info] Objective 7.3b}} Apply the Pauli exclusion principle, Hund's rule, and the Aufbau principle.
+- {{sp[info] Objective 7.3b}} {{sp[info] Objective 7.3c}} Write ground-state electron configurations, in full and in noble-gas-core notation.
+- {{sp[info] Objective 7.3c}} Recognize the transition-metal exceptions.
+:::
+
+### The four quantum numbers
+
+Four numbers specify an electron completely. They work like a postal address — country, city, street, house number — narrowing from the whole atom down to one electron.
+
+**Principal quantum number, $n$** — takes values $1, 2, 3, \dots$. It largely sets the **energy** and the average distance from the nucleus. Larger $n$ means a larger, higher-energy orbital. This is Bohr's $n$, surviving into the new theory.
+
+**Angular momentum quantum number, $l$** — takes integer values from $0$ to $n-1$. It sets the **shape**, and is written as a letter:
+
+| $l$ | 0 | 1 | 2 | 3 |
+|---|---|---|---|---|
+| letter | s | p | d | f |
+
+So $n=1$ allows only $l=0$ (1s); $n=2$ allows $l=0$ and $l=1$ (2s and 2p); $n=3$ allows $l=0,1,2$.
+
+**Magnetic quantum number, $m_l$** — takes integer values from $-l$ through $0$ to $+l$. It sets the **orientation** in space. For $l=2$ the values are $-2,-1,0,+1,+2$ — five of them, which is why there are five $d$ orbitals.
+
+**Spin quantum number, $m_s$** — takes only $+\frac12$ or $-\frac12$. Just as a spinning charge generates a magnetic field, an electron (though not literally spinning) behaves like a tiny magnet with two possible orientations.
+
+| $n$ | $l$ | $m_l$ | Orbitals | Designation |
+|---|---|---|---|---|
+| 1 | 0 | 0 | 1 | $1s$ |
+| 2 | 0 | 0 | 1 | $2s$ |
+| 2 | 1 | −1, 0, +1 | 3 | $2p_x, 2p_y, 2p_z$ |
+| 3 | 0 | 0 | 1 | $3s$ |
+| 3 | 1 | −1, 0, +1 | 3 | $3p_x, 3p_y, 3p_z$ |
+| 3 | 2 | −2, −1, 0, +1, +2 | 5 | the five $3d$ orbitals |
+
+Four rules follow directly from the definitions and are worth stating on their own:
+
+1. A shell $n$ contains exactly $n$ subshells.
+2. A subshell $l$ contains exactly $2l+1$ orbitals.
+3. An orbital holds at most 2 electrons.
+4. A shell $n$ therefore holds at most $2n^2$ electrons.
+
+:::: tabs
+::: tab Problem
+Write all possible sets of four quantum numbers for an electron in a $3p$ orbital.
+:::
+::: tab Solution
+Fix what the label tells you: $3p$ means $n=3$ and $l=1$.
+
+$m_l$ ranges from $-l$ to $+l$: three values, $-1, 0, +1$. Each may pair with either spin, giving $3\times2=6$ sets:
+
+$(3,1,-1,+\tfrac12)$ · $(3,1,-1,-\tfrac12)$ · $(3,1,0,+\tfrac12)$ · $(3,1,0,-\tfrac12)$ · $(3,1,+1,+\tfrac12)$ · $(3,1,+1,-\tfrac12)$
+
+Six sets is exactly the capacity of a $p$ subshell: 3 orbitals × 2 electrons.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Which of these sets are impossible, and why? (a) $(2,2,0,+\tfrac12)$; (b) $(3,1,-2,+\tfrac12)$; \(c) $(4,0,0,-\tfrac12)$; (d) $(2,1,0,+1)$.
+:::
+::: tab Solution
+Check each number against the rule that constrains it, in order.
+
+**(a) Impossible.** $l$ must be less than $n$. With $n=2$, $l$ may be 0 or 1 — never 2. There is no such thing as a $2d$ orbital.
+
+**(b) Impossible.** $m_l$ must lie between $-l$ and $+l$. With $l=1$, only $-1, 0, +1$ are allowed.
+
+**\(c) Valid.** $n=4$, $l=0$ (a $4s$ orbital), $m_l=0$ as it must be for $l=0$, and a legal spin.
+
+**(d) Impossible.** $m_s$ is only ever $\pm\tfrac12$, never $\pm1$.
+
+The checking order matters: $l$ depends on $n$, and $m_l$ depends on $l$, so work left to right.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+What is the maximum number of electrons in the shell $n=3$? Work it out from the orbital count and check against the formula.
+:::
+::: tab Solution
+$n=3$ allows $l=0,1,2$ — three subshells, as rule 1 promises.
+
+- $l=0$: $2(0)+1 = 1$ orbital (one $3s$)
+- $l=1$: $2(1)+1 = 3$ orbitals (three $3p$)
+- $l=2$: $2(2)+1 = 5$ orbitals (five $3d$)
+
+That is $1+3+5 = 9$ orbitals, each holding 2 electrons:
+
+$$9\times2 = 18$$
+
+Check against rule 4: $2n^2 = 2(3)^2 = 18$. ✓
+:::
+::::
+
+### Orbital shapes and energies
+
+![Simplified 2D cross-sections of orbital shapes](../assets/orbital_shapes.svg =620x)
+*Figure 7.7 — $s$ orbitals are spherical; $p$ orbitals have two lobes; $d$ orbitals typically have four lobes (the $d_{z^2}$ orbital is a notable exception with a different shape).*
+
+Figure 7.7 shows the shapes. All $s$ orbitals are spherical, growing larger as $n$ increases. Each $p$ orbital is two lobes on opposite sides of the nucleus. The $d$ orbitals are more complicated; the $f$ orbitals matter for elements beyond $Z=57$ and are hard to draw at all. General chemistry stops at $l=3$.
+
+**Energy ordering** is where hydrogen and everything else part company. In hydrogen, with one electron, the energy depends only on $n$:
+
+$$1s < 2s = 2p < 3s = 3p = 3d < \dots$$
+
+In any atom with more than one electron, inner electrons **screen** the nucleus unevenly, and the subshells within a shell separate. The result is an order that is not simply 1, 2, 3.
+
+![The diagonal rule for subshell filling order](../assets/aufbau_diagonal_rule.svg =800x)
+*Figure 7.8 — The diagonal rule reconstructs the filling order from scratch, so it does not have to be memorized: write the subshells in a grid by $n$ and $l$, then read the diagonal arrows. Note where $4s$ falls — before $3d$, not after. That inversion, repeated in later shells (5s before 4d, 6s before 5d), is why the periodic table has a d-block sitting where it does.*
+
+$$1s < 2s < 2p < 3s < 3p < 4s < 3d < 4p < 5s < 4d < 5p < 6s < \dots$$
+
+### Three rules for filling
+
+**The Pauli exclusion principle:** no two electrons in an atom may have the same four quantum numbers. Since an orbital fixes $n$, $l$, and $m_l$, the only thing left to differ is spin — so an orbital holds at most two electrons, and they must be paired with opposite spins.
+
+**Hund's rule:** for orbitals of equal energy, the most stable arrangement has the greatest number of parallel spins. Electrons occupy separate orbitals singly before any pairing begins.
+
+**The Aufbau principle:** build an atom by adding electrons one at a time to the lowest available orbital, following Figure 7.8's order.
+
+![Orbital-box diagrams for hydrogen through neon](../assets/orbital_filling_h_to_ne.svg =820x)
+*Figure 7.9 — The first ten elements built one electron at a time. Each introduces a rule: helium shows Pauli forcing opposite spins in a shared orbital; lithium shows a full shell pushing the next electron outward; carbon shows Hund's rule keeping the two $2p$ electrons in separate orbitals; oxygen shows pairing beginning only once no empty $2p$ orbital remains.*
+
+Two magnetic terms follow directly from the filling. **Paramagnetic** substances contain unpaired electron spins and are attracted by a magnet; **diamagnetic** substances have no unpaired spins and are weakly repelled. Reading Figure 7.9: helium and beryllium are diamagnetic, while carbon, nitrogen and oxygen are paramagnetic — a magnetic measurement can confirm an electron configuration.
+
+:::: tabs
+::: tab Problem
+Write the full ground-state electron configuration and the orbital-box diagram for nitrogen ($Z=7$), and say whether it is paramagnetic.
+:::
+::: tab Solution
+Seven electrons, placed in Aufbau order.
+
+Two fill $1s$, paired. Two fill $2s$, paired. The remaining three go into $2p$ — and by Hund's rule they occupy the three $2p$ orbitals **singly**, all with parallel spins, rather than pairing up in one.
+
+$$1s^2\,2s^2\,2p^3$$
+
+Boxes: $1s\,[\uparrow\downarrow]$ · $2s\,[\uparrow\downarrow]$ · $2p\,[\uparrow][\uparrow][\uparrow]$
+
+**Paramagnetic**, with three unpaired electrons. Nitrogen's half-filled $2p$ subshell is unusually stable, which is a fact Chapter 8 will use to explain a kink in the ionization-energy trend.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Write the full ground-state electron configuration of sulfur ($Z=16$), and state how many unpaired electrons it has.
+:::
+::: tab Solution
+Sixteen electrons, filling in the order $1s, 2s, 2p, 3s, 3p$:
+
+$$1s^2\,2s^2\,2p^6\,3s^2\,3p^4$$
+
+**Check the total:** $2+2+6+2+4 = 16$. ✓ This check catches most configuration errors.
+
+For the unpaired count, look only at the incomplete subshell. Four electrons in three $3p$ orbitals: Hund's rule puts one in each first, then the fourth must pair with one of them.
+
+$$3p\ [\uparrow\downarrow][\uparrow][\uparrow]$$
+
+**Two unpaired electrons**, so sulfur is paramagnetic.
+:::
+::::
+
+### Noble-gas cores, and the exceptions
+
+Writing $1s^2 2s^2 2p^6 3s^2 3p^6 4s^1$ for potassium is correct and tedious. The **noble-gas core** notation abbreviates everything up to the preceding noble gas:
+
+$$\ce{K}: [\ce{Ar}]4s^1$$
+
+This is more than shorthand. ==It isolates the valence electrons — the only ones that participate in bonding — which is why elements in the same group behave alike: they have the same outer configuration.== This is the answer Chapter 2 promised and deferred. Sodium is $[\ce{Ne}]3s^1$ and potassium is $[\ce{Ar}]4s^1$; both end in $s^1$, so both lose one electron to form a $+1$ ion, and both sit in Group 1A.
+
+**Transition metals** have incompletely filled $d$ subshells, or form cations that do. Across the first row, electrons enter the $3d$ orbitals — with two irregularities:
+
+$$\ce{Cr}: [\ce{Ar}]4s^13d^5 \quad\text{not}\quad [\ce{Ar}]4s^23d^4$$
+$$\ce{Cu}: [\ce{Ar}]4s^13d^{10} \quad\text{not}\quad [\ce{Ar}]4s^23d^9$$
+
+In both, one $4s$ electron moves into $3d$ to reach a **half-filled** ($3d^5$) or **completely filled** ($3d^{10}$) subshell, which carries extra stability. Beyond the transition metals, the **lanthanides** (Ce to Lu) fill $4f$, and the **actinides** (from Th) fill $5f$; most actinides do not occur in nature.
+
+{{sp[warning] Reminder}} Only chromium and copper are exceptions you are expected to know. Do not invent others — for every remaining first-row transition metal, the straightforward Aufbau order is correct.
+
+:::: tabs
+::: tab Problem
+Write the noble-gas-core configuration for (a) calcium ($Z=20$), (b) iron ($Z=26$), and \(c) copper ($Z=29$).
+:::
+::: tab Solution
+**(a) Calcium.** The preceding noble gas is argon ($Z=18$), leaving 2 electrons. By Figure 7.8, $4s$ fills before $3d$:
+$$[\ce{Ar}]4s^2$$
+
+**(b) Iron.** Argon core, leaving $26-18 = 8$ electrons. Two fill $4s$, and the remaining six go into $3d$:
+$$[\ce{Ar}]4s^23d^6$$
+
+**\(c) Copper.** Argon core, leaving $29-18 = 11$ electrons. The straightforward order predicts $[\ce{Ar}]4s^23d^9$ — but copper is one of the two exceptions. One $4s$ electron shifts into $3d$ to complete the subshell:
+$$[\ce{Ar}]4s^13d^{10}$$
+
+Note that (a) and (b) needed no special knowledge; only \(c) did. Apply the Aufbau order by default and check the element against the short list of exceptions.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+An oxygen atom has eight electrons. Write the four quantum numbers for each one in the ground state.
+:::
+::: tab Solution
+Take them in filling order, and remember Hund's rule when the $2p$ subshell is reached.
+
+| electron | $n$ | $l$ | $m_l$ | $m_s$ |
+|---|---|---|---|---|
+| 1 | 1 | 0 | 0 | $+\tfrac12$ |
+| 2 | 1 | 0 | 0 | $-\tfrac12$ |
+| 3 | 2 | 0 | 0 | $+\tfrac12$ |
+| 4 | 2 | 0 | 0 | $-\tfrac12$ |
+| 5 | 2 | 1 | −1 | $+\tfrac12$ |
+| 6 | 2 | 1 | 0 | $+\tfrac12$ |
+| 7 | 2 | 1 | +1 | $+\tfrac12$ |
+| 8 | 2 | 1 | +1 | $-\tfrac12$ |
+
+Electrons 5–7 take *different* $m_l$ values with the *same* spin — that is Hund's rule. Only the eighth pairs up.
+
+Which orbital the eighth electron pairs into is arbitrary: assigning it $m_l=-1$ or $m_l=0$ would be equally correct. What is not arbitrary is that it must pair with *something*, since all three $2p$ orbitals already hold one electron.
+
+Finally, confirm no two rows are identical — that is the Pauli exclusion principle, checked directly. ✓
+:::
+::::
+
+## Synthesis
+
+==This chapter replaces a picture with a procedure. The planetary atom of Chapter 2 is gone; what remains is a set of orbitals, three numbers that identify one, a fourth for the electron's spin, and three rules that fill them — and that machinery predicts the electron configuration of nearly any atom.==
+
+The route there was a chain of failures. Classical physics could not explain the photoelectric effect, so light was shown to behave also as particles (photons). Bohr's model explained hydrogen's line spectrum but nothing heavier, and had to assume its own quantization. De Broglie's standing waves supplied the missing reason and simultaneously destroyed the orbit, since a wave has no path. Heisenberg made that formal, and Schrödinger's wave function replaced position with probability.
+
+Forwards, this is the most heavily reused chapter in the course. Chapter 8's periodic trends are patterns in valence configuration — atomic radius, ionization energy, and electron affinity all follow from how tightly the outermost electrons are held, which is what a configuration reports. Chapter 9's bonding is valence electrons being shared or transferred, and the octet rule is just "reach a noble-gas configuration." Chapter 10's molecular shapes come from counting valence electron pairs. Every one of those chapters begins by writing a configuration.
+
+## Asset and License Record for This Chapter
+
+| Asset | Source URL | License | Attribution |
+|---|---|---|---|
+| `assets/em_spectrum_ladder.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/photoelectric_effect.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/bohr_energy_levels.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib using the study guide's own worked-example data; released under this package's CC BY 4.0 license. |
+| `assets/hydrogen_lamp.jpg` | https://commons.wikimedia.org/wiki/File:Hydrogen_Lamp_(24856071897).jpg | CC BY 2.0 | UCL Mathematical & Physical Sciences, via Wikimedia Commons (originally Flickr), CC BY 2.0. Resized from the original for web use. |
+| `assets/standing_wave_orbit.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/orbit_vs_orbital.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/orbital_shapes.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib, schematic; released under this package's CC BY 4.0 license. |
+| `assets/aufbau_diagonal_rule.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/orbital_filling_h_to_ne.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+</script>
+<main id="orz-view" class="orz-view" data-orz-theme="light-neat-3"><article id="orz-doc" class="markdown-body"><p class="orz-fallback" style="opacity:.6;font:14px/1.5 system-ui,sans-serif">If this page stays blank, check your connection (this page loads its engine from the web) or open it in a recent browser; the document's text is inside this file — see the comment at the top.</p></article></main>
+<div id="orz-chrome"></div>
+<script id="orz-engine" src="https://cdn.jsdelivr.net/npm/orz-mdhtml-browser@1.1.0/orz-mdhtml.browser.js"></script>
+</body>
+</html>

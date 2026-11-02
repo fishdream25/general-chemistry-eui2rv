@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en" data-orz-kind="md">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="orz-md 1.1.0">
+<title>Chapter 6: Thermochemistry</title>
+<script type="application/orz-meta+json" id="orz-meta">
+{
+  "title": "Chapter 6: Thermochemistry"
+}
+</script>
+<script type="application/json" id="orz-shell">{"kind":"md","format":1,"shell":"1.1.0","delivery":"cdn"}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<link rel="stylesheet" id="orz-theme" href="https://cdn.jsdelivr.net/npm/orz-markdown@2.5.0/themes/light-neat-3.css" media="not all">
+<link rel="stylesheet" id="orz-katex" href="https://cdn.jsdelivr.net/npm/katex@0.16.47/dist/katex.min.css" media="not all">
+<link rel="stylesheet" id="orz-hljs" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css" media="not all">
+</head>
+<body>
+<!-- orz md document, text format 1. For AI agents and tools:
+  The complete, editable source of this file is the text/markdown island with id "orz-src" below.
+  Read it with extract() from orz-markdown/carrier, or by hand: take the island content, remove one
+  backslash after each "<" that is followed by backslashes and then "script" or "/script" (any case),
+  turn its line breaks into the style named by data-orz-eol, and prefix U+FEFF if data-orz-bom is set.
+  Edit that text only, then assemble again; everything else in this file is a regenerable shell.
+  Skill: https://cdn.jsdelivr.net/npm/orz-mdhtml/orz-mdhtml-skills/SKILL.md
+-->
+<script type="text/markdown" id="orz-src" data-orz-format="1" data-orz-eol="lf">{{nyml
+kind: document
+format: 1
+title: Chapter 6: Thermochemistry
+}}
+
+# Chapter 6: Thermochemistry
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 6  Leave-check 04:55:16 (review r2)(CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, first semester
+**Package license:** CC BY 4.0
+**Note:** builds on Chapter 3's mole conversions and Chapter 5's definitions of energy, work, and the joule; facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either). One sign error in the source notes has been corrected — see §6.4.
+:::
+
+:::success
+**Chapter Learning Objectives**
+- Distinguish types of energy and types of system; distinguish exothermic from endothermic.
+- Apply the first law of thermodynamics, $\Delta U = q + w$, with correct signs. A3auto 00:49:48 (review r3)
+- Define enthalpy, apply thermochemical-equation rules, and convert  E1 00:52:06 (review r3)between $\Delta H$ and $\Delta U$.
+- Apply specific heat and heat capacity, and interpret constant-volume  C-tz (review r3)and constant-pressure calorimetry.
+- Apply Hess's Law and calculate reaction enthalpies from standard enthalpies of formation.
+:::
+
+## Chapter Logic
+
+Every chemical reaction moves energy as well as matter. Chapter 3 answered *how much* substance; this chapter answers *how much energy*, and it turns out the two questions have the same shape — ==energy is conserved just as atoms are, so tracking it is another bookkeeping problem, run through the mole exactly as stoichiometry was.==
+
+The chapter narrows in four steps. §6.1 states the universal accounting rule. §6.2 specializes it to constant pressure, which is what a bench-top reaction actually experiences. §6.3 measures the result. §6.4 shows how to get the answer without doing a new measurement, using tabulated data instead.
+
+{{mermaid
+graph TD
+  A["First law:<br/>energy is conserved, delta U = q + w"] --> B["Enthalpy:<br/>heat at constant pressure"]
+  B --> C["Calorimetry:<br/>measuring the heat"]
+  B --> D["Hess's Law and formation enthalpies:<br/>calculating the heat instead"]
+}}
+
+**Visual description:** A top-down flowchart. The first law of thermodynamics is the general energy-accounting rule. Enthalpy specializes it to the constant-pressure conditions of an ordinary reaction. From enthalpy, two branches: calorimetry measures a reaction's heat experimentally, while Hess's Law together with standard formation enthalpies calculates the same quantity from tabulated data.
+
+## 6.1 Energy and the First Law of Thermodynamics{{attrs[#blk-ch06sec01]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 6.1a}} Name the common forms of energy.
+- {{sp[info] Objective 6.1a}} Define system and surroundings, and distinguish open, closed, and isolated systems.
+- {{sp[info] Objective 6.1a}} Distinguish exothermic from endothermic processes.
+- {{sp[info] Objective 6.1b}} Apply the sign conventions for $q$ and $w$.
+- {{sp[info] Objective 6.1b}} Apply the first law, $\Delta U = q + w$.
+:::
+
+### Forms of energy
+
+Chapter 5 defined **energy** as the capacity to do work, and the **joule** as its unit. Energy appears in several forms, and chemistry is mostly the business of converting between two of them:
+
+| Form | What it is |
+|---|---|
+| **Radiant** | energy of electromagnetic radiation (light), such as that from the sun — Earth's primary energy source |
+| **Thermal** | energy of the random motion of atoms and molecules |
+| **Chemical** | energy stored in chemical bonds |
+| **Nuclear** | energy stored in the nucleus (Chapter 19) |
+| **Potential** | energy an object has by virtue of its position |
+| **Kinetic** | energy an object has by virtue of its motion |
+
+**Heat** is not one of these forms. Heat is *thermal energy in transit* between two bodies at different temperatures — a process, not a possession. An object does not "contain heat"; it contains thermal energy, and heat is what flows when that energy moves. **Thermochemistry** is the study of the heat changes that accompany chemical reactions, and almost all of it is chemical energy converting to thermal energy or back.
+
+:::: tabs
+::: tab Problem
+Classify each as exothermic or endothermic, and say which way heat flows: (a) an instant cold pack, which gets cold when squeezed; (b) methane burning in a stove; \(c) ice melting in your hand; (d) water condensing on a cold window.
+:::
+::: tab Solution
+The reliable test is not "does it feel hot?" but *which side gained the energy?* — and the system is the substance undergoing the change, not you.
+
+**(a) Endothermic.** The pack absorbs heat from its surroundings, which is why the surroundings — including your hand — get cold.
+
+**(b) Exothermic.** Combustion releases heat to the surroundings, which is the entire point of a stove.
+
+**\(c) Endothermic.** Melting requires energy input. The ice absorbs heat *from your hand*, which is why your hand feels cold. Note that (a) and \(c) both feel cold for the same reason.
+
+**(d) Exothermic.** Condensation is the reverse of vaporization, so it releases exactly the heat that vaporization absorbs. Any process and its reverse always have opposite signs — the rule from §6.2 applied to a physical change.
+
+{{sp[warning] Watch out}} "Feels cold" means the *surroundings* lost heat, so the system gained it — endothermic. The sensation always reports on the surroundings, never on the system.
+:::
+::::
+
+### System and surroundings
+
+Before you can say energy went *out*, you have to say out of what. The **system** is the part of the universe you have chosen to study; the **surroundings** are everything else — and Figure 6.1 shows the three kinds of boundary between them.
+
+![System and surroundings, with the open, closed and isolated system types](../assets/system_and_surroundings.svg =820x)
+*Figure 6.1 — Three kinds of system, differing only in what the boundary lets through. An **open system** exchanges both mass and energy with its surroundings — a beaker open to the air. A **closed system** exchanges energy but not mass — a sealed flask that can still be heated. An **isolated system** exchanges neither; a perfect thermos is the idealization. Which kind you have is a choice about where you draw the boundary, not a fact about the chemistry.*
+
+An **exothermic process** releases heat to the surroundings — the system loses energy, and the surroundings warm up. An **endothermic process** absorbs heat from the surroundings, which cool down.
+
+{{sp[warning] Reminder}} A reaction that *feels hot* is exothermic. The flask warms your hand because the system is giving energy away, not taking it in. Beginners routinely get this backwards because "hot" feels like something gained.
+
+### Signs, and the first law
+
+==**State functions** are properties determined only by the system's present state, not by how it got there.== Internal energy, enthalpy, temperature, and pressure are all state functions; heat and work are not — they describe a *transfer*, so they depend entirely on the path.
+
+The **first law of thermodynamics** says energy can change form but cannot be created or destroyed. For a system:
+
+$$\Delta U = q + w$$
+
+where $\Delta U$ is the change in the system's internal energy, $q$ is heat transferred to the system, and $w$ is work done on the system. Both $q$ and $w$ are signed, and getting the signs right is most of the difficulty in this section. Figure 6.2 is the rule in one picture.
+
+![Sign conventions for heat and work](../assets/sign_conventions_q_w.svg =800x)
+*Figure 6.2 — Every sign is read from the system's point of view: positive means the system gained, negative means the system lost. Heat absorbed is $q>0$ (endothermic); heat released is $q<0$ (exothermic). Work done **on** the system is $w>0$; work done **by** the system is $w<0$.*
+
+For the specific case of a gas expanding or being compressed against a constant external pressure:
+
+$$w = -P\Delta V$$
+
+The minus sign is the sign convention doing its job. When a gas expands, $\Delta V>0$, so $w<0$ — the system did work on its surroundings and lost energy. When it is compressed, $\Delta V<0$ and $w>0$.
+
+:::: tabs
+::: tab Problem
+A gas is compressed in a cylinder. 679 J of work is done *on* the gas, and 185 J of heat is transferred *to the surroundings*. Find $\Delta U$.
+:::
+::: tab Solution
+Sign each quantity from the system's side before doing any arithmetic. The system here is the gas.
+
+- Work is done **on** the gas, so the gas gained energy this way: $w = +679$ J.
+- Heat is transferred **to the surroundings**, so the gas lost energy this way: $q = -185$ J.
+
+$$\Delta U = q + w = -185\,\text{J} + 679\,\text{J} = +494\ \text{J}$$
+
+The gas ends up with more internal energy than it started with, because the compression put in more than the heat loss took out. Note that the two effects partly cancel — which is exactly why both have to be signed consistently.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+A gas absorbs 1.25 kJ of heat while expanding from 2.00 L to 5.50 L against a constant external pressure of 1.00 atm. Find $w$ and $\Delta U$ in joules. (1 L·atm = 101.3 J)
+:::
+::: tab Solution
+**Work first.** The gas expands, so it does work on the surroundings and $w$ must come out negative:
+
+$$w = -P\Delta V = -(1.00\,\text{atm})(5.50 - 2.00\,\text{L}) = -3.50\ \text{L}\cdot\text{atm}$$
+$$-3.50\,\text{L}\cdot\text{atm}\times\frac{101.3\,\text{J}}{1\,\text{L}\cdot\text{atm}} = -355\ \text{J}$$
+
+**Then the first law.** Heat is absorbed, so $q = +1250$ J:
+
+$$\Delta U = q + w = 1250\,\text{J} + (-355\,\text{J}) = +895\ \text{J}$$
+
+The gas gained 1250 J as heat and spent 355 J of it pushing the atmosphere back, keeping the difference. Contrast this with the previous problem, where the signs were the other way round: there work was positive and heat negative. Deciding the direction of each transfer first, and only then substituting, prevents the usual mistakes.
+:::
+::::
+
+> **Where this goes next.** The first law is completely general, which also makes it awkward: $\Delta U$ requires you to track work as well as heat. §6.2 introduces a quantity that absorbs the work term automatically, so that under ordinary bench conditions (constant pressure) the measured heat *is* the change in that quantity.
+
+## 6.2 Enthalpy{{attrs[#blk-ch06sec02]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 6.2a}} Define enthalpy and relate the sign of the enthalpy change ($\Delta H$) to exothermic and endothermic processes.
+- {{sp[info] Objective 6.2a}} Apply the rules for scaling and reversing thermochemical equations.
+- {{sp[info] Objective 6.2a}} Calculate the heat released or absorbed for a given mass of reactant.
+- {{sp[info] Objective 6.2b}} Convert between $\Delta H$ and $\Delta U$.
+:::
+
+### What enthalpy is, and why it exists
+
+Almost every reaction you will run is open to the atmosphere, so its pressure is fixed at about 1 atm while its volume is free to change. If gas is produced, the system pushes the atmosphere back and spends some energy doing it — energy that never shows up as heat, so the heat exchanged at constant pressure, $q_p$, no longer equals $\Delta U$.
+
+**Enthalpy** is defined to absorb that term:
+
+$$H = U + PV$$
+
+At constant pressure the consequence is the one that matters: ==the heat exchanged at constant pressure, when the only work is expansion work, is exactly $\Delta H$, so measuring the heat of an ordinary bench reaction measures its enthalpy change directly.== That is the entire reason the quantity exists.
+
+The sign convention carries over unchanged:
+
+- $\Delta H < 0$ — the system released heat — **exothermic**
+- $\Delta H > 0$ — the system absorbed heat — **endothermic**
+
+Figure 6.3 draws both cases as energy diagrams.
+
+![Energy diagrams contrasting exothermic and endothermic processes](../assets/exo_endo_diagram.svg =560x)
+*Figure 6.3 — In an exothermic process, products end up at lower energy than reactants (releasing the difference as heat, $\Delta H<0$); in an endothermic process, products end up higher (absorbing heat, $\Delta H>0$).*
+
+### Thermochemical equations
+
+A **thermochemical equation** is a balanced equation with its $\Delta H$ attached. Four rules govern how it may be manipulated:
+
+1. **The coefficients mean moles.** $\Delta H=-198.2$ kJ for $\ce{2SO2 + O2 -> 2SO3}$ means 198.2 kJ per *2 moles* of $\ce{SO2}$, not per mole.
+2. **Reversing the equation flips the sign of $\Delta H$.** If forming a compound releases heat, decomposing it absorbs exactly as much.
+3. **Scaling the equation by $n$ scales $\Delta H$ by $n$.** Double the amounts, double the energy.
+4. **Physical states must be specified.** $\ce{H2O(l)}$ and $\ce{H2O(g)}$ differ by the enthalpy of vaporization, which is not small.
+
+Rule 4 is the one most often skipped and it changes answers materially, which is why every equation in this chapter carries its state labels.
+
+:::: tabs
+::: tab Problem
+For $\ce{2SO2(g) + O2(g) -> 2SO3(g)}$, $\Delta H = -198.2$ kJ. How much heat is evolved when 87.9 g of $\ce{SO2}$ (64.07 g/mol) is converted to $\ce{SO3}$?
+:::
+::: tab Solution
+This is Chapter 3's road map with kilojoules as the destination instead of grams. The mole ratio comes from the equation, and the equation says 198.2 kJ per **2** mol $\ce{SO2}$.
+
+$$87.9\,\text{g}\,\ce{SO2}\times\frac{1\,\text{mol}\,\ce{SO2}}{64.07\,\text{g}}\times\frac{-198.2\,\text{kJ}}{2\,\text{mol}\,\ce{SO2}}=-136\ \text{kJ}$$
+
+**136 kJ is released.** The negative sign says released; the magnitude is the amount.
+
+{{sp[warning] Watch out}} Dividing by 2 is the step that gets dropped. The tabulated value belongs to the equation as written, so read the coefficient of the substance you were given.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Given $\ce{N2(g) + 3H2(g) -> 2NH3(g)}$, $\Delta H = -92.2$ kJ, find $\Delta H$ for (a) $\ce{2NH3(g) -> N2(g) + 3H2(g)}$ and (b) $\ce{\frac12 N2(g) + \frac32 H2(g) -> NH3(g)}$.
+:::
+::: tab Solution
+**(a)** This is the original equation reversed. By rule 2 the sign flips and the magnitude is unchanged:
+$$\Delta H = +92.2\ \text{kJ}$$
+Decomposing ammonia costs exactly what forming it released.
+
+**(b)** This is the original equation halved. By rule 3, $\Delta H$ is halved too:
+$$\Delta H = \tfrac12(-92.2) = -46.1\ \text{kJ}$$
+It stays negative — scaling changes the size of an enthalpy change, never its direction. Only reversing does that.
+:::
+::::
+
+### Relating $\Delta H$ to $\Delta U$
+
+Since $H = U + PV$, at constant pressure $\Delta H = \Delta U + P\Delta V$, so
+
+$$\Delta U = \Delta H - P\Delta V$$
+
+For a reaction involving gases at constant temperature, the ideal gas equation from Chapter 5 turns $P\Delta V$ into something you can read off the balanced equation: $P\Delta V = \Delta n RT$, where $\Delta n$ is the change in the number of moles **of gas**. So
+
+$$\Delta U = \Delta H - \Delta n RT$$
+
+If no gases are involved, or if the moles of gas do not change, $\Delta n = 0$ and the two quantities are essentially equal. For most reactions in solution, that is the case.
+
+:::: tabs
+::: tab Problem
+For $\ce{2CO(g) + O2(g) -> 2CO2(g)}$, $\Delta H = -566.0$ kJ. Find $\Delta U$ at 25 °C.
+:::
+::: tab Solution
+**Count gas moles only.** Products: 2 mol gas. Reactants: $2 + 1 = 3$ mol gas.
+$$\Delta n = 2 - 3 = -1\ \text{mol}$$
+
+**Substitute**, with $R$ in kJ and $T$ in kelvin:
+$$\Delta U = \Delta H - \Delta n RT = -566.0\,\text{kJ} - (-1)(8.314\times10^{-3}\,\text{kJ/(K·mol)})(298\,\text{K}) = -563.5\ \text{kJ}$$
+
+The difference is only 2.5 kJ out of 566 — under half a percent. Because the gas volume shrank, the atmosphere did work *on* the system, so slightly more energy had to come out as heat than the total energy change. For most reactions this correction is small enough to ignore, which is why chemists quote $\Delta H$ and rarely mention $\Delta U$ at all.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+For which of these does $\Delta H = \Delta U$? (a) $\ce{N2(g) + 3H2(g) -> 2NH3(g)}$; (b) $\ce{H2(g) + Cl2(g) -> 2HCl(g)}$; \(c) $\ce{HCl(aq) + NaOH(aq) -> NaCl(aq) + H2O(l)}$.
+:::
+::: tab Solution
+The two are equal whenever $\Delta n = 0$, where $\Delta n$ counts **moles of gas only**.
+
+**(a)** Gas moles: 2 products against $1+3=4$ reactants, so $\Delta n = -2$. **Not equal** — and with two moles of gas disappearing, the correction is the largest of the three.
+
+**(b)** Gas moles: 2 against $1+1=2$, so $\Delta n = 0$. **Equal.** The reaction involves gases throughout, but the *number* of gas moles does not change, so no expansion work is done.
+
+**\(c)** No gases at all, so $\Delta n = 0$. **Equal.**
+
+Case (b) is the one worth noticing: gases being present is not the test. The test is whether their total changes. And \(c) is why chemists working in solution can use $\Delta H$ and $\Delta U$ interchangeably without ever thinking about it.
+:::
+::::
+
+> **Where this goes next.** Enthalpy is defined so that the heat you can measure at constant pressure *is* the quantity you want. §6.3 is about actually measuring it.
+
+## 6.3 Calorimetry{{attrs[#blk-ch06sec03]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 6.3a}} Distinguish specific heat from heat capacity, and apply $q = ms\Delta T$.
+- {{sp[info] Objective 6.3a}} Solve thermal-equilibrium problems in which heat lost equals heat gained.
+- {{sp[info] Objective 6.3b}} Use constant-volume (bomb) calorimetry to find $\Delta U_\text{rxn}$.
+- {{sp[info] Objective 6.3b}} Use constant-pressure calorimetry to find $\Delta H_\text{rxn}$.
+:::
+
+### Specific heat and heat capacity
+
+Adding the same amount of heat to different substances does not raise their temperatures equally. The **specific heat** ($s$) is the heat needed to raise **one gram** of a substance by 1 °C; the **heat capacity** ($C = ms$) is the heat needed to raise a **particular sample** by 1 °C. Specific heat is a property of the material; heat capacity is a property of the object.
+
+$$q = ms\Delta T \qquad\text{where}\qquad \Delta T = T_\text{final} - T_\text{initial}$$
+
+Writing $\Delta T$ as final minus initial makes the sign take care of itself: a sample that warms up has $\Delta T > 0$ and absorbed heat, so $q > 0$. Figure 6.4 compares specific heats across common materials, and one value stands well apart from the rest.
+
+![Specific heat capacities of common substances compared](../assets/specific_heat_comparison.svg =760x)
+*Figure 6.4 — Water's specific heat is extraordinarily high — about 32 times gold's. That single fact explains why water is the working fluid in the coffee-cup and bomb calorimeters shown here (it absorbs a lot of heat for a small, measurable temperature rise), why coastal climates are milder than inland ones, and why a pot of water takes so much longer to heat on the stove than the empty metal pot does.*
+
+| Substance | Specific heat, $\text{J}\,\text{g}^{-1}\,\text{°C}^{-1}$ |
+|---|---|
+| water (liquid) | 4.184 |
+| ethanol | 2.44 |
+| aluminum | 0.897 |
+| iron / steel | 0.449 |
+| copper | 0.385 |
+| gold | 0.129 |
+
+:::: tabs
+::: tab Problem
+How much heat is required to raise the temperature of 250.0 g of water from 22.0 °C to 95.0 °C?
+:::
+::: tab Solution
+$$\Delta T = 95.0 - 22.0 = 73.0\ ^\circ\text{C}$$
+$$q = ms\Delta T = (250.0\,\text{g})(4.184\,\text{J g}^{-1}\,^\circ\text{C}^{-1})(73.0\,^\circ\text{C}) = 7.64\times10^4\ \text{J} = 76.4\ \text{kJ}$$
+
+Positive, because the water absorbed the heat.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+A 360.0 g piece of rebar (steel, $s = 0.449\ \text{J}\,\text{g}^{-1}\,\text{°C}^{-1}$) is dropped into 425 mL of water at 24.0 °C. The water's final temperature is 42.7 °C. Assuming all heat transfer occurs between the rebar and the water (none to the surroundings), what was the rebar's initial temperature?
+:::
+::: tab Solution
+The rebar and the water form an isolated pair: all the heat the rebar loses, the water gains. That is one equation with one unknown.
+
+$$q_\text{rebar} = -q_\text{water}$$
+
+The minus sign is the whole physics — one gained what the other lost, so their $q$ values have opposite signs.
+
+$$m_\text{r}s_\text{r}(T_\text{f} - T_{\text{i,r}}) = -\,m_\text{w}s_\text{w}(T_\text{f} - T_{\text{i,w}})$$
+
+Both end at the same final temperature, 42.7 °C. Water's density is 1.00 g/mL, so 425 mL is 425 g.
+
+$$(360.0)(0.449)(42.7 - T_{\text{i,r}}) = -(425)(4.184)(42.7 - 24.0)$$
+$$161.6\,(42.7 - T_{\text{i,r}}) = -33{,}250$$
+$$42.7 - T_{\text{i,r}} = -205.7 \quad\Longrightarrow\quad T_{\text{i,r}} = 248\ ^\circ\text{C}$$
+
+Sanity check: the rebar must have started *hotter* than the water's final temperature for heat to flow that way, and 248 °C is comfortably hotter. If your answer comes out below 42.7 °C, the minus sign was dropped.
+:::
+::::
+
+### The two calorimeters
+
+A **calorimeter** measures a reaction's heat by trapping it and watching the temperature change of something whose heat capacity is known. ==Which quantity you end up with depends on what the apparatus holds constant.==
+
+![Constant-pressure and constant-volume calorimeters compared](../assets/two_calorimeters.svg =800x)
+*Figure 6.5 — At constant volume the system cannot expand, so it can do no work ($w = -P\Delta V = 0$) and every joule appears as heat: $q_\text{rxn} = \Delta U_\text{rxn}$. At constant pressure the system may expand and push the atmosphere back, and the heat measured is $\Delta H_\text{rxn}$ instead.*
+
+Figure 6.5 puts the two side by side. **Constant-volume (bomb) calorimetry** seals the sample in a rigid steel bomb:
+$$q_\text{rxn} = -(q_\text{water} + q_\text{bomb}) = \Delta U_\text{rxn}$$
+
+**Constant-pressure calorimetry** — a coffee-cup calorimeter is the classroom version — leaves the system open to the atmosphere:
+$$q_\text{rxn} = -(q_\text{water} + q_\text{cal}) = \Delta H_\text{rxn}$$
+
+In both, the minus sign says the same thing as in the rebar problem: heat that leaves the reaction is heat that arrives in the surroundings. Figure 6.6 shows the bomb in cutaway and Figure 6.7 the real instrument.
+
+![Schematic cutaway diagram of a bomb calorimeter](../assets/bomb_calorimeter.svg =420x)
+*Figure 6.6 — A sealed steel bomb holds the sample and $\ce{O2}$ at constant volume; heat released raises the temperature of the surrounding water bath, which (along with the bomb's own known heat capacity) is used to calculate $q_\text{rxn}$.*
+
+![A real bomb calorimeter with its steel sample bomb](../assets/bomb_calorimeter_photo.jpg =420x)
+*Figure 6.7 — A modern bomb calorimeter: the steel bomb (center) is loaded with sample, sealed, and lowered into the instrument's water jacket for a precisely measured temperature rise.*
+
+:::: tabs
+::: tab Problem
+3.12 g of glucose is burned in a bomb calorimeter, raising the temperature from 23.8 °C to 35.6 °C. The calorimeter holds 775 g of water and the bomb's own heat capacity is 893 J/°C. Find $q_\text{rxn}$.
+:::
+::: tab Solution
+Two things absorbed the heat, and both must be accounted for: the water, and the steel bomb itself.
+
+$$\Delta T = 35.6 - 23.8 = 11.8\ ^\circ\text{C}$$
+$$q_\text{water} = (775\,\text{g})(4.184\,\text{J g}^{-1}\,^\circ\text{C}^{-1})(11.8\,^\circ\text{C}) = 38{,}300\ \text{J}$$
+$$q_\text{bomb} = (893\,\text{J}\,^\circ\text{C}^{-1})(11.8\,^\circ\text{C}) = 10{,}500\ \text{J}$$
+
+The bomb is given as a *heat capacity*, not a specific heat, so no mass appears in its term — that is what the units are telling you.
+
+$$q_\text{rxn} = -(38{,}300 + 10{,}500)\,\text{J} = -48{,}800\ \text{J} = -48.8\ \text{kJ}$$
+
+Negative: the combustion released the heat. Ignoring the bomb's contribution would have understated the answer by more than 20%.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+50.0 mL of 1.00 M HCl and 50.0 mL of 1.00 M NaOH, both at 22.0 °C, are mixed in a coffee-cup calorimeter and reach a maximum of 28.9 °C. Take the mixture's specific heat and density as water's. Find the heat produced, and then the enthalpy change per mole of water formed.
+:::
+::: tab Solution
+**The heat.** The reaction warmed the solution, so the solution's gain is the reaction's loss.
+
+$$m = 100.0\,\text{mL}\times1.00\,\text{g/mL} = 100.0\ \text{g} \qquad \Delta T = 28.9 - 22.0 = 6.9\ ^\circ\text{C}$$
+$$q_\text{solution} = (100.0)(4.184)(6.9) = 2887\ \text{J} \approx 2.9\ \text{kJ}$$
+
+$\Delta T = 6.9$ °C has 2 significant figures, so the heat is known to 2: **2.9 kJ**.
+
+So $q_\text{rxn} = -2.9$ kJ.
+
+**Per mole.** The reaction is $\ce{HCl + NaOH -> NaCl + H2O}$, and both reactants supply
+$$0.0500\,\text{L}\times1.00\,\text{M} = 0.0500\ \text{mol}$$
+so 0.0500 mol of water forms.
+
+$$\Delta H = \frac{-2.887\ \text{kJ}}{0.0500\ \text{mol}} = -58\ \text{kJ/mol}$$
+
+(carrying the unrounded heat, and reporting 2 significant figures, set by $\Delta T$).
+
+This is close to the accepted −57.3 kJ/mol for a strong-acid/strong-base neutralization — and it is the same for *every* strong acid with every strong base, because §4.3 showed the net ionic equation is always $\ce{H+ + OH- -> H2O}$.
+:::
+::::
+
+> **Where this goes next.** Calorimetry works, but it needs a measurement for every reaction — and many reactions are too slow, too violent, or too impure to run in a calorimeter. §6.4 shows how to get the same number without a thermometer.
+
+## 6.4 Standard Enthalpy{{attrs[#blk-ch06sec04]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 6.4b}} Define standard enthalpy of formation and standard enthalpy of reaction.
+- {{sp[info] Objective 6.4a}} Apply Hess's Law to combine thermochemical equations.
+- {{sp[info] Objective 6.4b}} Calculate a reaction enthalpy from standard enthalpies of formation.
+- {{sp[info] Objective 6.4b}} Scale a tabulated reaction enthalpy to a given mass of reactant.
+:::
+
+### A reference level
+
+The **standard enthalpy of formation** ($\Delta H_\text{f}^\circ$) is the enthalpy change when **one mole** of a compound forms from its elements in their most stable states, at 1 atm and a stated temperature (usually 25 °C). The **standard enthalpy of reaction** ($\Delta H_\text{rxn}^\circ$) is a reaction's enthalpy change under those same conditions.
+
+There is no way to measure an *absolute* enthalpy, only changes in it. So a zero has to be chosen, and the choice is:
+
+$$\Delta H_\text{f}^\circ = 0 \quad\text{for any element in its most stable form}$$
+
+$\ce{O2(g)}$, $\ce{N2(g)}$, $\ce{Fe(s)}$, and $\ce{C(graphite)}$ are all exactly zero by definition, as Figure 6.8 shows. This is a convention, not a measurement — but because every reaction enthalpy is a *difference*, the choice of zero cancels out and never affects an answer.
+
+![Standard formation enthalpies as heights above and below the elements' zero level](../assets/formation_enthalpy_reference.svg =800x)
+*Figure 6.8 — Formation enthalpies are heights measured from a chosen sea level. Most compounds sit below it: energy was released when they formed from their elements, so they are more stable than the elements they came from. A few, like $\ce{NO}$, sit above. Because a reaction enthalpy is a difference of heights, the level itself cancels.*
+
+| Substance | $\Delta H_\text{f}^\circ$, kJ/mol | Substance | $\Delta H_\text{f}^\circ$, kJ/mol |
+|---|---|---|---|
+| $\ce{H2O(l)}$ | −285.8 | $\ce{CO2(g)}$ | −393.5 |
+| $\ce{H2O(g)}$ | −241.8 | $\ce{CO(g)}$ | −110.5 |
+| $\ce{CH4(g)}$ | −74.6 | $\ce{NH3(g)}$ | −45.9 |
+| $\ce{C2H2(g)}$ | +227.4 | $\ce{NO(g)}$ | +90.3 |
+| $\ce{Fe2O3(s)}$ | −824.2 | $\ce{Al2O3(s)}$ | −1675.7 |
+| any element, most stable form | 0 | $\ce{NaCl(s)}$ | −411.2 |
+
+Compare $\ce{H2O(l)}$ with $\ce{H2O(g)}$: the same compound, differing by 44.0 kJ/mol, which is exactly water's enthalpy of vaporization at 25 °C. This is rule 4 of §6.2 in numerical form, and it is why states are never optional.
+
+### Hess's Law
+
+==Because enthalpy is a state function, the enthalpy change between two states does not depend on the route taken — so if a reaction can be written as the sum of other reactions, its $\Delta H$ is the sum of theirs.== That is **Hess's Law**, and it is what makes §6.4 possible at all.
+
+![Hess's Law cycle diagram for the two-step formation of FeCl3](../assets/hess_law_cycle.svg =560x)
+*Figure 6.9 — Hess's Law: the direct formation enthalpy of $\ce{FeCl3}$ (dashed, not directly measurable here) equals the sum of a measurable two-step path — because enthalpy is a state function, the path taken doesn't matter, only the starting and ending states.*
+
+Figure 6.9 draws the cycle for the example below. When combining equations, the two rules from §6.2 do the work: reversing an equation flips the sign of its $\Delta H$, and scaling an equation scales its $\Delta H$.
+
+:::: tabs
+::: tab Problem
+Determine $\Delta H_\text{f}^\circ$ of $\ce{FeCl3(s)}$ from
+$$\ce{Fe(s) + Cl2(g) -> FeCl2(s)}\qquad \Delta H_1^\circ = -341.8\ \text{kJ}$$
+$$\ce{2FeCl2(s) + Cl2(g) -> 2FeCl3(s)}\qquad \Delta H_2^\circ = -115.4\ \text{kJ}$$
+:::
+::: tab Solution
+**Write the target first.** A formation reaction makes exactly one mole of the compound from its elements:
+$$\ce{Fe(s) + \tfrac32 Cl2(g) -> FeCl3(s)}$$
+
+**Then work out what combination of the given equations produces it.** Equation 1 as written gives one $\ce{FeCl2}$; halving equation 2 converts that one $\ce{FeCl2}$ into one $\ce{FeCl3}$. Adding them, the $\ce{FeCl2}$ cancels and the chlorine totals $1 + \tfrac12 = \tfrac32$ — the target exactly.
+
+$$\Delta H_\text{f}^\circ = \Delta H_1^\circ + \tfrac12\Delta H_2^\circ = (-341.8) + \tfrac12(-115.4) = -399.5\ \text{kJ/mol}$$
+
+Both steps release heat, so the overall formation must release heat too — the answer has to be negative.
+:::
+::::
+
+:::warning
+**A corrected value.** The source lecture notes drop both minus signs at this last step and report $+399.5$ kJ. Since $\Delta H_1^\circ$ and $\Delta H_2^\circ$ are both negative, their combination cannot be positive: the correct value is **−399.5 kJ/mol**, and $\ce{FeCl3}$ formation is exothermic. When all steps are added without reversal, as here, a sign check of this kind — *do the parts and the whole agree in direction?* — catches sign errors before the arithmetic is even examined.
+:::
+
+:::: tabs
+::: tab Problem
+Find $\Delta H^\circ$ for $\ce{2C(graphite) + H2(g) -> C2H2(g)}$ from
+$$\ce{C(graphite) + O2(g) -> CO2(g)}\qquad \Delta H_1^\circ = -393.5\ \text{kJ}$$
+$$\ce{H2(g) + \tfrac12 O2(g) -> H2O(l)}\qquad \Delta H_2^\circ = -285.8\ \text{kJ}$$
+$$\ce{2C2H2(g) + 5O2(g) -> 4CO2(g) + 2H2O(l)}\qquad \Delta H_3^\circ = -2599.2\ \text{kJ}$$
+:::
+::: tab Solution
+Work backwards from the target, deciding what each given equation must be doing.
+
+$\ce{C2H2}$ is a **product** in the target but a **reactant** in equation 3, so equation 3 must be **reversed**; it also carries a coefficient of 2 where the target needs 1, so it must be **halved**. Reversing flips the sign, halving halves it:
+$$-\tfrac12\Delta H_3^\circ = -\tfrac12(-2599.2) = +1299.6\ \text{kJ}$$
+
+The target needs **2** graphite, so use equation 1 **doubled**:
+$$2\Delta H_1^\circ = 2(-393.5) = -787.0\ \text{kJ}$$
+
+The target needs **1** $\ce{H2}$, so use equation 2 **as written**:
+$$\Delta H_2^\circ = -285.8\ \text{kJ}$$
+
+Adding all three:
+$$\Delta H^\circ = -787.0 + (-285.8) + 1299.6 = +226.8\ \text{kJ}$$
+
+**Check the intermediates cancel** (O2, CO2 and H2O), which is how you know the combination is right: the forward steps consume $2 + \tfrac12 = \tfrac52$ mol $\ce{O2}$, and the reversed half of equation 3 produces $\tfrac52$ mol. ✓
+
+The answer is **positive** — acetylene is one of the few compounds less stable than its elements, which is exactly why it burns so fiercely. Compare the table above, which lists $\Delta H_\text{f}^\circ(\ce{C2H2}) = +227.4$ kJ/mol; the small difference is rounding in the tabulated combustion value.
+:::
+::::
+
+### Reaction enthalpy from formation enthalpies
+
+Hess's Law has a shortcut. Any reaction can be imagined as taking the reactants apart into their elements and then building the products from those elements — so for $\ce{aA + bB -> cC + dD}$:
+
+$$\Delta H_\text{rxn}^\circ = \sum n\,\Delta H_\text{f}^\circ(\text{products}) - \sum m\,\Delta H_\text{f}^\circ(\text{reactants})$$
+
+Products minus reactants, each weighted by its coefficient. This is why nobody has to measure every reaction: a single table of formation enthalpies, measured once, yields the standard enthalpy change of any reaction those substances can undergo.
+
+{{sp[warning] Reminder}} Multiply each formation enthalpy by the balanced equation's coefficient before adding, and remember that elements contribute zero — but only in their *most stable* form. $\ce{Fe(l)}$ is not zero; $\ce{Fe(s)}$ is.
+
+:::: tabs
+::: tab Problem
+(a) Find $\Delta H_\text{rxn}^\circ$ for the thermite reaction $\ce{2Al(s) + Fe2O3(s) -> Al2O3(s) + 2Fe(l)}$, given $\Delta H_\text{f}^\circ(\ce{Al2O3}) = -1675.7$, $\Delta H_\text{f}^\circ(\ce{Fe},l) = 12.40$, $\Delta H_\text{f}^\circ(\ce{Fe2O3}) = -824.2$ kJ/mol. (b) How much heat is released when 35.0 g of Al reacts?
+:::
+::: tab Solution
+**(a)** Products minus reactants, each times its coefficient. $\ce{Al(s)}$ is an element in its standard state, so it contributes zero — but $\ce{Fe(l)}$ is *liquid* iron, not the standard solid, so it does not.
+
+$$\Delta H_\text{rxn}^\circ = [(-1675.7) + 2(12.40)] - [2(0) + (-824.2)] = -826.7\ \text{kJ}$$
+
+**(b)** The value belongs to the equation as written, which consumes **2** mol of Al.
+
+$$35.0\,\text{g Al}\times\frac{1\,\text{mol}}{26.98\,\text{g}} = 1.297\ \text{mol Al}$$
+$$q = -826.7\,\text{kJ}\times\frac{1.297\,\text{mol}}{2\,\text{mol}} = -536\ \text{kJ}$$
+
+**536 kJ is released** — enough to melt the iron it produces, which is exactly what thermite is used for.
+
+{{sp[warning] Reminder}} Carry the mole value unrounded into the last step. Rounding 1.297 to 1.30 first gives 537 kJ; the difference is small here but the habit matters.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+For the reaction of sucrose with potassium chlorate,
+$$\ce{C12H22O11(aq) + 8KClO3(aq) -> 12CO2(g) + 11H2O(l) + 8KCl(aq)}\qquad \Delta H_\text{rxn}^\circ = -5960\ \text{kJ}$$
+how much heat is released when 2.67 g of sucrose (342.3 g/mol) reacts?
+:::
+::: tab Solution
+The coefficient of sucrose is 1, so the tabulated value is already per mole of sucrose — no division step this time.
+
+$$2.67\,\text{g}\times\frac{1\,\text{mol}}{342.3\,\text{g}} = 7.80\times10^{-3}\ \text{mol}$$
+$$q = (7.80\times10^{-3}\,\text{mol})(-5960\,\text{kJ/mol}) = -46.5\ \text{kJ}$$
+
+**46.5 kJ is released.** Compare with the thermite problem, where the coefficient was 2 and a division was needed. Always read the coefficient of the substance you were actually given.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Calculate $\Delta H_\text{rxn}^\circ$ for the combustion of methane, $\ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(l)}$, using the formation enthalpies tabulated above.
+:::
+::: tab Solution
+Read the four values off the table, and remember that $\ce{O2(g)}$ is an element in its most stable form, so it is zero.
+
+$$\Delta H_\text{rxn}^\circ = \underbrace{[(-393.5) + 2(-285.8)]}_{\text{products}} - \underbrace{[(-74.6) + 2(0)]}_{\text{reactants}}$$
+$$= (-965.1) - (-74.6) = -890.5\ \text{kJ}$$
+
+Two checks worth making. The sign: burning methane obviously releases heat, and the answer is negative. ✓ The magnitude: about 890 kJ per mole of natural gas burned is the number behind every gas stove and furnace.
+
+Note also what happens if you use $\ce{H2O(g)}$ instead of $\ce{H2O(l)}$: the answer becomes $-802.5$ kJ, 88 kJ smaller, because the water was left as vapor rather than condensed. Same reaction, different state, materially different answer.
+:::
+::::
+
+## Synthesis
+
+==This chapter tracks energy through a reaction at four increasing levels of usefulness: the first law is a universal accounting rule; enthalpy specializes it to constant pressure, where the heat you can measure is the quantity you want; calorimetry measures it; and Hess's Law with tabulated formation enthalpies calculates it without any new measurement.==
+
+Backwards, everything here depends on Chapter 3 — every enthalpy calculation is the mole road map with kilojoules at the end — and on Chapter 5, which supplied energy, work, the joule, and the ideal gas equation that converts $P\Delta V$ into $\Delta nRT$. The neutralization example in §6.3 only makes sense because §4.3 established that every strong-acid/strong-base pair has the same net ionic equation.
+
+Forwards, the state-function idea introduced here is the one that lasts. Chapter 17 applies exactly the same Hess's-Law bookkeeping to entropy and free energy, and answers the question this chapter deliberately leaves open: enthalpy tells you whether a reaction releases energy, but *not* whether it will actually happen. Some endothermic reactions are spontaneous, and explaining that requires a second quantity.
+
+## Asset and License Record for This Chapter
+
+| Asset | Source URL | License | Attribution |
+|---|---|---|---|
+| `assets/system_and_surroundings.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/sign_conventions_q_w.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/exo_endo_diagram.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib, schematic; released under this package's CC BY 4.0 license. |
+| `assets/specific_heat_comparison.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/two_calorimeters.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/bomb_calorimeter.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib, schematic; released under this package's CC BY 4.0 license. |
+| `assets/bomb_calorimeter_photo.jpg` | https://commons.wikimedia.org/wiki/File:Bombenkalorimeter_mit_bombe.jpg | CC BY 3.0 | Harbor1, via Wikimedia Commons, CC BY 3.0 (dual-licensed with GFDL 1.2+). |
+| `assets/formation_enthalpy_reference.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/hess_law_cycle.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib using the study guide's own worked-example data; released under this package's CC BY 4.0 license. |
+</script>
+<main id="orz-view" class="orz-view" data-orz-theme="light-neat-3"><article id="orz-doc" class="markdown-body"><p class="orz-fallback" style="opacity:.6;font:14px/1.5 system-ui,sans-serif">If this page stays blank, check your connection (this page loads its engine from the web) or open it in a recent browser; the document's text is inside this file — see the comment at the top.</p></article></main>
+<div id="orz-chrome"></div>
+<script id="orz-engine" src="https://cdn.jsdelivr.net/npm/orz-mdhtml-browser@1.1.0/orz-mdhtml.browser.js"></script>
+</body>
+</html>

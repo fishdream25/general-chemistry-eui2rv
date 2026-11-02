@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="en" data-orz-kind="md">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="orz-md 1.1.0">
+<title>Chapter 12: Physical Properties of Solutions</title>
+<script type="application/orz-meta+json" id="orz-meta">
+{
+  "title": "Chapter 12: Physical Properties of Solutions"
+}
+</script>
+<script type="application/json" id="orz-shell">{"kind":"md","format":1,"shell":"1.1.0","delivery":"cdn"}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<link rel="stylesheet" id="orz-theme" href="https://cdn.jsdelivr.net/npm/orz-markdown@2.5.0/themes/light-neat-3.css" media="not all">
+<link rel="stylesheet" id="orz-katex" href="https://cdn.jsdelivr.net/npm/katex@0.16.47/dist/katex.min.css" media="not all">
+<link rel="stylesheet" id="orz-hljs" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css" media="not all">
+</head>
+<body>
+<!-- orz md document, text format 1. For AI agents and tools:
+  The complete, editable source of this file is the text/markdown island with id "orz-src" below.
+  Read it with extract() from orz-markdown/carrier, or by hand: take the island content, remove one
+  backslash after each "<" that is followed by backslashes and then "script" or "/script" (any case),
+  turn its line breaks into the style named by data-orz-eol, and prefix U+FEFF if data-orz-bom is set.
+  Edit that text only, then assemble again; everything else in this file is a regenerable shell.
+  Skill: https://cdn.jsdelivr.net/npm/orz-mdhtml/orz-mdhtml-skills/SKILL.md
+-->
+<script type="text/markdown" id="orz-src" data-orz-format="1" data-orz-eol="lf">{{nyml
+kind: document
+format: 1
+title: Chapter 12: Physical Properties of Solutions
+}}
+
+# Chapter 12: Physical Properties of Solutions
+ Stale-window check sentence (review r4).
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 12 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, second semester
+**Package license:** CC BY 4.0
+**Note:** builds on molarity (Chapter 4) and intermolecular forces (Chapter 11); facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+:::
+
+:::success
+**Chapter Learning Objectives**
+- Explain solution formation in terms of solvent-solvent, solute-solute, and solute-solvent intermolecular interactions, and apply "like dissolves like" to predict solubility.
+- Predict how temperature and pressure affect the solubility of solids, liquids, and gases, including Henry's law.
+- Calculate and convert between mole fraction, percent by mass, molarity, and molality.
+- State Raoult's law and calculate vapor-pressure lowering, boiling-point elevation, freezing-point depression, and osmotic pressure — including for electrolyte solutions via the van't Hoff factor.
+:::
+
+## Chapter Logic
+
+Chapter 11 explained which intermolecular forces exist between particles. This chapter asks a direct follow-up question: when two different substances are mixed, do those forces let them form one homogeneous solution — and if so, what can be predicted about it? ==Almost nothing in a chemistry lab, or in a living cell, is a pure substance — nearly everything is a mixture, and very often a solution, so the properties of solutions are the properties you will actually measure.==
+
+{{mermaid
+graph TD
+  A["Intermolecular forces (Ch. 11)"] --> B["Does solute-solvent attraction compete with<br/>solvent-solvent & solute-solute attraction?"]
+  B --> C["Solution forms:<br/>'like dissolves like'"]
+  C --> D["Quantify how much:<br/>concentration units"]
+  D --> E["Predict measurable consequences:<br/>colligative properties"]
+}}
+
+**Visual description:** A top-down flowchart. Intermolecular forces from Chapter 11 determine whether solute-solvent attraction can compete with solvent-solvent and solute-solute attraction; if so, a solution forms following "like dissolves like." Once a solution exists, concentration units quantify how much solute is present, which in turn lets colligative properties (vapor pressure, boiling point, freezing point, osmotic pressure) be predicted.
+
+## 12.1 Some General Concepts and Rules{{attrs[#blk-ch12sec01]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 12.1a}} Distinguish saturated, unsaturated, and supersaturated solutions. Like dissolves like is a rule of thumb, usually (review r4).
+- {{sp[info] Objective 12.1a}} Explain solution formation in terms of solvent-solvent, solute-solute, and solute-solvent interactions, and predict whether the process is exothermic or endothermic.
+- {{sp[info] Objective 12.1b}} Apply "like dissolves like" to predict solubility of polar, nonpolar, and ionic substances.
+- {{sp[info] Objective 12.1c}} Predict the effect of temperature and pressure on the solubility of solids, liquids, and gases, including Henry's law.
+:::
+
+A **solution** is a homogeneous mixture of two or more substances: the **solute** (present in the smaller amount) dissolved in the **solvent** (present in the larger amount).
+
+### Types of solutions, and how full they are
+
+The word "solution" tends to call up a picture of a solid stirred into water, but that is only one of six combinations. What decides the *state* of the resulting solution is the solvent — the component present in the larger amount.
+
+| Solute state | Solvent state | Solution state | Everyday example |
+|---|---|---|---|
+| gas | gas | gas | air ($\ce{O2}$ and other gases in $\ce{N2}$) |
+| gas | liquid | liquid | carbonated water ($\ce{CO2}$ in $\ce{H2O}$) |
+| gas | solid | solid | hydrogen absorbed in palladium metal |
+| liquid | liquid | liquid | ethanol in water |
+| solid | liquid | liquid | salt water ($\ce{NaCl}$ in $\ce{H2O}$) |
+| solid | solid | solid | brass (zinc in copper) |
+
+A solution is **saturated** when it holds the maximum amount of solute a given solvent can dissolve at a given temperature; **unsaturated** when it holds less than that maximum; and **supersaturated** when it somehow holds *more* than the saturation limit. A supersaturated solution is genuinely unstable — it is holding more solute than it can, and it will shed the excess as soon as something gives the solute a place to start crystallizing. Usually it is made by dissolving solute at a high temperature and then cooling the solution slowly and without disturbance, so that no crystal ever gets started.
+
+Figure 12.1 shows what a supersaturated solution does once it is given the chance: rock candy is the excess sugar, crystallized back out.
+
+![Crystallized sugar grown from a supersaturated solution, showing large single crystals alongside a mass of smaller ones](../assets/sugar_crystals.jpg =700x)
+*Figure 12.1 — Rock candy is sugar crystallizing back out of a solution that has become supersaturated as it cools — a visible, edible demonstration of the saturation concepts above. Source: Zaereth, via Wikimedia Commons, CC BY-SA 4.0.*
+
+:::: tabs
+::: tab Problem
+At 20 °C, the solubility of $\ce{KNO3}$ in water is 31.6 g per 100 g of water. Classify each solution, all at 20 °C: (a) 25.0 g $\ce{KNO3}$ stirred into 100 g water, all of it dissolving; (b) 40.0 g $\ce{KNO3}$ stirred into 100 g water, with 8.4 g left undissolved at the bottom; \(c) 40.0 g $\ce{KNO3}$ dissolved in 100 g water at 60 °C and then cooled carefully to 20 °C with nothing coming out of solution.
+:::
+::: tab Solution
+Compare each amount **dissolved** against the 31.6 g limit.
+
+**(a) Unsaturated.** 25.0 g < 31.6 g, so the water could still hold more. Add more solid and it would dissolve.
+
+**(b) Saturated.** Of the 40.0 g added, 40.0 − 8.4 = **31.6 g dissolved** — exactly the limit — and the rest sits undissolved. The undissolved solid at the bottom is the giveaway: a saturated solution in contact with excess solute is at equilibrium, with solid dissolving and crystallizing at equal rates.
+
+**\(c) Supersaturated.** All 40.0 g is dissolved, which is 8.4 g *more* than 20 °C water can normally hold. Nothing is wrong with the arithmetic — the solution is simply in an unstable state, because the cooling never gave a crystal a chance to start.
+
+{{sp[warning] Watch out}} Dropping a single seed crystal into \(c), or even scratching the glass, will make the excess 8.4 g crystallize out within seconds, leaving behind exactly the saturated solution from (b).
+:::
+::::
+
+### Why solutions form
+
+Forming a solution requires three steps happening at once: breaking the **solvent-solvent** interactions that were holding pure solvent together, breaking the **solute-solute** interactions that were holding pure solute together, and forming new **solvent-solute** interactions between the two. **Whether dissolving releases or absorbs net heat depends entirely on how the new solvent-solute attraction compares to the two attractions it replaced**: if solvent-solute attraction is *stronger*, the process is **exothermic** ($\Delta H_\text{soln} < 0$); if *weaker*, it is **endothermic** ($\Delta H_\text{soln} > 0$) — and can still happen anyway, because dissolving increases the disorder (entropy) of the system, a preview of Chapter 17. When the solute-solvent attraction is essentially identical in strength to the two attractions it replaces, the result is called an **ideal solution** — no net energy change on mixing.
+
+![Two waterfall diagrams of solution energetics: breaking solvent-solvent and solute-solute interactions costs energy, forming solute-solvent interactions releases it, with an exothermic case and an endothermic case](../assets/solution_energetics.svg)
+*Figure 12.2 — The same three steps run in both cases; only the size of the third one differs. When the energy released by forming solute-solvent attractions exceeds what was spent pulling the pure substances apart, dissolving is exothermic; when it falls short, dissolving is endothermic. Self-generated with matplotlib; the values are illustrative, not measured.*
+
+Figure 12.2 is worth reading carefully, because it explains a fact that otherwise looks arbitrary: dissolving $\ce{CaCl2}$ in water gets hot enough to use in a self-heating meal pack, while dissolving $\ce{NH4NO3}$ in water gets cold enough to sell as an instant cold pack. Both are ionic solids in the same solvent. The difference lies in the balance — whether the energy the ion-dipole attractions give back in step 3 exceeds the energy spent pulling the solvent and the ionic lattice apart in steps 1 and 2.
+
+:::: tabs
+::: tab Problem
+An instant cold pack works by breaking an inner pouch so that $\ce{NH4NO3}$ dissolves in water, and the pack becomes cold to the touch. (a) Is this dissolving exothermic or endothermic? (b) Which is larger for this substance — the energy spent on steps 1 and 2, or the energy released in step 3? \(c) If the process absorbs energy, why does it happen at all?
+:::
+::: tab Solution
+**(a) Endothermic.** The pack gets *cold* because it is taking heat **from** its surroundings — your hand is the surroundings. Heat flowing out of the surroundings and into the system means $\Delta H_\text{soln} > 0$.
+
+**(b) Steps 1 and 2 cost more than step 3 gives back.** Pulling the $\ce{NH4+}$ and $\ce{NO3-}$ ions out of the crystal lattice and pushing the hydrogen-bonded water apart together take more energy than the new ion-dipole attractions release. The shortfall is drawn from the surroundings as heat.
+
+**\(c)** Because energy is not the only thing that matters. Dissolving scatters the ions, which were in a rigid, ordered lattice, throughout the liquid — a large increase in **disorder**. That increase can outweigh an unfavorable energy change and drive the process anyway. Chapter 17 will make this quantitative and give the quantity a name (entropy); for now the useful form is: **an endothermic process can still be spontaneous if it produces enough disorder.**
+
+**The general test:** compare the size of the new solute-solvent attractions against the two attractions they replace. If the new ones are stronger, heat comes out; if weaker, heat goes in.
+:::
+::::
+
+**Solubility** is the maximum amount of solute that dissolves in a given amount of solvent at a given temperature. **Miscible** describes two liquids that dissolve in each other in any proportion (e.g., methanol and water). **Solvation** is the process of solvent molecules surrounding a dissolved ion or molecule — called **hydration** specifically when the solvent is water.
+
+### Like dissolves like
+
+$$\text{"Like dissolves like": similar intermolecular forces} \Rightarrow \text{mutual solubility}$$
+
+Figure 12.3 puts the rule in front of you as five specific substances. Check each one against the three bullets below it — the figure is a worked instance of the rule, not decoration.
+
+![Five example species illustrating like-dissolves-like: water and ethanol as polar solvents, hexane as a nonpolar solvent, iodine as a nonpolar solute, and sodium chloride as an ionic solute](../assets/like_dissolves_like.svg)
+*Figure 12.3 — Water is a polar solvent that dissolves other polar substances (ethanol, fully miscible) and ionic compounds (NaCl, via strong ion-dipole attraction). Nonpolar hexane instead dissolves nonpolar solutes like iodine, which have only weak dispersion forces to overcome. Self-generated with RDKit.*
+
+- **Nonpolar substances** dissolve in **nonpolar solvents** (dispersion forces on both sides are compatible).
+- **Polar substances** dissolve in **polar solvents** (dipole-dipole/hydrogen-bonding forces match).
+- **Ionic compounds** are generally most soluble in **polar solvents**, whose partial charges can surround and stabilize each ion (ion-dipole attraction).
+
+=="Like" here means *like in intermolecular forces*, not like in size, mass, or chemical family== — which is why water dissolves table salt but not candle wax, though both are solids, and why it mixes with ethanol but not with gasoline, though all three are liquids.
+
+:::: tabs
+::: tab Problem
+Predict whether each of the following is more soluble in water (polar) or in heptane, $\ce{C7H16}$ (nonpolar): (a) vegetable oil (nonpolar); (b) isopropyl alcohol (polar); \(c) potassium bromide (ionic).
+:::
+::: tab Solution
+Apply "like dissolves like" to each:
+
+**(a)** Vegetable oil is nonpolar, so it dissolves better in nonpolar **heptane**.
+
+**(b)** Isopropyl alcohol is polar, so it dissolves better in polar **water**.
+
+**\(c)** Potassium bromide is ionic, so it dissolves better in polar **water**, whose partial charges can surround and stabilize the $\ce{K+}$ and $\ce{Br-}$ ions.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Methanol ($\ce{CH3OH}$) is completely miscible with water; 1-butanol ($\ce{C4H9OH}$) dissolves to only about 7 g per 100 mL; 1-octanol ($\ce{C8H17OH}$) is essentially insoluble (0.05 g per 100 mL). All three are alcohols with an O–H group. Explain the trend.
+:::
+::: tab Solution
+"Like dissolves like" is not a yes/no test — a molecule can be **partly** like the solvent, and these three show what that looks like.
+
+Every one of these molecules has two distinct regions:
+
+- the **–OH head**, which is polar and hydrogen-bonds beautifully with water;
+- the **hydrocarbon tail**, which is nonpolar and cannot hydrogen-bond at all. To make room for that tail, water molecules must break hydrogen bonds with each other and get nothing back.
+
+The head is the same in all three; **what changes is how much nonpolar tail comes attached to it**, and the tail is what water objects to.
+
+| Alcohol | Carbons in the tail | Solubility in water |
+|---|---|---|
+| methanol | 1 | miscible in all proportions |
+| 1-butanol | 4 | ~7 g / 100 mL |
+| 1-octanol | 8 | ~0.05 g / 100 mL |
+
+In methanol the tail is a single carbon and the –OH dominates, so the molecule behaves as essentially polar. By eight carbons the tail dominates completely and the molecule behaves as essentially nonpolar — 1-octanol is in fact used as a *nonpolar* reference solvent in pharmacology.
+
+**The generalizable rule:** for a molecule with both polar and nonpolar parts, solubility is decided by which part is larger. This is the same reasoning that will explain why soaps and cell membranes work — a long nonpolar tail on a charged head.
+:::
+::::
+
+### Temperature and pressure effects on solubility
+
+For **solids** dissolved in liquids, raising temperature increases the solubility of some solutes and decreases it for others — there is no universal rule, but the direction generally follows the sign of $\Delta H_\text{soln}$: solubility rises with temperature when dissolving is endothermic and falls when it is exothermic. For **gases** dissolved in liquids, the rule is much simpler and nearly always the same direction: **higher temperature lowers the solubility of most gases in water** (this is why a warm soda goes flat faster than a cold one).
+
+Pressure has essentially no effect on the solubility of solids or liquids, but it strongly affects gas solubility, following **Henry's law**:
+
+$$c_\text{gas} = k_\text{H}P_\text{gas}$$
+
+where $k_\text{H}$ is a constant for a given gas, solvent and temperature.
+
+![Three panels: solubility of KNO3, NaCl and Li2SO4 versus temperature; solubility of CO2 and O2 in water versus temperature; and dissolved gas concentration versus partial pressure](../assets/solubility_temperature_pressure.svg)
+*Figure 12.4 — Panel (a) is the point about solids: $\ce{KNO3}$ climbs steeply with temperature, $\ce{NaCl}$ barely moves, and $\ce{Li2SO4}$ actually falls — three solids, three directions, no general rule. Panels (b) and \(c) show why gases are different: warming drives dissolved gas out of water, and raising the partial pressure of the gas above the liquid always drives more in. Self-generated with matplotlib from published solubility data.*
+
+Read Figure 12.4 left to right and the asymmetry of this section becomes obvious. Panel (a) is the reason the text above refuses to give you a rule for solids — any rule you invented from one salt would be contradicted by the next. Panels (b) and \(c) are the reason gases get two rules that hold generally (for gases that do not react with the solvent).
+
+:::warning
+Henry's law assumes the gas does **not** chemically react with the solvent. It fails for gases like $\ce{HCl}$ or $\ce{NH3}$ in water, which react to some extent with the solvent rather than simply dissolving.
+:::
+
+
+:::: tabs
+::: tab Problem
+A sealed can of soda is pressurized with $\ce{CO2}$ at 2.4 atm, and the dissolved $\ce{CO2}$ concentration is 0.081 M. After the can is opened and left out, the liquid comes to equilibrium with ordinary air, in which the partial pressure of $\ce{CO2}$ is $4.0\times10^{-4}$ atm. What is the dissolved $\ce{CO2}$ concentration then?
+:::
+::: tab Solution
+Henry's law says the dissolved concentration is proportional to the gas's partial pressure *above the liquid*. Find the proportionality constant from the sealed can, then apply it to the opened one.
+
+$$k_\text{H} = \frac{c}{P} = \frac{0.081\ \text{M}}{2.4\ \text{atm}} = 0.034\ \text{M/atm}$$
+
+$$c = k_\text{H}P = (0.034\ \text{M/atm})(4.0\times10^{-4}\ \text{atm}) = 1.4\times10^{-5}\ \text{M}$$
+
+The concentration falls by a factor of 6,000 — which is exactly the ratio of the two pressures, since the relationship is linear. You do not have to compute $k_H$ at all: **the ratio of concentrations equals the ratio of pressures.**
+
+**Why the soda fizzes when you open it:** at the instant of opening, the liquid still holds 0.081 M of $\ce{CO2}$ but the pressure above it has crashed. The liquid is now enormously supersaturated with gas, and the excess escapes as bubbles until the new, far lower equilibrium is reached.
+
+{{sp[warning] Careful}} $\ce{CO2}$ is one of the gases that reacts with water, so real carbonated beverages deviate from Henry's law. The calculation above is the idealized version — good for the trend and the order of magnitude, not for three-figure accuracy.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+A student writes: "Heating a solution always lets it dissolve more solute." Give one case where this is right, one where it is wrong for a solid, and one where it is wrong for a gas — and say what makes the gas case different in kind from the other two.
+:::
+::: tab Solution
+**Right, for many solids.** $\ce{KNO3}$ goes from 31.6 g per 100 g water at 20 °C to 246 g at 100 °C — nearly eight times as much. This is the case the student is generalizing from, and it is the one most classroom demonstrations use.
+
+**Wrong, for some solids.** $\ce{Li2SO4}$ goes the other way: about 36 g per 100 g water at 0 °C, falling to about 31 g at 100 °C. Heating this solution makes solute come *out*. There is no reliable way to predict which direction a given solid will go, and — worth noting because it is a tempting shortcut — **the sign of the tabulated (dilute-solution) $\Delta H_\text{soln}$ does not reliably predict it either.**
+
+**Wrong, for gases (over the ordinary temperature range).** Common gases become less soluble in water as temperature rises over the ordinary range (roughly 0–50 °C). Warm river water holds less dissolved oxygen than cold water, which is why thermal pollution from a power plant can suffocate fish without adding a single toxin.
+
+**Why the gas case is different in kind:** a dissolved gas molecule is already free of any lattice — it needs no energy to break out of a solid, so the only cost is making room in the solvent, and the attractions it forms usually more than repay that, so dissolving releases heat ($\Delta H_\text{soln} < 0$). Adding heat therefore shifts the equilibrium back toward the gas phase, at least over the ordinary range. A dissolving solid, by contrast, has to be pulled out of its lattice first, so heating helps one step and hinders another, and which effect wins varies from salt to salt.
+:::
+::::
+
+**Self-check:**
+- Would you expect $\ce{CO2}$ solubility in an unopened soda bottle to follow Henry's law cleanly? Why might it deviate?
+- Nitrogen is about twice as soluble in blood at 4 atm as at 2 atm. Use Henry's law to explain why a scuba diver who surfaces too quickly risks nitrogen bubbles forming in the blood.
+
+> **Where this goes next.** §12.1 answered *whether* a solution forms and *how much* solute it can hold. Most statements so far have been qualitative — "more soluble," "less soluble." §12.2 supplies the vocabulary for saying exactly how much, which is what every calculation in the rest of the chapter depends on.
+
+## 12.2 Concentration Units{{attrs[#blk-ch12sec02]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 12.2a}} Calculate mole fraction, percent by mass, molarity, and molality for a solution.
+- {{sp[info] Objective 12.2b}} Convert between these concentration units given density and molar mass.
+:::
+
+"How concentrated is it?" has four common answers in chemistry, and they are not interchangeable. Each one divides an amount of solute by a *different* measure of the solution (or, for molality, of the solvent alone), so the same solution has four different concentration numbers — all correct.
+
+### The four concentration units
+
+Three of the four (mole fraction, mass percent, and molality) are **composition-based**: both numerator and denominator are amounts of matter, so nothing about them changes if the flask warms up.
+
+$$X_\text{A} = \frac{\text{moles of A}}{\text{sum of moles of all species}} \qquad \text{percent by mass} = \frac{\text{mass of solute}}{\text{mass of solution}}\times 100\%$$
+
+The other two divide by a **quantity of solution or solvent** — one measured by volume, one by mass:
+
+$$M = \frac{\text{moles of solute}}{\text{liters of solution}} \qquad m = \frac{\text{moles of solute}}{\text{mass of solvent (kg)}}$$
+
+| Unit | Symbol | Denominator | Changes with temperature? |
+|---|---|---|---|
+| Mole fraction | $X$ | total moles (all species) | No |
+| Percent by mass | — | mass of solution | No |
+| Molarity | $M$ | **volume** of solution (L) | Yes (volume expands/contracts) |
+| Molality | $m$ | **mass** of solvent (kg) | No |
+
+{{sp[warning] Reminder}} molarity's denominator is a *volume*, which expands slightly with temperature — this is exactly why colligative-property constants ($K_b$, $K_f$) are defined using molality instead, not molarity.
+
+==Read the denominators in that table carefully, because that is the entire difference between these units==: molarity divides by the **volume of the whole solution**, molality divides by the **mass of the solvent alone**. In dilute aqueous solutions the two come out nearly equal, which is exactly why the distinction is easy to lose — and exactly why it bites in concentrated solutions, where they can differ by a factor of five.
+
+:::: tabs
+::: tab Problem
+A solution is prepared by dissolving 15.0 g of $\ce{NaCl}$ (58.44 g/mol) in 85.0 g of water. The density of the resulting solution is 1.10 g/mL. Calculate all four concentrations: mole fraction of $\ce{NaCl}$, percent by mass, molality, and molarity.
+:::
+::: tab Solution
+One solution, four numbers. Start by converting both components to moles, since three of the four units need them.
+
+$$n_{\ce{NaCl}} = \frac{15.0\ \text{g}}{58.44\ \text{g/mol}} = 0.257\ \text{mol} \qquad n_{\ce{H2O}} = \frac{85.0\ \text{g}}{18.02\ \text{g/mol}} = 4.717\ \text{mol}$$
+
+**Mole fraction** — divide by the total moles of *everything*:
+$$X_{\ce{NaCl}} = \frac{0.257}{0.257 + 4.717} = 0.0516$$
+
+**Percent by mass** — the mass of solution is solute plus solvent, 15.0 + 85.0 = 100.0 g:
+$$\frac{15.0\ \text{g}}{100.0\ \text{g}}\times 100\% = 15.0\%$$
+
+**Molality** — divide by the mass of *solvent only*, in kilograms:
+$$m = \frac{0.257\ \text{mol}}{0.0850\ \text{kg}} = 3.02\ \text{mol/kg}$$
+
+**Molarity** — this one needs the density, because it divides by a *volume*:
+$$V = \frac{100.0\ \text{g}}{1.10\ \text{g/mL}} = 90.9\ \text{mL} = 0.0909\ \text{L} \qquad M = \frac{0.257\ \text{mol}}{0.0909\ \text{L}} = 2.82\ \text{mol/L}$$
+
+**What to take away from the four numbers.** Molality (3.02) and molarity (2.82) differ by about 7% here, and they differ for two separate reasons at once: molality's denominator excludes the salt's own mass, and molarity's denominator is a volume that the density had to supply. Note also that only the molarity calculation used the density — that is the tell for which unit you are heading toward.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+What are the mole fraction and molality of a solution containing 0.850 g of ammonia, $\ce{NH3}$, dissolved in 125 g of water?
+:::
+::: tab Solution
+First find moles of each species:
+
+$$0.850\ \text{g}\ \ce{NH3} \times \frac{1\ \text{mol}}{17.0\ \text{g}} = 0.0500\ \text{mol}\ \ce{NH3}$$
+
+$$125\ \text{g}\ \ce{H2O} \times \frac{1\ \text{mol}}{18.0\ \text{g}} = 6.94\ \text{mol}\ \ce{H2O}$$
+
+Mole fraction of ammonia:
+
+$$X_{\ce{NH3}} = \frac{0.0500\ \text{mol}}{0.0500\ \text{mol} + 6.94\ \text{mol}} = 7.15\times10^{-3}$$
+
+Molality (note: 125 g must convert to 0.125 kg):
+
+$$m = \frac{0.0500\ \text{mol}}{0.125\ \text{kg}} = 0.400\ \text{mol/kg}$$
+:::
+::::
+
+### Converting between units
+
+Converting between these four always routes through one or both of the same two bridges:
+
+$$\text{moles of solute} = \frac{\text{mass of solute}}{\text{molar mass}} \qquad \text{mass of solution} = \text{volume of solution} \times \text{density}$$
+
+There is also one habit that makes almost every conversion easy: **assume a convenient amount of solution (or of solvent) and work from there.** Which amount is convenient depends on what you were given:
+
+| Given | Assume | Because |
+|---|---|---|
+| percent by mass | 100 g of solution | the percentage becomes grams directly |
+| molarity | 1 L of solution | the molarity becomes moles directly |
+| molality | 1 kg of solvent | the molality becomes moles directly |
+| mole fraction | 1 mol total | the mole fractions become moles directly |
+
+Nothing in the answer depends on the amount you assume, because concentration is a ratio — picking the amount that makes one number fall out for free is pure convenience.
+
+
+:::: tabs
+::: tab Problem
+Nitric acid, $\ce{HNO3}$(aq), is sold commercially as a 33.7 m aqueous solution with density 1.35 g/mL. What is its molarity?
+:::
+::: tab Solution
+Assume exactly 33.7 mol $\ce{HNO3}$ per 1 kg of water (that is what "33.7 m" means).
+
+$$\text{mass of}\ \ce{HNO3} = 33.7\ \text{mol}\times\frac{63.0\ \text{g}}{1\ \text{mol}} = 2.12\times10^3\ \text{g} = 2.12\ \text{kg}$$
+
+$$\text{volume of solution} = \frac{\text{mass of solution}}{\text{density}} = \frac{2.12\ \text{kg} + 1\ \text{kg}\ \ce{H2O}}{1.35\ \text{kg/L}} = 2.31\ \text{L}$$
+
+$$M = \frac{33.7\ \text{mol}}{2.31\ \text{L}} = 14.6\ \text{mol/L}$$
+
+Notice the strategy: assume a convenient reference amount (here, 1 kg of solvent, since molality is given), convert every quantity to a common basis (grams), then apply the density bridge to get volume.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+The mole fraction of iodine, $\ce{I2}$, dissolved in dichloromethane, $\ce{CH2Cl2}$ (84.9 g/mol), is 0.115. What is the molality of iodine in this solution?
+:::
+::: tab Solution
+Mole fraction is given, so **assume 1 mol of solution in total**. That immediately fixes both amounts:
+
+$$n_{\ce{I2}} = 0.115\ \text{mol} \qquad n_{\ce{CH2Cl2}} = 1 - 0.115 = 0.885\ \text{mol}$$
+
+Molality needs the mass of the *solvent* in kilograms, so convert the dichloromethane:
+
+$$0.885\ \text{mol}\times\frac{84.9\ \text{g}}{1\ \text{mol}} = 75.1\ \text{g} = 0.0751\ \text{kg}$$
+
+$$m = \frac{0.115\ \text{mol}}{0.0751\ \text{kg}} = 1.53\ \text{mol/kg}$$
+
+**Note what was *not* needed:** no density, and no volume. Mole fraction and molality are both composition-based, so converting between them requires only molar masses. The moment molarity enters on either side, a density becomes unavoidable — that is the sharpest practical difference between the two families of unit.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Concentrated hydrochloric acid is sold as 37.0% $\ce{HCl}$ by mass, with a density of 1.19 g/mL. What is its molarity? ($\ce{HCl}$, 36.46 g/mol.)
+:::
+::: tab Solution
+Percent by mass is given, so **assume 100 g of solution** — the percentage then reads directly as grams.
+
+$$\text{mass of}\ \ce{HCl} = 37.0\ \text{g} \qquad \text{mass of solution} = 100\ \text{g}$$
+
+$$n_{\ce{HCl}} = \frac{37.0\ \text{g}}{36.46\ \text{g/mol}} = 1.015\ \text{mol}$$
+
+Molarity needs liters of solution, so use the density bridge in the direction mass $\rightarrow$ volume:
+
+$$V = \frac{100\ \text{g}}{1.19\ \text{g/mL}} = 84.0\ \text{mL} = 0.0840\ \text{L}$$
+
+$$M = \frac{1.015\ \text{mol}}{0.0840\ \text{L}} = 12.1\ \text{mol/L}$$
+
+The label on a real bottle of concentrated $\ce{HCl}$ reads 12.1 M, so this is a calculation worth trusting your work on — it is how every stockroom dilution starts.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+A sulfuric acid solution is 2.50 M and has a density of 1.15 g/mL. What is its molality? ($\ce{H2SO4}$, 98.08 g/mol.)
+:::
+::: tab Solution
+Molarity is given, so **assume 1 L (1000 mL) of solution** — the molarity then reads directly as moles.
+
+$$n_{\ce{H2SO4}} = 2.50\ \text{mol} \qquad \text{mass of solution} = 1000\ \text{mL}\times 1.15\ \text{g/mL} = 1150\ \text{g}$$
+
+Molality's denominator is the mass of **solvent alone**, so subtract out the solute's own mass — this is the step that gets skipped:
+
+$$\text{mass of}\ \ce{H2SO4} = 2.50\ \text{mol}\times 98.08\ \text{g/mol} = 245\ \text{g}$$
+
+$$\text{mass of water} = 1150 - 245 = 905\ \text{g} = 0.905\ \text{kg}$$
+
+$$m = \frac{2.50\ \text{mol}}{0.905\ \text{kg}} = 2.76\ \text{mol/kg}$$
+
+{{sp[warning] The classic error}} Dividing 2.50 mol by 1.15 kg — the mass of the whole solution — gives 2.17 m, which is wrong by 21%. Molarity's denominator is the solution; molality's denominator is the solvent. Subtract the solute's mass every time.
+:::
+::::
+
+### Which unit to use, and why molality wins for Chapter 12
+
+Molarity is the working unit of the laboratory: you measure a volume with a pipette, not a mass, so molarity is what a bench procedure calls for. But it has one flaw that matters here — its denominator is a volume, and volumes expand when heated.
+
+That flaw is fatal for this chapter, because §12.3 is entirely about what happens when you heat a solution to its boiling point or cool it to its freezing point. A "0.50 M" solution is not 0.50 M any more once you have raised it 80 degrees, so a constant relating concentration to boiling-point change could not be a constant at all. Molality's denominator is a mass, which does not change with temperature, so $K_b$ and $K_f$ are defined with molality and stay honest across the whole temperature range.
+
+The one colligative property that *does* use molarity is osmotic pressure — and it is measured at a fixed temperature, so the objection never arises.
+
+**Self-check:**
+- A solution is 1.00 m and also 1.00 M. What must be true about it, roughly, for those two numbers to coincide?
+- Why does converting molarity to molality require the solution's density, while converting mole fraction to molality does not?
+
+> **Where this goes next.** With concentration defined precisely, a genuinely surprising fact becomes measurable: for four specific properties, the *identity* of the dissolved solute turns out not to matter at all — only the number of particles. §12.3 is about those four properties and the four equations that predict them.
+
+## 12.3 Colligative Properties{{attrs[#blk-ch12sec03]}}
+
+:::success
+**Learning Objectives**
+- {{sp[info] Objective 12.3a}} State Raoult's law and calculate vapor-pressure lowering for an ideal solution.
+- {{sp[info] Objective 12.3b}} Calculate boiling-point elevation and freezing-point depression using $K_b$/$K_f$ and molality.
+- {{sp[info] Objective 12.3c}} Calculate osmotic pressure and explain semipermeable membranes and osmosis.
+- {{sp[info] Objective 12.3d}} Apply the van't Hoff factor ($i$) to colligative-property calculations for electrolyte solutions.
+:::
+
+**Colligative properties** depend only on *how many* solute particles are dissolved — never on what those particles chemically are. ==A mole of sugar and a mole of urea, dissolved in the same amount of water, lower its freezing point by exactly the same amount, despite being completely different molecules.== All four colligative properties in this course trace back to the same idea: adding solute particles lowers the mole fraction of solvent throughout the solution, reducing the solvent's tendency to escape it (into the vapor, into the solid, or across a membrane).
+
+### Vapor-pressure lowering (Raoult's law)
+
+$$P_1 = X_1 P_1^0$$
+
+where $P_1^0$ is the pure solvent's vapor pressure and $X_1$ is the solvent's mole fraction *in the solution*. Because $X_1 < 1$ whenever solute is present, $P_1$ is always lower than $P_1^0$.
+
+Figure 12.5 plots what that equation says: a straight line, with the solvent's vapor pressure falling in step with its mole fraction.
+
+![Vapor pressure of water as a solvent, decreasing linearly as its mole fraction decreases from 1.0 toward 0.8](../assets/raoults_law.svg)
+*Figure 12.5 — Raoult's law predicts a straight-line decrease in solvent vapor pressure as solute is added and the solvent's mole fraction drops. The shaded region is the vapor-pressure lowering caused by the solute. Self-generated with matplotlib, anchored to the worked example below.*
+
+:::: tabs
+::: tab Problem
+A solution contains 5.00 g of urea, $\ce{CO(NH2)2}$ (nonvolatile), dissolved in 100 g of water. The vapor pressure of pure water at 25 °C is 23.7 torr. What is the vapor pressure of the solution?
+:::
+::: tab Solution
+$$5.00\ \text{g urea}\times\frac{1\ \text{mol}}{60.0\ \text{g}} = 0.0833\ \text{mol urea}$$
+
+$$100\ \text{g water}\times\frac{1\ \text{mol}}{18.0\ \text{g}} = 5.56\ \text{mol water}$$
+
+$$X_{\ce{H2O}} = \frac{5.56}{5.56+0.0833} = 0.985$$
+
+$$P = X_{\ce{H2O}}\times P^0 = 0.985\times 23.7\ \text{torr} = 23.3\ \text{torr}$$
+
+Only a 0.4 torr drop from 5 g of solute — vapor-pressure lowering is a *small* effect, which is why the other three colligative properties, which amplify it, are the ones actually used for measurement.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+How many grams of sucrose ($\ce{C12H22O11}$, 342.3 g/mol, nonvolatile) must be dissolved in 250. g of water to lower the vapor pressure at 25 °C from 23.76 torr to 23.50 torr?
+:::
+::: tab Solution
+This is Raoult's law run backwards: the pressures are known and the amount of solute is the unknown. Work from the pressure ratio to the mole fraction, then to moles, then to grams.
+
+**Step 1 — the mole fraction of solvent that the target pressure implies.**
+$$X_{\ce{H2O}} = \frac{P}{P^0} = \frac{23.50}{23.76} = 0.98906$$
+
+**Step 2 — moles of water, which is fixed by the problem.**
+$$n_{\ce{H2O}} = \frac{250.\ \text{g}}{18.02\ \text{g/mol}} = 13.87\ \text{mol}$$
+
+**Step 3 — solve the mole-fraction definition for the unknown.** From $X_{\ce{H2O}} = \dfrac{n_{\ce{H2O}}}{n_{\ce{H2O}} + n_\text{suc}}$, rearranging gives
+
+$$n_\text{suc} = n_{\ce{H2O}}\left(\frac{1}{X_{\ce{H2O}}} - 1\right) = 13.87\left(\frac{1}{0.98906} - 1\right) = 13.87(0.01106) = 0.1534\ \text{mol}$$
+
+**Step 4 — convert to grams.**
+$$0.1534\ \text{mol}\times 342.3\ \text{g/mol} = 52.5\ \text{g}$$
+
+**Sanity check on the size of the answer:** 52.5 g of sucrose in 250 g of water is a syrup — about a fifth sugar by mass — and it moves the vapor pressure by a quarter of a torr. That is the honest scale of this effect, and a good reason to carry five digits through step 1: rounding $X$ to 0.99 would change the answer by several grams.
+:::
+::::
+
+### Boiling-point elevation and freezing-point depression
+
+$$\Delta T_b = K_b m \qquad \Delta T_f = K_f m$$
+
+The boiling point rises and the freezing point falls, both in direct proportion to molality — and both using the **solvent's own** $K_b$/$K_f$ constant (different for every solvent; you are always given the value, never expected to memorize it).
+
+Figure 12.6 previews the one complication in this section. All three solutes are dissolved in the same solvent, with the same $K_f$, yet $\Delta T_f = K_f$ m as written predicts only one slope, and the three lines have different slopes — the reason is the last subsection of this chapter.
+
+![Freezing-point depression vs. molality for three solutes with different van't Hoff factors: sucrose, NaCl, and CaCl2](../assets/freezing_point_depression.svg)
+*Figure 12.6 — At the same molality, $\ce{NaCl}$ ideally depresses water's freezing point twice as much as sucrose, and $\ce{CaCl2}$ three times as much — because each formula unit releases 2 or 3 particles into solution. Self-generated with matplotlib using water's real $K_f = 1.86$ °C/m.*
+
+Figure 12.7 is the same physics on a road: enough salt on ice, and the melting point of the resulting brine drops below the air temperature.
+
+![Highway rock salt, used to depress the freezing point of ice on roads](../assets/rock_salt_deicing.jpg =700x)
+*Figure 12.7 — Rock salt (mostly NaCl) lowers the freezing point of the water/ice mixture on a road below 0 °C, so ice melts and stays melted at temperatures where plain water would freeze — a direct, large-scale application of freezing-point depression. Source: James St. John, via Flickr (Openverse), CC BY 2.0.*
+
+:::: tabs
+::: tab Problem
+What is the boiling point of a solution of 1.0 g of glycerin, $\ce{C3H5(OH)3}$ (molar mass 92 g/mol), in 47.8 g of water? ($K_b$ of water $= 0.512\ \text{°C/m}$.)
+:::
+::: tab Solution
+$$1.0\ \text{g glycerin}\times\frac{1\ \text{mol}}{92\ \text{g}} = 0.011\ \text{mol glycerin}$$
+
+$$m = \frac{0.011\ \text{mol}}{0.0478\ \text{kg water}} = 0.23\ \text{mol/kg}$$
+
+$$\Delta T_b = K_b m = 0.512\ \text{°C/m}\times 0.23\ \text{m} = 0.12\ \text{°C}$$
+
+The new boiling point is $100\ \text{°C} + 0.12\ \text{°C} = 100.12\ \text{°C}$.
+
+Note how little a gram of solute does. Elevating water's boiling point by a full degree would take about 2 mol of dissolved particles per kilogram — which is why salting pasta water raises its boiling point by a fraction of a degree, not enough to cook anything faster.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Antifreeze is ethylene glycol, $\ce{C2H6O2}$ (62.07 g/mol), a nonelectrolyte. What is the freezing point of a solution of 685 g of ethylene glycol in 2.00 kg of water? ($K_f$ of water $= 1.86\ \text{°C/m}$.)
+:::
+::: tab Solution
+Same two-step shape as the boiling-point calculation — molality first, then the constant — but the temperature moves **down**.
+
+$$n = \frac{685\ \text{g}}{62.07\ \text{g/mol}} = 11.04\ \text{mol}$$
+
+$$m = \frac{11.04\ \text{mol}}{2.00\ \text{kg}} = 5.52\ \text{mol/kg}$$
+
+$$\Delta T_f = K_f m = (1.86\ \text{°C/m})(5.52\ \text{m}) = 10.3\ \text{°C}$$
+
+$$T_f = 0\ \text{°C} - 10.3\ \text{°C} = -10.3\ \text{°C}$$
+
+{{sp[warning] Sign convention}} $\Delta T_f$ comes out of the formula as a **positive number** — it is the size of the depression, not a signed temperature. You must subtract it yourself. Writing $T_f = 0 + 10.3 = +10.3$ °C is the standard error, and it is worth noticing that the answer is absurd: adding antifreeze cannot make water freeze *above* 0 °C.
+
+**Why this is a realistic amount:** 685 g of ethylene glycol in 2 kg of water is roughly a 1:3 mix by mass, considerably weaker than the roughly 50:50 mix usually put into a car radiator, and −10 °C is about the protection this weaker 1:3 mix provides. The same solution also raises the boiling point (by $K_b m = 0.512 \times 5.52 = 2.8$ °C), which is why the product is sold as coolant rather than just antifreeze.
+:::
+::::
+
+### Osmotic pressure
+
+A **semipermeable membrane** lets solvent molecules pass through but blocks solute. **Osmosis** is the net flow of solvent across such a membrane, from the more dilute side toward the more concentrated side. **Osmotic pressure** ($\pi$) is the pressure that would need to be applied to the concentrated side to stop that net flow:
+
+$$\pi = MRT$$
+
+where $M$ is molarity, $R = 0.0821\ \text{L·atm·mol}^{-1}\text{K}^{-1}$, and $T$ is in kelvin. The equation has exactly the form of the ideal gas law, $PV = nRT$ rearranged — dissolved particles push against a membrane much as gas particles push against a wall.
+
+Figure 12.8 shows the process in two snapshots — before anything has moved, and once it has stopped.
+
+![Two-panel diagram of a divided vessel: at the start both sides are level with solute only on the right, and at equilibrium the solution side stands higher by a column whose hydrostatic pressure equals the osmotic pressure](../assets/osmosis_semipermeable.svg)
+*Figure 12.8 — Left: solvent crosses the membrane in both directions, but more of it moves toward the solution, because the solution side has proportionally less solvent. Right: the solution column rises until its weight cancels the net inflow. The hydrostatic pressure of that extra column (ρgh) is what $\pi$ measures. Self-generated with matplotlib.*
+
+Figure 12.8 also makes clear what osmotic pressure is *not*: nothing is pulling the solvent across. Solvent molecules cross in both directions at all times; there are simply more of them available to cross from the dilute side, so the net traffic runs one way until the pressure difference evens the two rates.
+
+:::: tabs
+::: tab Problem
+What is the osmotic pressure (in atm) of a 0.750 L solution containing 5.0 g of methanol, $\ce{CH3OH}$, in water at 37 °C? Assume ideal solution behavior.
+:::
+::: tab Solution
+$$5.0\ \text{g methanol}\times\frac{1\ \text{mol}}{32\ \text{g}} = 0.16\ \text{mol methanol}$$
+
+$$M = \frac{0.16\ \text{mol}}{0.750\ \text{L}} = 0.21\ \text{M}$$
+
+$$\pi = MRT = 0.21\ \text{M}\times 0.0821\ \frac{\text{L·atm}}{\text{mol·K}}\times (37+273)\ \text{K} = 5.3\ \text{atm}$$
+
+Compare that with the boiling-point example above: a 0.23 m solution shifted the boiling point by 0.12 °C — barely measurable — while a comparably dilute solution here produces **5.3 atmospheres**, a pressure that would burst most glassware. This enormous sensitivity is what makes osmotic pressure the colligative property of choice for very dilute solutions.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+A 0.500 L aqueous solution containing 1.85 g of a purified protein has an osmotic pressure of 2.13 torr at 25 °C. What is the protein's molar mass?
+:::
+::: tab Solution
+This runs $\pi = MRT$ backwards to find moles, then uses grams-per-mole. It is the standard laboratory method for the molar mass of a large biomolecule.
+
+**Step 1 — convert the pressure to atmospheres**, since $R$ is in L·atm units:
+$$\pi = \frac{2.13\ \text{torr}}{760\ \text{torr/atm}} = 2.803\times10^{-3}\ \text{atm}$$
+
+**Step 2 — solve for molarity.**
+$$M = \frac{\pi}{RT} = \frac{2.803\times10^{-3}}{(0.0821)(298\ \text{K})} = 1.146\times10^{-4}\ \text{mol/L}$$
+
+**Step 3 — moles present in the 0.500 L sample.**
+$$n = (1.146\times10^{-4}\ \text{mol/L})(0.500\ \text{L}) = 5.73\times10^{-5}\ \text{mol}$$
+
+**Step 4 — molar mass is grams per mole.**
+$$\mathcal{M} = \frac{1.85\ \text{g}}{5.73\times10^{-5}\ \text{mol}} = 3.23\times10^{4}\ \text{g/mol}$$
+
+**Why osmotic pressure and not freezing point?** Run the same solution through $\Delta T_f = K_f m$: the molality is about $1.15\times10^{-4}$ m, so the freezing-point depression is $1.86 \times 1.15\times10^{-4} \approx 0.0002$ °C — far below what any thermometer can resolve. The osmotic pressure of the very same solution is 2.13 torr, which a manometer reads easily. For a solute this heavy, only osmotic pressure gives a measurable signal at all.
+:::
+::::
+
+### Electrolyte solutions: the van't Hoff factor
+
+An electrolyte dissociates into multiple ions per formula unit, so the *number* of dissolved particles — the quantity every colligative property actually responds to — exceeds the number of formula units dissolved. The **van't Hoff factor** ($i$) captures this:
+
+$$i = \frac{\text{actual particles in solution after dissociation}}{\text{formula units initially dissolved}}$$
+
+Every colligative-property formula gains a factor of $i$:
+
+$$\Delta T_b = iK_bm \qquad \Delta T_f = iK_fm \qquad \pi = iMRT$$
+
+:::warning
+The ideal value of $i$ is a **prediction from the dissociation equation**, not an assumed value (measured values are often somewhat smaller because of ion pairing). $\ce{NaCl}$ gives $i \approx 2$ ($\ce{Na+}$ + $\ce{Cl-}$); $\ce{CaCl2}$ gives $i \approx 3$; a nonelectrolyte like sucrose gives $i = 1$. Always write the dissociation equation first and count the ions before assigning $i$ — never default to $i = 1$ without checking.
+:::
+
+:::: tabs
+::: tab Problem
+What is the freezing point of a 0.150 m aqueous $\ce{CaCl2}$ solution, assuming complete dissociation? ($K_f = 1.86\ \text{°C/m}$.) The measured freezing point is −0.75 °C — explain the difference.
+:::
+::: tab Solution
+**Step 1 — write the dissociation equation and count particles.**
+$$\ce{CaCl2(s) -> Ca^2+(aq) + 2Cl^-(aq)}$$
+One formula unit gives three ions, so the ideal $i = 3$.
+
+**Step 2 — apply the formula with $i$ included.**
+$$\Delta T_f = iK_f m = (3)(1.86\ \text{°C/m})(0.150\ \text{m}) = 0.837\ \text{°C}$$
+$$T_f = 0 - 0.837 = -0.837\ \text{°C}$$
+
+**Step 3 — compare with the measurement.** The observed −0.75 °C corresponds to an *effective* $i$ of
+$$i = \frac{\Delta T_f\ \text{observed}}{K_f m} = \frac{0.75}{(1.86)(0.150)} = 2.7$$
+
+**Why the real value is below 3.** In solution, some $\ce{Ca^2+}$ and $\ce{Cl-}$ ions spend part of their time associated as **ion pairs**, and a pair moving together counts as one particle rather than two. So the solution behaves as though slightly fewer than three particles were released per formula unit. The effect grows with concentration and with ion charge, which is why $\ce{CaCl2}$ (a 2+ ion) deviates more than $\ce{NaCl}$ does.
+
+**The practical rule:** $i$ from the dissociation equation is an **upper limit**. Real values approach it in dilute solution and fall below it as concentration rises.
+:::
+::::
+
+:::: tabs
+::: tab Problem
+Rank these four aqueous solutions, all 0.10 m, by boiling point, from lowest to highest: glucose ($\ce{C6H12O6}$), $\ce{NaCl}$, $\ce{CaCl2}$, $\ce{Al2(SO4)3}$. Assume complete dissociation.
+:::
+::: tab Solution
+All four have the same molality, so molality cannot be what distinguishes them. **The ranking is decided entirely by $i$** — write each dissociation equation and count.
+
+| Solute | Dissociation | Particles per formula unit ($i$) | $\Delta T_b = iK_bm$ |
+|---|---|---|---|
+| glucose | does not dissociate | 1 | 0.051 °C |
+| $\ce{NaCl}$ | $\ce{-> Na+ + Cl-}$ | 2 | 0.102 °C |
+| $\ce{CaCl2}$ | $\ce{-> Ca^2+ + 2Cl-}$ | 3 | 0.154 °C |
+| $\ce{Al2(SO4)3}$ | $\ce{-> 2Al^3+ + 3SO4^2-}$ | 5 | 0.256 °C |
+
+$$\text{glucose} < \ce{NaCl} < \ce{CaCl2} < \ce{Al2(SO4)3}$$
+
+**The trap in this question** is $\ce{Al2(SO4)3}$. It is tempting to read "aluminum sulfate" and answer 2, one cation and one anion. The subscripts outside the parentheses are what matter: two $\ce{Al^3+}$ ions plus three $\ce{SO4^2-}$ ions is **five** particles, making this solution boil at five times the elevation of the glucose one despite containing the same number of *moles of compound*.
+
+Note also that $\ce{SO4^2-}$ stays intact — it is a polyatomic ion, not five separate particles (one S and four O atoms). Count ions, not atoms.
+:::
+::::
+
+**Self-check:**
+- Two solutions have the same molality: one is glucose (nonelectrolyte), the other is $\ce{MgCl2}$. Which has the higher boiling point, and by roughly what factor is its boiling-point elevation larger?
+- Why does osmotic pressure use molarity while boiling-point elevation and freezing-point depression use molality? (Hint: revisit the table in Section 12.2.)
+
+## Synthesis
+
+==Every colligative property in this chapter answers the same underlying question — how many solute particles are present — using a different observable consequence (vapor pressure, boiling point, freezing point, or osmotic pressure) to reveal that count.== None of them care what the particles chemically are, only how many there are, which is exactly why the van't Hoff factor — a simple particle-counting correction — is the only change needed to extend every formula from nonelectrolytes to electrolytes. That same thread runs backward through the whole chapter too: "like dissolves like" is intermolecular forces (Chapter 11) deciding whether a solution can form at all, and concentration units are simply the bookkeeping needed to say precisely how much solute is present once it has.
+
+## Asset and License Record for This Chapter
+
+| Asset | Source URL | License | Attribution |
+|---|---|---|---|
+| `assets/sugar_crystals.jpg` | https://commons.wikimedia.org/wiki/File:Crystallized_sugar,_multiple_crystals_and_a_single_crystal_grown_from_seed.jpg | CC BY-SA 4.0 | Zaereth, via Wikimedia Commons, CC BY-SA 4.0. Resized from the original for web use. |
+| `assets/solution_energetics.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/like_dissolves_like.svg` | — (self-generated, RDKit) | CC BY 4.0 | Self-generated with RDKit; released under this package's CC BY 4.0 license. |
+| `assets/solubility_temperature_pressure.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+| `assets/raoults_law.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib using the study guide's own worked-example data (water, 25 degC, P0 = 23.7 torr); released under this package's CC BY 4.0 license. |
+| `assets/freezing_point_depression.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib using the real $K_f$ of water (1.86 degC/m); released under this package's CC BY 4.0 license. |
+| `assets/rock_salt_deicing.jpg` | https://www.flickr.com/photos/47445767@N05/37382600501 | CC BY 2.0 | James St. John, via Flickr (Openverse), CC BY 2.0. Resized from the original for web use. |
+| `assets/osmosis_semipermeable.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+</script>
+<main id="orz-view" class="orz-view" data-orz-theme="light-neat-3"><article id="orz-doc" class="markdown-body"><p class="orz-fallback" style="opacity:.6;font:14px/1.5 system-ui,sans-serif">If this page stays blank, check your connection (this page loads its engine from the web) or open it in a recent browser; the document's text is inside this file — see the comment at the top.</p></article></main>
+<div id="orz-chrome"></div>
+<script id="orz-engine" src="https://cdn.jsdelivr.net/npm/orz-mdhtml-browser@1.1.0/orz-mdhtml.browser.js"></script>
+</body>
+</html>
