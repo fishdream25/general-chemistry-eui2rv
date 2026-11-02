@@ -1,0 +1,109 @@
+{
+  "packageId": "pkg-general-chemistry-tneui2rv",
+  "title": "General Chemistry",
+  "description": "",
+  "keywords": [],
+  "discipline": "chemistry",
+  "courseContext": {},
+  "license": "CC-BY-4.0",
+  "createdAt": "2026-11-02T00:48:32.683Z",
+  "schemaVersion": 3,
+  "chapters": [
+    {
+      "slug": "introduction",
+      "title": "Introduction to Chemistry",
+      "mode": "package"
+    },
+    {
+      "slug": "atoms-molecules-ions",
+      "title": "Atoms, Molecules, and Ions",
+      "mode": "package"
+    },
+    {
+      "slug": "stoichiometry",
+      "title": "Stoichiometry",
+      "mode": "package"
+    },
+    {
+      "slug": "aqueous-reactions",
+      "title": "Reactions in Aqueous Solution",
+      "mode": "package"
+    },
+    {
+      "slug": "gases",
+      "title": "Gases",
+      "mode": "package"
+    },
+    {
+      "slug": "thermochemistry",
+      "title": "Thermochemistry",
+      "mode": "package"
+    },
+    {
+      "slug": "quantum-theory",
+      "title": "The Electronic Structure of Atoms",
+      "mode": "package"
+    },
+    {
+      "slug": "periodic-table",
+      "title": "The Periodic Table",
+      "mode": "package"
+    },
+    {
+      "slug": "chemical-bonding",
+      "title": "Chemical Bonding — The Covalent Bond",
+      "mode": "package"
+    },
+    {
+      "slug": "molecular-geometry",
+      "title": "Molecular Geometry and Hybridization",
+      "mode": "package"
+    },
+    {
+      "slug": "intermolecular-forces",
+      "title": "Intermolecular Forces, Liquids, and Solids",
+      "mode": "package"
+    },
+    {
+      "slug": "solutions",
+      "title": "Physical Properties of Solutions",
+      "mode": "package"
+    },
+    {
+      "slug": "chemical-kinetics",
+      "title": "Chemical Kinetics",
+      "mode": "package"
+    },
+    {
+      "slug": "chemical-equilibrium",
+      "title": "Chemical Equilibrium",
+      "mode": "package"
+    },
+    {
+      "slug": "acids-and-bases",
+      "title": "Acids and Bases",
+      "mode": "package"
+    },
+    {
+      "slug": "acid-base-equilibria",
+      "title": "Acid-Base Equilibria and Solubility Equilibria",
+      "mode": "package"
+    },
+    {
+      "slug": "thermodynamics",
+      "title": "Entropy, Free Energy, and Equilibrium",
+      "mode": "package"
+    },
+    {
+      "slug": "electrochemistry",
+      "title": "Redox Reactions and Electrochemistry",
+      "mode": "package"
+    },
+    {
+      "slug": "nuclear-chemistry",
+      "title": "Nuclear Chemistry",
+      "mode": "package"
+    }
+  ],
+  "type": "oer-course@1"
+}

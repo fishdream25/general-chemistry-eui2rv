@@ -1,0 +1,241 @@
+{{nyml
+kind: document
+carrier: slides
+uid: doc-tow95g4g8ubrkx67
+title: Chapter 13: Chemical Kinetics
+ratio: 16:9
+theme: paper
+}}
+
+<!-- slide template=title -->
+# Chemical Kinetics
+## How fast — and why
+**General Chemistry, Chapter 13**
+
+<!-- slide 2col -->
+## Chapter Learning Objectives
+<!-- @left -->
+- **Objective 13.1a** — Write rate expressions from a balanced equation
+- **Objective 13.1b** — Determine a rate law and rate constant from experimental data
+- **Objective 13.2a** — Apply integrated rate laws
+- **Objective 13.2b** — Calculate half-life and determine order graphically
+- **Objective 13.3a** — Apply collision theory concepts
+<!-- @right -->
+- **Objective 13.3b** — Apply the Arrhenius equation
+- **Objective 13.4a** — Analyze reaction mechanisms
+- **Objective 13.4b** — Interpret a potential-energy profile
+- **Objective 13.5a** — Explain catalysis and distinguish catalyst types
+
+<!-- slide template=outline -->
+## Roadmap
+1. Rate of reaction and rate law
+2. Reaction orders
+3. Temperature effect
+4. Reaction mechanisms
+5. Catalysis
+
+<!-- slide -->
+## Chapter Logic
+{{mermaid
+graph TD
+  A["Rate law (from data)"] --> B["Integrated rate laws<br/>& half-life"]
+  B --> C["Arrhenius equation:<br/>why k depends on T"]
+  C --> D["Mechanisms explain<br/>WHY this rate law"]
+  D --> E["Catalysis: a practical<br/>application"]
+}}
+**Visual description:** the measured rate law leads to integrated rate laws and half-lives; the Arrhenius equation explains temperature dependence; mechanisms explain the rate law at a molecular level; catalysis applies all of it.
+
+<!-- slide template=section -->
+# 1. Rate of Reaction and Rate Law
+
+<!-- slide -->
+## The shared rate expression
+$$\text{rate} = -\frac{1}{a}\frac{\Delta[\ce{A}]}{\Delta t} = \frac{1}{c}\frac{\Delta[\ce{C}]}{\Delta t}$$
+- Divide by each coefficient so every species gives the *same* rate
+- Otherwise a coefficient-4 reactant's concentration changes 4× faster than the defined reaction rate
+
+<!-- slide step -->
+## Worked example — rate expression
+4PH₃ → P₄ + 6H₂. H₂ forms at 0.078 M/s. Rate of P₄ formation? Rate of PH₃ loss?
+- $\frac{\Delta[\text{P}_4]}{\Delta t} = \frac{1}{6}(0.078) = 0.013$ M/s{{attrs[.fragment]}}
+- $\frac{\Delta[\text{PH}_3]}{\Delta t} = -\frac{4}{6}(0.078) = -0.052$ M/s{{attrs[.fragment]}}
+
+<!-- slide -->
+## The rate law
+$$\text{rate} = k[\ce{A}]^x[\ce{B}]^y$$
+- ==$x$, $y$ come from EXPERIMENTAL DATA==
+- NOT necessarily the same as the balanced equation's coefficients $a$, $b$
+- Method of initial rates: change one concentration at a time
+
+<!-- slide step -->
+## Worked example — method of initial rates
+| Trial | [NO] | [Cl₂] | Rate |
+|---|---|---|---|
+| 1 | 0.10 | 0.10 | 0.00300 |
+| 2 | 0.10 | 0.15 | 0.00450 |
+| 3 | 0.15 | 0.10 | 0.00675 |
+
+- Trials 1→2: only [Cl₂] changes → $y=1${{attrs[.fragment]}}
+- Trials 1→3: only [NO] changes → $x=2${{attrs[.fragment]}}
+- **rate $=k[\text{NO}]^2[\text{Cl}_2]$**{{attrs[.fragment]}}
+
+<!-- slide template=section -->
+# 2. Reaction Orders
+
+<!-- slide -->
+## Three orders, three formulas
+| Order | Rate law | Integrated | Half-life |
+|---|---|---|---|
+| Zero | $k$ | $[A]_t=[A]_0-kt$ | $[A]_0/2k$ |
+| First | $k[A]$ | $\ln[A]_t=\ln[A]_0-kt$ | $\ln2/k$ |
+| Second | $k[A]^2$ | $1/[A]_t=1/[A]_0+kt$ | $1/(k[A]_0)$ |
+
+:::warning
+Only first-order half-life is truly constant.
+:::
+
+<!-- slide -->
+## Watch the half-lives, not the curve shape
+![Concentration versus time for zero-, first- and second-order reactions with successive half-lives marked](../assets/reaction_order_half_lives.svg =1000x)
+Halving · constant · doubling — that pattern names the order on its own.
+
+<!-- slide -->
+## Determining order graphically
+![Reaction order linearization](../assets/reaction_order_linearization.svg =900x)
+
+<!-- slide step -->
+## Worked example — first-order half-life
+Cyclobutane decomposition, k = 9.2×10⁻³ s⁻¹. Half-life? Amount left after 180 s from 1 mol?
+- $t_{1/2} = \ln2/k = 75$ s{{attrs[.fragment]}}
+- $\ln([A]_0/[A]_t) = kt = 1.66 \Rightarrow [A]_0/[A]_t = 5.2${{attrs[.fragment]}}
+- **[A]$_t$ = 0.19 mol**{{attrs[.fragment]}}
+
+<!-- slide step -->
+## Why isn't half-life always constant?
+2NOBr → 2NO + Br₂, second order, k = 0.80 M⁻¹s⁻¹, [A]₀ = 0.10 M
+- First half-life: $t_{1/2}=1/(k[A]_0)=12.5$ s{{attrs[.fragment]}}
+- Second half-life (now [A]₀ = 0.050 M): $t_{1/2}=1/(0.80\times0.050)=25$ s{{attrs[.fragment]}}
+- **Only first order's $t_{1/2}=\ln2/k$ never references $[A]_0$ — that's why it alone is constant**{{attrs[.fragment]}}
+
+<!-- slide template=section -->
+# 3. Temperature Effect
+
+<!-- slide main-side -->
+## Collision theory
+<!-- @main -->
+- Particles must **collide**
+- Collision must have enough energy (**activation energy** $E_a$) and the proper **orientation**
+- Higher T → more collisions clear the barrier
+<!-- @side -->
+$$k = Ae^{-E_a/RT}$$
+
+<!-- slide -->
+## Why heat speeds a reaction up
+![Energy distributions at two temperatures against the activation energy, and a productive versus unproductive collision](../assets/collision_theory.svg =1000x)
+Heating does **not** lower $E_a$ — it moves more collisions past it. Orientation matters too.
+
+<!-- slide 2col -->
+## Arrhenius, two-point form
+<!-- @left -->
+$$\ln\frac{k_1}{k_2} = \frac{E_a}{R}\left(\frac{1}{T_2}-\frac{1}{T_1}\right)$$
+- Same strategy as Clausius–Clapeyron (Ch. 11)
+<!-- @right -->
+![Arrhenius plot](../assets/arrhenius_plot.svg =480x)
+
+<!-- slide step -->
+## Worked example — finding Ea
+k₁ = 1.1×10⁻² L/mol·s at 703 K; k₂ = 4.95 L/mol·s at 865 K.
+- Substitute into the two-point Arrhenius equation{{attrs[.fragment]}}
+- Solve for $E_a$: {{attrs[.fragment]}}
+- **$E_a$ = 190 kJ/mol**{{attrs[.fragment]}}
+
+<!-- slide -->
+## Don't confuse $E_a$ with $\Delta H$
+:::warning
+$E_a$: reactants (or intermediate) up to the transition-state peak.
+$\Delta H$: reactants straight to products, ignoring the path.
+A reaction can have large $E_a$ and still be strongly exothermic.
+:::
+
+<!-- slide template=section -->
+# 4. Reaction Mechanisms
+
+<!-- slide -->
+## Elementary steps and intermediates
+- **Mechanism** = sequence of elementary steps summing to the overall equation
+- **Intermediate**: formed then consumed — cancels out, never in overall equation
+- Elementary step rate law comes DIRECTLY from molecularity (no data needed)
+
+<!-- slide -->
+## Molecularity → rate law, directly
+- **Unimolecular** (elementary step A → products): rate $=k[A]$
+- **Bimolecular** (A + B → products, most common): rate $=k[A][B]$
+- **Termolecular** (three particles at once): rare — simultaneous 3-body collisions are unlikely
+
+<!-- slide -->
+## Potential-energy profile
+![Potential energy profile](../assets/potential_energy_profile.svg =620x)
+
+<!-- slide step -->
+## Worked example — mechanism analysis
+Step 1 (slow): 2NO₂ → NO₃ + NO. Step 2 (fast): NO₃ + CO → NO₂ + CO₂.
+- Overall: NO₂ + CO → NO + CO₂{{attrs[.fragment]}}
+- Intermediate: NO₃{{attrs[.fragment]}}
+- **Rate law = rate of step 1 = $k[\text{NO}_2]^2$**{{attrs[.fragment]}}
+
+<!-- slide -->
+## The rate-determining step isn't always first
+==Identify it from activation energy (or a "slow"/"fast" label) — never assume by position==
+
+<!-- slide step -->
+## Worked example — RDS is the SECOND step
+Ozone destruction, 2O₃ → 3O₂. Step 1 (fast equilibrium): O₃ ⇌ O₂ + O. Step 2 (slow): O + O₃ → 2O₂.
+- Intermediate: O (atomic oxygen){{attrs[.fragment]}}
+- Rate-determining = step 2 → rate $=k_2[\text{O}][\text{O}_3]${{attrs[.fragment]}}
+- **Not done — O is an intermediate.** Step 1 equilibrium: $[\text{O}]=\frac{k_1}{k_{-1}}\frac{[\text{O}_3]}{[\text{O}_2]}${{attrs[.fragment]}}
+- **rate $=k\dfrac{[\text{O}_3]^2}{[\text{O}_2]}$ — inhibited by its own product**{{attrs[.fragment]}}
+
+<!-- slide -->
+## A rate law may never contain an intermediate
+:::warning
+If the rate-determining step's rate law contains an intermediate, you are not finished. Use the preceding fast equilibrium to replace it with measurable species.
+:::
+The final rate law may contain only **reactants, products, or catalysts** — species whose concentration you could actually go and measure.
+
+<!-- slide template=section -->
+# 5. Catalysis
+
+<!-- slide main-side -->
+## What a catalyst does
+<!-- @main -->
+- Opens an alternate pathway with **lower $E_a$**
+- Speeds up forward AND reverse
+- Not consumed; not in the overall equation
+<!-- @side -->
+![Catalytic converter interior](../assets/catalytic_converter.jpg =340x)
+
+<!-- slide main-side -->
+## Lower peak, same endpoints
+<!-- @main -->
+![Catalyzed and uncatalyzed potential-energy curves for the same reaction](../assets/catalyzed_vs_uncatalyzed.svg =700x)
+<!-- @side -->
+Forward barrier **90 → 38** kJ/mol.
+
+Reverse barrier **120 → 68** kJ/mol.
+
+Both fall by the same 52 — because both are measured to the same lowered peak.
+
+The endpoints are unchanged (same $\Delta H$, same $\Delta G$), and both directions speed up by the same factor, so a catalyst **cannot shift an equilibrium**. It only gets there sooner.
+
+<!-- slide 2col -->
+## Three types
+<!-- @left -->
+- **Heterogeneous** — different phase (catalytic converter)
+- **Homogeneous** — same phase
+- **Enzyme** — biological, lock-and-key
+<!-- @right -->
+![Enzyme lock and key](../assets/enzyme_lock_and_key.svg =420x)
+
+<!-- slide template=closing -->
+# One thread: rate is governed by the barrier
+Everything in this chapter — rate laws, half-life, temperature dependence, mechanisms, catalysis — is ultimately about the activation-energy barrier and how fast particles clear it.

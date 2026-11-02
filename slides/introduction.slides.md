@@ -1,0 +1,179 @@
+{{nyml
+kind: document
+carrier: slides
+uid: doc-p8u4csx04e24rnbb
+title: Chapter 1: Introduction to Chemistry
+ratio: 16:9
+theme: paper
+}}
+
+<!-- slide template=title -->
+# Introduction to Chemistry
+## The toolkit for everything that follows
+**General Chemistry, Chapter 1**
+
+<!-- slide 2col -->
+## Chapter Learning Objectives
+<!-- @left -->
+- **Objective 1.1a** — Classify matter as a substance or mixture, and identify elements and compounds
+- **Objective 1.1b** — Distinguish physical from chemical change, and extensive from intensive properties
+- **Objective 1.2a** — Use SI base units and prefixes; distinguish mass from weight
+- **Objective 1.2b** — Convert volume units and calculate density
+- **Objective 1.2c** — Convert temperature between Celsius, Fahrenheit, and Kelvin
+<!-- @right -->
+- **Objective 1.3a** — Convert to and from scientific notation, and perform arithmetic in scientific notation
+- **Objective 1.3b** — Apply significant-figure rules to a measured value
+- **Objective 1.3c** — Apply significant-figure rules in calculations, and distinguish accuracy from precision
+- **Objective 1.4a** — Solve unit-conversion problems using dimensional analysis
+
+<!-- slide template=outline -->
+## Roadmap
+1. General concepts in chemistry
+2. Measurement
+3. Numbers
+4. Dimensional analysis
+
+<!-- slide -->
+## Chapter Logic
+{{mermaid
+graph TD
+  A["Classify matter:<br/>substance, mixture, element, compound"] --> B["Measurement:<br/>SI units, mass, volume, density, temperature"]
+  B --> C["Numbers:<br/>scientific notation and significant figures"]
+  C --> D["Dimensional analysis:<br/>unit-factor-label method"]
+}}
+**Visual description:** classifying matter gives vocabulary; measurement gives quantities; numbers gives the rules for reporting them honestly; dimensional analysis combines units and numbers into one reusable method.
+
+<!-- slide template=section -->
+# 1. General Concepts in Chemistry
+
+<!-- slide -->
+## Classifying matter: two questions
+![Decision tree for classifying matter](../assets/matter_classification_tree.svg =680x)
+
+<!-- slide -->
+## Matter: substance vs. mixture
+- **Substance:** definite composition, distinct properties
+- **Mixture:** two+ substances, each keeps its own identity
+  - **Homogeneous** — uniform throughout (salt water)
+  - **Heterogeneous** — not uniform (oil and vinegar)
+
+<!-- slide -->
+## Element vs. compound
+- **Element** — cannot be broken down into simpler substances by chemical means
+- **Compound** — elements chemically combined in a **fixed ratio**
+![States of matter](../assets/states_of_matter.svg =520x)
+
+<!-- slide step -->
+## Physical vs. chemical change; extensive vs. intensive
+- Physical change: no new substance (melting, cutting){{attrs[.fragment]}}
+- Chemical change: new substance formed (rusting, burning){{attrs[.fragment]}}
+- Extensive property: depends on amount (mass, volume){{attrs[.fragment]}}
+- Intensive property: independent of amount (density, color){{attrs[.fragment]}}
+
+<!-- slide template=section -->
+# 2. Measurement
+
+<!-- slide -->
+## SI base units and prefixes
+| Quantity | Unit | Symbol |
+|---|---|---|
+| Length | meter | m |
+| Mass | kilogram | kg |
+| Time | second | s |
+| Temperature | kelvin | K |
+| Amount of substance | mole | mol |
+
+<!-- slide -->
+## The SI prefix ladder
+![SI prefix ladder](../assets/si_prefix_ladder.svg =600x)
+
+<!-- slide -->
+## Mass, volume, density
+$$d=\frac{m}{V} \qquad 1\,\text{mL}=1\,\text{cm}^3 \qquad 1\,\text{L}=1000\,\text{mL}$$
+![Electronic analytical balance](../assets/electronic_balance.jpg =420x)
+Reads to 4 decimal places — every displayed digit (except leading zeros) is significant
+
+<!-- slide -->
+## The same measurement, made visible
+![Two-pan mechanical balance](../assets/lab_balance.jpg =340x)
+A mechanical balance **compares** the sample against known masses; an electronic balance measures the force the sample exerts and converts it to mass using a calibration against known masses
+
+<!-- slide step -->
+## Worked example — density
+Gold: mass 45.3 g, volume 2.35 cm³
+- $d=45.3/2.35$ g/cm³{{attrs[.fragment]}}
+- **= 19.3 g/cm³** (matches gold's known density){{attrs[.fragment]}}
+
+<!-- slide -->
+## Three temperature scales
+$$^\circ\text{F}=\frac{9}{5}(^\circ\text{C})+32 \qquad \text{K}=\,^\circ\text{C}+273.15$$
+Anchor points: water freezes at 0 °C/32 °F/273.15 K
+
+<!-- slide step -->
+## Worked example — 37.0 °C to °F
+- $\frac{9}{5}\times37.0=66.6${{attrs[.fragment]}}
+- $66.6+32=98.6$ (37.0 has 3 sig figs, so 66.6 is known to the tenths; 32 is exact){{attrs[.fragment]}}
+- **98.6 °F** — the familiar body-temperature value{{attrs[.fragment]}}
+
+<!-- slide template=section -->
+# 3. Numbers
+
+<!-- slide -->
+## Scientific notation
+$$N\times10^n,\quad 1\le N<10$$
+$$568.762=5.68762\times10^2 \qquad 0.00000772=7.72\times10^{-6}$$
+
+<!-- slide -->
+## Significant figures: the zero rules
+1. Nonzero digits always count
+2. Zeros between nonzero digits count
+3. Leading zeros never count
+4. Trailing zeros count when the number contains a decimal point
+5. Trailing zeros with no decimal point are ambiguous
+
+<!-- slide -->
+## Accuracy vs. precision
+![Four dartboards contrasting accuracy and precision](../assets/accuracy_vs_precision.svg =700x)
+**Accuracy** = close to the true value · **Precision** = repeated measurements agree with each other
+Precise but inaccurate is the dangerous case — the data looks great and is wrong
+
+<!-- slide -->
+## Reading an instrument
+![Graduated cylinder meniscus](../assets/graduated_cylinder_meniscus.svg =340x)
+Read at the **bottom** of the meniscus: certain digits + one estimated digit = 21.6 mL
+
+<!-- slide step -->
+## Sig figs in calculations
+- Addition/subtraction: match the **fewest decimal places**{{attrs[.fragment]}}
+- Multiplication/division: match the **fewest significant figures**{{attrs[.fragment]}}
+- Exact (counted/defined) numbers never limit precision{{attrs[.fragment]}}
+
+<!-- slide template=section -->
+# 4. Dimensional Analysis
+
+<!-- slide -->
+## The unit-factor-label method
+$$\text{given unit}\times\frac{\text{desired unit}}{\text{given unit}}=\text{desired unit}$$
+Chain multiple factors together when more than one conversion is needed
+
+<!-- slide -->
+## Watch the units cancel
+![Unit-cancellation diagram](../assets/dimensional_analysis_cancel.svg =660x)
+If the units don't cancel to what you wanted, the setup is wrong — before any arithmetic
+
+<!-- slide step -->
+## Worked example — frisbee mass
+125 g, 1 oz = 28.349 g
+- $125\,\text{g}\times\dfrac{1\,\text{oz}}{28.349\,\text{g}}$ {{attrs[.fragment]}}
+- **= 4.41 oz**{{attrs[.fragment]}}
+
+<!-- slide step -->
+## Worked example — antifreeze density
+9.26 lb / 4.00 qt; 1 lb = 453.59 g, 1 L = 1.0567 qt
+- Convert mass to g and volume to mL separately{{attrs[.fragment]}}
+- 4.20×10³ g / 3785 mL{{attrs[.fragment]}}
+- **= 1.11 g/mL**{{attrs[.fragment]}}
+
+<!-- slide template=closing -->
+# The toolkit is ready
+Matter classification gives the vocabulary; measurement gives the quantities; significant figures give the honesty about precision; dimensional analysis gives the method for converting between them. Every later chapter assumes this fluency without re-teaching it.

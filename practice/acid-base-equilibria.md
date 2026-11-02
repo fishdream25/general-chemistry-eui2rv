@@ -1,0 +1,486 @@
+{{nyml
+kind: document
+format: 1
+title: Chapter 16 Practice: Acid-Base Equilibria and Solubility Equilibria
+}}
+
+# Chapter 16 Practice: Acid-Base Equilibria and Solubility Equilibria
+
+*Auto-generated from the assessment guide (`assessment-support/acid-base-equilibria.md`), grouped by objective. 27 questions spanning multiple-choice, short-answer, and workout formats.*
+
+:::: tabs
+::: tab Q 1
+{{sp[info] Objective 16.1a}} · *short answer* A buffer contains comparable amounts of $\ce{HF}$ and $\ce{NaF}$. Explain what happens, at the molecular level, when a small amount of NaOH is added.
+:::
+::: tab Answer
+The added $\ce{OH-}$ reacts with $\ce{HF}$: $\ce{HF + OH- -> F- + H2O}$. Because $\ce{HF}$ is present in appreciable amount, it consumes nearly all of the added $\ce{OH-}$ before the solution's $\ce{H+}$ concentration (and therefore pH) can change by very much — this is exactly why the buffer resists the change.
+:::
+::::
+
+:::: tabs
+::: tab Q 2
+{{sp[info] Objective 16.1a}} · *workout* Find $[\ce{OH-}]$ and the pH of a solution containing 0.125 M $\ce{CH3NH2}$ and 0.130 M $\ce{CH3NH3Cl}$ ($K_b=4.4\times10^{-4}$ for $\ce{CH3NH2}$).
+:::
+::: tab Answer
+| | $\ce{CH3NH2}$ | $\ce{CH3NH3+}$ | $\ce{OH-}$ |
+|---|---|---|---|
+| Initial (M) | 0.125 | 0.130 | 0 |
+| Change (M) | $-x$ | $+x$ | $+x$ |
+| Equilibrium (M) | $0.125-x$ | $0.130+x$ | $x$ |
+
+$$K_b=\frac{x(0.130+x)}{0.125-x}=4.4\times10^{-4} \Rightarrow x=[\ce{OH-}]=4.20\times10^{-4}\ \text{M}$$
+
+$$\ce{pOH}=-\log(4.20\times10^{-4})=3.38 \qquad \ce{pH}=14-3.38=10.62$$
+:::
+::::
+
+:::: tabs
+::: tab Q 3
+{{sp[info] Objective 16.1a}} · *workout* Calculate the pH of a buffer made by dissolving 0.30 mol of $\ce{NH4Cl}$ in 1.0 L of 0.50 M $\ce{NH3}$. ($K_b(\ce{NH3}) = 1.8\times10^{-5}$.)
+:::
+::: tab Answer
+**Step 1 — identify the pair and get $\ce{p}K_a$.** $\ce{NH3}$ is the base and $\ce{NH4+}$ (from the salt) is its conjugate acid — a genuine buffer pair. Henderson-Hasselbalch is written for $K_a$, so convert:
+
+$$K_a(\ce{NH4+}) = \frac{K_w}{K_b} = \frac{1.0\times10^{-14}}{1.8\times10^{-5}} = 5.6\times10^{-10} \quad\Rightarrow\quad \ce{p}K_a = 9.25$$
+
+**Step 2 — apply the equation with the base on top.**
+
+$$\ce{pH} = \ce{p}K_a + \log\frac{[\ce{NH3}]}{[\ce{NH4+}]} = 9.25 + \log\frac{0.50}{0.30} = 9.25 + 0.22 = 9.47$$
+
+**Two checks worth running.** The base is in excess, so the pH should sit *above* $\ce{p}K_a$ — and 9.47 > 9.25 ✓. And the ratio is 1.7:1, well inside the 1:10–10:1 window, so this is a working buffer with capacity in both directions.
+
+{{sp[warning] Which species goes on top}} The numerator is always the **conjugate base** ($\ce{NH3}$ here), the denominator the **acid** ($\ce{NH4+}$). Inverting them gives 9.03 — an answer that is wrong in the right ballpark, which is the worst kind.
+:::
+::::
+
+:::: tabs
+::: tab Q 4
+{{sp[info] Objective 16.1b}} · *workout* What is the pH of the buffer in Q2 after adding 1.00 g of HCl to 1.00 L of it? (Assume negligible volume change.)
+:::
+::: tab Answer
+Moles of HCl added: $1.00\ \text{g}/36.46\ \text{g/mol}=0.0274$ mol, which reacts completely with $\ce{CH3NH2}$:
+
+$$[\ce{CH3NH2}]=0.125-0.0274=0.0976\ \text{M} \qquad [\ce{CH3NH3+}]=0.130+0.0274=0.1574\ \text{M}$$
+
+$$\ce{p}K_b=-\log(4.4\times10^{-4})=3.36 \qquad \ce{pOH}=3.36+\log\frac{0.1574}{0.0976}=3.36+0.21=3.56$$
+
+$$\ce{pH}=14-3.56=10.4$$
+:::
+::::
+
+:::: tabs
+::: tab Q 5
+{{sp[info] Objective 16.1b}} · *workout* How much solid $\ce{CH3COONa}$ (molar mass 82.0 g/mol) must be added to 0.300 L of 0.50 M acetic acid ($K_a=1.8\times10^{-5}$) to give a buffer at pH 5.00?
+:::
+::: tab Answer
+$$\ce{p}K_a=-\log(1.8\times10^{-5})=4.745$$
+
+$$5.00=4.745+\log\frac{[\ce{CH3COO-}]}{0.50} \Rightarrow \frac{[\ce{CH3COO-}]}{0.50}=10^{0.255}=1.80$$
+
+$$[\ce{CH3COO-}]=0.90\ \text{M} \Rightarrow \text{mol}=0.90\times0.300=0.270\ \text{mol}$$
+
+$$\text{mass}=0.270\ \text{mol}\times82.0\ \text{g/mol}=22.1\ \text{g}$$
+:::
+::::
+
+:::: tabs
+::: tab Q 6
+{{sp[info] Objective 16.1b}} · *short answer* You need a buffer at pH 7.40 (the pH of blood). Given $\ce{p}K_a$ values of 4.74 (acetic acid), 7.21 ($\ce{H2PO4-}$), and 9.25 ($\ce{NH4+}$), which system would you choose, and roughly what ratio of the two components would you use?
+:::
+::: tab Answer
+**Choose the dihydrogen phosphate system, $\ce{H2PO4-}/\ce{HPO4^2-}$, $\ce{p}K_a = 7.21$.**
+
+**Why $\ce{p}K_a$ closest to the target wins.** From $\ce{pH} = \ce{p}K_a + \log([\text{base}]/[\text{acid}])$, the log term must supply the difference between the target pH and $\ce{p}K_a$. When they are close, that term is near zero and the two components are present in comparable amounts — which is exactly the condition for good capacity in both directions.
+
+**What the other two would require.** For acetic acid the gap is $7.40 - 4.74 = 2.66$, needing a base:acid ratio of $10^{2.66} \approx 460{:}1$. Such a solution has essentially no acid reservoir left — it could absorb only a tiny amount of added base before failing. Ammonium is better but still off by 1.85 units, needing 1:71 in the other direction.
+
+**The ratio for the phosphate buffer:**
+
+$$\log\frac{[\ce{HPO4^2-}]}{[\ce{H2PO4-}]} = 7.40 - 7.21 = 0.19 \quad\Rightarrow\quad \frac{[\ce{HPO4^2-}]}{[\ce{H2PO4-}]} = 10^{0.19} = 1.5$$
+
+Roughly **3 parts $\ce{HPO4^2-}$ to 2 parts $\ce{H2PO4-}$** — nicely balanced.
+
+**The working rule:** choose a $\ce{p}K_a$ within about one unit of the target pH, which keeps the ratio between 1:10 and 10:1. This is a practical convention: outside that range one component is too scarce to give useful capacity.
+:::
+::::
+
+:::: tabs
+::: tab Q 7
+{{sp[info] Objective 16.2a}} · *short answer* Which of these pairs are buffer systems? (1) $\ce{KF/HF}$; (2) $\ce{KBr/HBr}$; (3) $\ce{Na2CO3/NaHCO3}$; (4) $\ce{NaH2PO4/Na3PO4}$.
+:::
+::: tab Answer
+**(1) and (3)** are buffer systems — each pairs a weak acid ($\ce{HF}$; $\ce{HCO3-}$, the acid form present as $\ce{NaHCO3}$) with its conjugate base in comparable amounts.
+
+(2) fails because $\ce{HBr}$ is a *strong* acid — $\ce{KBr/HBr}$ is not a conjugate weak acid-base pair in equilibrium. (4) fails because $\ce{H2PO4-}$ and $\ce{PO4^3-}$ are not conjugates of each other — they differ by *two* protons, not one ($\ce{HPO4^2-}$ is the missing link between them).
+:::
+::::
+
+:::: tabs
+::: tab Q 8
+{{sp[info] Objective 16.2a}} · *multiple-choice* Assuming equal concentrations of acid and conjugate base, which mixture best buffers at pH 7.4–7.5?
+
+A. $\ce{CH3COONa/CH3COOH}$ ($K_a=1.8\times10^{-5}$)\
+B. $\ce{NH3/NH4Cl}$ ($K_a=5.6\times10^{-10}$)\
+C. $\ce{NaOCl/HOCl}$ ($K_a=3.2\times10^{-8}$)\
+D. $\ce{NaNO2/HNO2}$ ($K_a=4.5\times10^{-4}$)
+:::
+::: tab Answer
+**C.** $\ce{p}K_a(\ce{HOCl})=-\log(3.2\times10^{-8})=7.49$ — very close to the target pH range. (A's $\ce{p}K_a\approx4.74$, B's $\approx9.25$, D's $\approx3.35$ are all much further from 7.4–7.5.)
+:::
+::::
+
+:::: tabs
+::: tab Q 9
+{{sp[info] Objective 16.2a}} · *multiple-choice* 25.0 mL of 0.100 M $\ce{NH3}$ ($K_b = 1.8\times10^{-5}$) is titrated with 0.100 M HCl. What is true at the equivalence point?
+
+(A) pH = 7.00, because equal moles have reacted\
+(B) pH > 7.00, because $\ce{NH3}$ is a base\
+\(C) pH < 7.00, because the solution contains $\ce{NH4+}$\
+(D) pH cannot be determined without more information
+:::
+::: tab Answer
+**\(C) pH < 7.00.** At equivalence, all the ammonia has been converted to ammonium chloride — the solution *is* an $\ce{NH4Cl}$ solution, and Chapter 15's salt table says a strong-acid/weak-base salt is acidic.
+
+$\ce{NH4+}$ hydrolyzes:
+$$\ce{NH4+ + H2O <=> NH3 + H3O+}$$
+
+**Working the number:** at equivalence the volume has doubled, so $[\ce{NH4+}] = 0.0500$ M. With $K_a = K_w/K_b = 5.6\times10^{-10}$:
+
+$$x = \sqrt{(5.6\times10^{-10})(0.0500)} = 5.3\times10^{-6}\ \text{M} \quad\Rightarrow\quad \ce{pH} = 5.28$$
+
+**Why the others fail:**
+- **(A)** confuses "equal moles reacted" with "neutral". Equivalence is stoichiometric; neutrality depends on whether the salt hydrolyzes.
+- **(B)** describes the *starting* solution, not the equivalence point. By equivalence the ammonia is gone.
+- **(D)** everything needed is given — the concentrations set the dilution and $K_b$ gives $K_a$.
+
+**The symmetry to remember:** weak acid + strong base gives equivalence above 7; weak base + strong acid gives equivalence below 7. Whichever partner was weak leaves behind a conjugate that pulls the pH toward its own side.
+:::
+::::
+
+:::: tabs
+::: tab Q 10
+{{sp[info] Objective 16.2b}} · *workout* 25.00 mL of 0.1021 M $\ce{HNO3}$ is titrated with 0.1103 M KOH. Find the pH after adding (1) 15.00 mL, (2) the volume needed for equivalence, (3) 30.00 mL of KOH.
+:::
+::: tab Answer
+**(1)** Remaining $\ce{HNO3}=0.1021(0.02500)-0.1103(0.01500)=0.000898$ mol; total volume $=0.04000$ L; $[\ce{H+}]=0.02245$ M → $\ce{pH}=1.65$.
+
+**(2)** Equivalence: $0.1021(0.02500)/0.1103=0.02314$ L = **23.14 mL**; strong acid + strong base, so the salt $\ce{KNO3}$ does not hydrolyze and $\ce{pH}=7.00$.
+
+**(3)** Excess KOH $=0.1103(0.03000)-0.1021(0.02500)=0.000757$ mol; total volume $=0.05500$ L; $[\ce{OH-}]=0.01376$ M → $\ce{pOH}=1.86$ → $\ce{pH}=12.14$.
+:::
+::::
+
+:::: tabs
+::: tab Q 11
+{{sp[info] Objective 16.2b}} · *workout* Repeat Q10 with 25.00 mL of 0.1021 M $\ce{HNO2}$ ($K_a=4.0\times10^{-4}$) instead of $\ce{HNO3}$, adding (1) 15.00 mL, (2) the equivalence volume, (3) at equivalence, and (4) 30.00 mL of the same KOH.
+:::
+::: tab Answer
+**(1)** Remaining $\ce{HNO2}=0.000898$ mol, formed $\ce{NO2-}=0.001655$ mol (same moles as KOH added):
+
+$$\ce{pH}=\ce{p}K_a+\log\frac{0.001655}{0.000898}=3.40+0.266=3.66$$
+
+**(2)** Equivalence volume is the same as Q7: **23.14 mL** (depends only on moles of acid and KOH concentration, not acid strength).
+
+**(3)** At equivalence, all $\ce{NO2-}$: total moles $=0.002553$, total volume $=0.04814$ L, $[\ce{NO2-}]=0.05302$ M. $K_b=K_w/K_a=2.5\times10^{-11}$:
+
+$$x=\sqrt{2.5\times10^{-11}\times0.05302}=1.15\times10^{-6}\ \text{M}=[\ce{OH-}] \Rightarrow \ce{pOH}=5.94 \Rightarrow \ce{pH}=8.06$$
+
+**(4)** Past equivalence, identical to Q7(3): $\ce{pH}=12.1$.
+:::
+::::
+
+:::: tabs
+::: tab Q 12
+{{sp[info] Objective 16.2b}} · *workout* 25.0 mL of 0.100 M $\ce{CH3COOH}$ ($K_a = 1.8\times10^{-5}$) is titrated with 0.100 M NaOH. Find the pH after adding 20.0 mL.
+:::
+::: tab Answer
+**Step 1 — decide the region.** Equivalence needs 25.0 mL, and only 20.0 mL has been added, so we are **before equivalence** in the buffer region. Henderson-Hasselbalch applies.
+
+**Step 2 — moles of each species.**
+
+$$n(\ce{CH3COOH})_\text{initial} = (0.100)(0.0250) = 2.50\times10^{-3}\ \text{mol}$$
+$$n(\ce{OH-})_\text{added} = (0.100)(0.0200) = 2.00\times10^{-3}\ \text{mol}$$
+
+The added base converts acid into conjugate base, one for one:
+
+$$n(\ce{CH3COO-}) = 2.00\times10^{-3}\ \text{mol} \qquad n(\ce{CH3COOH}) = 2.50\times10^{-3} - 2.00\times10^{-3} = 0.50\times10^{-3}\ \text{mol}$$
+
+**Step 3 — apply the equation.** Both species share the same 45.0 mL, so the volumes cancel and the mole ratio can be used directly:
+
+$$\ce{pH} = 4.74 + \log\frac{2.00\times10^{-3}}{0.50\times10^{-3}} = 4.74 + \log 4.00 = 4.74 + 0.60 = 5.34$$
+
+**Sanity checks.** More than half the acid has been neutralized, so the pH must be above the half-equivalence value of 4.74 ✓. And equivalence is still ahead, so it must be below 8.72 ✓.
+
+{{sp[warning] Do not divide by the volume}} Converting both to molarity and then taking the ratio gives the identical answer with two extra chances to slip. In a buffer, moles are enough.
+:::
+::::
+
+:::: tabs
+::: tab Q 13
+{{sp[info] Objective 16.2c}} · *short answer* The indicator dinitrophenol has $K_a=1.1\times10^{-4}$ (color-change range roughly pH 2.9–4.9). Would you use it for (a) strong acid/strong base, (b) strong acid/weak base, or \(c) weak acid/strong base titrations? Why?
+:::
+::: tab Answer
+**(b) strong acid/weak base.** This combination's equivalence point falls *below* pH 7 (the weak base's conjugate acid hydrolyzes), landing near (for weaker bases, within) dinitrophenol's acidic color-change range. Strong-strong titrations equilibrate at pH 7 (too high for this indicator's range to catch precisely), and weak acid/strong base titrations equilibrate *above* pH 7 — even further outside this indicator's range.
+:::
+::::
+
+:::: tabs
+::: tab Q 14
+{{sp[info] Objective 16.2c}} · *short answer* Bromothymol blue changes color between pH 6.0 and 7.6. For which of these titrations is it a good indicator, and why? (a) HCl with NaOH (equivalence 7.00); (b) $\ce{CH3COOH}$ with NaOH (equivalence 8.72); \(c) $\ce{NH3}$ with HCl (equivalence 5.28).
+:::
+::: tab Answer
+**Good for (a) only.**
+
+**(a) Excellent.** The equivalence point at 7.00 sits right in the middle of bromothymol blue's 6.0–7.6 range, and the strong-strong jump is very tall — spanning roughly pH 4 to 10 — so the color change happens almost exactly at the equivalence volume.
+
+**(b) Poor.** Equivalence is at 8.72, above the indicator's range. Bromothymol blue would complete its color change somewhere around pH 7, which on this curve is *before* equivalence — reporting an endpoint at too small a volume. Phenolphthalein (8.3–10.0) is the correct choice.
+
+**\(c) Poor, for the mirror-image reason.** Equivalence is at 5.28, below the range. Because the pH falls as HCl is added, the indicator would start changing near pH 7.6 and finish by pH 6, both *before* equivalence here, so it reports too small a volume. Methyl red (4.4–6.2) fits.
+
+**The one-line test:** ask whether the indicator's range contains the equivalence pH. If the indicator's range lies between the starting pH and the equivalence pH, it changes before equivalence and you stop early; if the range lies beyond the equivalence pH, you overshoot.
+
+**Why (a) is forgiving and the others are not.** The strong-strong jump is so tall that several indicators fall inside it. As the acid or base gets weaker the jump shortens from one end, and the set of workable indicators shrinks with it.
+:::
+::::
+
+:::: tabs
+::: tab Q 15
+{{sp[info] Objective 16.2c}} · *short answer* An indicator is itself a weak acid, $\ce{HIn}$, whose acid form is one color and conjugate-base form another. Use Henderson-Hasselbalch to explain why its color-change range is about $\ce{p}K_a \pm 1$.
+:::
+::: tab Answer
+The indicator has its own equilibrium, and it obeys the same equation as any other weak acid:
+
+$$\ce{HIn <=> H+ + In-} \qquad \ce{pH} = \ce{p}K_{a(\text{In})} + \log\frac{[\ce{In-}]}{[\ce{HIn}]}$$
+
+**What the eye can actually detect.** A mixture of two colors shows only the *majority* color until the minority form makes up roughly a tenth of the total; above that, the minority color becomes noticeable. So the practical limits are:
+
+- **acid color seen** when $[\ce{In-}]/[\ce{HIn}] \le 1/10$, i.e. $\ce{pH} \le \ce{p}K_a - 1$
+- **base color seen** when $[\ce{In-}]/[\ce{HIn}] \ge 10/1$, i.e. $\ce{pH} \ge \ce{p}K_a + 1$
+
+Between those two the eye sees a shifting blend, which is the transition range:
+
+$$\text{color-change range} \approx \ce{p}K_a \pm 1$$
+
+**Two consequences worth drawing out.** At $\ce{pH} = \ce{p}K_a$ the two forms are present in equal amounts, so the indicator shows its midpoint color — the same half-equivalence logic as any buffer. And the width of about two pH units is not a property of chemistry but of **vision**: it is set by the ratio at which a human notices a second color, not by the equilibrium itself.
+
+**Why this justifies the selection rule.** An indicator needs its whole two-unit window to fall inside the titration's steep jump. If the jump is shorter than two units — as it is for a very weak acid — no indicator can complete its change within it, which is why such titrations cannot be read accurately with a visual indicator.
+:::
+::::
+
+:::: tabs
+::: tab Q 16
+{{sp[info] Objective 16.3a}} · *workout* The molar solubility of AgI is $1.2\times10^{-8}$ M. Calculate $K_{sp}$.
+:::
+::: tab Answer
+1:1 salt: $K_{sp}=s^2=(1.2\times10^{-8})^2=1.4\times10^{-16}$.
+:::
+::::
+
+:::: tabs
+::: tab Q 17
+{{sp[info] Objective 16.3a}} · *workout* $K_{sp}$ of CuBr is $6.3\times10^{-9}$. Find its molar solubility.
+:::
+::: tab Answer
+1:1 salt: $s=\sqrt{K_{sp}}=\sqrt{6.3\times10^{-9}}=7.9\times10^{-5}\ \text{M}$.
+:::
+::::
+
+:::: tabs
+::: tab Q 18
+{{sp[info] Objective 16.3a}} · *workout* The molar solubility of $\ce{Mg(OH)2}$ is $1.4\times10^{-4}$ M. Calculate its $K_{sp}$.
+:::
+::: tab Answer
+Write the dissolution equation first — the coefficients drive everything that follows.
+
+$$\ce{Mg(OH)2(s) <=> Mg^2+(aq) + 2OH-(aq)}$$
+
+If $s = 1.4\times10^{-4}$ M dissolves, then each formula unit gives one $\ce{Mg^2+}$ and **two** $\ce{OH-}$:
+
+$$[\ce{Mg^2+}] = s = 1.4\times10^{-4}\ \text{M} \qquad [\ce{OH-}] = 2s = 2.8\times10^{-4}\ \text{M}$$
+
+$$K_{sp} = [\ce{Mg^2+}][\ce{OH-}]^2 = (1.4\times10^{-4})(2.8\times10^{-4})^2 = (1.4\times10^{-4})(7.84\times10^{-8}) = 1.1\times10^{-11}$$
+
+Equivalently, $K_{sp} = 4s^3$ for any 1:2 salt.
+
+{{sp[warning] The coefficient does two jobs}} It multiplies the concentration ($2s$, not $s$) **and** becomes the exponent (squared). Using $s$ instead of $2s$ gives $2.7\times10^{-12}$ — four times too small — and forgetting the square gives $3.9\times10^{-8}$, off by three orders of magnitude.
+
+**A check on plausibility:** milk of magnesia is a suspension precisely because $\ce{Mg(OH)2}$ barely dissolves, and a $K_{sp}$ of $10^{-11}$ is consistent with that. A value near 1 would not be.
+:::
+::::
+
+:::: tabs
+::: tab Q 19
+{{sp[info] Objective 16.3b}} · *workout* To 13.6 mL of 0.0246 M NaCl, you add 0.00482 g $\ce{AgNO3}$ (negligible volume change). Will $\ce{AgCl}$ precipitate? ($K_{sp}=1.6\times10^{-10}$)
+:::
+::: tab Answer
+Moles $\ce{AgNO3}=0.00482\ \text{g}/169.87\ \text{g/mol}=2.84\times10^{-5}$ mol; $[\ce{Ag+}]=2.84\times10^{-5}/0.0136=2.09\times10^{-3}$ M.
+
+$$Q=[\ce{Ag+}][\ce{Cl-}]=(2.09\times10^{-3})(0.0246)=5.1\times10^{-5} \gg K_{sp}$$
+
+**Yes, $\ce{AgCl}$ precipitates.**
+:::
+::::
+
+:::: tabs
+::: tab Q 20
+{{sp[info] Objective 16.3b}} · *workout* What $[\ce{Ag+}]$ is required to begin precipitating $\ce{Ag2CO3}$ in a solution that is $2.50\times10^{-6}$ M in $\ce{CO3^2-}$? ($K_{sp}=8.1\times10^{-12}$)
+:::
+::: tab Answer
+$$K_{sp}=[\ce{Ag+}]^2[\ce{CO3^2-}] \Rightarrow [\ce{Ag+}]^2=\frac{8.1\times10^{-12}}{2.50\times10^{-6}}=3.24\times10^{-6}$$
+
+$$[\ce{Ag+}]=1.8\times10^{-3}\ \text{M}$$
+:::
+::::
+
+:::: tabs
+::: tab Q 21
+{{sp[info] Objective 16.3b}} · *workout* Will $\ce{BaSO4}$ ($K_{sp} = 1.1\times10^{-10}$) precipitate when 100.0 mL of $1.0\times10^{-4}$ M $\ce{BaCl2}$ is mixed with 100.0 mL of $1.0\times10^{-4}$ M $\ce{Na2SO4}$?
+:::
+::: tab Answer
+**Step 1 — concentrations after mixing.** Equal volumes double the total volume, so each concentration is halved:
+
+$$[\ce{Ba^2+}] = 5.0\times10^{-5}\ \text{M} \qquad [\ce{SO4^2-}] = 5.0\times10^{-5}\ \text{M}$$
+
+**Step 2 — compute the ion product.**
+
+$$Q = [\ce{Ba^2+}][\ce{SO4^2-}] = (5.0\times10^{-5})(5.0\times10^{-5}) = 2.5\times10^{-9}$$
+
+**Step 3 — compare with $K_{sp}$.**
+
+$$Q = 2.5\times10^{-9} > K_{sp} = 1.1\times10^{-10}$$
+
+**Yes — $\ce{BaSO4}$ precipitates.** The solution is supersaturated by a factor of about 23, and solid will form until $Q$ falls back to $K_{sp}$.
+
+**What "until $Q$ falls to $K_{sp}$" means numerically:** at equilibrium the two ions remain equal, so each settles at $\sqrt{K_{sp}} = 1.0\times10^{-5}$ M — about a fifth of what was mixed in. Four-fifths of the barium ends up as solid.
+
+**Why this reaction matters:** $\ce{BaSO4}$'s tiny $K_{sp}$ is what makes a barium meal safe to swallow. Barium ions are toxic, but essentially none of them enter solution.
+:::
+::::
+
+:::: tabs
+::: tab Q 22
+{{sp[info] Objective 16.3c}} · *workout* Calculate the molar solubility of AgCl in a 0.10 M NaCl solution ($K_{sp}=1.6\times10^{-10}$), and compare it to AgCl's solubility in pure water.
+:::
+::: tab Answer
+With the common ion $\ce{Cl-}$ already at 0.10 M, and $x\ll0.10$:
+
+$$K_{sp}=x(0.10+x)\approx x(0.10)=1.6\times10^{-10} \Rightarrow x=1.6\times10^{-9}\ \text{M}$$
+
+In pure water, solubility $=\sqrt{K_{sp}}=1.3\times10^{-5}$ M — about **8,000 times greater** than in the 0.10 M NaCl solution. The common ion suppresses solubility, exactly as Le Chatelier's principle (Chapter 14) predicts.
+:::
+::::
+
+:::: tabs
+::: tab Q 23
+{{sp[info] Objective 16.3c}} · *workout* $\ce{CaF2}$ has $K_{sp} = 3.9\times10^{-11}$. Calculate its molar solubility (a) in pure water and (b) in 0.010 M $\ce{NaF}$.
+:::
+::: tab Answer
+**(a) In pure water.** Each formula unit gives one $\ce{Ca^2+}$ and two $\ce{F-}$:
+
+$$K_{sp} = (s)(2s)^2 = 4s^3 = 3.9\times10^{-11}$$
+$$s^3 = 9.75\times10^{-12} \quad\Rightarrow\quad s = 2.1\times10^{-4}\ \text{M}$$
+
+**(b) In 0.010 M $\ce{NaF}$.** Fluoride is already present, so it appears as $0.010 + 2s$:
+
+| | $\ce{Ca^2+}$ | $\ce{F-}$ |
+|---|---|---|
+| Initial (M) | 0 | 0.010 |
+| Change (M) | $+s$ | $+2s$ |
+| Equilibrium (M) | $s$ | $0.010 + 2s$ |
+
+$$K_{sp} = s(0.010 + 2s)^2 = 3.9\times10^{-11}$$
+
+Expecting $2s \ll 0.010$, approximate the bracket as 0.010:
+
+$$s = \frac{3.9\times10^{-11}}{(0.010)^2} = \frac{3.9\times10^{-11}}{1.0\times10^{-4}} = 3.9\times10^{-7}\ \text{M}$$
+
+**Validate:** $2s = 7.8\times10^{-7}$, which is 0.0078% of 0.010 M — the approximation is excellent.
+
+**The suppression is about 550-fold** ($2.1\times10^{-4}$ down to $3.9\times10^{-7}$).
+
+**Note where the common ion enters.** It is squared, because fluoride carries the coefficient 2 — which is why the suppression is so severe for a 1:2 salt. The same 0.010 M of a *cation* common ion would appear to the first power and suppress far less.
+:::
+::::
+
+:::: tabs
+::: tab Q 24
+{{sp[info] Objective 16.3c}} · *short answer* $\ce{Mg(OH)2}$ is far less soluble in a basic solution than in a neutral one, but far *more* soluble in an acidic one. Explain both effects with the same equilibrium.
+:::
+::: tab Answer
+One equilibrium accounts for both observations:
+
+$$\ce{Mg(OH)2(s) <=> Mg^2+(aq) + 2OH-(aq)}$$
+
+**In basic solution — less soluble (common ion effect).** Added $\ce{OH-}$ is a **product** of this equilibrium, so raising its concentration shifts the reaction **left** and less solid dissolves. Because hydroxide carries the coefficient 2, it enters $K_{sp}$ squared, and the suppression is steep: raising $[\ce{OH-}]$ tenfold cuts the solubility a hundredfold.
+
+**In acidic solution — more soluble.** Added $\ce{H+}$ **removes** $\ce{OH-}$ by neutralizing it:
+
+$$\ce{H+ + OH- -> H2O}$$
+
+Removing a product shifts the dissolution equilibrium **right**, so more solid dissolves. With enough acid the hydroxide dissolves completely — which is exactly what happens when milk of magnesia meets stomach acid, and why it works as an antacid.
+
+**The unifying statement.** Both are Le Chatelier applied to the same equation: adding a product suppresses dissolution, removing one promotes it. The common ion effect and acid-promoted dissolution are not two rules — they are one rule pushed in opposite directions.
+
+**The generalization worth carrying forward:** *any* slightly soluble salt whose anion is a base — hydroxides, carbonates, sulfides, phosphates — becomes more soluble as pH falls. Salts of strong-acid anions such as $\ce{Cl-}$ or $\ce{NO3-}$ do not, because those anions do not react with $\ce{H+}$. It is why $\ce{CaCO3}$ dissolves in acid rain and $\ce{AgCl}$ does not.
+:::
+::::
+
+:::: tabs
+::: tab Q 25
+{{sp[info] Objective 16.4a}} · *short answer* Write the equilibrium constant ($K = K_{sp}K_f$) expression for $\ce{Al(OH)3(s) + OH-(aq) <=> Al(OH)4-(aq)}$, and identify the Lewis acid and Lewis base.
+:::
+::: tab Answer
+$\ce{Al(OH)3}$ is a pure solid and is omitted from the expression (same rule as heterogeneous $K_{sp}$, Chapter 14):
+
+$$K_f=\frac{[\ce{Al(OH)4-}]}{[\ce{OH-}]}$$
+
+$\ce{Al(OH)3}$ is the **Lewis acid** (accepts the electron pair); $\ce{OH-}$ is the **Lewis base** (donates the electron pair) — the same Lewis acid-base framework from Chapter 15, applied to complex-ion formation.
+:::
+::::
+
+:::: tabs
+::: tab Q 26
+{{sp[info] Objective 16.4a}} · *short answer* Silver bromide, $\ce{AgBr}$ ($K_{sp} = 5.0\times10^{-13}$), does not dissolve appreciably in ammonia but does dissolve in sodium thiosulfate, where $K_f(\ce{Ag(S2O3)2^3-}) = 2.9\times10^{13}$. Explain quantitatively.
+:::
+::: tab Answer
+Add the two equilibria and multiply the constants, exactly as in Chapter 14.
+
+**With thiosulfate:**
+$$\ce{AgBr(s) + 2S2O3^2- <=> Ag(S2O3)2^3- + Br-}$$
+$$K = K_{sp}K_f = (5.0\times10^{-13})(2.9\times10^{13}) = 14.5$$
+
+$K = 14.5$ is **greater than 1** — the dissolution is genuinely favorable, and $\ce{AgBr}$ dissolves readily.
+
+**With ammonia** ($K_f = 1.7\times10^{7}$):
+$$K = (5.0\times10^{-13})(1.7\times10^{7}) = 8.5\times10^{-6}$$
+
+That is about seventeen million times ($1.7\times10^{7}$) better than $K_{sp}$ alone, but still far below 1 — so only a trace dissolves.
+
+**The general principle.** A complexing agent promotes dissolution by removing the metal ion from solution, shifting the dissolution equilibrium right. **How well it works is set by the product $K_{sp}K_f$**, not by either constant alone. Thiosulfate wins here because its formation constant is six orders of magnitude larger than ammonia's.
+
+**Why this is not a laboratory curiosity:** exactly this chemistry was photographic fixing. Thiosulfate ("hypo") dissolved unexposed silver halide off the film while leaving the developed image untouched — and $\ce{AgBr}$, not $\ce{AgCl}$, was the halide in most film emulsions.
+:::
+::::
+
+:::: tabs
+::: tab Q 27
+{{sp[info] Objective 16.4a}} · *multiple-choice* Which statement about a complex-ion formation constant $K_f$ is correct?
+
+(A) A large $K_f$ means the complex dissociates readily\
+(B) A large $K_f$ means the free metal-ion concentration is very small\
+\(C) $K_f$ has units of M$^{-1}$\
+(D) $K_f$ changes when more ligand is added
+:::
+::: tab Answer
+**(B).** $K_f$ is written with the complex in the numerator:
+
+$$K_f = \frac{[\ce{ML_n}]}{[\ce{M}][\ce{L}]^n}$$
+
+A large value means the numerator dominates — nearly all the metal is tied up in the complex, and the free-ion concentration in the denominator must be correspondingly tiny. For $\ce{Ag(NH3)2+}$ with $K_f = 1.7\times10^{7}$, roughly one silver ion in seventeen million remains free when the free NH3 concentration is 1 M.
+
+**Why the others fail:**
+- **(A)** is backwards. Large $K_f$ means **stable**; it is the small-$K_f$ complexes that fall apart.
+- **\(C)** equilibrium constants are treated as dimensionless — each concentration is divided by its 1 M standard state, and the units cancel.
+- **(D)** confuses the constant with the position. Adding ligand shifts the equilibrium toward more complex (Le Chatelier), but $K_f$ itself depends only on temperature. This is the same distinction as $K$ versus $Q$ in Chapter 14, and as $K_{sp}$ versus solubility in §16.3.
+:::
+::::
