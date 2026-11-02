@@ -1,108 +1,85 @@
 {
   "packageId": "pkg-general-chemistry-tneui2rv",
   "title": "General Chemistry",
-  "description": "",
-  "keywords": [],
-  "discipline": "chemistry",
-  "courseContext": {},
   "license": "CC-BY-4.0",
   "createdAt": "2026-11-02T00:48:32.683Z",
   "schemaVersion": 3,
   "chapters": [
     {
       "slug": "introduction",
-      "title": "Introduction to Chemistry",
-      "mode": "package"
+      "title": "Introduction to Chemistry"
     },
     {
       "slug": "atoms-molecules-ions",
-      "title": "Atoms, Molecules, and Ions",
-      "mode": "package"
+      "title": "Atoms, Molecules, and Ions"
     },
     {
       "slug": "stoichiometry",
-      "title": "Stoichiometry",
-      "mode": "package"
+      "title": "Stoichiometry"
     },
     {
       "slug": "aqueous-reactions",
-      "title": "Reactions in Aqueous Solution",
-      "mode": "package"
+      "title": "Reactions in Aqueous Solution"
     },
     {
       "slug": "gases",
-      "title": "Gases",
-      "mode": "package"
+      "title": "Gases"
     },
     {
       "slug": "thermochemistry",
-      "title": "Thermochemistry",
-      "mode": "package"
+      "title": "Thermochemistry"
     },
     {
       "slug": "quantum-theory",
-      "title": "The Electronic Structure of Atoms",
-      "mode": "package"
+      "title": "The Electronic Structure of Atoms"
     },
     {
       "slug": "periodic-table",
-      "title": "The Periodic Table",
-      "mode": "package"
+      "title": "The Periodic Table"
     },
     {
       "slug": "chemical-bonding",
-      "title": "Chemical Bonding — The Covalent Bond",
-      "mode": "package"
+      "title": "Chemical Bonding — The Covalent Bond"
     },
     {
       "slug": "molecular-geometry",
-      "title": "Molecular Geometry and Hybridization",
-      "mode": "package"
+      "title": "Molecular Geometry and Hybridization"
     },
     {
       "slug": "intermolecular-forces",
-      "title": "Intermolecular Forces, Liquids, and Solids",
-      "mode": "package"
+      "title": "Intermolecular Forces, Liquids, and Solids"
     },
     {
       "slug": "solutions",
-      "title": "Physical Properties of Solutions",
-      "mode": "package"
+      "title": "Physical Properties of Solutions"
     },
     {
       "slug": "chemical-kinetics",
-      "title": "Chemical Kinetics",
-      "mode": "package"
+      "title": "Chemical Kinetics"
     },
     {
       "slug": "chemical-equilibrium",
-      "title": "Chemical Equilibrium",
-      "mode": "package"
+      "title": "Chemical Equilibrium"
     },
     {
       "slug": "acids-and-bases",
-      "title": "Acids and Bases",
-      "mode": "package"
+      "title": "Acids and Bases"
     },
     {
       "slug": "acid-base-equilibria",
-      "title": "Acid-Base Equilibria and Solubility Equilibria",
-      "mode": "package"
+      "title": "Acid-Base Equilibria and Solubility Equilibria"
     },
     {
       "slug": "thermodynamics",
-      "title": "Entropy, Free Energy, and Equilibrium",
-      "mode": "package"
+      "title": "Entropy, Free Energy, and Equilibrium"
     },
     {
       "slug": "electrochemistry",
-      "title": "Redox Reactions and Electrochemistry",
-      "mode": "package"
+      "title": "Redox Reactions and Electrochemistry"
     },
     {
       "slug": "nuclear-chemistry",
-      "title": "Nuclear Chemistry",
-      "mode": "package"
+      "title": "Nuclear Chemistry"
     }
   ],
   "type": "oer-course@1"
