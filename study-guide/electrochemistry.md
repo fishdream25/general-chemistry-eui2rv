@@ -6,13 +6,6 @@ title: Chapter 18: Redox Reactions and Electrochemistry
 
 # Chapter 18: Redox Reactions and Electrochemistry
 
-:::info
-**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 18 (CC BY 4.0)
-**Audience:** introductory undergraduate general chemistry, second semester
-**Package license:** CC BY 4.0
-**Note:** builds on oxidation numbers and redox reactions (Chapter 4), the equilibrium constant (Chapter 14), and Gibbs free energy (Chapter 17); facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
-:::
-
 :::success
 **Chapter Learning Objectives**
 - Assign oxidation numbers and balance redox equations using the half-reaction method.
@@ -646,3 +639,12 @@ Figure 18.7 shows the packaging; the chemistry inside is §18.2's.
 | `assets/rust_corrosion.jpg` | https://commons.wikimedia.org/wiki/File:Rust_on_metal.jpg | Public domain | Georges Grondin, via Wikimedia Commons (public domain). Resized from the original for web use. |
 | `assets/galvanic_vs_electrolytic.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
 | `assets/batteries.jpg` | https://commons.wikimedia.org/wiki/File:AA_Batteries_(51825378856).jpg | CC BY 2.0 | ajay_suresh, via Wikimedia Commons, CC BY 2.0. Resized from the original for web use. |
+
+## About this chapter
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 18 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, second semester
+**Package license:** CC BY 4.0
+**Note:** builds on oxidation numbers and redox reactions (Chapter 4), the equilibrium constant (Chapter 14), and Gibbs free energy (Chapter 17); facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+:::

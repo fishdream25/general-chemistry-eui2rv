@@ -6,13 +6,6 @@ title: Chapter 14: Chemical Equilibrium
 
 # Chapter 14: Chemical Equilibrium
 
-:::info
-**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 14 (CC BY 4.0)
-**Audience:** introductory undergraduate general chemistry, second semester
-**Package license:** CC BY 4.0
-**Note:** builds on forward/reverse rate constants (Chapter 13), PV = nRT (Chapter 5), and Hess's-law-style reasoning (Chapter 6); facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
-:::
-
 :::success
 **Chapter Learning Objectives**
 - Define chemical equilibrium and the equilibrium constant, and derive $K = k_f/k_r$ for an elementary-step reaction.
@@ -704,3 +697,12 @@ For $\ce{2SO2(g) + O2(g) <=> 2SO3(g)}$, $\Delta H^\circ = -198$ kJ/mol. State th
 | `assets/le_chatelier_pressure.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
 | `assets/ammonia_plant.jpg` | https://commons.wikimedia.org/wiki/File:ThyssenKrupp_Ammonia_&_Urea_Plant.jpg | CC BY SA-4.0 | DeltaSquad833, via Wikimedia Commons, CC BY-SA 4.0. Resized from the original for web use. |
 | `assets/no2_n2o4_equilibrium.jpg` | https://commons.wikimedia.org/wiki/File:NO2_N2O4_evenwicht.jpg | CC BY SA-4.0 | Gedep, via Wikimedia Commons, CC BY-SA 4.0. Resized from the original for web use. |
+
+## About this chapter
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 14 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, second semester
+**Package license:** CC BY 4.0
+**Note:** builds on forward/reverse rate constants (Chapter 13), PV = nRT (Chapter 5), and Hess's-law-style reasoning (Chapter 6); facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+:::

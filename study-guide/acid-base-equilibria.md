@@ -6,13 +6,6 @@ title: Chapter 16: Acid-Base Equilibria and Solubility Equilibria
 
 # Chapter 16: Acid-Base Equilibria and Solubility Equilibria
 
-:::info
-**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 16 (CC BY 4.0)
-**Audience:** introductory undergraduate general chemistry, second semester
-**Package license:** CC BY 4.0
-**Note:** builds directly on Chapter 15's $K_a/K_b$/ICE-table toolkit and Chapter 14's K/Q/Le Chatelier framework; facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
-:::
-
 :::success
 **Chapter Learning Objectives**
 - Explain why a buffer resists pH change, and calculate buffer pH using an ICE table or the Henderson-Hasselbalch equation.
@@ -617,3 +610,12 @@ $$\ce{Al(OH)3(s) + 3H+(aq) -> Al^3+(aq) + 3H2O(l)} \qquad \ce{Al(OH)3(s) + OH-(a
 | `assets/silver_chloride_precipitate.jpg` | https://commons.wikimedia.org/wiki/File:Silver_chloride_(AgCl).jpg | CC BY SA-4.0 | Luisbrudna, via Wikimedia Commons, CC BY-SA 4.0. |
 | `assets/common_ion_effect.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib from exact equilibrium calculations; released under this package's CC BY 4.0 license. |
 | `assets/complex_ion_formation.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; schematic illustration, not a literal Lewis structure; released under this package's CC BY 4.0 license. |
+
+## About this chapter
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 16 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, second semester
+**Package license:** CC BY 4.0
+**Note:** builds directly on Chapter 15's $K_a/K_b$/ICE-table toolkit and Chapter 14's K/Q/Le Chatelier framework; facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+:::

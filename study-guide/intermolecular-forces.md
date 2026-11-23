@@ -6,13 +6,6 @@ title: Chapter 11: Intermolecular Forces, Liquids, and Solids
 
 # Chapter 11: Intermolecular Forces, Liquids, and Solids
 
-:::info
-**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 11 (CC BY 4.0)
-**Audience:** introductory undergraduate general chemistry, second semester
-**Package license:** CC BY 4.0
-**Note:** builds on molecular polarity from Chapter 10; facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
-:::
-
 :::success
 **Chapter Learning Objectives**
 - Identify the intermolecular force(s) present between molecules and rank their relative strength.
@@ -645,3 +638,12 @@ The rule generalizes: **a substance sublimes at 1 atm precisely when its triple-
 | `assets/cubic_unit_cells.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated; released under this package's CC BY 4.0 license. |
 | `assets/vapor_pressure_diethyl_ether.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated from the Clausius–Clapeyron equation and this study guide's own worked-example data; released under this package's CC BY 4.0 license. |
 | `assets/water_phase_diagram.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated; boundary curves schematic, key points from verified real data; released under this package's CC BY 4.0 license. |
+
+## About this chapter
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 11 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, second semester
+**Package license:** CC BY 4.0
+**Note:** builds on molecular polarity from Chapter 10; facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+:::

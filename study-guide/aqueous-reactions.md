@@ -6,13 +6,6 @@ title: Chapter 4: Reactions in Aqueous Solution
 
 # Chapter 4: Reactions in Aqueous Solution
 
-:::info
-**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 4 (CC BY 4.0)
-**Audience:** introductory undergraduate general chemistry, first semester
-**Package license:** CC BY 4.0
-**Note:** builds on Chapter 2's formulas and naming and Chapter 3's stoichiometry; facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
-:::
-
 :::success
 **Chapter Learning Objectives**
 - Classify solutes as strong, weak, or nonelectrolytes.
@@ -681,3 +674,12 @@ The dependencies run in both directions. Everything here rests on Chapter 2 (you
 | `assets/displaced_copper.jpg` | https://commons.wikimedia.org/wiki/File:Displaced_copper_crystal.jpg | CC BY-SA 4.0 | 2x910, via Wikimedia Commons. |
 | `assets/dilution_same_moles.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated from the study guide's own worked-example data; released under this package's CC BY 4.0 license. |
 | `assets/titration_setup.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated, schematic; released under this package's CC BY 4.0 license. |
+
+## About this chapter
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 4 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, first semester
+**Package license:** CC BY 4.0
+**Note:** builds on Chapter 2's formulas and naming and Chapter 3's stoichiometry; facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+:::

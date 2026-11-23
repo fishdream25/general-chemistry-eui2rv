@@ -6,13 +6,6 @@ title: Chapter 13: Chemical Kinetics
 
 # Chapter 13: Chemical Kinetics
 
-:::info
-**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 13 (CC BY 4.0)
-**Audience:** introductory undergraduate general chemistry, second semester
-**Package license:** CC BY 4.0
-**Note:** builds on balanced equations and stoichiometric coefficients (Chapter 3); facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
-:::
-
 :::success
 **Chapter Learning Objectives**
 - Write rate expressions from a balanced equation, and determine a rate law, reaction order, and rate constant from experimental data.
@@ -40,7 +33,7 @@ graph TD
 
 :::success
 **Learning Objectives**
-- {{sp[info] Objective 13.1a}} Write the rate expression for a reaction in terms of the disappearance of reactants and appearance of products, using stoichiometric coefficients. Rate laws come from experiment, not from the balanced equation (review r4).
+- {{sp[info] Objective 13.1a}} Write the rate expression for a reaction in terms of the disappearance of reactants and appearance of products, using stoichiometric coefficients.
 - {{sp[info] Objective 13.1b}} Determine the rate law (reaction order in each reactant and overall) and the rate constant $k$ from initial-rate experimental data.
 :::
 
@@ -760,3 +753,12 @@ Apart from enzymes (protein catalysts acting at an active site), the test is a s
 | `assets/catalyzed_vs_uncatalyzed.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
 | `assets/catalytic_converter.jpg` | https://commons.wikimedia.org/wiki/File:Catalytic_Converter_Interior.jpg | CC0 | Cyrogigabyte, via Wikimedia Commons, CC0. Resized from the original for web use. |
 | `assets/enzyme_lock_and_key.svg` | https://commons.wikimedia.org/wiki/File:Lock_and_key_enzyme_mechanism.svg | CC BY 4.0 | domdomegg, via Wikimedia Commons, CC BY 4.0. |
+
+## About this chapter
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 13 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, second semester
+**Package license:** CC BY 4.0
+**Note:** builds on balanced equations and stoichiometric coefficients (Chapter 3); facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+:::

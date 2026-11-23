@@ -6,17 +6,6 @@ title: Chapter 19: Nuclear Chemistry
 
 # Chapter 19: Nuclear Chemistry
 
-Nuclear marker 05:16:34 (review r2)
-
-Nuclear marker2 05:25:26 (review r2)
-
-:::info
-**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 19 (CC BY 4.0)
-**Audience:** introductory undergraduate general chemistry, second semester
-**Package license:** CC BY 4.0
-**Note:** builds on atomic number/mass number notation (Chapter 2) and first-order kinetics/half-life (Chapter 13); facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
-:::
-
 :::success
 **Chapter Learning Objectives**
 - Balance nuclear equations by conserving mass number and charge, and identify patterns of nuclear stability.
@@ -570,3 +559,12 @@ The right order of magnitude for a fission event, and the basis of every reactor
 | `assets/nuclear_power_plant.jpg` | https://commons.wikimedia.org/wiki/File:Cofrentes_nuclear_power_plant_cooling_towers_retouched.jpg | CC BY SA-3.0 | Roberto Uderio (retouched by AlMare), via Wikimedia Commons, CC BY-SA 3.0. Resized from the original for web use. |
 | `assets/the_sun.jpg` | https://commons.wikimedia.org/wiki/File:The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA's_Solar_Dynamics_Observatory_-_20100819.jpg | Public domain | NASA/SDO (AIA), via Wikimedia Commons (public domain, U.S. government work). Resized from the original for web use. |
 | `assets/binding_energy_curve.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib using real binding-energy-per-nucleon values, two of which (F-19, Fe-56) match the study guide's own worked examples; released under this package's CC BY 4.0 license. |
+
+## About this chapter
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 19 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, second semester
+**Package license:** CC BY 4.0
+**Note:** builds on atomic number/mass number notation (Chapter 2) and first-order kinetics/half-life (Chapter 13); facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+:::

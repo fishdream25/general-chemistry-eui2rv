@@ -6,13 +6,6 @@ title: Chapter 8: The Periodic Table
 
 # Chapter 8: The Periodic Table
 
-:::info
-**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 8 (CC BY 4.0)
-**Audience:** introductory undergraduate general chemistry, first semester
-**Package license:** CC BY 4.0
-**Note:** builds directly on Chapter 7's electron configurations; facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
-:::
-
 :::success
 **Chapter Learning Objectives**
 - Classify elements by category and write electron configurations for their ions.
@@ -514,3 +507,12 @@ Forwards, these trends are the working vocabulary of the rest of the course. Cha
 | `assets/ionization_energy_trend.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib using real tabulated ionization-energy values; released under this package's CC BY 4.0 license. |
 | `assets/sodium_water.png` | https://commons.wikimedia.org/wiki/File:Sodium_and_Water.png | CC BY-SA 3.0 | Tavoromann / Tony Mach, via Wikimedia Commons, CC BY-SA 3.0. |
 | `assets/oxide_character_period3.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+
+## About this chapter
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 8 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, first semester
+**Package license:** CC BY 4.0
+**Note:** builds directly on Chapter 7's electron configurations; facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+:::

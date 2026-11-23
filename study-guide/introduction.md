@@ -6,13 +6,6 @@ title: Chapter 1: Introduction to Chemistry
 
 # Chapter 1: Introduction to Chemistry
 
-:::info
-**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 1 (CC BY 4.0)
-**Audience:** introductory undergraduate general chemistry, first semester
-**Package license:** CC BY 4.0
-**Note:** the first chapter of the course — no prior chemistry background assumed; facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
-:::
-
 :::success
 **Chapter Learning Objectives**
 - Classify matter (substance vs. mixture, element vs. compound) and distinguish physical from chemical change and extensive from intensive properties.
@@ -517,3 +510,12 @@ If you take only one habit from this chapter, make it the unit check: **carry un
 | `assets/accuracy_vs_precision.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated; released under this package's CC BY 4.0 license. |
 | `assets/graduated_cylinder_meniscus.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated; released under this package's CC BY 4.0 license. |
 | `assets/dimensional_analysis_cancel.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated; released under this package's CC BY 4.0 license. |
+
+## About this chapter
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 1 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, first semester
+**Package license:** CC BY 4.0
+**Note:** the first chapter of the course — no prior chemistry background assumed; facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+:::

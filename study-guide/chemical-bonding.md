@@ -6,13 +6,6 @@ title: Chapter 9: Chemical Bonding — The Covalent Bond
 
 # Chapter 9: Chemical Bonding — The Covalent Bond
 
-:::info
-**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 9 (CC BY 4.0)
-**Audience:** introductory undergraduate general chemistry, first semester
-**Package license:** CC BY 4.0
-**Note:** builds on Chapter 7's valence configurations and Chapter 8's electronegativity-related trends. Facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either). One electronegativity value has been corrected — see §9.1.
-:::
-
 :::success
 **Chapter Learning Objectives**
 - Draw Lewis dot symbols and explain ionic bonding and lattice energy.
@@ -516,3 +509,12 @@ Forwards, the Lewis structure is the handoff. Chapter 10 reads molecular geometr
 | `assets/lewis_and_resonance.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib, schematic (replaces multiple hotlinked source images); released under this package's CC BY 4.0 license. |
 | `assets/octet_exceptions.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
 | `assets/bond_enthalpy_cycle.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+
+## About this chapter
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 9 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, first semester
+**Package license:** CC BY 4.0
+**Note:** builds on Chapter 7's valence configurations and Chapter 8's electronegativity-related trends. Facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either). One electronegativity value has been corrected — see §9.1.
+:::

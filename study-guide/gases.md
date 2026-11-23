@@ -6,17 +6,10 @@ title: Chapter 5: Gases
 
 # Chapter 5: Gases
 
-:::info
-**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 5 (CC BY 4.0)
-**Audience:** introductory undergraduate general chemistry, first semester
-**Package license:** CC BY 4.0
-**Note:** builds on Chapter 3's mole conversions; facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either). One arithmetic value in the source notes has been corrected — see §5.2.
-:::
-
 :::success
 **Chapter Learning Objectives**
-- Describe the physical characteristics of gases; define pressure and  Edited at 04:53:24 (review r2)convert between its units.
-- Apply the ideal gas equation, and use it to find gas density or   nowSaveBtn 04:56:48 (review r2)molar mass.
+- Describe the physical characteristics of gases; define pressure and convert between its units.
+- Apply the ideal gas equation, and use it to find gas density or molar mass.
 - Bring a calculator; we will practise PV = nRT in class (critic)
 - Apply Dalton's law of partial pressures, including the water-vapor correction.
 - State the kinetic molecular theory, use it to explain the gas laws, and apply Graham's law.
@@ -293,7 +286,7 @@ Twenty-one liters from thirty-eight grams of solid, in milliseconds — which is
 - {{sp[info] Objective 5.3b}} Correct for water vapor pressure when a gas is collected over water.
 :::
 
-### Dalton's law
+### Dalton's law{{attrs[#blk-9e8baoi7fp]}}
 
 In a mixture, each gas behaves as if the others were not there. That is the content of §5.4's assumption that molecules do not interact, and it has an immediate consequence.
 
@@ -604,3 +597,12 @@ Backwards, the chapter rests entirely on Chapter 3: every gas-stoichiometry prob
 | `assets/molecular_speed_distribution.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
 | `assets/grahams_law_effusion.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib using real molar masses; released under this package's CC BY 4.0 license. |
 | `assets/real_gas_deviation.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib, schematic; released under this package's CC BY 4.0 license. |
+
+## About this chapter
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 5 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, first semester
+**Package license:** CC BY 4.0
+**Note:** builds on Chapter 3's mole conversions; facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either). One arithmetic value in the source notes has been corrected — see §5.2.
+:::

@@ -6,13 +6,6 @@ title: Chapter 10: Molecular Geometry and Hybridization
 
 # Chapter 10: Molecular Geometry and Hybridization
 
-:::info
-**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 10 (CC BY 4.0)
-**Audience:** introductory undergraduate general chemistry, first semester
-**Package license:** CC BY 4.0
-**Note:** takes a correct Lewis structure from Chapter 9 as its starting point. Facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
-:::
-
 :::success
 **Chapter Learning Objectives**
 - Predict molecular geometry with and without lone pairs on the central atom.
@@ -428,3 +421,12 @@ Forwards, molecular polarity is the handoff. Chapter 11 explains why some substa
 | `assets/sp3_promotion_mixing.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
 | `assets/sigma_pi_bonds.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib, schematic; released under this package's CC BY 4.0 license. |
 | `assets/acetylene_model.jpg` | https://commons.wikimedia.org/wiki/File:Acetylene_8162.JPG | CC BY-SA 3.0 | Bin im Garten, via Wikimedia Commons, CC BY-SA 3.0. Resized from the original for web use. |
+
+## About this chapter
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 10 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, first semester
+**Package license:** CC BY 4.0
+**Note:** takes a correct Lewis structure from Chapter 9 as its starting point. Facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+:::

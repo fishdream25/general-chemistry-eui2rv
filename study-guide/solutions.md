@@ -5,14 +5,6 @@ title: Chapter 12: Physical Properties of Solutions
 }}
 
 # Chapter 12: Physical Properties of Solutions
- Stale-window check sentence (review r4).
-:::info
-**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 12 (CC BY 4.0)
-**Audience:** introductory undergraduate general chemistry, second semester
-**Package license:** CC BY 4.0
-**Note:** builds on molarity (Chapter 4) and intermolecular forces (Chapter 11); facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
-:::
-
 :::success
 **Chapter Learning Objectives**
 - Explain solution formation in terms of solvent-solvent, solute-solute, and solute-solvent intermolecular interactions, and apply "like dissolves like" to predict solubility.
@@ -39,7 +31,7 @@ graph TD
 
 :::success
 **Learning Objectives**
-- {{sp[info] Objective 12.1a}} Distinguish saturated, unsaturated, and supersaturated solutions. Like dissolves like is a rule of thumb, usually (review r4).
+- {{sp[info] Objective 12.1a}} Distinguish saturated, unsaturated, and supersaturated solutions.
 - {{sp[info] Objective 12.1a}} Explain solution formation in terms of solvent-solvent, solute-solute, and solute-solvent interactions, and predict whether the process is exothermic or endothermic.
 - {{sp[info] Objective 12.1b}} Apply "like dissolves like" to predict solubility of polar, nonpolar, and ionic substances.
 - {{sp[info] Objective 12.1c}} Predict the effect of temperature and pressure on the solubility of solids, liquids, and gases, including Henry's law.
@@ -662,3 +654,12 @@ Note also that $\ce{SO4^2-}$ stays intact — it is a polyatomic ion, not five s
 | `assets/freezing_point_depression.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib using the real $K_f$ of water (1.86 degC/m); released under this package's CC BY 4.0 license. |
 | `assets/rock_salt_deicing.jpg` | https://www.flickr.com/photos/47445767@N05/37382600501 | CC BY 2.0 | James St. John, via Flickr (Openverse), CC BY 2.0. Resized from the original for web use. |
 | `assets/osmosis_semipermeable.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+
+## About this chapter
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 12 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, second semester
+**Package license:** CC BY 4.0
+**Note:** builds on molarity (Chapter 4) and intermolecular forces (Chapter 11); facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+:::

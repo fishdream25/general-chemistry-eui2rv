@@ -6,13 +6,6 @@ title: Chapter 2: Atoms, Molecules, and Ions
 
 # Chapter 2: Atoms, Molecules, and Ions
 
-:::info
-**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 2 (CC BY 4.0)
-**Audience:** introductory undergraduate general chemistry, first semester
-**Package license:** CC BY 4.0
-**Note:** builds on Chapter 1's classification of matter; facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
-:::
-
 :::success
 **Chapter Learning Objectives**
 - Describe atomic structure (protons, neutrons, electrons) and summarize the historical experiments that revealed it.
@@ -632,3 +625,12 @@ Every piece is reused almost immediately. Chapter 3 needs correct formulas to ca
 | `assets/ion_charges_by_group.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated; released under this package's CC BY 4.0 license. |
 | `assets/ionic_formula_charge_balance.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated; released under this package's CC BY 4.0 license. |
 | `assets/naming_decision_tree.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated; released under this package's CC BY 4.0 license. |
+
+## About this chapter
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 2 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, first semester
+**Package license:** CC BY 4.0
+**Note:** builds on Chapter 1's classification of matter; facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+:::

@@ -6,13 +6,6 @@ title: Chapter 17: Entropy, Free Energy, and Equilibrium
 
 # Chapter 17: Entropy, Free Energy, and Equilibrium
 
-:::info
-**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 17 (CC BY 4.0)
-**Audience:** introductory undergraduate general chemistry, second semester
-**Package license:** CC BY 4.0
-**Note:** builds on standard enthalpies of formation and Hess's law (Chapter 6) and the equilibrium constant (Chapter 14); facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
-:::
-
 :::success
 **Chapter Learning Objectives**
 - Define entropy in terms of microstates, predict the sign of $\Delta S$, and calculate $\Delta S^\circ_\text{rxn}$ from tabulated values.
@@ -610,3 +603,12 @@ This is exactly the case flagged after the ammonia example: $\Delta G^\circ$ is 
 | `assets/gibbs_temperature_crossover.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib using the study guide's own real worked-example data (deltaH=177.8 kJ/mol, deltaS=160.5 J/K mol); released under this package's CC BY 4.0 license. |
 | `assets/ice_melting.jpg` | https://commons.wikimedia.org/wiki/File:Melting_-_Flickr_-_Trinity.jpg | CC BY-SA 2.0 | Rebecca Partington from Seattle, Washington, USA, via Wikimedia Commons, CC BY-SA 2.0. |
 | `assets/free_energy_vs_reaction_progress.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; schematic illustration of the G-vs-progress relationship, not a specific reaction's real data; released under this package's CC BY 4.0 license. |
+
+## About this chapter
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 17 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, second semester
+**Package license:** CC BY 4.0
+**Note:** builds on standard enthalpies of formation and Hess's law (Chapter 6) and the equilibrium constant (Chapter 14); facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+:::

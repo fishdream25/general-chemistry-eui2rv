@@ -6,13 +6,6 @@ title: Chapter 15: Acids and Bases
 
 # Chapter 15: Acids and Bases
 
-:::info
-**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 15 (CC BY 4.0)
-**Audience:** introductory undergraduate general chemistry, second semester
-**Package license:** CC BY 4.0
-**Note:** builds on Brønsted acid/base definitions (Chapter 4), equilibrium constants and ICE tables (Chapter 14), and periodic trends (Chapter 8); facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
-:::
-
 :::success
 **Chapter Learning Objectives**
 - Identify conjugate acid-base pairs and write stepwise ionization equations for diprotic/polyprotic acids.
@@ -673,3 +666,12 @@ $$\ce{pH} = -\log(1.05\times10^{-5}) = 4.98$$
 | `assets/lewis_acid_base.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
 | `assets/ph_scale.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; approximate, commonly cited pH values for real substances (actual values vary with concentration/brand); released under this package's CC BY 4.0 license. |
 | `assets/red_cabbage_indicator.jpg` | https://commons.wikimedia.org/wiki/File:Extracto_de_col_morada,_indicador_ácido_base.jpg | CC BY-SA 4.0 | KennyMex, via Wikimedia Commons, CC BY-SA 4.0. |
+
+## About this chapter
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 15 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, second semester
+**Package license:** CC BY 4.0
+**Note:** builds on Brønsted acid/base definitions (Chapter 4), equilibrium constants and ICE tables (Chapter 14), and periodic trends (Chapter 8); facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+:::

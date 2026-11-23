@@ -6,19 +6,12 @@ title: Chapter 6: Thermochemistry
 
 # Chapter 6: Thermochemistry
 
-:::info
-**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 6  Leave-check 04:55:16 (review r2)(CC BY 4.0)
-**Audience:** introductory undergraduate general chemistry, first semester
-**Package license:** CC BY 4.0
-**Note:** builds on Chapter 3's mole conversions and Chapter 5's definitions of energy, work, and the joule; facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either). One sign error in the source notes has been corrected — see §6.4.
-:::
-
 :::success
 **Chapter Learning Objectives**
 - Distinguish types of energy and types of system; distinguish exothermic from endothermic.
-- Apply the first law of thermodynamics, $\Delta U = q + w$, with correct signs. A3auto 00:49:48 (review r3)
-- Define enthalpy, apply thermochemical-equation rules, and convert  E1 00:52:06 (review r3)between $\Delta H$ and $\Delta U$.
-- Apply specific heat and heat capacity, and interpret constant-volume  C-tz (review r3)and constant-pressure calorimetry.
+- Apply the first law of thermodynamics, $\Delta U = q + w$, with correct signs.
+- Define enthalpy, apply thermochemical-equation rules, and convert between $\Delta H$ and $\Delta U$.
+- Apply specific heat and heat capacity, and interpret constant-volume and constant-pressure calorimetry.
 - Apply Hess's Law and calculate reaction enthalpies from standard enthalpies of formation.
 :::
 
@@ -574,3 +567,12 @@ Forwards, the state-function idea introduced here is the one that lasts. Chapter
 | `assets/bomb_calorimeter_photo.jpg` | https://commons.wikimedia.org/wiki/File:Bombenkalorimeter_mit_bombe.jpg | CC BY 3.0 | Harbor1, via Wikimedia Commons, CC BY 3.0 (dual-licensed with GFDL 1.2+). |
 | `assets/formation_enthalpy_reference.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
 | `assets/hess_law_cycle.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib using the study guide's own worked-example data; released under this package's CC BY 4.0 license. |
+
+## About this chapter
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 6 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, first semester
+**Package license:** CC BY 4.0
+**Note:** builds on Chapter 3's mole conversions and Chapter 5's definitions of energy, work, and the joule; facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either). One sign error in the source notes has been corrected — see §6.4.
+:::

@@ -2,16 +2,10 @@
 kind: document
 format: 1
 title: Chapter 7: The Electronic Structure of Atoms
+theme: beige-decent-2
 }}
 
 # Chapter 7: The Electronic Structure of Atoms
-
-:::info
-**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 7 (CC BY 4.0)
-**Audience:** introductory undergraduate general chemistry, first semester
-**Package license:** CC BY 4.0
-**Note:** delivers two promises made in Chapter 2 — that the shell picture would be replaced by orbitals, and that the periodic table's column pattern would be explained. Facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
-:::
 
 :::success
 **Chapter Learning Objectives**
@@ -571,3 +565,12 @@ Forwards, this is the most heavily reused chapter in the course. Chapter 8's per
 | `assets/orbital_shapes.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib, schematic; released under this package's CC BY 4.0 license. |
 | `assets/aufbau_diagonal_rule.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
 | `assets/orbital_filling_h_to_ne.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated with matplotlib; released under this package's CC BY 4.0 license. |
+
+## About this chapter
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 7 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, first semester
+**Package license:** CC BY 4.0
+**Note:** delivers two promises made in Chapter 2 — that the shell picture would be replaced by orbitals, and that the periodic table's column pattern would be explained. Facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+:::

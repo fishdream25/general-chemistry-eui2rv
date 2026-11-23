@@ -6,13 +6,6 @@ title: Chapter 3: Stoichiometry
 
 # Chapter 3: Stoichiometry
 
-:::info
-**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 3 (CC BY 4.0)
-**Audience:** introductory undergraduate general chemistry, first semester
-**Package license:** CC BY 4.0
-**Note:** builds on Chapter 2's chemical formulas; facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
-:::
-
 :::success
 **Chapter Learning Objectives**
 - Calculate atomic mass, molecular/formula mass, and molar mass; convert among mass, moles, and particle count.
@@ -481,3 +474,12 @@ The dependencies run backwards as much as forwards. This chapter cannot start wi
 | `assets/limiting_reagent_concept.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated; released under this package's CC BY 4.0 license. |
 | `assets/theoretical_vs_actual_yield.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated from the study guide's own worked-example data; released under this package's CC BY 4.0 license. |
 | `assets/limiting_reagent_bar.svg` | — (self-generated, matplotlib) | CC BY 4.0 | Self-generated from the study guide's own worked-example data; released under this package's CC BY 4.0 license. |
+
+## About this chapter
+
+:::info
+**Reference:** Yu Wang's General Chemistry Lecture Notes, Chapter 3 (CC BY 4.0)
+**Audience:** introductory undergraduate general chemistry, first semester
+**Package license:** CC BY 4.0
+**Note:** builds on Chapter 2's chemical formulas; facts checked for accuracy against OpenStax *Chemistry 2e* and Wikipedia (used for reference only — no text or figures adapted from either).
+:::

@@ -7,7 +7,7 @@ ratio: 16:9
 theme: paper
 }}
 
-<!-- slide template=title -->
+<!-- slide template=title v=6 -->
 # Thermochemistry
 ## Tracking heat through a reaction
 **General Chemistry, Chapter 6**
