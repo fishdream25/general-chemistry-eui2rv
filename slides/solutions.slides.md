@@ -1,0 +1,208 @@
+{{nyml
+kind: document
+carrier: slides
+uid: doc-9il6dtw7931vh3rg
+title: Chapter 12: Physical Properties of Solutions
+ratio: 16:9
+theme: paper
+}}
+
+<!-- slide template=title -->
+# Physical Properties of Solutions
+## Why things dissolve, and what dissolving predicts
+**General Chemistry, Chapter 12**
+
+<!-- slide 2col -->
+## Chapter Learning Objectives
+<!-- @left -->
+- **Objective 12.1a** — Explain solution formation and classify solutions by saturation
+- **Objective 12.1b** — Apply "like dissolves like" to predict solubility
+- **Objective 12.1c** — Predict temperature/pressure effects on solubility, including Henry's law
+- **Objective 12.2a** — Calculate mole fraction, percent by mass, molarity, and molality
+- **Objective 12.2b** — Convert between concentration units given density and molar mass
+<!-- @right -->
+- **Objective 12.3a** — Apply Raoult's law to calculate vapor-pressure lowering
+- **Objective 12.3b** — Calculate boiling-point elevation and freezing-point depression
+- **Objective 12.3c** — Calculate osmotic pressure
+- **Objective 12.3d** — Apply the van't Hoff factor to electrolyte solutions
+
+<!-- slide template=outline -->
+## Roadmap
+1. Some general concepts and rules
+2. Concentration units
+3. Colligative properties
+
+<!-- slide -->
+## Chapter Logic
+{{mermaid
+graph TD
+  A["Intermolecular forces (Ch. 11)"] --> B["Solute-solvent attraction<br/>comparable to or stronger than<br/>solute-solute & solvent-solvent?"]
+  B --> C["Solution forms"]
+  C --> D["Concentration units"]
+  D --> E["Colligative properties"]
+}}
+**Visual description:** intermolecular forces decide whether a solution forms; concentration units quantify it; colligative properties predict measurable consequences from that quantity.
+
+<!-- slide template=section -->
+# 1. Some General Concepts and Rules
+
+<!-- slide -->
+## Saturated, unsaturated, supersaturated
+- **Saturated** — holds the maximum solute that can stay dissolved at equilibrium at this temperature
+- **Unsaturated** — holds less than the maximum
+- **Supersaturated** — unstable, holds *more* than the maximum
+
+<!-- slide main-side -->
+## A visible example
+<!-- @main -->
+![Crystallized sugar](../assets/sugar_crystals.jpg =420x)
+<!-- @side -->
+- Rock candy: sugar crystallizing back out of a cooling, supersaturated solution
+- A literal, edible demonstration
+
+<!-- slide -->
+## Why solutions form
+- Break solvent-solvent interactions
+- Break solute-solute interactions
+- Form solvent-solute interactions
+- ==Net heat direction depends on how these three compare==
+
+<!-- slide main-side -->
+## The energy accounting
+<!-- @main -->
+![Waterfall diagrams of solution energetics, exothermic and endothermic](../assets/solution_energetics.svg =700x)
+<!-- @side -->
+Two steps **cost** energy, one **pays it back**.
+
+- pays back **more** → exothermic ($\ce{CaCl2}$: heat pack)
+- pays back **less** → endothermic ($\ce{NH4NO3}$: cold pack)
+
+An endothermic dissolving still happens if the gain in disorder outweighs the cost.
+
+<!-- slide 2col -->
+## Like dissolves like
+<!-- @left -->
+- Nonpolar ↔ nonpolar solvent
+- Polar ↔ polar solvent
+- Ionic → best in polar solvent
+<!-- @right -->
+![Like dissolves like structures](../assets/like_dissolves_like.svg =480x)
+
+<!-- slide -->
+## Temperature & pressure effects on solubility
+- Solids: **no universal rule** — some ↑, some ↓ with temperature
+- Gases (in water): **always** ↓ solubility with ↑ temperature
+- Pressure: negligible effect on solids/liquids; gases follow **Henry's law**
+
+:::warning
+Henry's law assumes no chemical reaction with solvent — fails for $\ce{CO2}$, $\ce{NH3}$ in water.
+:::
+
+<!-- slide -->
+## The evidence
+![Solubility versus temperature for solids and gases, and versus pressure for a gas](../assets/solubility_temperature_pressure.svg =980x)
+Three solids, three directions — but every gas goes down with temperature and up with pressure.
+
+<!-- slide step -->
+## Worked example — like dissolves like
+Vegetable oil, isopropyl alcohol, and KBr — water or heptane (nonpolar)?
+- Vegetable oil (nonpolar) → **heptane**{{attrs[.fragment]}}
+- Isopropyl alcohol (polar) → **water**{{attrs[.fragment]}}
+- KBr (ionic) → **water** (ion-dipole attraction){{attrs[.fragment]}}
+
+<!-- slide template=section -->
+# 2. Concentration Units
+
+<!-- slide -->
+## Four units, two families
+| Unit | Denominator | Temp-sensitive? |
+|---|---|---|
+| Mole fraction | total moles | No |
+| Percent by mass | mass of solution | No |
+| Molarity (M) | **volume** of solution | Yes |
+| Molality (m) | **mass** of solvent | No |
+
+<!-- slide -->
+## The conversion bridges
+$$\text{mol solute} = \frac{\text{mass of solute}}{\text{molar mass}}$$
+$$\text{mass of solution} = \text{volume} \times \text{density}$$
+Every concentration-unit conversion problem routes through one or both of these.
+
+<!-- slide step -->
+## Worked example — mole fraction & molality
+0.850 g $\ce{NH3}$ in 125 g water. Find $X$ and $m$.
+- mol $\ce{NH3} = 0.0500$, mol $\ce{H2O} = 6.94${{attrs[.fragment]}}
+- $X_{\text{NH}_3} = 0.0500/(0.0500+6.94) = 7.15\times10^{-3}$ {{attrs[.fragment]}}
+- $m = 0.0500/0.125\text{ kg} = 0.400$ mol/kg{{attrs[.fragment]}}
+
+<!-- slide template=section -->
+# 3. Colligative Properties
+
+<!-- slide -->
+## One idea, four consequences
+- Depend only on **how many** solute particles — never the solute's identity
+- Vapor-pressure lowering, boiling-point elevation, freezing-point depression, osmotic pressure
+
+<!-- slide 2col -->
+## Raoult's law
+<!-- @left -->
+$$P_1 = X_1 P_1^0$$
+- $P_1^0$ = pure solvent vapor pressure
+- Always $P_1 < P_1^0$ when solute present
+<!-- @right -->
+![Raoult's law chart](../assets/raoults_law.svg =480x)
+
+<!-- slide 2col -->
+## Boiling-point elevation / freezing-point depression
+<!-- @left -->
+$$\Delta T_b = K_bm \qquad \Delta T_f = K_fm$$
+- Uses the **solvent's own** $K_b$/$K_f$
+- Always given, never memorized
+<!-- @right -->
+![Freezing point depression chart](../assets/freezing_point_depression.svg =480x)
+
+<!-- slide main-side -->
+## Real-world freezing-point depression
+<!-- @main -->
+![Rock salt for de-icing](../assets/rock_salt_deicing.jpg =380x)
+<!-- @side -->
+Road salt lowers the freezing point of the ice/water mixture below 0 °C, so, as long as the temperature stays above the solution's new, lower freezing point, ice melts and stays melted.
+
+<!-- slide -->
+## Osmotic pressure
+$$\pi = MRT$$
+- Semipermeable membrane: solvent through, solute blocked
+- Osmosis: net solvent flow toward the more concentrated side
+- $\pi$ = pressure needed to stop that flow
+
+<!-- slide main-side -->
+## What osmosis looks like
+<!-- @main -->
+![Osmosis across a semipermeable membrane, at the start and at equilibrium](../assets/osmosis_semipermeable.svg =720x)
+<!-- @side -->
+Nothing *pulls* the solvent across — solvent crosses both ways, but the dilute side has a higher solvent concentration, so more of it crosses from the dilute side.
+
+The column stops rising when its weight cancels the net inflow. The pressure of that column (ρgh) **is** π.
+
+Reversed, π = MRT gives the **molar mass** of a large solute from a measurable pressure.
+
+<!-- slide -->
+## Electrolytes: the van't Hoff factor
+$$\Delta T_b = iK_bm \qquad \Delta T_f = iK_fm \qquad \pi = iMRT$$
+- $i$ = actual particles ÷ formula units dissolved
+- NaCl → $i \approx 2$ · $\ce{CaCl2}$ → $i \approx 3$ · sucrose → $i = 1$
+
+:::warning
+For an ionic solute, always write the dissociation equation and count ions — never assume $i = 1$.
+:::
+
+<!-- slide step -->
+## Worked example — osmotic pressure
+5.0 g methanol in 0.750 L water at 37 °C. Find $\pi$.
+- mol methanol = 0.16, $M$ = 0.21 mol/L{{attrs[.fragment]}}
+- $\pi = MRT = 0.21 \times 0.0821 \times 310$ {{attrs[.fragment]}}
+- **$\pi$ = 5.3 atm**{{attrs[.fragment]}}
+
+<!-- slide template=closing -->
+# One thread: count the particles
+Every colligative property is a different way of measuring the same thing — how many solute particles are dissolved.
